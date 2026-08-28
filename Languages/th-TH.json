@@ -1,0 +1,4035 @@
+{
+  "languageCode": "th-TH",
+  "languageName": "ไทย",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "ค้นหา",
+    "searchPlaceholder": "ค้นหาคุณสมบัติของวัสดุ...",
+    "matchingProperties": "คุณสมบัติที่เข้าคู่กัน",
+    "clearSearch": "ล้างการค้นหา",
+    "noPropertiesFound": "ไม่พบคุณสมบัติที่เข้ากันได้",
+    "lockMaterial": "○ วัตถุ ที่ ถูก ล็อค และ ถูก เปิด เผย (ปุ่ม ปลดล็อค)",
+    "unlockMaterial": "วัตถุปลดล็อค",
+    "lockAndOptimize": "ล็อคโฟกัส",
+    "savePreset": "บันทึกชุดสําเร็จ...",
+    "loadPreset": "โหลดชุดสําเร็จ...",
+    "copy": "คัดลอก",
+    "paste": "วาง",
+    "reset": "ตั้งค่าใหม่",
+    "language": "ภาษา",
+    "cycle": "วนรอบ",
+    "performanceTip": "○ คํา แนะ นํา สําหรับ การ ตัดสิน ใจ: วัตถุ เหล่า นี้ ไม่ ถูก ต้อง. สําหรับประสิทธิภาพการทํางานที่ดีที่สุด (โดยเฉพาะอย่างยิ่งบน grav/ VR), ใช้ 'Lock & Offinize' ด้านบน แถบนี้ไม่มีการใช้ร่มเงา, กิ่งรหัสตาย, และอบคําสําคัญ สําหรับการแสดงผลหัวเป็นศูนย์.",
+    "lockedWarning": "วัสดุที่ถูกล็อก (อ่านเท่านั้น) ปลดล็อคผ่านทางแถบเครื่องมือเพื่อแก้ไขคุณสมบัติ.",
+    "Global UV Controls": "การควบคุมยูวีทั่วไป",
+    "UV Tile Grid (4×4)": "เส้นกริดแบบ UV (4×4)",
+    "Uncheck tiles to discard those UV regions.": "ยกเลิกการตรวจสอบกระเบื้องเพื่อละทิ้งภูมิภาค UV.",
+    "Global Color Animation": "เคลื่อนไหวทั่วไป",
+    "Color Adjustments": "ปรับค่าสี",
+    "Red Zone (R Channel)": "โซนสีแดง (ช่อง R)",
+    "Green Zone (G Channel)": "พื้นที่สีเขียว (G ทางช่อง)",
+    "Blue Zone (B Channel)": "พื้นที่สีน้ําเงิน (ช่อง B)",
+    "Alpha Zone (A Channel)": "พื้นที่อัลฟา (ช่อง)",
+    "Color Correction": "การแก้สี",
+    "Dedicated Shading Models": "โมเดลการเฉลิม",
+    "Render States": "ตั้งค่าสถานะ",
+    "Camera & Mirror Visibility": "ความเปรียบต่างของกล้อง",
+    "Stencil Buffer Settings": "ตั้งค่าฟัฟเฟอร์ Stencil",
+    "Global AudioLink Controls": "การควบคุมเสียงแบบทั่วไป",
+    "Per-Band Delay & Timing (History Buffer)": "& หน่วงเวลา",
+    "Audio Spectrum": "สเปคตรัมของเสียง",
+    "Audio Waveform": "กราฟเสียง",
+    "Avatar Param Fallback": "การ ล่ม จม ของ ผู้อวตาร",
+    "AvatarParamFallbackTooltip": "ถอยกลับไปยังตัวแปรของอวตารภายใน / OSC เมื่อไม่มีแหล่งเสียง Link โลกอยู่.",
+    "Pulse Alpha Range": "ช่วงของชีพจร",
+    "PulseAlphaRangeTooltip": "ควบคุมระยะต่ําสุดและสูงสุดของชีพจร.",
+    "Color": "สี",
+    "Transform": "แปลง",
+    "Texture": "พื้นผิว",
+    "Normal Map": "แผนที่ปกติ",
+    "UV": "ยูวี",
+    "UV0": "UV0",
+    "UV1": "UV1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "ขอบเขตโลก (Trimatinar)",
+    "Local Space (Triplanar)": "ขอบเขตพื้นที่ภายใน (Trimatinar)",
+    "Screen Space": "ขอบเขตสี",
+    "Planar (Local XY)": "Planar (Local XY)",
+    "Spherical (Local)": "เส้นต่อเนื่อง (แนวนอน)",
+    "Cylindrical (Local)": "ไซลินโดรคอล (Lolcal)",
+    "Biplanar (World)": "Bioplainar (โลก)",
+    "Panosphere (Equirectangular 360)": "Pansphere (Equirctangar 360)",
+    "Polar Coordinates": "พิกัดโพลาร์",
+    "Off": "ปิด",
+    "Bass": "เบส",
+    "Low Mid": "ต่ํา",
+    "High Mid": "สูงตรงกลาง",
+    "Treble": "เส้นพริ้วไหว",
+    "High": "สูง",
+    "Medium": "สื่อ",
+    "Low": "ต่ํา",
+    "Opaque": "โอพาเก",
+    "Cutout": "ตัดออก",
+    "Transparent": "โปร่งแสง",
+    "Additive": "ตัวเพิ่มเติม",
+    "Multiply": "คูณ [*]",
+    "Premultiplied": "การใช้งานชั่วคราว",
+    "None": "ไม่มี",
+    "R": "อาร์",
+    "G": "ก",
+    "B": "บี",
+    "A": "A",
+    "RGBA": "แบบ RGBA",
+    "RGB": "RGB",
+    "All": "ทั้งหมด",
+    "Hue Shift": "ความเข้มสี",
+    "Gradient": "ไล่ระดับสี",
+    "Rainbow Gradient": "ไล่ระดับสี",
+    "AudioLink Theme": "เชื่อมโยงเสียง ชุดตกแต่ง",
+    "Direct": "ตรง",
+    "AudioLink": "เชื่อมโยงเสียง",
+    "HueShift": "ความเข้มสี",
+    "Hue Shift/Gradient": "ความเข้มสี/ ความเข้มสี",
+    "Velocity": "ความเร็ว",
+    "Stylized_PBR": "Stylized  PBR",
+    "Standard_PBR": "มาตรฐาน  PRR",
+    "Toon": "โทนสี",
+    "Basic": "พื้นฐาน",
+    "Unlit": "ไม่สนใจ",
+    "Flat": "แบน",
+    "Ambient": "แอมเบียนต์",
+    "ShadowColor": "สีเงา",
+    "Ambient/ShadowColor": "แอมเบียนต์/ ซาโดว์สี",
+    "TwoTone": "สองโทน",
+    "ThreeTone": "สามโทน",
+    "FourTone": "สี่โทน",
+    "Whiteout_UDN": "พิมพ์ออก อัลบั้ม",
+    "RNM": "RNM",
+    "OverrideProbes": "โปรเซสที่แทนที่",
+    "FallbackWhenProbesDark": "ถอยหลังเมื่อโครงการเดิร์ก",
+    "Screen": "จอ",
+    "Metallic": "เมทัลลิก",
+    "Specular": "สเปกตรัม",
+    "Override": "การแทนที่",
+    "Add": "เพิ่ม",
+    "Replace": "แทนที่",
+    "Lighten": "แสงจ้า",
+    "Overlay": "โอเวอร์เลย์",
+    "SoftLight": "แสงอ่อน",
+    "Alpha Blend": "อัลฟาName",
+    "Lerp": "เลป",
+    "Max": "ค่ามากที่สุด",
+    "Circle": "วงกลม",
+    "Square": "กําลังสอง",
+    "Star": "ดาว",
+    "MatCap": "มัตแคป",
+    "Glass": "กระจก",
+    "Anisotropic": "แอนิโซโทรปิก",
+    "SubsurfaceScattering": "ระบบอ่านหน้า",
+    "Retro_PSX": "Retro  PSX",
+    "Retro_HalfLambert": "Retro Halflamber",
+    "Ward": "วอร์ด",
+    "Stretched-Blinn": "ขยาย- บลินน์",
+    "Default": "ค่าปริยาย",
+    "Hologram": "โฮโลแกรม",
+    "Crystal": "คริสตัลName",
+    "Triplanar": "ทริปลันวาร์",
+    "Iridescence": "ความทึบแสง",
+    "Glitter": "ตัวผสมเสียง",
+    "Psychedelic": "จิตเวช",
+    "Fractal3D": "Fractal3D",
+    "Galaxy": "กาแล็กซี",
+    "Skybox": "กล่องสกาย",
+    "EQ Bars": "แถบ EQ",
+    "Continuous Curve": "เส้นโค้งต่อเนื่อง",
+    "Radial": "เรเดียน",
+    "Waterfall": "น้ําตก",
+    "Solid": "แข็ง",
+    "Frequency Gradient": "ไล่ระดับสี",
+    "Emissive Lerp": "ลิเวอร์ดี เลร์ป",
+    "Oscilloscope": "กล้องดูดาว",
+    "Ribbon": "ริบบอน",
+    "Polar": "โพลาร์",
+    "Lissajous": "ขาว",
+    "Vertex Displacement": "ตําแหน่งของเวอร์เท็กซ์",
+    "Mono": "โมโน",
+    "Left": "ซ้าย",
+    "Right": "ขวา",
+    "Local": "ภายใน",
+    "World": "โลก",
+    "ScreenSpace": "หน้าจอ",
+    "ObjectSpace": "วัตถุ",
+    "FullBillboard": "กระดานบิลบอร์ดเต็ม",
+    "YAxisBillboard": "แผ่น กระดาน",
+    "Local Space": "พื้นที่ภายใน",
+    "World Space": "ขอบเขตสี",
+    "Mandelbulb": "แมงเดลบูล",
+    "Menger Sponge": "สฟา ลบาร์",
+    "Kaleidoscopic IFS": "เค ลี โดส คอป",
+    "Mandelbox": "กล่องแมนเดล",
+    "Julia Set 3D": "จูเลีย เซต 3 มิติ",
+    "Sierpinski Tetrahedron": "เซ อร์ พิน สกี เท ต รา เฮ็ด โรน",
+    "Apollonian Gasket": "ก๊าซ อะ พอลโล",
+    "Burning Ship": "กําลังเขียนเรือ",
+    "Tricorn": "ทริคอร์น",
+    "Mandelbulb Power 2": "แมง เดลบลัฟ พาวเวอร์ 2",
+    "Mandelbulb Power 8": "แมง เดลบูล พาวเวอร์ 8",
+    "Quaternion Julia": "การ สมรส",
+    "IFS Tetrahedron": "ถ้า เท ทรา กรัม มา ทอน",
+    "Octahedron": "หมึก",
+    "Dodecahedron": "Dodegahedron",
+    "Icosahedron": "อิคอสฮาดรอน",
+    "Cubic Fractal": "แถบชุดลวดลายStencils",
+    "Hybrid Box-Bulb": "กล่องผสม",
+    "Single Instance": "อินสแตนซ์แบบเดี่ยว",
+    "Repeated (Clipped)": "เล่นซ้ํา (ปิดเสียง)",
+    "Endless": "ไม่มีที่สิ้นสุด",
+    "Yaw": "Yuw",
+    "Pitch": "แผ่น",
+    "Roll": "ม้วน",
+    "Tumble": "ทัมเบิล",
+    "Sway": "Sway",
+    "Pulsate": "แปรงทาสี",
+    "Grid": "ตาราง",
+    "Scanlines": "เส้นค้นหา",
+    "Noise": "เสียง",
+    "Voronoi": "โวโรนี",
+    "Wave": "คลื่น",
+    "Sierpinski": "เซียร์พินสกี",
+    "Checkerboard": "กระดานหมากฮอส",
+    "PolkaDot": "โพลกาดอต",
+    "HexagonGrid": "เฮกซ์กอนกริด",
+    "Herringbone": "เฮริงโบน",
+    "Houndstooth": "ฮานส์ทูธ",
+    "CarbonFiber": "คาร์บอนไฟเบอร์",
+    "Plaid": "แพซิด",
+    "CircuitBoard": "แผงวงจร",
+    "HalftoneDot": "ฮาล์ฟโทนดอต",
+    "TruchetTile": "แปรงทาสี",
+    "ReactionDiffusion": "การแก้ไข",
+    "Brick": "อิฐ",
+    "Intensity": "ความเข้มสี",
+    "Glitch": "กริชส์",
+    "Stretch": "ขยาย",
+    "Wind": "ลม",
+    "Flap": "แฟลป",
+    "ButterflyFlap": "แถบชุดลวดลายStencils",
+    "Blocky": "บล็อก",
+    "Strobe": "สโทรเบ",
+    "Sine": "ข้อความ",
+    "Spherical": "เส้นต่อเนื่อง",
+    "MainTexture": "ข้อความหลัก",
+    "Emission": "การส่ง",
+    "Occlusion": "ชดเชย",
+    "DetailMap": "รายละเอียดแมพ",
+    "DissolveMask": "ลบทั้งเธรด",
+    "Cells": "เซลล์",
+    "Cracks": "รอยแตก",
+    "Dots": "จุด",
+    "Organic": "ออร์แกน",
+    "Flow": "ลื่นไถล",
+    "Outer": "ภายนอก",
+    "Inner": "ภายใน",
+    "Fresnel": "เฟรสแนล",
+    "Depth": "ความลึก",
+    "MeshNormals": "เมช นอร์ มาล",
+    "VertexColors": "สีของเวอร์เท็กซ์",
+    "Linear": "ไลน์ลาร์",
+    "PingPong": "ปิงปอง",
+    "Loop": "วนรอบ",
+    "Random": "สุ่ม",
+    "EaseInOut": "ปรับเทียบข้อมูลภายนอก",
+    "Expand": "ขยาย",
+    "Contract": "สัญญา",
+    "Pulse": "ชีพจร",
+    "Vertical": "แนวตั้ง",
+    "Directional": "ทิศทาง",
+    "Bottom": "ล่าง",
+    "Top": "บน",
+    "X": "X",
+    "Y": "Y",
+    "Z": "Z",
+    "Front": "หน้า",
+    "Back": "กลับ",
+    "Culling": "การจัดการ",
+    "Depth Test": "ทดสอบความลึก",
+    "Comparison": "การเปรียบเทียบ",
+    "Disabled": "ปิดการใช้งาน",
+    "Never": "ไม่เลย",
+    "Less": "น้อย",
+    "Equal": "เท่ากับ",
+    "LessEqual": "แปรงทาสี",
+    "Greater": "มากกว่า",
+    "NotEqual": "บันทึกช่วยจํา",
+    "GreaterEqual": "แปรงทาสี",
+    "Always": "เสมอ",
+    "Keep": "เก็บไว้",
+    "Zero": "ศูนย์",
+    "IncrSat": "ขนาดตัวอักษร",
+    "DecrSat": "ถอดรหัส",
+    "Invert": "กลับค่าสี",
+    "IncrWrap": "การปรบกัน",
+    "DecrWrap": "ถอดรหัส",
+    "One": "หนึ่ง",
+    "DstColor": "สีเส้นทแยง",
+    "SrcColor": "สีของ SSR",
+    "OneMinusDstColor": "สี",
+    "SrcAlpha": "ขนาด SrcElpha",
+    "OneMinusSrcColor": "สี",
+    "DstAlpha": "& ขาว",
+    "OneMinusDstAlpha": "1 นาที",
+    "SrcAlphaSaturate": "แปรงทาสี",
+    "OneMinusSrcAlpha": "1 นาที",
+    "Show Always": "แสดงเสมอ",
+    "Hide In Mirrors": "ซ่อนในกระจก",
+    "Show Only In Mirrors": "แสดงเฉพาะในกระจก",
+    "VR Headset Eyes Only": "หูฟังของ VR เท่านั้น",
+    "Desktop Stream Spectator Only": "พื้นที่ทํางาน Spee Spectator เท่านั้น",
+    "Auto Oblique And Inverted Transform": "แปรงทาสีอัตโนมัติ",
+    "Oblique Matrix Only": "เมทริกซ์ Oblyque เท่านั้น",
+    "Inverted Transform Only": "แปลงกลับค่าเดิมเท่านั้น",
+    "Visibility Mode": "โหมดการแยกแยะ",
+    "Mirror Detection Method": "วิธีการตรวจสอบกระจก",
+    "VRCFallback": "ย้อนกลับแบบ VRC",
+    "VRChat Fallback Tag": "แท็กการยกเลิกของ VRT",
+    "ToonStandard": "ตองสตาร์ด",
+    "Standard": "มาตรฐาน",
+    "Hidden": "ซ่อน",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "เป้าหมายนี้ต้องการโหมดปรับแสง เพื่อตั้งค่าเป็น 'Styd PBR' ในส่วนของแสง.",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "เป้าหมายนี้ต้องการ 'รายละเอียด' ที่จะเปิดใช้ในส่วนโอเวอร์เลย์.",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "เป้าหมายนี้ต้องการ ' desolve' ที่จะเปิดในส่วนการแปลง."
+  },
+  "sections": {
+    "Performance Settings": "ตั้งค่าผล",
+    "Render Mode": "โหมดการแสดงผล",
+    "Main Settings": "ตั้งค่าหลัก",
+    "Procedural Textures": "พื้นผิวภาพ",
+    "Advanced Animation Controls": "การควบคุมการเคลื่อนไหวขั้นสูง",
+    "Color Controls": "การควบคุมสี",
+    "Lighting": "ไฟ",
+    "Surface Style": "รูปแบบพื้นผิว",
+    "Overlays": "ค่าใช้จ่าย",
+    "Effects": "ลูกเล่น",
+    "Glitches": "นามแฝง",
+    "Transitions": "การแปลง",
+    "AudioLink Visualizers": "โปรแกรมรับข้อมูลเสียง Link",
+    "Advanced Settings": "ตั้งค่าขั้นสูง"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "โหมดการแสดงผล",
+      "tooltip": "ควบคุมวิธีการวาดเงา โอพาเกเร็วที่สุด ตัดออกเพื่อความโปร่งใสแบบแข็งขัน ทรานซิฟมีไว้เพื่อความอ่อนนุ่ม."
+    },
+    "_PerformanceLevel": {
+      "label": "ระดับความสําเร็จ",
+      "tooltip": "ตั้งค่าเส้นฐานการทํางาน ปิดการใช้งานคุณสมบัติราคาแพงที่ระดับต่ํา."
+    },
+    "_ZWrite": {
+      "label": "บังคับให้เขียนความลึก (ZWrite)",
+      "tooltip": "ควบคุมด้วยตนเองถ้าวัสดุนี้เขียนไปยังแผ่นบัฟเฟอร์ความลึก เปิดใช้ตัวเลือกนี้ เพื่อใช้กับวัตถุโปร่งใสที่ยังคงใช้ยึดวัตถุอยู่."
+    },
+    "_Cutoff": {
+      "label": "อัลฟา",
+      "tooltip": "ขีดจํากัดของผลกระทบที่ถูกตัด."
+    },
+    "_UseUVTileDiscard": {
+      "label": "แถบชุดลวดลายStencils",
+      "tooltip": "แยกกระเบื้อง UV เฉพาะ มีประโยชน์ในการเสกเสื้อผ้า."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "เพิ่มรูปภาพใหม่..",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "สี่เหลี่ยม",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "สี่เหลี่ยม",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "แนวนอน",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "ใช้สีพื้นฐาน",
+      "tooltip": "สลับสีทึบ."
+    },
+    "_BaseColor": {
+      "label": "สี",
+      "tooltip": "สีหลักของโฮโลแกรมเมื่อไม่ได้ใช้พื้นผิว."
+    },
+    "_BaseColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "ใช้สีของเวอร์เท็กซ์",
+      "tooltip": "ทา สี ลง บน พื้น ผิว. ต้องการโมเดลที่มีสีจุดยอด."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "ความทึบแสงของอัลฟา",
+      "tooltip": "ใช้ช่องอัลฟาของจุดยอดเป็นตัวคูณความทึบแสง."
+    },
+    "_UseEmission": {
+      "label": "เปิดการทํางาน",
+      "tooltip": "ทําให้วัตถุเรืองแสง ต้องการผลจากการประมวลผลของบลูม ในฉากเพื่อดูแสง."
+    },
+    "_UseEmissionPulse": {
+      "label": "เปิดการใช้งานชีพจรอัตโนมัติ",
+      "tooltip": "ชีพจรเต้นแรงผิดปกติ แบบไม่มีผลกระทบกับแสงที่แผ่ออก."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "ความเร็วของชีพจร",
+      "tooltip": "ความเร็วของแอนิเมชันปล่อยก๊าซ."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "ความทึบแสง",
+      "tooltip": "ชีพจรจะเต้นได้เท่าไหร่ (0 = ไม่มีชีพจร 1 = เต็มจาก 0 ถึงแรงสูงสุด)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "ใช้สีของเวอร์เท็กซ์สําหรับการแสดงผล",
+      "tooltip": "ใช้ ช่อง เสียง แบบ RGB ของ สี จุดยอด เพื่อ ทํา ให้ แสง สลัว."
+    },
+    "_UseAlphaToEmission": {
+      "label": "ใช้พื้นผิว อัลฟาสําหรับการทํางาน",
+      "tooltip": "ใช้ ช่อง อัลฟา ของ เนื้อ เยื่อ เป็น แผนที่ ระบาย น้ํา ออก. วิธีที่มีประสิทธิภาพในการสร้างแผนที่เรืองแสง โดยไม่ต้องแยกเนื้อ."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "ความแรง",
+      "tooltip": "อัลฟามีผลต่อการปล่อยก๊าซ (ค่าแสงสูง) มากแค่ไหน."
+    },
+    "_EmissionStrength": {
+      "label": "พลัง งาน",
+      "tooltip": "วิธีสว่างผลแสงเป็น."
+    },
+    "_AL_EmissionBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "เปิดการทํางานครั้งที่ 2",
+      "tooltip": "เพิ่มชั้นการปล่อยน้ําในม้วนที่สอง."
+    },
+    "_Emission2Map": {
+      "label": "แผนที่ที่ 2",
+      "tooltip": "แผนที่การส่ง (RGB) ตัวที่สอง"
+    },
+    "_Emission2Color": {
+      "label": "สี",
+      "tooltip": "สีของการทํางานตัวที่สอง"
+    },
+    "_Emission2Strength": {
+      "label": "ความแรง",
+      "tooltip": "พลัง งาน ครั้ง ที่ สอง"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "ความเร็วการเลื่อนตัวที่สอง X"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "Epassive Scroll สปีด Y ตัวที่สอง"
+    },
+    "_AL_Emission2Band": {
+      "label": "วงดนตรีเอแอลที่ 2",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "ความ แข็ง แรง ที่ 2",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "เปิดการทํางานครั้งที่ 3",
+      "tooltip": "เพิ่มชั้นพ่นน้ําชั้นที่สาม."
+    },
+    "_Emission3Map": {
+      "label": "แผนที่ที่ 3",
+      "tooltip": "แผนที่การย้าย (RGB)"
+    },
+    "_Emission3Color": {
+      "label": "สี",
+      "tooltip": "สีของรายการที่ 3"
+    },
+    "_Emission3Strength": {
+      "label": "ความแรง",
+      "tooltip": "ความ แข็ง แรง ของ งาน รับ ใช้ ครั้ง ที่ สาม"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "สปีด X"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "Eputive Scroll สปีด Y"
+    },
+    "_AL_Emission3Band": {
+      "label": "วงที่ 3",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "พลัง งาน ที่ สาม",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "เปิดการทํางานครั้งที่ 4",
+      "tooltip": "เพิ่มชั้นการปล่อยก๊าซชั้นที่ 4."
+    },
+    "_Emission4Map": {
+      "label": "แผนที่การอพยพที่ 4",
+      "tooltip": "แผนที่ EPP (RGB)"
+    },
+    "_Emission4Color": {
+      "label": "สี",
+      "tooltip": "สีของรายการที่ 4"
+    },
+    "_Emission4Strength": {
+      "label": "ความแรง",
+      "tooltip": "พลัง งาน ครั้ง ที่ สี่"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "ความเร็วของเลื่อนที่ 4"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "EPPSD สปีด Y"
+    },
+    "_AL_Emission4Band": {
+      "label": "วงดนตรี AL 4",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "เครื่องยนต์ AL 4",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "เปิดการใช้พื้นผิว",
+      "tooltip": "แทนที่คุณสมบัติต่าง ๆ ของเนื้อหาโดยใช้รูปแบบที่สร้างขึ้น."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "เป้าหมาย",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "โหมดตรวจสอบ",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "สี 1",
+      "tooltip": "สีแรกของรูปแบบขั้นตอน."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "เปิดใช้การ Shift/ สี",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "แปรงทาสี 1 ครั้ง",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "สี 2",
+      "tooltip": "สีที่สองของรูปแบบขั้นตอน."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "เปิดใช้การ Shift/ สี",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "พิมพ์สีตามตัวอักษร 2 Shift",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "ค่า",
+      "tooltip": "ควบคุมขนาด/ เปรียบเทียบรูปแบบ."
+    },
+    "_ProceduralSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ควบคุมความเร็วการเคลื่อนไหวของรูปแบบ."
+    },
+    "_ProceduralDirection": {
+      "label": "ทิศทาง",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "ความหนา:",
+      "tooltip": "ความหนาของเส้นรูปแบบ."
+    },
+    "_ProceduralDensity": {
+      "label": "ความหนาแน่น",
+      "tooltip": "ควบคุมขนาดขององค์ประกอบรูปแบบ ค่าที่สูงกว่า เพิ่มขนาด."
+    },
+    "_ProceduralSparsity": {
+      "label": "ความจุ",
+      "tooltip": "ควบคุมระยะห่างระหว่างองค์ประกอบในรูปแบบ ค่าที่สูงกว่า เพิ่มช่องว่าง."
+    },
+    "_ProceduralRotation": {
+      "label": "หมุน",
+      "tooltip": "หมุนทุกขั้นตอน ค่า 0.125 เท่ากับ 45 องศา."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "พื้นที่พิกัด",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "หมึก",
+      "tooltip": "เพิ่มชั้นของเสียงรบกวนที่ระดับที่แตกต่างกัน เพื่อสร้างรายละเอียดมากขึ้น และรูปแบบธรรมชาติ."
+    },
+    "_NoiseLacunarity": {
+      "label": "ความแหลม:",
+      "tooltip": "ควบคุมความถี่ของสัญญาณรบกวน ที่เปลี่ยนไปในแต่ละช่อง."
+    },
+    "_NoiseGain": {
+      "label": "เพิ่มจุด",
+      "tooltip": "ควบคุมการรบกวนของเสียง ที่เปลี่ยนไปในแต่ละ octave."
+    },
+    "_VoronoiStyle": {
+      "label": "รูปแบบ",
+      "tooltip": "ควบคุมรูปแบบภาพรูปแบบของโวโรนี."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "เครื่องขยายเสียงทั่วไป",
+      "tooltip": "ตัวเพิ่มความเร็วแบบแอนิเมชัน การเคลื่อนไหวนี้ผ่านทางไดนามิกส์ของอวตาร VRT / พารามิเตอร์อะนิเมเตอร์เพื่อควบคุมหรือแช่แข็งแอนิเมชันของเงาทั้งหมด."
+    },
+    "_UseAdvancedAnim": {
+      "label": "เปิดใช้การควบคุมการเคลื่อนไหวขั้นสูง",
+      "tooltip": "เอ็กซ์โปซิส หลักควบคุมการปรับขนาดเวลา, โหมดการเล่น, และปรับค่าเวลาสําหรับแอนิเมชันเงาทั้งหมด."
+    },
+    "_AnimTimeScale": {
+      "label": "ค่าเวลา",
+      "tooltip": "ควบคุมความเร็วโดยรวมของภาพเคลื่อนไหว สามารถใช้ชะลอ หรือเพิ่มความเร็ว."
+    },
+    "_AnimPlayMode": {
+      "label": "โหมดการเล่นกลับ",
+      "tooltip": "ตั้งค่าโหมดการเล่นทั่วไป 0 =ลูป (เริ่มตั้งแต่เริ่มต้น), 1 = Ping-Pong (กลับทิศ)."
+    },
+    "_AnimOffset": {
+      "label": "เวลา",
+      "tooltip": "จับคู่เวลาทั่วโลกกับแอนิเมชันทั้งหมด มีประโยชน์ในการประสานหรือลดผลกระทบ."
+    },
+    "_TwoSidedLighting": {
+      "label": "ไฟสองด้าน",
+      "tooltip": "กลับทิศทางปกติบนใบหน้าด้านหลัง สําหรับการแก้ไขแสงสองด้านเมื่อ Cull ถูกปิด."
+    },
+    "_LightingMode": {
+      "label": "โหมดปรับสว่าง",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "เปิดใช้งานลักษณะพิเศษ AA",
+      "tooltip": "สปอตไลท์แอนตี้อาแลส ลดแสงระยิบระยับ และกระพริบบนผิวมัน."
+    },
+    "_UseOpenLitMath": {
+      "label": "โหมด OpenLet Harmony",
+      "tooltip": "ใช้ OpenLiet CC0 มาตรฐานครึ่ง alambert Cload สําหรับแสงที่ต่อเนื่องผ่านอวตารฝูงชนในโลกภาพ."
+    },
+    "_SpecularAAVariance": {
+      "label": "ความหนาแน่น",
+      "tooltip": "ควบคุมความก้าวร้าวของเอซริง."
+    },
+    "_SpecularAAThreshold": {
+      "label": "ความแหลม:",
+      "tooltip": "ขอบเขตของความเข้มของสเปกตรัม ก่อนที่ AA จะเข้ามา."
+    },
+    "_ShadowColor": {
+      "label": "สีของเงา",
+      "tooltip": "สีของพื้นที่ไม่ได้โดนแสง."
+    },
+    "_ShadowColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "ความแหลม:",
+      "tooltip": "ขนาดของพื้นที่สว่างในโหมดตอง."
+    },
+    "_ToonHardness": {
+      "label": "ความหนา:",
+      "tooltip": "ความคมชัดของเงาขอบในโหมด Toon."
+    },
+    "_ToonShadowBorder": {
+      "label": "กรอบเงา",
+      "tooltip": "ยึดแนวเขตเส้นเงา."
+    },
+    "_ToonShadowBlur": {
+      "label": "เบลอแบบเงา",
+      "tooltip": "ช่วยลดความคมชัดของท่าชาโดว์."
+    },
+    "_ToonShadowAO": {
+      "label": "การเคลื่อนไหวของเงา AO",
+      "tooltip": "ขยายขอบเขตสีเซล โดยใช้ลายเส้น."
+    },
+    "_NormalMap": {
+      "label": "แผนที่ปกติ",
+      "tooltip": "เพิ่มรายละเอียดพื้นผิวโดยใช้แผนที่ปกติ."
+    },
+    "_BumpScale": {
+      "label": "ค่าปกติ",
+      "tooltip": "ความแข็งแกร่งและความลึกของพื้นผิวปกติชนกัน."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "เปิดใช้การแสดงรายละเอียดแผนที่ปกติ",
+      "tooltip": "เพิ่มแผนที่สํารองสําหรับรายละเอียดขนาดเล็ก."
+    },
+    "_DetailNormalMap": {
+      "label": "รายละเอียดของแผนที่ปกติ",
+      "tooltip": "แผนที่ปกติอันที่สอง หุ้มบนฐานปกติ เพื่อเพิ่มรายละเอียดพื้นผิว."
+    },
+    "_DetailNormalScale": {
+      "label": "รายละเอียดความแรงปกติ",
+      "tooltip": "ควบคุมความแข็งแกร่งของแผนที่ปกติ."
+    },
+    "_NormalBlendMode": {
+      "label": "โหมดย่อ/ ขยายปกติ",
+      "tooltip": "อัลกอริธึมตัดเสียงระหว่างฐานและรายละเอียดแผนที่ปกติ (Whiteout vs refault Maping/ RNM)."
+    },
+    "_MetallicGlossMap": {
+      "label": "เมทัลลิก (R) ความนุ่มนวล (A)",
+      "tooltip": "เมทัลลิก (R) และแผนที่เรียบ (A) (ข้อสังเกต: ไม่แยแสความนุ่มนวล หากจัดทําแผนที่ความเหลื่อมล้ําแยกกัน)"
+    },
+    "_Metallic": {
+      "label": "เมทัลลิก",
+      "tooltip": "ควบคุมวิธีการที่โลหะพื้นผิวเป็น (0 = dielectric/plantic, 1 = โลหะบริสุทธิ์)."
+    },
+    "_Glossiness": {
+      "label": "ความนุ่มนวล",
+      "tooltip": "ควบคุมวิธีการที่เรียบและสะท้อนพื้นผิวเป็น (0 =หยาบ/Matte, 1 = กระจกเรียบ)."
+    },
+    "_UseAmbientLighting": {
+      "label": "ใช้ แสง ไฟ แบบ ธรรมดา",
+      "tooltip": "เปิด/ ปิด ตัวอย่างของแสงจากฉาก และเครื่องสํารวจสะท้อนแสง ทําให้แสงมีความสอดคล้องกันมากขึ้นในโลกที่แตกต่างกัน."
+    },
+    "_UseSHAmbient": {
+      "label": "ใช้คุณภาพสูง ambient (h)",
+      "tooltip": "เปิดใช้งานเครื่องตรวจจับคุณภาพสูง ข้อควรจํา: บังคับใช้ในระดับการแสดงปานกลาง/ลาว."
+    },
+    "_AmbientFallbackMode": {
+      "label": "โหมดการถอยกลับแบบเคลื่อนไหว",
+      "tooltip": "เลือกรุ่นแสงตกเมื่อปิดหรือปิดระบบ High SU คุณภาพ."
+    },
+    "_UseLightOverride": {
+      "label": "เพิ่มช่องสี",
+      "tooltip": "ครอบคลุมทิศทาง สี ความเข้มของแสงหลัก."
+    },
+    "_LightDirOverride": {
+      "label": "ทิศทาง",
+      "tooltip": "กําหนดเวกเตอร์ทิศแสงเอง."
+    },
+    "_LightColorOverride": {
+      "label": "สี",
+      "tooltip": "แปรงทาสี."
+    },
+    "_LightIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ตั้งค่าระดับความหนาแน่นแสงเอง."
+    },
+    "_ShadowStrength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความแข็งแกร่งของเงา โยนจากแสงนี้."
+    },
+    "_RampTex": {
+      "label": "ทูน แรมป์",
+      "tooltip": "หมึกทอด และร่มเงาของเงาที่แผ่กระจาย."
+    },
+    "_ToonToneCount": {
+      "label": "นับจํานวนโทน",
+      "tooltip": "จํานวนของสายรัดขัดเงาเงา สําหรับแสงทอด."
+    },
+    "_MidColor": {
+      "label": "สีปานกลาง",
+      "tooltip": "สีวงมิดโทน."
+    },
+    "_MidThreshold": {
+      "label": "เส้นทแยงกลาง",
+      "tooltip": "ขอบเขตของวงมิดโทน."
+    },
+    "_HighlightColor": {
+      "label": "เน้นสี",
+      "tooltip": "สีแถบเน้น."
+    },
+    "_HighlightThreshold": {
+      "label": "มุม:",
+      "tooltip": "จํากัดขอบเขตสําหรับวงดนตรีไฮไลท์."
+    },
+    "_SpecularMode": {
+      "label": "การ ไหล เวียนของงาน",
+      "tooltip": "เลือกระหว่างระบบเมทัลลิก-สโมเมนตัม และสเปกตรัมสี PBR."
+    },
+    "_SpecColor": {
+      "label": "สีสเปกตรัม",
+      "tooltip": "การสะท้อนสีแบบสเปกตรัม."
+    },
+    "_SpecGlossMap": {
+      "label": "สเปกตรัม (RGB) กลอส (A)",
+      "tooltip": "สีสเปกตรัม (RGB) และแผนที่เรียบ (A)."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "ปูมบันทึกของเงาName",
+      "tooltip": "พฤติกรรมการถอยกลับเมื่อไม่มีพื้นผิวเงา."
+    },
+    "_RoughnessMap": {
+      "label": "เส้นพริ้วไหว (R)",
+      "tooltip": "Proadnes Map (R)."
+    },
+    "_Roughness": {
+      "label": "ความทึบแสง",
+      "tooltip": "ราคาแย่."
+    },
+    "_OcclusionMap": {
+      "label": "แผนที่ (G)",
+      "tooltip": "แผนที่อเนกประสงค์ (G) เพื่ออบเงาในรอยแตก."
+    },
+    "_OcclusionStrength": {
+      "label": "ความแข็งแรงในการใช้งาน",
+      "tooltip": "ความแข็งแกร่งของเงาที่แยกออกจากแผนที่."
+    },
+    "_DetailMask": {
+      "label": "รูปแบบรายละเอียด (A)",
+      "tooltip": "หน้ากากรายละเอียด (A) เพื่อจํากัดการประยุกต์การใช้พื้นผิวตัวที่สอง."
+    },
+    "_UseSSS": {
+      "label": "เปิดการใช้พื้นผิวย่อย",
+      "tooltip": "จําลองแสงกระจายผ่านวัตถุบาง เช่นผิวหรือใบ."
+    },
+    "_SSS_Scale": {
+      "label": "ค่า",
+      "tooltip": "ความแข็งแกร่งโดยรวมของ SS ผลกระทบ."
+    },
+    "_SSS_Radius": {
+      "label": "รัศมี",
+      "tooltip": "ระยะทางแสงกระจายอยู่ภายในวัสดุ."
+    },
+    "_SSS_Color": {
+      "label": "Tont",
+      "tooltip": "สี ที่ พิมพ์ ออก มา ถูก นํา ไป ใช้ กับ แสง ที่ กระจาย อยู่ ทั่ว."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "เปิดใช้การทําแผนที่ความหนา",
+      "tooltip": "ใช้พื้นผิวจําลองการส่งผ่านแสง ผ่านพื้นที่บางบาง (หู, ใบ เป็นต้น)."
+    },
+    "_ThicknessMap": {
+      "label": "แผนที่ความหนา (R)",
+      "tooltip": "แผนที่ความหนา (ช่อง R) ขาว =หนา (ไม่มีการส่ง), สีดํา = บาง (เต็ม)."
+    },
+    "_ThicknessStrength": {
+      "label": "ความหนา:",
+      "tooltip": "ควบคุมความเข้มของไฟด้านหลัง."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "ใช้พื้นผิวแบบ SSS",
+      "tooltip": "ตั้งค่าสีเอง."
+    },
+    "_SSSTransmissionTex": {
+      "label": "แผนที่การส่งถ่ายข้อมูลของ SSS",
+      "tooltip": "สีเส้นการลาก."
+    },
+    "_UseAnisotropy": {
+      "label": "เปิดใช้การสะท้อนแสงอะนิโซโทรปิก",
+      "tooltip": "สร้างจุดเด่นที่ยืดยาว ทั่วไปบนโลหะหรือเส้นผม."
+    },
+    "_Aniso_Mode": {
+      "label": "โหมด Aniso",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "ความทึบแสง U",
+      "tooltip": "ความ หยาบ คาย ตาม ทิศ ทาง ของ ยู (กลาง)."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "ความเข้มสี V",
+      "tooltip": "ความหยาบตามทิศ V (ปกติ)."
+    },
+    "_Aniso_Strength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความเจิดจรัสโดยรวมของ antistropic ไฮไลท์."
+    },
+    "_Aniso_TangentMap": {
+      "label": "แผนที่แทนเจนต์ (ตัวเลือกอื่น)",
+      "tooltip": "แผนที่สัมผัส (อาร์จี ช่อง) เพื่อควบคุมทิศทางของจุดเด่นของ anistrophic."
+    },
+    "_UseClearCoat": {
+      "label": "เปิดการใช้งาน Coat ล้าง",
+      "tooltip": "เพิ่มชั้นสเปกตรัมของโค้ตที่ใสเป็นรอง เหนือวัสดุ PBR มีประโยชน์สําหรับการทา/เคลือบพื้นผิว."
+    },
+    "_ClearCoatStrength": {
+      "label": "ล้างความเข้มสี",
+      "tooltip": "ส่วน ประกอบ ของ ชั้น ที่ สอง ของ แล็กเค อร์ / ยาง มะตอย."
+    },
+    "_ClearCoatRoughness": {
+      "label": "ความแหลม:",
+      "tooltip": "ความหยาบของชั้นใสรอง."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "เปิดใช้งานพาราแลกซ์ของตา ไอริส",
+      "tooltip": "จําลองความลึก/การฝ่าฝืนของนักเรียน และจุดใต้กระจกตา."
+    },
+    "_IrisTiling": {
+      "label": "Tiling ไอริสยูวี",
+      "tooltip": "ควบคุมเนื้อร้าย."
+    },
+    "_IrisDepth": {
+      "label": "ความลึกสี",
+      "tooltip": "จําลองการปรับค่าความลึกการบิดเบือน."
+    },
+    "_PupilSize": {
+      "label": "แปรงทาสี",
+      "tooltip": "ควบคุมขนาดของนักเรียน."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "เปิดใช้การตัดส่วนผิวหนัง",
+      "tooltip": "แสงอ่อนส่องเงา บนพื้นผิวโค้งอินทรีย์."
+    },
+    "_SkinWrapAmount": {
+      "label": "ลบทั้งเธรด",
+      "tooltip": "วิธีการมากแสงปกคลุมรอบตัววัดเงา."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "เปิดการใช้งาน Anistropic Specular (Kajya-kay)",
+      "tooltip": "อะนิโซโทรปิคไฮไลท์มีสไตล์เฉพาะสําหรับเส้นขน."
+    },
+    "_HairSpecColor": {
+      "label": "สีสเปกตรัม",
+      "tooltip": "สีของจุดเด่นของทรงผม."
+    },
+    "_HairSpecExponent": {
+      "label": "เอ็กซ์โปเน็นต์หลัก",
+      "tooltip": "ความคมชัดของไฮไลท์หลัก."
+    },
+    "_HairSpecExponent2": {
+      "label": "เอ็กซ์โปเน็นต์ตัวที่สอง",
+      "tooltip": "ความคมชัดของจุดเด่นที่ 2."
+    },
+    "_HairSpecStrength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความเข้มของแสงจ้า."
+    },
+    "_HairSpecShift": {
+      "label": "หมุน & 90",
+      "tooltip": "ตําแหน่งเลื่อนไปตามทิศทางผม."
+    },
+    "_UseGrid": {
+      "label": "เปิดการใช้กริด",
+      "tooltip": "ครอบคลุมรูปแบบตารางบนพื้นผิว."
+    },
+    "_GridMode": {
+      "label": "รูปแบบตาราง",
+      "tooltip": "รูปแบบตารางโปรตุเกชัน (Square, Hexaganal, Radial, Fireraft)."
+    },
+    "_GridColor": {
+      "label": "สี",
+      "tooltip": "สีของเส้นกริด."
+    },
+    "_GridColor_Shift": {
+      "label": "แปรงทาสี",
+      "tooltip": "การเปลี่ยนสีของเส้นกริด."
+    },
+    "_GridDensity": {
+      "label": "ความหนาแน่น",
+      "tooltip": "วิธีการหลายรูปแบบปรากฏ."
+    },
+    "_GridSparsity": {
+      "label": "ความจุ",
+      "tooltip": "ควบคุมระยะห่างระหว่างองค์ประกอบในรูปแบบ ค่าที่สูงกว่า เพิ่มช่องว่าง."
+    },
+    "_GridSpace": {
+      "label": "พื้นที่พิกัด",
+      "tooltip": "ขอบเขตพื้นที่สําหรับการวางแนวตารางการขยาย (Object UV, local Mesh, World Space)."
+    },
+    "_GridThickness": {
+      "label": "ความหนาเส้น",
+      "tooltip": "ความหนาเส้นสําหรับแนวตาราง."
+    },
+    "_UseGridScroll": {
+      "label": "เปิดการเลื่อน",
+      "tooltip": "การเคลื่อนไหวรูปแบบเกลียว."
+    },
+    "_GridScrollSpeed": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "วิธีการรวดเร็วตารางม้วนตามแนวแกนแรก (โลก X)."
+    },
+    "_GridRotation": {
+      "label": "หมุน",
+      "tooltip": "หมุนตารางทั้งหมด ค่า 0.125 เท่ากับ 45 องศา."
+    },
+    "_GridScrollSpeedY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "วิธีการรวดเร็วตารางม้วนตามแนวแกนที่สอง (โลก Z)."
+    },
+    "_BoxFractalIsFill": {
+      "label": "ใช้รูปแบบการเติม",
+      "tooltip": "สลับกล่องกรอบระหว่างรูปแบบการเติมกับรูปแบบกรอบ."
+    },
+    "_GridPatternIsFill": {
+      "label": "ใช้รูปแบบการเติม",
+      "tooltip": "สลับรูปแบบระหว่างช่องเติมและกรอบภาพ."
+    },
+    "_MandelboxIsFill": {
+      "label": "ใช้รูปแบบการเติม",
+      "tooltip": "สลับไปมาระหว่างรูปแบบการเติมกับรูปแบบกรอบ."
+    },
+    "_GridPulseMode": {
+      "label": "โหมดเส้นโค้ง",
+      "tooltip": "ภาพคลื่นความถี่ของคลื่นความถี่ (Sine, สามเหลี่ยม, EMLLink)."
+    },
+    "_GridPulseSpeed": {
+      "label": "ความเร็วของชีพจร",
+      "tooltip": "ความเร็วของการเคลื่อนไหวของชีพจร."
+    },
+    "_GridPulseIntensity": {
+      "label": "ความทึบแสง",
+      "tooltip": "ความแข็งแกร่งของชีพจร."
+    },
+    "_GridPulseMin": {
+      "label": "เส้นกริด",
+      "tooltip": "ความสว่าง/ ความไม่สม่ําเสมอน้อยที่สุดระหว่างการถูกกระแทก."
+    },
+    "_GridPulseMax": {
+      "label": "อัตราเร็ว:",
+      "tooltip": "ความสว่าง/ ความเหลื่อมล้ําสูงสุดของกริด ระหว่างการบีบอัด."
+    },
+    "_UseGridDepthColor": {
+      "label": "ใช้สีแบบลึก",
+      "tooltip": "เปลี่ยนค่าสีของตาราง โดยอิงจากพื้นผิวอื่น ๆ."
+    },
+    "_GridDepthColor": {
+      "label": "ความลึกสี",
+      "tooltip": "สี."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "ช่วงของความลึก",
+      "tooltip": "ระยะห่างมากกว่าที่เปลี่ยนสีเกิดขึ้น."
+    },
+    "_AL_GridBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "ใช้แถบตาราง",
+      "tooltip": "ใช้พื้นผิวเพื่อปกปิดผลกระทบของตาราง."
+    },
+    "_GridMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "พื้นผิวที่ใช้ปกปิดตาราง ช่องสีแดงถูกใช้."
+    },
+    "_InvertGridMask": {
+      "label": "กลับค่าสี",
+      "tooltip": "เมื่อ เอา หน้ากาก ออก มา แล้ว บริเวณ ผิว ดํา ก็ จะ มอง เห็น ได้ และ บริเวณ ผิว ขาว ก็ ถูก ปิด ซ่อน ไว้."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "เปิดใช้งานการถอดรหัสของเวอร์เท็กซ์",
+      "tooltip": "เปิด/ ปิด การบิดเบือนของจุดยอด."
+    },
+    "_DistortionMode": {
+      "label": "โหมดการบิดเบือน",
+      "tooltip": "อัลกอริธึมการบิดเบือนจุดยอด (คลื่น Sine, ความถี่รบกวน, flapping ฯลฯ)."
+    },
+    "_DistortionStrength": {
+      "label": "ความแรง",
+      "tooltip": "พวกเวอร์ติชันหายไปไกลแค่ไหน."
+    },
+    "_DistortionSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของแอนิเมชันบิดเบือน."
+    },
+    "_AL_DistortionBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "พื้นผิวการบิดเบือน (RG สําหรับออฟเซ็ต)",
+      "tooltip": "พื้นผิวที่จะควบคุมการบิดเบือน (R=X ออฟเซต, G=Z ตรงข้าม)."
+    },
+    "_DistortionTexScrollX": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "เลื่อนพื้นผิวที่บิดเบือนทางแนวนอน."
+    },
+    "_DistortionTexScrollY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "เลื่อนพื้นผิวที่บิดเบือนทางแนวตั้ง."
+    },
+    "_StretchAxis": {
+      "label": "หมุน & 90",
+      "tooltip": "แกนเมชที่ยืดขึ้นตามมาตราฐาน."
+    },
+    "_WindDirection": {
+      "label": "ทิศทาง",
+      "tooltip": "ทิศทางของลมในท้องถิ่น (เทียบกับวัตถุ)."
+    },
+    "_WindScale": {
+      "label": "ค่า",
+      "tooltip": "ขนาดของลมกระโชก ค่าที่เล็กกว่าทําให้เกิดคลื่นที่ใหญ่ขึ้น ช้าลง."
+    },
+    "_FlapScale": {
+      "label": "ค่า",
+      "tooltip": "ควบคุมการเคลื่อนไหวแบบเคลื่อนไหว หรือ 'การหายใจ'."
+    },
+    "_FlapPhaseOffset": {
+      "label": "การปรับระยะเยื้อง",
+      "tooltip": "เพิ่มเวลาที่ล่าช้าไปยังด้านใดด้านหนึ่ง สร้างการสั่นแบบไม่สมมาตร 0 นั้นสมมาตร."
+    },
+    "_FlapMode": {
+      "label": "โหมดฟลอป",
+      "tooltip": "ทิศทางและสไตล์ของ จุดยอดแอนิเมชัน (Wings, Flags, Folague)."
+    },
+    "_FlapPivot": {
+      "label": "แฟลป Pivot",
+      "tooltip": "Axonepoint/pivot ตําแหน่งของจุดยอด skippion."
+    },
+    "_FlapDirection": {
+      "label": "ทิศทาง",
+      "tooltip": "เวกเตอร์ที่นิยามทิศทางพื้นที่เอง สําหรับการเคลื่อนที่แบบเคลื่อนไหว."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "เปิดใช้งานการยกเลิก",
+      "tooltip": "ทําให้วัตถุปรากฏ/ Discape โดยใช้รูปแบบเสียง."
+    },
+    "_DissolveMode": {
+      "label": "โหมดการไล่ระดับสี",
+      "tooltip": "เลือกอัลกอริธึมคณิตศาสตร์ที่ละลายได้ (Linar, Radial, Sferial, Vroronoi) เป็นต้น."
+    },
+    "_DissolveScale": {
+      "label": "ค่า",
+      "tooltip": "ควบคุมขนาด/ การกระจายของลูกเล่นละลาย."
+    },
+    "_DissolveDirection": {
+      "label": "ทิศทาง",
+      "tooltip": "ทิศทางโลกอวกาศ ที่คลื่นละลายได้เดินทาง."
+    },
+    "_DissolveOrigin": {
+      "label": "ต้น กําเนิด ของ โลก",
+      "tooltip": "จุดศูนย์อวกาศ ที่การละลายเกิดขึ้น."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "ใช้ศูนย์วัตถุ",
+      "tooltip": "เมื่อ เปิด ดู การ ละลาย จะ เกิด จาก จุด หักเห ของ วัตถุ. เมื่อปิดการใช้งาน มันจะใช้พิกัดโลกคงที่."
+    },
+    "_DissolveMap": {
+      "label": "ลดจุดรบกวนบนแผนที่",
+      "tooltip": "เนื้อ เยื่อ ของ เสียง รบกวน ที่ ใช้ ใน การ ละลาย (ใช้ ช่อง แดง)."
+    },
+    "_DissolveProjMode": {
+      "label": "โหมดวางแผนที่",
+      "tooltip": "โหมดการหมุนภาพแบบ UV สําหรับพื้นผิวละลาย."
+    },
+    "_DissolveAmount": {
+      "label": "ค่า",
+      "tooltip": "ความคืบหน้าของลูกเล่นละลาย (0-1)."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "ขอบความกว้าง",
+      "tooltip": "ความกว้างของขอบแสงบนเส้นละลาย."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "ขนาดบล็อค",
+      "tooltip": "ขนาดของบล็อกที่บกพร่องในพื้นที่หน้าจอ."
+    },
+    "_DissolveEdgeColor": {
+      "label": "สีขอบ",
+      "tooltip": "สีของขอบที่เรืองแสง."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "โหมดสี",
+      "tooltip": "การสลับสีเสียงหรือสีแบบเคลื่อนไหวสําหรับขอบการเผาไหม้ละลาย."
+    },
+    "_UseDissolveGradient": {
+      "label": "ใช้การไล่ระดับสี",
+      "tooltip": "ใช้พื้นผิวแบบเกรเดียนเพื่อสีขอบละลายแทนสีทึบ."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "ใช้การจับเวลาขั้นสูง",
+      "tooltip": "ใช้การจับเวลาเองสําหรับแอนิเมชันที่ละลายแล้วแทนการวนซ้ําหรือวนซ้ําธรรมดา."
+    },
+    "_DissolveOnDuration": {
+      "label": "ไม่สนใจช่วงเวลา",
+      "tooltip": "เวลาที่แอนิเมชันละลาย-อินจะเล่น."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "เวลา",
+      "tooltip": "เวลา ที่ วัตถุ นั้น ยัง คง มอง เห็น ได้ อย่าง เต็ม ที่ (ใน ที่ สุด จะ ละลาย)."
+    },
+    "_DissolveOffDuration": {
+      "label": "กําจัดช่วงเวลา",
+      "tooltip": "เวลาสําหรับแอนิเมชันละลายที่จะเล่น."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "ซ่อนช่วงเวลา",
+      "tooltip": "เวลา ที่ วัตถุ นั้น ถูก ซ่อน ไว้ อย่าง เต็ม ที่ (ใน ช่วง ไม่ กี่ นาที)."
+    },
+    "_DissolveGradient": {
+      "label": "ไล่ระดับสี",
+      "tooltip": "ทางลาดสีสําหรับขอบละลาย เกรเดียนถูกโยงข้ามความกว้างของขอบ."
+    },
+    "_AnimateDissolve": {
+      "label": "การเคลื่อนไหว",
+      "tooltip": "เปลี่ยนจํานวนการละลายโดยอัตโนมัติ."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของแอนิเมชัน."
+    },
+    "_DissolveAnimMode": {
+      "label": "ใช้ปิงปอง",
+      "tooltip": "หากเปิดใช้ แอนิเมชันจะเล่นไปข้างหน้าและย้อนกลับ ถ้าปิดการใช้งาน มันจะวนกลับมา."
+    },
+    "_DissolveAnimMin": {
+      "label": "แอนิเมชัน มิน",
+      "tooltip": "การตัดการละลายน้อยที่สุดเมื่อเปิดใช้งานแอนิเมชัน."
+    },
+    "_DissolveAnimMax": {
+      "label": "การเคลื่อนไหวสูงสุด",
+      "tooltip": "การตัดการละลายสูงสุดเมื่อเปิดใช้งานแอนิเมชัน."
+    },
+    "_AL_DissolveBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "เปิดการใช้งานการเช็ดตัว Planar",
+      "tooltip": "เปิดเผยวัตถุที่เรียบและเรียบ."
+    },
+    "_WipeDirection": {
+      "label": "ทิศทาง",
+      "tooltip": "ทิศทางที่ผ้าเช็ดหน้าเดินทางข้ามวัตถุ."
+    },
+    "_WipeProgress": {
+      "label": "ความคืบหน้า",
+      "tooltip": "ความก้าวหน้าของผลกระทบการลบ."
+    },
+    "_WipeHardness": {
+      "label": "ความหนา:",
+      "tooltip": "ความ คม ของ ขอบ ผ้า เช็ด หน้า."
+    },
+    "_AnimateWipe": {
+      "label": "กวาดแบบเคลื่อนไหว",
+      "tooltip": "เปลี่ยนค่าความคืบหน้าของการล้างข้อมูลโดยอัตโนมัติ."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "ใช้การจับเวลาขั้นสูง",
+      "tooltip": "ใช้การจับเวลาเองสําหรับการเคลื่อนไหวการล้างข้อมูล แทนการวนรอบหรือคลิกลูกแบบธรรมดา."
+    },
+    "_WipeOnDuration": {
+      "label": "ลบช่วงเวลา",
+      "tooltip": "ต้องใช้เวลาในการเล่น."
+    },
+    "_WipeVisibleDuration": {
+      "label": "เวลา",
+      "tooltip": "เวลาที่วัตถุยังคงมองเห็นได้ทั้งหมด."
+    },
+    "_WipeOffDuration": {
+      "label": "กวาดทั้งช่วงเวลา",
+      "tooltip": "เวลาที่แอนิเมชันเช็ดออกจะเล่น."
+    },
+    "_WipeHiddenDuration": {
+      "label": "ซ่อนช่วงเวลา",
+      "tooltip": "เวลาที่วัตถุยังคงอยู่อย่างเต็มรูปแบบ ซ่อนก่อนที่จะวน."
+    },
+    "_WipeAnimSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของแอนิเมชัน."
+    },
+    "_WipeAnimMode": {
+      "label": "ใช้ปิงปอง",
+      "tooltip": "หากเปิดใช้ แอนิเมชันจะเล่นไปข้างหน้าและย้อนกลับ ถ้าปิดการใช้งาน มันจะวนกลับมา."
+    },
+    "_UseTransparency": {
+      "label": "เปิดใช้การโปร่งใส",
+      "tooltip": "ทําให้วัตถุมีความโปร่งใส."
+    },
+    "_Alpha": {
+      "label": "อัลฟา",
+      "tooltip": "ควบคุมความโปร่งใสโดยรวม 1 = opaque เต็ม 0 = ล่องหนอย่างสมบูรณ์."
+    },
+    "_UseFresnelTransparency": {
+      "label": "เปิดใช้การโปร่งใสของ Fresnel",
+      "tooltip": "ทําให้วัตถุมีความโปร่งใสมากขึ้น ในศูนย์และ opaque ที่ขอบ."
+    },
+    "_FresnelPower": {
+      "label": "ยกกําลัง",
+      "tooltip": "ควบคุมเส้นโค้งที่ตกลงมา ค่าที่สูงยิ่งกดความโปร่งใสไปยังขอบ."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "มุมอัลฟา",
+      "tooltip": "โปร่งใสตรงมุมกว้าง."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "กึ่งกลางอัลฟา",
+      "tooltip": "ความโปร่งใสที่หันหน้าเข้าหากล้อง."
+    },
+    "_AL_FresnelBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "ใช้พื้นผิว",
+      "tooltip": "สลับพื้นผิวหลัก."
+    },
+    "_MainTex": {
+      "label": "พื้นผิวหลัก",
+      "tooltip": "พื้นผิวของอัลเบโด."
+    },
+    "_MainTexProjMode": {
+      "label": "โหมดคํานวณพื้นผิวพื้นฐาน",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "โหมดเครื่องเล่นวิดีโอ",
+      "tooltip": "ปรับแต่งพื้นผิวเพื่อรับข้อมูลเครื่องเล่นวิดีโอ."
+    },
+    "_VideoIsAVPro": {
+      "label": "คือวิดีโอ AVPP",
+      "tooltip": "เลือกตัวเลือกนี้หากเครื่องเล่นวิดีโอใช้งาน AVP."
+    },
+    "_Rotation": {
+      "label": "หมุน",
+      "tooltip": "หมุนรอบใจกลางอวกาศยูวี."
+    },
+    "_ScrollX": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "ความเร็วภาพเคลื่อนไหวทางแนวนอน."
+    },
+    "_ScrollY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "ความเร็วภาพเคลื่อนไหวในแนวตั้ง."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "ใช้ม้วนกระดาษ Pink- Pong",
+      "tooltip": "สลับโหมดการเลื่อนไป การย้ายด้านหลังและทางยาวปิงปอง."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของการเคลื่อนไหวเลื่อนหลังและฐาน."
+    },
+    "_PingPongScrollRange": {
+      "label": "ช่วง",
+      "tooltip": "ระยะห่างของการเคลื่อนไหวเลื่อนหลังและฐาน."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "เปิดใช้การบิดเบือนภาพแบบ UV",
+      "tooltip": "ใช้เนื้อผ้าเพื่อปรับคลื่นความถี่ของยูวี สร้างผลกระทบเช่นหมอกความร้อน หรือคลื่นน้ํา."
+    },
+    "_UVDistortionMap": {
+      "label": "แถบชุดลวดลายStencils",
+      "tooltip": "พื้นผิวที่ใช้บิดเบือนยูวี ช่องสีแดงและเขียวควบคุมตรงข้าม X และ Y."
+    },
+    "_UVDistortionStrength": {
+      "label": "ความแรง",
+      "tooltip": "การบิดเบือนของแสงยูวีรุนแรงแค่ไหน."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "ความเร็ว X",
+      "tooltip": "ความเร็วทางแนวนอนของคลื่นบิดเบี้ยว."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "ความเร็ว Y",
+      "tooltip": "ความเร็วแนวตั้งของคลื่นบิดเบือน."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "เปิดใช้งานการเคลื่อนไหวของ Febook",
+      "tooltip": "การเคลื่อนไหวของพื้นผิวหลักโดยใช้ผังแป้นพิมพ์ การ ทํา เช่น นี้ จะ ทํา ให้ เนื้อ เยื่อ ส่วน ใหญ่ หด ตัว และ ชดเชย."
+    },
+    "_FlipbookMode": {
+      "label": "โหมด",
+      "tooltip": "โหมดการเล่นแบบแอนิเมชัน."
+    },
+    "_FlipbookColumns": {
+      "label": "คอลัมน์ (X)",
+      "tooltip": "จํานวนของคอลัมน์ (กรอบทางแนวนอน) ในจานสี."
+    },
+    "_FlipbookRows": {
+      "label": "แถว (Y)",
+      "tooltip": "จํานวนแถว (กรอบทางแนวตั้ง) ในจานสี."
+    },
+    "_FlipbookSpeed": {
+      "label": "ความเร็ว (FPS)",
+      "tooltip": "ความเร็วแอนิเมชันในเฟรมต่อวินาที."
+    },
+    "_FlipbookStartFrame": {
+      "label": "เริ่มเฟรมภาพ",
+      "tooltip": "กรอบเริ่มต้นของแอนิเมชัน อนุญาตให้สําหรับออฟเซ็ต."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "ใช้พื้นผิวรายละเอียด",
+      "tooltip": "การ ทํา เช่น นี้ ไม่ ใช่ เรื่อง ง่าย."
+    },
+    "_DetailTex": {
+      "label": "พื้นผิวรายละเอียด",
+      "tooltip": "พื้นผิวที่สองที่จะทับ."
+    },
+    "_DetailTexProjMode": {
+      "label": "โหมดการพิมพ์พื้นผิวรายละเอียด",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "โครงสร้างรายละเอียดมันกลมกลืนกันแค่ไหน."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "ใช้การไล่ระดับสี",
+      "tooltip": "ใช้พื้นผิวเพื่อควบคุม ส่วนหนึ่งของพื้นผิวที่ปล่อยแสงออกมา."
+    },
+    "_EmissionMaskTex": {
+      "label": "แปรงทาสี",
+      "tooltip": "พื้นผิวสําหรับควบคุมการปล่อยน้ํา (white= การปล่อยก๊าซเต็ม, สีดํา=ไม่มีการปล่อยน้ํา)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "โหมดโครงการของบริการ",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "เปิดใช้งานการส่งเสียงพึมพัมแบบพาราแลกซ์",
+      "tooltip": "ใช้แผนที่ความสูงเพื่อปรับค่าความลึกของภาพ."
+    },
+    "_HeightMap": {
+      "label": "แผนที่สูง (R)",
+      "tooltip": "เกล็ดสีเทาที่สีขาวสูงและสีดําต่ํา."
+    },
+    "_ParallaxStrength": {
+      "label": "ความแรง",
+      "tooltip": "ผลกระทบของพาราแลกซ์มันลึกแค่ไหน."
+    },
+    "_USE_POM_ON": {
+      "label": "เปิดการใช้งาน Parailax Oclation Maping",
+      "tooltip": "เปิดการใช้งานพาราแลกซ์หลายขั้น เพื่อเพิ่มความลึก สูงกว่าเท่านั้น."
+    },
+    "_POMSteps": {
+      "label": "ขั้นบันไดสูงสุด",
+      "tooltip": "จํานวนสูงสุดของขั้นตอนพาราแลกซ์."
+    },
+    "_POMMinSteps": {
+      "label": "ขั้นบันไดมิน",
+      "tooltip": "จํานวนขั้นการกระดอนน้อยที่สุด (ที่มุมแหลม)."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "เปิดใช้การสะท้อนสภาพแวดล้อม",
+      "tooltip": "ตัว อย่าง การ สํารวจ สะท้อน ภาพ เพื่อ เพิ่ม การ สะท้อน ของ สิ่ง แวด ล้อม แม้ แต่ ใน โหมด พื้น ฐาน หรือ โทน."
+    },
+    "_EnvReflectionStrength": {
+      "label": "ความ แข็ง แรง ของ การ สะท้อน",
+      "tooltip": "ความแข็งแกร่งของการสะท้อนของสิ่งแวดล้อม."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "สะท้อน ความ หยาบ คาย",
+      "tooltip": "ความชั่วร้ายของเงาสะท้อน."
+    },
+    "_USE_VAT_ON": {
+      "label": "เปิดการใช้พื้นผิวแบบเคลื่อนไหวของเวอร์เท็กซ์",
+      "tooltip": "แอปเปิ้ลอบแอนิเมชันของจุดยอด จากพื้นผิวแบบ VAT ใช้สําหรับผ้า, ของเหลว, หรือผลการทําลายล้าง."
+    },
+    "_VATPositionTex": {
+      "label": "พื้นผิวตําแหน่ง VAT",
+      "tooltip": "The VAT parts parts. แต่ละแถวเป็นกรอบ."
+    },
+    "_VATFrameCount": {
+      "label": "จํานวนเฟรม:",
+      "tooltip": "จํานวนเฟรมแอนิเมชันทั้งหมดที่อยู่ในเนื้อเรื่อง."
+    },
+    "_VATSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วการเล่นกลับของแอนิเมชันจุดยอด."
+    },
+    "_VATBoundsMin": {
+      "label": "เส้นพริ้วไหว",
+      "tooltip": "ขอบเขตต่ําสุดสําหรับตําแหน่ง remaping."
+    },
+    "_VATBoundsMax": {
+      "label": "เส้นพริ้วไหว",
+      "tooltip": "ขอบเขตสูงสุดสําหรับการย้ายตําแหน่ง."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "เปิดใช้การเปียก",
+      "tooltip": "จําลองพื้นผิวเปียก มีความมืดและผลกระทบคลื่นฝน."
+    },
+    "_WetnessStrength": {
+      "label": "ความ เข้ม ข้น",
+      "tooltip": "ความเข้มของเปียก."
+    },
+    "_WetnessSmoothness": {
+      "label": "ความหนา:",
+      "tooltip": "ความ เรียบ ง่าย ช่วย เพิ่ม พื้น ผิว ที่ เปียก (ความ คม ชัด ที่ ตรง ตรง สเปกตรัม)."
+    },
+    "_WetnessDarkening": {
+      "label": "ทําให้มืดลง",
+      "tooltip": "เมื่อเปียก ผิวจะหม่นลงแค่ไหน."
+    },
+    "_RainRippleMap": {
+      "label": "แผนที่ปกติ Ripple ปกติ",
+      "tooltip": "แผนที่ปกติที่ใช้สําหรับภาพเคลื่อนไหวของคลื่นฝน."
+    },
+    "_RainRippleScale": {
+      "label": "หมุน & 90",
+      "tooltip": "ขนาดของรูปแบบคลื่นฝน."
+    },
+    "_RainRippleSpeed": {
+      "label": "ความเร็วการหมุน",
+      "tooltip": "ความเร็วของแอนิเมชันคลื่นฝน."
+    },
+    "_USE_DECAL_ON": {
+      "label": "เปิดใช้งานการถอดรหัส",
+      "tooltip": "โอเวอร์ไลน์เป็นเนื้อเรื่องหลัก."
+    },
+    "_DecalTex": {
+      "label": "ความแหลม:",
+      "tooltip": "รอยร้าว ใช้ tipling/offet เพื่อตําแหน่งมัน."
+    },
+    "_DecalBlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "วิธี ผสม น้ํา จืด กับ สี พื้น."
+    },
+    "_DecalStrength": {
+      "label": "ความแรง",
+      "tooltip": "ความทึบแสง/ ความแข็งแรงของเส้นตาย."
+    },
+    "_DecalNormal": {
+      "label": "แผนที่ปกติ",
+      "tooltip": "แผนที่ปกติสําหรับดีแคล."
+    },
+    "_DecalNormalStrength": {
+      "label": "ความแรงปกติ",
+      "tooltip": "ความแข็งแกร่งของแผนที่ปกติ."
+    },
+    "_DecalMetallic": {
+      "label": "เมทัลลิก",
+      "tooltip": "ค่าโลหะสําหรับพื้นที่ดีเซล."
+    },
+    "_DecalSmoothness": {
+      "label": "ความนุ่มนวล",
+      "tooltip": "ค่าความนุ่มนวลสําหรับพื้นที่การลดชั้นเสียง."
+    },
+    "_DecalAffectsPBR": {
+      "label": "ผล กระทบ PBR",
+      "tooltip": "เปิดให้สามารถแก้ไขแบบปกติ, เมทัลลิก, และปรับความนุ่มนวลได้."
+    },
+    "_SurfaceStyle": {
+      "label": "รูปแบบพื้นผิว",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "ปรับความเข้มสีของภาพ",
+      "tooltip": "ความซับซ้อนของการเปลี่ยนสภาพจิต."
+    },
+    "_PsychedelicSpeed": {
+      "label": "ความเร็วต่ํา",
+      "tooltip": "ความเร็วที่สัญญาณรบกวนทางจิต ไหลไปทั่วพื้นผิว."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "พื้นที่พิกัด",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "เ ครื่องคิดเลข 3 มิติ",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "ย้ายข้อมูล",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "ค่า",
+      "tooltip": "ขนาดของรอยแตกภายในพื้นที่วัตถุ."
+    },
+    "_FractalAnimMode": {
+      "label": "เ ครื่องมือ",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "ความเร็วการเคลื่อนไหว",
+      "tooltip": "ความเร็วที่กระดูกเชิงกราน."
+    },
+    "_FractalPower": {
+      "label": "พลังมันเดลบูล",
+      "tooltip": "พารามิเตอร์พลังงานสําหรับแมนเดลบูล ลองทําแบบนี้ดู!"
+    },
+    "_FractalIter": {
+      "label": "การทําซ้ํา",
+      "tooltip": "จํานวนของตัวเลข ความสูงเป็นรายละเอียดมากขึ้น แต่ช้า."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "มุม (X, Y, Z)",
+      "tooltip": "มุมสําหรับคาลิโดสคอปติก."
+    },
+    "_FractalColorShift": {
+      "label": "ระดับความเข้มสี:",
+      "tooltip": "ความหนาของรอยร้าวที่เปลี่ยนไป จากความลึก."
+    },
+    "_FractalUseAutoShift": {
+      "label": "เ ปลี่ยนใช้",
+      "tooltip": "อย่างต่อเนื่องเลื่อนสีฐานฐานไปทีละน้อย."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "ความเร็วการกดปุ่มพิมพ์อัตโนมัติ",
+      "tooltip": "ความเร็วของการเปลี่ยนสีอัตโนมัติ."
+    },
+    "_FractalJuliaC": {
+      "label": "ค่าคงที่จูเลียซี",
+      "tooltip": "ค่าคงที่ C ของจูเลียเซต ควบคุมรูปร่างของรอยแตก."
+    },
+    "_FractalMandelboxScale": {
+      "label": "มุม:",
+      "tooltip": "มาตราฐานของกระดูกอ่อนผสม ลองแทนค่าระหว่าง 1.5 กับ 3.0 ดู."
+    },
+    "_AL_FractalBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "ทําการลดจุดรบกวนบนแผนที่",
+      "tooltip": "ขอบเขตเสียงรบกวนเพื่อควบคุมการบิดเบี้ยว."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ทัศนะ นั้น บิดเบือน มาก เพียง ไร."
+    },
+    "_UseScreenRefraction": {
+      "label": "การฝ่าฝืนจอภาพ",
+      "tooltip": "ปรับหน้าจอด้านหลังวัตถุ."
+    },
+    "_RefractionStrength": {
+      "label": "ความแรง",
+      "tooltip": "ความแข็งแกร่งของการเปลี่ยนแปลง."
+    },
+    "_RefractionIOR": {
+      "label": "ส่วนตัว",
+      "tooltip": "ดัชนี แห่ง การ ละเมิด กฎหมาย."
+    },
+    "_ChromaticAberration": {
+      "label": "การ แบ่ง ตัว แบบ เกลียว",
+      "tooltip": "จําลองการแยกสี สร้างขอบสีแดง/ น้ําเงิน."
+    },
+    "_GalaxyMap": {
+      "label": "แผนที่แกแล็กซี",
+      "tooltip": "พื้นผิวที่จะแสดงภายในวัตถุ."
+    },
+    "_GalaxyDepth": {
+      "label": "ความลึก",
+      "tooltip": "สร้างผลกระทบ 2 มิติ ทําให้เนื้อเรื่องดูมีความลึก."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "ความเร็วการหมุน",
+      "tooltip": "หมุนพื้นผิวกาแลคซี."
+    },
+    "_SkyboxMap": {
+      "label": "ลูกบาศก์กล่อง",
+      "tooltip": "ลูกบาศก์แมปที่จะแสดงภายในวัตถุ เหมือนประตูมิติ."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "ความเร็วการหมุน",
+      "tooltip": "หมุนของสกายบ็อกซ์รอบแกน Y."
+    },
+    "_TriplanarTex": {
+      "label": "พื้นผิวแบบ Tri- Planar",
+      "tooltip": "พื้นผิวที่จะนําเสนอไปยังแบบจําลองจากแกนสาม."
+    },
+    "_TriplanarScale": {
+      "label": "ค่า",
+      "tooltip": "ควบคุมขนาดของเนื้อเรื่อง."
+    },
+    "_TriplanarBlend": {
+      "label": "ความแหลม:",
+      "tooltip": "ควบคุมความคมชัดของความกลมกลืน ระหว่างสามพื้นผิว."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "เปิดใช้งานแผนที่ปกติของทริปลันดาร์",
+      "tooltip": "โปรเจกต์แผนที่ทั่วแกน 3."
+    },
+    "_TriplanarNormalMap": {
+      "label": "แผนที่ปกติของทริปลันดาร์",
+      "tooltip": "แผนที่ปกติวางบนแกน 3."
+    },
+    "_TriplanarNormalScale": {
+      "label": "ความแรงปกติ",
+      "tooltip": "ความแข็งแกร่งของแผนที่ปกติ."
+    },
+    "_MatCapTex": {
+      "label": "พื้นผิว MatCap",
+      "tooltip": "เนื้อ เยื่อ ที่ จับ ได้ ซึ่ง หมาย ถึง แสง และ การ สะท้อน ของ วัตถุ."
+    },
+    "_MatCapIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ควบคุมความเจิดจรัสของสัญญาณแมทแคป."
+    },
+    "_MatCapBlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "ควบคุมว่าเนื้อผ้าแมทแคปผสมกับสีฐานได้อย่างไร การแทนที่มันทั้งหมด."
+    },
+    "_IridescenceScale": {
+      "label": "ปรับขนาดสี",
+      "tooltip": "ควบคุมความถี่ของการเปลี่ยนสีบนพื้นผิว."
+    },
+    "_IridescenceStrength": {
+      "label": "ความแรง",
+      "tooltip": "ควบคุมความรุนแรงของผลกระทบความเฉื่อยชา."
+    },
+    "_GlitterBlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "ควบคุม วิธี ผสม แสง สี กับ ผิว. การบวกอาจเกินเหตุ เลเยอร์% 1 คุณ คิด อย่าง ไร."
+    },
+    "_GlitterColor": {
+      "label": "สี",
+      "tooltip": "สีของประกายไฟ."
+    },
+    "_GlitterColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "ค่า",
+      "tooltip": "ควบคุมขนาดของสัญญาณรบกวน ค่าที่สูงกว่า หมายถึงแสงเล็กๆ."
+    },
+    "_GlitterSparsity": {
+      "label": "ความจุ",
+      "tooltip": "ควบคุมจํานวนแสงที่ปรากฏ ค่าที่สูงกว่า หมายถึง แสงประกายเบาลง."
+    },
+    "_GlitterSpaceMode": {
+      "label": "พื้นที่พิกัด",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "ใช้การเคลื่อนไหวของการเลื่อน",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "ความเร็วการไล่ระดับสี",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "เปิดการใช้งาน Rim Glow",
+      "tooltip": "เพิ่มแสงไปยังขอบของวัตถุตามมุมที่มอง."
+    },
+    "_RimColor": {
+      "label": "สี Rim",
+      "tooltip": "สีของขอบ Fresnel แสงขอบ."
+    },
+    "_RimColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "ใช้การไล่ระดับสี",
+      "tooltip": "ใช้พื้นผิวแบบเกรเดียนเพื่อสีขอบของแสง แทนสีทึบ."
+    },
+    "_RimGradient": {
+      "label": "ไล่ระดับสี",
+      "tooltip": "ทางลาดสีสําหรับขอบแสง เกรเดียนถูกโยงจากศูนย์กลาง (ซ้าย) ไปยังขอบ (ขวา)."
+    },
+    "_RimPower": {
+      "label": "พลังริม",
+      "tooltip": "ความคมชัดของขอบแสง."
+    },
+    "_RimIntensity": {
+      "label": "เส้นทแยง",
+      "tooltip": "ความสว่างที่เพิ่มขึ้นสําหรับขอบเรืองแสง."
+    },
+    "_AL_RimBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "เปิดใช้งานลูกเล่นการขัดแย้ง",
+      "tooltip": "หรี่แสงไปยังสีที่วัตถุอยู่ใกล้หรือตัดกับวัตถุอื่น ๆ ในที่เกิดเหตุ."
+    },
+    "_IntersectionMode": {
+      "label": "โหมดอินเตอร์เซก",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "สี",
+      "tooltip": "สีของผลตัด."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "ระยะห่าง",
+      "tooltip": "ระยะทางมากกว่าที่จางหายไป."
+    },
+    "_UsePulse": {
+      "label": "เปิดใช้งานชีพจร",
+      "tooltip": "เพิ่มความกระฉับกระเฉงเข้าไปในแรงปล่อย."
+    },
+    "_PulseSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ชีพจรมันเต้นเร็วขนาดไหน."
+    },
+    "_PulseIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ชีพจรมันเต้นแรง."
+    },
+    "_AL_PulseBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "เปิดใช้กรอบ",
+      "tooltip": "เพิ่มเส้นทึบรอบวัตถุ นี้เพิ่มการเรียกวาดที่สองเพื่อวัตถุ."
+    },
+    "_OutlineColor": {
+      "label": "สีเส้นการลาก",
+      "tooltip": "สีฐานของเส้นเมช."
+    },
+    "_OutlineColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "พื้นผิวแบบกรอบ",
+      "tooltip": "ขอบเขตสี."
+    },
+    "_OutlineWorldSpace": {
+      "label": "ขอบเขตสี",
+      "tooltip": "ขอบเขตสี"
+    },
+    "_OutlineSpace": {
+      "label": "ขอบเขตสี",
+      "tooltip": "พื้นที่พิกัดสําหรับค่อย ๆ ลดเสียง/ เพิ่มเสียง (ช่องว่างของวัตถุLocal, พื้นที่หน้าจอ, ระยะของกล้อง)."
+    },
+    "_OutlineWidth": {
+      "label": "แปรงทาสี",
+      "tooltip": "ความหนาของเส้นกลับหัว."
+    },
+    "_AL_OutlineBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "ใช้สีเวอร์เท็กซ์สําหรับความกว้าง",
+      "tooltip": "ปรับ ความ กว้าง ของ ขอบ โดย ใช้ สี จุดยอด ของ แบบ จําลอง (ช่อง สี แดง)."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "ใช้ผังแป้นพิมพ์",
+      "tooltip": "ใช้พื้นผิวแบบระดับสีเทา เพื่อปรับความหนาของเส้นรอบต่อพิกเซล."
+    },
+    "_OutlineWidthMap": {
+      "label": "แปรงทาสี",
+      "tooltip": "หน้ากากไล่สีเทาสําหรับความกว้างกรอบ (ขาว=เต็ม, สีดํา=ศูนย์)."
+    },
+    "_UseRippleEffect": {
+      "label": "เปิดใช้งานลูกเล่น Ripple",
+      "tooltip": "สร้างผลกระทบจากคลื่นคลื่น ที่เกิดจากพิกัดยูวี."
+    },
+    "_RippleCenterUV": {
+      "label": "ศูนย์ (UV)",
+      "tooltip": "ศูนย์กลางของคลื่นใน UV space (X,Y)."
+    },
+    "_RippleProgress": {
+      "label": "ความคืบหน้า",
+      "tooltip": "ความก้าวหน้าด้วยตนเองของแอนิเมชันคลื่น ซึ่งควบคุมขั้นตอน."
+    },
+    "_RippleCount": {
+      "label": "จํานวนรอยหยัก",
+      "tooltip": "จํานวนของคลื่นลูกคลื่นลูกใหญ่ ที่ผ่าน 1 หน่วยยูวี."
+    },
+    "_RippleMaxRadius": {
+      "label": "ความแหลม:",
+      "tooltip": "ระยะทางจากศูนย์ที่คลื่นจะจางหายไปอย่างสมบูรณ์."
+    },
+    "_RippleWidth": {
+      "label": "ความกว้าง",
+      "tooltip": "ความกว้างของวงแหวนคลื่น."
+    },
+    "_RippleColor": {
+      "label": "สี",
+      "tooltip": "สีของระลอกคลื่น."
+    },
+    "_RippleColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ตัว อย่าง นี้ ทํา ให้ ต้น แบบ ไม่ ตรง กับ สภาพ ปกติ มาก ขนาด ไหน."
+    },
+    "_RippleStrength": {
+      "label": "ความแรง",
+      "tooltip": "ความสว่างของคลื่น."
+    },
+    "_AnimateRipple": {
+      "label": "เส้นพริ้วไหว",
+      "tooltip": "จัดเรียงภาพเคลื่อนไหวของคลื่น."
+    },
+    "_RippleAnimSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของแอนิเมชัน."
+    },
+    "_RippleAnimMode": {
+      "label": "ใช้ปิงปอง",
+      "tooltip": "หากเปิดใช้ แอนิเมชันจะเล่นไปข้างหน้าและย้อนกลับ."
+    },
+    "_AL_RippleBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "เปิดใช้การพิมพ์สีพื้นฐาน",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "โหมดเคลื่อนไหว",
+      "tooltip": "ตั้งค่าวิธีการทั่วไปสําหรับภาพเคลื่อนไหวของสี."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "เปิดใช้การพิมพ์สีทั่วไป",
+      "tooltip": "หากเปิดใช้ จะมีการเปลี่ยนค่าแถบเลื่อนสีอัตโนมัติ (> 0) ให้เป็นแบบต่อเนื่อง เมื่อปิดการใช้แถบเลื่อนการเปลี่ยนสี จะยอมรับค่าแบบคงที่หรือแบบเคลื่อนไหว."
+    },
+    "_AnimatedGradient": {
+      "label": "ไล่ระดับสี",
+      "tooltip": "พื้นผิวแบบเกรเดียน ที่ทุกสีแบบเคลื่อนไหวจะสุ่มตัวอย่าง."
+    },
+    "_GradientAnimPingPong": {
+      "label": "ภาพเคลื่อนไหวของปิงปอง",
+      "tooltip": "ทําให้เกรเดียนกลับด้าน แทนการวนกลับ."
+    },
+    "_GradientAnimVertical": {
+      "label": "ใช้การเลื่อนทางแนวตั้ง",
+      "tooltip": "เลื่อนเกรเดียนจากบนลงล่างแทนจากซ้ายไปขวา."
+    },
+    "_ColorShiftSpeed": {
+      "label": "ความเร็วการเคลื่อนไหว",
+      "tooltip": "ควบคุมความเร็วของสีเคลื่อนไหวทั้งหมด สําหรับ ไฮน์ ฟลาย มัน เป็น ความ เร็ว ใน การ หมุน เวียน. เพื่อ จะ เป็น แบบ แทสเมเนีย มัน คือ ความ เร็ว ของ ม้วน หนังสือ."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "การสลายตัว",
+      "tooltip": "พิมพ์สีสุดท้ายไปยังระดับสีเทา (0=สีฟล, 1 =เกรย์สเกล)."
+    },
+    "_UseInvert": {
+      "label": "กลับค่าสี",
+      "tooltip": "กลับค่าสีสุดท้ายของเงา."
+    },
+    "_ColorTint": {
+      "label": "ขอบเขตสีสุดท้าย",
+      "tooltip": "ทํา สี แทน ผล ขั้น สุด ท้าย ซึ่ง เป็น ประโยชน์ ต่อ การ ย้อม หรือ การ ให้ คะแนน."
+    },
+    "_ColorTint_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "ความสว่าง",
+      "tooltip": "ปรับความสว่างโดยรวมของสีสุดท้าย."
+    },
+    "_Contrast": {
+      "label": "ความเปรียบต่าง",
+      "tooltip": "ปรับ ความ แตก ต่าง โดย รวม ของ สี สุด ท้าย."
+    },
+    "_Gamma": {
+      "label": "แกมมา",
+      "tooltip": "ปรับค่าแกมม่าให้เข้ากับสีสุดท้าย."
+    },
+    "_UsePixelation": {
+      "label": "เปิดใช้การไล่ระดับสี",
+      "tooltip": "สร้างผลกระทบต่ํา."
+    },
+    "_PixelationAmount": {
+      "label": "การไล่ระดับสี",
+      "tooltip": "จํานวนของ 'พิกเซล' อยู่เหนือพื้นผิว (ค่าสูงน้อยกว่าพิกเซล)."
+    },
+    "_UsePosterize": {
+      "label": "เปิดใช้งานการไปรษณีย์",
+      "tooltip": "ลดจํานวนของสี โดยทําการลดขนาดสีกลับภาพ/ รูปหลายเหลี่ยม."
+    },
+    "_PosterizeLevels": {
+      "label": "ระดับ",
+      "tooltip": "จํานวนตัวอักษรที่จะแทนที่."
+    },
+    "_UseDistanceFade": {
+      "label": "เปิดใช้การหรี่เสียง",
+      "tooltip": "เมื่อ กล้อง ถ่าย รูป อยู่ ไกล ๆ ก็ ค่อย ๆ หรี่ แสง ลง."
+    },
+    "_FadeDistance": {
+      "label": "ระยะห่างเริ่มต้น",
+      "tooltip": "ระยะ ห่าง จาก กล้อง ซึ่ง เริ่ม ค่อย ๆ จาง หาย ไป."
+    },
+    "_FadeRange": {
+      "label": "ช่วง",
+      "tooltip": "เร็วแค่ไหนที่วัตถุจะจางหายไปจากระยะไกล."
+    },
+    "_UseDepthFade": {
+      "label": "เปิดการใช้งานการค่อย ๆ ลดความลึกลง (หน่วยเป็นพิกเซล)",
+      "tooltip": "ตัดรูปหลายเหลี่ยมนุ่มกับเรขาคณิตของฉาก สําหรับพื้นผิวโปร่งใสและเติมความเข้ม."
+    },
+    "_DepthFadeDistance": {
+      "label": "ระยะห่างการหรี่เสียง",
+      "tooltip": "ระยะทางมากกว่าที่เรขาคณิตจะจางหายไป เมื่อตัดพื้นผิวของโอปาค."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "เปิดใช้การค่อย ๆ หรี่เสียง",
+      "tooltip": "ผล กระทบ จาก การ ผ่าตัด อย่าง หนัก (Glitter, Fractals,กริด, จิตเวช) เกิน ระยะ ที่ กําหนด ไว้ เพื่อ ปรับ ปรุง ประสิทธิภาพ ของ VR."
+    },
+    "_EffectFadeStart": {
+      "label": "หมุน & 90",
+      "tooltip": "ระยะทางในเมตรที่ผลกระทบเริ่มจางหายไป."
+    },
+    "_EffectFadeEnd": {
+      "label": "ระยะการหรี่เสียง",
+      "tooltip": "ระยะทางในเมตรที่ส่งผลกระทบอย่างสมบูรณ์."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "เปิดใช้งานการยุบตัวของเวอร์เท็กซ์",
+      "tooltip": "หดแบบจําลองเข้าไปในจุดศูนย์กลาง."
+    },
+    "_CollapseEnableAnim": {
+      "label": "เปิดใช้งานการยุบ (in)",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "ค่า",
+      "tooltip": "ความก้าวหน้าของผลกระทบการยุบตัว (0 = Normal, 1 = Col Planguaged)."
+    },
+    "_AnimateCollapse": {
+      "label": "การยุบตัวแบบเคลื่อนไหว",
+      "tooltip": "กําหนดปริมาณการยุบตัวให้โดยอัตโนมัติ."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "ใช้การจับเวลาขั้นสูง",
+      "tooltip": "ใช้การจับเวลาเองสําหรับการเคลื่อนไหวการยุบแทนการวนซ้ําหรือวนธรรมดา."
+    },
+    "_CollapseOnDuration": {
+      "label": "ช่วงเวลาการยุบ",
+      "tooltip": "เวลาสําหรับแบบจําลองที่จะล่มสลาย."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "ระยะเวลาที่สั้นลง",
+      "tooltip": "เวลาที่โมเดลยังคงทรุดตัวลง."
+    },
+    "_CollapseOffDuration": {
+      "label": "ขยายเวลา",
+      "tooltip": "ต้องใช้เวลาในการขยายร่างกลับไปเป็นปกติ."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "ความยาวปกติ",
+      "tooltip": "เวลาที่โมเดลยังอยู่ในสภาวะปกติ ก่อนที่จะวนซ้ํา."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของแอนิเมชัน."
+    },
+    "_CollapseAnimMin": {
+      "label": "แอนิเมชัน มิน",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "การเคลื่อนไหวสูงสุด",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "ใช้ปิงปอง",
+      "tooltip": "หากเปิดใช้ แอนิเมชันจะเล่นไปข้างหน้าและย้อนกลับ ถ้าปิดการใช้งาน มันจะวนกลับมา."
+    },
+    "_AL_CollapseBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "เปิดใช้การคลิกเมาส์ของกริช",
+      "tooltip": "ทําให้เกิดผลกระทบที่ริบหรี่ต่อวัตถุทั้งหมด."
+    },
+    "_FlickerMode": {
+      "label": "โหมด Flicker",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "ความเร็วของการกระพริบ."
+    },
+    "_FlickerIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความแข็งแกร่งของพริบตา (มันมืดแค่ไหน)."
+    },
+    "_AL_FlickerBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "กลับหน้า",
+      "tooltip": "กลับทิศทางการเลื่อนของเส้นสแกนผิดพลาด."
+    },
+    "_FlickerBlockSize": {
+      "label": "ขนาดบล็อค",
+      "tooltip": "ขนาดของบล็อกที่มีปัญหา."
+    },
+    "_FlickerDirection": {
+      "label": "ทิศทาง",
+      "tooltip": "ทิศทางของจุดบกพร่อง."
+    },
+    "_FlickerDensity": {
+      "label": "ความหนาแน่น",
+      "tooltip": "จํานวนของข้อผิดพลาด สแกนไลน์."
+    },
+    "_FlickerLineThickness": {
+      "label": "ความหนา:",
+      "tooltip": "ความหนาของเส้นสแกนบกพร่อง."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "เปิดใช้งานไวยากรณ์โปร่งใส",
+      "tooltip": "ส่งผลให้แสงริบหรี่ส่งผลกระทบต่อความโปร่งใส."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "ความแรง",
+      "tooltip": "การกระพริบส่งผลกระทบต่อความโปร่งใสแค่ไหน."
+    },
+    "_UseScanlines": {
+      "label": "เปิดใช้การค้นหา",
+      "tooltip": "จําลองรูปลักษณ์ของจอ CRT."
+    },
+    "_ScanlineColor": {
+      "label": "สี",
+      "tooltip": "สีและความโปร่งใสของเส้นสแกน."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "ความหนาแน่น",
+      "tooltip": "มีสแกนไลน์กี่อันบนหน้าจอ."
+    },
+    "_ScanlineSpeed": {
+      "label": "ความเร็ว",
+      "tooltip": "สแกนไลน์ได้เร็วแค่ไหน."
+    },
+    "_ScanlineThickness": {
+      "label": "ความหนา:",
+      "tooltip": "ความหนาของเส้นสแกน."
+    },
+    "_ScanlineDirection": {
+      "label": "ทิศทาง",
+      "tooltip": "ทิศทางของสแกนไลน์ (0=Vertical, 1 = Horiazonal)."
+    },
+    "_AL_ScanlineBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "เปิดใช้งาน สเปกตรัมเสียง",
+      "tooltip": "แสดงผลเป็นสเปกตรัมสเปกตรัมแบบเรียลไทม์ ขับเคลื่อนโดย AudioLink."
+    },
+    "_AudioSpectrumMode": {
+      "label": "โหมด Spectum",
+      "tooltip": "รูปแบบภาพสําหรับสเปกตรัม."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "ตัวนับแท่ง",
+      "tooltip": "จํานวนแท่งความถี่."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "ช่องแถบ",
+      "tooltip": "ช่องระหว่างแถบ (0 = ไม่มีช่องว่าง)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "เพิ่มจุด",
+      "tooltip": "การขยายสัญญาณเสียง."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "ความหนาด้าน",
+      "tooltip": "ขอบความนุ่มของแท่งลม."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "ลบทั้งเธรด",
+      "tooltip": "ระดับความโปร่งแสงของพื้นที่ที่เต็มใต้เส้นโค้ง."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "ค่า",
+      "tooltip": "ใช้การปรับขนาดความถี่ของลอการิทึม เพื่อปรับสมดุลของเบส/เทรเบิล."
+    },
+    "_AudioSpectrumColor": {
+      "label": "สี",
+      "tooltip": "สีหลัก (หรือสีความถี่ต่ํา)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "เพิ่มสี",
+      "tooltip": "สีความถี่สูงสําหรับโหมดเกรเดียน."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "โหมดสี",
+      "tooltip": "สเปกตรัมสียังไง."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "ความเร็วความเข้มสี",
+      "tooltip": "ความเร็วของการเคลื่อนไหวการเลื่อนสี/รุ้ง."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "ขอบเขตสี",
+      "tooltip": "สเปซพิกัดสําหรับภาพ."
+    },
+    "_AudioSpectrumScale": {
+      "label": "ค่า",
+      "tooltip": "สเกลของตัวสร้างภาพ."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "ออฟเซต:",
+      "tooltip": "พิกัดออฟเซ็ต."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "หมุน",
+      "tooltip": "หมุนเป็นองศา."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "สเปกตรัมผสมกับพื้นผิว."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "กระจก",
+      "tooltip": "ทํากระจกเงาสเปกตรัมทางแนวนอน."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "รัศมีภายใน",
+      "tooltip": "รัศมีภายในของการแสดงผลรัศมี."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "ความทึบแสง",
+      "tooltip": "ขอบอุดตันต่อต้านการเลีย และขอบนุ่มของแท่งหรือเส้นโค้ง."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความคมชัดทั้งหมด."
+    },
+    "_AudioSmoothingMode": {
+      "label": "โหมดปรับความนุ่มนวลของเสียง",
+      "tooltip": "วิธีการเรียบเรียบเรียบเรียบของสเปกตรัม/คลื่นความถี่: Raw (None), Sport Bleand (2-เฟรม EMA), หรือ Temporal Broff (ประวัติศาสตร์ CRT)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "การ ทํา ความ ยืดหยุ่น แบบ สเปกตรัม",
+      "tooltip": "ความ แข็ง แรง ของ การ ทํา ให้ ความ ยืดหยุ่น ของ สเปกตรัม ถูก นํา มา ใช้ ได้ กับ สเปกตรัม (Frame Blend / poporal Broffs)."
+    },
+    "_UseAudioWaveform": {
+      "label": "เปิดใช้การขยายเสียง",
+      "tooltip": "แสดงผลเป็นภาพแบบคลื่นความถี่/เวลาจริง โดยถูกขับเคลื่อนโดยเอกซ์โทรลิง."
+    },
+    "_AudioWaveformMode": {
+      "label": "โหมดปรับคลื่น",
+      "tooltip": "รูปแบบภาพสําหรับกราฟ."
+    },
+    "_AudioWaveformChannel": {
+      "label": "ช่อง",
+      "tooltip": "ซึ่งช่องเสียงที่จะมองภาพ."
+    },
+    "_AudioWaveformCycles": {
+      "label": "วนรอบ",
+      "tooltip": "จํานวนของวงจรคลื่น."
+    },
+    "_AudioWaveformGain": {
+      "label": "เพิ่มจุด",
+      "tooltip": "การขยายสัญญาณเสียง."
+    },
+    "_AudioWaveformThickness": {
+      "label": "ความหนาเส้น",
+      "tooltip": "ความหนาของเส้นติดตาม."
+    },
+    "_AudioWaveformGlow": {
+      "label": "หมุน & 90",
+      "tooltip": "ความหนาแน่นของดอกไม้นีออน."
+    },
+    "_AudioWaveformColor": {
+      "label": "สี",
+      "tooltip": "สีหลักของคลื่น."
+    },
+    "_AudioWaveformColor2": {
+      "label": "สี 2",
+      "tooltip": "สีที่สอง (แสงจ้าหรือสีเรืองแสง)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "โหมดสี",
+      "tooltip": "วิธีที่คลื่นจะสี."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "ความเร็วความเข้มสี",
+      "tooltip": "ความเร็วของการเคลื่อนไหวการเลื่อนสี/รุ้ง."
+    },
+    "_AudioWaveformSpace": {
+      "label": "ขอบเขตสี",
+      "tooltip": "สเปซพิกัดสําหรับภาพ."
+    },
+    "_AudioWaveformScale": {
+      "label": "ค่า",
+      "tooltip": "สเกลของตัวสร้างภาพ."
+    },
+    "_AudioWaveformOffset": {
+      "label": "ออฟเซต:",
+      "tooltip": "พิกัดออฟเซ็ต."
+    },
+    "_AudioWaveformRotation": {
+      "label": "หมุน",
+      "tooltip": "หมุนเป็นองศา."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "วิธีที่คลื่นหลอมรวมเข้ากับพื้นผิว."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "รัศมีโพลาร์",
+      "tooltip": "รัศมีฐานของวงแหวนขั้ว."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "ความ แข็ง แรง ของ การ ขาด แคลน",
+      "tooltip": "ความแข็งแกร่งของจุดยอดที่เคลื่อนไปตามปกติ."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "ความทึบแสง",
+      "tooltip": "สปาตาล ต่อต้านการเลีย และหลอดเลือดสมองอ่อนนุ่ม."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความคมชัดทั้งหมด."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "การเรียบเรียงแบบคลื่น",
+      "tooltip": "ความ แข็ง แรง ของ การ ทํา ให้ เรียบ เนียน ใน ช่วง เวลา อัน เหมาะ ถูก นํา มา ใช้ กับ แผ่น ดิสก์ (โหมด การ บิน แบบ พอ ดี)."
+    },
+    "_FRSmoothedAudio": {
+      "label": "แผ่นเสียงเรียบ",
+      "tooltip": "พื้นผิวแบบ Telegraphy (fore Rat AudioSmotheingCRT) กําหนดเอง ถือเสียงแบบ smothetic ต้องการใช้โหมด Temporal Buffers."
+    },
+    "_UseInterlace": {
+      "label": "เปิดการใช้อินเทอร์ไลน์",
+      "tooltip": "ทําให้หน้าจอมืดทุกตัว เพื่อจําลองการแสดงผลแบบทับกัน."
+    },
+    "_InterlaceIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "สายใยมืดแค่ไหน."
+    },
+    "_UseClippingMask": {
+      "label": "เปิดใช้งานการล้างข้อมูล",
+      "tooltip": "ใช้ เนื้อ เยื่อ เพื่อ สับ (สร้าง ส่วน ที่ ไม่ ปรากฏ แก่ ตา) ของ เนื้อ เรื่อง. นี่เป็นคลิปยาก ไม่ใช่ความโปร่งใส."
+    },
+    "_ClippingMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "เนื้อผ้าที่ใช้ตัด ช่องที่เลือกไว้ จะใช้กําหนดค่าตา (สีดํา = ตัด)."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "ความเร็วการไล่ระดับสี X",
+      "tooltip": "เลื่อนพื้นผิวหน้ากากทางแนวนอน."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "ความเร็วการไล่ระดับสี",
+      "tooltip": "เลื่อนพื้นผิวของหน้ากากทางแนวตั้ง."
+    },
+    "_ClippingMaskChannel": {
+      "label": "ช่อง",
+      "tooltip": "ช่องสีของหน้ากากที่จะใช้สําหรับการตัดส่วนภาพ."
+    },
+    "_InvertClippingMask": {
+      "label": "กลับค่าสี",
+      "tooltip": "กลับค่าลูกเล่นของสี."
+    },
+    "_UseNoise": {
+      "label": "เปิดการใช้งานจุดรบกวน/ จุดรบกวน",
+      "tooltip": "เพิ่มส่วนรบกวนรบกวน."
+    },
+    "_NoiseIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความแข็งแกร่งของเสียงรบกวน."
+    },
+    "_NoiseColor": {
+      "label": "สี",
+      "tooltip": "สีของอนุภาคเสียง."
+    },
+    "_NoiseColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "ความเร็วการเคลื่อนไหว",
+      "tooltip": "'เฟรมต่อวินาที' ของภาพเคลื่อนไหวรบกวน."
+    },
+    "_Cull": {
+      "label": "การจัดการ",
+      "tooltip": "โหมดการแยกรูปหลายเหลี่ยม (Off, Font, Back)."
+    },
+    "_CullShadow": {
+      "label": "โหมดตลับหมึก",
+      "tooltip": "โหมดการแยกรูปหลายเหลี่ยม ใช้สําหรับการไล่เงา."
+    },
+    "_ZTest": {
+      "label": "& ขาว",
+      "tooltip": "ควบคุมการทํางานการทดสอบความลึก."
+    },
+    "_ColorWriteMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "ควบคุมช่องสีที่จะใช้เขียนไปยังจอภาพ."
+    },
+    "_QueueOffset": {
+      "label": "ปุ่มพิมพ์ลัดในคิว",
+      "tooltip": "ปรับเทียบข้อมูลคิวแปลงตามโหมดการแสดงผล."
+    },
+    "_SrcBlend": {
+      "label": "โหมดลินซ์ของ SRK",
+      "tooltip": "โหมดการผสมแหล่งสําหรับความโปร่งแสง."
+    },
+    "_DstBlend": {
+      "label": "โหมด DstBlind",
+      "tooltip": "โหมดผสมปลายทางสําหรับความโปร่งแสง."
+    },
+    "_Stencil": {
+      "label": "Stencil Ref",
+      "tooltip": "ค่าของสเตนซิล."
+    },
+    "_StencilReadMask": {
+      "label": "มาสก์ที่อ่านแล้ว",
+      "tooltip": "สเตนซิลอ่านหน้ากาก."
+    },
+    "_StencilWriteMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "สเตนซิลเขียนหน้ากาก."
+    },
+    "_StencilComp": {
+      "label": "การเปรียบเทียบ",
+      "tooltip": "การเปรียบเทียบของสเตนซิล."
+    },
+    "_StencilPass": {
+      "label": "ผ่าน",
+      "tooltip": "พาสสเตซิล."
+    },
+    "_StencilFail": {
+      "label": "ล้มเหลว",
+      "tooltip": "สเตนซิลล้มเหลว."
+    },
+    "_StencilZFail": {
+      "label": "แปรงทาสี",
+      "tooltip": "Stencil zfail ปฏิบัติการ."
+    },
+    "_NormalMapUVSet": {
+      "label": "ตั้งค่า UV ปกติ",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับแผนที่ปกติ."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "รายละเอียดของ UV ปกติ",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับรายละเอียดแผนที่ปกติ."
+    },
+    "_DetailTexUVSet": {
+      "label": "ตั้งค่ารายการย่อย (UV)",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับรายละเอียด."
+    },
+    "_DecalTexUVSet": {
+      "label": "ตั้งค่า UV แบบดีเซล",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับตัวถอดรหัส."
+    },
+    "_DissolveMapUVSet": {
+      "label": "ปิดการใช้งาน UV เซต",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับแผนที่ละลาย."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "ตั้งค่าเครื่องขับไล่อากาศ",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับหน้ากากพ่น."
+    },
+    "_OutlineTex": {
+      "label": "พื้นผิวกรอบ",
+      "tooltip": "พื้นผิวถูกโยงไปยังเรขาคณิต."
+    },
+    "_OutlineTexUVSet": {
+      "label": "ตั้งค่าแบบ Regular Tex UV",
+      "tooltip": "ช่องสัญญาณ UV สําหรับพื้นผิว."
+    },
+    "_OutlineTexScrollX": {
+      "label": "แปรงทาสี",
+      "tooltip": "ความเร็วของเลื่อน X สําหรับลายเส้น."
+    },
+    "_OutlineTexScrollY": {
+      "label": "แปรงทาสี",
+      "tooltip": "ความไวของเลื่อน Y สําหรับลายเส้น."
+    },
+    "_UseOutlineGradient": {
+      "label": "เปิดใช้การไล่ระดับสี",
+      "tooltip": "กําหนดค่าเกรเดียนบน/ล่างแนวตั้ง."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "สีบน",
+      "tooltip": "สีบนของค่าเกรเดียน."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "สีล่าง",
+      "tooltip": "สีล่างของค่าเกรเดียน."
+    },
+    "_RimMode": {
+      "label": "โหมด Rim",
+      "tooltip": "ขอบ ด้าน นอก (รัศมี ตรง ขอบ) หรือ ขอบ ด้าน ใน (รัศมี ตรง กลาง)."
+    },
+    "_RimDepthMode": {
+      "label": "โหมดเส้นโค้ง",
+      "tooltip": "ใช้ความลึกภาพแทนการดูมุมสําหรับแสงขอบ."
+    },
+    "_RimDepthWidth": {
+      "label": "ความลึกสูงสุด",
+      "tooltip": "ความกว้างของขอบด้านลึก."
+    },
+    "_GridTilingX": {
+      "label": "เส้นกริด X",
+      "tooltip": "ใช้เส้นกริดแบบเส้นทางแนวนอน."
+    },
+    "_GridTilingY": {
+      "label": "เส้นพริ้วไหว",
+      "tooltip": "แนวตั้งของเส้นตาราง."
+    },
+    "_DecalRotation": {
+      "label": "หมุน",
+      "tooltip": "มุมการหมุน (0-360 องศา) สําหรับค่าองศา."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "เปิดใช้งาน scull 2",
+      "tooltip": "โอเวอร์ไลน์มีเนื้อที่ 2."
+    },
+    "_Decal2Tex": {
+      "label": "ตลับหมึก 2",
+      "tooltip": "ส่วนที่ 2."
+    },
+    "_Decal2BlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "2 กลมกลืนกับสีพื้นฐาน."
+    },
+    "_Decal2Strength": {
+      "label": "ความแรง",
+      "tooltip": "ความทึบแสง/ ความเข้มของทศนิยม 2."
+    },
+    "_Decal2Normal": {
+      "label": "แผนที่ปกติ",
+      "tooltip": "แผนที่ ปกติ สําหรับ ข้อ 2."
+    },
+    "_Decal2NormalStrength": {
+      "label": "ความแรงปกติ",
+      "tooltip": "ความแข็งแกร่งของข้อ 2 แผนที่ปกติ."
+    },
+    "_Decal2Metallic": {
+      "label": "เมทัลลิก",
+      "tooltip": "ค่าโลหะสําหรับพื้นที่ Decal 2."
+    },
+    "_Decal2Smoothness": {
+      "label": "ความนุ่มนวล",
+      "tooltip": "ค่าความนุ่มนวลสําหรับพื้นที่ทศนิยม 2 หน่วย."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "ผล กระทบ PBR",
+      "tooltip": "เปิดให้สามารถแก้ไขแบบปกติ, เมทัลลิก, และปรับความนุ่มนวลได้."
+    },
+    "_Decal2TexUVSet": {
+      "label": "ถอดรหัส 2 UV ชุด",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับ Decal 2."
+    },
+    "_Decal2Rotation": {
+      "label": "หมุน",
+      "tooltip": "มุมหมุน (0-360 องศา) สําหรับ Decal 2."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "เปิดใช้งานการถอดรหัส 3",
+      "tooltip": "โอเวอร์ไลน์มีลายเส้น."
+    },
+    "_Decal3Tex": {
+      "label": "พื้นผิว (เท็กเจอร์ 3 )",
+      "tooltip": "ส่วนที่ 3."
+    },
+    "_Decal3BlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "วิธี ที่ ซิล 3 กลมกลืน กับ สี พื้น."
+    },
+    "_Decal3Strength": {
+      "label": "ความแรง",
+      "tooltip": "ความทึบแสง/ ความแข็งแรงของข้อ 3."
+    },
+    "_Decal3Normal": {
+      "label": "แผนที่ปกติ",
+      "tooltip": "แผนที่ ปกติ สําหรับ ข้อ 3."
+    },
+    "_Decal3NormalStrength": {
+      "label": "ความแรงปกติ",
+      "tooltip": "ความแข็งแกร่งของ 3 แผนที่ปกติ."
+    },
+    "_Decal3Metallic": {
+      "label": "เมทัลลิก",
+      "tooltip": "ค่าโลหะในขอบเขต 3 พื้นที่."
+    },
+    "_Decal3Smoothness": {
+      "label": "ความนุ่มนวล",
+      "tooltip": "ค่าความนุ่มนวลสําหรับพื้นที่ที่ 3."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "ผล กระทบ PBR",
+      "tooltip": "เปิดให้สามารถแก้ไขแบบปกติ, เมทัลลิก, และปรับความนุ่มนวลได้."
+    },
+    "_Decal3TexUVSet": {
+      "label": "ถอดรหัส 3 UV ชุด",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับ Decal 3."
+    },
+    "_Decal3Rotation": {
+      "label": "หมุน",
+      "tooltip": "มุมหมุน (0-360 องศา) สําหรับ Dcal 3."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "ตั้งค่า Ripple UV",
+      "tooltip": "ช่องทางยูวีสําหรับคลื่นฝน (UV0 vs UV1)."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": "วงเสียง Link สําหรับ splusing/blinking เสียงจังหวะ."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "ความแรงของลิงก์",
+      "tooltip": "ความแข็งแกร่งของเสียงรบกวน ผลกระทบการกระพริบ."
+    },
+    "_UseBackFaceColor": {
+      "label": "เปิดใช้การพิมพ์หน้ากลับ",
+      "tooltip": "เพิ่มสีให้รูปหลายเหลี่ยมด้านหลัง."
+    },
+    "_BackFaceColor": {
+      "label": "สีหน้ากลับ",
+      "tooltip": "สีของหน้าหลัง."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "เลื่อนบิต",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "ใช้พื้นผิวแบบปก",
+      "tooltip": "จัดเรียงเนื้อให้เป็นรูปหลายเหลี่ยมด้านหลัง."
+    },
+    "_BackFaceTex": {
+      "label": "พื้นผิวหน้ากลับ",
+      "tooltip": "ผิวหลัง."
+    },
+    "_BackFaceEmission": {
+      "label": "หงายหลัง",
+      "tooltip": "รอยถลอกของใบหน้าหลัง."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "พลัง งาน",
+      "tooltip": "ความแข็งแกร่งของหน้าหลังถูกพ่นออกมา."
+    },
+    "_HueShift": {
+      "label": "ความเข้มสี",
+      "tooltip": "หมุนสีรอบล้อสี."
+    },
+    "_SaturationAdjust": {
+      "label": "ความอิ่มสี",
+      "tooltip": "ความอิ่มสีหลายสี (0=graygraph, 1 = defalf, 2 = vibrant)."
+    },
+    "_ValueAdjust": {
+      "label": "ค่า (ความสว่าง)",
+      "tooltip": "ปรับขนาดค่า HSV/ความสว่าง."
+    },
+    "_UseHSVMask": {
+      "label": "เปิดใช้งานหน้ากาก HSV",
+      "tooltip": "การปรับค่า HSV โดยใช้แผนที่พื้นผิว."
+    },
+    "_HSVMask": {
+      "label": "มาสก์ HSV (R)",
+      "tooltip": "พื้นผิวผิวสําหรับปรับความเข้ม/ ความเข้มสี/ การจัดสี (ขาว = Shift)."
+    },
+    "_NormalMapFlipY": {
+      "label": "พลิกค่า Y (DirectX / OpenGL)",
+      "tooltip": "กลับค่าช่องสีเขียวของแผนที่ปกติสําหรับรูปแบบความเข้ากันได้กับรูปแบบ โดยตรงX/ OpenGL."
+    },
+    "_DetailBlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "โหมด blind สําหรับรายละเอียดรายละเอียด (เพิ่ม, เพิ่ม, เพิ่ม, เพิ่ม, เบา)."
+    },
+    "_VertexColorMode": {
+      "label": "โหมดสีของเวอร์เท็กซ์",
+      "tooltip": "เลือกสีของจุดยอดที่ผสมกับสีฐาน (ค่าเดิม, คูณ, บวก)."
+    },
+    "_GlitterShape": {
+      "label": "แปรงทาสี",
+      "tooltip": "ควบคุมรูปร่างเรขาคณิตของประกายแสง."
+    },
+    "_MatCapMask": {
+      "label": "แปรงทาสี (R)",
+      "tooltip": "พื้นผิวของหน้ากาก (R) ควบคุมการมองเห็นของ MatCap."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "ตั้งค่า UV ของ MaltCap",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับหน้ากาก MatCap."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "ไล่ระดับสี",
+      "tooltip": "เปิดใช้การไล่ระดับสีหลายสีตามแนวขอบละลาย."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "ไล่ระดับสี",
+      "tooltip": "พื้นผิวแบบเงา ถูกนําไปใช้ตามแนวขอบละลาย."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "ความเร็วการไล่ระดับสี X",
+      "tooltip": "Scroll ความเร็ว X สําหรับหน้ากากพ่น."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "ความเร็วการไล่ระดับสี",
+      "tooltip": "เลื่อนความเร็ว Y สําหรับหน้ากากพ่น."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "การเรียบแบบทั่วไป",
+      "tooltip": "การตอบสนองทั่วโลกเรียบผ่านแถบคลื่นเสียง."
+    },
+    "_AL_GlobalMin": {
+      "label": "พื้น โลก / มิน",
+      "tooltip": "ระดับสัญญาณรบกวนของสัญญาณเสียง."
+    },
+    "_AL_GlobalMax": {
+      "label": "การ รักษา โรค ทั่ว โลก / มาก ที่ สุด",
+      "tooltip": "การวัดการปรับขนาดสูงสุด Audiolink แอมพลิจูด."
+    },
+    "_DetailNormalScrollX": {
+      "label": "เลื่อนความเร็ว X",
+      "tooltip": "เลื่อน X ความเร็วสําหรับรายละเอียดปกติ."
+    },
+    "_DetailNormalScrollY": {
+      "label": "ความเร็วเลื่อน Y",
+      "tooltip": "ความ เร็ว ของ ม้วน หนังสือ."
+    },
+    "_ColorMask": {
+      "label": "พื้นผิวสี",
+      "tooltip": "พื้นผิวที่ใช้ในหน้ากาก และจํากัดการเคลื่อนไหวของสี."
+    },
+    "_ColorMaskUVSet": {
+      "label": "เครื่องมือเลือกสี",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับหน้ากากสี."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "แปรงทาสี",
+      "tooltip": "ช่องต้นทางที่ใช้สําหรับการผสมหน้ากากสี."
+    },
+    "_MainTexUVSet": {
+      "label": "ตั้งค่าพื้นผิวหลัก UV",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับพื้นผิวหลัก."
+    },
+    "_Shadow2Color": {
+      "label": "สีเงาที่ 2",
+      "tooltip": "สีเงาลึกสําหรับแถบสีเงาที่ 2."
+    },
+    "_ToonThreshold2": {
+      "label": "2 ทูน เทรส โฮลด์",
+      "tooltip": "ขอบเขตการผูกผ้ากันเปื้อนที่ 2."
+    },
+    "_ToonHardness2": {
+      "label": "2 ตัน",
+      "tooltip": "ความคมชัดของผ้ากันเปื้อนชั้นที่ 2."
+    },
+    "_MinLightBrightness": {
+      "label": "ทําให้สว่างขึ้นเท่านั้น",
+      "tooltip": "ชั้นสว่างน้อยที่สุดเพื่อป้องกันอวตาร กลายเป็นสีดํา."
+    },
+    "_MaxLightBrightness": {
+      "label": "ค่าความสว่างสูงสุด",
+      "tooltip": "เพดานสว่างสูงสุด เพื่อป้องกันการดูดซึมมากเกินไปในโลกสว่าง."
+    },
+    "_ShadeShiftMap": {
+      "label": "พับเก็บแผนที่ Shift",
+      "tooltip": "พื้นผิวทําให้เกิดอคติกับเส้นเงา (ส่วนพับ / AO)."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "ปรับตั้ง UV แบบ Shift",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับแผนที่ Shift."
+    },
+    "_ShadeShiftStrength": {
+      "label": "ปรับความแรงของ Shift",
+      "tooltip": "ความหนาแน่นของอคติของเส้นเงา จากแผนที่เปลี่ยนเงา."
+    },
+    "_StepSpecular": {
+      "label": "สัดส่วนภาพ",
+      "tooltip": "แปลงจุดเด่นแบบ PBR แบบนุ่มๆ ให้เป็นจุดแสงของการ์ตูน."
+    },
+    "_StepSpecularThreshold": {
+      "label": "ความแหลม:",
+      "tooltip": "กําหนดขอบเขตสําหรับขั้นตอนสเปกตรัม."
+    },
+    "_StepSpecularHardness": {
+      "label": "ความ แข็ง แรง ของ ร่าง กาย",
+      "tooltip": "มุมคมสําหรับขั้นตอนสเปกตรัม."
+    },
+    "_UseMatCap2": {
+      "label": "เปิดการใช้งานมัตแคป 2",
+      "tooltip": "เพิ่มชั้น MatCap รอง สําหรับหลายโลหะหรือสําเนียงขอบ."
+    },
+    "_MatCap2Tex": {
+      "label": "Texture 2 MatCap",
+      "tooltip": "พื้นผิวสะท้อนของกระดูกเชิงกราน."
+    },
+    "_MatCap2BlendMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "โหมด blind สําหรับ MatCap 2 (dad, twatch, town, Lighten, Overlay)."
+    },
+    "_MatCap2Intensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความสว่างคูณกับแม็ตแคป 2."
+    },
+    "_MatCap2Mask": {
+      "label": "มาทแคป 2 มาสก์ (R)",
+      "tooltip": "พื้นผิวผิวภายนอก (R) ควบคุม matCap 2."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "ตั้งค่า UV ของมาสก์",
+      "tooltip": "ช่องยูวี สําหรับหน้ากากแม็ตแคป 2."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "แผนที่ปกติ",
+      "tooltip": "การสะท้อนของแมทแคป โดยใช้แผนที่พื้นผิวปกติ."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "การแก้เพอร์สเปกทีฟ",
+      "tooltip": "แก้ไขการบิดเบือนมุมมองแบบกว้างแบบ FOV ใน VR."
+    },
+    "_HairSpecMask": {
+      "label": "แปรงผม",
+      "tooltip": "พื้นผิวผิวภายนอกควบคุมบริเวณที่จุดเด่นของเส้นขนปรากฎ."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "ตั้งค่า UV ของมาสก์",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับหน้ากากทรงผม."
+    },
+    "_OutlineNormalSource": {
+      "label": "แปรงทาสี",
+      "tooltip": "Vertex value ใช้สําหรับการขยายภาพ (Mesh Storm, Vertex สี, UV2, UV3)."
+    },
+    "_OutlineMinWidth": {
+      "label": "แบบอักษร:",
+      "tooltip": "ความหนาน้อยที่สุดของพิกเซลสําหรับกรอบที่ระยะทาง."
+    },
+    "_OutlineMaxWidth": {
+      "label": "แว่นขยายสูงสุด",
+      "tooltip": "ความหนาสูงสุดของพิกเซลสําหรับกรอบขึ้นใกล้."
+    },
+    "_OutlineNoiseScale": {
+      "label": "การปรับขนาดจุดรบกวน",
+      "tooltip": "ความถี่ของเสียงรบกวน."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "ความเร็วเสียง",
+      "tooltip": "ความไวของสัญญาณรบกวน."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความแข็งแกร่งของจุดยอดที่กระเพื่อม."
+    },
+    "_UseDitheredAlpha": {
+      "label": "ทําดัชนีเทียบสี",
+      "tooltip": "การเกลี่ยสีแบบ Creen- Space Bayer สําหรับแยกผ้าโปร่งใสและเส้นผม."
+    },
+    "_DitherStrength": {
+      "label": "ความเข้มสี",
+      "tooltip": "ความแข็งแรงที่ผสมได้ (0 = การตัดออกแบบคมชัด 1 = เต็มจังหวะ)."
+    },
+    "_ShadowCutoff": {
+      "label": "แปรงทาสี",
+      "tooltip": "อัลฟาตัดออกสําหรับหล่อเงา."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "ใช้ส่วนตัดเงา",
+      "tooltip": "ขัดขวางการตัดตัวอัลฟา โดยเฉพาะอย่างยิ่งการผ่านการหล่อเงา."
+    },
+    "_AL_DecalBand": {
+      "label": "แผ่น เสียง",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "ความเข้มของเสียง",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "แถบเสียง Link 2",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "ความแรงของเสียง",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "แผ่น เสียง",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "น้ํา แข็ง 3",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "ระยะใกล้การหรี่เสียงของกล้อง",
+      "tooltip": "เรขาคณิตที่ละลายอย่างนุ่มนวล เมื่อกล้องใกล้เกินไป (การแตกหัวแบบ VR)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "ความแหลม:",
+      "tooltip": "ระยะห่างจากกล้อง ที่เรขาคณิตเริ่มจางหายไป."
+    },
+    "_NearCameraFadeRange": {
+      "label": "ช่วงการหรี่เสียง",
+      "tooltip": "ระยะทางการเปลี่ยนสภาพ สําหรับระยะใกล้จางลง."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "แปรงทาสี",
+      "tooltip": "นอกจากนี้ยังคลิปเงาเมื่ออยู่ภายในระยะทางจาง."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "ความเร็วของชีพจร",
+      "tooltip": "ความไวในการหายใจ/การผลัก."
+    },
+    "_OutlinePulseStrength": {
+      "label": "ชีพจร",
+      "tooltip": "แอมพลิจูดสําหรับการหายใจ/การผลัก."
+    },
+    "_UseChromaKey": {
+      "label": "ใช้กุญแจ CRoma",
+      "tooltip": "ทําให้สีมีช่วงโปร่งใส (เช่น การกดแป้นจอสีเขียว)."
+    },
+    "_ChromaKeyColor": {
+      "label": "สีกุญแจ",
+      "tooltip": "สีที่จะกดออก."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "ความแหลม:",
+      "tooltip": "ขอบเขตระยะห่างรอบ ๆ สีกุญแจเพื่อกําจัด."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "การทําให้เรียบ",
+      "tooltip": "ความอ่อนโยนของการเปลี่ยนแปลงแบบขอบ."
+    },
+    "_DistanceFade_LOD": {
+      "label": "ระยะห่างเริ่มต้น",
+      "tooltip": "ระยะห่างจากกล้อง เพื่อเริ่มลดรายละเอียดการแรเงา การเพิ่มค่านิยม LOD (0 = ปิดการใช้งาน)."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "โหมดพารามิเตอร์ของอวตาร",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "ใช้โฮโลแกรม",
+      "tooltip": "Sci-fi Hellograph effect กับ สแกนไลน์เคลื่อนไหว, ขอบขอบและกระพริบ."
+    },
+    "_HoloColor": {
+      "label": "สีโฮโลแกรม",
+      "tooltip": "พิมพ์สีของภาพถ่ายโฮโลแกรม."
+    },
+    "_HoloScanlineTiling": {
+      "label": "เส้นพริ้วไหว",
+      "tooltip": "ความหนาแน่นของเส้นสแกนแนวนอน."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "ความเร็วการสแกน",
+      "tooltip": "สปีดของสแกนไลน์."
+    },
+    "_HoloRimPower": {
+      "label": "พลังริม",
+      "tooltip": "Falloff คมของโฮโลแกรมขอบเรืองแสง."
+    },
+    "_HoloStrength": {
+      "label": "ความแรงของโฮโลแกรม",
+      "tooltip": "ความแข็งแรงของโฮโลแกรมเหนือพื้นผิวฐาน."
+    },
+    "_HoloAlphaStrength": {
+      "label": "แว่นขยายอัลฟา",
+      "tooltip": "ปรับความโปร่งแสงด้วยรูปแบบสแกนไลน์."
+    },
+    "_UseCustomFogColor": {
+      "label": "เปิดใช้การปรับสีของฟ็อกเอง",
+      "tooltip": "แทน ที่ จะ ใช้ สี หมอก ของ ฉาก เหตุ การณ์ ทั่ว โลก โดย ใช้ กระป๋อง ที่ ทํา ขึ้น เอง ใน ท้อง ถิ่น."
+    },
+    "_CustomFogColor": {
+      "label": "กําหนดสีเอง",
+      "tooltip": "กําหนดสีสําหรับหมอกบรรยากาศเอง."
+    },
+    "_AlphaToCoverage": {
+      "label": "อัลฟาการครอบคลุม (MSA)",
+      "tooltip": "เปิดใช้งานฮาร์ดแวร์ Alpha เพื่อครอบคลุม (MSAA anti-alasing) บนขอบตัดออก, เรียบใบและผม."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "คม A2C",
+      "tooltip": "ลับอัลฟ่าให้คม."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "เงา ได้ รับ กําลัง",
+      "tooltip": "ควบคุมวิธีการมืดฉากเรียลไทม์เงาปรากฏบนวัสดุ (1.0 =เงาเต็ม, 0.0 = ไม่มีเงา)."
+    },
+    "_DecalClamp": {
+      "label": "ขอบเขตการหดตัว",
+      "tooltip": "Clamps decal UV พิกัดดังนั้น Decal ไม่ได้ซ้ําด้านนอก [0,1]."
+    },
+    "_Decal2Clamp": {
+      "label": "ขอบเขตการหดตัว",
+      "tooltip": "Clamps decal UV พิกัดดังนั้น Decal 2 ไม่ได้ซ้ํานอก [0,1]."
+    },
+    "_Decal3Clamp": {
+      "label": "ขอบเขตการหดตัว",
+      "tooltip": "Clamps decal UV พิกัดดังนั้น Decal 3 ไม่ได้ซ้ํานอก [0,1]."
+    },
+    "_RimMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "หน้ากาก ทา ผ้า (R) เพื่อ จํากัด หรือ ระบาย สี ขอบ ของ เมช ที่ ใช้ กัน เฉพาะ."
+    },
+    "_RimMaskUVSet": {
+      "label": "แถบชุดลวดลายStencils",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) ของ Rim Mask."
+    },
+    "_OutlineLightingMix": {
+      "label": "ผสมแสง",
+      "tooltip": "ภาพ ที่ จุด ลง บน โครง สร้าง (0 = ไม่ พิมพ์ ออก, 1 = เต็ม ที่ โดย แสง ฉาก)."
+    },
+    "_OutlineZOffset": {
+      "label": "เซต Z- offet (Bas ที่ 4)",
+      "tooltip": "กําหนดอคติของกล้อง Z-depth เพื่อป้องกันเส้นกรอบ จากการแยกเรขาคณิตที่อยู่ติดกัน."
+    },
+    "_UseFaceSDF": {
+      "label": "เปิดใช้งานเงาหน้าแบบ SDF",
+      "tooltip": "เซ็นในช่องข้อมูลทางไกลDescription face shadow for aime language."
+    },
+    "_FaceShadowMap": {
+      "label": "แผนที่หน้า (SDF)",
+      "tooltip": "SDF Face face พื้นผิวแบบเงา การไล่ระดับแสง."
+    },
+    "_FaceShadowOffset": {
+      "label": "แถบเงาหน้า",
+      "tooltip": "ลดมุมขอบด้านหน้า/ด้านหลัง."
+    },
+    "_FaceShadowBlur": {
+      "label": "ความนุ่มของหน้า",
+      "tooltip": "ลดขอบเงา SDF."
+    },
+    "_FaceShadowInvert": {
+      "label": "กลับค่าเงาหน้า",
+      "tooltip": "กลับค่าเกรเดียนเงา SDF."
+    },
+    "_CameraVisibilityMode": {
+      "label": "โหมดการแยกแยะ",
+      "tooltip": "ควบคุมการมองเห็นในกระจก, หูฟัง VR, และกล้องแบบเครือข่ายแบบเดสก์ท็อป."
+    },
+    "_MirrorDetectMode": {
+      "label": "วิธีการตรวจสอบกระจก",
+      "tooltip": "Algorith สําหรับการตรวจสอบกล้องกระจก/การสะท้อน."
+    },
+    "_CustomCameraFilter": {
+      "label": "หมายเลขกล้องกําหนดเอง",
+      "tooltip": "กรองด้วยหมายเลขกล้องทั่วไป (0 = ปิดการใช้งาน)."
+    },
+    "_OffsetFactor": {
+      "label": "สัดส่วนภาพ",
+      "tooltip": "องค์ประกอบการปรับค่าความลึกภาพ (ก่อนการปะทะ z)."
+    },
+    "_OffsetUnits": {
+      "label": "มุม:",
+      "tooltip": "หน่วยออฟเซ็ตความลึกเหลี่ยม (ยิง z)."
+    },
+    "_UseEnvRim": {
+      "label": "รีม สิ่ง แวด ล้อม",
+      "tooltip": "Titts/modates แสงขอบโดยใช้ shipt และเครื่องสํารวจสะท้อนแสง."
+    },
+    "_EnvRimMix": {
+      "label": "องค์ประกอบสภาพแวดล้อม",
+      "tooltip": "ตัดระหว่างสีขอบบริสุทธิ์(0) กับขอบที่ขยายไปด้วยสภาพแวดล้อม (1)."
+    },
+    "_MonochromeLighting": {
+      "label": "การจุดสีเดียว",
+      "tooltip": "ลดความคมชัดของสีแสงภาพ เพื่อรักษาสีสีของตัวอักษรไว้."
+    },
+    "_AsUnlitLighting": {
+      "label": "ไฟที่สว่างจัด",
+      "tooltip": "พ่นแสงไปยังชั้นยูนิฟอร์ม ที่ไม่มีสี ในสภาพแวดล้อมที่มืดมน."
+    },
+    "_UseVRCLV": {
+      "label": "ระดับเสียงแบบ VRC",
+      "tooltip": "ตัวอย่าง VRC ปริมาตรแสง (EFSIM) สําหรับแสงต่อพิกเซล ในโลกที่สนับสนุน พุ่งกลับไปที่เครื่องตรวจแสงมาตรฐานที่อื่น บังคับใช้ในระดับการแสดงปานกลาง/ลาว."
+    },
+    "_VRCLVIntensity": {
+      "label": "เส้นต่อเนื่องแบบ LV",
+      "tooltip": "ปรับความดังของปริมาตรแสง."
+    },
+    "_VRCLVNormalBias": {
+      "label": "ขนาดพื้นฐาน LV",
+      "tooltip": "ปรับปริมาตรตัวอย่างตามแนวพื้นผิวปกติ เพื่อลดรอยด่างบนเรขาคณิตบาง ๆ."
+    },
+    "_UseFluorescence": {
+      "label": "เปิดการใช้งาน fluormate",
+      "tooltip": "ปฏิกิริยากับความเข้มเบาด้านสิ่งแวดล้อม/ทิศทาง (แสงจ้าในความมืด)."
+    },
+    "_FluorescenceMap": {
+      "label": "แปรงทาสี",
+      "tooltip": "แผนที่การเคลื่อนเมาส์ (RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "ตั้งค่าการไล่ระดับสี",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับแผนที่ฟลูออเรชัน."
+    },
+    "_FluorescenceColor": {
+      "label": "สี",
+      "tooltip": "ความแหลม:"
+    },
+    "_FluorescenceStrength": {
+      "label": "ความแรง",
+      "tooltip": "ความ อ่อน เพลีย"
+    },
+    "_FluorescenceThreshold": {
+      "label": "ความแหลม:",
+      "tooltip": "ระดับแสงกระตุ้นการเรืองแสง."
+    },
+    "_FluorescenceHardness": {
+      "label": "ความหนา:",
+      "tooltip": "ความคมชัดของการเปลี่ยนแปลงระหว่าง ความมืดและรัฐสว่าง."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "ความ มืด",
+      "tooltip": "เมื่อเปิดใช้งาน จะเรืองแสงเฉพาะในสภาพแวดล้อมที่มีแสงน้อยเท่านั้น."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "เปิดใช้งาน PS1 การป้อบอัพของ PS1",
+      "tooltip": "Quantizes ตําแหน่งจุดยอดไปที่ตาราง resolution ต่ําสําหรับ regress PS1 / Afinne jetter ความงาม."
+    },
+    "_PS1SnapResolution": {
+      "label": "ความละเอียดการหดตัว",
+      "tooltip": "ความละเอียดตาราง / ความแม่นยําของจุดยอด."
+    },
+    "_PS1SnapSpace": {
+      "label": "ขอบเขตการพริ้วไหว",
+      "tooltip": "ขอบเขตพื้นที่พิกัดสําหรับการลากเมาส์สั่งงาน (ใช้ส่วนรบกวนพื้นที่หน้าจอ)."
+    },
+    "_UseLookAt": {
+      "label": "เปิดใช้งานการดูบิลบอร์ด",
+      "tooltip": "หมุน Mich vertics เพื่อแสดงหน้ากล้องที่กําลังใช้งานอยู่."
+    },
+    "_LookAtMode": {
+      "label": "โหมดบิลบอร์ด",
+      "tooltip": "Billboarding แกนปฐมทัศน์ (ป้ายโฆษณา 3 มิติ)."
+    },
+    "_LookAtStrength": {
+      "label": "ความแรง",
+      "tooltip": "ความแข็งแกร่งระหว่างการปฐมนิเทศของเมชดั้งเดิม และการวางป้ายโฆษณา."
+    },
+    "_UseUVFlow": {
+      "label": "เปิดการใช้งาน UV Fllow",
+      "tooltip": "ลักษณะเคลื่อนไหวตามเส้นทางการไหลของเวกเตอร์ โดยใช้การหมุน 2 ฟุต."
+    },
+    "_FlowMap": {
+      "label": "แผนที่เลื่อน (RG เวกเตอร์)",
+      "tooltip": "แผนที่เลื่อน (เวกเตอร์ทิศทาง RG, 0.5 = เป็นกลาง)"
+    },
+    "_FlowMapUVSet": {
+      "label": "ตั้งค่า UV ของแผนที่แบบลอย",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับแผนที่การไหล."
+    },
+    "_FlowSpeed": {
+      "label": "ความเร็วต่ํา",
+      "tooltip": "ความเร็วการเคลื่อนไหวต่ํา."
+    },
+    "_FlowStrength": {
+      "label": "ความแรงต่ํา",
+      "tooltip": "แม็กนิจูดของการบิดเบือนแบบ UV ตามเวกเตอร์ flow."
+    },
+    "_FlowCycleRate": {
+      "label": "อัตราการวนรอบ",
+      "tooltip": "ความถี่ของวงจรคู่คู่."
+    },
+    "_UseRGBAColorMask": {
+      "label": "เปิดการใช้สี RGBA",
+      "tooltip": "อนุญาต 4 กระป๋องสีอิสระและช่องทางการลอยตัวโยงไปยังช่องทาง RGBA ของพื้นผิวหน้ากาก."
+    },
+    "_RGBAColorMask": {
+      "label": "สี",
+      "tooltip": "แปรงทาสี (ช่อง RGBA แยกพื้นที่ 4 สี)"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "ตั้งค่า UV",
+      "tooltip": "เลือกช่องพิกัด (UV0 หรือ UV1) สําหรับระบบสี RGBA."
+    },
+    "_ColorMaskR_Color": {
+      "label": "สีแดง",
+      "tooltip": "ใช้แทนหน้ากากอาร์ทีวี."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "ระบบย่อยสีแดง (HDR)",
+      "tooltip": "การให้บริการสําหรับหน้ากาก R ทาง."
+    },
+    "_ColorMaskG_Color": {
+      "label": "สีเขียว",
+      "tooltip": "ใช้สําหรับหน้ากาก G ทางช่อง."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "ระบบย่อยสีเขียว (HDR)",
+      "tooltip": "เปิดใช้งานหน้ากาก G ทางช่อง."
+    },
+    "_ColorMaskB_Color": {
+      "label": "โทนสีสีน้ําเงิน",
+      "tooltip": "ใช้แทนหน้ากากช่อง B."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "ระบบย่อยสีน้ําเงิน (HDR)",
+      "tooltip": "เปิดใช้งานหน้ากากช่อง B."
+    },
+    "_ColorMaskA_Color": {
+      "label": "แปรงทาสี",
+      "tooltip": "ใช้แทนหน้ากากทางช่อง."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "ระบบอัลฟา (HDR)",
+      "tooltip": "การให้บริการสําหรับหน้ากากช่องทาง."
+    },
+    "_UseNetworkTime": {
+      "label": "เปิดใช้การบอกเวลาในเครือข่าย",
+      "tooltip": "ปรับเทียบข้อมูลเสียง."
+    },
+    "_NetworkTimeScale": {
+      "label": "ค่าเวลาของเครือข่าย",
+      "tooltip": "ตัวแยกสเกลถูกปรับใช้กับเวลาเชื่อมต่อของเครือข่าย."
+    },
+    "_UseStochasticSampling": {
+      "label": "เปิดการใช้งาน stochastic Sampling",
+      "tooltip": "ส่วนผสมของเนื้อผ้าที่สุ่มใช้ เพื่อกําจัดรูปแบบที่ซ้ํากันบนพื้นผิวขนาดใหญ่."
+    },
+    "_StochasticScale": {
+      "label": "สัดส่วนภาพ",
+      "tooltip": "ค่าคูณสําหรับการกระจายตัวสามเหลี่ยมรูปหลายเหลี่ยม."
+    },
+    "_UseDetailNormalFade": {
+      "label": "เปิดใช้การหรี่ระยะปกติ",
+      "tooltip": "ค่อย ๆ หรี่เสียงลง รายละเอียดความถี่สูง ที่ระยะเพื่อป้องกันไม่ให้ VR ใช้ชื่อปลอม/ simmering."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "หมุน & 90",
+      "tooltip": "ระยะกล้องที่รายละเอียดปกติ เริ่มจางหายไป."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "ระยะการหรี่เสียง",
+      "tooltip": "ระยะทางกล้องที่รายละเอียดปกติราบ."
+    },
+    "_UseInternalParallax": {
+      "label": "เปิดการใช้พาราแลกซ์ภายใน",
+      "tooltip": "สังเคราะห์ ชั้น ใน ชั้น ใน ของ ความ ลึก ใต้ กระจก, เลนส์, ผลึก, และ แอ นิ เมะ."
+    },
+    "_InternalParallaxMap": {
+      "label": "พื้นผิวภายใน",
+      "tooltip": "พื้นผิวชั้นใน."
+    },
+    "_InternalParallaxColor": {
+      "label": "สีเลเยอร์",
+      "tooltip": "สีของเลเยอร์."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "แปรงทาสีภายใน",
+      "tooltip": "การเปลี่ยนสีของเสียง."
+    },
+    "_InternalParallaxDepth": {
+      "label": "ความลึก:",
+      "tooltip": "จําลองระดับความลึกภายใน."
+    },
+    "_InternalParallaxLayers": {
+      "label": "ขั้นบันไดตัวอย่าง",
+      "tooltip": "จํานวนของตัวอย่างผ่านความลึกภายใน."
+    },
+    "_InternalParallaxStrength": {
+      "label": "เลเยอร์",
+      "tooltip": "ความสว่าง/ ความอิ่มตัวของชั้นภายใน."
+    },
+    "_InternalParallaxEmission": {
+      "label": "ความ กดดัน จาก คน รุ่น เดียว กัน",
+      "tooltip": "การเรืองแสงเพื่อการเรืองแสงภายใน."
+    },
+    "_UseThemeColors": {
+      "label": "เปิดใช้งานชุดตกแต่งทั่วไป",
+      "tooltip": "กําหนด 4 สีหลักของโลก เพื่อขับเคลื่อนชุดตกแต่งรวมเข้ากับวัสดุต่างๆ โดยเลือกใช้เอกซ์พลอเรอร์ลิ้งค์และความเข้มสี."
+    },
+    "_ThemeColor1": {
+      "label": "สีของชุดตกแต่ง 1",
+      "tooltip": "สีของชุดตกแต่งหลัก 1."
+    },
+    "_ThemeColor2": {
+      "label": "สีของชุดตกแต่ง 2",
+      "tooltip": "สีของชุดตกแต่งหลัก 2."
+    },
+    "_ThemeColor3": {
+      "label": "สีของชุดตกแต่ง 3",
+      "tooltip": "สีของชุดตกแต่งหลัก 3."
+    },
+    "_ThemeColor4": {
+      "label": "สีของชุดตกแต่ง 4",
+      "tooltip": "สีชุดตกแต่งหลัก 4."
+    },
+    "_ThemeMode": {
+      "label": "โหมดปรับตั้ง",
+      "tooltip": "เลือกโหมดการไล่ระดับสี (Direct, AudioLink reactive, หรือ continential Whue Shift)."
+    },
+    "_AL_ThemeBand": {
+      "label": "แถบปรับเสียง",
+      "tooltip": "เลือกชุดตกแต่งการขับเคลื่อนของวงความถี่."
+    },
+    "_AL_ThemeStrength": {
+      "label": "ความเข้มสีเสียง",
+      "tooltip": "การเพิ่มความเข้มของปฏิกิริยาเสียง."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "ความเร็ว Shift ของความเข้มสี",
+      "tooltip": "ความเร็วของการสลับสีอย่างต่อเนื่อง."
+    },
+    "_ThemeTargetMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "น้ําหนักอิทธิพล: R=Base สี, G = Outlines, B=Rim, A= Ecutation."
+    },
+    "_UseCustomCubemap": {
+      "label": "เปิดใช้การตั้งลูกบาศก์เอง",
+      "tooltip": "เพิ่มค่าลูกบาศก์แมพที่กําหนดเองสําหรับเงาสะท้อนภายใน หรือค่าถอยหลังเมื่อเครื่องสํารวจสะท้อนหายไป/มืด."
+    },
+    "_CustomCubemap": {
+      "label": "แปรงทาสี",
+      "tooltip": "ตั้งค่าพื้นผิวลูกบาศก์แมพสําหรับเงาสะท้อน."
+    },
+    "_CustomCubemapColor": {
+      "label": "แปรงทาสี",
+      "tooltip": "สะท้อนแสงลูกบาศก์."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "ความทึบแสง",
+      "tooltip": "ความ หยาบ คาย / เบลอ ๆ ของ การ สะท้อน แสง ลูกบาศก์."
+    },
+    "_CustomCubemapMode": {
+      "label": "โหมดลายเส้น",
+      "tooltip": "โหมด (Overid Probes, Realback เมื่อ Probes Dark, หรือ Aditive)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ตัวเพิ่มความเข้มของแสง."
+    },
+    "_AL_DelayBass": {
+      "label": "หน่วงเวลาเบส",
+      "tooltip": "หน่วงเวลาการปรับค่าตามข้อมูลประวัติบัฟเฟอร์สําหรับเบส."
+    },
+    "_AL_DelayLowMid": {
+      "label": "หน่วงเวลาน้อย",
+      "tooltip": "หน่วงเวลาการปรับค่าตามข้อมูลประวัติบัฟเฟอร์สําหรับต่ํากลาง."
+    },
+    "_AL_DelayHighMid": {
+      "label": "หน่วงสูง",
+      "tooltip": "หน่วงเวลาการปรับค่าตามประวัติบัฟเฟอร์สําหรับ High กลาง."
+    },
+    "_AL_DelayTreble": {
+      "label": "หน่วงเวลาเสียง",
+      "tooltip": "หน่วงเวลาการปรับค่าแนวบัฟเฟอร์ประวัติสําหรับ Trebble."
+    },
+    "_UseLTCGI": {
+      "label": "เปิดใช้งาน LTCGI",
+      "tooltip": "Recacts to real-time LTCGI Planguage plight and screens agains in รองรับโลกของ VR Chart."
+    },
+    "_LTCGI_Intensity": {
+      "label": "ความเข้มสี",
+      "tooltip": "ตัวคูณความเข้มของแสงจากพื้นที่ LTCGI."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "ความวกวน",
+      "tooltip": "สัดส่วนการสะท้อนของ LTCGI."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "แว่นขยายแสง",
+      "tooltip": "ระบบป้องกันความปลอดภัย จํากัด ความถี่สโทรบี/แฟลชสูงสุด เพื่อป้องกันอาการลมชัก."
+    },
+    "_MaxFlashFrequency": {
+      "label": "ขนาดแมกซ์แฟลช Hz",
+      "tooltip": "ความถี่การกระพริบ/การกระตุ้นสูงสุดในเอชซี."
+    },
+    "_UseFur": {
+      "label": "เปิดการใช้งานเครื่องเขียนเชลล์",
+      "tooltip": "เปลือก ชั้น นอก หลาย ชั้น ผ่าน ออก มา ตาม จุดยอด ที่ เป็น ปกติ พร้อม กับ การ ปก ปิด เสียง รบกวน."
+    },
+    "_FurLayers": {
+      "label": "เลเยอร์",
+      "tooltip": "จํานวนชั้นของเชลล์ที่ขยายออกไป (1 ถึง 8) จํานวนชั้นที่สูงขึ้นทําให้เกิดขนฟู แต่ค่าเรขาคณิตของ GPU แพงขึ้น."
+    },
+    "_FurLength": {
+      "label": "ความยาว",
+      "tooltip": "ความยาวทางกายภาพของขนสัตว์ในพื้นที่วัตถุ/โลก."
+    },
+    "_FurMaskTex": {
+      "label": "แปรงทาสี",
+      "tooltip": "พื้นผิวของสัญญาณรบกวน การแพร่กระจายของสายและความหนาแน่น."
+    },
+    "_FurDensity": {
+      "label": "ความแหลม:",
+      "tooltip": "ความ หนา แน่น ของ เสียง รบกวน ที่ มี เส้น ขน เหล่า นี้."
+    },
+    "_FurThinning": {
+      "label": "ข้อความด่วน",
+      "tooltip": "บาง เส้น และ เส้น ไหม บาง ๆ ที่ ยาว ไป จน ถึง ปลาย ขอบ ด้าน นอก."
+    },
+    "_FurGravity": {
+      "label": "แรงโน้มถ่วง",
+      "tooltip": "การจําลองแรงโน้มถ่วง ดึงเส้นขนลง."
+    },
+    "_FurWindStrength": {
+      "label": "ความ แข็ง แรง ของ ลม",
+      "tooltip": "ความแข็งแกร่งของลมที่พัดผ่านปลายขนสัตว์."
+    },
+    "_FurWindSpeed": {
+      "label": "ความเร็วลม",
+      "tooltip": "สปีดของลมสั่น."
+    },
+    "_FurRootColor": {
+      "label": "เส้นต่อเนื่องราก",
+      "tooltip": "แปรงทาสีที่ฐาน/ รากของแต่ละเส้น."
+    },
+    "_FurTipColor": {
+      "label": "แปรงทาสี",
+      "tooltip": "สี จุด ที่ ปลาย ขน แต่ ละ เส้น."
+    },
+    "_FurAO": {
+      "label": "เงาราก AO",
+      "tooltip": "ตัว อย่าง เช่น ขน ของ มัน จะ ถูก นํา ไป ทํา เป็น ขน."
+    },
+    "_FurCutoff": {
+      "label": "แสตรนด์คัทออฟ",
+      "tooltip": "การแยกฐานอัลฟาสําหรับความหนาของสายราก."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "เปิดใช้การปั้มพลังงาน",
+      "tooltip": "เปิดใช้การปั้มพลังงาน"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "การลดความเร็วสูงสุด",
+      "tooltip": "การลดความเร็วสูงสุด"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "แก้แฟ้ม K",
+      "tooltip": "แก้แฟ้ม K"
+    },
+    "_OutlineStencil": {
+      "label": "หมายเลขเครื่อง",
+      "tooltip": "หมายเลขเครื่อง"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "แปรงทาสี"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "แปรงทาสี",
+      "tooltip": "แปรงทาสี"
+    },
+    "_OutlineStencilComp": {
+      "label": "สัมพัทธ์ของกรอบ",
+      "tooltip": "สัมพัทธ์ของกรอบ"
+    },
+    "_OutlineStencilPass": {
+      "label": "แปรงทาสี",
+      "tooltip": "แปรงทาสี"
+    },
+    "_OutlineStencilFail": {
+      "label": "เส้นต่อเนื่องล้มเหลว",
+      "tooltip": "เส้นต่อเนื่องล้มเหลว"
+    },
+    "_OutlineStencilZFail": {
+      "label": "เส้นขอบ",
+      "tooltip": "เส้นขอบ"
+    },
+    "_UseProximityEffect": {
+      "label": "เปิดใช้งานลูกเล่นความเข้มสี",
+      "tooltip": "เปิดใช้งานลูกเล่นความเข้มสี"
+    },
+    "_ProximityMode": {
+      "label": "โหมดเร็วสุด",
+      "tooltip": "โหมดเร็วสุด"
+    },
+    "_ProximityAction": {
+      "label": "การ กระทํา โดย ประมาณ",
+      "tooltip": "การ กระทํา โดย ประมาณ"
+    },
+    "_ProximityRadius": {
+      "label": "รัศมีคงที่",
+      "tooltip": "รัศมีคงที่"
+    },
+    "_ProximitySoftness": {
+      "label": "ความทึบแสง",
+      "tooltip": "ความทึบแสง"
+    },
+    "_ProximityInvert": {
+      "label": "แก้ไขโครงการหลัก..",
+      "tooltip": "แก้ไขโครงการหลัก.."
+    },
+    "_ProximityColor": {
+      "label": "ค่าความเข้มสี",
+      "tooltip": "ค่าความเข้มสี"
+    },
+    "_ProximityColor_Shift": {
+      "label": "การไล่ระดับสี",
+      "tooltip": "การไล่ระดับสี"
+    },
+    "_ProximityCustomPos": {
+      "label": "กําหนดตําแหน่งของโลกเอง",
+      "tooltip": "กําหนดตําแหน่งของโลกเอง"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "ขนาด A2C",
+      "tooltip": "การยืดเส้นยืดสายแบบมีอนุพันธ์ เพื่อรักษาความกว้างขอบตัดผ่านระยะทางใน VR."
+    },
+    "_DetailNormalBicubic": {
+      "label": "การกรองแบบไบซิบิก",
+      "tooltip": "เปิดใช้งานตัวอย่าง 5-tapp Catmull-Rom bicublic เพื่อกําจัดวัตถุเขต Texel ใน VR."
+    },
+    "_DetailNormalCount": {
+      "label": "เลเยอร์ปกติ",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "รายละเอียดปกติ 2 แผนที่",
+      "tooltip": "รายละเอียดที่สอง ชั้นแผนที่ปกติ."
+    },
+    "_DetailNormal2Scale": {
+      "label": "เลเยอร์ 2",
+      "tooltip": "ควบคุมความแข็งแรงของรายละเอียดชั้น 2."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "รายละเอียดปกติ 2 UV ตั้งค่า",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "เลเยอร์ 2",
+      "tooltip": "ความเร็วของเลื่อน X สําหรับรายละเอียดชั้นที่ 2."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "เลเยอร์ 2",
+      "tooltip": "ความ เร็ว ของ ม้วน หนังสือ."
+    },
+    "_DetailNormal3Map": {
+      "label": "รายละเอียดภาพ 3 แผนที่",
+      "tooltip": "รายละเอียดที่สาม ชั้นแผนที่ปกติ."
+    },
+    "_DetailNormal3Scale": {
+      "label": "เลเยอร์ 3",
+      "tooltip": "ควบคุมความแข็งแรงของรายละเอียดชั้น 3."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "รายละเอียดปกติ 3 UV ตั้งค่า",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "เลเยอร์ 3 เลื่อนความเร็ว X",
+      "tooltip": "ความเร็วของเลื่อน X สําหรับรายละเอียดชั้นปกติ 3."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "เลเยอร์ 3 เลื่อนความเร็ว Y",
+      "tooltip": "ความเร็วของเลื่อน Y สําหรับรายละเอียดชั้นปกติ 3."
+    },
+    "_DetailNormal4Map": {
+      "label": "รายละเอียดปกติ 4 แผนที่",
+      "tooltip": "สี่รายละเอียดชั้นแผนที่ปกติ."
+    },
+    "_DetailNormal4Scale": {
+      "label": "เลเยอร์ 4",
+      "tooltip": "ควบคุมความแข็งแรงของรายละเอียดชั้น 4 ปกติ."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "รายละเอียดปกติ 4 UV ตั้งค่า",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "เลเยอร์ 4",
+      "tooltip": "ความเร็วของเลื่อน X สําหรับรายละเอียดชั้น 4."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "เลเยอร์ 4 เลื่อนความเร็ว Y",
+      "tooltip": "ความ เร็ว ของ ม้วน หนังสือ."
+    },
+    "_UseOKLabBlending": {
+      "label": "ลูกเล่นการไล่ระดับสี",
+      "tooltip": "เปิดใช้งานการผสมพื้นที่สีของ Bjurn Ottosson สําหรับสีดีบุก และชุดตกแต่งเพื่อกําจัดการสลายตัวแบบโคลน."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "ช่องสัญญาณผิวโลก",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "ช่อง Rim Global Name",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "Comment=เครื่องมือแก้ไขภาพName",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "ขจัด ช่อง ทาง โลก ของ หน้ากาก",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "เปิดใช้งานการจําลอง VRSL",
+      "tooltip": "Recacts to real-time DMX Space finctures, เลเซอร์, และ ปริมาตรสโมสรไฟในการสนับสนุนโลก VR Chaet."
+    },
+    "_VRSLIntensity": {
+      "label": "เส้นต่อเนื่อง",
+      "tooltip": "จีไอและเครื่องซักผ้า."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "ความหนาแน่นโดยตรง",
+      "tooltip": "ความไวแสงที่ตรง."
+    },
+    "_VRSLSpecular": {
+      "label": "การ เริ่ม ต้น รอบ นอก",
+      "tooltip": "การตอบรับการสะท้อนแสงแบบสเปกตรัม จากการแก้ไข."
+    },
+    "_UseDebugMode": {
+      "label": "เปิดใช้งานมุมมองดีบั๊ก",
+      "tooltip": "จําแนกสารบัฟเฟอร์และผลการตรวจสอบที่วิวพอร์ท."
+    },
+    "_DebugMode": {
+      "label": "โหมดดีบั๊ก",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "วัตถุที่ถูกล็อค",
+      "tooltip": "วัตถุที่ถูกล็อค"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "การเคลื่อนไหว",
+      "tooltip": "กําหนดปริมาณการยุบตัวให้โดยอัตโนมัติ."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "แปรงทาสีเอง",
+      "tooltip": "ขัดขวางการตัดตัวอัลฟา โดยเฉพาะอย่างยิ่งการผ่านการหล่อเงา."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "เปิดใช้การควบคุมการเคลื่อนไหวขั้นสูง",
+      "tooltip": "เอ็กซ์โปซิส หลักควบคุมการปรับขนาดเวลา, โหมดการเล่น, และปรับค่าเวลาสําหรับแอนิเมชันเงาทั้งหมด."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "เปิดใช้การสะท้อนแสงอะนิโซโทรปิก",
+      "tooltip": "สร้างจุดเด่นที่ยืดยาว ทั่วไปบนโลหะหรือเส้นผม."
+    },
+    "Enable Back Face Color": {
+      "label": "เปิดใช้การพิมพ์หน้ากลับ",
+      "tooltip": "เพิ่มสีให้รูปหลายเหลี่ยมด้านหลัง."
+    },
+    "Enable Back Face Texture": {
+      "label": "เปิดการใช้พื้นผิวด้านหลัง",
+      "tooltip": "จัดเรียงเนื้อให้เป็นรูปหลายเหลี่ยมด้านหลัง."
+    },
+    "Enable Chroma Keying": {
+      "label": "เปิดใช้งานกุญแจ CRoma",
+      "tooltip": "ทําให้สีมีช่วงโปร่งใส (เช่น การกดแป้นจอสีเขียว)."
+    },
+    "Enable Clear Coat": {
+      "label": "เปิดการใช้งาน Coat ล้าง",
+      "tooltip": "เพิ่มชั้นสเปกตรัมของโค้ตที่ใสเป็นรอง เหนือวัสดุ PBR มีประโยชน์สําหรับการทา/เคลือบพื้นผิว."
+    },
+    "Enable Clipping Mask": {
+      "label": "เปิดใช้งานการล้างข้อมูล",
+      "tooltip": "ใช้ เนื้อ เยื่อ เพื่อ สับ (สร้าง ส่วน ที่ ไม่ ปรากฏ แก่ ตา) ของ เนื้อ เรื่อง. นี่เป็นคลิปยาก ไม่ใช่ความโปร่งใส."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "เปิดใช้การสะท้อนลูกบาศก์เอง",
+      "tooltip": "เพิ่มค่าลูกบาศก์แมพที่กําหนดเองสําหรับเงาสะท้อนภายใน หรือค่าถอยหลังเมื่อเครื่องสํารวจสะท้อนหายไป/มืด."
+    },
+    "Enable Custom Fog Color": {
+      "label": "เปิดใช้การปรับสีของฟ็อกเอง",
+      "tooltip": "แทน ที่ จะ ใช้ สี หมอก ของ ฉาก เหตุ การณ์ ทั่ว โลก โดย ใช้ กระป๋อง ที่ ทํา ขึ้น เอง ใน ท้อง ถิ่น."
+    },
+    "Enable Decal 1": {
+      "label": "เปิดการถอดรหัส 1",
+      "tooltip": "โอเวอร์ไลน์เป็นเนื้อเรื่องหลัก."
+    },
+    "Enable Decal 2": {
+      "label": "เปิดใช้งาน scull 2",
+      "tooltip": "โอเวอร์ไลน์มีเนื้อที่ 2."
+    },
+    "Enable Decal 3": {
+      "label": "เปิดใช้งานการถอดรหัส 3",
+      "tooltip": "โอเวอร์ไลน์มีลายเส้น."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "เปิดการใช้งานการค่อย ๆ ลดความลึกลง (หน่วยเป็นพิกเซล)",
+      "tooltip": "ตัดรูปหลายเหลี่ยมนุ่มกับเรขาคณิตของฉาก สําหรับพื้นผิวโปร่งใสและเติมความเข้ม."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "เปิดใช้การหรี่ระยะปกติ",
+      "tooltip": "ค่อย ๆ หรี่เสียงลง รายละเอียดความถี่สูง ที่ระยะเพื่อป้องกันไม่ให้ VR ใช้ชื่อปลอม/ simmering."
+    },
+    "Enable Detail Normal Map": {
+      "label": "เปิดใช้การแสดงรายละเอียดแผนที่ปกติ",
+      "tooltip": "เพิ่มแผนที่สํารองสําหรับรายละเอียดขนาดเล็ก."
+    },
+    "Enable Detail Texture": {
+      "label": "เปิดการใช้พื้นผิวรายละเอียด",
+      "tooltip": "การ ทํา เช่น นี้ ไม่ ใช่ เรื่อง ง่าย."
+    },
+    "Enable Dissolve": {
+      "label": "เปิดใช้งานการยกเลิก",
+      "tooltip": "ทําให้วัตถุปรากฏ/ Discape โดยใช้รูปแบบเสียง."
+    },
+    "Enable Distance Fade": {
+      "label": "เปิดใช้การหรี่เสียง",
+      "tooltip": "เมื่อ กล้อง ถ่าย รูป อยู่ ไกล ๆ ก็ ค่อย ๆ หรี่ แสง ลง."
+    },
+    "Enable Dithered Transparency": {
+      "label": "เปิดใช้งานแผ่นใสแบบผสม",
+      "tooltip": "การเกลี่ยสีแบบ Creen- Space Bayer สําหรับแยกผ้าโปร่งใสและเส้นผม."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "เปิดใช้การหรี่เสียงจากเอฟเฟ็คต์ (LOD)",
+      "tooltip": "ผล กระทบ จาก การ ผ่าตัด อย่าง หนัก (Glitter, Fractals,กริด, จิตเวช) เกิน ระยะ ที่ กําหนด ไว้ เพื่อ ปรับ ปรุง ประสิทธิภาพ ของ VR."
+    },
+    "Enable Emission": {
+      "label": "เปิดการทํางาน",
+      "tooltip": "ทําให้วัตถุเรืองแสง ต้องการผลจากการประมวลผลของบลูม ในฉากเพื่อดูแสง."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "เปิดใช้การปั้มพลังงาน",
+      "tooltip": "การ พ่น ก๊าซ เอ ชดี อาร์ สูง สุด เพื่อ ป้องกัน การ ออก ดอก สี ขาว."
+    },
+    "Enable Emission Pulse": {
+      "label": "เปิดการใช้งานชีพจรอัตโนมัติ",
+      "tooltip": "ชีพจรเต้นแรงผิดปกติ แบบไม่มีผลกระทบกับแสงที่แผ่ออก."
+    },
+    "Enable Environment Reflections": {
+      "label": "เปิดใช้การสะท้อนสภาพแวดล้อม",
+      "tooltip": "ตัว อย่าง การ สํารวจ สะท้อน ภาพ เพื่อ เพิ่ม การ สะท้อน ของ สิ่ง แวด ล้อม แม้ แต่ ใน โหมด พื้น ฐาน หรือ โทน."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "เปิดใช้งานพาราแลกซ์ของตา ไอริส",
+      "tooltip": "จําลองความลึก/การฝ่าฝืนของนักเรียน และจุดใต้กระจกตา."
+    },
+    "Enable Flipbook Animation": {
+      "label": "เปิดใช้งานการเคลื่อนไหวของ Febook",
+      "tooltip": "การเคลื่อนไหวของพื้นผิวหลักโดยใช้ผังแป้นพิมพ์ การ ทํา เช่น นี้ จะ ทํา ให้ เนื้อ เยื่อ ส่วน ใหญ่ หด ตัว และ ชดเชย."
+    },
+    "Enable Fluorescence": {
+      "label": "เปิดการใช้งาน fluormate",
+      "tooltip": "ปฏิกิริยากับความเข้มเบาด้านสิ่งแวดล้อม/ทิศทาง (แสงจ้าในความมืด)."
+    },
+    "Enable Fourth Emission": {
+      "label": "เปิดใช้งานการทํางานแบบสี่",
+      "tooltip": "เพิ่มชั้นการปล่อยก๊าซชั้นที่ 4."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "เปิดใช้การโปร่งใสของ Fresnel",
+      "tooltip": "ทําให้วัตถุมีความโปร่งใสมากขึ้น ในศูนย์และ opaque ที่ขอบ."
+    },
+    "Enable Glitch Flicker": {
+      "label": "เปิดใช้การคลิกเมาส์ของกริช",
+      "tooltip": "ทําให้เกิดผลกระทบที่ริบหรี่ต่อวัตถุทั้งหมด."
+    },
+    "Enable Global Theme Colors": {
+      "label": "เปิดใช้งานชุดตกแต่งทั่วไป",
+      "tooltip": "กําหนด 4 สีหลักของโลก เพื่อขับเคลื่อนชุดตกแต่งรวมเข้ากับวัสดุต่างๆ โดยเลือกใช้เอกซ์พลอเรอร์ลิ้งค์และความเข้มสี."
+    },
+    "Enable Grid": {
+      "label": "เปิดการใช้กริด",
+      "tooltip": "ครอบคลุมรูปแบบตารางบนพื้นผิว."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "เปิดการใช้แถบสีผม (Kajya- KyK)",
+      "tooltip": "อะนิโซโทรปิคไฮไลท์มีสไตล์เฉพาะสําหรับเส้นขน."
+    },
+    "Enable Hologram": {
+      "label": "เปิดใช้งานโฮโลแกรม",
+      "tooltip": "Sci-fi Hellograph effect กับ สแกนไลน์เคลื่อนไหว, ขอบขอบและกระพริบ."
+    },
+    "Enable HSV Mask": {
+      "label": "เปิดใช้งานหน้ากาก HSV",
+      "tooltip": "การปรับค่า HSV โดยใช้แผนที่พื้นผิว."
+    },
+    "Enable Interlacing": {
+      "label": "เปิดการใช้อินเทอร์ไลน์",
+      "tooltip": "ทําให้หน้าจอมืดทุกตัว เพื่อจําลองการแสดงผลแบบทับกัน."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "เปิดการใช้พาราแลกซ์ภายใน (Gems / Eyegraphs)",
+      "tooltip": "สังเคราะห์ ชั้น ใน ชั้น ใน ของ ความ ลึก ใต้ กระจก, เลนส์, ผลึก, และ แอ นิ เมะ."
+    },
+    "Enable Intersection Effect": {
+      "label": "เปิดใช้งานลูกเล่นการขัดแย้ง",
+      "tooltip": "หรี่แสงไปยังสีที่วัตถุอยู่ใกล้หรือตัดกับวัตถุอื่น ๆ ในที่เกิดเหตุ."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "เปิดใช้งานการดูบิลบอร์ด",
+      "tooltip": "หมุน Mich vertics เพื่อแสดงหน้ากล้องที่กําลังใช้งานอยู่."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "เปิดใช้งาน LTCGI (Maya Light GI)",
+      "tooltip": "Recacts to real-time LTCGI Planguage plight and screens agains in รองรับโลกของ VR Chart."
+    },
+    "Enable MatCap 2": {
+      "label": "เปิดการใช้งานมัตแคป 2",
+      "tooltip": "เพิ่มชั้น MatCap รอง สําหรับหลายโลหะหรือสําเนียงขอบ."
+    },
+    "Enable Near Camera Fade": {
+      "label": "เปิดใช้การหรี่เสียงของกล้อง",
+      "tooltip": "เรขาคณิตที่ละลายอย่างนุ่มนวล เมื่อกล้องใกล้เกินไป (การแตกหัวแบบ VR)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "เปิดใช้การบอกเวลาในเครือข่าย",
+      "tooltip": "ปรับเทียบข้อมูลเสียง."
+    },
+    "Enable Noise/Grain": {
+      "label": "เปิดการใช้งานจุดรบกวน/ จุดรบกวน",
+      "tooltip": "เพิ่มส่วนรบกวนรบกวน."
+    },
+    "Enable Outline": {
+      "label": "เปิดใช้กรอบ",
+      "tooltip": "เพิ่มเส้นทึบรอบวัตถุ นี้เพิ่มการเรียกวาดที่สองเพื่อวัตถุ."
+    },
+    "Enable Outline Gradient": {
+      "label": "เปิดใช้การไล่ระดับสี",
+      "tooltip": "กําหนดค่าเกรเดียนบน/ล่างแนวตั้ง."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "เปิดการใช้พาราแลกซ์แมพ (แผนที่สี)",
+      "tooltip": "ใช้แผนที่ความสูงเพื่อปรับค่าความลึกของภาพ."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "เปิดการใช้งาน Parailax Oclation Maping",
+      "tooltip": "เปิดการใช้งานพาราแลกซ์หลายขั้น เพื่อเพิ่มความลึก สูงกว่าเท่านั้น."
+    },
+    "Enable Pixelation": {
+      "label": "เปิดใช้การไล่ระดับสี",
+      "tooltip": "สร้างผลกระทบต่ํา."
+    },
+    "Enable Planar Wipe": {
+      "label": "เปิดการใช้งานการเช็ดตัว Planar",
+      "tooltip": "เปิดเผยวัตถุที่เรียบและเรียบ."
+    },
+    "Enable Posterization": {
+      "label": "เปิดใช้งานการไปรษณีย์",
+      "tooltip": "ลดจํานวนของสี โดยทําการลดขนาดสีกลับภาพ/ รูปหลายเหลี่ยม."
+    },
+    "Enable Procedural Texture": {
+      "label": "เปิดการใช้พื้นผิว",
+      "tooltip": "แทนที่คุณสมบัติต่าง ๆ ของเนื้อหาโดยใช้รูปแบบที่สร้างขึ้น."
+    },
+    "Enable Proximity Effect": {
+      "label": "เปิดใช้งานลูกเล่นความเข้มสี",
+      "tooltip": "ผล กระทบ จาก ภาพ (Wrlight, slamming, dither, หรือ tit) อาศัย ระยะ ทาง ไป ยัง กล้อง, วัตถุ หมุน, หรือ ตําแหน่ง ที่ กําหนด ไว้ ใน โลก."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "เปิดการใช้งาน PS1 Retro Vertex snaping",
+      "tooltip": "Quantizes ตําแหน่งจุดยอดไปที่ตาราง resolution ต่ําสําหรับ regress PS1 / Afinne jetter ความงาม."
+    },
+    "Enable Pulse": {
+      "label": "เปิดใช้งานชีพจร",
+      "tooltip": "เพิ่มความกระฉับกระเฉงเข้าไปในแรงปล่อย."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "เปิดใช้การไล่สีแบบ RGBA (การกระจัดสี)",
+      "tooltip": "อนุญาต 4 กระป๋องสีอิสระและช่องทางการลอยตัวโยงไปยังช่องทาง RGBA ของพื้นผิวหน้ากาก."
+    },
+    "Enable Rim Glow": {
+      "label": "เปิดการใช้งาน Rim Glow",
+      "tooltip": "เพิ่มแสงไปยังขอบของวัตถุตามมุมที่มอง."
+    },
+    "Enable Ripple Effect": {
+      "label": "เปิดใช้งานลูกเล่น Ripple",
+      "tooltip": "สร้างผลกระทบจากคลื่นคลื่น ที่เกิดจากพิกัดยูวี."
+    },
+    "Enable Scanlines": {
+      "label": "เปิดใช้การค้นหา",
+      "tooltip": "จําลองรูปลักษณ์ของจอ CRT."
+    },
+    "Enable Screen Refraction": {
+      "label": "เปิดใช้การฝ่าฝืนจอภาพ",
+      "tooltip": "ปรับหน้าจอด้านหลังวัตถุ."
+    },
+    "Enable Scrolling": {
+      "label": "เปิดการเลื่อน",
+      "tooltip": "เลื่อนรูปแบบตาราง."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "เปิดใช้งานเงาหน้าแบบ SDF",
+      "tooltip": "เซ็นในช่องข้อมูลทางไกลDescription face shadow for aime language."
+    },
+    "Enable Second Emission": {
+      "label": "เปิดใช้งานการทํางานครั้งที่สอง",
+      "tooltip": "เพิ่มชั้นการปล่อยน้ําในม้วนที่สอง."
+    },
+    "Enable Shader Debug View": {
+      "label": "เปิดใช้การดีบั๊กของเชดเดอร์",
+      "tooltip": "จําแนกสารบัฟเฟอร์และผลการตรวจสอบที่วิวพอร์ท."
+    },
+    "Enable Shell Fur": {
+      "label": "เปิดการใช้งานเครื่องเขียนเชลล์",
+      "tooltip": "เปลือก ชั้น นอก หลาย ชั้น ผ่าน ออก มา ตาม จุดยอด ที่ เป็น ปกติ พร้อม กับ การ ปก ปิด เสียง รบกวน."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "เปิดใช้การตัดส่วนผิวหนัง",
+      "tooltip": "แสงอ่อนส่องเงา บนพื้นผิวโค้งอินทรีย์."
+    },
+    "Enable Step Specular": {
+      "label": "เปิดใช้การแสดงสถานะแต่ละขั้น",
+      "tooltip": "แปลงจุดเด่นแบบ PBR แบบนุ่มๆ ให้เป็นจุดแสงของการ์ตูน."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "เปิดการใช้งาน stochastic Sampling",
+      "tooltip": "ส่วนผสมของเนื้อผ้าที่สุ่มใช้ เพื่อกําจัดรูปแบบที่ซ้ํากันบนพื้นผิวขนาดใหญ่."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "เปิดการใช้พื้นผิวย่อย",
+      "tooltip": "จําลองแสงกระจายผ่านวัตถุบาง เช่นผิวหรือใบ."
+    },
+    "Enable Thickness Map": {
+      "label": "เปิดใช้การทําแผนที่ความหนา",
+      "tooltip": "ใช้พื้นผิวจําลองการส่งผ่านแสง ผ่านพื้นที่บางบาง (หู, ใบ เป็นต้น)."
+    },
+    "Enable Third Emission": {
+      "label": "เปิดใช้งานการทํางานแบบที่สาม",
+      "tooltip": "เพิ่มชั้นพ่นน้ําชั้นที่สาม."
+    },
+    "Enable Transparency": {
+      "label": "เปิดใช้การโปร่งใส",
+      "tooltip": "ทําให้วัตถุมีความโปร่งใส."
+    },
+    "Enable Transparency Glitch": {
+      "label": "เปิดใช้งานไวยากรณ์โปร่งใส",
+      "tooltip": "ส่งผลให้แสงริบหรี่ส่งผลกระทบต่อความโปร่งใส."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "เปิดใช้งานแผนที่ปกติของทริปลันดาร์",
+      "tooltip": "โปรเจกต์แผนที่ทั่วแกน 3."
+    },
+    "Enable UV Distortion": {
+      "label": "เปิดใช้การบิดเบือนภาพแบบ UV",
+      "tooltip": "ใช้เนื้อผ้าเพื่อปรับคลื่นความถี่ของยูวี สร้างผลกระทบเช่นหมอกความร้อน หรือคลื่นน้ํา."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "เปิดการใช้งาน UV Fllow (ข้อความ)",
+      "tooltip": "ลักษณะเคลื่อนไหวตามเส้นทางการไหลของเวกเตอร์ โดยใช้การหมุน 2 ฟุต."
+    },
+    "Enable UV Tile Discard": {
+      "label": "เปิดการใช้งานการวางกรอบแบบ UV",
+      "tooltip": "แยกกระเบื้อง UV เฉพาะ มีประโยชน์ในการเสกเสื้อผ้า."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "เปิดการใช้พื้นผิวแบบเคลื่อนไหวของเวอร์เท็กซ์",
+      "tooltip": "แอปเปิ้ลอบแอนิเมชันของจุดยอด จากพื้นผิวแบบ VAT ใช้สําหรับผ้า, ของเหลว, หรือผลการทําลายล้าง."
+    },
+    "Enable Vertex Collapse": {
+      "label": "เปิดใช้งานการยุบตัวของเวอร์เท็กซ์",
+      "tooltip": "หดแบบจําลองเข้าไปในจุดศูนย์กลาง."
+    },
+    "Enable Video Player": {
+      "label": "เปิดใช้การเล่นวิดีโอ",
+      "tooltip": "ปรับแต่งพื้นผิวเพื่อรับข้อมูลเครื่องเล่นวิดีโอ."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "เปิดใช้งาน VRSL (VRC Studio Lighting)",
+      "tooltip": "Recacts to real-time DMX Space finctures, เลเซอร์, และ ปริมาตรสโมสรไฟในการสนับสนุนโลก VR Chaet."
+    },
+    "Enable Wetness": {
+      "label": "เปิดใช้การเปียก",
+      "tooltip": "จําลองพื้นผิวเปียก มีความมืดและผลกระทบคลื่นฝน."
+    },
+    "Override Scene Light": {
+      "label": "เพิ่มช่องสี",
+      "tooltip": "ครอบคลุมทิศทาง สี ความเข้มของแสงหลัก."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "แว่นขยายแสง",
+      "tooltip": "ระบบป้องกันความปลอดภัย จํากัด ความถี่สโทรบี/แฟลชสูงสุด เพื่อป้องกันอาการลมชัก."
+    },
+    "Use Auto Hue Shift": {
+      "label": "ใช้ความกว้างอัตโนมัติ",
+      "tooltip": "อย่างต่อเนื่องเลื่อนสีฐานฐานไปทีละน้อย."
+    },
+    "Use Base Color": {
+      "label": "ใช้สีพื้นฐาน",
+      "tooltip": "สลับสีทึบ."
+    },
+    "Use Base Texture": {
+      "label": "ใช้พื้นผิวฐาน",
+      "tooltip": "สลับพื้นผิวหลัก."
+    },
+    "Use Depth-Based Color": {
+      "label": "ใช้สีแบบลึก",
+      "tooltip": "เปลี่ยนค่าสีของตาราง โดยอิงจากพื้นผิวอื่น ๆ."
+    },
+    "Use Emission Mask": {
+      "label": "ใช้การไล่ระดับสี",
+      "tooltip": "ใช้พื้นผิวเพื่อควบคุม ส่วนหนึ่งของพื้นผิวที่ปล่อยแสงออกมา."
+    },
+    "Use Grid Mask": {
+      "label": "ใช้แถบตาราง",
+      "tooltip": "ใช้พื้นผิวเพื่อปกปิดผลกระทบของตาราง."
+    },
+    "Use Outline Width Map": {
+      "label": "ใช้ผังแป้นพิมพ์",
+      "tooltip": "ใช้พื้นผิวแบบระดับสีเทา เพื่อปรับความหนาของเส้นรอบต่อพิกเซล."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "ใช้พื้นผิว อัลฟาสําหรับการทํางาน",
+      "tooltip": "ใช้ ช่อง อัลฟา ของ เนื้อ เยื่อ เป็น แผนที่ ระบาย น้ํา ออก. วิธีที่มีประสิทธิภาพในการสร้างแผนที่เรืองแสง โดยไม่ต้องแยกเนื้อ."
+    },
+    "Use Transmission Texture": {
+      "label": "ใช้พื้นผิวแบบโปร่งแสง",
+      "tooltip": "ตั้งค่าสีเอง."
+    }
+  }
+}

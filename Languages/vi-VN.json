@@ -1,0 +1,4035 @@
+{
+  "languageCode": "vi-VN",
+  "languageName": "Tiếng Việt",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "Tìm kiếm",
+    "searchPlaceholder": "Tìm kiếm tài sản vật chất...",
+    "matchingProperties": "Thuộc tính khớp",
+    "clearSearch": "Xoá tìm kiếm",
+    "noPropertiesFound": "Không tìm thấy thuộc tính nào khớp",
+    "lockMaterial": "teppi82@ gmail. com",
+    "unlockMaterial": "Bỏ khoá tài liệu",
+    "lockAndOptimize": "Khoá & optimize",
+    "savePreset": "Lưu định sẵn...",
+    "loadPreset": "Tải sẵn...",
+    "copy": "Chép",
+    "paste": "Dán",
+    "reset": "Đặt lại",
+    "language": "Ngôn ngữ",
+    "cycle": "Quay vòng",
+    "performanceTip": "Mẹo trình diễn  BAR : tài liệu này đã được mở khóa. Cho hiệu suất chạy tốt nhất (đặc biệt là trên search/VR), sử dụng 'Lock & Optimize' bên trên. Đây là những dải giấy thông hành không dùng, các nhánh mã đã chết, và các từ khoá nướng cho việc vẽ không đầu.",
+    "lockedWarning": "Vật liệu bị khóa (chỉ đọc). Mở khóa bằng thanh công cụ để sửa đổi tính chất.",
+    "Global UV Controls": "Name",
+    "UV Tile Grid (4×4)": "Lưới lát UV (4×4)",
+    "Uncheck tiles to discard those UV regions.": "Bỏ chọn mục để bỏ đi những vùng UV đó.",
+    "Global Color Animation": "Hoạt cảnh màu toàn cục",
+    "Color Adjustments": "Điều chỉnh màu",
+    "Red Zone (R Channel)": "Vùng màu đỏ ( KênhR)",
+    "Green Zone (G Channel)": "Vùng màu lục (G Kênh)",
+    "Blue Zone (B Channel)": "Vùng màu xanh ( Kênh B)",
+    "Alpha Zone (A Channel)": "Vùng anfa (A Channel)",
+    "Color Correction": "Sửa màu",
+    "Dedicated Shading Models": "Những gương được dâng hiến",
+    "Render States": "Tình trạng vẽ",
+    "Camera & Mirror Visibility": "Khả năng & phản chiếu máy ảnh",
+    "Stencil Buffer Settings": "Thiết lập bộ đệm & Stencil",
+    "Global AudioLink Controls": "Điều khiển âm thanh toàn cục",
+    "Per-Band Delay & Timing (History Buffer)": "& hoãn lại giờ trên/ trên/ dưới",
+    "Audio Spectrum": "Quang phổ âm thanh",
+    "Audio Waveform": "Stencils",
+    "Avatar Param Fallback": "Comment",
+    "AvatarParamFallbackTooltip": "Phản hồi lại các tham số Avatar cục bộ/ OSC nhập khi không có nguồn âm thanh thế giới hiện diện.",
+    "Pulse Alpha Range": "Phạm vi Alpha Pulse",
+    "PulseAlphaRangeTooltip": "Điều khiển con đầu đàn tối thiểu và tối đa cho cường độ xung lực.",
+    "Color": "Màu",
+    "Transform": "Biến hình",
+    "Texture": "Chữ",
+    "Normal Map": "Sơ đồ chuẩn",
+    "UV": "UV",
+    "UV0": "UV 0",
+    "UV1": "UV1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "Vũ trụ (Chirpear)",
+    "Local Space (Triplanar)": "Không gian cục bộ (Tripear)",
+    "Screen Space": "Miền màu màn hình",
+    "Planar (Local XY)": "Planar (Local XY)",
+    "Spherical (Local)": "Hình cầu (Local)",
+    "Cylindrical (Local)": "Hình trụ (Local)",
+    "Biplanar (World)": "Nguyên sinh (thế giới)",
+    "Panosphere (Equirectangular 360)": "Đại cầu (Equirecta góc 360)",
+    "Polar Coordinates": "Tọa độ Cực",
+    "Off": "Tắt",
+    "Bass": "Bóng",
+    "Low Mid": "Thấp",
+    "High Mid": "Trung bình",
+    "Treble": "Độ dốc",
+    "High": "Cao",
+    "Medium": "Vừa",
+    "Low": "Thấp",
+    "Opaque": "Opaque",
+    "Cutout": "Cắt",
+    "Transparent": "Trong suốt",
+    "Additive": "Thêm",
+    "Multiply": "Nhân",
+    "Premultiplied": "Được sắp xếp sẵn",
+    "None": "Không có",
+    "R": "R",
+    "G": "G",
+    "B": "B",
+    "A": "A",
+    "RGBA": "RGBA",
+    "RGB": "RGB",
+    "All": "Tất cả",
+    "Hue Shift": "Comment",
+    "Gradient": "Gradient",
+    "Rainbow Gradient": "Gradient Cầu vồng",
+    "AudioLink Theme": "Comment Sắc thái",
+    "Direct": "Trực tiếp",
+    "AudioLink": "Comment",
+    "HueShift": "Sắc màu",
+    "Hue Shift/Gradient": "Sắc",
+    "Velocity": "Tốc độ",
+    "Stylized_PBR": "Đã cấu hình PBR",
+    "Standard_PBR": "Chuẩn PBR",
+    "Toon": "Toon",
+    "Basic": "Cơ bản",
+    "Unlit": "Hủy bỏ",
+    "Flat": "Bằng",
+    "Ambient": "Name",
+    "ShadowColor": "Bóng",
+    "Ambient/ShadowColor": "Name",
+    "TwoTone": "2Tone",
+    "ThreeTone": "Name",
+    "FourTone": "BốnTone",
+    "Whiteout_UDN": "Trắng",
+    "RNM": "RNM",
+    "OverrideProbes": "Ghi đè",
+    "FallbackWhenProbesDark": "Comment",
+    "Screen": "Màn hình",
+    "Metallic": "Kim loại",
+    "Specular": "Tinh thể",
+    "Override": "Ghi đè",
+    "Add": "Thêm",
+    "Replace": "Thay thế",
+    "Lighten": "Làm sáng",
+    "Overlay": "Phủ",
+    "SoftLight": "Độ sáng mềm",
+    "Alpha Blend": "Alpha",
+    "Lerp": "Lerp",
+    "Max": "Cực đại",
+    "Circle": "Tròn",
+    "Square": "Hình vuông",
+    "Star": "Sao",
+    "MatCap": "MatCap",
+    "Glass": "Kính",
+    "Anisotropic": "Tâm linh",
+    "SubsurfaceScattering": "Xây dựng khuôn mặt",
+    "Retro_PSX": "Retro PSX",
+    "Retro_HalfLambert": "Rtro  Nửa đêm",
+    "Ward": "Ward",
+    "Stretched-Blinn": "Kéo giãn-Blinn",
+    "Default": "Mặc định",
+    "Hologram": "Chữ số",
+    "Crystal": "Tinh thể",
+    "Triplanar": "Name",
+    "Iridescence": "Sự kiêu ngạo",
+    "Glitter": "Glitter",
+    "Psychedelic": "Tâm lý",
+    "Fractal3D": "Phân dạng 3 chiều",
+    "Galaxy": "Thiên hà",
+    "Skybox": "Skybox",
+    "EQ Bars": "Comment",
+    "Continuous Curve": "Đường cong liên tục",
+    "Radial": "Hình tròn",
+    "Waterfall": "Thác nước",
+    "Solid": "Rắn chắc",
+    "Frequency Gradient": "Gradient tần số",
+    "Emissive Lerp": "Name",
+    "Oscilloscope": "Dao động ký",
+    "Ribbon": "Ribbon",
+    "Polar": "Cực",
+    "Lissajous": "Lissajous",
+    "Vertex Displacement": "Thay thế Vertex",
+    "Mono": "Đơn kênh",
+    "Left": "Trái",
+    "Right": "Phải",
+    "Local": "Cục bộ",
+    "World": "Thế giới",
+    "ScreenSpace": "Không gian Màn hình",
+    "ObjectSpace": "Không gian đối tượng",
+    "FullBillboard": "Hết bảng Billboard",
+    "YAxisBillboard": "Bàn tính YAxis",
+    "Local Space": "Miền địa phương",
+    "World Space": "Vũ trụ",
+    "Mandelbulb": "Mandelbub",
+    "Menger Sponge": "Mạnh Hiểu Tuấn",
+    "Kaleidoscopic IFS": "Comment",
+    "Mandelbox": "Mandelbox",
+    "Julia Set 3D": "Julia Set 3D",
+    "Sierpinski Tetrahedron": "Name",
+    "Apollonian Gasket": "Name",
+    "Burning Ship": "Con tàu đang cháy",
+    "Tricorn": "Name",
+    "Mandelbulb Power 2": "Sức mạnh Mandelbub 2",
+    "Mandelbulb Power 8": "Sức mạnh Mandelbub 8",
+    "Quaternion Julia": "Quaternion Julia",
+    "IFS Tetrahedron": "Khối tứ diện IFS",
+    "Octahedron": "Khối bát diện",
+    "Dodecahedron": "Khối thập nhị diện",
+    "Icosahedron": "Khối nhị diện",
+    "Cubic Fractal": "Phân dạng bậc ba",
+    "Hybrid Box-Bulb": "Hộp pha trộn",
+    "Single Instance": "Thể hiện đơn",
+    "Repeated (Clipped)": "Lặp lại",
+    "Endless": "Vô hạn",
+    "Yaw": "Yaw",
+    "Pitch": "Ném",
+    "Roll": "Cuộn",
+    "Tumble": "Tumble",
+    "Sway": "Name",
+    "Pulsate": "Phun",
+    "Grid": "Lưới",
+    "Scanlines": "Trục",
+    "Noise": "Âm thanh",
+    "Voronoi": "Name",
+    "Wave": "Sóng",
+    "Sierpinski": "Sierpinski",
+    "Checkerboard": "Bàn cờ",
+    "PolkaDot": "Polka Dot",
+    "HexagonGrid": "HexagonGrid",
+    "Herringbone": "Herringbone",
+    "Houndstooth": "Chó Săn",
+    "CarbonFiber": "Name",
+    "Plaid": "Màu",
+    "CircuitBoard": "Name",
+    "HalftoneDot": "Nửa sắc",
+    "TruchetTile": "TruchetTile",
+    "ReactionDiffusion": "Name",
+    "Brick": "Gạch",
+    "Intensity": "Cường độ",
+    "Glitch": "Glitch",
+    "Stretch": "Kéo giãn",
+    "Wind": "Gió",
+    "Flap": "Cánh",
+    "ButterflyFlap": "Tiểu Điệp",
+    "Blocky": "Khối",
+    "Strobe": "Strobe",
+    "Sine": "Sin",
+    "Spherical": "Hình cầu",
+    "MainTexture": "Văn bản chính",
+    "Emission": "Phát ra",
+    "Occlusion": "Name",
+    "DetailMap": "Chi tiết",
+    "DissolveMask": "Chọn",
+    "Cells": "Các ô",
+    "Cracks": "Vết nứt",
+    "Dots": "Chấm",
+    "Organic": "Sinh học",
+    "Flow": "Chảy",
+    "Outer": "Người ngoài",
+    "Inner": "Tĩnh",
+    "Fresnel": "Fresnel",
+    "Depth": "Độ sâu",
+    "MeshNormals": "Name",
+    "VertexColors": "Màu chữ & nhật",
+    "Linear": "Tuyến",
+    "PingPong": "PingPong",
+    "Loop": "Vòng lặp",
+    "Random": "Ngẫu nhiên",
+    "EaseInOut": "Từ từ ra",
+    "Expand": "Mở rộng",
+    "Contract": "Hợp đồng",
+    "Pulse": "Mạch",
+    "Vertical": "Dọc",
+    "Directional": "Hướng",
+    "Bottom": "Dưới",
+    "Top": "Trên",
+    "X": "X",
+    "Y": "Y",
+    "Z": "Z",
+    "Front": "Mặt",
+    "Back": "Lùi",
+    "Culling": "Chữa",
+    "Depth Test": "Kiểm tra độ sâu",
+    "Comparison": "So sánh",
+    "Disabled": "Tắt",
+    "Never": "Không bao giờ",
+    "Less": "Giảm",
+    "Equal": "Bằng",
+    "LessEqual": "Giảm mực",
+    "Greater": "Lớn hơn",
+    "NotEqual": "Không bình đẳng",
+    "GreaterEqual": "Bình đẳng lớn hơn",
+    "Always": "Luôn luôn",
+    "Keep": "Giữ",
+    "Zero": "Zero",
+    "IncrSat": "Comment",
+    "DecrSat": "Giải mã",
+    "Invert": "Đảo",
+    "IncrWrap": "InccWrap",
+    "DecrWrap": "DecrWrap",
+    "One": "Một",
+    "DstColor": "Màu Dst",
+    "SrcColor": "Sccolor",
+    "OneMinusDstColor": "Màu sắc Minus",
+    "SrcAlpha": "SrcAlpha",
+    "OneMinusSrcColor": "MộtMinusSc màu",
+    "DstAlpha": "DstAlpha",
+    "OneMinusDstAlpha": "Name",
+    "SrcAlphaSaturate": "Name",
+    "OneMinusSrcAlpha": "Name",
+    "Show Always": "Hiện",
+    "Hide In Mirrors": "Ẩn trong gương",
+    "Show Only In Mirrors": "Chỉ hiển thị trong gương",
+    "VR Headset Eyes Only": "Chỉ ánh mắt tai nghe VR",
+    "Desktop Stream Spectator Only": "Chỉ bộ xem luồng máy tính",
+    "Auto Oblique And Inverted Transform": "Tự động hoạt động và biến đổi",
+    "Oblique Matrix Only": "Chỉ Ma Trận Oblique",
+    "Inverted Transform Only": "Chỉ biến hình",
+    "Visibility Mode": "Chế độ nhìn",
+    "Mirror Detection Method": "Phương pháp phát hiện gương",
+    "VRCFallback": "VRCFallback",
+    "VRChat Fallback Tag": "Thẻ tham số VRChat",
+    "ToonStandard": "Toon Standard",
+    "Standard": "Chuẩn",
+    "Hidden": "Ẩn",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "Mục tiêu này cần thiết chế độ chiếu sáng để được đặt thành « Stylized PBR » trong phần chiếu sáng.",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "Mục tiêu này cần thiết 'Bản văn bản chi tiết có thể thay đổi' trong khu vực phủ.",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "Mục tiêu này cần thiết 'Sự phân hủy dễ dàng' để được bật lên ở khu vực Transions."
+  },
+  "sections": {
+    "Performance Settings": "Thiết lập hiệu suất",
+    "Render Mode": "Chế độ vẽ",
+    "Main Settings": "Thiết lập chính",
+    "Procedural Textures": "Văn bản quy trình",
+    "Advanced Animation Controls": "Điều khiển hoạt hình nâng cao",
+    "Color Controls": "Điều khiển màu",
+    "Lighting": "Ánh sáng",
+    "Surface Style": "Kiểu bề mặt",
+    "Overlays": "Phủ",
+    "Effects": "Hiệu ứng",
+    "Glitches": "Glitches",
+    "Transitions": "Chuyển đổi",
+    "AudioLink Visualizers": "Hình ảnh hoá âm thanh",
+    "Advanced Settings": "Thiết lập cấp cao"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "Chế độ vẽ",
+      "tooltip": "Kiểm soát cách làm mờ bóng. Opaque nhanh nhất. Cắt bỏ là để minh bạch. Trong suốt chỉ dành cho hiệu ứng mềm mại, pha trộn."
+    },
+    "_PerformanceLevel": {
+      "label": "Cấp hiệu suất",
+      "tooltip": "Thiết lập một đường cơ bản hiệu suất, vô hiệu hóa các tính năng đắt tiền ở cấp thấp hơn."
+    },
+    "_ZWrite": {
+      "label": "Buộc độ sâu Write (Z Write)",
+      "tooltip": "Tự điều khiển nếu tài liệu này ghi vào bộ đệm chiều sâu. Bật tùy chọn này để hiển thị các đối tượng trong suốt, các đối tượng vẫn còn bị khóa phía sau."
+    },
+    "_Cutoff": {
+      "label": "Alpha",
+      "tooltip": "Ngưỡng alpha cho hiệu ứng cắt giảm."
+    },
+    "_UseUVTileDiscard": {
+      "label": "Comment",
+      "tooltip": "Bỏ đi những mảnh tia cực tím đặc biệt. Rất hữu ích cho việc thay quần áo."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "Kiểu miếng mịn UV 3 (Top)",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "Kiểu Lưới UV 2",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "Kiểu Lưới UV 1",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "Thứ tự gạch lát UV 0 (Bottom)",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "Dùng màu cơ bản",
+      "tooltip": "Chuyển đổi màu cơ sở rắn."
+    },
+    "_BaseColor": {
+      "label": "Màu",
+      "tooltip": "Màu chính của hình tam giác khi không dùng họa tiết."
+    },
+    "_BaseColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "Dùng màu Vertex",
+      "tooltip": "Gương làm bóng mát dùng màu sơn trên các đường viền. Yêu cầu một mô hình với màu sắc đỉnh cao."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "Alpha trong suốt",
+      "tooltip": "Dùng kênh alpha màu vertex làm bộ nhân bản."
+    },
+    "_UseEmission": {
+      "label": "Bật phát ra",
+      "tooltip": "Làm cho vật thể phát sáng. Cần một hiệu ứng hậu xử lý của Bloom để nhìn thấy ánh sáng."
+    },
+    "_UseEmissionPulse": {
+      "label": "Kích hoạt Nhịp thở",
+      "tooltip": "Nhịp tim tỏa ra một cách nhịp nhàng mà không ảnh hưởng đến ánh sáng khuếch tán."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ tỏa ra nhanh chóng."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "Nhịp tim",
+      "tooltip": "Bao nhiêu xung phát ra (0 = không có xung, 1 = xung từ 0 đến cường độ tối đa)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "Dùng màu Vertex để nhả",
+      "tooltip": "Dùng kênh RGB màu sắc đỉnh để tô sáng sự phát ra."
+    },
+    "_UseAlphaToEmission": {
+      "label": "Dùng chữ Alpha để nhả",
+      "tooltip": "Dùng kênh alpha của cơ cấu chính để phát ra bản đồ. Một cách mạnh mẽ để tạo ra bản đồ phát sáng mà không có kết cấu riêng biệt."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Bao nhiêu alpha ảnh hưởng đến việc phát ra (các giá trị cao hơn sáng hơn)."
+    },
+    "_EmissionStrength": {
+      "label": "Sức mạnh khai thác",
+      "tooltip": "Hiệu ứng phát sáng rực rỡ làm sao."
+    },
+    "_AL_EmissionBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "Bật tác vụ thứ 2",
+      "tooltip": "Thêm lớp cuộn thứ hai."
+    },
+    "_Emission2Map": {
+      "label": "Bản đồ Phát ra Thứ 2",
+      "tooltip": "Bản đồ phát ra thứ hai (RGB)"
+    },
+    "_Emission2Color": {
+      "label": "Màu",
+      "tooltip": "Màu phát ra thứ hai"
+    },
+    "_Emission2Strength": {
+      "label": "Độ mạnh",
+      "tooltip": "Sức mạnh thứ hai"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "Tốc độ X",
+      "tooltip": "Thư mục tải xuống"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "Tốc độ",
+      "tooltip": "Thư mục thư điện tử"
+    },
+    "_AL_Emission2Band": {
+      "label": "Ban nhạc thứ 2",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "Sức mạnh thứ hai",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "Bật tác vụ thứ 3",
+      "tooltip": "Thêm lớp cuộn thứ ba."
+    },
+    "_Emission3Map": {
+      "label": "Sơ đồ phát ra thứ 3",
+      "tooltip": "Bản đồ phát ra thứ ba (RGB)"
+    },
+    "_Emission3Color": {
+      "label": "Màu",
+      "tooltip": "Màu phát ra thứ ba"
+    },
+    "_Emission3Strength": {
+      "label": "Độ mạnh",
+      "tooltip": "Sức mạnh thứ ba"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "Tốc độ X",
+      "tooltip": "Thư mục tải về mặc định"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "Tốc độ",
+      "tooltip": "Thư mục thư điện tử"
+    },
+    "_AL_Emission3Band": {
+      "label": "Ban nhạc thứ 3",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "Sức mạnh thứ 3",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "Bật mục 4",
+      "tooltip": "Thêm lớp cuộn thứ tư."
+    },
+    "_Emission4Map": {
+      "label": "Sơ đồ tiết ra 4",
+      "tooltip": "Bản đồ phát ra thứ tư (RGB)"
+    },
+    "_Emission4Color": {
+      "label": "Màu",
+      "tooltip": "Màu phát ra thứ tư"
+    },
+    "_Emission4Strength": {
+      "label": "Độ mạnh",
+      "tooltip": "Sức mạnh thứ tư"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "Tốc độ X",
+      "tooltip": "Thư mục tải xuống"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "Tốc độ",
+      "tooltip": "Thư điện tử"
+    },
+    "_AL_Emission4Band": {
+      "label": "Ban nhạc thứ 4",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "Sức mạnh thứ 4",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "Kích hoạt Văn bản Thủ tục",
+      "tooltip": "Thay thế tài sản vật chất bằng một mô hình tạo ra."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "Mục tiêu",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "Chế độ thủ tục",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "Màu",
+      "tooltip": "Màu đầu tiên của mô hình thủ tục."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "Bật dịch Sắc màu/ Màu",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "Màu theo thủ tục 1 Shift",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "Màu",
+      "tooltip": "Màu thứ hai của mô hình thủ tục."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "Bật dịch Sắc màu/ Màu",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "Màu theo thủ tục 2 Shift",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Điều khiển kích thước/ tích hợp của mẫu."
+    },
+    "_ProceduralSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Điều khiển tốc độ hoạt họa của mô hình."
+    },
+    "_ProceduralDirection": {
+      "label": "Hướng",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "Độ dầy",
+      "tooltip": "Độ dày của các đường mẫu."
+    },
+    "_ProceduralDensity": {
+      "label": "Mật độ",
+      "tooltip": "Kiểm soát kích thước của các yếu tố mô hình. Giá trị cao hơn tăng kích thước."
+    },
+    "_ProceduralSparsity": {
+      "label": "Độ sáng",
+      "tooltip": "Kiểm soát khoảng cách giữa các yếu tố trong mô hình. Giá trị cao hơn tăng khoảng cách."
+    },
+    "_ProceduralRotation": {
+      "label": "Xoay",
+      "tooltip": "Xoay toàn bộ khuôn mẫu theo thủ tục. Một giá trị của 0.25 là 45 độ."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "Vùng",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "Name",
+      "tooltip": "Thêm lớp tiếng ồn ở các thang khác nhau để tạo ra các kiểu hình chi tiết và tự nhiên."
+    },
+    "_NoiseLacunarity": {
+      "label": "Lacunarity",
+      "tooltip": "Điều khiển tần số tiếng ồn thay đổi với mỗi quãng tám."
+    },
+    "_NoiseGain": {
+      "label": "Thu nhập",
+      "tooltip": "Điều khiển độ lớn của tiếng ồn thay đổi với mỗi quãng tám."
+    },
+    "_VoronoiStyle": {
+      "label": "Kiểu",
+      "tooltip": "Điều khiển kiểu hình ảnh của kiểu Voronoi."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "Tăng tốc độ toàn cục",
+      "tooltip": "Siêu tốc nhân tốc độ. Hoạt họa điều này thông qua VRChat Avatar Động lực / mô phỏng để điều khiển hoặc đóng băng tất cả các hoạt hình theo thủ tục."
+    },
+    "_UseAdvancedAnim": {
+      "label": "Bật điều khiển hoạt hình nâng cao",
+      "tooltip": "Hiển thị trình điều khiển chủ cho việc phóng to thời gian, chế độ phát lại và bù đắp thời gian cho tất cả các hoạt hình bóng."
+    },
+    "_AnimTimeScale": {
+      "label": "Tỷ lệ thời gian",
+      "tooltip": "Điều khiển tốc độ tổng thể của mọi hoạt hình bóng râm. Có thể sử dụng để chậm lại hoặc tăng tốc hiệu ứng."
+    },
+    "_AnimPlayMode": {
+      "label": "Chế độ phát lại",
+      "tooltip": "Đặt chế độ phát lại toàn cục. 0 = Loop (bắt đầu từ đầu), 1 = Ping-Pong (theo hướng ngược lại)."
+    },
+    "_AnimOffset": {
+      "label": "Khoảng cách thời gian",
+      "tooltip": "Ứng dụng thời gian trên toàn cầu bù đắp cho mọi hoạt họa, hữu ích cho việc đồng bộ hoá hoặc giảm tính năng hiệu ứng."
+    },
+    "_TwoSidedLighting": {
+      "label": "Ánh sáng hai mặt",
+      "tooltip": "Lật ngược hướng bình thường trên mặt sau để chiếu sáng hai mặt khi Cull tắt."
+    },
+    "_LightingMode": {
+      "label": "Chế độ Ánh sáng",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "Bật AA quang phổ",
+      "tooltip": "Những tia sáng phản chiếu, làm giảm sự mờ ảo và nhấp nháy trên bề mặt bóng loáng."
+    },
+    "_UseOpenLitMath": {
+      "label": "Chế độ đồng bộ mở",
+      "tooltip": "Sử dụng OpenLit CC0 chuẩn một nửa của Lambert để chiếu ánh sáng nhất quán qua các nhân vật trong thế giới chụp ảnh."
+    },
+    "_SpecularAAVariance": {
+      "label": "Biến thế",
+      "tooltip": "Kiểm soát độ sáng của AA."
+    },
+    "_SpecularAAThreshold": {
+      "label": "Ngưỡng",
+      "tooltip": "Ngưỡng của cường độ sáng bóng trước khi A đá vào."
+    },
+    "_ShadowColor": {
+      "label": "Màu bóng",
+      "tooltip": "Màu sắc của các khu vực không đâm vào bởi ánh sáng."
+    },
+    "_ShadowColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "Ngưỡng",
+      "tooltip": "Kích thước của khu vực sáng ở chế độ Toon."
+    },
+    "_ToonHardness": {
+      "label": "Độ cứng",
+      "tooltip": "Độ sắc của cạnh bóng trong chế độ Toon."
+    },
+    "_ToonShadowBorder": {
+      "label": "Biên giới bóng",
+      "tooltip": "Hiệu số ranh giới bóng Toon."
+    },
+    "_ToonShadowBlur": {
+      "label": "Che mờ bóng",
+      "tooltip": "Làm mềm bóng của Toon mờ đi."
+    },
+    "_ToonShadowAO": {
+      "label": "Mô phỏng bóng tối",
+      "tooltip": "Di chuyển ranh giới bóng tối bằng bản đồ xung quanh."
+    },
+    "_NormalMap": {
+      "label": "Sơ đồ chuẩn",
+      "tooltip": "Thêm chi tiết bề mặt bằng bản đồ thông thường."
+    },
+    "_BumpScale": {
+      "label": "Tỷ lệ chuẩn",
+      "tooltip": "Sức mạnh và độ sâu bề mặt bình thường."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "Bật sơ đồ chi tiết chuẩn",
+      "tooltip": "Thêm một bản đồ bình thường phụ cho các vụ va chạm chi tiết nhỏ."
+    },
+    "_DetailNormalMap": {
+      "label": "Sơ đồ chi tiết thường",
+      "tooltip": "Một bản đồ bình thường thứ hai được bọc trên cơ sở bình thường cho thêm chi tiết bề mặt."
+    },
+    "_DetailNormalScale": {
+      "label": "Sức mạnh thường",
+      "tooltip": "Kiểm soát sức mạnh của các chi tiết bình thường."
+    },
+    "_NormalBlendMode": {
+      "label": "Chế độ trộn chuẩn",
+      "tooltip": "Thuật toán trộn giữa cơ sở và chi tiết bản đồ bình thường ( Whiteout vs Reciend normal Mapping / RNM)."
+    },
+    "_MetallicGlossMap": {
+      "label": "Kim loại (R) mịn (A)",
+      "tooltip": "Kim loại (R) và độ mịn (A) bản đồ ( Ghi chú: Độ mịn bị bỏ qua nếu có bản đồ độ gồ ghề riêng biệt)"
+    },
+    "_Metallic": {
+      "label": "Kim loại",
+      "tooltip": "Điều khiển bề mặt kim loại (0 = dicic/plastic, 1 = kim loại tinh khiết)."
+    },
+    "_Glossiness": {
+      "label": "Độ mịn",
+      "tooltip": "Điều khiển độ mịn và phản xạ bề mặt (0 = thô/matte, 1 = gương mịn)."
+    },
+    "_UseAmbientLighting": {
+      "label": "Dùng ánh sáng lấp lánh",
+      "tooltip": "Bật/tắt mô phỏng ánh sáng xung quanh và thăm dò phản chiếu. Làm cho ánh sáng trở nên nhất quán hơn trên nhiều thế giới khác nhau."
+    },
+    "_UseSHAmbient": {
+      "label": "Dùng chất lượng cao (SH)",
+      "tooltip": "Kích hoạt môi trường điều hòa chất lượng cao. Ghi chú: bị ép kết thúc ở cấp hiệu suất vừa/Low."
+    },
+    "_AmbientFallbackMode": {
+      "label": "Chế độ suy nhược tương đối",
+      "tooltip": "Chọn kiểu chiếu sáng hậu phương khi bị tắt hoặc tắt."
+    },
+    "_UseLightOverride": {
+      "label": "Ánh sáng cảnh ghi đè",
+      "tooltip": "Ghi đè về hướng, màu và cường độ của đèn cảnh chính."
+    },
+    "_LightDirOverride": {
+      "label": "Hướng",
+      "tooltip": "Véc- tơ ánh sáng tự chọn."
+    },
+    "_LightColorOverride": {
+      "label": "Màu",
+      "tooltip": "Màu sắc tự chọn."
+    },
+    "_LightIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Tỷ lệ cường độ ánh sáng tự chọn."
+    },
+    "_ShadowStrength": {
+      "label": "Sức mạnh Bóng",
+      "tooltip": "Sức mạnh gia tăng của bóng tối từ ánh sáng này."
+    },
+    "_RampTex": {
+      "label": "Toon Ramp",
+      "tooltip": "Kết cấu Tomp. Chuyển đổi theo bóng (trái) đến ánh sáng (phải)."
+    },
+    "_ToonToneCount": {
+      "label": "Số lượng Sắc",
+      "tooltip": "Số lượng các ban nhạc định lượng tách biệt cho đèn Toon."
+    },
+    "_MidColor": {
+      "label": "Giữa",
+      "tooltip": "Màu của ban nhạc Midrone."
+    },
+    "_MidThreshold": {
+      "label": "Ngưỡng giữa",
+      "tooltip": "Giới hạn của ban nhạc minne."
+    },
+    "_HighlightColor": {
+      "label": "Màu tô sáng",
+      "tooltip": "Màu tô sáng ban nhạc."
+    },
+    "_HighlightThreshold": {
+      "label": "Ngưỡng tô sáng",
+      "tooltip": "Giới hạn của dải màu sắc."
+    },
+    "_SpecularMode": {
+      "label": "Comment",
+      "tooltip": "Chọn giữa dòng ánh sáng kim loại- Smoothness và quang phổ PBR."
+    },
+    "_SpecColor": {
+      "label": "Màu quang phổ",
+      "tooltip": "Màu sắc phản chiếu quang phổ."
+    },
+    "_SpecGlossMap": {
+      "label": "Đa mắt (RGB) Gloss (A)",
+      "tooltip": "Màu quang phổ (RGB) và độ mịn (A)."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "Comment",
+      "tooltip": "Ứng xử lùi khi không có kết cấu bóng râm."
+    },
+    "_RoughnessMap": {
+      "label": "Sơ đồ độ gồ ghề (R)",
+      "tooltip": "Bản đồ thô (R)."
+    },
+    "_Roughness": {
+      "label": "Độ gồ ghề",
+      "tooltip": "Giá trị thô lỗ."
+    },
+    "_OcclusionMap": {
+      "label": "Sơ đồ tích phân (G)",
+      "tooltip": "Bản đồ tích hợp (G) để nướng bóng trong khe."
+    },
+    "_OcclusionStrength": {
+      "label": "Độ mạnh tích phân",
+      "tooltip": "Sức mạnh của những khe nứt xung quanh từ bản đồ tích tụ."
+    },
+    "_DetailMask": {
+      "label": "Mặt nạ chi tiết (A)",
+      "tooltip": "Mặt nạ chi tiết (A) để hạn chế ứng dụng văn bản chi tiết phụ."
+    },
+    "_UseSSS": {
+      "label": "Bật phân tán khuôn mặt con",
+      "tooltip": "Mô phỏng ánh sáng phân tán qua các vật mỏng như da hoặc lá cây."
+    },
+    "_SSS_Scale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Sức mạnh tổng thể của hiệu ứng SSS."
+    },
+    "_SSS_Radius": {
+      "label": "Bán kính",
+      "tooltip": "Ánh sáng phân tán trong vật chất đến mức nào."
+    },
+    "_SSS_Color": {
+      "label": "Tin",
+      "tooltip": "Màu sắc được áp dụng cho ánh sáng rải rác."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "Bật bản đồ độ dày",
+      "tooltip": "Sử dụng một kết cấu để mô phỏng sự lây lan ánh sáng thông qua các vùng mỏng (ears, lá, etc.)."
+    },
+    "_ThicknessMap": {
+      "label": "Sơ đồ độ dầy (R)",
+      "tooltip": "Bản đồ độ dầy (R Channel). Trắng = độ dày (không truyền tín hiệu), đen = mỏng (đầy đủ)."
+    },
+    "_ThicknessStrength": {
+      "label": "Sức mạnh",
+      "tooltip": "Điều khiển cường độ của hiệu ứng phát sáng phía sau."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "Dùng họa tiết truyền SSS",
+      "tooltip": "Bản đồ màu tự chọn tô đường truyền đèn sau."
+    },
+    "_SSSTransmissionTex": {
+      "label": "Sơ đồ truyền SSS",
+      "tooltip": "Bản đồ màu gửi."
+    },
+    "_UseAnisotropy": {
+      "label": "Kích hoạt phản ánh tính dị hướng",
+      "tooltip": "Tạo ra những điểm nổi bật kéo dài, phổ biến trên kim loại hoặc tóc."
+    },
+    "_Aniso_Mode": {
+      "label": "Chế độ Thiên văn",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "Độ gồ ghề",
+      "tooltip": "Khó khăn dọc theo hướng U (tiếng Anh)."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "Độ hỗn độn V",
+      "tooltip": "Khó khăn dọc theo hướng V (bình thường)."
+    },
+    "_Aniso_Strength": {
+      "label": "Sức mạnh quang phổ",
+      "tooltip": "Ánh sáng tổng thể của các điểm nổi bật về tính dị tính."
+    },
+    "_Aniso_TangentMap": {
+      "label": "Sơ đồ Tangent (tùy chọn)",
+      "tooltip": "Một bản đồ lót (các kênh RG) để điều khiển các điểm nổi bật của tính dị hướng."
+    },
+    "_UseClearCoat": {
+      "label": "Bật & Xoá vùng chọn",
+      "tooltip": "Thêm một lớp quang phổ thứ hai trên vật liệu PBR cơ bản. Có ích cho các bề mặt sơn và áo khoác."
+    },
+    "_ClearCoatStrength": {
+      "label": "Xóa sức mạnh của lõi",
+      "tooltip": "Mức độ nặng nề của lớp vỏ xe ô - tô thứ hai / nhựa trong suốt."
+    },
+    "_ClearCoatRoughness": {
+      "label": "Làm sạch độ gồ ghề",
+      "tooltip": "Độ khó của lớp áo khoác thứ hai."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "Bật/tắt hộp sọ Iris",
+      "tooltip": "Mô phỏng độ sâu/ hoạt động của đồng tử và Iris bên dưới giác mạc."
+    },
+    "_IrisTiling": {
+      "label": "Name",
+      "tooltip": "Điều khiển sự kết cấu của mắt."
+    },
+    "_IrisDepth": {
+      "label": "Khoảng cách độ sâu Iris",
+      "tooltip": "Độ lệch khúc xạ."
+    },
+    "_PupilSize": {
+      "label": "Tỷ lệ Đồng tử",
+      "tooltip": "Điều khiển kích thước của đồng tử."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "Bật cuộn phân cách da",
+      "tooltip": "Làm mềm bóng đèn trên bề mặt đường cong hữu cơ."
+    },
+    "_SkinWrapAmount": {
+      "label": "Bao quanh Amount",
+      "tooltip": "Bao nhiêu ánh sáng quấn quanh Kẻ hủy diệt bóng tối."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "Kích hoạt Bộ tóc Thiên văn (Krajiya-Kay)",
+      "tooltip": "Các điểm nổi bật về tính dị hướng đặc biệt được phong cách cho các sợi tóc."
+    },
+    "_HairSpecColor": {
+      "label": "Màu quang phổ",
+      "tooltip": "Màu sắc của các điểm nổi bật của tóc."
+    },
+    "_HairSpecExponent": {
+      "label": "Mũ trưng bày chính",
+      "tooltip": "Độ sắc của điểm nổi bật chính."
+    },
+    "_HairSpecExponent2": {
+      "label": "Trình chiếu thứ hai",
+      "tooltip": "Độ sắc của điểm nổi bật thứ hai."
+    },
+    "_HairSpecStrength": {
+      "label": "Sức mạnh quang phổ",
+      "tooltip": "Độ sáng của những điểm nổi bật."
+    },
+    "_HairSpecShift": {
+      "label": "Comment",
+      "tooltip": "Vị trí thay đổi theo hướng tóc."
+    },
+    "_UseGrid": {
+      "label": "Bật Lưới",
+      "tooltip": "Vượt qua một mô hình lưới trên bề mặt."
+    },
+    "_GridMode": {
+      "label": "Mẫu lưới",
+      "tooltip": "Name."
+    },
+    "_GridColor": {
+      "label": "Màu",
+      "tooltip": "Màu của đường lưới."
+    },
+    "_GridColor_Shift": {
+      "label": "Màu Lưới",
+      "tooltip": "Âm thanh lơ lửng hoặc chuyển đổi màu hoạt hình cho các đường lưới theo thủ tục."
+    },
+    "_GridDensity": {
+      "label": "Mật độ",
+      "tooltip": "Có bao nhiêu đường lưới xuất hiện."
+    },
+    "_GridSparsity": {
+      "label": "Độ sáng",
+      "tooltip": "Kiểm soát khoảng cách giữa các yếu tố trong mô hình. Giá trị cao hơn tăng khoảng cách."
+    },
+    "_GridSpace": {
+      "label": "Vùng",
+      "tooltip": "Không gian tọa độ cho bản đồ mạng lưới theo thủ tục (Object UV, local Mesh, world Space)."
+    },
+    "_GridThickness": {
+      "label": "Độ dày đường lưới",
+      "tooltip": "Độ dày đường thẳng cho lưới theo thủ tục."
+    },
+    "_UseGridScroll": {
+      "label": "Bật cuộn",
+      "tooltip": "Hoạt cảnh xoắn ốc."
+    },
+    "_GridScrollSpeed": {
+      "label": "Tốc độ X",
+      "tooltip": "Lưới cuộn nhanh như thế nào dọc theo trục đầu tiên (thế giới X)."
+    },
+    "_GridRotation": {
+      "label": "Xoay",
+      "tooltip": "Xoay toàn bộ lưới. Một giá trị của 0.25 là 45 độ."
+    },
+    "_GridScrollSpeedY": {
+      "label": "Tốc độ",
+      "tooltip": "Lưới cuộn nhanh như thế nào dọc theo trục thứ hai (thế giới thứ hai Z)."
+    },
+    "_BoxFractalIsFill": {
+      "label": "Dùng Kiểu Điền",
+      "tooltip": "Chuyển đổi phân dạng Hộp giữa mẫu điền và mẫu đường nét."
+    },
+    "_GridPatternIsFill": {
+      "label": "Dùng Kiểu Điền",
+      "tooltip": "Thay đổi mẫu giữa đường điền và đường nét."
+    },
+    "_MandelboxIsFill": {
+      "label": "Dùng Kiểu Điền",
+      "tooltip": "Chuyển đổi hộp Mandel giữa kiểu điền và kiểu đường nét."
+    },
+    "_GridPulseMode": {
+      "label": "Comment",
+      "tooltip": "Stencils."
+    },
+    "_GridPulseSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ của xung động."
+    },
+    "_GridPulseIntensity": {
+      "label": "Nhịp tim",
+      "tooltip": "Sức mạnh của hiệu ứng xung."
+    },
+    "_GridPulseMin": {
+      "label": "Mạch Lưới",
+      "tooltip": "Độ sáng mạng lưới tối thiểu/sự gia tăng nhanh chóng trong khi nghiền nát."
+    },
+    "_GridPulseMax": {
+      "label": "Mạch Lưới tối đa",
+      "tooltip": "Độ sáng lưới tối đa/sự gia tăng nhân lên trong lúc nghiền."
+    },
+    "_UseGridDepthColor": {
+      "label": "Dùng màu có độ sâu",
+      "tooltip": "Thay đổi màu lưới dựa trên khoảng cách gần với các bề mặt khác."
+    },
+    "_GridDepthColor": {
+      "label": "Màu Độ sâu",
+      "tooltip": "Màu sắc lưới chuyển sang khi gần bề mặt."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "Phạm vi độ sâu",
+      "tooltip": "Khoảng cách thay đổi màu sắc."
+    },
+    "_AL_GridBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "Dùng mặt nạ lưới",
+      "tooltip": "Dùng họa tiết để che giấu hiệu ứng lưới."
+    },
+    "_GridMask": {
+      "label": "Mặt nạ Lưới",
+      "tooltip": "Kết cấu được dùng để che giấu mạng lưới. Kênh màu đỏ được dùng."
+    },
+    "_InvertGridMask": {
+      "label": "Đảo mặt nạ",
+      "tooltip": "Làm đảo mặt nạ, vì vậy những vùng màu đen được nhìn thấy và trắng được giấu đi."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "Bật méo mó siêu dữ liệu",
+      "tooltip": "Bật/tắt hoạt hình kết nối theo thủ tục."
+    },
+    "_DistortionMode": {
+      "label": "Chế độ méo mó",
+      "tooltip": "Thuật toán biến dạng đỉnh cổ điển ( Sóng Sine, nhiễu, Flapping, etc.)."
+    },
+    "_DistortionStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Các đỉnh núi bị dời đi bao xa."
+    },
+    "_DistortionSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ của sự biến dạng."
+    },
+    "_AL_DistortionBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "Chữ méo mó (RG cho bù đắp)",
+      "tooltip": "Một kết cấu để điều khiển sự méo mó (R=X bù đắp, G = Z)."
+    },
+    "_DistortionTexScrollX": {
+      "label": "Tốc độ X",
+      "tooltip": "Mở theo chiều ngang."
+    },
+    "_DistortionTexScrollY": {
+      "label": "Tốc độ",
+      "tooltip": "Mở theo chiều dọc."
+    },
+    "_StretchAxis": {
+      "label": "Kéo giãn Trục",
+      "tooltip": "Trục thần kinh dọc theo độ giãn nở theo thời gian."
+    },
+    "_WindDirection": {
+      "label": "Hướng",
+      "tooltip": "Hướng không gian của gió (có nghĩa là đối tượng)."
+    },
+    "_WindScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Kích thước của cơn gió. Những giá trị nhỏ hơn tạo nên những con sóng lớn hơn, chậm hơn."
+    },
+    "_FlapScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Kiểm soát độ cong hoặc \"sự lắc lư\" của chuyển động vỗ cánh."
+    },
+    "_FlapPhaseOffset": {
+      "label": "Hiệu số giai đoạn",
+      "tooltip": "Thêm một thời gian vào một bên, tạo ra một cánh đối xứng. 0 là đối xứng."
+    },
+    "_FlapMode": {
+      "label": "Chế độ cánh",
+      "tooltip": "Chuyển động và kiểu thức quay quanh đỉnh (Wing, Flags, Filiage)."
+    },
+    "_FlapPivot": {
+      "label": "Name",
+      "tooltip": "Vị trí neo/pivot cho dao động đỉnh."
+    },
+    "_FlapDirection": {
+      "label": "Hướng",
+      "tooltip": "Một véc- tơ mà định hướng không gian địa phương cho chuyển động vỗ cánh."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "Bật phân cách",
+      "tooltip": "Làm cho đối tượng xuất hiện/ ẩn bằng một kiểu nhiễu."
+    },
+    "_DissolveMode": {
+      "label": "Chế độ tháo gỡ",
+      "tooltip": "Chọn thuật toán tan rã (Linaar, Radial, Spheical, Voronoi sound, etc.)."
+    },
+    "_DissolveScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Điều khiển kích thước/ phổ thông của hiệu ứng tan rã."
+    },
+    "_DissolveDirection": {
+      "label": "Hướng",
+      "tooltip": "Chỉ dẫn không gian thế giới cho sóng tan chảy đi."
+    },
+    "_DissolveOrigin": {
+      "label": "Nguồn gốc thế giới",
+      "tooltip": "Trung tâm không gian thế giới mà từ đó sự tan rã phát ra."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "Dùng Trung tâm Đối tượng",
+      "tooltip": "Khi được hiệu lực, sự tan rã bắt nguồn từ điểm xoay quanh vật thể. Khi bị tắt, nó sử dụng một tọa độ không gian cố định."
+    },
+    "_DissolveMap": {
+      "label": "Sơ đồ nhiễu không rõ",
+      "tooltip": "Kết cấu nhiễu dùng cho hiệu ứng tan rã (dùng kênh màu đỏ)."
+    },
+    "_DissolveProjMode": {
+      "label": "Chế độ vẽ sơ đồ phân giải",
+      "tooltip": "Chế độ sơ đồ phản xạ UV cho kết cấu tan rã."
+    },
+    "_DissolveAmount": {
+      "label": "Số lượng",
+      "tooltip": "Tiến trình của hiệu ứng tan rã (0- 1)."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "Bề ngang",
+      "tooltip": "Độ rộng của cạnh sáng trên đường phân giải."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "Cỡ khối",
+      "tooltip": "Kích thước của các khối lỗi trong không gian màn hình."
+    },
+    "_DissolveEdgeColor": {
+      "label": "Màu cạnh",
+      "tooltip": "Màu sắc của viền sáng tan chảy."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "Chuyển đổi Màu cạnh",
+      "tooltip": "Âm thanh Link hoặc chuyển đổi màu hoạt hình cho cạnh nóng tan ra."
+    },
+    "_UseDissolveGradient": {
+      "label": "Dùng đổ dốc màu",
+      "tooltip": "Dùng một kết cấu dốc để tô màu cạnh làm tan chảy thay vì màu đặc."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "Dùng thời gian cao cấp",
+      "tooltip": "Dùng thời gian tự chọn cho hoạt hình tan rã thay cho một vòng lặp/ trái bóng đơn giản."
+    },
+    "_DissolveOnDuration": {
+      "label": "Giải quyết vấn đề trong thời gian dài",
+      "tooltip": "Thời gian để giải thể hoạt hình cần thiết."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "Thời gian nhìn thấy",
+      "tooltip": "Thời gian mà vật thể này có thể nhìn thấy được hoàn toàn (rất rõ)."
+    },
+    "_DissolveOffDuration": {
+      "label": "Giải quyết những khó khăn",
+      "tooltip": "Thời gian để giải thể hoạt hình cần thiết."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "Thời gian ẩn",
+      "tooltip": "Thời gian vật thể được giấu kín hoàn toàn (ở phút tan rã)."
+    },
+    "_DissolveGradient": {
+      "label": "Đổ dốc màu",
+      "tooltip": "Cái dốc màu cho cạnh tan chảy. Các dốc được vẽ trên chiều rộng của cạnh."
+    },
+    "_AnimateDissolve": {
+      "label": "Hoạt cảnh",
+      "tooltip": "Tự động kích hoạt lượng tan chảy theo thời gian."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hoạt hình."
+    },
+    "_DissolveAnimMode": {
+      "label": "Dùng bàn Bình",
+      "tooltip": "Nếu bật, hoạt hình sẽ mở về phía trước và sau đó quay ngược lại. Nếu vô hiệu hóa, nó sẽ lặp lại."
+    },
+    "_DissolveAnimMin": {
+      "label": "Phút Hoạt hình",
+      "tooltip": "Ngắt tối thiểu khi bật hoạt cảnh."
+    },
+    "_DissolveAnimMax": {
+      "label": "Hoạt hình Max",
+      "tooltip": "Giải tán tối đa khi bật hoạt cảnh."
+    },
+    "_AL_DissolveBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "Bật/tắt trang",
+      "tooltip": "Hiển thị đối tượng với một lau sạch theo hướng mịn màng."
+    },
+    "_WipeDirection": {
+      "label": "Hướng",
+      "tooltip": "Hướng mà cái khăn trải qua vật thể."
+    },
+    "_WipeProgress": {
+      "label": "Quá trình",
+      "tooltip": "Sự tiến triển của hiệu ứng lau chùi."
+    },
+    "_WipeHardness": {
+      "label": "Độ cứng",
+      "tooltip": "Độ sắc của cạnh lau chùi."
+    },
+    "_AnimateWipe": {
+      "label": "Hoạt cảnh Quét",
+      "tooltip": "Tự động kích hoạt tiến trình xóa sạch theo thời gian."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "Dùng thời gian cao cấp",
+      "tooltip": "Dùng thời gian tự chọn cho việc xoá hoạt hình thay cho một vòng lặp/ trái bóng đơn giản."
+    },
+    "_WipeOnDuration": {
+      "label": "Đang xoá",
+      "tooltip": "Thời gian để làm sạch hoạt hình để chơi."
+    },
+    "_WipeVisibleDuration": {
+      "label": "Thời gian nhìn thấy",
+      "tooltip": "Thời gian vật thể được nhìn thấy rõ."
+    },
+    "_WipeOffDuration": {
+      "label": "Xóa thời gian",
+      "tooltip": "Thời gian để bật hoạt họa xóa sạch."
+    },
+    "_WipeHiddenDuration": {
+      "label": "Thời gian ẩn",
+      "tooltip": "Thời gian vật thể được giấu kín hoàn toàn trước khi lặp lại."
+    },
+    "_WipeAnimSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hoạt hình."
+    },
+    "_WipeAnimMode": {
+      "label": "Dùng bàn Bình",
+      "tooltip": "Nếu bật, hoạt hình sẽ mở về phía trước và sau đó quay ngược lại. Nếu vô hiệu hóa, nó sẽ lặp lại."
+    },
+    "_UseTransparency": {
+      "label": "Bật trong suốt",
+      "tooltip": "Làm cho đối tượng đồng loạt trong suốt."
+    },
+    "_Alpha": {
+      "label": "Anfa",
+      "tooltip": "Điều khiển sự minh bạch tổng thể. 1 = tối đa, 0 = hoàn toàn tàng hình."
+    },
+    "_UseFresnelTransparency": {
+      "label": "Bật Tờ trong suốt Fresel",
+      "tooltip": "Làm cho vật thể trong suốt hơn ở trung tâm và mờ nhạt ở các cạnh."
+    },
+    "_FresnelPower": {
+      "label": "Mũ:",
+      "tooltip": "Điều khiển đường cong rơi. Giá trị cao hơn đẩy sự trong suốt tới cạnh."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "Cạnh Alpha",
+      "tooltip": "Minh bạch ở góc đồng cỏ."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "Trung tâm Alpha",
+      "tooltip": "Trong suốt đối mặt với camera."
+    },
+    "_AL_FresnelBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "Chọn",
+      "tooltip": "Cho phép kết cấu chính."
+    },
+    "_MainTex": {
+      "label": "Chữ chính",
+      "tooltip": "Kết cấu bề mặt chính."
+    },
+    "_MainTexProjMode": {
+      "label": "Chế độ vẽ văn bản cơ bản",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "Chế độ phát ảnh động",
+      "tooltip": "Cấu hình các thiết lập cache ở đây."
+    },
+    "_VideoIsAVPro": {
+      "label": "Là phim AVPro",
+      "tooltip": "Đánh dấu ô này nếu trình chơi phim dùng AVPro."
+    },
+    "_Rotation": {
+      "label": "Xoay",
+      "tooltip": "Xoay tất cả các kết cấu xung quanh trung tâm của không gian UV."
+    },
+    "_ScrollX": {
+      "label": "Tốc độ X",
+      "tooltip": "Tốc độ hoạt hình cực ngang."
+    },
+    "_ScrollY": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hoạt hình của tia cực tím thẳng đứng."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "Dùng cuộn Bình",
+      "tooltip": "Chuyển chế độ di chuyển sang chuyển động bóng bàn."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ chuyển động từ phía sau và phía trước."
+    },
+    "_PingPongScrollRange": {
+      "label": "Phạm vi",
+      "tooltip": "Khoảng cách của chuyển động từ phía sau và phía trước."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "Bật khả năng méo tia cực tím",
+      "tooltip": "Sử dụng một kết cấu để làm dịch chuyển tọa độ UV, tạo ra các hiệu ứng như sương nhiệt hay các gợn nước."
+    },
+    "_UVDistortionMap": {
+      "label": "Ánh xạ biến dạng UV",
+      "tooltip": "Kết cấu dùng để bóp méo tia UV. Các kênh màu đỏ và xanh lá cây điều khiển độ lệch X và Y."
+    },
+    "_UVDistortionStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Sự biến dạng của tia cực tím mạnh đến mức nào."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "Tốc độ X",
+      "tooltip": "Tốc độ ngang của sóng biến dạng."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "Tốc độ Y",
+      "tooltip": "Tốc độ dọc của sóng biến dạng."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "Bật hoạt cảnh cuốn sách lật ngược",
+      "tooltip": "Hoạt cảnh cấu trúc chính dùng bố trí bảng mã. Điều này sẽ vượt quá tầm quan trọng của cấu trúc chính."
+    },
+    "_FlipbookMode": {
+      "label": "Phương thức",
+      "tooltip": "Chế độ phát lại hoạt hình."
+    },
+    "_FlipbookColumns": {
+      "label": "Cột (X)",
+      "tooltip": "Số cột (hình theo chiều ngang) trong bảng xếp chồng."
+    },
+    "_FlipbookRows": {
+      "label": "Hàng (Y)",
+      "tooltip": "Số hàng (hình dọc) trong bảng xếp chồng."
+    },
+    "_FlipbookSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hoạt hình trong khung ảnh mỗi giây."
+    },
+    "_FlipbookStartFrame": {
+      "label": "Chèn",
+      "tooltip": "Khung bắt đầu của hoạt hình, cho phép một bù đắp."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "Dùng họa tiết chi tiết",
+      "tooltip": "Làm quá chi tiết, thường là để thay đổi."
+    },
+    "_DetailTex": {
+      "label": "Chữ chi tiết",
+      "tooltip": "Kết cấu thứ hai để bao phủ."
+    },
+    "_DetailTexProjMode": {
+      "label": "Chế độ vẽ chi tiết",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Cấu trúc chi tiết được pha trộn chặt chẽ đến mức nào."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "Dùng mặt nạ tiết ra",
+      "tooltip": "Sử dụng một kết cấu để điều khiển những phần trên bề mặt phát ra ánh sáng."
+    },
+    "_EmissionMaskTex": {
+      "label": "Mặt nạ tiết ra",
+      "tooltip": "Một kết cấu để kiểm soát tiết ra màu trắng (đã phát âm đầy đủ, đen = không phát ra)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "Chế độ chiếu sáng mặt nạ",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "Bật/tắt/ Cực đại",
+      "tooltip": "Sử dụng một bản đồ chiều cao để bù đắp UV cho độ sâu."
+    },
+    "_HeightMap": {
+      "label": "Sơ đồ chiều cao (R)",
+      "tooltip": "Một màu xám có màu trắng cao và đen là thấp."
+    },
+    "_ParallaxStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Hiệu ứng thị giác sâu đến mức nào."
+    },
+    "_USE_POM_ON": {
+      "label": "Kích hoạt Phần mở rộng Parallax",
+      "tooltip": "Kích hoạt dù đa bước để hiệu ứng độ sâu chất lượng cao hơn. Chỉ cao độ."
+    },
+    "_POMSteps": {
+      "label": "Bước Cực đại",
+      "tooltip": "Số bước nhảy dù tối đa."
+    },
+    "_POMMinSteps": {
+      "label": "Bước Cực tiểu",
+      "tooltip": "Số bước nhảy dù tối thiểu (ở góc nhìn)."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "Kích hoạt Phản xạ Môi trường",
+      "tooltip": "Mẫu phản chiếu thăm dò để thêm phản xạ môi trường, ngay cả trong chế độ Cơ bản/Toon."
+    },
+    "_EnvReflectionStrength": {
+      "label": "Sức mạnh phản xạ",
+      "tooltip": "Sức mạnh của môi trường phản chiếu."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "Độ khó phản ánh",
+      "tooltip": "Độ khó của sự phản chiếu."
+    },
+    "_USE_VAT_ON": {
+      "label": "Bật họa tiết hình động Vertex",
+      "tooltip": "Các phụ lục hoạt hình từ một kết cấu VAT. Dùng để làm vải, chất lỏng hoặc tác dụng phá hủy."
+    },
+    "_VATPositionTex": {
+      "label": "Name",
+      "tooltip": "Kết cấu bù đắp vị trí VAT. Mỗi hàng là một khung hình."
+    },
+    "_VATFrameCount": {
+      "label": "Số đếm khung",
+      "tooltip": "Tổng số khung hoạt hình trong kết cấu."
+    },
+    "_VATSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ phát lại của ảnh động đỉnh."
+    },
+    "_VATBoundsMin": {
+      "label": "Hạn chế Tối thiểu",
+      "tooltip": "Giới hạn tối thiểu để đổi vị trí."
+    },
+    "_VATBoundsMax": {
+      "label": "Hạn chế Tối đa",
+      "tooltip": "Giới hạn tối đa để đổi vị trí."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "Kích hoạt Độ ướt",
+      "tooltip": "Mô phỏng bề mặt ướt với hiệu ứng đen tối và mưa."
+    },
+    "_WetnessStrength": {
+      "label": "Sức mạnh yếu",
+      "tooltip": "Toàn bộ độ ẩm ướt."
+    },
+    "_WetnessSmoothness": {
+      "label": "Độ mịn ẩm ướt",
+      "tooltip": "Độ mịn làm tăng bề mặt ướt (các điểm nổi bật sắc nhọn)."
+    },
+    "_WetnessDarkening": {
+      "label": "Làm tối",
+      "tooltip": "Độ dày của bề mặt khi ẩm ướt."
+    },
+    "_RainRippleMap": {
+      "label": "Sơ đồ thường mưa",
+      "tooltip": "Bản đồ thông thường dùng cho việc chuyển động gợn sóng mưa."
+    },
+    "_RainRippleScale": {
+      "label": "Co dãn Sóng",
+      "tooltip": "Tỷ lệ của các gợn sóng mưa."
+    },
+    "_RainRippleSpeed": {
+      "label": "Tốc độ Sóng",
+      "tooltip": "Tốc độ chuyển động của cơn mưa."
+    },
+    "_USE_DECAL_ON": {
+      "label": "Bật phân cách",
+      "tooltip": "Phủ lên một kết cấu phân hủy chính."
+    },
+    "_DecalTex": {
+      "label": "Name",
+      "tooltip": "Kết cấu tĩnh mạch. Dùng bộ phát điện để định vị nó."
+    },
+    "_DecalBlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Làm thế nào các decal trộn với màu cơ bản."
+    },
+    "_DecalStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Quá sức chịu đựng của decal."
+    },
+    "_DecalNormal": {
+      "label": "Sơ đồ chuẩn",
+      "tooltip": "Bản đồ bình thường cho decal."
+    },
+    "_DecalNormalStrength": {
+      "label": "Sức mạnh thường",
+      "tooltip": "Sức mạnh của bản đồ bình thường."
+    },
+    "_DecalMetallic": {
+      "label": "Kim loại",
+      "tooltip": "Giá trị kim loại cho vùng decal."
+    },
+    "_DecalSmoothness": {
+      "label": "Độ mịn",
+      "tooltip": "Giá trị độ mịn cho vùng decal."
+    },
+    "_DecalAffectsPBR": {
+      "label": "Ảnh hưởng PBR",
+      "tooltip": "Hãy hiệu lực để sửa đổi độ mịn, kim loại và độ mịn thông qua tĩnh mạch."
+    },
+    "_SurfaceStyle": {
+      "label": "Kiểu bề mặt",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "Co dãn Màu",
+      "tooltip": "Đa năng cho sự thay đổi màu sắc."
+    },
+    "_PsychedelicSpeed": {
+      "label": "Tốc độ chảy",
+      "tooltip": "Tốc độ mà âm thanh gây ảo giác chảy qua bề mặt."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "Vùng",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "Fractal3DMode",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "Comment",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Tỷ lệ phân dạng trong không gian đối tượng."
+    },
+    "_FractalAnimMode": {
+      "label": "FractalAnimMode",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "Tốc độ Hoạt hình",
+      "tooltip": "Tốc độ mà các phân dạng hoạt động."
+    },
+    "_FractalPower": {
+      "label": "Sức mạnh Mandelbub",
+      "tooltip": "Tham số điện cho Mandelbub. Hãy thử tưởng tượng xem!"
+    },
+    "_FractalIter": {
+      "label": "Lần lặp lại",
+      "tooltip": "Số lần lặp lại. Cao hơn chi tiết hơn nhưng chậm hơn."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "Góc",
+      "tooltip": "Góc quay của đội quân IFS."
+    },
+    "_FractalColorShift": {
+      "label": "Chuyển đổi Độ sâu Phân dạng",
+      "tooltip": "Đa năng cho sự thay đổi sắc màu dựa trên độ sâu."
+    },
+    "_FractalUseAutoShift": {
+      "label": "Dùng thẻ tự động",
+      "tooltip": "Thay đổi liên tục màu cơ bản theo thời gian."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "Tốc độ Shift tự động",
+      "tooltip": "Tốc độ chuyển màu tự động."
+    },
+    "_FractalJuliaC": {
+      "label": "Hằng số Julia C",
+      "tooltip": "Hằng số quaternion C cho Julia Set. Điều khiển hình dạng phân dạng."
+    },
+    "_FractalMandelboxScale": {
+      "label": "Tỷ lệ lai",
+      "tooltip": "Tỷ lệ phân dạng. Thử giá trị giữa 1.5 và 3.0."
+    },
+    "_AL_FractalBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "Sơ đồ nhiễu từ xa",
+      "tooltip": "Một kết cấu nhiễu để kiểm soát sự biến dạng."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "Sức mạnh từ chối",
+      "tooltip": "Quan điểm bị bóp méo mạnh mẽ đến mức nào."
+    },
+    "_UseScreenRefraction": {
+      "label": "Khúc xạ màn hình",
+      "tooltip": "Làm méo màn hình phía sau đối tượng."
+    },
+    "_RefractionStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Sức mạnh của khúc xạ."
+    },
+    "_RefractionIOR": {
+      "label": "IOR",
+      "tooltip": "Chỉ mục Khúc xạ."
+    },
+    "_ChromaticAberration": {
+      "label": "Name",
+      "tooltip": "Mô phỏng sự tách màu, tạo viền đỏ/ xanh."
+    },
+    "_GalaxyMap": {
+      "label": "Sơ đồ thiên hà",
+      "tooltip": "Kết cấu để hiển thị bên trong đối tượng."
+    },
+    "_GalaxyDepth": {
+      "label": "Độ sâu",
+      "tooltip": "Tạo ra hiệu ứng hai chiều, làm cho kết cấu có độ sâu."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "Tốc độ Quay",
+      "tooltip": "Xoay kết cấu thiên hà."
+    },
+    "_SkyboxMap": {
+      "label": "Sơ đồ hộp trời",
+      "tooltip": "Hình lập phương để hiển thị bên trong vật thể, giống như một cánh cổng."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "Tốc độ Quay",
+      "tooltip": "Xoay bầu trời quanh trục Y."
+    },
+    "_TriplanarTex": {
+      "label": "Hình ba chiều",
+      "tooltip": "Chữ để dự đoán mô hình từ ba trục."
+    },
+    "_TriplanarScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Kiểm soát kích cỡ của kết cấu dự án."
+    },
+    "_TriplanarBlend": {
+      "label": "Sắc hỗn hợp",
+      "tooltip": "Điều khiển độ sắc của sự pha trộn giữa ba hình chiếu."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "Bật sơ đồ ba tầng bình thường",
+      "tooltip": "Dự án một bản đồ bình thường trên 3 trục."
+    },
+    "_TriplanarNormalMap": {
+      "label": "Bản đồ ba tầng bình thường",
+      "tooltip": "Bản đồ bình thường có ba trục."
+    },
+    "_TriplanarNormalScale": {
+      "label": "Sức mạnh thường",
+      "tooltip": "Sức mạnh của bản đồ tầm thường."
+    },
+    "_MatCapTex": {
+      "label": "Văn bản MatCap",
+      "tooltip": "Một kết cấu chụp vật chất định nghĩa ánh sáng và phản chiếu của vật thể."
+    },
+    "_MatCapIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Kiểm soát sự sáng của hiệu ứng MatCap."
+    },
+    "_MatCapBlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Điều khiển cấu trúc MatCap hòa trộn với màu cơ bản. Ghi đè thay thế hoàn toàn."
+    },
+    "_IridescenceScale": {
+      "label": "Phóng màu",
+      "tooltip": "Điều khiển tần số của sự dịch chuyển màu trên bề mặt."
+    },
+    "_IridescenceStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Điều khiển cường độ của hiệu ứng phát sáng."
+    },
+    "_GlitterBlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Điều khiển cách mà màu sắc lấp lánh hòa lẫn với bề mặt. Thêm vào có thể là hơi quá đáng. Lerp thay thế màu cơ bản (cho phép). Max bảo đảm nó không bao giờ tối hơn màu lấp lánh."
+    },
+    "_GlitterColor": {
+      "label": "Màu",
+      "tooltip": "Màu sắc lấp lánh."
+    },
+    "_GlitterColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Điều khiển kích cỡ của mô hình nhiễu lấp lánh. Giá trị cao hơn nghĩa là lấp lánh nhỏ hơn."
+    },
+    "_GlitterSparsity": {
+      "label": "Độ sáng",
+      "tooltip": "Điều khiển bao nhiêu tia sáng xuất hiện. Giá trị cao hơn có nghĩa là ít hơn, lấp lánh hơn."
+    },
+    "_GlitterSpaceMode": {
+      "label": "Vùng",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "Dùng hoạt hình cuộn",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "Tốc độ Glitter",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "Bật Rim Glow",
+      "tooltip": "Thêm ánh sáng vào cạnh của vật thể dựa trên góc nhìn."
+    },
+    "_RimColor": {
+      "label": "Màu Rim",
+      "tooltip": "Màu sắc của viền rìa Fresnel."
+    },
+    "_RimColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "Dùng đổ dốc màu",
+      "tooltip": "Dùng một kết cấu dốc để tô màu độ sáng vành thay vì màu rắn."
+    },
+    "_RimGradient": {
+      "label": "Gradient",
+      "tooltip": "Cái dốc màu để chiếu sáng. Các dốc được lập bản đồ từ trung tâm (trái) đến cạnh (phải)."
+    },
+    "_RimPower": {
+      "label": "Name",
+      "tooltip": "Độ sáng của vành đai."
+    },
+    "_RimIntensity": {
+      "label": "Sức mạnh của Rim",
+      "tooltip": "Tăng ánh sáng cho ánh sáng vành đai."
+    },
+    "_AL_RimBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "Kích hoạt hiệu ứng xen kẽ",
+      "tooltip": "Giảm dần thành màu mà đối tượng ở gần hoặc giao nhau với các vật thể khác trong cảnh."
+    },
+    "_IntersectionMode": {
+      "label": "Chế độ giao cắt",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "Màu",
+      "tooltip": "Màu của hiệu ứng giao lộ."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "Khoảng cách",
+      "tooltip": "Khoảng cách mà vết mờ xảy ra."
+    },
+    "_UsePulse": {
+      "label": "Kích hoạt Pulse",
+      "tooltip": "Làm tăng cường cảm xúc lên sức mạnh."
+    },
+    "_PulseSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Nhịp thở nhanh quá."
+    },
+    "_PulseIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Mạch sáng quá."
+    },
+    "_AL_PulseBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "Bật viền",
+      "tooltip": "Thêm một đường nét đặc quanh đối tượng. Điều này thêm một lần gọi thứ hai đối tượng."
+    },
+    "_OutlineColor": {
+      "label": "Màu",
+      "tooltip": "Màu cơ bản của đường viền."
+    },
+    "_OutlineColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "Vẽ nét đơn",
+      "tooltip": "Sơ đồ họa tiết màu sắc."
+    },
+    "_OutlineWorldSpace": {
+      "label": "Di sản không gian trên thế giới",
+      "tooltip": "Di sản không gian trên thế giới"
+    },
+    "_OutlineSpace": {
+      "label": "Khoảng trắng",
+      "tooltip": "Không gian tọa độ cho phép tách đường nét (không gian vật thể, không gian màn hình, khoảng cách máy ảnh độc lập)."
+    },
+    "_OutlineWidth": {
+      "label": "Độ rộng nét",
+      "tooltip": "Độ dày của đường cong ngược."
+    },
+    "_AL_OutlineBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "Dùng màu Vertex cho thứ Width",
+      "tooltip": "Thay đổi chiều rộng của đường nét bằng màu của mô hình."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "Dùng sơ đồ kiểu dáng",
+      "tooltip": "Sử dụng một kết cấu mức xám để điều chỉnh độ dày của đường nét trên một điểm."
+    },
+    "_OutlineWidthMap": {
+      "label": "Sơ đồ cỡ lớn",
+      "tooltip": "Mặt nạ mức xám cho độ rộng đường nét (đen = đầy đủ, đen = 0)."
+    },
+    "_UseRippleEffect": {
+      "label": "Kích hoạt hiệu ứng tách rời",
+      "tooltip": "Tạo ra một hiệu ứng đồng tâm phát ra từ tọa độ UV."
+    },
+    "_RippleCenterUV": {
+      "label": "Giữa (UV)",
+      "tooltip": "Trung tâm của các gợn sóng trong không gian UV (X,Y)."
+    },
+    "_RippleProgress": {
+      "label": "Quá trình",
+      "tooltip": "Sự tiến bộ bằng tay của các gợn sóng hoạt hình, điều khiển giai đoạn."
+    },
+    "_RippleCount": {
+      "label": "Số đếm Sóng",
+      "tooltip": "Số lượng sóng đồng tâm vòng qua 1 đơn vị UV."
+    },
+    "_RippleMaxRadius": {
+      "label": "Bán kính mờ dần",
+      "tooltip": "Khoảng cách từ trung tâm nơi các gợn sóng giảm hoàn toàn."
+    },
+    "_RippleWidth": {
+      "label": "Bề rộng:",
+      "tooltip": "Chiều rộng của mỗi vòng tròn."
+    },
+    "_RippleColor": {
+      "label": "Màu",
+      "tooltip": "Màu của các gợn sóng."
+    },
+    "_RippleColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "Độ mạnh sự méo mó",
+      "tooltip": "Những gợn sóng thay thế những nét đặc trưng của mô hình theo mức bình thường của chúng."
+    },
+    "_RippleStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Độ sáng của các gợn sóng."
+    },
+    "_AnimateRipple": {
+      "label": "Sóng hoạt cảnh",
+      "tooltip": "Tự động kích hoạt các gợn sóng."
+    },
+    "_RippleAnimSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hoạt hình."
+    },
+    "_RippleAnimMode": {
+      "label": "Dùng bàn Bình",
+      "tooltip": "Nếu bật, hoạt hình sẽ mở về phía trước và sau đó quay ngược lại."
+    },
+    "_AL_RippleBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "Bật dịch màu cơ bản",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "Chế độ Hoạt hình",
+      "tooltip": "Đặt phương pháp toàn cục cho hoạt họa màu."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "Bật dịch chuyển màu tự động toàn cục",
+      "tooltip": "Bật thì tự động tạo ra thanh trượt màu (> 0) liên tục. Khi bị tắt, con trượt màu chấp nhận giá trị tĩnh hoặc hoạt cảnh."
+    },
+    "_AnimatedGradient": {
+      "label": "Gradient hoạt cảnh",
+      "tooltip": "Một kết cấu dốc mà tất cả các màu hoạt hình sẽ lấy mẫu từ."
+    },
+    "_GradientAnimPingPong": {
+      "label": "Hoạt hình trái bóng bàn",
+      "tooltip": "Hoạt cảnh chuyển tiếp qua lại thay vì lặp lại."
+    },
+    "_GradientAnimVertical": {
+      "label": "Dùng cuộn dọc",
+      "tooltip": "Cuộn dốc màu từ trên xuống dưới thay vì trái sang phải."
+    },
+    "_ColorShiftSpeed": {
+      "label": "Tốc độ Hoạt hình",
+      "tooltip": "Điều khiển tốc độ cho mọi màu sắc hoạt hình. Đối với Sắc màu, đó là tốc độ quay. Với Gradient, đó là tốc độ cuốn sách."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "Giảm bão hoà",
+      "tooltip": "Tổng hợp màu cuối cùng hướng tới mức xám (0 = Màu tổng hợp, 1 = gray quy mô)."
+    },
+    "_UseInvert": {
+      "label": "Đảo màu",
+      "tooltip": "Đảo màu cuối cùng của bóng râm."
+    },
+    "_ColorTint": {
+      "label": "In màu cuối cùng",
+      "tooltip": "Nhiều màu trên kết quả cuối cùng, hữu ích cho việc tô hay chấm điểm."
+    },
+    "_ColorTint_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "Độ sáng",
+      "tooltip": "Điều chỉnh độ sáng toàn bộ của màu cuối cùng."
+    },
+    "_Contrast": {
+      "label": "Độ tương phản",
+      "tooltip": "Điều chỉnh độ tương phản tổng thể của màu cuối cùng."
+    },
+    "_Gamma": {
+      "label": "Gamma",
+      "tooltip": "Ứng dụng việc sửa gamma tới màu cuối cùng."
+    },
+    "_UsePixelation": {
+      "label": "Bật điểm ảnh",
+      "tooltip": "Tạo ra một hiệu ứng cản trở, ít phân giải."
+    },
+    "_PixelationAmount": {
+      "label": "Điểm ảnh",
+      "tooltip": "Số lượng các \"Graps\" trên các kết cấu (cao hơn ít điểm ảnh hơn)."
+    },
+    "_UsePosterize": {
+      "label": "Bật đăng ký",
+      "tooltip": "Giảm số màu, tạo ra một cái nhìn ngược/ số."
+    },
+    "_PosterizeLevels": {
+      "label": "Mức",
+      "tooltip": "Số bước màu trên mỗi kênh."
+    },
+    "_UseDistanceFade": {
+      "label": "Bật mờ khoảng cách",
+      "tooltip": "Nó làm mờ đi vật thể khi nó cách xa máy quay."
+    },
+    "_FadeDistance": {
+      "label": "Bắt đầu khoảng cách",
+      "tooltip": "Khoảng cách từ máy quay nơi vết mờ bắt đầu."
+    },
+    "_FadeRange": {
+      "label": "Phạm vi",
+      "tooltip": "Làm thế nào nhanh chóng các đối tượng mờ nhạt qua khoảng cách."
+    },
+    "_UseDepthFade": {
+      "label": "Kích hoạt Độ sâu mờ dần (hạt soft)",
+      "tooltip": "Làm mềm các giao nhau đa giác so với hình học hình ảnh cho bề mặt trong suốt và bổ sung."
+    },
+    "_DepthFadeDistance": {
+      "label": "Khoảng cách mờ dần",
+      "tooltip": "Khoảng cách mà hình học mờ dần khi giao nhau bề mặt mờ nhạt."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "Kích hoạt khoảng cách hiệu ứng mờ dần",
+      "tooltip": "Những hiệu ứng theo thủ tục cao (Gliter, phân dạng, Mạng Lưới, Psychedlic) nằm ngoài phạm vi để cải thiện hiệu suất của VR."
+    },
+    "_EffectFadeStart": {
+      "label": "Khoảng cách bắt đầu mờ dần",
+      "tooltip": "Khoảng cách trong mét nơi hiệu ứng bắt đầu mờ dần."
+    },
+    "_EffectFadeEnd": {
+      "label": "Khoảng cách kết thúc mờ dần",
+      "tooltip": "Khoảng cách trong mét nơi hiệu ứng bị tắt hoàn toàn."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "Bật/tắt co dãn Vertex",
+      "tooltip": "Thu nhỏ mô hình vào điểm trung tâm."
+    },
+    "_CollapseEnableAnim": {
+      "label": "Comment",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "Số lượng",
+      "tooltip": "Quá trình của hiệu ứng sụp đổ (0 = Nomal, 1=Colppinged)."
+    },
+    "_AnimateCollapse": {
+      "label": "Co lại động",
+      "tooltip": "Tự động kích hoạt lượng sụp đổ theo thời gian."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "Dùng thời gian cao cấp",
+      "tooltip": "Dùng thời gian tự chọn cho sự sụp đổ thay vì một vòng lặp/ trái bóng đơn giản."
+    },
+    "_CollapseOnDuration": {
+      "label": "Co lại",
+      "tooltip": "Thời gian để mô hình sụp đổ."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "Thời gian trôi qua",
+      "tooltip": "Thời gian người mẫu bị sụp đổ hoàn toàn."
+    },
+    "_CollapseOffDuration": {
+      "label": "Kéo dài",
+      "tooltip": "Thời gian để mô hình mở rộng trở lại bình thường."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "Thời gian chuẩn",
+      "tooltip": "Thời gian mô hình ở trạng thái bình thường trước khi lặp lại."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hoạt hình."
+    },
+    "_CollapseAnimMin": {
+      "label": "Phút Hoạt hình",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "Hoạt hình Max",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "Dùng bàn Bình",
+      "tooltip": "Nếu bật, hoạt hình sẽ mở về phía trước và sau đó quay ngược lại. Nếu vô hiệu hóa, nó sẽ lặp lại."
+    },
+    "_AL_CollapseBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "Bật tùy chọn này để hiển thị kiểu của tập tin ảnh",
+      "tooltip": "Ứng dụng hiệu ứng nhấp nháy với toàn bộ đối tượng."
+    },
+    "_FlickerMode": {
+      "label": "Chế độlicker",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ ánh đèn nhấp nháy."
+    },
+    "_FlickerIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Sức mạnh của cái nhấp nháy (nó tối như thế nào)."
+    },
+    "_AL_FlickerBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "Cuộn ngược",
+      "tooltip": "Đảo ngược hướng cuộn của các đường quét lỗi."
+    },
+    "_FlickerBlockSize": {
+      "label": "Cỡ khối",
+      "tooltip": "Kích thước của trục trặc chặn."
+    },
+    "_FlickerDirection": {
+      "label": "Hướng",
+      "tooltip": "Đường quét trục trặc."
+    },
+    "_FlickerDensity": {
+      "label": "Mật độ",
+      "tooltip": "Số lần quét trục trặc."
+    },
+    "_FlickerLineThickness": {
+      "label": "Độ dầy",
+      "tooltip": "Độ dày của đường quét trục trặc."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "Bật Glatch trong suốt",
+      "tooltip": "Gây ra hiệu ứng nhấp nháy cũng ảnh hưởng đến độ trong suốt."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "Độ mạnh",
+      "tooltip": "Độ nhấp nháy ảnh hưởng đến độ trong suốt."
+    },
+    "_UseScanlines": {
+      "label": "Bật & dòng quét",
+      "tooltip": "Mô phỏng hình màn hình CT."
+    },
+    "_ScanlineColor": {
+      "label": "Màu",
+      "tooltip": "Màu và độ trong suốt của đường quét."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "Mật độ",
+      "tooltip": "Có bao nhiêu đường quét xuất hiện trên màn hình."
+    },
+    "_ScanlineSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Những đường quét này cuộn nhanh đến mức nào."
+    },
+    "_ScanlineThickness": {
+      "label": "Độ dầy",
+      "tooltip": "Độ dày của các đường quét."
+    },
+    "_ScanlineDirection": {
+      "label": "Hướng",
+      "tooltip": "Đường quét (0=Vertical, 1=Horizontal)."
+    },
+    "_AL_ScanlineBand": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "Bật quang phổ âm thanh",
+      "tooltip": "Vẽ một quang phổ tần số thời gian thực được điều khiển bởi audioLik."
+    },
+    "_AudioSpectrumMode": {
+      "label": "Chế độ quang phổ",
+      "tooltip": "Kiểu hình ảnh hóa cho quang phổ."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "Số đếm thanh",
+      "tooltip": "Số thanh tần số."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "Khoảng hở Thanh",
+      "tooltip": "Khoảng cách giữa thanh (0 = không có khoảng trống)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "Thu nhập",
+      "tooltip": "Xác định tín hiệu âm thanh."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "Độ dày cạnh",
+      "tooltip": "Sự mềm mại của những thanh đu quay."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "Điền Alpha",
+      "tooltip": "Độ đậm đặc của khu vực được lấp đầy dưới đường cong."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "& Phóng",
+      "tooltip": "Sử dụng tần số âm thanh để tăng sự cân bằng âm trầm tự nhiên."
+    },
+    "_AudioSpectrumColor": {
+      "label": "Màu",
+      "tooltip": "Màu chính (hay màu tần số thấp cho độ dốc)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "Màu Freq cao",
+      "tooltip": "Màu tần số cao cho chế độ Chuyển đổi."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "Chế độ màu",
+      "tooltip": "Cách quang phổ được tô màu."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "Tốc độ Sắc",
+      "tooltip": "Tốc độ chuyển đổi sắc màu/ hoạt hình cầu vồng."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "Miền màu",
+      "tooltip": "Tọa độ không gian cho bộ hình ảnh."
+    },
+    "_AudioSpectrumScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Phóng to hình ảnh."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "Hiệu",
+      "tooltip": "Chuyển vị trí."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "Xoay",
+      "tooltip": "Xoay theo độ."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Làm thế nào quang phổ hòa lẫn với bề mặt."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "Lỗi",
+      "tooltip": "Đối chiếu với quang phổ theo chiều ngang."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "Bán kính nội tâm",
+      "tooltip": "Bán kính nội tâm của màn hình rộng."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "Độ mềm cạnh",
+      "tooltip": "Đường viền hộp và đường viền mềm của thanh hay đường cong."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Quá nhiều ánh sáng."
+    },
+    "_AudioSmoothingMode": {
+      "label": "Chế độ làm mịn âm thanh",
+      "tooltip": "Phương pháp làm mịn thời gian cho quang phổ/ sóng: thô (không có), khung trộn (- khung EMA), hay Timeoral Buffer (Lịch sử CTTT)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "Làm mịn hình vuông",
+      "tooltip": "Độ mạnh làm mịn của thời gian áp dụng cho quang phổ (Frame hỗn hợp / Tạm thời)."
+    },
+    "_UseAudioWaveform": {
+      "label": "Dùng dạng sóng âm",
+      "tooltip": "Vẽ một hình ảnh hóa sóng thời gian thực được điều khiển bởi audioLik."
+    },
+    "_AudioWaveformMode": {
+      "label": "Chế độ Sóng",
+      "tooltip": "Kiểu hình ảnh hóa cho dạng sóng."
+    },
+    "_AudioWaveformChannel": {
+      "label": "Kênh",
+      "tooltip": "Mà âm thanh kênh để hình dung."
+    },
+    "_AudioWaveformCycles": {
+      "label": "Quay vòng",
+      "tooltip": "Số chu kỳ sóng nhìn thấy được."
+    },
+    "_AudioWaveformGain": {
+      "label": "Thu nhập",
+      "tooltip": "Xác định tín hiệu âm thanh."
+    },
+    "_AudioWaveformThickness": {
+      "label": "Độ dầy Đường thẳng",
+      "tooltip": "Độ dày của đường theo dõi."
+    },
+    "_AudioWaveformGlow": {
+      "label": "Glow",
+      "tooltip": "Độ lớn của ánh sáng neon."
+    },
+    "_AudioWaveformColor": {
+      "label": "Màu",
+      "tooltip": "Màu sóng chính."
+    },
+    "_AudioWaveformColor2": {
+      "label": "Màu",
+      "tooltip": "Màu thứ hai (được tô sáng hay sáng bóng)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "Chế độ màu",
+      "tooltip": "Cách sóng màu sắc."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "Tốc độ Sắc",
+      "tooltip": "Tốc độ chuyển đổi sắc màu/ hoạt hình cầu vồng."
+    },
+    "_AudioWaveformSpace": {
+      "label": "Miền màu",
+      "tooltip": "Tọa độ không gian cho bộ hình ảnh."
+    },
+    "_AudioWaveformScale": {
+      "label": "Tỷ lệ",
+      "tooltip": "Phóng to hình ảnh."
+    },
+    "_AudioWaveformOffset": {
+      "label": "Hiệu",
+      "tooltip": "Chuyển vị trí."
+    },
+    "_AudioWaveformRotation": {
+      "label": "Xoay",
+      "tooltip": "Xoay theo độ."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Làm thế nào mà dạng sóng hòa lẫn với bề mặt."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "Bán kính Cực",
+      "tooltip": "Bán kính cơ bản của vòng cực."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "Sức mạnh thay thế",
+      "tooltip": "Sức mạnh của sự dịch chuyển của đỉnh cao dọc theo trạng thái bình thường."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "Độ mềm cạnh",
+      "tooltip": "Gây tương phản và đột quỵ mềm mại."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Quá nhiều ánh sáng."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "Độ mịn Sóng",
+      "tooltip": "Sức mạnh làm mịn thời gian được áp dụng cho dạng sóng ( Chế độ dự phòng)."
+    },
+    "_FRSmoothedAudio": {
+      "label": "Âm thanh mịn",
+      "tooltip": "Công cụ vẽ tự chọn (FireRat soundSmoothingCRT) đang giữ âm thanh theo thời gian. Yêu cầu chế độ Timeoral Buffer."
+    },
+    "_UseInterlace": {
+      "label": "Bật khả năng can thiệp",
+      "tooltip": "Làm tối tất cả các hàng màn hình khác để mô phỏng một màn hình có dây."
+    },
+    "_InterlaceIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Đường nối tối như thế nào."
+    },
+    "_UseClippingMask": {
+      "label": "Bật mặt nạ truy vấn",
+      "tooltip": "Dùng họa tiết để kẹp (làm cho các bộ phận vô hình) của vật liệu. Đây là một đoạn phim cứng, không phải là sự minh bạch mềm mại."
+    },
+    "_ClippingMask": {
+      "label": "Công cụ & trình lọc",
+      "tooltip": "Kết cấu dùng để cắt. Kênh đã chọn xác định tầm nhìn (đen = cắt)."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "Cuộn mặt nạ X",
+      "tooltip": "Di chuyển theo chiều ngang."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "Cuộn mặt nạ",
+      "tooltip": "Kéo họa tiết mặt nạ theo chiều dọc."
+    },
+    "_ClippingMaskChannel": {
+      "label": "Kênh",
+      "tooltip": "Mà kênh màu của mặt nạ cần dùng để cắt."
+    },
+    "_InvertClippingMask": {
+      "label": "Đảo mặt nạ",
+      "tooltip": "Nghịch đảo hiệu ứng mặt nạ (đen = cắt)."
+    },
+    "_UseNoise": {
+      "label": "Bật nhiễu/Grain",
+      "tooltip": "Thêm một tiếng động được bao phủ."
+    },
+    "_NoiseIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Sức mạnh của hiệu ứng nhiễu."
+    },
+    "_NoiseColor": {
+      "label": "Màu",
+      "tooltip": "Màu của các hạt nhiễu."
+    },
+    "_NoiseColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "Tốc độ Hoạt hình",
+      "tooltip": "Khung hình trên giây của hoạt hình tiếng ồn."
+    },
+    "_Cull": {
+      "label": "Chữa",
+      "tooltip": "Chế độ quản lý đa giác (raw, Front, Back)."
+    },
+    "_CullShadow": {
+      "label": "Chế độ uốn bóng",
+      "tooltip": "Chế độ canh đa giác được dùng đặc biệt cho việc đúc bóng."
+    },
+    "_ZTest": {
+      "label": "ZTest",
+      "tooltip": "Kiểm tra độ sâu."
+    },
+    "_ColorWriteMask": {
+      "label": "Lọc ghi màu",
+      "tooltip": "Điều khiển các kênh màu được ghi vào màn hình."
+    },
+    "_QueueOffset": {
+      "label": "Khoảng cách hàng đợi",
+      "tooltip": "Hiệu số cho hàng đợi trong chế độ vẽ đã chọn."
+    },
+    "_SrcBlend": {
+      "label": "Chế độ trộn sc",
+      "tooltip": "Chế độ pha trộn nguồn để pha trộn trong suốt."
+    },
+    "_DstBlend": {
+      "label": "Chế độ trộn Dst",
+      "tooltip": "Chế độ pha trộn đích để pha trộn trong suốt."
+    },
+    "_Stencil": {
+      "label": "Thư mục đích:",
+      "tooltip": "Giá trị tham chiếu Stencil."
+    },
+    "_StencilReadMask": {
+      "label": "Lọc đọc",
+      "tooltip": "Stencil đọc mặt nạ."
+    },
+    "_StencilWriteMask": {
+      "label": "Lọc ghi",
+      "tooltip": "Stencil viết mặt nạ."
+    },
+    "_StencilComp": {
+      "label": "So sánh",
+      "tooltip": "Hàm so sánh Stencil."
+    },
+    "_StencilPass": {
+      "label": "Qua",
+      "tooltip": "Stencil đã được thông qua."
+    },
+    "_StencilFail": {
+      "label": "Thất bại",
+      "tooltip": "Stencil thất bại trong chiến dịch."
+    },
+    "_StencilZFail": {
+      "label": "ZFail",
+      "tooltip": "Hoạt động của Stencil zfail."
+    },
+    "_NormalMapUVSet": {
+      "label": "Đặt UV chuẩn",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho bản đồ thông thường."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "Chi tiết về tử ngoại chuẩn",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho các chi tiết bình thường."
+    },
+    "_DetailTexUVSet": {
+      "label": "Thiết lập tia cực tím chi tiết",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho kết cấu chi tiết."
+    },
+    "_DecalTexUVSet": {
+      "label": "Name",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho decal."
+    },
+    "_DissolveMapUVSet": {
+      "label": "Đặt tia UV phân cách",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho bản đồ tan rã."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "Name",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho mặt nạ phát ra."
+    },
+    "_OutlineTex": {
+      "label": "Vẽ nét đơn",
+      "tooltip": "Hình học được vẽ theo hình học đường nét."
+    },
+    "_OutlineTexUVSet": {
+      "label": "Thu nhỏ",
+      "tooltip": "Kênh UV cho kết cấu đường nét."
+    },
+    "_OutlineTexScrollX": {
+      "label": "Cuộn X",
+      "tooltip": "Tốc độ X cho kết cấu đường nét."
+    },
+    "_OutlineTexScrollY": {
+      "label": "Cuộn",
+      "tooltip": "Tốc độ Y để vẽ đường nét."
+    },
+    "_UseOutlineGradient": {
+      "label": "Bật đổ dốc màu",
+      "tooltip": "Ứng dụng theo một dốc dọc trên/ dưới ngang qua đường nét."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "Màu trên",
+      "tooltip": "Màu trên cùng của đường cong đường nét."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "Màu dưới",
+      "tooltip": "Màu dưới cùng của độ dốc nét."
+    },
+    "_RimMode": {
+      "label": "Chế độ Rim",
+      "tooltip": "Rộng hơn (glows về phía cạnh) hoặc Inner river (glows to face Center)."
+    },
+    "_RimDepthMode": {
+      "label": "Chế độ độ Độ sâu hồng",
+      "tooltip": "Dùng độ sâu của cảnh thay vì nhìn góc để chiếu sáng."
+    },
+    "_RimDepthWidth": {
+      "label": "Độ sâu Rem",
+      "tooltip": "Độ rộng khoảng cách cho vành dưới độ sâu."
+    },
+    "_GridTilingX": {
+      "label": "Lưới Tiling X",
+      "tooltip": "Nằm ngang cho các đường lưới theo thủ tục."
+    },
+    "_GridTilingY": {
+      "label": "Lưới",
+      "tooltip": "Thẳng đứng cho các đường lưới theo thủ tục."
+    },
+    "_DecalRotation": {
+      "label": "Xoay",
+      "tooltip": "Góc quay (0-360 độ) cho decal."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "Bật phân cách 2",
+      "tooltip": "Làm quá chi tiết kết cấu thứ hai."
+    },
+    "_Decal2Tex": {
+      "label": "Đơn vị 2",
+      "tooltip": "Kết cấu thứ hai."
+    },
+    "_Decal2BlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Cách Detal 2 hòa với màu cơ bản."
+    },
+    "_Decal2Strength": {
+      "label": "Độ mạnh",
+      "tooltip": "Toàn bộ độ mờ của Decal 2."
+    },
+    "_Decal2Normal": {
+      "label": "Sơ đồ chuẩn",
+      "tooltip": "Bản đồ chuẩn cho Detal 2."
+    },
+    "_Decal2NormalStrength": {
+      "label": "Sức mạnh thường",
+      "tooltip": "Sức mạnh của Detal 2 bình thường."
+    },
+    "_Decal2Metallic": {
+      "label": "Kim loại",
+      "tooltip": "Giá trị kim loại cho vùng Decal 2."
+    },
+    "_Decal2Smoothness": {
+      "label": "Độ mịn",
+      "tooltip": "Giá trị độ mịn cho vùng 2."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "Ảnh hưởng PBR",
+      "tooltip": "Hãy hiệu lực để sửa đổi độ mịn, kim loại và độ mịn thông qua tĩnh mạch."
+    },
+    "_Decal2TexUVSet": {
+      "label": "Cắt 2 Đèn cực tím",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho Decal 2."
+    },
+    "_Decal2Rotation": {
+      "label": "Xoay",
+      "tooltip": "Góc quay (0-360 độ) cho Detal 2."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "Bật phân cách 3",
+      "tooltip": "Phủ lên một kết cấu decal/sticker."
+    },
+    "_Decal3Tex": {
+      "label": "Name",
+      "tooltip": "Kết cấu thứ ba."
+    },
+    "_Decal3BlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Cách Detal 3 hòa với màu cơ bản."
+    },
+    "_Decal3Strength": {
+      "label": "Độ mạnh",
+      "tooltip": "Toàn bộ độ mờ/ cường độ của Decal 3."
+    },
+    "_Decal3Normal": {
+      "label": "Sơ đồ chuẩn",
+      "tooltip": "Bản đồ chuẩn cho Detal 3."
+    },
+    "_Decal3NormalStrength": {
+      "label": "Sức mạnh thường",
+      "tooltip": "Sức mạnh của Detal 3 bình thường."
+    },
+    "_Decal3Metallic": {
+      "label": "Kim loại",
+      "tooltip": "Giá trị kim loại cho vùng Decal 3."
+    },
+    "_Decal3Smoothness": {
+      "label": "Độ mịn",
+      "tooltip": "Giá trị độ mịn 3 khu vực."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "Ảnh hưởng PBR",
+      "tooltip": "Hãy hiệu lực để sửa đổi độ mịn, kim loại và độ mịn thông qua tĩnh mạch."
+    },
+    "_Decal3TexUVSet": {
+      "label": "Cắt 3 Đèn UV",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho Detal 3."
+    },
+    "_Decal3Rotation": {
+      "label": "Xoay",
+      "tooltip": "Góc quay (0-360 độ) cho Detal 3."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "Name",
+      "tooltip": "Kênh UV cho gợn sóng mưa (UV0 vs UV1)."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "Name",
+      "tooltip": "Ban nhạc soundLik cho việc nghiền nát/blinking trong âm thanh."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "Độ mạnh chớp",
+      "tooltip": "Sức mạnh của hiệu ứng chớp nháy."
+    },
+    "_UseBackFaceColor": {
+      "label": "Bật màu mặt sau",
+      "tooltip": "Áp dụng màu riêng cho đa giác quay ngược."
+    },
+    "_BackFaceColor": {
+      "label": "Màu mặt sau",
+      "tooltip": "Màu mặt đằng sau."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "Dùng hình nền",
+      "tooltip": "Áp dụng một kết cấu riêng cho đa giác phía sau."
+    },
+    "_BackFaceTex": {
+      "label": "Chữ mặt sau",
+      "tooltip": "Kết cấu của mặt sau."
+    },
+    "_BackFaceEmission": {
+      "label": "Được nghỉ ngơi",
+      "tooltip": "Kết cấu phát ra từ mặt sau."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "Sức mạnh khai thác",
+      "tooltip": "Sức mạnh của mặt sau bị phóng ra."
+    },
+    "_HueShift": {
+      "label": "Comment",
+      "tooltip": "Xoay màu quanh bánh xe màu."
+    },
+    "_SaturationAdjust": {
+      "label": "Bão hoà",
+      "tooltip": "Độ bão hòa nhiều màu (0 =Gray quy mô, 1 = Default, 2 = Vibrant)."
+    },
+    "_ValueAdjust": {
+      "label": "Giá trị",
+      "tooltip": "Phóng lên giá trị/sự đúng đắn của HSV."
+    },
+    "_UseHSVMask": {
+      "label": "Bật mặt nạ HSV",
+      "tooltip": "Điều chỉnh HSV bằng bản đồ họa tiết."
+    },
+    "_HSVMask": {
+      "label": "Mặt nạ HSV (R)",
+      "tooltip": "Hoạ tiết mặt nạ cho chuyển đổi sắc màu/ Sturation/Value (mặc định là mã Shift, đen =Origil)."
+    },
+    "_NormalMapFlipY": {
+      "label": "Lật Y (DirctX / OpenGL)",
+      "tooltip": "Đảo ngược kênh màu xanh lá cây của bản đồ thông thường cho định dạng Chỉ thịX/ Mở tương thích với GL."
+    },
+    "_DetailBlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Chế độ tổng hợp cho kết cấu chi tiết (quá, nhân, Thêm, Độ sáng mềm)."
+    },
+    "_VertexColorMode": {
+      "label": "Chế độ màu Vertex",
+      "tooltip": "Chọn cách màu sắc đỉnh màu trộn với màu cơ bản (thay thế, nhân lên, Thêm)."
+    },
+    "_GlitterShape": {
+      "label": "Hình gliterStencils",
+      "tooltip": "Điều khiển hình học của lấp lánh lấp lánh."
+    },
+    "_MatCapMask": {
+      "label": "Mặt nạ MatCap (R)",
+      "tooltip": "Hiệu ứng Quét Trang trình diễn."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "Name",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho mặt nạ MatCap."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "Dùng đổ dốc màu cạnh",
+      "tooltip": "Kích hoạt một dốc đa màu dọc theo cạnh tan chảy."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "Đổ dốc màu cạnh tháo gỡ",
+      "tooltip": "Kết cấu Gradient được áp dụng dọc theo cạnh tan chảy."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "Cuộn mặt nạ X",
+      "tooltip": "Tốc độ X để phát âm mặt nạ."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "Cuộn mặt nạ",
+      "tooltip": "Tốc độ Y để phát âm mặt nạ."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "Làm mịn toàn cục",
+      "tooltip": "Phản ứng toàn cầu làm mịn băng qua tần số âm thanh."
+    },
+    "_AL_GlobalMin": {
+      "label": "Sàn toàn cục / Min",
+      "tooltip": "Cửa tầng nhiễu cho phản ứng âm thanh."
+    },
+    "_AL_GlobalMax": {
+      "label": "Nhân bản toàn cục / Max",
+      "tooltip": "Kiềm chế ngưỡng tăng cường độ âm thanh cao nhất."
+    },
+    "_DetailNormalScrollX": {
+      "label": "Tốc độ X",
+      "tooltip": "Tốc độ X cho chi tiết bình thường."
+    },
+    "_DetailNormalScrollY": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ Y cho chi tiết bình thường."
+    },
+    "_ColorMask": {
+      "label": "Mặt nạ màu",
+      "tooltip": "Chữ dùng để mặt nạ và hạn chế hoạt họa màu."
+    },
+    "_ColorMaskUVSet": {
+      "label": "Comment",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho mặt nạ màu."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "Nguồn màu mặt nạ Alpha",
+      "tooltip": "Kênh nguồn được dùng để trộn màu mặt nạ."
+    },
+    "_MainTexUVSet": {
+      "label": "Bộ tia cực tím chính",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho kết cấu chính."
+    },
+    "_Shadow2Color": {
+      "label": "Màu Bóng 2",
+      "tooltip": "Màu bóng sâu cho dây đeo bóng số 2."
+    },
+    "_ToonThreshold2": {
+      "label": "2 Mẫu",
+      "tooltip": "Giới hạn giữ bóng thứ 2."
+    },
+    "_ToonHardness2": {
+      "label": "2 Mục lục sự khó khăn",
+      "tooltip": "Độ sắc cạnh cho dây đeo bóng tối thứ 2."
+    },
+    "_MinLightBrightness": {
+      "label": "Độ sáng Tối thiểu",
+      "tooltip": "Tầng sáng tối thiểu để ngăn chặn hình nhân trở nên đen tối."
+    },
+    "_MaxLightBrightness": {
+      "label": "Độ sáng tối đa",
+      "tooltip": "Trần nhà phát sáng tối đa để ngăn chặn việc phơi quá nhiều trong thế giới tươi sáng."
+    },
+    "_ShadeShiftMap": {
+      "label": "Che mờ bản đồ Shift",
+      "tooltip": "Văn bản định vị đường bóng đèn (tách gấp / AO)."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "Che mờ thiết lập UV Shift",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho bản đồ Shade Shift."
+    },
+    "_ShadeShiftStrength": {
+      "label": "Che mờ sức mạnh Shift",
+      "tooltip": "Độ lớn của đường bóng thành kiến từ bản đồ bóng râm."
+    },
+    "_StepSpecular": {
+      "label": "Bước",
+      "tooltip": "Chuyển đổi những điểm nổi bật của PBR mềm thành những điểm sáng hoạt hình."
+    },
+    "_StepSpecularThreshold": {
+      "label": "Chọn",
+      "tooltip": "Kiềm chế ranh giới cho bước đi tối thiểu."
+    },
+    "_StepSpecularHardness": {
+      "label": "Bước khó khăn",
+      "tooltip": "Độ sắc của bước đi sáng suốt."
+    },
+    "_UseMatCap2": {
+      "label": "Bật MatCap 2",
+      "tooltip": "Thêm lớp MatCap thứ hai cho các giọng nói đa mạch hoặc vành."
+    },
+    "_MatCap2Tex": {
+      "label": "MatCap 2 Texture",
+      "tooltip": "Kết cấu phản chiếu hình cầu MatCap hạng hai."
+    },
+    "_MatCap2BlendMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Chế độ tổng hợp cho MatCap 2 (Ad, nhân bản, Thay thế, Lighten, overlay)."
+    },
+    "_MatCap2Intensity": {
+      "label": "Cường độ",
+      "tooltip": "Tăng ánh sáng cho MatCap 2."
+    },
+    "_MatCap2Mask": {
+      "label": "Mặt nạ MatCap 2 (R)",
+      "tooltip": "Hiệu ứng Quét Trang trình diễn."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "Name",
+      "tooltip": "Kênh UV cho mặt nạ MatCap 2."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "Thay thế sơ đồ chuẩn",
+      "tooltip": "Hình phản chiếu MatCap sử dụng bản đồ bề mặt bình thường."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "Sửa phối cảnh",
+      "tooltip": "Chỉnh sửa sự méo mó góc nhìn rộng trong VR."
+    },
+    "_HairSpecMask": {
+      "label": "Mặt nạ quang phổ tóc",
+      "tooltip": "Kết cấu mặt nạ kiểm soát những điểm nổi bật của tóc."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "Name",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho mặt nạ quang phổ tóc."
+    },
+    "_OutlineNormalSource": {
+      "label": "Thu nhỏ",
+      "tooltip": "Dòng Vertex được dùng để giải phóng đường nét (Mesh normals, Vertex màu, UV2, UV3)."
+    },
+    "_OutlineMinWidth": {
+      "label": "Bề rộng Tối thiểu",
+      "tooltip": "Độ dày điểm ảnh tối thiểu cho các đường nét ở khoảng cách."
+    },
+    "_OutlineMaxWidth": {
+      "label": "Bề rộng Cực đại",
+      "tooltip": "Độ dày điểm ảnh tối đa cho các đường nét ở gần."
+    },
+    "_OutlineNoiseScale": {
+      "label": "Tỷ lệ nhiễu",
+      "tooltip": "Tần số các hình vẽ hoạt hình gây hoang mang."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "Tốc độ nhiễu",
+      "tooltip": "Tốc độ hoạt hình của sự nhiễu loạn đường nét."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "Độ nhiễu",
+      "tooltip": "Sức mạnh của đường viền bị lung lay."
+    },
+    "_UseDitheredAlpha": {
+      "label": "Alpha đã biến mất",
+      "tooltip": "Ma trận không gian màn hình rung động để sắp xếp vải và tóc."
+    },
+    "_DitherStrength": {
+      "label": "Sức mạnh rung động",
+      "tooltip": "Độ mạnh pha trộn lệch (0 = cắt sắc nét, 1 = độ dốc)."
+    },
+    "_ShadowCutoff": {
+      "label": "Name",
+      "tooltip": "Ngưỡng Alpha cho bóng."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "Dùng khả năng cắt bóng",
+      "tooltip": "Ghi đè ngưỡng cắt ra đặc biệt là cho bóng vượt qua."
+    },
+    "_AL_DecalBand": {
+      "label": "Comment",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "Chọn",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "Comment",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "Độ mạnh Âm thanh tin nhắn 2",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "Comment",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "Hiệu ứng Quét Trang trình diễn",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "Gần máy ảnh mờ dần",
+      "tooltip": "Làm mịn phân giải hình học khi máy ảnh đến quá gần (trước khi cắt đầu VR)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "Bán kính mờ dần",
+      "tooltip": "Khoảng cách từ máy ảnh nơi hình học bắt đầu mờ dần."
+    },
+    "_NearCameraFadeRange": {
+      "label": "Phạm vi mờ dần",
+      "tooltip": "Khoảng cách chuyển tiếp cho gần camera mờ dần."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "Bóng mờ",
+      "tooltip": "Cũng kẹp bóng khi trong khoảng cách mờ nhạt."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Tốc độ hấp thụ để tạo hình hô hấp."
+    },
+    "_OutlinePulseStrength": {
+      "label": "Mạch mạnh",
+      "tooltip": "Khả năng hô hấp để tạo ra hơi thở/ đẩy."
+    },
+    "_UseChromaKey": {
+      "label": "Dùng khoá Chroma",
+      "tooltip": "Tạo một phạm vi màu rõ ràng (v. d. khoá màn hình xanh lá cây)."
+    },
+    "_ChromaKeyColor": {
+      "label": "Màu khoá",
+      "tooltip": "Màu để khóa."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "Ngưỡng",
+      "tooltip": "Ngưỡng khoảng cách chung quanh màu khóa cần loại bỏ."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "Làm mịn",
+      "tooltip": "Sự mềm mại của sự thay đổi cạnh."
+    },
+    "_DistanceFade_LOD": {
+      "label": "Khoảng cách:",
+      "tooltip": "Khoảng cách từ máy ảnh để bắt đầu đơn giản hóa chi tiết bóng tối tối ưu cho việc tối ưu hóa LOD (0 = khả năng tắt)."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "Chế độ tham số Avatar",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "Dùng biểu đồ tần xuất",
+      "tooltip": "Hiệu ứng ba chiều Sci-fi với các đường quét hoạt hình, viền rìa, và nhấp nháy."
+    },
+    "_HoloColor": {
+      "label": "Màu biểu đồ tần xuất",
+      "tooltip": "Màu sắc của hình chiếu ba chiều."
+    },
+    "_HoloScanlineTiling": {
+      "label": "Quét dòng",
+      "tooltip": "Mật độ của các đường quét ngang."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "Tốc độ quét",
+      "tooltip": "Tốc độ của các đường quét di chuyển."
+    },
+    "_HoloRimPower": {
+      "label": "Name",
+      "tooltip": "Độ sắc của viền tam giác phát sáng."
+    },
+    "_HoloStrength": {
+      "label": "Độ mạnh biểu đồ tần xuất",
+      "tooltip": "Sức mạnh hỗn hợp của ba chiều trên bề mặt căn cứ."
+    },
+    "_HoloAlphaStrength": {
+      "label": "Mô phỏng Alpha",
+      "tooltip": "Thay đổi độ trong suốt với mẫu quét."
+    },
+    "_UseCustomFogColor": {
+      "label": "Tự chọn",
+      "tooltip": "Ghi đè màu sương mù toàn cầu với một màu thiếc tự chọn."
+    },
+    "_CustomFogColor": {
+      "label": "Tự chọn",
+      "tooltip": "Màu sắc tự chọn cho sương mù khí quyển."
+    },
+    "_AlphaToCoverage": {
+      "label": "Alpha đến bìa (MSA)",
+      "tooltip": "Kích hoạt phần cứng Alpha để che đậy (DSAA anti-xalaring) trên các cạnh cắt, làm mịn lá và tóc."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "Sắc A2C",
+      "tooltip": "Làm sắc nét con Alpha thành các cạnh che chắn."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "Bóng tối nhận sức mạnh",
+      "tooltip": "Điều khiển bóng tối hiện ra trên vật liệu (1. 0 = bóng, 0.0 = không có bóng)."
+    },
+    "_DecalClamp": {
+      "label": "Kết nối Lưới",
+      "tooltip": "Tọa độ Clamps decal UV để decal không lặp lại bên ngoài [0, 1]."
+    },
+    "_Decal2Clamp": {
+      "label": "Kết nối Lưới",
+      "tooltip": "Tọa độ Clamps decal UV để Detal 2 không lặp lại bên ngoài [0, 1]."
+    },
+    "_Decal3Clamp": {
+      "label": "Kết nối Lưới",
+      "tooltip": "Tọa độ Clamps decal UV để Detal 3 không lặp lại bên ngoài [0, 1]."
+    },
+    "_RimMask": {
+      "label": "Lọc",
+      "tooltip": "Mặt nạ họa tiết (R) để hạn chế hoặc tô màu ánh sáng viền trên những vùng đất cụ thể."
+    },
+    "_RimMaskUVSet": {
+      "label": "Name",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho mặt nạ Rim."
+    },
+    "_OutlineLightingMix": {
+      "label": "Pha trộn ánh sáng",
+      "tooltip": "Kết hợp ánh sáng cảnh trên đường nét (0 = unlit, 1 = bóng đầy đủ bởi đèn cảnh)."
+    },
+    "_OutlineZOffset": {
+      "label": "Bộ tách Z (Depth Bias)",
+      "tooltip": "Ứng dụng một định kiến không gian máy ảnh Z-depth để ngăn chặn các đường nét của hình học kế cận."
+    },
+    "_UseFaceSDF": {
+      "label": "Kích hoạt Bóng Mặt SDF",
+      "tooltip": "Ký tên vào trường khoảng cách đối mặt với bản đồ bóng cho các nhân vật giải trí."
+    },
+    "_FaceShadowMap": {
+      "label": "Bản đồ bóng mặt (SDF)",
+      "tooltip": "Bảng mã của ngưỡng ánh sáng được mã hóa."
+    },
+    "_FaceShadowOffset": {
+      "label": "Hiệu số Bóng Mặt",
+      "tooltip": "Làm lệch góc trước/ trở lại."
+    },
+    "_FaceShadowBlur": {
+      "label": "Đối mặt với bóng mềm",
+      "tooltip": "Làm mềm biên giới bóng SDF."
+    },
+    "_FaceShadowInvert": {
+      "label": "Che mặt",
+      "tooltip": "Nghịch đảo bóng SDF."
+    },
+    "_CameraVisibilityMode": {
+      "label": "Chế độ nhìn",
+      "tooltip": "Điều khiển tầm nhìn trong gương, tai nghe VR, và các máy ảnh màn hình nền."
+    },
+    "_MirrorDetectMode": {
+      "label": "Phương pháp phát hiện gương",
+      "tooltip": "Thuật toán cho việc phát hiện máy ảnh phản chiếu."
+    },
+    "_CustomCameraFilter": {
+      "label": "ID máy ảnh tự chọn",
+      "tooltip": "Lọc bằng ID máy ảnh toàn cục riêng (0 = vô hiệu)."
+    },
+    "_OffsetFactor": {
+      "label": "Hệ số hiệu số Đa giác",
+      "tooltip": "Hệ số bù đắp độ sâu Polygon (đã chuẩn bị z- fight)."
+    },
+    "_OffsetUnits": {
+      "label": "Đơn vị hiệu số Đa giác",
+      "tooltip": "Đơn vị bù đắp độ sâu Polygon (đã chuẩn bị z- fight)."
+    },
+    "_UseEnvRim": {
+      "label": "Name",
+      "tooltip": "Tint/mots ánh sáng vành đai sử dụng các thiết bị thăm dò phản chiếu."
+    },
+    "_EnvRimMix": {
+      "label": "Pha trộn môi trường",
+      "tooltip": "Kết hợp giữa màu vành tinh khiết ( 1) và vành tròn môi trường (1)."
+    },
+    "_MonochromeLighting": {
+      "label": "Ánh sáng đơn sắc",
+      "tooltip": "Làm giảm độ sáng của màu sắc hiện trường để bảo tồn màu da của nhân vật."
+    },
+    "_AsUnlitLighting": {
+      "label": "Ánh sáng không sáng",
+      "tooltip": "Pha trộn ánh sáng tới một sàn không sáng trong môi trường tối."
+    },
+    "_UseVRCLV": {
+      "label": "Bộ ánh sáng VRC",
+      "tooltip": "Mẫu VC Light Volumes (REDSIM) cho ánh sáng trên toàn cầu trong các thế giới hỗ trợ. Trở lại máy dò ánh sáng ở nơi khác. Bắt buộc phải tắt ở mức vừa/low hiệu suất."
+    },
+    "_VRCLVIntensity": {
+      "label": "Cường độ LV",
+      "tooltip": "Phóng đại lượng ánh sáng đóng góp xung quanh."
+    },
+    "_VRCLVNormalBias": {
+      "label": "Bias chuẩn LV",
+      "tooltip": "Hiệu số lượng mẫu dọc theo bề mặt bình thường để giảm axel acne trên hình học mỏng."
+    },
+    "_UseFluorescence": {
+      "label": "Bật/tắt trạng thái mờ",
+      "tooltip": "Phản ứng với cường độ ánh sáng theo chiều hướng/ môi trường (glows trong bóng tối)."
+    },
+    "_FluorescenceMap": {
+      "label": "Sơ đồ độ mờ",
+      "tooltip": "Sơ đồ độ bão hoà (RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "Comment",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho sơ đồ dao động."
+    },
+    "_FluorescenceColor": {
+      "label": "Màu",
+      "tooltip": "Màu sắc đa chiều HDR"
+    },
+    "_FluorescenceStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Độ mạnh tiết ra hơi nước"
+    },
+    "_FluorescenceThreshold": {
+      "label": "Ngưỡng sáng",
+      "tooltip": "Tần số ánh sáng kích hoạt sự sáng ngẫu nhiên."
+    },
+    "_FluorescenceHardness": {
+      "label": "Độ cứng",
+      "tooltip": "Độ sắc chuyển động giữa trạng thái tối và sáng."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "Chỉ hào quang trong tối",
+      "tooltip": "Khi được kích hoạt, chỉ có phát sáng trong môi trường ánh sáng thấp (trong bóng tối)."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "Kích hoạt PS1",
+      "tooltip": "Định lượng vị trí đỉnh cao thành một mạng lưới độ phân giải thấp cho một thiết bị PS1 ngược / affine thẩm mỹ hoang mang."
+    },
+    "_PS1SnapResolution": {
+      "label": "Gắn độ phân giải",
+      "tooltip": "Độ phân giải lưới / độ chính xác để chụp đỉnh (v. d. 240p)."
+    },
+    "_PS1SnapSpace": {
+      "label": "Không gian đính",
+      "tooltip": "Không gian tọa độ để chụp (lo lắng không gian màn hình với số lượng không gian đối tượng)."
+    },
+    "_UseLookAt": {
+      "label": "Bật khả năng xem biểu đồ bảng",
+      "tooltip": "Xoay các đỉnh để đối mặt với máy ảnh hoạt động."
+    },
+    "_LookAtMode": {
+      "label": "Chế độ Billboard",
+      "tooltip": "Trục đi về hướng Billboard (đa số hình cầu ba chiều tương ứng với các biển quảng cáo hình trụ trục Y)."
+    },
+    "_LookAtStrength": {
+      "label": "Độ mạnh",
+      "tooltip": "Sức mạnh trộn lẫn giữa định hướng ban đầu và định hướng bảng quảng cáo."
+    },
+    "_UseUVFlow": {
+      "label": "Bật chảy UV",
+      "tooltip": "Hoạt cảnh các kết cấu dọc theo các đường dẫn của bản đồ véc tơ bằng cách sử dụng xe đạp 2 bánh."
+    },
+    "_FlowMap": {
+      "label": "Ánh xạ chảy (RG- véc- tơ)",
+      "tooltip": "Ánh xạ chảy (các véc- tơ hướng RG, 0. 5 = trung lập)"
+    },
+    "_FlowMapUVSet": {
+      "label": "Name",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho bản đồ luồng."
+    },
+    "_FlowSpeed": {
+      "label": "Tốc độ chảy",
+      "tooltip": "Tốc độ chuyển động."
+    },
+    "_FlowStrength": {
+      "label": "Sức mạnh chảy",
+      "tooltip": "Độ biến dạng của tia UV dọc theo véc tơ chảy."
+    },
+    "_FlowCycleRate": {
+      "label": "Tốc độ",
+      "tooltip": "Tần số của chu kỳ chéo hai chiều."
+    },
+    "_UseRGBAColorMask": {
+      "label": "Bật mặt nạ màu RGBA",
+      "tooltip": "Cho phép 4 điểm màu độc lập và kênh dung dịch được vẽ thành kênh RGBA có kết cấu mặt nạ."
+    },
+    "_RGBAColorMask": {
+      "label": "Lọc màu (RGBA)",
+      "tooltip": "Mặt nạ màu"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "Đèn cực tím",
+      "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho mặt nạ màu RGBA."
+    },
+    "_ColorMaskR_Color": {
+      "label": "Tin mới",
+      "tooltip": "Tin vào mặt nạ kênh R."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "Phát âm Đỏ (HDR)",
+      "tooltip": "Xuất phát từ mặt nạ R Channel."
+    },
+    "_ColorMaskG_Color": {
+      "label": "Int xanh lá cây",
+      "tooltip": "Tint cho mặt nạ kênh G."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "Name",
+      "tooltip": "Phát ra mặt nạ G."
+    },
+    "_ColorMaskB_Color": {
+      "label": "Kiểu Trang Xanh",
+      "tooltip": "Tin cho mặt nạ B."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "Phát ra màu xanh (HDR)",
+      "tooltip": "Phát ra mặt nạ B kênh."
+    },
+    "_ColorMaskA_Color": {
+      "label": "Anfa",
+      "tooltip": "Tin vào mặt nạ kênh."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "Phát âm Alpha (HDR)",
+      "tooltip": "Mở rộng mặt nạ kênh."
+    },
+    "_UseNetworkTime": {
+      "label": "Bật thời gian bị ngắt mạng",
+      "tooltip": "Đồng bộ hoá thời gian hoạt hình bóng tối liên tục qua các khách hàng mạng thông qua đồng hồ thời gian âm thanh/ Udon (trước khi chuyển đổi hoạt hình trong VRChat)."
+    },
+    "_NetworkTimeScale": {
+      "label": "Phóng thời gian mạng",
+      "tooltip": "Phóng phần tử được áp dụng cho việc đồng bộ giờ mạng."
+    },
+    "_UseStochasticSampling": {
+      "label": "Kích hoạt Samprung",
+      "tooltip": "Theo quy trình tổng hợp các mẫu kết cấu ngẫu nhiên để hoàn toàn loại bỏ các mẫu lặp đi lặp lại trên bề mặt lớn."
+    },
+    "_StochasticScale": {
+      "label": "Tỷ lệ dao động",
+      "tooltip": "Tỷ lệ nhân rộng cho phân phối lưới tam giác ngẫu nhiên."
+    },
+    "_UseDetailNormalFade": {
+      "label": "Kích hoạt Chi tiết",
+      "tooltip": "Các chi tiết tần số cao ở khoảng cách đều mờ nhạt để ngăn chặn âm thanh của VR."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "Khoảng cách bắt đầu mờ dần",
+      "tooltip": "Khoảng cách của các chi tiết bắt đầu mờ dần."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "Khoảng cách kết thúc mờ dần",
+      "tooltip": "Khoảng cách của máy quay nơi các chi tiết bình thường hoàn toàn bằng phẳng."
+    },
+    "_UseInternalParallax": {
+      "label": "Bật tham số nội bộ",
+      "tooltip": "Mô phỏng lớp sâu bên trong dưới thủy tinh, thấu kính, thủy tinh thể và mắt cá nhân."
+    },
+    "_InternalParallaxMap": {
+      "label": "Chữ lớp nội bộ",
+      "tooltip": "Kết cấu lớp sâu bên trong."
+    },
+    "_InternalParallaxColor": {
+      "label": "Màu Lớp",
+      "tooltip": "Màu sắc lớp nội."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "Chuyển đổi màu dấu cách bên trong",
+      "tooltip": "Âm thanh Link hoặc chuyển đổi màu hoạt hình cho hiệu ứng cận thị nội bộ."
+    },
+    "_InternalParallaxDepth": {
+      "label": "Tỷ lệ Độ sâu",
+      "tooltip": "Mô phỏng mức độ sâu nội thất."
+    },
+    "_InternalParallaxLayers": {
+      "label": "Bước mẫu",
+      "tooltip": "Số bước mẫu thông qua độ sâu bên trong."
+    },
+    "_InternalParallaxStrength": {
+      "label": "Độ mạnh Lớp",
+      "tooltip": "Độ sáng/sự tăng cường của lớp bên trong."
+    },
+    "_InternalParallaxEmission": {
+      "label": "Name",
+      "tooltip": "Sự tăng ánh sáng cho các lớp bên trong."
+    },
+    "_UseThemeColors": {
+      "label": "Bật màu sắc thái toàn cục",
+      "tooltip": "Định nghĩa 4 màu bậc thầy toàn cầu để điều khiển các sắc thái thống nhất qua các vật liệu, với sự điều chỉnh âm thanh và màu sắc tùy chọn."
+    },
+    "_ThemeColor1": {
+      "label": "Màu sắc thái 1",
+      "tooltip": "Màu nền:."
+    },
+    "_ThemeColor2": {
+      "label": "Màu sắc thái 2",
+      "tooltip": "Màu sắc tốt 2."
+    },
+    "_ThemeColor3": {
+      "label": "Màu sắc thái 3",
+      "tooltip": "Màu sắc tốt 3."
+    },
+    "_ThemeColor4": {
+      "label": "Màu sắc thái 4",
+      "tooltip": "Màu vàng nhạt 4."
+    },
+    "_ThemeMode": {
+      "label": "Chế độ chuyển đổi",
+      "tooltip": "Chọn chế độ điều chỉnh (Dirct, soundLik remination, hoặc Eight tone Shift)."
+    },
+    "_AL_ThemeBand": {
+      "label": "Name",
+      "tooltip": "Chọn tần số âm thanh điều chỉnh sắc thái điều khiển."
+    },
+    "_AL_ThemeStrength": {
+      "label": "Độ mạnh âm thanh",
+      "tooltip": "Tăng cường phản ứng âm thanh."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "Tốc độ Chuyển đổi Màu",
+      "tooltip": "Tốc độ chuyển đổi màu liên tục."
+    },
+    "_ThemeTargetMask": {
+      "label": "Mặt nạ mục tiêu",
+      "tooltip": "Trọng lượng ảnh hưởng: R=Base màu, G= Outlines, B = Ruim, A = Euting."
+    },
+    "_UseCustomCubemap": {
+      "label": "Bật sơ đồ khối tự chọn",
+      "tooltip": "Thêm một sơ đồ khối lập phương tùy chỉnh để phản ánh hay phản chiếu khi thiết bị thăm dò phản ánh bị mất/ tối."
+    },
+    "_CustomCubemap": {
+      "label": "Sơ đồ khối tự chọn",
+      "tooltip": "Họa tiết sơ đồ hình khối tự chọn để phản ánh."
+    },
+    "_CustomCubemapColor": {
+      "label": "Hình lập phương",
+      "tooltip": "Phản ánh mảng ảnh khối màu sắc."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "Độ gồ ghề",
+      "tooltip": "Độ gồ ghề/ độ mờ của sự phản chiếu mảng ảnh."
+    },
+    "_CustomCubemapMode": {
+      "label": "Chế độ trộn",
+      "tooltip": "Chế độ (quá du lịch Probes, fallback khi Probes Dark, hay Additive)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Tăng cường độ mạnh."
+    },
+    "_AL_DelayBass": {
+      "label": "Chiều",
+      "tooltip": "Tạm dừng bù đắp dọc theo bộ đệm lịch sử Bass."
+    },
+    "_AL_DelayLowMid": {
+      "label": "Chậm giữa thấp",
+      "tooltip": "Tạm dừng bù đắp dọc theo bộ đệm lịch sử cho Low Mid."
+    },
+    "_AL_DelayHighMid": {
+      "label": "Tạm dừng giữa cao",
+      "tooltip": "Tạm thời dừng lại dọc theo bộ đệm lịch sử cho High Mid."
+    },
+    "_AL_DelayTreble": {
+      "label": "Độ trễ run",
+      "tooltip": "Tạm hoãn bù đắp dọc theo bộ đệm lịch sử cho Treble."
+    },
+    "_UseLTCGI": {
+      "label": "Bật LTRI",
+      "tooltip": "Phản ứng với hiện tại vùng đa giác LTCGI ánh sáng và màn hình video trong thế giới VRChat hỗ trợ."
+    },
+    "_LTCGI_Intensity": {
+      "label": "Cường độ",
+      "tooltip": "Tăng cường ánh sáng khu vực LTRI."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "Độ gồ ghề",
+      "tooltip": "Hệ số độ gồ ghề cho sự phản xạ LTCGI."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "Name",
+      "tooltip": "Cái kẹp an toàn hạn chế tần số tối đa đèn chớp/ nháy để bảo vệ chống động kinh."
+    },
+    "_MaxFlashFrequency": {
+      "label": "Name",
+      "tooltip": "Cho phép tần số nháy/ tỷ lệ âm thanh tối đa trong Hz."
+    },
+    "_UseFur": {
+      "label": "Bật bộ lọc",
+      "tooltip": "Mở rộng ra nhiều lớp vỏ thông qua bên ngoài dọc theo các đỉnh bình thường với mặt nạ nhiễu."
+    },
+    "_FurLayers": {
+      "label": "Lớp vỏ",
+      "tooltip": "Số lớp vỏ phóng ra (1 đến 8). Lượng lớp cao hơn sản sinh ra lông đầy đủ hơn nhưng tốn nhiều hơn số lượng hình học GPU."
+    },
+    "_FurLength": {
+      "label": "Chiều dài",
+      "tooltip": "Chiều dài vật lý của sợi lông trong không gian vật thể và thế giới."
+    },
+    "_FurMaskTex": {
+      "label": "Sơ đồ nhiễu điện tử Fur",
+      "tooltip": "Kết cấu nhiễu kiểm soát sự phân phối và mật độ."
+    },
+    "_FurDensity": {
+      "label": "Mật độ",
+      "tooltip": "Mật độ nhiễu sợi lông."
+    },
+    "_FurThinning": {
+      "label": "Độ nổi",
+      "tooltip": "Những sợi lông mỏng ngày càng mỏng đi về phía mũi ngoài."
+    },
+    "_FurGravity": {
+      "label": "Trọng trường",
+      "tooltip": "Độ lệch véc tơ mô phỏng trọng lực kéo sợi lông xuống."
+    },
+    "_FurWindStrength": {
+      "label": "Gió Sway",
+      "tooltip": "Sức mạnh của gió theo thủ tục dao động qua các đầu lông."
+    },
+    "_FurWindSpeed": {
+      "label": "Tốc độ Gió",
+      "tooltip": "Tốc độ dao động của gió theo thủ tục."
+    },
+    "_FurRootColor": {
+      "label": "Tin tức gốc",
+      "tooltip": "Màu sắc ở gốc của mỗi sợi lông."
+    },
+    "_FurTipColor": {
+      "label": "Tin tức",
+      "tooltip": "Màu sắc ở đầu bên ngoài của mỗi sợi lông."
+    },
+    "_FurAO": {
+      "label": "Bóng cơ bản",
+      "tooltip": "Mô phỏng sự tích tụ xung quanh ở gốc của bộ lông."
+    },
+    "_FurCutoff": {
+      "label": "Comment",
+      "tooltip": "Ngưỡng cắt cơ bản cho độ dày gốc chuỗi."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "Bật/ tắt khả năng nhấp nháy",
+      "tooltip": "Bật/ tắt khả năng nhấp nháy"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "Độ trưng tối đa",
+      "tooltip": "Độ trưng tối đa"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "Name",
+      "tooltip": "Name"
+    },
+    "_OutlineStencil": {
+      "label": "ID nét đơn",
+      "tooltip": "ID nét đơn"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "Mặt nạ đọc Stencil",
+      "tooltip": "Mặt nạ đọc Stencil"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "Công cụ vẽ",
+      "tooltip": "Công cụ vẽ"
+    },
+    "_OutlineStencilComp": {
+      "label": "Stencils",
+      "tooltip": "Stencils"
+    },
+    "_OutlineStencilPass": {
+      "label": "Stencils",
+      "tooltip": "Stencils"
+    },
+    "_OutlineStencilFail": {
+      "label": "Stencils",
+      "tooltip": "Stencils"
+    },
+    "_OutlineStencilZFail": {
+      "label": "Stencils",
+      "tooltip": "Stencils"
+    },
+    "_UseProximityEffect": {
+      "label": "Kích hoạt hiệu ứng độ tương phản",
+      "tooltip": "Kích hoạt hiệu ứng độ tương phản"
+    },
+    "_ProximityMode": {
+      "label": "Chế độ phức tạp",
+      "tooltip": "Chế độ phức tạp"
+    },
+    "_ProximityAction": {
+      "label": "Hành động phổ biến",
+      "tooltip": "Hành động phổ biến"
+    },
+    "_ProximityRadius": {
+      "label": "Bán kính độ phức tạp",
+      "tooltip": "Bán kính độ phức tạp"
+    },
+    "_ProximitySoftness": {
+      "label": "Độ mềm Độ nhạt",
+      "tooltip": "Độ mềm Độ nhạt"
+    },
+    "_ProximityInvert": {
+      "label": "Nghịch lý",
+      "tooltip": "Nghịch lý"
+    },
+    "_ProximityColor": {
+      "label": "Màu độ phức tạp",
+      "tooltip": "Màu độ phức tạp"
+    },
+    "_ProximityColor_Shift": {
+      "label": "Màu đặc trưng",
+      "tooltip": "Màu đặc trưng"
+    },
+    "_ProximityCustomPos": {
+      "label": "Vị trí thế giới riêng",
+      "tooltip": "Vị trí thế giới riêng"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "Tỷ lệ A2C Mip",
+      "tooltip": "Dựa trên định hướng đường kẻ để ổn định chiều rộng cạnh cắt dọc theo khoảng cách trong VR."
+    },
+    "_DetailNormalBicubic": {
+      "label": "Bộ lọc chuẩn bậc ba",
+      "tooltip": "Kích hoạt mẫu 5-tap Catmull-Rom bicubic để loại bỏ đồ tạo tác ranh giới texel trong VR."
+    },
+    "_DetailNormalCount": {
+      "label": "Chi tiết Lớp chuẩn",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "Chi tiết chuẩn 2 Bản đồ",
+      "tooltip": "Chi tiết thứ hai là lớp bản đồ bình thường."
+    },
+    "_DetailNormal2Scale": {
+      "label": "Độ mạnh Lớp 2",
+      "tooltip": "Điều khiển sức mạnh của chi tiết bình thường lớp 2."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "Chi tiết thường",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "Lớp 2 cuộn Tốc độ X",
+      "tooltip": "Tốc độ X cho tầng 2."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "Lớp 2 cuộn Tốc độ Y",
+      "tooltip": "Tốc độ Y cho lớp 2 bình thường."
+    },
+    "_DetailNormal3Map": {
+      "label": "Chi tiết chuẩn 3 Bản đồ",
+      "tooltip": "Chi tiết thứ ba là lớp bản đồ bình thường."
+    },
+    "_DetailNormal3Scale": {
+      "label": "Độ mạnh Lớp 3",
+      "tooltip": "Điều khiển sức mạnh của chi tiết bình thường tầng 3."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "Chi tiết thường",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "Lớp 3 Cuộn Tốc độ X",
+      "tooltip": "Tốc độ X cho lớp 3."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "Lớp 3 Cuộn Tốc độ Y",
+      "tooltip": "Tốc độ Y cho lớp 3 bình thường."
+    },
+    "_DetailNormal4Map": {
+      "label": "Chi tiết chuẩn 4 Bản đồ",
+      "tooltip": "Chi tiết thứ tư là lớp bản đồ bình thường."
+    },
+    "_DetailNormal4Scale": {
+      "label": "Độ mạnh Lớp 4",
+      "tooltip": "Điều khiển sức mạnh của chi tiết bình thường tầng 4."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "Chi tiết chuẩn 4 Đèn UV",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "Công cụ & xoá",
+      "tooltip": "Tốc độ X cho chi tiết lớp 4."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "Công cụ & xoá",
+      "tooltip": "Tốc độ Y cho lớp 4."
+    },
+    "_UseOKLabBlending": {
+      "label": "OKLib trộn màu",
+      "tooltip": "Kích hoạt không gian màu sắc Björn Ottosson hòa trộn cho màu sắc và chủ đề để loại bỏ sự khử bùn."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "Kênh truyền hình toàn cục MatCap",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "Kênh Mặt nạ Toàn cầu Rim",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "Kênh mặt nạ toàn cục gliter",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "Name",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "Bật tiếp nhận VRSL",
+      "tooltip": "Phản ứng với thiết bị sửa chữa giai đoạn DMX, laser và câu lạc bộ âm lượng trong thế giới VRChat hỗ trợ."
+    },
+    "_VRSLIntensity": {
+      "label": "Tình trạng GI",
+      "tooltip": "GI và sức mạnh nhận tín hiệu từ môi trường xung quanh."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "Sức mạnh trực tiếp",
+      "tooltip": "Sức mạnh nhận ánh sáng trực tiếp."
+    },
+    "_VRSLSpecular": {
+      "label": "Nhận thức quang phổ",
+      "tooltip": "Tín hiệu phản ánh ngoạn mục từ sự cố định."
+    },
+    "_UseDebugMode": {
+      "label": "Bật ô xem gỡ lỗi",
+      "tooltip": "Kiểm tra trung gian che chắn bộ đệm và chẩn đoán trong cổng xem."
+    },
+    "_DebugMode": {
+      "label": "Chế độ gỡ lỗi",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "Comment",
+      "tooltip": "Comment"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "Hoạt cảnh",
+      "tooltip": "Tự động kích hoạt lượng sụp đổ theo thời gian."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "Tự chọn",
+      "tooltip": "Ghi đè ngưỡng cắt ra đặc biệt là cho bóng vượt qua."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "Bật điều khiển hoạt hình nâng cao",
+      "tooltip": "Hiển thị trình điều khiển chủ cho việc phóng to thời gian, chế độ phát lại và bù đắp thời gian cho tất cả các hoạt hình bóng."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "Kích hoạt phản ánh tính dị hướng",
+      "tooltip": "Tạo ra những điểm nổi bật kéo dài, phổ biến trên kim loại hoặc tóc."
+    },
+    "Enable Back Face Color": {
+      "label": "Bật màu mặt sau",
+      "tooltip": "Áp dụng màu riêng cho đa giác quay ngược."
+    },
+    "Enable Back Face Texture": {
+      "label": "Bật họa tiết mặt sau",
+      "tooltip": "Áp dụng một kết cấu riêng cho đa giác phía sau."
+    },
+    "Enable Chroma Keying": {
+      "label": "Bật khoá Chroma",
+      "tooltip": "Tạo một phạm vi màu rõ ràng (v. d. khoá màn hình xanh lá cây)."
+    },
+    "Enable Clear Coat": {
+      "label": "Bật & Xoá vùng chọn",
+      "tooltip": "Thêm một lớp quang phổ thứ hai trên vật liệu PBR cơ bản. Có ích cho các bề mặt sơn và áo khoác."
+    },
+    "Enable Clipping Mask": {
+      "label": "Bật mặt nạ truy vấn",
+      "tooltip": "Dùng họa tiết để kẹp (làm cho các bộ phận vô hình) của vật liệu. Đây là một đoạn phim cứng, không phải là sự minh bạch mềm mại."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "Bật phản ánh tự chọn",
+      "tooltip": "Thêm một sơ đồ khối lập phương tùy chỉnh để phản ánh hay phản chiếu khi thiết bị thăm dò phản ánh bị mất/ tối."
+    },
+    "Enable Custom Fog Color": {
+      "label": "Tự chọn",
+      "tooltip": "Ghi đè màu sương mù toàn cầu với một màu thiếc tự chọn."
+    },
+    "Enable Decal 1": {
+      "label": "Bật phân cách 1",
+      "tooltip": "Phủ lên một kết cấu phân hủy chính."
+    },
+    "Enable Decal 2": {
+      "label": "Bật phân cách 2",
+      "tooltip": "Làm quá chi tiết kết cấu thứ hai."
+    },
+    "Enable Decal 3": {
+      "label": "Bật phân cách 3",
+      "tooltip": "Phủ lên một kết cấu decal/sticker."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "Kích hoạt Độ sâu mờ dần (hạt soft)",
+      "tooltip": "Làm mềm các giao nhau đa giác so với hình học hình ảnh cho bề mặt trong suốt và bổ sung."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "Kích hoạt Chi tiết",
+      "tooltip": "Các chi tiết tần số cao ở khoảng cách đều mờ nhạt để ngăn chặn âm thanh của VR."
+    },
+    "Enable Detail Normal Map": {
+      "label": "Bật sơ đồ chi tiết chuẩn",
+      "tooltip": "Thêm một bản đồ bình thường phụ cho các vụ va chạm chi tiết nhỏ."
+    },
+    "Enable Detail Texture": {
+      "label": "Bật họa tiết chi tiết",
+      "tooltip": "Làm quá chi tiết, thường là để thay đổi."
+    },
+    "Enable Dissolve": {
+      "label": "Bật phân cách",
+      "tooltip": "Làm cho đối tượng xuất hiện/ ẩn bằng một kiểu nhiễu."
+    },
+    "Enable Distance Fade": {
+      "label": "Bật mờ khoảng cách",
+      "tooltip": "Nó làm mờ đi vật thể khi nó cách xa máy quay."
+    },
+    "Enable Dithered Transparency": {
+      "label": "Bật Tờ trong suốt bị hư",
+      "tooltip": "Ma trận không gian màn hình rung động để sắp xếp vải và tóc."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "Kích hoạt khoảng cách hiệu ứng mờ dần (LOD)",
+      "tooltip": "Những hiệu ứng theo thủ tục cao (Gliter, phân dạng, Mạng Lưới, Psychedlic) nằm ngoài phạm vi để cải thiện hiệu suất của VR."
+    },
+    "Enable Emission": {
+      "label": "Bật phát ra",
+      "tooltip": "Làm cho vật thể phát sáng. Cần một hiệu ứng hậu xử lý của Bloom để nhìn thấy ánh sáng."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "Bật/ tắt khả năng nhấp nháy",
+      "tooltip": "Sự tỏa sáng tối đa của HDR để ngăn chặn sự mù quáng của người da trắng."
+    },
+    "Enable Emission Pulse": {
+      "label": "Kích hoạt Nhịp thở",
+      "tooltip": "Nhịp tim tỏa ra một cách nhịp nhàng mà không ảnh hưởng đến ánh sáng khuếch tán."
+    },
+    "Enable Environment Reflections": {
+      "label": "Kích hoạt Phản xạ Môi trường",
+      "tooltip": "Mẫu phản chiếu thăm dò để thêm phản xạ môi trường, ngay cả trong chế độ Cơ bản/Toon."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "Bật/tắt hộp sọ Iris",
+      "tooltip": "Mô phỏng độ sâu/ hoạt động của đồng tử và Iris bên dưới giác mạc."
+    },
+    "Enable Flipbook Animation": {
+      "label": "Bật hoạt cảnh cuốn sách lật ngược",
+      "tooltip": "Hoạt cảnh cấu trúc chính dùng bố trí bảng mã. Điều này sẽ vượt quá tầm quan trọng của cấu trúc chính."
+    },
+    "Enable Fluorescence": {
+      "label": "Bật/tắt trạng thái mờ",
+      "tooltip": "Phản ứng với cường độ ánh sáng theo chiều hướng/ môi trường (glows trong bóng tối)."
+    },
+    "Enable Fourth Emission": {
+      "label": "Bật tác vụ thứ tư",
+      "tooltip": "Thêm lớp cuộn thứ tư."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "Bật Tờ trong suốt Fresel",
+      "tooltip": "Làm cho vật thể trong suốt hơn ở trung tâm và mờ nhạt ở các cạnh."
+    },
+    "Enable Glitch Flicker": {
+      "label": "Bật tùy chọn này để hiển thị kiểu của tập tin ảnh",
+      "tooltip": "Ứng dụng hiệu ứng nhấp nháy với toàn bộ đối tượng."
+    },
+    "Enable Global Theme Colors": {
+      "label": "Bật màu sắc thái toàn cục",
+      "tooltip": "Định nghĩa 4 màu bậc thầy toàn cầu để điều khiển các sắc thái thống nhất qua các vật liệu, với sự điều chỉnh âm thanh và màu sắc tùy chọn."
+    },
+    "Enable Grid": {
+      "label": "Bật Lưới",
+      "tooltip": "Vượt qua một mô hình lưới trên bề mặt."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "Kích hoạt Hình dạng Tóc (Kajiya-Kay)",
+      "tooltip": "Các điểm nổi bật về tính dị hướng đặc biệt được phong cách cho các sợi tóc."
+    },
+    "Enable Hologram": {
+      "label": "Bật biểu đồ tần xuất",
+      "tooltip": "Hiệu ứng ba chiều Sci-fi với các đường quét hoạt hình, viền rìa, và nhấp nháy."
+    },
+    "Enable HSV Mask": {
+      "label": "Bật mặt nạ HSV",
+      "tooltip": "Điều chỉnh HSV bằng bản đồ họa tiết."
+    },
+    "Enable Interlacing": {
+      "label": "Bật khả năng can thiệp",
+      "tooltip": "Làm tối tất cả các hàng màn hình khác để mô phỏng một màn hình có dây."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "Bật/ tắt tham số nội bộ",
+      "tooltip": "Mô phỏng lớp sâu bên trong dưới thủy tinh, thấu kính, thủy tinh thể và mắt cá nhân."
+    },
+    "Enable Intersection Effect": {
+      "label": "Kích hoạt hiệu ứng xen kẽ",
+      "tooltip": "Giảm dần thành màu mà đối tượng ở gần hoặc giao nhau với các vật thể khác trong cảnh."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "Bật khả năng xem biểu đồ bảng",
+      "tooltip": "Xoay các đỉnh để đối mặt với máy ảnh hoạt động."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "Bật LTCGI (Area Light GI)",
+      "tooltip": "Phản ứng với hiện tại vùng đa giác LTCGI ánh sáng và màn hình video trong thế giới VRChat hỗ trợ."
+    },
+    "Enable MatCap 2": {
+      "label": "Bật MatCap 2",
+      "tooltip": "Thêm lớp MatCap thứ hai cho các giọng nói đa mạch hoặc vành."
+    },
+    "Enable Near Camera Fade": {
+      "label": "Bật gần máy ảnh",
+      "tooltip": "Làm mịn phân giải hình học khi máy ảnh đến quá gần (trước khi cắt đầu VR)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "Bật thời gian bị ngắt mạng",
+      "tooltip": "Đồng bộ hoá thời gian hoạt hình bóng tối liên tục qua các khách hàng mạng thông qua đồng hồ thời gian âm thanh/ Udon (trước khi chuyển đổi hoạt hình trong VRChat)."
+    },
+    "Enable Noise/Grain": {
+      "label": "Bật nhiễu/Grain",
+      "tooltip": "Thêm một tiếng động được bao phủ."
+    },
+    "Enable Outline": {
+      "label": "Bật viền",
+      "tooltip": "Thêm một đường nét đặc quanh đối tượng. Điều này thêm một lần gọi thứ hai đối tượng."
+    },
+    "Enable Outline Gradient": {
+      "label": "Bật đổ dốc màu",
+      "tooltip": "Ứng dụng theo một dốc dọc trên/ dưới ngang qua đường nét."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "Bật/ tắt bản đồ góc nhìn",
+      "tooltip": "Sử dụng một bản đồ chiều cao để bù đắp UV cho độ sâu."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "Kích hoạt Phần mở rộng Parallax",
+      "tooltip": "Kích hoạt dù đa bước để hiệu ứng độ sâu chất lượng cao hơn. Chỉ cao độ."
+    },
+    "Enable Pixelation": {
+      "label": "Bật điểm ảnh",
+      "tooltip": "Tạo ra một hiệu ứng cản trở, ít phân giải."
+    },
+    "Enable Planar Wipe": {
+      "label": "Bật/tắt trang",
+      "tooltip": "Hiển thị đối tượng với một lau sạch theo hướng mịn màng."
+    },
+    "Enable Posterization": {
+      "label": "Bật đăng ký",
+      "tooltip": "Giảm số màu, tạo ra một cái nhìn ngược/ số."
+    },
+    "Enable Procedural Texture": {
+      "label": "Kích hoạt Văn bản Thủ tục",
+      "tooltip": "Thay thế tài sản vật chất bằng một mô hình tạo ra."
+    },
+    "Enable Proximity Effect": {
+      "label": "Kích hoạt hiệu ứng độ tương phản",
+      "tooltip": "Kích thích các hiệu ứng thị giác (gilow, tan rã, rung động, hoặc màu sắc) dựa trên khoảng cách của máy ảnh, vật thể xoay vòng hoặc vị trí thế giới tùy chỉnh."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "Bật retro Vertex Snapping PS1",
+      "tooltip": "Định lượng vị trí đỉnh cao thành một mạng lưới độ phân giải thấp cho một thiết bị PS1 ngược / affine thẩm mỹ hoang mang."
+    },
+    "Enable Pulse": {
+      "label": "Kích hoạt Pulse",
+      "tooltip": "Làm tăng cường cảm xúc lên sức mạnh."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "Bật mặt nạ màu RGBA",
+      "tooltip": "Cho phép 4 điểm màu độc lập và kênh dung dịch được vẽ thành kênh RGBA có kết cấu mặt nạ."
+    },
+    "Enable Rim Glow": {
+      "label": "Bật Rim Glow",
+      "tooltip": "Thêm ánh sáng vào cạnh của vật thể dựa trên góc nhìn."
+    },
+    "Enable Ripple Effect": {
+      "label": "Kích hoạt hiệu ứng tách rời",
+      "tooltip": "Tạo ra một hiệu ứng đồng tâm phát ra từ tọa độ UV."
+    },
+    "Enable Scanlines": {
+      "label": "Bật & dòng quét",
+      "tooltip": "Mô phỏng hình màn hình CT."
+    },
+    "Enable Screen Refraction": {
+      "label": "Kích hoạt Khúc xạ màn hình",
+      "tooltip": "Làm méo màn hình phía sau đối tượng."
+    },
+    "Enable Scrolling": {
+      "label": "Bật cuộn",
+      "tooltip": "Di chuyển mô hình lưới."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "Kích hoạt Bóng Mặt SDF",
+      "tooltip": "Ký tên vào trường khoảng cách đối mặt với bản đồ bóng cho các nhân vật giải trí."
+    },
+    "Enable Second Emission": {
+      "label": "Bật tác vụ thứ hai",
+      "tooltip": "Thêm lớp cuộn thứ hai."
+    },
+    "Enable Shader Debug View": {
+      "label": "Bật ô xem gỡ lỗi Shader",
+      "tooltip": "Kiểm tra trung gian che chắn bộ đệm và chẩn đoán trong cổng xem."
+    },
+    "Enable Shell Fur": {
+      "label": "Bật bộ lọc",
+      "tooltip": "Mở rộng ra nhiều lớp vỏ thông qua bên ngoài dọc theo các đỉnh bình thường với mặt nạ nhiễu."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "Bật cuộn phân cách da",
+      "tooltip": "Làm mềm bóng đèn trên bề mặt đường cong hữu cơ."
+    },
+    "Enable Step Specular": {
+      "label": "Bật",
+      "tooltip": "Chuyển đổi những điểm nổi bật của PBR mềm thành những điểm sáng hoạt hình."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "Kích hoạt Samprung",
+      "tooltip": "Theo quy trình tổng hợp các mẫu kết cấu ngẫu nhiên để hoàn toàn loại bỏ các mẫu lặp đi lặp lại trên bề mặt lớn."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "Bật phân tán khuôn mặt con",
+      "tooltip": "Mô phỏng ánh sáng phân tán qua các vật mỏng như da hoặc lá cây."
+    },
+    "Enable Thickness Map": {
+      "label": "Bật bản đồ độ dày",
+      "tooltip": "Sử dụng một kết cấu để mô phỏng sự lây lan ánh sáng thông qua các vùng mỏng (ears, lá, etc.)."
+    },
+    "Enable Third Emission": {
+      "label": "Bật thực hiện thứ ba",
+      "tooltip": "Thêm lớp cuộn thứ ba."
+    },
+    "Enable Transparency": {
+      "label": "Bật trong suốt",
+      "tooltip": "Làm cho đối tượng đồng loạt trong suốt."
+    },
+    "Enable Transparency Glitch": {
+      "label": "Bật Glatch trong suốt",
+      "tooltip": "Gây ra hiệu ứng nhấp nháy cũng ảnh hưởng đến độ trong suốt."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "Bật sơ đồ ba tầng bình thường",
+      "tooltip": "Dự án một bản đồ bình thường trên 3 trục."
+    },
+    "Enable UV Distortion": {
+      "label": "Bật khả năng méo tia cực tím",
+      "tooltip": "Sử dụng một kết cấu để làm dịch chuyển tọa độ UV, tạo ra các hiệu ứng như sương nhiệt hay các gợn nước."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "Kích hoạt Dòng UV (Baththing)",
+      "tooltip": "Hoạt cảnh các kết cấu dọc theo các đường dẫn của bản đồ véc tơ bằng cách sử dụng xe đạp 2 bánh."
+    },
+    "Enable UV Tile Discard": {
+      "label": "Bật/ tắt thẻ & tia cực tím",
+      "tooltip": "Bỏ đi những mảnh tia cực tím đặc biệt. Rất hữu ích cho việc thay quần áo."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "Bật họa tiết hình động Vertex",
+      "tooltip": "Các phụ lục hoạt hình từ một kết cấu VAT. Dùng để làm vải, chất lỏng hoặc tác dụng phá hủy."
+    },
+    "Enable Vertex Collapse": {
+      "label": "Bật/tắt co dãn Vertex",
+      "tooltip": "Thu nhỏ mô hình vào điểm trung tâm."
+    },
+    "Enable Video Player": {
+      "label": "Bật trình chơi phim",
+      "tooltip": "Cấu hình các thiết lập cache ở đây."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "Bật đèn VRSL (VRC Studio)",
+      "tooltip": "Phản ứng với thiết bị sửa chữa giai đoạn DMX, laser và câu lạc bộ âm lượng trong thế giới VRChat hỗ trợ."
+    },
+    "Enable Wetness": {
+      "label": "Kích hoạt Độ ướt",
+      "tooltip": "Mô phỏng bề mặt ướt với hiệu ứng đen tối và mưa."
+    },
+    "Override Scene Light": {
+      "label": "Ánh sáng cảnh ghi đè",
+      "tooltip": "Ghi đè về hướng, màu và cường độ của đèn cảnh chính."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "Name",
+      "tooltip": "Cái kẹp an toàn hạn chế tần số tối đa đèn chớp/ nháy để bảo vệ chống động kinh."
+    },
+    "Use Auto Hue Shift": {
+      "label": "Dùng tự động màu Shift",
+      "tooltip": "Thay đổi liên tục màu cơ bản theo thời gian."
+    },
+    "Use Base Color": {
+      "label": "Dùng màu cơ bản",
+      "tooltip": "Chuyển đổi màu cơ sở rắn."
+    },
+    "Use Base Texture": {
+      "label": "Dùng họa tiết cơ bản",
+      "tooltip": "Cho phép kết cấu chính."
+    },
+    "Use Depth-Based Color": {
+      "label": "Dùng màu có độ sâu",
+      "tooltip": "Thay đổi màu lưới dựa trên khoảng cách gần với các bề mặt khác."
+    },
+    "Use Emission Mask": {
+      "label": "Dùng mặt nạ tiết ra",
+      "tooltip": "Sử dụng một kết cấu để điều khiển những phần trên bề mặt phát ra ánh sáng."
+    },
+    "Use Grid Mask": {
+      "label": "Dùng mặt nạ lưới",
+      "tooltip": "Dùng họa tiết để che giấu hiệu ứng lưới."
+    },
+    "Use Outline Width Map": {
+      "label": "Dùng sơ đồ kiểu dáng",
+      "tooltip": "Sử dụng một kết cấu mức xám để điều chỉnh độ dày của đường nét trên một điểm."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "Dùng chữ Alpha để nhả",
+      "tooltip": "Dùng kênh alpha của cơ cấu chính để phát ra bản đồ. Một cách mạnh mẽ để tạo ra bản đồ phát sáng mà không có kết cấu riêng biệt."
+    },
+    "Use Transmission Texture": {
+      "label": "Dùng họa tiết truyền",
+      "tooltip": "Bản đồ màu tự chọn tô đường truyền đèn sau."
+    }
+  }
+}

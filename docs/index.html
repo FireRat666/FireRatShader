@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireRatShader Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FireRatShader V1.1.0 Documentation</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#avatar-setup">Avatar Setup</a></li>
+                <li><a href="#material-tools">Material Tools</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#main-settings">Main Settings</a></li>
+                <li><a href="#procedural-textures">Procedural Textures</a></li>
+                <li><a href="#advanced-animation-controls">Advanced Animation Controls</a></li>
+                <li><a href="#color-controls">Color Controls</a></li>
+                <li><a href="#lighting">Lighting</a></li>
+                <li><a href="#surface-style">Surface Style</a></li>
+                <li><a href="#overlays">Overlays</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#glitches">Glitches</a></li>
+                <li><a href="#transitions">Transitions</a></li>
+                <li><a href="#advanced-settings">Advanced Settings</a></li>
+                <li>
+                    <a href="#audio-link">Audio Link</a>
+                    <ul>
+                        <li><a href="#audiolink-overview">Overview</a></li>
+                        <li><a href="#audiolink-per-feature">Per-Feature Controls</a></li>
+                        <li><a href="#audiolink-global-controls">Global Controls</a></li>
+                        <li><a href="#audiolink-temporal-smoothing">Temporal Smoothing</a></li>
+                        <li><a href="#audio-spectrum-visualizer">Spectrum Visualizer</a></li>
+                        <li><a href="#audio-waveform-visualizer">Waveform Visualizer</a></li>
+                        <li><a href="#audiolink-shared-controls">Shared Controls</a></li>
+                        <li><a href="#audiolink-performance">Performance</a></li>
+                    </ul>
+                </li>
+                <li><a href="#creator-tools">Creator Tools &amp; Utilities</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to the documentation for FireRatShader. This shader is designed to be a powerful but efficient Uber shader that works in VR, Android, Mobile, Windows, and Unity 6 across both render pipelines: <span class="badge badge-brp">Built-in Render Pipeline</span> <span class="badge badge-urp">Universal Render Pipeline</span></p>
+                <p>Both pipeline versions share the exact same 828 properties, inspector layout, and feature sets in 100% lockstep parity.</p>
+                <article>
+                    <h3>Pipeline Variants &amp; Master Shaders</h3>
+                    <ul>
+                        <li><strong>Renderer Requirement:</strong> <span class="badge badge-brp">BRP</span> The Built-in RP version only works in projects using the Built-in Render Pipeline. <span class="badge badge-urp">URP</span> The URP version only works in projects using the Universal Render Pipeline.</li>
+                        <li><strong>Master Shader Pairs:</strong>
+                            <ul>
+                                <li><strong>Master Uber:</strong> <code>FireRat/FireRatShader</code> <span class="badge badge-brp">BRP</span> and <code>FireRat/FireRatShader_URP</code> <span class="badge badge-urp">URP</span> &mdash; Full-featured master shader for characters, clothing, and props.</li>
+                                <li><strong>Two-Pass Transparency:</strong> <code>FireRat/FireRatShader_TwoPass</code> <span class="badge badge-brp">BRP</span> and <code>FireRat/FireRatShader_URP_TwoPass</code> <span class="badge badge-urp">URP</span> &mdash; Dual-pass rendering (backface depth prepass + frontface) for eliminating alpha sorting artifacts on complex transparent meshes.</li>
+                                <li><strong>Shell Fur Extrusion:</strong> <code>FireRat/FireRatShader_Fur</code> <span class="badge badge-brp">BRP</span> and <code>FireRat/FireRatShader_URP_Fur</code> <span class="badge badge-urp">URP</span> &mdash; Multi-pass vertex shell extrusion (1&ndash;8 layers) with wind sway, gravity vectors, and strand noise thinning for furry avatars and plush fabrics.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <p>Use the navigation on the left to jump to a specific feature section. Each section corresponds to a foldout in the material inspector.</p>
+            </section>
+
+            <section id="avatar-setup">
+                <h2>VRChat Avatar Setup</h2>
+                <p>The FireRat Shader Avatar Setup tool is a powerful utility designed to automatically generate the necessary VRChat assets (FX Controller, Expressions Menu, and Parameters) to control the shader's features in-game. This saves you the time and effort of manually creating animations and menu toggles.</p>
+                <article>
+                    <h3>How to Use</h3>
+                    <ol>
+                        <li><strong>Open the Tool:</strong> Navigate to <strong>Tools &gt; FireRat Shader &gt; Avatar Setup</strong> from the top menu bar in Unity.</li>
+                        <li><strong>Select Your Avatar:</strong> In the setup window, select your avatar's descriptor from the "Avatar" object field. The tool will automatically find all Skinned Mesh Renderers on your avatar.</li>
+                        <li><strong>Choose Target Meshes:</strong> By default, all found renderers are selected. You can uncheck any renderers that you do not want the generated animations to affect.</li>
+                        <li><strong>Select Features:</strong> Use the toggles in the "Feature Selection" area to choose which shader features you want to create menu controls for.
+                            <ul>
+                                <li>Each feature has a master toggle to enable or disable the entire group.</li>
+                                <li>Within each group, you can select individual controls (e.g., just an "Enable" toggle, or also a "Width" puppet) to save parameter memory.</li>
+                                <li>The "Total Parameter Cost" display at the bottom shows how much of your VRChat parameter budget your selections will use.</li>
+                            </ul>
+                        </li>
+                        <li><strong>(Optional) Merge Controllers:</strong> If you are using another system that has its own FX Controller (like GoGo Loco), you can select it in the "Base FX Controller" field. The tool will merge its animations into a copy of that controller instead of the VRChat default.</li>
+                        <li><strong>Generate Assets:</strong> Click the "Generate and Merge Assets" button. The tool will create a new folder in <code>Assets/FireRatShader/Generated/[YourAvatarName]</code> containing all the necessary menus, parameters, and animations. It will then automatically assign these to your avatar descriptor.</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3>Important: Two-Step Feature Enablement</h3>
+                    <p class="warning">For an expression menu control to work in-game, the corresponding feature must be enabled in <strong>two places</strong>:</p>
+                    <ol>
+                        <li><strong>In the Material Inspector:</strong> You must enable the feature on the material itself (e.g., check the "Enable" box for "Outline").</li>
+                        <li><strong>In the Avatar Setup Window:</strong> You must select the corresponding control(s) for that feature (e.g., check "Outline Menu Controls").</li>
+                    </ol>
+                    <p>This is because the shader is heavily optimized. If a feature is not enabled on the material, its code is completely removed from the shader to save performance. If you generate a menu control for a feature that is disabled on the material, the menu option will appear in-game but will do nothing, because the shader code it's trying to control doesn't exist.</p>
+                </article>
+                <article>
+                    <h3>Saved Settings</h3>
+                    <p>The tool automatically saves your feature and mesh selections for each avatar. When you select an avatar, it will remember the last configuration you generated for it, making it easy to make small changes without starting from scratch.</p>
+                </article>
+            </section>
+
+            <section id="material-tools">
+                <h2>Material Inspector Tools</h2>
+                <p>The top of the material inspector provides a toolbar with workflow tools that apply to the whole material. Each foldout section in the inspector also has its own Copy, Paste, and Reset buttons.</p>
+                <article>
+                    <h3>Material Locking</h3>
+                    <p>Materials can be locked to prevent accidental edits. When locked, every control in the inspector is grayed out and read-only, and the toolbar shows a red <strong>&#128274; Material Locked (Click to Unlock)</strong> button. Use <strong>&#128273; Lock Material</strong> on an unlocked material to lock it again.</p>
+                    <ul>
+                        <li><strong>Load Preset</strong> and section <strong>Paste</strong> are disabled on locked materials.</li>
+                        <li>Lock state is stored on the material itself (a hidden <code>_MaterialLocked</code> property and override tag), so it persists across saves and applies to all targets when editing multiple materials at once.</li>
+                    </ul>
+                    <p class="warning"><strong>Locking Can Optimize Your Shader:</strong> Since V1.0.5, locking a material for a specific target (Avatar, World, or Standalone Build) also runs the <strong>Material Lock Shader Optimizer</strong>. It analyzes which features are actually in use and strips the rest, for example removing the Outline or Refraction passes and dead keyword variants when those features are disabled. This produces a smaller, faster shader variant tuned exactly to your material &mdash; ideal for VRChat avatar and world uploads.</p>
+                </article>
+                <article>
+                    <h3>Material Presets</h3>
+                    <p>Presets let you save the entire material state to a JSON file and load it back onto other materials, making it easy to share or reuse a look across your project.</p>
+                    <ul>
+                        <li><strong>Save Preset...</strong> Exports all of the material's float, range, color, vector, and texture properties (including texture tiling and offset) to a JSON file in your project.</li>
+                        <li><strong>Load Preset...</strong> Imports a previously saved JSON preset onto the selected material. Properties that don't exist on the current shader are skipped. Disabled while the material is locked.</li>
+                        <li><strong>Curated Preset Library:</strong> A selection of ready-made master presets ship with the package as starting points you can load via <strong>Load Preset...</strong>.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Section Copy / Paste / Reset</h3>
+                    <p>Every foldout section in the inspector has <strong>Copy</strong>, <strong>Paste</strong>, and <strong>Reset</strong> buttons in its header.</p>
+                    <ul>
+                        <li><strong>Copy:</strong> Copies all properties in that section (floats, colors, vectors, and textures with their tiling/offset) to the shader's clipboard.</li>
+                        <li><strong>Paste:</strong> Applies the copied section values to the selected material(s). It is only enabled for the same section the values were copied from, and is disabled on locked materials.</li>
+                        <li><strong>Reset:</strong> Restores the selected section's properties to their shader defaults.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Live Property Search</h3>
+                    <p>The inspector toolbar includes a search field that live-filters all material properties by name or label as you type. Matching sections auto-expand so you can immediately see (and edit) every hit, making it fast to locate a specific control among the shader's hundreds of properties. Fuzzy matching tolerates typos and partial words, and clearing the box restores the normal foldout layout.</p>
+                </article>
+            </section>
+
+            <section id="performance">
+                <h2>Performance</h2>
+                <article>
+                    <h3>Performance Level</h3>
+                    <p>This setting provides a master control to quickly set a performance baseline for different platforms without needing to toggle dozens of individual checkboxes. It adjusts the shader's complexity by disabling the most performance-intensive features at lower levels.</p>
+                    <ul>
+                        <li><strong>High:</strong> All features are available to be enabled. This is the default setting and offers the highest visual quality.</li>
+                        <li><strong>Medium:</strong> Disables features that are moderately to highly expensive, providing a good balance between visuals and performance. The following features are disabled:
+                            <ul>
+                                <li>Parallax Mapping</li>
+                                <li>Anisotropic Reflections</li>
+                                <li>Subsurface Scattering (SSS)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Low:</strong> Disables a wider range of effects, forcing simpler lighting models and disabling all but the most basic features. This setting is ideal for less powerful hardware or for ensuring maximum performance. In addition to the features disabled in Medium, the following are also disabled:
+                            <ul>
+                                <li>Toon and Stylized PBR lighting modes</li>
+                                <li>Crystal and Glitter surface styles</li>
+                                <li>Intersection Effect</li>
+                                <li>Ripple Effect</li>
+                                <li>Vertex Distortion</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>When a feature is disabled by a performance level, its controls in the material inspector will be grayed out.</p>
+                </article>
+                <article>
+                    <h3>Distance LOD Start</h3>
+                    <p>Automatically simplifies the shading as the object moves away from the camera. Setting <strong>Distance LOD Start</strong> to a non-zero distance will progressively disable expensive per-pixel lighting and shading work at that range, trading a little visual fidelity for a large frame-time saving on distant objects. A value of <code>0</code> keeps the full-quality shading at every distance (disabled).</p>
+                </article>
+            </section>
+
+            <section id="main-settings">
+                <h2>Main Settings</h2>
+                <article>
+                    <h3>Render Mode</h3>
+                    <p>Controls the fundamental rendering behavior of the material.</p>
+                    <ul>
+                        <li><strong>Render Mode:</strong> Sets the transparency type. <code>Opaque</code> is fastest. <code>Cutout</code> uses an alpha threshold for hard-edged transparency. <code>Transparent</code> allows for soft, blended transparency. <code>Additive</code> adds its color to what's behind it, useful for bright effects. <code>Multiply</code> darkens what's behind it (useful for shadows and tint overlays). <code>Premultiplied</code> blends using premultiplied alpha, giving correct edges for glow/particle-like textures without dark halos.</li>
+                        <li><strong>Queue Offset:</strong> Offsets the render queue relative to the selected Render Mode.</li>
+                        <li><strong>Force Depth Write (ZWrite):</strong> Manually controls if the material writes to the depth buffer. Useful for transparent objects that need to occlude others.</li>
+                        <li><strong>Alpha Cutoff:</strong> The alpha value at which pixels are discarded in <code>Cutout</code> mode.</li>
+                        <li><strong>Shadow Cutoff Override:</strong> When enabled, uses the <strong>Shadow Cutoff</strong> value for the shadow-casting pass instead of the material's Alpha Cutoff, so the shadow silhouette can be independently tuned (e.g. tighter or softer than the visible cutout).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Base Appearance</h3>
+                    <ul>
+                        <li><strong>Use Base Color:</strong> Toggles a solid base color for the material.</li>
+                        <li><strong>Color:</strong> The main color of the material. Can be hue-shifted.</li>
+                        <li><strong>Use Vertex Colors:</strong> Tints the material using colors painted onto the model's vertices. <strong>Vertex Color Mode</strong> selects how they combine with the base color: <code>Replace</code> uses the vertex color outright, <code>Multiply</code> tints the base color, and <code>Add</code> brightens it.</li>
+                        <li><strong>Enable Back Face Color:</strong> Uses a separate <strong>Back Face Color</strong> for the back-facing sides of the mesh, letting you color the reverse side differently (useful for thin meshes like wings or clothing). The color can be hue-shifted.</li>
+                        <li><strong>Use Base Texture:</strong> Toggles the main texture of the material. Tiling and Offset can be adjusted in the texture inspector.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Queue Offset</h3>
+                    <p>Fine-tunes the material's render queue position relative to its base render mode. This is essential for resolving z-sorting issues with layered transparent materials like hair, clothing overlays, and accessories.</p>
+                    <ul>
+                        <li><strong>Queue Offset:</strong> Shifts the render queue by the specified amount (range: -50 to +50). A higher value renders later (on top), a lower value renders earlier (behind). Default is <code>0</code>.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Alpha-to-Coverage Sharpening &amp; Mip Scaling</h3>
+                    <p>When using <strong>Alpha to Coverage</strong> in Cutout mode with MSAA enabled, this feature controls the sharpness and distance stability of the anti-aliased edge at the cutout boundary &mdash; ideal for hair cards and foliage in VR.</p>
+                    <ul>
+                        <li><strong>A2C Edge Sharpening:</strong> Controls the gradient width at cutout edges. <code>0</code> uses standard alpha-to-coverage. Higher values produce sharper, crisper cutout edges using screen-space <code>fwidth()</code> derivatives.</li>
+                        <li><strong>A2C Mip Scale:</strong> Multiplies the derivative divisor across texture mipmap levels to prevent cutout edges from unnaturally thinning out or disappearing at medium-to-far viewing distances in VR headsets.</li>
+                    </ul>
+                    <p>These controls appear when Render Mode is set to <code>Cutout</code> and Alpha to Coverage is enabled.</p>
+                </article>
+                <article>
+                    <h3>Advanced Backface Rendering</h3>
+                    <p>Extends the existing Back Face Color feature with support for a completely separate texture and independent emission on back-facing triangles. This is ideal for jacket interiors, capes, double-sided curtains, or any mesh where the inside should look different from the outside.</p>
+                    <ul>
+                        <li><strong>Use Backface Texture:</strong> When enabled, samples a separate texture for back-facing triangles instead of using the flat Back Face Color.</li>
+                        <li><strong>Backface Texture:</strong> The texture applied to back-facing geometry. Uses its own UV tiling and offset controls.</li>
+                        <li><strong>Backface Emission Color:</strong> An independent emission color applied only to back faces.</li>
+                        <li><strong>Backface Emission Strength:</strong> Controls the intensity of the backface emission (range: 0&ndash;10).</li>
+                    </ul>
+                    <p>This feature incurs zero cost when disabled. The keyword <code>_BACKFACE_TEX_ON</code> is only compiled into the shader when the toggle is active.</p>
+                </article>
+                <article>
+                    <h3>Video Player Mode</h3>
+                    <p>Enables compatibility with Unity's Video Player component and AVPro Video. Video textures often require special handling for gamma correction and UV coordinate flipping that standard textures do not need.</p>
+                    <ul>
+                        <li><strong>Video Player Mode:</strong> Master toggle that enables video texture handling.</li>
+                        <li><strong>Is AVPro:</strong> When enabled, applies AVPro-specific corrections: flips the texture's Y coordinate (AVPro outputs upside-down) and applies gamma-to-linear correction (<code>pow(color, 2.2)</code>) since AVPro outputs in gamma space.</li>
+                    </ul>
+                    <p>When <strong>Is AVPro</strong> is disabled, the shader assumes a standard Unity Video Player texture which requires no special correction.</p>
+                </article>
+                <article>
+                    <h3>Global UV Controls</h3>
+                    <p>These controls affect all textures and UV-based effects on the material.</p>
+                    <ul>
+                        <li><strong>Use Ping-Pong Scroll:</strong> Animates UVs back and forth instead of in one direction. Provides Speed and Range controls.</li>
+                        <li><strong>Scroll Speed X/Y:</strong> Scrolls all UVs at a constant speed.</li>
+                        <li><strong>Rotation:</strong> Rotates all UVs around the center (0.5, 0.5) of the UV space.</li>
+                        <li><strong>Projection Mode &amp; UV Set:</strong> Many textures in the shader offer two extra selectors. <strong>Projection Mode</strong> chooses how the texture is mapped onto the model (UV, World Space triplanar, Local Space triplanar, Screen Space, Planar, Spherical, Cylindrical, Biplanar, Panosphere (Equirectangular 360), or Polar Coordinates). A <strong>UV Set</strong> selector instead picks between UV0 and UV1 for that texture. These appear next to the affected texture's controls.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>UV Flow (Pathing)</h3>
+                    <p>Animates textures along a vector flow map using two seamlessly crossfading phases, creating continuous directional motion without visible looping &mdash; ideal for rivers, conveyor belts, wind streaks, and magic trails.</p>
+                    <ul>
+                        <li><strong>Enable UV Flow (Pathing):</strong> Master toggle.</li>
+                        <li><strong>Flow Map:</strong> RG channels encode direction vectors (<code>0.5</code> = neutral), with a UV Set selector.</li>
+                        <li><strong>Flow Speed / Flow Strength:</strong> Animation speed and the magnitude of UV displacement along the flow vectors.</li>
+                        <li><strong>Cycle Rate:</strong> Frequency of the dual-phase crossfade cycles that keep the motion seamless.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>UV Tile Discard</h3>
+                    <p>Discards geometry per tile of a 4&times;4 UV grid (0&ndash;1 mapped to each 0.25 tile), letting you toggle clothing parts, accessories, or hair pieces on and off from one mesh without blendshapes. Applied consistently across every pass (main color, outline, shadow, depth).</p>
+                    <ul>
+                        <li><strong>Enable UV Tile Discard:</strong> Master toggle.</li>
+                        <li><strong>UV Tile Grid (4&times;4):</strong> Clickable grid of 16 tiles; toggled tiles are discarded. Rows map to the texture's V axis (Row 0 at the bottom).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>UV Distortion</h3>
+                    <p>Warp the UV coordinates using a texture, creating effects like heat haze or water ripples.</p>
+                    <ul>
+                        <li><strong>Distortion Map:</strong> A texture whose Red and Green channels control the X and Y offset of the UVs.</li>
+                        <li><strong>Strength:</strong> The intensity of the distortion.</li>
+                        <li><strong>Scroll Speed X/Y:</strong> Scrolls the distortion map to animate the effect.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Flipbook Animation</h3>
+                    <p>Animates the main texture by treating it as a grid of frames (a spritesheet).</p>
+                    <ul>
+                        <li><strong>Mode:</strong> Playback mode (Loop, PingPong, Random).</li>
+                        <li><strong>Columns (X) / Rows (Y):</strong> The number of frames in the spritesheet grid.</li>
+                        <li><strong>Speed (FPS):</strong> Animation speed in frames per second.</li>
+                        <li><strong>Start Frame:</strong> The initial frame of the animation, allowing for an offset.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Stochastic Texture Sampling</h3>
+                    <p>Procedurally blends randomized texture samples across triangular lattices to completely eliminate repetitive tiling patterns on large surfaces (floors, walls, terrain).</p>
+                    <ul>
+                        <li><strong>Enable Stochastic Sampling:</strong> Master toggle enabling procedural lattice sampling.</li>
+                        <li><strong>Stochastic Scale:</strong> Controls the scale multiplier for the triangular blending distribution.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Emission (Slots 1 &ndash; 4)</h3>
+                    <p>Makes the material glow with up to 4 independent emission layers. Requires a Bloom post-processing effect in your scene to see the full effect.</p>
+                    <ul>
+                        <li><strong>Strength:</strong> Brightness of the primary glow. Values greater than 1 will bloom.</li>
+                        <li><strong>Use Vertex Color for Strength:</strong> Modulates emission strength using the model's vertex color (Green channel).</li>
+                        <li><strong>Use Emission Mask:</strong> Uses a texture to define which parts of the surface emit light. The mask has its own <strong>UV Set</strong>, <strong>Projection Mode</strong>, and <strong>Mask Scroll Speed X/Y</strong> controls.</li>
+                        <li><strong>Use Texture Alpha for Emission:</strong> Uses the main texture's alpha channel as an emission map. <strong>Alpha Emission Strength</strong> controls the brightness of this emission.</li>
+                        <li><strong>AudioLink Band:</strong> When a band other than <code>Off</code> is selected, the emission strength is modulated by that audio band. <strong>AudioLink Strength</strong> controls how strongly.</li>
+                        <li><strong>AudioLink Blink:</strong> When a band other than <code>Off</code> is selected in the <strong>AudioLink Blink Band</strong> selector, the emission stroboscopically blinks with the music.</li>
+                        <li><strong>Enable Emission Bloom Clamp:</strong> Clamps the maximum perceived HDR luminance of the emission output using a smooth $C^1$-continuous soft-knee compression curve. This prevents high-intensity AudioLink volume spikes or overexposed emission maps from producing blinding whiteouts in VRChat and HDR post-processing bloom pipelines.</li>
+                        <li><strong>Max Luminance:</strong> The upper luminance threshold ceiling (range: 0.1&ndash;50.0).</li>
+                        <li><strong>Soft Knee:</strong> Controls the softness of the shoulder transition into the luminance clamp (<code>0.0</code> = hard linear clamp, <code>1.0</code> = maximum smooth roll-off).</li>
+                        <li><strong>Second / Third / Fourth Emission:</strong> Independent secondary, third, and fourth emission maps, each equipped with its own HDR Color tint, Strength multiplier, independent X/Y scrolling animation, and dedicated AudioLink frequency band reactivity.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Fluorescence Emission</h3>
+                    <p>Makes the material glow in response to scene light levels &mdash; the less light hits it, the more it glows. Perfect for glow-in-the-dark accents, UV-reactive paint, or emergency-lights that only appear in dark rooms.</p>
+                    <ul>
+                        <li><strong>Enable Fluorescence:</strong> Master toggle.</li>
+                        <li><strong>Fluorescence Map (RGB):</strong> Texture defining where the glow appears, with a UV Set selector.</li>
+                        <li><strong>Color:</strong> HDR color tint of the glow.</li>
+                        <li><strong>Strength:</strong> Glow brightness.</li>
+                        <li><strong>Light Threshold:</strong> Light level below which fluorescence activates.</li>
+                        <li><strong>Hardness:</strong> Transition sharpness between dark and lit states.</li>
+                        <li><strong>Glow Only in Dark:</strong> When enabled, the glow is restricted to low-light environments (classic glow-in-the-dark).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Transparency</h3>
+                    <ul>
+                        <li><strong>Enable Transparency:</strong> Makes the object uniformly transparent.</li>
+                        <li><strong>Amount:</strong> The overall transparency (0=Invisible, 1=Opaque).</li>
+                        <li><strong>Enable Fresnel Transparency:</strong> Makes the object more transparent in the center and opaque at the edges, based on the viewing angle.</li>
+                        <li><strong>Power:</strong> Controls the falloff of the fresnel effect.</li>
+                        <li><strong>Edge/Center Alpha:</strong> Sets the transparency at the grazing edges and the center, respectively.</li>
+                    </ul>
+                    <p><strong>Enable Dithered Transparency</strong> (sorting-free screen-door transparency) and <strong>Enable Near Camera Fade</strong> are documented in the <a href="#transitions">Transitions</a> section, where they appear in the material inspector.</p>
+                </article>
+            </section>
+
+            <section id="procedural-textures">
+                <h2>Procedural Textures</h2>
+                <article>
+                    <h3>Procedural Texture Generation</h3>
+                    <p>This feature allows you to replace the standard base texture with a procedurally generated pattern. This can reduce texture memory usage and allow for dynamic, animated effects without external texture files.</p>
+                    <ul>
+                        <li><strong>Enable Procedural Texture:</strong> Toggles the entire feature on or off. When enabled, it overrides the Base Texture and Base Color settings.</li>
+                        <li><strong>Mode:</strong> Selects the pattern to generate.
+                            <ul>
+                                <li><strong>Noise:</strong> A classic, smooth value noise pattern (similar to Perlin noise).
+                                    <ul>
+                                        <li><strong>Octaves:</strong> Adds layers of noise at different scales to create much more detailed and natural patterns (like clouds or marble instead of just a soft blur).</li>
+                                        <li><strong>Lacunarity:</strong> Controls how the frequency of the noise changes with each octave.</li>
+                                        <li><strong>Gain:</strong> Controls how the amplitude of the noise changes with each octave.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Voronoi:</strong> A cellular pattern, like cracked earth or biological cells.
+                                    <ul>
+                                        <li><strong>Style:</strong> Controls the visual style of the Voronoi pattern.
+                                            <ul>
+                                                <li><strong>Distance:</strong> The current smooth gradient effect.</li>
+                                                <li><strong>Color:</strong> Assigns a random solid color to each cell.</li>
+                                                <li><strong>Edges:</strong> Draws only the borders between the cells for a classic "cracked" look.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong>Stripes:</strong> Parallel lines that can be animated or static.</li>
+                                <li><strong>Dots:</strong> A grid of circles. The Thickness property controls their radius.</li>
+                                <li><strong>Checkerboard:</strong> A classic alternating square pattern.</li>
+                                <li><strong>Bricks:</strong> A running bond brick pattern with offset rows.</li>
+                                <li><strong>Hexagons:</strong> A honeycomb pattern of hexagonal shapes.</li>
+                                <li><strong>Squares:</strong> A grid of square shapes.</li>
+                                <li><strong>Triangles:</strong> A triangular grid pattern.</li>
+                                <li><strong>Chevrons:</strong> A zigzag pattern of V-shapes.</li>
+                                <li><strong>Crosshatch:</strong> Intersecting diagonal lines.</li>
+                                <li><strong>Barcode:</strong> Vertical bars of varying widths.</li>
+                                <li><strong>Polka Dot Scallop:</strong> Overlapping semi-circles in a polka dot arrangement.</li>
+                                <li><strong>Rounded Squares:</strong> Squares with rounded corners.</li>
+                                <li><strong>Woven:</strong> A pattern resembling woven fabric or chain-link.</li>
+                                <li><strong>Plaid:</strong> Intersecting lines of different thicknesses, creating a tartan look.</li>
+                                <li><strong>Houndstooth:</strong> A classic checker pattern with broken checks.</li>
+                                <li><strong>Argyle:</strong> A diamond pattern with overlapping circles.</li>
+                                <li><strong>Scales:</strong> Overlapping semi-circles resembling fish scales.</li>
+                                <li><strong>Diagonal Stripes:</strong> Diagonal lines across the surface.</li>
+                                <li><strong>Herringbone:</strong> A pattern of interlocking V-shapes, common in flooring.</li>
+                                <li><strong>Sierpinski:</strong> The Sierpinski triangle fractal pattern.</li>
+                                <li><strong>Box Fractal:</strong> A fractal pattern based on repeated squares.</li>
+                                <li><strong>Truchet Tiles:</strong> A pattern of quarter-circle arcs with random orientations.</li>
+                                <li><strong>Truchet Lines:</strong> Connected line segments in a maze-like pattern.</li>
+                                <li><strong>Spirals:</strong> Archimedean spirals emanating from the center.</li>
+                                <li><strong>Radar:</strong> Concentric circles and radial spokes, like a radar screen.</li>
+                                <li><strong>Sine Waves:</strong> Horizontal sine wave patterns.</li>
+                                <li><strong>Cross Fractal:</strong> A fractal pattern based on repeating crosses.</li>
+                                <li><strong>Mandelbox:</strong> A 2D slice of the 3D Mandelbox fractal.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Color 1 / Color 2:</strong> The two colors used to create the pattern. The generated value is used to blend between them.</li>
+                        <li>
+                            <h4>Color Shift</h4>
+                            <ul>
+                                <li><strong>Color 1 Shift:</strong> Toggles hue shifting for Procedural Color 1. The speed is controlled by the global <strong>Animation Speed</strong> in "Global Color Animation" (Color Controls).</li>
+                                <li><strong>Color 2 Shift:</strong> Toggles hue shifting for Procedural Color 2. The speed is controlled by the global <strong>Animation Speed</strong> in "Global Color Animation" (Color Controls).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Scale:</strong> Controls the size or tiling of the generated pattern.</li>
+                        <li><strong>Speed:</strong> Controls the speed of the pattern's animation.</li>
+                        <li><strong>Coordinate Space:</strong> Controls whether the pattern uses UV coordinates or world space positioning.</li>
+                        <li><strong>Direction:</strong> Controls the animation direction as a 2D vector (X, Y).</li>
+                        <li><strong>Thickness:</strong> Controls line thickness for patterns, or dot radius for dot patterns. Not applicable to Sierpinski or Checkerboard patterns.</li>
+                        <li><strong>Density:</strong> Controls the size of pattern elements. Higher values make elements larger.</li>
+                        <li><strong>Sparsity:</strong> Controls the spacing between elements. Higher values increase spacing.</li>
+                        <li><strong>Rotation:</strong> Rotates the entire pattern. A value of 0.125 equals 45 degrees.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Procedural Texture Target</h3>
+                    <p>This feature allows you to use the generated procedural texture as a mask or input for other shader features, instead of just using it as the base color. This is a powerful way to create complex, dynamic effects by combining procedural patterns with other material properties.</p>
+                    <ul>
+                        <li><strong>Target:</strong> Selects where the procedural texture output will be sent.
+                            <ul>
+                                <li><strong>Base Color:</strong> (Default) The procedural texture is used as the main albedo/color of the material, overriding the standard Base Texture and Base Color.</li>
+                                <li><strong>Emission Mask:</strong> The procedural texture controls the intensity of the Emission. The generated pattern will define the glowing parts of the material.</li>
+                                <li><strong>Metallic/Gloss Mask:</strong> The procedural texture's Red channel controls the Metallic property, and the Green channel controls the Smoothness property. This allows for creating surfaces with procedurally animated metallic or shiny patterns.</li>
+                                <li><strong>Detail Mask:</strong> The procedural texture acts as a mask for the Detail Texture, controlling where the detail texture is visible.</li>
+                                <li><strong>Dissolve Mask:</strong> The procedural texture is used as the pattern for the Dissolve effect, allowing you to create animated, procedural dissolve transitions without needing a separate texture map.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="advanced-animation-controls">
+                <h2>Advanced Animation Controls</h2>
+                <p>These controls enable shader-driven animation of time-based effects, offering more precise control than Unity's default time variables.</p>
+                <ul>
+                    <li><strong>Enable Advanced Animation Controls:</strong> Toggles the custom time system. When disabled, the shader uses Unity's default <code>_Time</code> variable.</li>
+                    <li><strong>Animation Time Scale:</strong> Multiplies the speed of all time-based animations in the shader.</li>
+                    <li><strong>Play Mode:</strong> Controls how the animation time progresses. <code>Loop</code> cycles from 0 to 1 and repeats. <code>PingPong</code> cycles from 0 to 1 and then back to 0.</li>
+                    <li><strong>Animation Offset:</strong> Adds a static offset to the animation time, useful for synchronizing multiple animated materials or starting an animation at a specific point.</li>
+                    <li><strong>Enable Network-Synced Time:</strong> Synchronizes shader continuous animation clocks across network clients via AudioLink / Udon chronological time, completely preventing animation drift between players in VRChat.</li>
+                    <li><strong>Photosensitivity Strobe Clamp:</strong> Safety feature that limits maximum strobe/flash frequency in Hz across pulse, flicker, and glitch animations to safeguard against epileptic seizures.</li>
+                </ul>
+            </section>
+
+            <section id="color-controls">
+                <h2>Color Controls</h2>
+                <p>A set of controls that affect the final look of the material.</p>
+                <article>
+                    <h3>Global Color Animation</h3>
+                    <p>This setting controls how all colors with "Animate Hue" enabled will change over time.</p>
+                    <ul>
+                        <li><strong>Enable Global Auto Color Shift:</strong> Master toggle that continuously animates every color with a shift control enabled. When disabled, shift sliders hold static or externally animated values.</li>
+                        <li><strong>Animation Mode:</strong> Can be set to <code>Hue Shift</code> (the default rotating rainbow effect) or <code>Gradient</code>.</li>
+                        <li><strong>Animated Gradient:</strong> When in Gradient mode, you can provide a texture (like a long, thin gradient) that all animated colors will scroll through. This gives you precise control over the color palette of your animations.</li>
+                        <li><strong>Ping-Pong Animation:</strong> (Gradient Mode Only) Animates the gradient back and forth instead of looping.</li>
+                        <li><strong>Use Vertical Scroll:</strong> (Gradient Mode Only) Scrolls the gradient from top to bottom instead of left to right.</li>
+                        <li><strong>Animation Speed:</strong> Controls the speed of the selected animation mode (rotation speed for Hue Shift, scroll speed for Gradient).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Color Adjustments</h3>
+                    <ul>
+                        <li><strong>Hue Shift:</strong> Rotates the final color's hue around the color wheel. Combined with "Enable Global Auto Color Shift", this drives the rainbow animation; combined with AudioLink it becomes audio-reactive.</li>
+                        <li><strong>Saturation:</strong> Multiplies the color saturation (0=Grayscale, 1=Default, 2=Vibrant).</li>
+                        <li><strong>Value (Brightness):</strong> Scales the HSV value (brightness) of the final color.</li>
+                        <li><strong>Desaturation:</strong> Blends the final color towards grayscale.</li>
+                        <li><strong>Invert Color:</strong> Inverts the final color.</li>
+                        <li><strong>Final Color Tint:</strong> Multiplies a color over the final result, useful for tinting or grading.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>RGBA Color Masking &amp; Global Mask Routing</h3>
+                    <p>Enables 4 independent color zones and emissive channels driven by the RGBA channels of a single mask texture, allowing complete outfit recoloring and cross-module routing from one material.</p>
+                    <ul>
+                        <li><strong>RGBA Color Mask:</strong> The mask texture isolating 4 distinct zones in R, G, B, and A channels.</li>
+                        <li><strong>Red / Green / Blue / Alpha Tint:</strong> Multiplicative color tint applied to geometry where that channel is active.</li>
+                        <li><strong>Red / Green / Blue / Alpha Emission:</strong> Independent HDR emission color applied to each zone.</li>
+                        <li><strong>Global Mask Channel Routing:</strong> Routes individual mask channels (R, G, B, or A) to modulate secondary shader features:
+                            <ul>
+                                <li><strong>MatCap Mask Route:</strong> Selects a mask channel to modulate MatCap intensity.</li>
+                                <li><strong>Rim Mask Route:</strong> Selects a mask channel to isolate Rim lighting.</li>
+                                <li><strong>Glitter Mask Route:</strong> Selects a mask channel to restrict Glitter sparkles.</li>
+                                <li><strong>Dissolve Mask Route:</strong> Selects a mask channel to bias or control the Dissolve transition progression.</li>
+                            </ul>
+                        </li>
+                        <li><strong>OKLab Color Blending:</strong> Enables Bj&ouml;rn Ottosson's perceptually uniform OKLab color space blending for color tints, theme colors, and mask transitions. Eliminates the muddy desaturation and dirty gray intermediate colors inherent to naive sRGB/linear lerping.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Global Theme Colors</h3>
+                    <p>Defines 4 global master colors that drive a unified theme across multiple materials on an avatar or prop, so base color, outlines, rim, and emission can all pull from the same shared palette modulated by a single source &mdash; much like AudioLink's world theme system, but authored on your own materials.</p>
+                    <ul>
+                        <li><strong>Theme Color 1 / 2 / 3 / 4:</strong> The four master color slots.</li>
+                        <li><strong>Modulation Mode:</strong> How the theme colors are animated beyond their static values:
+                            <ul>
+                                <li><code>Direct:</code> The theme colors are used as-is.</li>
+                                <li><code>AudioLink:</code> A selectable <strong>AudioLink Band</strong> hue-shifts the theme colors with the music; <strong>AudioLink Strength</strong> controls the intensity.</li>
+                                <li><code>HueShift:</code> Continuously rotates the theme colors through the color wheel at <strong>Hue Shift Speed</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Theme Target Mask:</strong> A 4-component weight vector routing theme influence to each module &mdash; R = Base Color, G = Outlines, B = Rim, A = Emission. Setting a component to <code>0</code> keeps that module at its local color; <code>1</code> fully drives it from the theme palette.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Color Correction</h3>
+                    <ul>
+                        <li><strong>Brightness, Contrast, Gamma:</strong> Standard color correction controls.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Pixel Effects</h3>
+                    <p>Applies screen-space effects to create retro or stylized looks.</p>
+                    <ul>
+                        <li><strong>Pixelation:</strong> Creates a blocky, low-resolution effect. The Amount controls the number of 'pixels' across the texture.</li>
+                        <li><strong>Posterization:</strong> Reduces the number of colors in the material, creating a "posterized" look. Levels controls the number of color steps per channel.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Color Mask</h3>
+                    <p>Uses a texture to mask the material's alpha (visibility), cutting out parts of the surface or restricting the material to specific regions.</p>
+                    <ul>
+                        <li><strong>Color Mask (RGBA):</strong> The mask texture. Use its Tiling/Offset to position it, and the <strong>UV Set</strong> selector to pick between UV0 and UV1.</li>
+                        <li><strong>Alpha Source:</strong> Selects which channel of the mask drives the alpha: <code>None</code>, <code>R</code>, <code>G</code>, <code>B</code>, or <code>A</code>. The chosen channel is multiplied into the final transparency.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="lighting">
+                <h2>Lighting</h2>
+                <p>Controls how the material reacts to lights in the scene. This section is disabled if a Surface Style like MatCap (only when its Blend Mode is <code>Override</code>), Skybox, or Galaxy is chosen, as they provide their own lighting.</p>
+                <article>
+                    <h3>Lighting Modes</h3>
+                    <ul>
+                        <li><strong>Unlit:</strong> The material is not affected by scene lighting.</li>
+                        <li><strong>Basic:</strong> A simple Lambertian lighting model.</li>
+                        <li><strong>Toon:</strong> A two-tone "cel-shaded" look with a hard shadow edge.</li>
+                        <li><strong>Stylized PBR:</strong> A simplified Physically Based Rendering model for metallic and smooth surfaces.</li>
+                        <li><strong>Standard PBR:</strong> An industry-standard Physically Based Rendering model using GGX microfacet distribution, reflection probes, and lightmap support.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Properties</h3>
+                    <ul>
+                        <li><strong>Shadow Color:</strong> The color of the unlit areas of the model. (Applies to Basic and Toon modes).</li>
+                        <li><strong>Use Ambient Lighting:</strong> Toggles sampling of scene ambient light and reflection probes. Makes lighting more consistent across different worlds. (Applies to Basic, Toon, and Stylized PBR modes). While enabled, two extra selectors appear: <strong>Ambient Fallback Mode</strong> chooses the fallback lighting model (<code>Flat</code> or <code>Gradient</code>) used when High Quality Ambient (SH) is disabled or unavailable, and <strong>Shadowmask Fallback</strong> selects how baked shadowmask attenuation is applied (<code>Ambient</code> or <code>Shadow Color</code>).</li>
+                        <li><strong>Enable Environment Reflections:</strong> Samples reflection probes to add environmental reflections even in Basic/Toon modes, giving surfaces a subtle shiny response to the scene. <strong>Strength</strong> controls how visible the reflections are, and <strong>Roughness</strong> controls how blurry they are. (Disabled on Medium/Low performance levels).</li>
+                        <li><strong>Enable Custom Cubemap Reflection:</strong> Adds a user-provided <strong>Custom Cubemap</strong> that substitutes or supplements the scene's reflection probes, ideal for local reflections on props or as a fallback in probe-less worlds. <strong>Cubemap Tint</strong> colors the reflection, <strong>Roughness</strong> drives its blur (sampled as a mip level), and <strong>Blend Mode</strong> selects how it combines: <code>Override Probes</code> always adds the cubemap reflection, <code>Fallback When Probes Dark</code> only adds it where the existing probe contribution is nearly black, and <code>Additive</code> stacks it on top unconditionally. <strong>Intensity</strong> scales the reflection brightness.</li>
+                        <li><strong>Enable LTCGI (Area Light GI):</strong> Receives real-time Linearly Transformed Cosines (LTC) area-light global illumination from LTCGI-compatible VRChat worlds, letting the material react to polygonal area lights and video screens. <strong>Intensity</strong> scales the area-light diffuse and specular contribution, and <strong>Roughness Multiplier</strong> widens/blurs the specular highlight response. (Disabled on Medium/Low performance levels).</li>
+                        <li><strong>Unity 6 URP Adaptive Probe Volumes (APV):</strong> <span class="badge badge-urp">URP</span> The shader compiles <code>PROBE_VOLUMES_L1</code> / <code>PROBE_VOLUMES_L2</code> fragment variants so ambient lighting automatically participates in Unity 6 / URP 17+ Adaptive Probe Volumes, replacing a dense grid of light probes with a single volume that is refined where it matters. No inspector control is required &mdash; it activates automatically when APV is enabled in the scene. <span class="badge badge-brp">BRP</span> Not applicable in the Built-in pipeline.</li>
+                        <li><strong>Override Scene Light:</strong> Ignores the scene's main light and uses custom values instead. Useful for making the material look consistent regardless of the world's lighting. <strong>Light Direction</strong> sets the direction the light comes from, <strong>Light Color</strong> tints the light, <strong>Light Intensity</strong> controls its brightness, and <strong>Shadow Strength</strong> sets the darkness of the shadowed areas.</li>
+                        <li><strong>Min Light Brightness / Max Light Brightness:</strong> Clamp the environment and light brightness, so models never become pitch black in dark rooms (<strong>Min Light Brightness</strong>) or overexposed in bright worlds (<strong>Max Light Brightness</strong>).</li>
+                        <li><strong>Shade Shift Map:</strong> A grayscale texture (with a <strong>UV Set</strong> selector and <strong>Strength</strong>) that biases the shadow threshold per-pixel, letting you fix clothing folds, muscle creases, and baked ambient occlusion that would otherwise be washed out by toon lighting.</li>
+                        <li><strong>Monochrome Lighting:</strong> Desaturates scene lighting color so accurate skin tones are preserved regardless of strongly colored world lighting.</li>
+                        <li><strong>As-Unlit Lighting:</strong> Blends lighting towards a uniform unlit floor in dark environments, keeping the character readable when scene light falls below useful levels.</li>
+                        <li><strong>OpenLit Harmony Mode:</strong> Switches the diffuse calculation to the OpenLit CC0 standard half-Lambert formula, so your avatar's lighting matches other OpenLit-based avatars (lilToon, Poiyomi) in photo and cross-avatar worlds.</li>
+                        <li><strong>VRC Light Volumes:</strong> Samples REDSIM's VRCLightVolumes v2 for per-pixel voxel ambient lighting in supported worlds, including their analytic point/spot/area lights. Falls back to standard light probes elsewhere; forced OFF in Medium/Low performance levels.</li>
+                        <li><strong>VRSL (VRC Studio Lighting) GI:</strong> Real-time reception module for DMX stage fixtures, moving heads, lasers, and club lighting in VRSL-compatible VRChat worlds. Features controls for <strong>GI Intensity</strong>, <strong>Direct Light Intensity</strong>, and <strong>Specular Highlight Reception</strong>.</li>
+                        <li><strong>Light Layers:</strong> <span class="badge badge-urp">URP</span> Evaluates fragment-level lighting masks matching Unity URP's Rendering Layers (Light Layers). Lights in URP only illuminate geometry whose Mesh Renderer shares at least one matching layer bit. <span class="badge badge-brp">BRP</span> In the Built-in pipeline, all lights illuminate all layers normally.</li>
+                    </ul>
+                    <h4>Toon Mode</h4>
+                    <ul>
+                        <li><strong>Threshold/Hardness:</strong> Controls the size and sharpness of the shadow edge.</li>
+                        <li><strong>2nd Shadow Tier (Dual-Step Anime Cel Shadows):</strong> Adds a second, softer shadow layer beneath the first for multi-tone anime shading. <strong>2nd Shadow Color</strong> tints the intermediate shadow band, <strong>2nd Toon Threshold</strong> places its boundary, and <strong>2nd Toon Hardness</strong> controls how sharp its edge is.</li>
+                        <li><strong>Toon Ramp:</strong> An optional gradient texture (shadow on the left, light on the right) that defines the exact shading ramp. If no ramp is set, the shader uses flat tone bands instead.</li>
+                        <li><strong>Tone Count:</strong> The number of lighting bands when not using a ramp texture (<code>TwoTone</code>, <code>ThreeTone</code>, or <code>FourTone</code>).
+                            <ul>
+                                <li><strong>Mid-Color / Mid Threshold:</strong> (3+ tones) The color and boundary of the midtone band.</li>
+                                <li><strong>Highlight Color / Highlight Threshold:</strong> (4 tones) The color and boundary of the brightest band.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Step Specular:</strong> Turns the specular highlight into a hard, cartoon-style step. <strong>Step Specular Threshold</strong> places the highlight boundary and <strong>Step Specular Hardness</strong> controls its edge sharpness.</li>
+                        <li><strong>Shadow Border:</strong> Offsets the Toon shadow line boundary, letting you grow or shrink the lit area without touching the threshold ramp.</li>
+                        <li><strong>Shadow Blur:</strong> Softens the Toon shadow step for smoother cel transitions.</li>
+                        <li><strong>AO Shadow Modulation:</strong> Uses the mesh's ambient occlusion map to push crevices and folds into shadow, grounding the cel shading.</li>
+                    </ul>
+                    <h4>Stylized PBR Mode</h4>
+                    <ul>
+                        <li><strong>Normal Map/Strength:</strong> Adds surface detail using a normal map texture. The <strong>Normal UV Set</strong> selector chooses between UV0 and UV1 for the normal map, and <strong>Flip Normal Map Y</strong> inverts the Green channel to convert between DirectX and OpenGL normal map formats.</li>
+                        <li><strong>Detail Normal System (1&ndash;4 Layers + Bicubic):</strong> Micro-surface detail normal stacking supporting up to 4 independently scrolled and scaled detail normal layers:
+                            <ul>
+                                <li><strong>Bicubic Normal Filtering:</strong> 5-tap Catmull-Rom bicubic spline filtering eliminating bilinear texel grid diamond artifacts at close inspection distances in VR.</li>
+                                <li><strong>Detail Layers (1 to 4):</strong> Dynamically enables independent layers 1 through 4 with individual strength scales, UV coordinate sets (UV0/UV1), and continuous UV scroll velocities.</li>
+                                <li><strong>Normal Blend Mode:</strong> Selects between standard <code>Whiteout / UDN</code> blending and high-fidelity <code>Reoriented Normal Mapping (RNM)</code>.</li>
+                                <li><strong>Detail Normal Distance Fade:</strong> Automatically attenuates high-frequency detail normal strength across distance to suppress shimmering and temporal aliasing in VR headsets.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Metallic/Smoothness:</strong> Controls the metal-like and shiny properties. These can be set with sliders or controlled by a <strong>Metallic/Gloss Map</strong>, where the Red channel controls metallic and the Alpha channel controls smoothness.</li>
+                        <li><strong>Workflow:</strong> Switches between the <code>Metallic</code> workflow (Metallic/Smoothness sliders and Metallic/Gloss Map) and the <code>Specular</code> workflow, which uses a <strong>Specular Color</strong> and a <strong>Specular Gloss Map</strong> (RGB = specular color, A = smoothness) instead.</li>
+                        <li><strong>Enable Clear Coat:</strong> Adds a transparent protective layer over the surface, like clear coat paint. <strong>Strength</strong> controls how visible the coat is and <strong>Roughness</strong> how blurry its highlight is.</li>
+                    </ul>
+                    <h4>Standard PBR Mode</h4>
+                    <ul>
+                        <li><strong>Normal Map/Strength:</strong> Adds surface detail using a normal map texture. The <strong>Normal UV Set</strong> selector chooses between UV0 and UV1 for the normal map, and <strong>Flip Normal Map Y</strong> inverts the Green channel to convert between DirectX and OpenGL normal map formats.</li>
+                        <li><strong>Detail Normal System (1&ndash;4 Layers + Bicubic):</strong> Identical 4-layer detail normal chaining with bicubic Catmull-Rom reconstruction and RNM blending.</li>
+                        <li><strong>Metallic:</strong> Controls the metal-like properties of the surface.</li>
+                        <li><strong>Workflow:</strong> Switches between the <code>Metallic</code> workflow and the <code>Specular</code> workflow, which uses a <strong>Specular Color</strong> and a <strong>Specular Gloss Map</strong> (RGB = specular color, A = smoothness) instead of metallic.</li>
+                        <li><strong>Roughness Map/Roughness:</strong> Controls the roughness of the specular reflections. A higher roughness creates a broader, more blurry reflection. If no roughness map is set, it falls back to the inverse of the Metallic/Gloss Map's Alpha channel (smoothness).</li>
+                        <li><strong>Occlusion Map/Occlusion Strength:</strong> Simulates self-shadowing in crevices using an occlusion map.</li>
+                        <li><strong>Detail Mask:</strong> A mask texture to control where the secondary Detail Texture is applied.</li>
+                        <li><strong>Use High Quality Ambient (SH):</strong> Enables vertex-evaluated Spherical Harmonics ambient lighting for high-quality indirect diffuse light. When disabled, a fast sky-ground gradient fallback is used instead. Automatically supports lightmap sampling on static objects.</li>
+                        <li><strong>Enable Clear Coat:</strong> Adds a transparent protective layer over the surface, like clear coat paint. <strong>Strength</strong> controls how visible the coat is and <strong>Roughness</strong> how blurry its highlight is.</li>
+                    </ul>
+                    <h5>Subsurface Scattering (SSS)</h5>
+                    <p>Simulates light passing through and scattering within thin or translucent objects, like skin, wax, or leaves. This adds a soft, glowing look from behind the object.</p>
+                    <ul>
+                        <li><strong>Enable Subsurface Scattering:</strong> Toggles the effect on or off.</li>
+                        <li><strong>SSS Scale:</strong> The overall strength of the SSS effect.</li>
+                        <li><strong>SSS Radius:</strong> Controls how far light scatters within the material. Larger values create a softer, more diffuse look.</li>
+                        <li><strong>SSS Tint:</strong> The color tint applied to the scattered light.</li>
+                        <li><strong>Enable Thickness Map:</strong> Uses a grayscale texture to control how much light passes through different areas, simulating thin parts (ears, leaves, fabric) glowing more. <strong>Thickness Strength</strong> scales the effect.</li>
+                    </ul>
+                    <h5>Anisotropic Reflection</h5>
+                    <p>Creates stretched or elongated specular highlights, common on surfaces with a grain or direction, like brushed metal, hair, or vinyl records.</p>
+                    <ul>
+                        <li><strong>Enable Anisotropic Reflection:</strong> Toggles the effect on or off.</li>
+                        <li><strong>Mode:</strong> Switches between <code>Ward</code> (a general model) and <code>Stretched-Blinn</code> (which uses a Tangent Map for more precise control).</li>
+                        <li><strong>Roughness U / V:</strong> Controls the roughness (and thus the highlight size) independently along two perpendicular directions (U and V). The difference between these values creates the stretching.</li>
+                        <li><strong>Specular Strength:</strong> The overall brightness of the anisotropic highlight.</li>
+                        <li><strong>Tangent Map:</strong> (Stretched-Blinn mode only) An optional texture map that defines the direction of the surface grain, giving precise control over the highlight's orientation.</li>
+                    </ul>
+                    <h4>Dedicated Shading Models</h4>
+                    <p>Specialized shading models for organic surfaces. These apply regardless of the selected lighting mode.</p>
+                    <ul>
+                        <li><strong>Enable Eye Iris Parallax:</strong> Simulates the depth and refraction of a pupil and iris beneath a transparent cornea. <strong>Iris UV Tiling</strong> scales the iris texture, <strong>Iris Depth Offset</strong> controls the simulated refraction depth, and <strong>Pupil Scale</strong> controls the size of the pupil.</li>
+                        <li><strong>Enable Internal Parallax (Gems / Eye Layers):</strong> Simulates layered interior depth beneath glass, lenses, crystals, and anime irises by ray-offsetting a texture in tangent space across multiple sample steps, creating believable "thickness" under a transparent surface. <strong>Internal Layer Texture</strong> is the interior depth texture (with its own tiling/offset), <strong>Layer Color</strong> tints the interior layer and supports the global color-shift timeline, <strong>Depth Scale</strong> controls how deep the simulated interior sits, <strong>Sample Steps</strong> sets how many layers of light are traced through it (1&ndash;10), <strong>Layer Strength</strong> scales the layer's opacity, and <strong>Emissive Boost</strong> adds an internal glow to make the interior surface appear self-lit.</li>
+                        <li><strong>Enable Skin Diffuse Wrap:</strong> Softens the lighting on curved organic surfaces by wrapping light around the shadow terminator, reducing harsh shadow lines. <strong>Wrap Amount</strong> controls how much light wraps around.</li>
+                        <li><strong>Enable Hair Specular (Kajiya-Kay):</strong> Adds anisotropic highlights styled specifically for hair strands, producing bright streaks aligned with the hair direction. <strong>Specular Color</strong> tints the highlights, <strong>Primary/Secondary Exponent</strong> control the sharpness of the two highlight streaks, <strong>Specular Strength</strong> controls brightness, and <strong>Specular Shift</strong> moves the highlights along the hair direction.</li>
+                    </ul>
+                    <h5>SDF Face Shadows</h5>
+                    <p>Clean, stable anime face shadows using a Signed Distance Field map instead of geometric normals &mdash; the standard technique for preventing messy shadow artifacts on stylized faces as the light direction changes.</p>
+                    <ul>
+                        <li><strong>Enable SDF Face Shadows:</strong> Master toggle.</li>
+                        <li><strong>Face Shadow Map (SDF):</strong> The SDF face shadow texture encoding light threshold gradients (the same maps used by other anime shaders).</li>
+                        <li><strong>Face Shadow Offset:</strong> Offsets the front/back shadow threshold angle.</li>
+                        <li><strong>Face Shadow Softness:</strong> Softens the SDF shadow edge boundary.</li>
+                        <li><strong>Invert Face Shadow:</strong> Inverts the SDF shadow gradient for maps authored with opposite conventions.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Geometric Specular Anti-Aliasing</h3>
+                    <p>Reduces specular shimmer, flickering, and firefly artifacts on dense meshes and detailed normal maps. This is especially valuable in VR headsets where high-frequency specular highlights cause distracting visual noise. Based on the Kaplanyan 2016 technique used in AAA game engines.</p>
+                    <ul>
+                        <li><strong>Geometric Specular AA:</strong> Master toggle to enable the effect.</li>
+                        <li><strong>Variance:</strong> Controls how aggressively the specular lobe is widened based on screen-space normal variation. Higher values produce smoother specular but may lose fine detail. Default: <code>0.15</code>.</li>
+                        <li><strong>Threshold:</strong> Caps the maximum roughness adjustment to prevent over-blurring on extremely dense geometry. Default: <code>0.2</code>.</li>
+                    </ul>
+                    <p>This control only appears when the Lighting Mode is set to <strong>Stylized PBR</strong> or <strong>Standard PBR</strong>. It has zero cost when disabled.</p>
+                </article>
+            </section>
+
+            <section id="surface-style">
+                <h2>Surface Style</h2>
+                <p>Defines the fundamental appearance of the surface, often overriding standard lighting. Only one style can be active at a time.</p>
+                <article>
+                    <h3>Crystal</h3>
+                    <p>Simulates a refractive, crystalline material. It distorts the view of the texture behind it and can add chromatic aberration for a more stylized look. This effect works best with a base texture enabled.</p>
+                    <ul>
+                        <li><strong>Refraction Noise Map:</strong> A noise texture used to control the pattern of the distortion.</li>
+                        <li><strong>Refraction Strength:</strong> Controls how strongly the texture is distorted.</li>
+                        <li><strong>Chromatic Aberration:</strong> Simulates color separation by offsetting the red and blue color channels, creating colored fringes at the edges of the distortion.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Galaxy</h3>
+                    <p>Renders a texture that appears to have depth and moves independently of the object's rotation, creating a "window into space" effect. This style disables standard scene lighting.</p>
+                    <ul>
+                        <li><strong>Galaxy Map:</strong> The texture to display inside the object.</li>
+                        <li><strong>Depth:</strong> Creates a 2D parallax effect based on view angle, making the texture appear to have depth.</li>
+                        <li><strong>Rotation Speed:</strong> Rotates the galaxy texture over time.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Skybox</h3>
+                    <p>Reflects a cubemap from the inside of the object, making it look like a portal or a window into another environment. This style disables standard scene lighting.</p>
+                    <ul>
+                        <li><strong>Skybox Cubemap:</strong> The cubemap texture to display.</li>
+                        <li><strong>Rotation Speed:</strong> Rotates the reflected skybox around the vertical axis over time.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Tri-Planar Mapping</h3>
+                    <p>Projects a texture onto the model from the top, front, and side, then blends them together. This is an effective way to texture complex models without needing perfect UV maps, as it avoids stretching and seams.</p>
+                    <ul>
+                        <li><strong>Tri-Planar Texture:</strong> The texture to project onto the model.</li>
+                        <li><strong>Scale:</strong> Controls the size (tiling) of the projected texture.</li>
+                        <li><strong>Blend Sharpness:</strong> Controls how sharply the textures from the three different projections blend into one another. Higher values create a harder edge.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>MatCap (Material Capture)</h3>
+                    <p>A lighting technique that uses a special "material capture" texture to define an object's complete lighting and reflection information. It's a very fast way to get complex, stylized lighting effects. This style disables standard scene lighting.</p>
+                    <ul>
+                        <li><strong>MatCap Texture:</strong> The texture that defines the object's appearance. It's typically a sphere rendered with the desired lighting.</li>
+                        <li><strong>Intensity:</strong> A multiplier to control the brightness of the MatCap effect.</li>
+                        <li><strong>Blend Mode:</strong> How the MatCap combines with the material's base color. <code>Override</code> fully replaces it, <code>Multiply</code> tints it, <code>Additive</code> brightens it, and <code>Screen</code> gives a softer brightening.</li>
+                        <li><strong>MatCap Mask (R):</strong> An optional texture whose Red channel restricts where the MatCap is visible. White areas show the MatCap, black areas fall back to the base color. Its <strong>UV Set</strong> selector picks between UV0 and UV1.</li>
+                    </ul>
+                    <h4>MatCap 2 (Secondary Layer)</h4>
+                    <p>A second, independently controlled MatCap layer blended on top of the first for multi-layer material capture looks (e.g. a stylized base layer plus a glossy rim layer).</p>
+                    <ul>
+                        <li><strong>Enable MatCap 2:</strong> Toggles the secondary MatCap layer.</li>
+                        <li><strong>MatCap 2 Texture / Intensity / Blend Mode:</strong> The same controls as the primary MatCap (blend modes: <code>Add</code>, <code>Multiply</code>, <code>Replace</code>, <code>Lighten</code>, <code>Overlay</code>).</li>
+                        <li><strong>MatCap 2 Mask (R):</strong> An optional texture whose Red channel restricts where the second layer is visible, with its own <strong>UV Set</strong> selector.</li>
+                        <li><strong>MatCap Normal Perturbation:</strong> How strongly the surface normal map perturbs the MatCap sampling direction, letting baked normal detail affect the captured lighting.</li>
+                        <li><strong>MatCap Perspective Correction:</strong> When enabled, corrects the MatCap UVs for per-view perspective so the capture stays stable when viewed from an angle, improving VR comfort.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Iridescence</h3>
+                    <p>Creates a rainbow-like effect where the color shifts based on the viewing angle, similar to a soap bubble or an oil slick. This effect is blended over the existing surface color and lighting.</p>
+                    <ul>
+                        <li><strong>Color Scale:</strong> Controls the frequency of the color shifting across the surface. Higher values create more, tighter rainbow bands.</li>
+                        <li><strong>Strength:</strong> Controls how strongly the iridescent color is blended with the base color.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Glitter</h3>
+                    <p>Adds an animated, sparkling glitter effect to the surface. This effect is applied after lighting.</p>
+                    <ul>
+                        <li><strong>Blend Mode:</strong> Controls how the glitter is blended with the underlying surface color. <code>Additive</code> can get very bright. <code>Lerp</code> replaces the base color (emissive). <code>Max</code> ensures it's never darker than the glitter color.</li>
+                        <li><strong>Color:</strong> The color of the glitter sparkles. Can be animated with "Animate Hue".</li>
+                        <li><strong>Scale:</strong> Controls the size of the glitter noise pattern. Higher values mean smaller, finer sparkles.</li>
+                        <li><strong>Sparsity:</strong> Controls how many sparkles appear. Higher values mean fewer, more sparse sparkles.</li>
+                        <li><strong>Shape:</strong> Selects the sparkle shape: <code>Random</code> (the default noise-based sparkles), <code>Circle</code>, <code>Square</code>, or <code>Star</code>. The shape-based options render a tiled grid of that shape instead of random sparkles.</li>
+                        <li><strong>Use Screen Space:</strong> Bases the glitter pattern on screen coordinates instead of the model's UVs. This makes the glitter appear to "swim" across the surface as the camera or object moves.</li>
+                        <li><strong>Use Scrolling Animation:</strong> Changes the animation from sparkles "popping" in and out to a smooth, scrolling noise pattern.</li>
+                        <li><strong>Pop/Scroll Speed:</strong> Controls the speed of the chosen animation style.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Psychedelic</h3>
+                    <p>Applies domain-warped fractal Brownian motion (FBM) noise that creates flowing, organic color patterns. The effect is linked to the Global Color Shift timeline for synchronized color animation.</p>
+                    <ul>
+                        <li><strong>Coordinate Space:</strong> Controls whether the pattern uses world space, screen space, or UV coordinates.</li>
+                        <li><strong>Hue Shift Scale:</strong> Multiplier for how strongly the psychedelic pattern shifts colors.</li>
+                        <li><strong>Flow Speed:</strong> Speed at which the psychedelic noise flows across the surface.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>3D Fractal</h3>
+                    <p>Renders a volumetric fractal using raymarching techniques. This creates complex, infinite 3D structures that appear to extend infinitely into the object. This style disables standard scene lighting and uses a custom raymarching renderer.</p>
+                    <p class="warning"><strong>Performance Warning:</strong> 3D Fractal uses computationally intensive raymarching. Use low iteration counts (4-8) on mobile/VR platforms. Higher iterations can cause significant frame rate drops.</p>
+                    
+                    <h4>Fractal Types</h4>
+                    <ul>
+                        <li><strong>Mandelbulb:</strong> The 3D extension of the Mandelbrot set. Creates bulbous, organic shapes with variable power parameter.</li>
+                        <li><strong>Menger Sponge:</strong> A 3D fractal based on repeatedly removing cubes from a larger cube. Creates intricate, sponge-like structures.</li>
+                        <li><strong>Kaleidoscopic IFS:</strong> Iterated Function System with kaleidoscopic symmetry. Creates complex, mirrored patterns.</li>
+                        <li><strong>Mandelbox:</strong> A fractal based on box folding and sphere folding operations. Creates blocky, crystalline structures.</li>
+                        <li><strong>Julia Set 3D:</strong> A complex number extension of the Julia set in 3D space with coupling between dimensions.</li>
+                        <li><strong>Sierpinski Tetrahedron:</strong> The 3D Sierpinski fractal based on tetrahedron subdivision.</li>
+                        <li><strong>Apollonian Gasket:</strong> A fractal based on mutually tangent circles/spheres.</li>
+                        <li><strong>Burning Ship:</strong> A variation of the Mandelbrot set using absolute values, creating "ship-like" structures.</li>
+                        <li><strong>Tricorn:</strong> The conjugate of the Mandelbrot set, creating different symmetry patterns.</li>
+                        <li><strong>Mandelbulb Power 2:</strong> Standard Mandelbulb with fixed power of 2 and higher iteration count.</li>
+                        <li><strong>Mandelbulb Power 8:</strong> Mandelbulb with fixed power of 8, creating more detailed, spiky structures.</li>
+                        <li><strong>Quaternion Julia:</strong> A true 4D quaternion Julia set for mathematically correct quaternion fractals.</li>
+                        <li><strong>IFS Tetrahedron:</strong> Iterated Function System based on tetrahedron vertices.</li>
+                        <li><strong>Octahedron:</strong> Platonic solid fractal based on octahedron symmetry.</li>
+                        <li><strong>Dodecahedron:</strong> Platonic solid fractal based on dodecahedron symmetry with golden ratio proportions.</li>
+                        <li><strong>Icosahedron:</strong> Platonic solid fractal based on icosahedron symmetry with golden ratio reflections.</li>
+                        <li><strong>Cubic Fractal:</strong> Simple fractal based on repeated cube subdivision.</li>
+                        <li><strong>Hybrid Box-Bulb:</strong> Combination of Mandelbox and Mandelbulb techniques for unique hybrid structures.</li>
+                    </ul>
+
+                    <h4>Core Properties</h4>
+                    <ul>
+                        <li><strong>Fractal Type:</strong> Selects which fractal algorithm to use from the list above.</li>
+                        <li><strong>Repetition Mode:</strong> Controls how the fractal repeats in space.
+                            <ul>
+                                <li><strong>Single Instance:</strong> One fractal object, fastest performance.</li>
+                                <li><strong>Repeated (Clipped):</strong> Fractal repeats in a grid but is clipped to prevent infinite computation.</li>
+                                <li><strong>Endless:</strong> True infinite fractal, most computationally expensive.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Scale:</strong> Controls the overall size of the fractal structure.</li>
+                        <li><strong>Animation Mode:</strong> How the fractal animates over time.
+                            <ul>
+                                <li><strong>None:</strong> Static fractal.</li>
+                                <li><strong>Yaw:</strong> Rotates around the Y-axis.</li>
+                                <li><strong>Pitch:</strong> Rotates around the X-axis.</li>
+                                <li><strong>Roll:</strong> Rotates around the Z-axis.</li>
+                                <li><strong>Tumble:</strong> Complex rotation combining multiple axes.</li>
+                                <li><strong>Sway:</strong> Gentle oscillating motion.</li>
+                                <li><strong>Pulsate:</strong> The fractal appears to inflate and deflate.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Animation Speed:</strong> Controls how fast the chosen animation plays.</li>
+                    </ul>
+
+                    <h4>Fractal-Specific Properties</h4>
+                    <p>These properties change based on the selected fractal type:</p>
+                    <ul>
+                        <li><strong>Mandelbulb Power:</strong> Controls the power parameter (typically 2-8) for bulb-like fractals.</li>
+                        <li><strong>Iterations:</strong> Number of fractal iterations. Higher values = more detail but slower performance. Most fractals work well with 4-12 iterations.</li>
+                        <li><strong>Box Scale (Mandelbox):</strong> Scale factor for box folding operations. Negative values (-2 to -1.5) create interesting visuals.</li>
+                        <li><strong>Hybrid Scale (Hybrid Box-Bulb):</strong> Scale factor for the hybrid fractal. Try values between 1.5 and 3.0.</li>
+                        <li><strong>Angles (Kaleidoscopic IFS):</strong> Rotation angles for the kaleidoscopic IFS symmetry.</li>
+                        <li><strong>Julia C Constant:</strong> The complex/quaternion constant that defines the Julia set shape. Try small values like (-0.2, 0.6, 0.2, 0.2) and animate for morphing effects.</li>
+                    </ul>
+
+                    <h4>Color Properties</h4>
+                    <ul>
+                        <li><strong>Fractal Depth Hue Shift:</strong> Shifts colors based on raymarching depth for rainbow effects.</li>
+                        <li><strong>Auto Hue Shift:</strong> Automatically animates the color shifting over time.</li>
+                        <li><strong>Auto Shift Speed:</strong> Speed of the automatic color animation.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="overlays">
+                <h2>Overlays</h2>
+                <p>These effects are drawn on top of the base surface.</p>
+                <article>
+                    <h3>Grid</h3>
+                    <p>Overlays a procedural geometric pattern on the surface. This is a powerful feature for creating sci-fi, holographic, or abstract visuals. It has many properties to customize its appearance and animation.</p>
+                    
+                    <h4>Core Properties</h4>
+                    <ul>
+                        <li><strong>Pattern:</strong> Selects the geometric pattern from the list below. Each pattern may have unique behaviors or properties. The pattern library is shared with the Procedural Texture feature.</li>
+                        <li><strong>Color:</strong> The color and transparency of the grid pattern. Can be hue-shifted.</li>
+                        <li><strong>Coordinate Space:</strong> A projection selector that maps the pattern onto the model: <code>UV</code> sticks to the surface, <code>World Space (Triplanar)</code> makes it appear to "swim" over the surface as the object moves, and additional local, screen, planar, spherical, cylindrical, and biplanar projections are available.</li>
+                        <li><strong>Grid Tiling X/Y:</strong> Independent horizontal and vertical tiling multipliers for the pattern.</li>
+                        <li><strong>Density:</strong> Controls the tiling or frequency of the pattern. Higher values mean a denser pattern.</li>
+                        <li><strong>Sparsity:</strong> Controls the spacing between pattern elements. Higher values increase the spacing.</li>
+                        <li><strong>Thickness / Size / Fill:</strong> This property's function changes based on the selected pattern. It can control line thickness, dot radius, or the fill amount for certain patterns.</li>
+                        <li><strong>Rotation:</strong> Rotates the entire grid pattern.</li>
+                        <li><strong>Use Fill Style:</strong> For patterns like Squares, Triangles, and Hexagons, this toggles between an outline and a filled shape. For fractal patterns, it can have a more complex effect on the final look.</li>
+                    </ul>
+
+                    <h4>Pattern Descriptions</h4>
+                    <ul>
+                        <li><strong>Noise:</strong> A smooth value noise pattern with Octaves, Lacunarity, and Gain controls.</li>
+                        <li><strong>Voronoi:</strong> An organic, cell-like pattern with a selectable style (Distance, Color, Edges). Can be animated to morph over time.</li>
+                        <li><strong>Stripes:</strong> Parallel lines that can be animated or static.</li>
+                        <li><strong>Dots:</strong> A grid of circles. The <code>Thickness</code> property controls their radius.</li>
+                        <li><strong>Checkerboard:</strong> A standard checkerboard pattern. This is a binary fill pattern (Thickness does not apply).</li>
+                        <li><strong>Bricks:</strong> A classic running-bond brick pattern.</li>
+                        <li><strong>Hexagons:</strong> A honeycomb pattern of hexagonal shapes. Can be outlines or filled.</li>
+                        <li><strong>Squares, Triangles:</strong> Classic tessellating geometric shapes. Can be outlines or filled.</li>
+                        <li><strong>Chevrons:</strong> A pattern of V-shapes.</li>
+                        <li><strong>Crosshatch:</strong> Intersecting diagonal lines. Can be outlines or filled diamonds.</li>
+                        <li><strong>Barcode:</strong> Vertical bars of varying widths.</li>
+                        <li><strong>Polka Dot Scallop:</strong> Overlapping semi-circles in a polka dot arrangement. The <code>Thickness</code> property controls dot size.</li>
+                        <li><strong>Rounded Squares:</strong> Squares with rounded corners.</li>
+                        <li><strong>Woven:</strong> A pattern that resembles a woven basket or chain-link fence.</li>
+                        <li><strong>Plaid:</strong> Intersecting lines of different thicknesses, creating a plaid or tartan look.</li>
+                        <li><strong>Houndstooth:</strong> A classic checker pattern with broken checks.</li>
+                        <li><strong>Argyle:</strong> A diamond pattern with overlapping circles.</li>
+                        <li><strong>Scales:</strong> A pattern of overlapping semi-circles, like fish scales.</li>
+                        <li><strong>Diagonal Stripes:</strong> A simple pattern of diagonal lines.</li>
+                        <li><strong>Herringbone:</strong> A pattern of interlocking V-shapes, common in flooring and textiles.</li>
+                        <li><strong>Sierpinski:</strong> The Sierpinski Carpet fractal. This is a fill-only pattern (Thickness does not apply).</li>
+                        <li><strong>Box Fractal:</strong> A fractal pattern based on repeating squares. Has its own <strong>Use Fill Style</strong> toggle.</li>
+                        <li><strong>Truchet Tiles:</strong> A pattern of quarter-circle arcs with random orientations, creating complex, maze-like visuals.</li>
+                        <li><strong>Truchet Lines:</strong> Connected line segments in a maze-like pattern.</li>
+                        <li><strong>Spirals:</strong> Archimedean spirals emanating from the center of the coordinate space.</li>
+                        <li><strong>Radar:</strong> Concentric circles and radial spokes, like a classic radar screen.</li>
+                        <li><strong>Sine Waves:</strong> A pattern of horizontal sine waves.</li>
+                        <li><strong>Cross Fractal:</strong> A fractal based on repeating crosses.</li>
+                        <li><strong>Mandelbox:</strong> A 2D slice of the 3D Mandelbox fractal, creating intricate blocky structures. Has its own <strong>Use Fill Style</strong> toggle.</li>
+                    </ul>
+
+                    <h4>Animation</h4>
+                    <ul>
+                        <li><strong>Pulse Mode:</strong> Animates the grid. <strong>Intensity</strong> pulses the grid's transparency between a defined min/max range. <strong>Color</strong> pulses the grid's color towards its hue-shifted variant.</li>
+                        <li><strong>Enable Scrolling:</strong> Animates the grid by scrolling it across the surface. For radial patterns like Spirals and Radar, this controls radial (in/out) and angular (spin) motion.</li>
+                    </ul>
+
+                    <h4>Depth-Based Color</h4>
+                    <p>When <strong>Use Depth-Based Color</strong> is enabled, the grid will change its color when it gets close to another object's surface. This requires scene depth information and may not work with all rendering setups. <strong>Depth Color</strong> sets the target color, and <strong>Depth Range</strong> controls the distance of the effect.</p>
+
+                </article>
+                <article>
+                    <h3>Grid Mask</h3>
+                    <p>Allows you to use a texture to mask the grid effect, controlling where it appears on your model. This is useful for restricting the pattern to specific areas without needing to create separate materials.</p>
+                    <ul>
+                        <li><strong>Use Grid Mask:</strong> Toggles the masking feature on or off.</li>
+                        <li><strong>Grid Mask:</strong> The texture used to mask the grid. The grid pattern will only appear where this texture is white (based on the red channel).</li>
+                        <li><strong>Invert Mask:</strong> Inverts the mask, so the grid pattern appears where the mask texture is black.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Detail Texture</h3>
+                    <p>Blends a secondary texture over the base material. This is a powerful way to add high-frequency detail, like fabric weaves, scratches, or grunge, without needing a high-resolution base texture.</p>
+                    <ul>
+                        <li><strong>Detail Texture:</strong> The secondary texture to overlay. It's often a small, tileable grayscale texture.</li>
+                        <li><strong>Blend Mode:</strong> How the detail texture combines with the base color: <code>Overlay</code>, <code>Multiply</code>, <code>Additive</code>, or <code>Soft Light</code>.</li>
+                        <li><strong>Intensity:</strong> How strongly the detail texture is blended with the base material.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Scanlines</h3>
+                    <p>Simulates the look of a retro CRT monitor by overlaying a pattern of dark, scrolling lines. This screen-space effect is great for holographic displays, computer terminals, or retro-futuristic aesthetics.</p>
+                    <ul>
+                        <li><strong>Color:</strong> The color and transparency of the scanlines. Typically black with some transparency.</li>
+                        <li><strong>Density:</strong> How many scanlines appear on screen.</li>
+                        <li><strong>Speed:</strong> How fast the scanlines scroll.</li>
+                        <li><strong>Thickness:</strong> The thickness of the scanlines.</li>
+                        <li><strong>Direction:</strong> The direction of the scanlines (Vertical or Horizontal).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Interlacing</h3>
+                    <p>A simple but effective screen-space effect that darkens every other horizontal row of pixels on the screen. This mimics the look of old interlaced video signals, adding a subtle retro or lo-fi quality to the material.</p>
+                    <ul>
+                        <li><strong>Intensity:</strong> How dark the interlaced lines are. A value of 1 will make them completely black.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Noise/Grain</h3>
+                    <p>Adds a layer of animated noise over the final color, similar to film grain or digital sensor noise. This screen-space effect can be used to add texture, break up smooth gradients, or enhance a lo-fi or cinematic aesthetic. The animation is stepped, not smooth, to better simulate digital noise.</p>
+                    <ul>
+                        <li><strong>Color:</strong> The color of the noise particles. Can be a solid color or hue-shifted.</li>
+                        <li><strong>Intensity:</strong> The strength of the noise effect.</li>
+                        <li><strong>Animation Speed:</strong> The 'frames per second' of the noise animation. Lower values look like slow-updating static, while higher values resemble fast film grain.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Wetness</h3>
+                    <p>Simulates a wet surface by darkening the material, boosting its smoothness, and optionally adding animated rain ripples. Great for rainy scenes, recently drenched props, or watery creatures.</p>
+                    <ul>
+                        <li><strong>Wetness Strength:</strong> The overall intensity of the wet look.</li>
+                        <li><strong>Darkening:</strong> How much the surface darkens when wet.</li>
+                        <li><strong>Wet Smoothness:</strong> The smoothness boost applied to wet areas, sharpening specular highlights.</li>
+                        <li><strong>Rain Ripple Map:</strong> A normal map used for the rain ripple animation. The ripples use the map's normal data to distort reflections.</li>
+                        <li><strong>Ripple Scale:</strong> The size of the rain ripple pattern.</li>
+                        <li><strong>Ripple Speed:</strong> How fast the ripples animate.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Decal</h3>
+                    <p>Overlays up to three independent textures onto the surface like stickers or painted emblems, without needing a separate decal projection setup. Each decal layer has its own texture, UV set, blend mode, strength, and rotation, and can be enabled or disabled individually.</p>
+                    <ul>
+                        <li><strong>Enable Decal 1/2/3:</strong> Toggles each decal layer on or off.</li>
+                        <li><strong>Decal Texture:</strong> The texture to overlay. Use its Tiling/Offset to position it.</li>
+                        <li><strong>Decal UV Set:</strong> Selects the coordinate channel (UV0 or UV1) for the decal.</li>
+                        <li><strong>Blend Mode:</strong> How the decal blends with the base color (<code>Alpha Blend</code>, <code>Multiply</code>, <code>Additive</code>, <code>Lighten</code>, or <code>Overlay</code>).</li>
+                        <li><strong>Strength:</strong> The overall opacity/strength of the decal.</li>
+                        <li><strong>Rotation:</strong> Rotates the decal around the center of the UV space (0&ndash;360 degrees).</li>
+                        <li><strong>AudioLink Band / Strength:</strong> Each decal has an AudioLink band selector and strength multiplier, letting the decal pulse or fade with the music (e.g. a beat-synced logo or muzzle flash).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>PBR Decals</h3>
+                    <p>Each of the shader's three decal layers now supports PBR (Physically Based Rendering) overrides. When enabled, a decal can modify the surface's normal map, metallic, and smoothness values in addition to its base color &mdash; allowing physically accurate decals like metallic bolts, bumped scars, leather patches, or glossy stickers.</p>
+                    <ul>
+                        <li><strong>Affects PBR:</strong> Per-decal toggle that enables the PBR properties below.</li>
+                        <li><strong>Decal Normal Map:</strong> A tangent-space normal map applied in the decal's UV region. Blended with the surface normal using the decal's alpha as the blend factor.</li>
+                        <li><strong>Normal Strength:</strong> Controls the intensity of the decal's normal map (range: 0&ndash;2).</li>
+                        <li><strong>Metallic:</strong> Overrides the surface metallic value within the decal region (range: 0&ndash;1).</li>
+                        <li><strong>Smoothness:</strong> Overrides the surface smoothness within the decal region (range: 0&ndash;1).</li>
+                    </ul>
+                    <p>The PBR overrides are blended using the decal texture's alpha channel multiplied by the decal strength, so they naturally fade at the decal's edges. This feature is available on all three decal layers independently.</p>
+                </article>
+                <article>
+                    <h3>Hologram</h3>
+                    <p>Simulates a sci-fi holographic projection with animated scanlines, a glowing edge rim, and subtle flicker. It is layered over the existing surface color and lighting, making it ideal for projected displays, force-field emitters, and holographic avatars.</p>
+                    <ul>
+                        <li><strong>Hologram Color:</strong> The color tint of the hologram projection. Can be hue-shifted.</li>
+                        <li><strong>Scanline Tiling:</strong> The density of the horizontal hologram scanlines.</li>
+                        <li><strong>Scanline Speed:</strong> How fast the scanlines sweep across the surface.</li>
+                        <li><strong>Rim Power:</strong> The falloff sharpness of the hologram's edge glow.</li>
+                        <li><strong>Hologram Strength:</strong> How strongly the hologram blends over the base surface.</li>
+                        <li><strong>Alpha Modulation:</strong> Modulates the material's transparency with the scanline pattern, adding a flickering, translucent quality.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="effects">
+                <h2>Effects</h2>
+                <p>A collection of miscellaneous visual effects.</p>
+                <article>
+                    <h3>Rim Glow</h3>
+                    <p>Adds a glow to the edges of the object based on the viewing angle (a Fresnel effect). This is great for highlighting silhouettes.</p>
+                    <ul>
+                        <li><strong>Use Gradient:</strong> If enabled, uses a gradient texture to color the rim glow instead of a solid color.</li>
+                        <li><strong>Color / Gradient:</strong> The color or texture ramp for the rim glow.</li>
+                        <li><strong>Power:</strong> Controls the falloff of the rim effect. Higher values create a tighter, sharper rim.</li>
+                        <li><strong>Intensity:</strong> The brightness of the rim glow.</li>
+                        <li><strong>Rim Mode:</strong> Switches between <code>Outer</code> (glow on the outer silhouette edge) and <code>Inner</code> (inverted, glowing toward the interior).</li>
+                        <li><strong>Rim Depth Mode:</strong> Switches the rim response between <code>Fresnel</code> (based on viewing angle) and <code>Depth</code> (based on scene depth, highlighting where the object is close to other geometry). <strong>Rim Depth Width</strong> controls the width of the depth-based rim band. Depth mode requires scene depth information.</li>
+                        <li><strong>Environmental Rim:</strong> Tints and modulates the rim glow using ambient spherical harmonics and reflection probes, so the rim reacts to the surrounding environment instead of a fixed color.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Intersection Effect</h3>
+                    <p>Creates a visual effect where the material's surface interacts with other objects in the world. This is ideal for force fields, liquid surfaces, or soft proximity indicators. This effect requires the material's Render Mode to be set to Transparent or Additive.</p>
+                    <ul>
+                        <li><strong>Mode:</strong> Selects the effect's behavior. <code>Color</code> fades to a specified color at the intersection point. <code>Alpha</code> fades out the object's transparency at the intersection point, creating a soft blend.</li>
+                        <li><strong>Color:</strong> The color that appears at the point of intersection (only in Color mode).</li>
+                        <li><strong>Distance:</strong> The distance from an intersection over which the effect will fade in.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Pulse</h3>
+                    <p>Adds a pulsing animation to the material's emission strength, creating a "heartbeat" effect.</p>
+                    <ul>
+                        <li><strong>Speed:</strong> How fast the emission pulses.</li>
+                        <li><strong>Intensity:</strong> How bright the pulse is.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Outline</h3>
+                    <p>Renders a solid outline around the object. The outline will be correctly hidden by effects like Dissolve and Clipping Mask.</p>
+                    <p class="warning">Performance Impact: Outlines can be expensive as they require an additional rendering pass.</p>
+                    <ul>
+                        <li><strong>Color:</strong> The color of the outline.</li>
+                        <li><strong>Outline Space:</strong> Chooses between Screen Space (constant screen pixel width), Local Space (scales with both distance and object scale), and World Space (scales with distance, independent of object scale).</li>
+                        <li><strong>Width:</strong> The width of the outline.</li>
+                        <li><strong>Use Vertex Color for Width:</strong> Uses the mesh's vertex colors (Red channel) to control the outline width, allowing for artistic variation.</li>
+                        <li><strong>Outline Min Width / Max Width:</strong> Clamp the outline width so it never grows past <strong>Max Width</strong> at close range or shrinks below <strong>Min Width</strong> in the distance, preventing outlines from overwhelming or disappearing at different camera distances.</li>
+                        <li><strong>Outline Normal Source:</strong> Selects which vertex stream supplies the smoothed normals used to push the outline out: <code>Mesh Normals</code>, <code>Vertex Colors</code>, <code>UV2</code>, or <code>UV3</code>. Picking a baked vertex stream (Vertex Colors / UV2 / UV3) eliminates the split-normal seams common on low-poly meshes.</li>
+                        <li><strong>Outline Noise Scale / Speed / Strength:</strong> Applies an animated noise jitter to the outline vertices for a lively, hand-drawn or burning edge effect. <strong>Scale</strong> sets the noise frequency, <strong>Speed</strong> its animation rate, and <strong>Strength</strong> how far the vertices jitter.</li>
+                        <li><strong>Outline Pulse Speed / Strength:</strong> Makes the outline "breathe" by oscillating its width over time. <strong>Pulse Speed</strong> sets the oscillation rate and <strong>Pulse Strength</strong> sets the amplitude of the pulsing.</li>
+                    </ul>
+                    <h4>Outline Texture &amp; Gradient</h4>
+                    <ul>
+                        <li><strong>Outline Texture:</strong> An optional texture that tints and modulates the outline color. Its <strong>UV Set</strong> selector picks between UV0 and UV1, and <strong>Scroll Speed X/Y</strong> scroll the texture across the outline.</li>
+                        <li><strong>Enable Outline Gradient:</strong> Tints the outline from a <strong>Gradient Top Color</strong> to a <strong>Gradient Bottom Color</strong> based on the vertical position on the object, for a two-tone gradient outline.</li>
+                    </ul>
+                    <h4>Outline Stencil Buffer Controls</h4>
+                    <p>Allows independent stencil testing and writing specifically during the inverted-hull outline pass. This is crucial for preventing outlines from overlapping or dirtying inner face meshes, hair strands, or layered clothing.</p>
+                    <ul>
+                        <li><strong>Stencil Ref:</strong> The reference stencil value for the outline pass (0&ndash;255).</li>
+                        <li><strong>Read / Write Mask:</strong> Bitmasks controlling which bits of the stencil buffer the outline pass reads or writes.</li>
+                        <li><strong>Comparison (Comp):</strong> Stencil comparison function against the current buffer (e.g. <code>NotEqual</code> to skip drawing outlines over interior surfaces stamped with matching stencil IDs).</li>
+                        <li><strong>Pass / Fail / ZFail:</strong> Stencil buffer operations performed on pass, test failure, or depth test failure.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Shell Fur Extrusion</h3>
+                    <p>Available when using the <code>FireRat/FireRatShader_Fur</code> <span class="badge badge-brp">BRP</span> or <code>FireRat/FireRatShader_URP_Fur</code> <span class="badge badge-urp">URP</span> master shader variants. Extrudes up to 8 concentric shell layers along vertex normals to render volumetric fur, velvet, and plush textures.</p>
+                    <ul>
+                        <li><strong>Shell Layers:</strong> Number of active extruded shell passes (1 to 8). Inactive passes collapse to zero vertices with 0% rasterization cost.</li>
+                        <li><strong>Length:</strong> Physical extrusion distance of the fur strands in object/world units.</li>
+                        <li><strong>Fur Mask Texture:</strong> Grayscale noise map controlling strand distribution and density across the surface.</li>
+                        <li><strong>Density:</strong> Tiling frequency of the fur strand noise pattern.</li>
+                        <li><strong>Tip Thinning:</strong> Progressively sharpens strand alpha thresholds toward outer shell layers.</li>
+                        <li><strong>Gravity Vector:</strong> Direction and magnitude of physical gravity pulling fur tips downward.</li>
+                        <li><strong>Wind Speed &amp; Strength:</strong> Procedural wave oscillation simulating breeze rustling through fur.</li>
+                        <li><strong>Root &amp; Tip Colors:</strong> Two-tone vertical color gradient from strand base to outer tip.</li>
+                        <li><strong>Root AO Shadowing:</strong> Simulates ambient occlusion darkening at the base of the fur coat.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Ripple Effect</h3>
+                    <p>Creates a concentric ripple effect that distorts vertices and color, emanating from a point in the object's UV space.</p>
+                    <ul>
+                        <li><strong>Center (UV):</strong> The origin of the ripples in UV space (X,Y).</li>
+                        <li><strong>Ripple Count:</strong> The number of concentric ripple rings.</li>
+                        <li><strong>Fadeout Radius:</strong> The distance from the center at which the ripples fade out completely.</li>
+                        <li><strong>Width:</strong> The width of each individual ripple ring.</li>
+                        <li><strong>Color:</strong> The color of the ripples.</li>
+                        <li><strong>Strength:</strong> The brightness of the ripple color.</li>
+                        <li><strong>Distortion Strength:</strong> How much the ripple displaces the model's vertices along their normals.</li>
+                        <li><strong>Progress / Animate:</strong> Manually control or automatically animate the ripple's phase.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Vertex Animation Texture (VAT)</h3>
+                    <p>Applies pre-baked vertex animation from a texture instead of a Skinned Mesh Renderer. Each row of the texture is a frame of the animation. Useful for pre-baked cloth, fluids, destruction, or any heavily animated mesh that needs to stay performant.</p>
+                    <ul>
+                        <li><strong>Position Texture:</strong> The VAT texture containing the position offsets. Each row is a frame.</li>
+                        <li><strong>Frame Count:</strong> The total number of animation frames in the texture.</li>
+                        <li><strong>Speed:</strong> The playback speed of the vertex animation.</li>
+                        <li><strong>Bounds Min / Bounds Max:</strong> The bounds used to remap the packed vertex positions back to world space. These must match the bounds used when baking the animation.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>PS1 Retro Vertex Snapping</h3>
+                    <p>Quantizes vertex positions to a coarse grid to emulate the classic wobbly PlayStation 1 aesthetic. Great for retro-styled avatars and worlds, especially combined with pixelation and affine-style textures.</p>
+                    <ul>
+                        <li><strong>Enable PS1 Vertex Snapping:</strong> Master toggle.</li>
+                        <li><strong>Snap Resolution:</strong> The grid resolution vertices snap to (higher = finer wobble).</li>
+                        <li><strong>Snap Space:</strong> Chooses between <code>Screen Space</code> (classic console look) and <code>Object Space</code> snapping.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>LookAt Billboarding</h3>
+                    <p>Dynamically rotates mesh vertices so the object always faces the active camera &mdash; useful for sprites, eye highlights, floating companions, and particles that should never be seen edge-on. Applied consistently in shadow, depth, and motion-vector passes.</p>
+                    <ul>
+                        <li><strong>Enable LookAt Billboarding:</strong> Master toggle.</li>
+                        <li><strong>Mode:</strong> <code>Full 3D</code> faces all axes toward the camera; <code>Y-Axis Only</code> rotates horizontally while staying upright.</li>
+                        <li><strong>Strength:</strong> Blends between normal orientation and full billboarding (0&ndash;1).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Screen-Space Refraction</h3>
+                    <p><span class="badge badge-urp">URP Only</span> Provides true screen-space refraction for glass, water, and crystal-like materials by sampling the camera's opaque texture with UV offsets derived from the surface normal. This creates realistic distortion of the background scene visible through transparent geometry.</p>
+                    <ul>
+                        <li><strong>Screen Refraction:</strong> Master toggle to enable the effect.</li>
+                        <li><strong>Refraction Strength:</strong> Controls the intensity of the UV distortion (range: 0&ndash;1). Higher values produce more pronounced refraction.</li>
+                        <li><strong>Index of Refraction (IOR):</strong> The refractive index of the simulated material (range: 1.0&ndash;2.0). Water is approximately <code>1.33</code>, glass is approximately <code>1.5</code>.</li>
+                    </ul>
+                    <p class="warning"><strong>URP Only:</strong> This feature uses URP's <code>_CameraOpaqueTexture</code> and is not available in the Built-in Render Pipeline. The BRP variant has the properties for material compatibility but the effect is a no-op. Ensure "Opaque Texture" is enabled in your URP Renderer Settings.</p>
+                </article>
+                <article>
+                    <h3>Emission Pulse</h3>
+                    <p>Animates the emission intensity over time using various waveform patterns, creating pulsing, breathing, or flashing glow effects without requiring any animation controllers or scripts.</p>
+                    <ul>
+                        <li><strong>Emission Pulse:</strong> Master toggle to enable pulsing emission.</li>
+                        <li><strong>Pulse Speed:</strong> The frequency of the pulse animation.</li>
+                        <li><strong>Pulse Min / Max:</strong> The range of emission intensity to pulse between.</li>
+                        <li><strong>Pulse Mode:</strong> Selects the waveform shape: <code>Sine</code> (smooth), <code>Square</code> (on/off), <code>Triangle</code> (linear ramp), <code>Sawtooth</code> (ramp up, snap down).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Outline Width Map</h3>
+                    <p>Allows per-vertex control over the outline thickness using a texture map. This enables artistic effects like thicker outlines on silhouette edges and thinner outlines on interior details.</p>
+                    <ul>
+                        <li><strong>Outline Width Map:</strong> A grayscale texture where white = full outline width and black = zero outline width. Multiplied with the global Outline Width value.</li>
+                    </ul>
+                    <p>This control appears within the Outline settings when Outline is enabled.</p>
+                </article>
+            </section>
+
+            <section id="glitches">
+                <h2>Glitches</h2>
+                <p>Effects designed to create digital distortion and glitch aesthetics.</p>
+                <article>
+                    <h3>Vertex Distortion</h3>
+                    <p>Displaces the model's vertices in various patterns to create a glitchy shape animation. Each mode has unique properties for Strength, Speed, and other controls.</p>
+                    <ul>
+                        <li><strong>Sine X/Z:</strong> Creates a sine wave that travels along an axis.</li>
+                        <li><strong>Ripple:</strong> Creates a circular ripple emanating from the object's center.</li>
+                        <li><strong>Noise:</strong> Randomly displaces vertices for a chaotic, noisy look.</li>
+                        <li><strong>Swirl/Twist:</strong> Rotates vertices around the object's Y-axis.</li>
+                        <li><strong>Texture:</strong> Displaces vertices based on the R/G channels of a texture map.</li>
+                        <li><strong>Stretch/Pulse/Inflate:</strong> Scales the model along an axis or uniformly.</li>
+                        <li><strong>Shear:</strong> Skews the model along an axis.</li>
+                        <li><strong>Wind:</strong> Simulates a gentle, wave-like wind blowing across the surface.</li>
+                        <li><strong>Wobble/Vortex:</strong> Creates more complex, chaotic motions.</li>
+                        <li><strong>Flap/Butterfly Flap:</strong> Creates a wing-flapping motion, with options to pivot from UV edges for precise control.</li>
+                        <li><strong>Strength:</strong> How far the vertices are displaced.</li>
+                        <li><strong>Speed:</strong> The speed of the distortion animation.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Glitch Flicker</h3>
+                    <p>Applies a flickering effect to the material's color using different patterns. Strength controls how dark the flicker gets.</p>
+                    <ul>
+                        <li><strong>Random/Pulse:</strong> Simple flickering patterns.</li>
+                        <li><strong>Scanlines:</strong> A dark line that scrolls across the screen.</li>
+                        <li><strong>Blocky:</strong> Divides the screen into blocks that flicker randomly.</li>
+                        <li><strong>Channel Shift:</strong> Causes individual R, G, or B color channels to flicker out.</li>
+                        <li><strong>Interference:</strong> Simulates horizontal interference lines, like a bad TV signal.</li>
+                        <li><strong>Signal Loss:</strong> Occasionally replaces the image with digital static.</li>
+                        <li><strong>Speed:</strong> The speed of the flicker.</li>
+                        <li><strong>Intensity:</strong> The strength of the flicker (how dark it gets).</li>
+                        <li><strong>Scanline Mode Extras:</strong> When the <code>Scanlines</code> mode is selected, additional controls appear: <strong>Reverse Scroll</strong> reverses the scanline direction, <strong>Direction</strong> switches between vertical and horizontal lines, <strong>Density</strong> sets how many lines appear, and <strong>Thickness</strong> sets the line width. In <code>Blocky</code> mode, <strong>Block Size</strong> controls the size of the flickering blocks.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Transparency Glitch</h3>
+                    <p>Causes the Glitch Flicker effect to also affect the material's transparency, creating see-through glitches. This is a sub-option of Glitch Flicker.</p>
+                    <ul>
+                        <li><strong>Strength:</strong> How much the flicker affects transparency.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="transitions">
+                <h2>Transitions</h2>
+                <p>Effects used to make a material appear or disappear.</p>
+                <article>
+                    <h3>Proximity Effects</h3>
+                    <p>Triggers visual surface transformations when approaching or moving away from a reference position (the active VR camera / player head, the object pivot, or a custom world position).</p>
+                    <ul>
+                        <li><strong>Enable Proximity Effect:</strong> Master toggle.</li>
+                        <li><strong>Proximity Mode:</strong> Selects the reference position:
+                            <ul>
+                                <li><code>Camera / Player:</code> Distance is calculated to the VR camera / player's head.</li>
+                                <li><code>Object Pivot:</code> Distance is calculated to the object's transform origin.</li>
+                                <li><code>Custom World Position:</code> Distance is calculated to a fixed (X,Y,Z) world coordinate set in <strong>Custom Position</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Proximity Action:</strong> Visual response applied as proximity factor increases:
+                            <ul>
+                                <li><code>Glow / Emission:</code> Adds an emissive glow (<strong>Proximity Color</strong>).</li>
+                                <li><code>Dissolve / Fade:</code> Fades out alpha transparency smoothly.</li>
+                                <li><code>Dither Transparency:</code> Clips surface pixels using a screen-door dither pattern.</li>
+                                <li><code>Color Tint:</code> Blends surface albedo toward <strong>Proximity Color</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Radius:</strong> Maximum distance threshold at which proximity begins.</li>
+                        <li><strong>Softness:</strong> Soft-edge transition falloff as a percentage of the radius.</li>
+                        <li><strong>Invert Proximity:</strong> Inverts distance response so the effect triggers when moving far away instead of close.</li>
+                        <li><strong>Proximity Color / Animate Hue:</strong> HDR color with full support for the Global Color Shift timeline.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Dithered Transparency</h3>
+                    <p>Fades the object out with a Bayer-matrix screen-door stipple instead of alpha blending. Dithered cutouts behave like opaque geometry, so they avoid transparency sorting artifacts &mdash; ideal for transparent fabrics, hair, and cross-fades in VR.</p>
+                    <ul>
+                        <li><strong>Dither Strength:</strong> Controls how aggressively the pattern dissolves the surface (<code>0</code> = sharp cutout, <code>1</code> = full stipple).</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Chroma Key</h3>
+                    <p>Masks out a specific color from the final output, creating a green-screen or blue-screen effect. Useful for live streaming overlays, video production, or creative transparency effects.</p>
+                    <ul>
+                        <li><strong>Chroma Key:</strong> Master toggle to enable chroma keying.</li>
+                        <li><strong>Key Color:</strong> The color to remove from the output.</li>
+                        <li><strong>Threshold:</strong> Controls how closely a pixel must match the key color to be removed. Lower values create a tighter key (more precise), higher values remove a broader range of similar colors.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Distance Fade</h3>
+                    <p>Fades the object out based on its distance from the camera. Useful for level-of-detail (LOD) systems.</p>
+                    <ul>
+                        <li><strong>Start Distance:</strong> The distance from the camera where the fade begins.</li>
+                        <li><strong>Range:</strong> How quickly the object fades out over distance.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Near Camera Fade</h3>
+                    <p>Fades the object out when the camera gets too close, preventing transparent materials from filling the view or clipping through the player's head in VR.</p>
+                    <ul>
+                        <li><strong>Near Camera Fade:</strong> Toggles the proximity fade.</li>
+                        <li><strong>Near Camera Fade Radius:</strong> The distance from the camera at which the fade begins.</li>
+                        <li><strong>Near Camera Fade Range:</strong> The distance over which the object fully fades out.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Dissolve</h3>
+                    <p>Makes the object appear or disappear using a procedural pattern, often with a glowing edge.</p>
+                    <h4>Common Properties</h4>
+                    <ul>
+                        <li><strong>Amount:</strong> The progress of the dissolve effect (0-1).</li>
+                        <li><strong>Edge Width:</strong> The width of the glowing edge on the dissolve line.</li>
+                        <li><strong>Edge Color / Gradient:</strong> The color or texture ramp for the glowing edge.</li>
+                        <li><strong>Animate:</strong> Automatically animates the dissolve amount over time. You can choose between a simple Ping-Pong/Loop mode or an Advanced Timing mode that gives you full control over the animation cycle.</li>
+                    </ul>
+                    <h4>Mode-Specific Properties</h4>
+                    <ul>
+                        <li><strong>Mode:</strong> The pattern of the dissolve effect (Noise, Wave, Spherical, Glitch).</li>
+                        <li><strong>Noise Mode:</strong> Uses a <strong>Dissolve Map</strong> texture to control the pattern.</li>
+                        <li><strong>Wave Mode:</strong> Uses a <strong>Direction</strong> vector and a <strong>Scale</strong> value to control a directional wipe.</li>
+                        <li><strong>Spherical Mode:</strong> Uses a world-space <strong>Origin</strong> point and a <strong>Scale</strong> value to control a spherical reveal. Can be set to use the object's center.</li>
+                        <li><strong>Glitch Mode:</strong> Uses a <strong>Block Size</strong> to create a blocky, digital dissolve. The block pattern is hashed in world space, so it stays perfectly stable and VR-safe (consistent across both eyes) regardless of camera movement.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Planar Wipe</h3>
+                    <p>Reveals the object with a smooth, directional wipe across its surface. Great for dramatic entrances.</p>
+                    <ul>
+                        <li><strong>Direction:</strong> The direction the wipe travels across the object.</li>
+                        <li><strong>Progress:</strong> The progress of the wipe effect.</li>
+                        <li><strong>Hardness:</strong> The sharpness of the wipe's edge.</li>
+                        <li><strong>Animate:</strong> Automatically animates the wipe progress over time. You can choose between a simple Ping-Pong/Loop mode or an Advanced Timing mode that gives you full control over the animation cycle.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Vertex Collapse</h3>
+                    <p>Animates the model's vertices collapsing into its center point, as if being sucked into a black hole.</p>
+                    <ul>
+                        <li><strong>Amount:</strong> The progress of the collapse effect (0=Normal, 1=Collapsed).</li>
+                        <li><strong>Animate:</strong> Automatically animates the collapse amount over time. You can choose between a simple Ping-Pong/Loop mode or an Advanced Timing mode that gives you full control over the animation cycle.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Effect Distance LOD</h3>
+                    <p>Automatically disables expensive shader effects when the object is far from the camera, providing a significant performance boost for distant objects without requiring Unity LOD Groups. The transition is smooth and configurable.</p>
+                    <ul>
+                        <li><strong>Effect LOD Start Distance:</strong> The camera distance at which effects begin to fade out.</li>
+                        <li><strong>Effect LOD End Distance:</strong> The camera distance at which effects are fully disabled.</li>
+                    </ul>
+                    <p>Effects controlled by the LOD system include procedural textures, overlays, surface styles, and other expensive per-pixel operations. Core rendering (base texture, lighting, normal maps) is always preserved regardless of distance.</p>
+                </article>
+            </section>
+
+            <section id="advanced-settings">
+                <h2>Advanced Settings</h2>
+                <p>Low-level controls for rendering and performance.</p>
+                <article>
+                    <h3>Parallax Mapping</h3>
+                    <p>Uses a height map to create the illusion of depth and relief on a flat surface. This can add significant detail without extra geometry, but can be performance-intensive.</p>
+                    <ul>
+                        <li><strong>Height Map:</strong> A grayscale texture where white is high and black is low.</li>
+                        <li><strong>Strength:</strong> How deep the parallax effect appears.</li>
+                        <li><strong>Enable Parallax Occlusion Mapping (POM):</strong> Upgrades the effect to multi-step height tracing for a much higher quality depth result with proper self-occlusion. Performance-intensive and only available on the High performance level. <strong>Max Steps</strong> is the step limit used at steep angles, and <strong>Min Steps</strong> the reduced step count used at glancing angles.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Clipping Mask</h3>
+                    <p>Uses a texture to perform a hard clip on the material, making parts of it invisible. Unlike transparency, this is an all-or-nothing effect that works in any render mode.</p>
+                    <ul>
+                        <li><strong>Clipping Mask:</strong> The texture used for clipping.</li>
+                        <li><strong>Mask Scroll Speed X/Y:</strong> Scrolls the mask texture to create animated effects.</li>
+                        <li><strong>Mask Channel:</strong> Selects which color channel (R, G, B, or A) of the texture to use for the mask.</li>
+                        <li><strong>Invert Mask:</strong> Inverts the mask logic, making visible areas invisible and vice-versa.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Render States</h3>
+                    <ul>
+                        <li><strong>Culling:</strong> Controls which faces of the mesh are rendered (Back, Front, or Off for double-sided).</li>
+                        <li><strong>Shadow Culling:</strong> Independent cull mode for the ShadowCaster pass. <code>Back</code> (default) is faster for closed meshes; use <code>Off</code> for double-sided shadows on hair, cloth, or foliage.</li>
+                        <li><strong>Polygon Offset Factor / Units:</strong> Applies a depth bias to resolve z-fighting between co-planar surfaces (e.g. decals, blush overlays, layered clothing).</li>
+                        <li><strong>Source/Destination Blend:</strong> Low-level control over how colors are blended in <code>Transparent</code> mode. The <code>Additive</code> render mode sets these automatically. Only change if you know what you're doing!</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Camera &amp; Mirror Visibility</h3>
+                    <p>Controls from which cameras the material is rendered. Useful for hiding parts from mirrors, showing elements only in VR headset eyes, or creating desktop/stream-exclusive effects. Enforced consistently across the main pass as well as shadow, depth-normals, depth-only, and motion-vector passes.</p>
+                    <ul>
+                        <li><strong>Visibility Mode:</strong> <code>Show Always</code>, <code>Hide In Mirrors</code>, <code>Show Only In Mirrors</code>, <code>VR Headset Eyes Only</code>, or <code>Desktop Stream Spectator Only</code>.</li>
+                        <li><strong>Mirror Detection Method:</strong> How mirror/reflection cameras are identified: <code>Auto Oblique And Inverted Transform</code> (recommended), <code>Oblique Matrix Only</code>, or <code>Inverted Transform Only</code>.</li>
+                        <li><strong>Custom Camera Filter:</strong> A layer mask for fully custom per-camera control.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Stencil Buffer</h3>
+                    <p>The <strong>Stencil Buffer</strong> is an invisible GPU "mask layer" for your screen. Think of it like <strong>painter's masking tape applied pixel-by-pixel onto the screen</strong>.</p>
+                    <p>Out of the box, the default settings (<code>Comp = Always</code>, <code>Pass = Keep</code>) do nothing—the shader simply renders normally on every pixel. But when configured, it allows materials on different objects to communicate with each other visually without touching C# code.</p>
+                    <h4>Common Use Cases (Why It's There)</h4>
+                    <ol>
+                        <li><strong>Portals &amp; Magic Windows</strong>
+                            <ul>
+                                <li><strong>Object A (The Portal Doorframe):</strong> Draws an invisible mask by setting <code>Ref = 1</code> and <code>Pass = Replace</code>. It "stamps" the number <code>1</code> onto the screen pixels where the door is.</li>
+                                <li><strong>Object B (The Fantasy World inside):</strong> Sets <code>Ref = 1</code> and <code>Comp = Equal</code>. It will <strong>ONLY</strong> render on pixels that have the number <code>1</code> stamped on them. From any other angle or outside the doorframe, Object B is completely invisible!</li>
+                            </ul>
+                        </li>
+                        <li><strong>X-Ray &amp; Wall See-Through Effects</strong>
+                            <ul>
+                                <li>The main character writes <code>Ref = 2</code>, <code>Pass = Replace</code> when visible.</li>
+                                <li>An X-Ray outline material sets <code>Ref = 2</code>, <code>Comp = NotEqual</code>. When occluded behind a wall, it draws the glowing silhouette only where the main body isn't directly visible.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Decal &amp; UI Masking:</strong> Restrict complex geometric effects (like a holographic grid or glowing scanline) so they only show up inside a specific 3D volume, badge, or lens on an avatar.</li>
+                    </ol>
+                    <h4>What Each Inspector Setting Means (In Plain English)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Setting</th>
+                                <th>Analogy / Meaning</th>
+                                <th>Default</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Stencil Ref</strong></td>
+                                <td><strong>The ID Tag (0&ndash;255):</strong> The number stamp you want to write or look for (e.g. <code>1</code>).</td>
+                                <td><code>0</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Comparison (Comp)</strong></td>
+                                <td><strong>The Rule:</strong> When should this pixel render?<br><code>Always</code> &mdash; Render everywhere (default).<br><code>Equal</code> &mdash; Render <strong>ONLY</strong> where screen pixel ID matches <code>Ref</code>.<br><code>NotEqual</code> &mdash; Render <strong>ONLY</strong> where screen pixel ID is different.<br><code>Never</code> &mdash; Never render.</td>
+                                <td><code>Always</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pass</strong></td>
+                                <td><strong>Action on Render Success:</strong> What to do to the screen pixel ID when this object draws.<br><code>Keep</code> &mdash; Leave screen pixel ID untouched (default).<br><code>Replace</code> &mdash; Overwrite screen pixel ID with our <code>Ref</code> number.<br><code>Zero</code> &mdash; Reset screen pixel ID to <code>0</code>.</td>
+                                <td><code>Keep</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fail / ZFail</strong></td>
+                                <td>What to do if the stencil test fails (<code>Fail</code>) or depth/wall test fails (<code>ZFail</code>).</td>
+                                <td><code>Keep</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Read / Write Mask</strong></td>
+                                <td>Bitwise masks (advanced, usually left at <code>255</code>).</td>
+                                <td><code>255</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>Quick Example Setup (Portal / Magic Window)</h4>
+                    <p>If you want to create a magic portal window:</p>
+                    <ol>
+                        <li><strong>Mask Material (Door Window):</strong>
+                            <ul>
+                                <li>Render Mode: <code>Opaque</code> or <code>Cutout</code></li>
+                                <li><strong>Stencil Ref:</strong> <code>1</code></li>
+                                <li><strong>Pass:</strong> <code>Replace</code></li>
+                                <li><strong>Comparison:</strong> <code>Always</code></li>
+                            </ul>
+                        </li>
+                        <li><strong>Hidden Object Material (Object inside):</strong>
+                            <ul>
+                                <li><strong>Stencil Ref:</strong> <code>1</code></li>
+                                <li><strong>Comparison:</strong> <code>Equal</code></li>
+                                <li><strong>Pass:</strong> <code>Keep</code></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </article>
+                <article>
+                    <h3>Render State Overrides</h3>
+                    <p>Advanced hardware-level rendering controls for specialized effects and workflows. These settings directly control GPU pipeline state and should be used with care.</p>
+                    <ul>
+                        <li><strong>Depth Test (ZTest):</strong> Controls when a pixel passes the depth test. Default is <code>LEqual</code> (standard rendering). Set to <code>Always</code> to render through walls (useful for VR overlays, HUD elements, X-ray glasses). Other options: <code>Less</code>, <code>Greater</code>, <code>GEqual</code>, <code>Equal</code>, <code>NotEqual</code>, <code>Never</code>.</li>
+                        <li><strong>Color Write Mask:</strong> Controls which color channels are written to the framebuffer. Default is <code>RGBA</code> (all channels). Set to <code>0</code> to create invisible geometry that only writes to the stencil or depth buffer. Individual channels (R, G, B, A) can be toggled independently.</li>
+                    </ul>
+                    <p class="warning"><strong>Warning:</strong> Changing <strong>ZTest</strong> to anything other than <code>LEqual</code> can cause objects to render in unexpected order or appear through walls. Use with care, especially in VR.</p>
+                </article>
+                <article>
+                    <h3>VRChat Fallback Tag</h3>
+                    <p>Sets the material's <code>VRCFallback</code> override tag, which controls which standard shader VRChat swaps in when custom shaders are blocked by safety settings (e.g. when a viewer hides custom shaders or on incompatible platforms).</p>
+                    <ul>
+                        <li><strong>VRChat Fallback Tag:</strong> Selects the fallback shader (<code>Toon</code>, <code>Standard</code>, <code>Unlit</code>, <code>VertexLit</code>, <code>Cutout</code>, <code>Transparent</code>, and more).</li>
+                    </ul>
+                    <p>Picking a fallback that matches your render mode keeps the avatar looking reasonable instead of flashing white for users with custom shaders hidden.</p>
+                </article>
+                <article>
+                    <h3>HSV Mask</h3>
+                    <p>A texture-driven mask that controls where HSV (Hue, Saturation, Value) color adjustments are applied. This allows selective color grading on specific parts of the material while leaving other areas untouched.</p>
+                    <ul>
+                        <li><strong>HSV Mask Texture:</strong> A grayscale texture where white areas receive the full HSV adjustment and black areas are unaffected.</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Shader Diagnostic &amp; Debug View HUD</h3>
+                    <p>Enables real-time in-viewport inspection of intermediate lighting and shading buffers for debugging material setups and spotting rendering issues.</p>
+                    <ul>
+                        <li><strong>Enable Shader Debug View:</strong> Master toggle enabling diagnostic buffer isolation.</li>
+                        <li><strong>Debug View Mode:</strong> Selects which diagnostic channel is rendered directly to the screen:
+                            <ul>
+                                <li><code>Off</code> &mdash; Standard final color output.</li>
+                                <li><code>BaseColor</code> &mdash; Unlit albedo color.</li>
+                                <li><code>Normal</code> &mdash; Tangent-space perturbed normal vector.</li>
+                                <li><code>WorldNormal</code> &mdash; World-space geometric/shading normal.</li>
+                                <li><code>Smoothness</code> &mdash; Surface smoothness value.</li>
+                                <li><code>Metallic</code> &mdash; Surface metallic value.</li>
+                                <li><code>DirectShading</code> &mdash; Direct scene light attenuation and cel shadow mask.</li>
+                                <li><code>Roughness / GI</code> &mdash; Surface roughness and indirect diffuse irradiance.</li>
+                                <li><code>Emission</code> &mdash; Isolated HDR emissive buffer.</li>
+                                <li><code>AudioLink</code> &mdash; Live AudioLink 4-band spectrum diagnostic visualization.</li>
+                                <li><code>TexelDensity</code> &mdash; World-space UV texel density checkerboard to identify stretching or over/under-sampling.</li>
+                                <li><code>Complexity</code> &mdash; Heatmap visualization of active feature complexity.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Material Performance &amp; Stats HUD:</strong> Displays live counts of active shader keywords, total exposed properties, current render queue, and shader variant names directly at the bottom of the inspector foldout.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="audio-link">
+                <h2>Audio Link</h2>
+                <article id="audiolink-overview">
+                    <h3>Overview</h3>
+                    <p><strong>AudioLink</strong> allows shader visuals, textures, colors, and vertex deformations to react dynamically to live world audio in VRChat and Unity environments. FireRatShader provides full AudioLink support across both pipelines &mdash; <span class="badge badge-brp">BRP</span> and <span class="badge badge-urp">URP</span> &mdash; including per-feature audio modulation, a standalone <strong>Audio Spectrum Visualizer</strong> (FFT frequency analysis), and an <strong>Audio Waveform Visualizer</strong> (real-time oscilloscope and 3D vertex mesh displacement).</p>
+                    <p>When the AudioLink package is present in your project, the shader reads frequency bins, raw audio waveforms, and theme color data directly from the AudioLink texture. In the Unity Editor, the built-in <strong>AudioLink Editor Companion</strong> automatically emulates live audio data from any playing AudioSource, allowing you to preview and fine-tune your visualizers in the Scene view without entering Play Mode or uploading your avatar to VRChat.</p>
+                </article>
+
+                <article id="audiolink-per-feature">
+                    <h3>Per-Feature AudioLink Controls</h3>
+                    <p>In addition to dedicated visualizers, many built-in shader effects feature integrated AudioLink modulation toggles. When enabled, the effect's intensity, speed, or displacement scales proportionally with the amplitude of a chosen frequency band.</p>
+                    <ul>
+                        <li><strong>Pulse:</strong> Modulates the Pulse effect's emission brightness and expansion radius with the music beat.</li>
+                        <li><strong>Emission:</strong> Scales the emission strength with a chosen band, and the separate <strong>AudioLink Blink</strong> control stroboscopically blinks the glow on the beat.</li>
+                        <li><strong>Color Shift:</strong> Dynamically accelerates or slows the global Hue Shift animation speed in response to audio energy.</li>
+                        <li><strong>Vertex Distortion:</strong> Scales the amplitude of vertex glitch and displacement effects with the music rhythm.</li>
+                        <li><strong>Procedural Texture:</strong> Modulates the procedural pattern's scale and speed with audio amplitude.</li>
+                        <li><strong>Grid:</strong> Modulates the grid overlay's intensity with the chosen band.</li>
+                        <li><strong>Dissolve:</strong> Drives the dissolve amount with audio, letting objects materialize and dematerialize on the beat.</li>
+                        <li><strong>Fresnel Transparency:</strong> Pulsates the fresnel edge transparency with the music.</li>
+                        <li><strong>Glitter:</strong> Brightens the sparkles with the chosen band for a beat-synced shimmer.</li>
+                        <li><strong>Psychedelic:</strong> Boosts the psychedelic flow and color shift with audio energy.</li>
+                        <li><strong>3D Fractal:</strong> Modulates the fractal scale and animation speed with the music.</li>
+                        <li><strong>Rim Glow:</strong> Brightens the rim with the chosen band.</li>
+                        <li><strong>Outline:</strong> Modulates the outline intensity with the music.</li>
+                        <li><strong>Ripple:</strong> Drives the ripple progress and strength from audio.</li>
+                        <li><strong>Vertex Collapse:</strong> Collapses and expands the mesh to the beat.</li>
+                        <li><strong>Glitch Scanlines:</strong> Modulates scanline flicker intensity and scroll speed with audio signal levels.</li>
+                        <li><strong>Decals:</strong> Each of the three decal layers has its own band selector and strength, letting logos or effects pulse with the music.</li>
+                    </ul>
+                    <h4>Audio Bands</h4>
+                    <p>Each feature link provides a <strong>Band</strong> selector and an independent <strong>Strength</strong> multiplier:</p>
+                    <ul>
+                        <li><strong>Bass:</strong> Sub-bass and kick drum frequencies (approx. 0&ndash;150 Hz). Best for rhythmic pulsing, heartbeats, and beat tracking.</li>
+                        <li><strong>Low-Mid:</strong> Snare drums, bass guitar, and low vocal fundamentals (approx. 150&ndash;500 Hz).</li>
+                        <li><strong>High-Mid:</strong> Lead guitars, brass, synths, and vocal presence (approx. 500&ndash;2,000 Hz).</li>
+                        <li><strong>Treble:</strong> Hi-hats, cymbals, acoustic transients, and high-frequency "air" (approx. 2,000&ndash;20,000 Hz).</li>
+                        <li><strong>Strength:</strong> Multiplier for the audio response (0 = disabled/no modulation, higher values amplify response).</li>
+                    </ul>
+                </article>
+
+                <article id="audiolink-global-controls">
+                    <h3>Global Audio Reactivity Controls</h3>
+                    <p>Global controls that shape how every AudioLink reading responds to audio. They apply to all per-feature links and both visualizers.</p>
+                    <ul>
+                        <li><strong>AudioLink Reactivity Smoothing:</strong> Smooths the audio response over time, damping sudden spikes and jitter for a more stable, reactive feel. Higher values smooth more.</li>
+                        <li><strong>AudioLink Min Floor:</strong> Remaps the lower bound of the audio value range, raising the quiet floor so weak signals never fully drop out.</li>
+                        <li><strong>AudioLink Max Ceiling:</strong> Remaps the upper bound of the audio value range, compressing or expanding the loudest peaks.</li>
+                        <li><strong>Avatar Param Fallback:</strong> When enabled, falls back to local avatar parameters / OSC inputs when no world AudioLink source is present, so your avatar's audio-reactive features still respond to your own music outside of world instances.</li>
+                    </ul>
+                    <h4>Per-Band Delay &amp; Timing (History Buffer)</h4>
+                    <p>Independent time delays per frequency band that offset audio readings along AudioLink's rolling history buffer, letting different features react at slightly different moments of the same sound (e.g. a beat that hits the bass rows first and ripples up through the treble rows). Each of <strong>Bass Delay</strong>, <strong>Low Mid Delay</strong>, <strong>High Mid Delay</strong>, and <strong>Treble Delay</strong> shifts that band's lookups into the past; higher values delay further. This is applied consistently to all AudioLink-driven features and both visualizers.</p>
+                </article>
+
+                <article id="audiolink-temporal-smoothing">
+                    <h3>Temporal Smoothing</h3>
+                    <p>FireRatShader's Audio Spectrum and Waveform visualizers support true <strong>temporal</strong> (time-based) smoothing, which is independent of the <strong>Edge Softness</strong> control. Edge Softness only softens the visual edges of bars, curves, and scope strokes; it does <em>not</em> smooth audio over time. Temporal Smoothing damps jitter and flicker in the audio signal itself, producing stable, fluid reactive motion.</p>
+
+                    <h4>Audio Smoothing Mode</h4>
+                    <p>Set <strong>Audio Smoothing Mode</strong> (under <em>AudioLink Visualizers &rarr; Global AudioLink Controls</em>) to choose the smoothing strategy:</p>
+                    <table>
+                        <thead><tr><th>Mode</th><th>Name</th><th>Behavior</th><th>Performance</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td><code>0</code></td>
+                                <td><strong>Raw</strong></td>
+                                <td>No temporal smoothing. Visualizers read the live AudioLink frame directly (identical to the original behavior).</td>
+                                <td>Zero overhead &mdash; no extra texture lookups or math.</td>
+                            </tr>
+                            <tr>
+                                <td><code>1</code></td>
+                                <td><strong>Frame Blend</strong></td>
+                                <td>Blends the current AudioLink frame with the previous frame (2-frame exponential moving average). Controlled by <strong>Spectrum Temporal Smoothing</strong>. Works for the spectrum; the waveform has no AudioLink history, so it remains live in this mode.</td>
+                                <td>Two samples per tap. Negligible cost.</td>
+                            </tr>
+                            <tr>
+                                <td><code>2</code></td>
+                                <td><strong>Temporal Buffer</strong></td>
+                                <td>Reads a dedicated <strong>Custom Render Texture (CRT)</strong> that maintains a persistent exponential-moving-average buffer of the spectrum and waveform, with independent attack/release envelopes. <strong>Smoothed Audio CRT</strong> must be assigned. The <strong>Spectrum / Waveform Temporal Smoothing</strong> sliders blend between the live and buffered signal.</td>
+                                <td>One extra texture sample per tap. The CRT asset auto-updates on the GPU each frame while it exists.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Setting up the Temporal Buffer (CRT)</h4>
+                    <ol>
+                        <li>In the Project window, create <strong>Assets &rarr; Create &rarr; Rendering &rarr; Custom Render Texture</strong>. Name it e.g. <code>FireRatAudioSmoothing</code>.</li>
+                        <li>Set its size to <strong>128 &times; 2</strong>, <strong>Color Format = R Float</strong>, and <strong>Update Mode = Realtime</strong>.</li>
+                        <li>Assign its <strong>Update Shader</strong> to <code>FireRat/AudioSmoothingCRT</code> (ships with the shader).</li>
+                        <li>On the CRT asset, tune <strong>Attack</strong> (e.g. <code>0.02s</code>, fast rise) and <strong>Release</strong> (e.g. <code>0.35s</code>, slow fall) &mdash; the asymmetric envelope gives punchy attacks and smooth decays.</li>
+                        <li>On the FireRat material, set <strong>Audio Smoothing Mode = Temporal Buffer</strong> and drag the CRT into the <strong>Smoothed Audio CRT</strong> slot.</li>
+                    </ol>
+
+                    <h4>Performance &amp; Best Practice</h4>
+                    <ul>
+                        <li><strong>Raw</strong> and <strong>Frame Blend</strong> incur no cost beyond a couple of extra samples and never sample the CRT, so leaving the mode on Raw has <em>zero</em> GPU overhead.</li>
+                        <li>The CRT only consumes GPU time while the asset exists and is set to <strong>Realtime</strong>. If you are not using <strong>Temporal Buffer</strong> mode, you can delete the CRT asset (or set its Update Mode to <strong>On Demand</strong>) to remove that cost entirely.</li>
+                        <li>All FireRatShader variants across both render pipelines &mdash; <span class="badge badge-brp">BRP</span> (<code>FireRatShader</code>, <code>FireRatShader_Fur</code>, <code>FireRatShader_TwoPass</code>) and <span class="badge badge-urp">URP</span> (<code>FireRatShader_URP</code>, <code>FireRatShader_URP_Fur</code>, <code>FireRatShader_URP_TwoPass</code>) &mdash; expose identical temporal-smoothing controls.</li>
+                    </ul>
+                </article>
+
+                <article id="audio-spectrum-visualizer">
+                    <h3>Audio Spectrum Visualizer</h3>
+                    <p>The <strong>Audio Spectrum Visualizer</strong> performs real-time Discrete Fourier Transform (DFT / FFT) frequency analysis directly on the shader, breaking incoming sound down into individual frequency bins from sub-bass to treble.</p>
+
+                    <h4>Spectrum Modes</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mode</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Mode-Specific Parameters</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>0</code></td>
+                                <td><strong>EQ Bars</strong></td>
+                                <td>Renders discrete vertical equalizer bars resembling physical DJ mixer displays or studio graphic equalizers. Each bar samples an averaged frequency sub-band with configurable spacing and edge anti-aliasing.</td>
+                                <td>
+                                    <strong>Bar Count:</strong> Number of discrete frequency bars across the span (4&ndash;128).<br>
+                                    <strong>Bar Gap:</strong> Horizontal gap/spacing between adjacent bars (0&ndash;0.5).<br>
+                                    <strong>Smoothness:</strong> Anti-aliasing softness at bar peaks.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>1</code></td>
+                                <td><strong>Continuous Curve</strong></td>
+                                <td>Traces a smooth, continuous mathematical FFT frequency curve with 3-tap neighbor smoothing. Includes an optional semi-transparent filled area underneath the curve.</td>
+                                <td>
+                                    <strong>Line Thickness:</strong> Stroke thickness of the spectrum curve line (0.001&ndash;0.1).<br>
+                                    <strong>Fill Alpha:</strong> Opacity of the shaded region beneath the curve (0&ndash;1).<br>
+                                    <strong>Smoothness:</strong> Line anti-aliasing softness.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>2</code></td>
+                                <td><strong>Radial Spectrum</strong></td>
+                                <td>Transforms the frequency spectrum into a 360-degree circular radar display radiating outward from the center point, creating an energetic glowing aura, circular ring gauge, or techno-shield.</td>
+                                <td>
+                                    <strong>Radial Inner Radius:</strong> Radius of the central circular cutout hole (0&ndash;0.5).<br>
+                                    <strong>Edge Thickness:</strong> Softness and width of the outer radial frequency boundary.<br>
+                                    <strong>Smoothness:</strong> Angular and radial transition smoothness.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>3</code></td>
+                                <td><strong>2D Waterfall Spectrogram</strong></td>
+                                <td>Displays a continuous temporal history heatmap of audio frequencies over time. Frequencies run horizontally while time scrolls vertically, creating a rich visual soundscape spectrogram.</td>
+                                <td>
+                                    Directly samples AudioLink's multi-row history buffer.<br>
+                                    <strong>Gain:</strong> Color sensitivity and response range.<br>
+                                    <strong>Mirror:</strong> Symmetrical horizontal frequency reflection.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Spectrum Controls</h4>
+                    <ul>
+                        <li><strong>Enable Audio Spectrum:</strong> Master toggle for the spectrum visualizer. When disabled, all spectrum shader code is completely compiled out.</li>
+                        <li><strong>Spectrum Mode:</strong> Selects between <code>EQ Bars</code>, <code>Continuous Curve</code>, <code>Radial</code>, and <code>Waterfall</code>.</li>
+                        <li><strong>Gain:</strong> Signal amplification multiplier (0.1&ndash;10). Useful for boosting sensitivity on quiet audio tracks or soft world audio.</li>
+                        <li><strong>Logarithmic Scale:</strong> When enabled, applies a power-scaled perceptual curve to frequency distribution. This expands the bass and mid-range regions while compressing high treble, mirroring human auditory perception.</li>
+                        <li><strong>Mirror:</strong> Folds the spectrum horizontally around the center (0.5), creating a symmetrical dual-wing visualizer.</li>
+                        <li><strong>Edge Softness:</strong> Controls the spatial anti-aliasing softness of bar edges, curve strokes, and radial boundaries (geometric edge AA). Temporal response damping and smoothing is handled by the shader's global <strong>AudioLink Reactivity Smoothing</strong> control (see Global Audio Reactivity Controls above).</li>
+                        <li><strong>Intensity:</strong> Overall HDR brightness multiplier (0&ndash;5). Values above 1.0 produce vibrant post-processing bloom.</li>
+                    </ul>
+                </article>
+
+                <article id="audio-waveform-visualizer">
+                    <h3>Audio Waveform Visualizer</h3>
+                    <p>The <strong>Audio Waveform Visualizer</strong> renders the raw time-domain audio signal (oscilloscope trace, waveform ribbon, circular polar loop, stereo Lissajous figures, or 3D vertex mesh displacement), capturing instantaneous sound wave amplitude and phase.</p>
+
+                    <h4>Waveform Modes</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mode</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Mode-Specific Parameters</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>0</code></td>
+                                <td><strong>Oscilloscope</strong></td>
+                                <td>Simulates an authentic cathode-ray tube (CRT) or digital laser oscilloscope. Draws a vibrant neon beam tracing the audio voltage over time, complete with a sharp inner core and exponential outer bloom glow.</td>
+                                <td>
+                                    <strong>Cycles:</strong> Number of waveform periods visible across the span (0.5&ndash;8).<br>
+                                    <strong>Line Thickness:</strong> Stroke width of the sharp inner beam (0.001&ndash;0.1).<br>
+                                    <strong>Glow Intensity:</strong> Brightness and radius of exponential bloom glow (0&ndash;5).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>1</code></td>
+                                <td><strong>Ribbon</strong></td>
+                                <td>Renders a solid bipolar audio waveform filled symmetrically from the center line (Y = 0.5), similar to visualizers in modern digital audio workstations (DAWs) and SoundCloud waveforms.</td>
+                                <td>
+                                    <strong>Cycles:</strong> Number of waveform periods shown (0.5&ndash;8).<br>
+                                    <strong>Smoothness:</strong> Anti-aliasing sharpness at the upper and lower waveform boundaries.<br>
+                                    Features an automatic edge-fade gradient for visual depth.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>2</code></td>
+                                <td><strong>Polar Ring</strong></td>
+                                <td>Wraps the time-domain waveform into a 360-degree circular loop around a center point. The ring pulses and distorts radially in response to incoming audio waves.</td>
+                                <td>
+                                    <strong>Polar Base Radius:</strong> Unmodulated resting radius of the circular ring (0.01&ndash;0.5).<br>
+                                    <strong>Cycles:</strong> Number of wave undulations around the circle (0.5&ndash;8).<br>
+                                    <strong>Line Thickness &amp; Glow:</strong> Core thickness and neon bloom intensity.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>3</code></td>
+                                <td><strong>Lissajous X-Y Scope</strong></td>
+                                <td>A stereo phase-space oscilloscope plotting the <strong>Left channel on the X-axis</strong> against the <strong>Right channel on the Y-axis</strong>. Produces intricate, hypnotic geometric loops, circles, and figure-8 phase patterns depending on stereo width and phase correlation.</td>
+                                <td>
+                                    Evaluated with an unrolled 64-sample phase-space trajectory loop.<br>
+                                    <strong>Line Thickness:</strong> Trace beam thickness (0.001&ndash;0.1).<br>
+                                    <strong>Glow Intensity:</strong> Exponential glow bloom along the trajectory.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>4</code></td>
+                                <td><strong>Vertex Displacement</strong></td>
+                                <td>Deforms the 3D model's actual geometry in the vertex shader, displacing vertices along their surface normals in real-time based on the local audio waveform value. Ideal for audio-reactive speakers, pulsating orbs, and dancing avatar elements.</td>
+                                <td>
+                                    <strong>Displacement Strength:</strong> Maximum vertex displacement distance along mesh normals (0&ndash;1).<br>
+                                    Uses vertex-safe LOD texture sampling for full single-pass VR compatibility.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Waveform Controls</h4>
+                    <ul>
+                        <li><strong>Enable Audio Waveform:</strong> Master toggle for the waveform visualizer. When disabled, all waveform shader code is completely compiled out.</li>
+                        <li><strong>Waveform Mode:</strong> Selects between <code>Oscilloscope</code>, <code>Ribbon</code>, <code>Polar</code>, <code>Lissajous</code>, and <code>Vertex Displacement</code>.</li>
+                        <li><strong>Channel:</strong> Selects the audio input channel:
+                            <ul>
+                                <li><code>Mono:</code> Summed average of Left and Right audio channels <code>(L + R) * 0.5</code>.</li>
+                                <li><code>Left:</code> Samples only the discrete Left stereo channel.</li>
+                                <li><code>Right:</code> Samples only the discrete Right stereo channel.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cycles:</strong> Controls how many complete waveform repetitions are displayed across the coordinate space (0.5&ndash;8 cycles). (Applicable to Oscilloscope, Ribbon, and Polar modes).</li>
+                        <li><strong>Gain:</strong> Multiplier for waveform amplitude and vertical/radial deflection (0.1&ndash;10).</li>
+                        <li><strong>Line Thickness:</strong> Adjusts the stroke width of the central beam in Oscilloscope, Polar, and Lissajous modes.</li>
+                        <li><strong>Glow Intensity:</strong> Controls the exponential bloom falloff radius and brightness around neon beam traces.</li>
+                        <li><strong>Edge Softness:</strong> Controls spatial edge anti-aliasing softness for line borders and filled ribbon silhouettes.</li>
+                        <li><strong>Intensity:</strong> Master brightness multiplier (0&ndash;5).</li>
+                        <li><strong>Displacement Strength:</strong> (Vertex Displacement mode only) Multiplier for normal displacement distance.</li>
+                    </ul>
+                </article>
+
+                <article id="audiolink-shared-controls">
+                    <h3>Shared Visualizer Controls</h3>
+                    <p>Both the Audio Spectrum and Audio Waveform visualizers provide a consistent suite of color, coordinate projection, spatial transformation, and blending options.</p>
+
+                    <h4>Color Modes</h4>
+                    <ul>
+                        <li><strong>Solid (<code>0</code>):</strong> Renders the entire visualizer using a single solid color (<strong>Color</strong>).</li>
+                        <li><strong>Frequency Gradient / Velocity (<code>1</code>):</strong>
+                            <ul>
+                                <li><em>Spectrum:</em> Smoothly blends from <strong>Color</strong> (for low bass frequencies) to <strong>High Frequency Color</strong> (for high treble frequencies). In Waterfall mode, this serves as a 2-tone thermal heatmap.</li>
+                                <li><em>Waveform:</em> Dynamically shifts from <strong>Color</strong> at rest toward <strong>Intensity Color</strong> based on instantaneous waveform velocity and signal power.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Hue Shift (<code>2</code>):</strong> Animates the entire visualizer through a synchronized hue cycle over time. <strong>Hue Shift Speed</strong> controls the cycling rate.</li>
+                        <li><strong>Rainbow Gradient (<code>3</code>):</strong> Generates a rich, multi-hue spectral rainbow distributed across frequency bands (Spectrum) or flowing along the waveform curve (Waveform), with optional speed animation via <strong>Hue Shift Speed</strong>. In Waterfall mode, this provides a vibrant full-spectrum thermal laboratory spectrogram.</li>
+                        <li><strong>AudioLink Theme (<code>4</code>):</strong> Automatically samples the 4 world theme colors defined by the AudioLink theme system in VRChat worlds, ensuring seamless visual cohesion with world-reactive lighting installations.</li>
+                    </ul>
+
+                    <h4>Projection Spaces</h4>
+                    <p>The visualizers can be projected onto the surface using several coordinate frames:</p>
+                    <ul>
+                        <li><strong>UV (<code>0</code>):</strong> Maps directly into the mesh's UV0 texture coordinates. Follows the model's skinning and texture mapping.</li>
+                        <li><strong>Screen (<code>1</code>):</strong> Projects in screen/viewport space. The visualizer remains fixed relative to the player's camera view, creating a HUD or lens overlay effect.</li>
+                        <li><strong>World (<code>2</code>):</strong> Projects onto the horizontal world-space XZ plane. The visualizer remains locked to world coordinates, ideal for dancefloors, stages, and ground decals.</li>
+                        <li><strong>Local (<code>3</code>):</strong> Projects onto the object's local-space XZ plane, moving and rotating with the object while ignoring internal mesh UV layout.</li>
+                    </ul>
+
+                    <h4>Transform Controls</h4>
+                    <ul>
+                        <li><strong>Scale (Vector2):</strong> Tiling and aspect ratio multiplier along the X and Y axes.</li>
+                        <li><strong>Offset (Vector2):</strong> Positional offset to reposition the center of the visualizer.</li>
+                        <li><strong>Rotation (Range 0&ndash;360°):</strong> Rotates the visualizer around its center point (0.5, 0.5) in degrees.</li>
+                    </ul>
+
+                    <h4>Blend Modes</h4>
+                    <ul>
+                        <li><strong>Additive (<code>0</code>):</strong> Adds the visualizer's emissive color directly onto the surface lighting (<code>finalColor += visualizer.rgb * alpha</code>). Ideal for holographic displays, laser beams, and glowing neon effects.</li>
+                        <li><strong>Emissive Lerp (<code>1</code>):</strong> Linearly interpolates the surface color toward the visualizer's color based on opacity (<code>finalColor = lerp(finalColor, visualizer.rgb, alpha)</code>). Useful for solid UI panels, opaque LED screens, and painted-on visualizer dials.</li>
+                    </ul>
+                </article>
+
+                <article id="audiolink-performance">
+                    <h3>Performance Considerations &amp; Best Practices</h3>
+                    <p class="warning"><strong>Zero-Cost When Disabled:</strong> All AudioLink visualizer features are protected by shader keywords (<code>_USE_AUDIO_SPECTRUM_ON</code> and <code>_USE_AUDIO_WAVEFORM_ON</code>). When a visualizer is toggled off in the material inspector, all associated variables, functions, and texture fetches are completely eliminated from the compiled shader variant, incurring <strong>0.00% GPU performance cost</strong>.</p>
+                    <ul>
+                        <li><strong>Lissajous X-Y Scope:</strong> Evaluates phase-space stereo curves using a highly optimized, unrolled 64-sample search loop. It executes efficiently on desktop GPUs, but on mobile/Quest standalone avatars, simpler modes like <code>Oscilloscope</code> or <code>Ribbon</code> are recommended for maximum battery efficiency.</li>
+                        <li><strong>Waterfall Spectrogram:</strong> Reads directly from AudioLink's pre-computed temporal history buffer rows using a single texture fetch per pixel. It requires no additional compute passes or CPU memory overhead.</li>
+                        <li><strong>VR &amp; Single-Pass Instancing:</strong> Both visualizers sample audio data textures using LOD-explicit sampling (<code>SAMPLE_TEXTURE2D_LOD</code> <span class="badge badge-urp">URP</span> / <code>tex2Dlod</code> <span class="badge badge-brp">BRP</span>), ensuring seamless compatibility with Single Pass Instanced rendering in SteamVR and Oculus Quest without gradient artifacts.</li>
+                        <li><strong>Vertex Displacement (Mode 4):</strong> Performs vertex displacement entirely in the vertex shader. Ensure target meshes have sufficient vertex density (e.g. subdivided spheres, planes, or grids) to resolve fine waveform wave shapes.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="creator-tools">
+                <h2>Creator Tools &amp; Utilities</h2>
+                <p>FireRatShader includes a comprehensive suite of workflow and optimization tools accessible from the Unity Editor top menu under <strong>Tools &gt; FireRat Shader</strong>.</p>
+
+                <article id="resync-keywords">
+                    <h3>Re-sync All Material Keywords</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Re-sync All Material Keywords</code> (or <code>FireRat &gt; Re-sync All Material Keywords</code>)</p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li>In Unity, shader variants and features are enabled via shader keywords (e.g. <code>_METALLICGLOSSMAP_ON</code>, <code>_USE_EMISSION_ON</code>, <code>_RENDER_MODE_CUTOUT</code>). When materials are imported from external <code>.unitypackage</code> files, upgraded across shader versions, or animated by Unity Animation Clips and VRChat FX layers, serialized keywords in <code>.mat</code> files can become stale or desynchronized from the actual material properties.</li>
+                        <li>Running <strong>Re-sync All Material Keywords</strong> scans every material in your project that uses <code>FireRat/FireRatShader</code> or <code>FireRat/FireRatShader_URP</code> and invokes <code>SetAllKeywords</code> to cleanly synchronize all keywords with assigned textures and property values.</li>
+                        <li><strong>When to run:</strong> Run this anytime you upgrade FireRatShader versions, import new avatar packages, or notice a material rendering unexpectedly after script modifications.</li>
+                    </ul>
+                </article>
+
+                <article id="texture-baker">
+                    <h3>Texture Channel Packer &amp; Material Baker</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Texture Channel Packer &amp; Baker</code></p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li><strong>Material Color &amp; Mask Baker:</strong> Bakes material base color, HSV hue/saturation/value adjustments, 4-channel RGBA color masks, and decal overlays directly into a single consolidated Albedo texture. With <em>Auto-Assign Baked Tex</em> enabled, the tool automatically assigns the baked texture back to the material and resets redundant runtime features, saving substantial fragment shader math and reducing VRChat APRS texture memory.</li>
+                        <li><strong>RGBA Channel Packer:</strong> Packs 4 individual grayscale textures or constant slider values into a single linear texture (R: Metallic/Mask, G: Ambient Occlusion, B: Detail/Thickness, A: Smoothness/Roughness), with individual per-channel invert toggles.</li>
+                    </ul>
+                </article>
+
+                <article id="normal-baker">
+                    <h3>Smoothed Normal Baker</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Smoothed Normal Baker</code> (or right-click GameObject &gt; <code>FireRat Shader &gt; Bake Smoothed Normals</code>)</p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li>Averages vertex normals across split UV seams and hard mesh edges, and bakes the resulting smooth vector stream into <strong>Vertex Colors (RGB)</strong>, <strong>UV2</strong>, or <strong>UV3</strong>.</li>
+                        <li>In the shader inspector under <em>Effects &gt; Outline</em>, setting <strong>Outline Normal Source</strong> to the baked stream completely eliminates the broken seams and corner gaps common on anime avatar outlines.</li>
+                    </ul>
+                </article>
+
+                <article id="migration-converter">
+                    <h3>Material Migration Converter</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Material Migration Converter</code></p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li>Automates converting avatar materials from Poiyomi (Free/Pro), lilToon, Unity Standard, and UTS shaders to FireRatShader.</li>
+                        <li>Automatically remaps diffuse albedo, bump/normal maps, metallic/smoothness/roughness, primary &amp; secondary emission maps, toon shade thresholds, ramp textures, and inverted-hull outline settings.</li>
+                        <li>Supports converting individual materials or batch-converting an entire avatar hierarchy, with optional non-destructive backup copy creation.</li>
+                    </ul>
+                </article>
+
+                <article id="audiolink-companion">
+                    <h3>AudioLink Companion</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Audio &gt; Create AudioLink Companion in Scene (BRP / URP)</code></p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li>Spawns an in-editor simulation rig with an audio source and spectrum analyzer, allowing you to preview, tune, and test all audio-reactive features (pulses, spectrum visualizers, waveforms, audio-driven glitter) directly inside the Unity Editor without entering Play Mode or launching VRChat.</li>
+                    </ul>
+                </article>
+
+                <article id="multi-mat-editor">
+                    <h3>Multi-Material Batch Editor</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Multi-Material Batch Editor</code></p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li>Scans any avatar or scene hierarchy and aggregates all unique FireRat materials into a single batch inspector.</li>
+                        <li>Allows editing common properties simultaneously across clothing, accessories, body, and hair (e.g. bulk performance level toggling, light mode adjustments, render mode changes, and batch material locking/optimizing).</li>
+                        <li>Provides a 1-click batch pipeline converter to instantly switch all avatar materials between <span class="badge badge-brp">BRP</span> and <span class="badge badge-urp">URP</span> master variants.</li>
+                    </ul>
+                </article>
+
+                <article id="flipbook-importer">
+                    <h3>Sprite Sheet &amp; Flipbook Importer (with Animated GIF Converter)</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; Sprite Sheet &amp; Flipbook Importer</code></p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li><strong>Animated GIF (GIF89a) Importer:</strong> Decodes multi-frame animated GIFs using a pure C# engine, extracts frame delays, auto-computes the optimal grid arrangement, and bakes an optimized power-of-two GPU texture atlas with 1-click material assignment.</li>
+                        <li><strong>Frame Sequence Packer:</strong> Automatically packs loose image sequences (PNG/JPG frames) into power-of-two sprite sheets and configures material flipbook columns, rows, FPS, and playback modes.</li>
+                        <li><strong>Sprite Sheet Configurator:</strong> Inspects existing spritesheet textures to automatically calculate optimal column and row division grids and assign them to target texture slots (Base, Emission, Decal).</li>
+                    </ul>
+                </article>
+
+                <article id="quest-baker">
+                    <h3>VRChat Quest Fallback Baker</h3>
+                    <p><strong>Menu Location:</strong> <code>Tools &gt; FireRat Shader &gt; VRChat Quest Fallback Baker</code></p>
+                    <p><strong>Purpose &amp; Workflow:</strong></p>
+                    <ul>
+                        <li>Bakes high-end PC avatar shader composites (diffuse, decals, recolor masks, glitter, matcaps, and emission) down into lightweight mobile textures.</li>
+                        <li>Automatically creates a duplicate Quest avatar material set targeting mobile-optimized shaders or FireRat Low tier with 100% texture consistency.</li>
+                    </ul>
+                </article>
+
+                <article id="localization">
+                    <h3>Inspector Localization</h3>
+                    <p>The material inspector is localized via community-maintained JSON translation packs in <code>Assets/FireRatShader/Languages/</code>. A language dropdown at the top of the inspector switches all section headers, property labels, and tooltips instantly.</p>
+                    <ul>
+                        <li><strong>15 languages</strong> are included out of the box (English, Japanese, Korean, Simplified/Traditional Chinese, French, German, Spanish, Portuguese, Russian, Polish, Italian, Thai, Vietnamese, and template), with automatic English fallback for missing entries.</li>
+                        <li><strong>Hot-reloading:</strong> Language files are watched on disk &mdash; edit a JSON pack while Unity is open and the inspector refreshes immediately. You can also force a refresh via <code>Tools &gt; FireRat Shader &gt; Developer &gt; Reload Language Files</code>.</li>
+                        <li><strong>Community contributions:</strong> Anyone can add or improve a language by copying <code>template.json</code>, translating the values, and saving it as e.g. <code>nl-NL.json</code>. Your language choice is remembered per-project via EditorPrefs.</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
