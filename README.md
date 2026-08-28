@@ -15,7 +15,7 @@ FireRatShader is a high-performance Uber shader for Unity that consolidates hund
 
 FireRatShader is a commercial product. See the [docs introduction](docs/index.html) for purchase information and current availability.
 
-> Requires Unity 2022.3 LTS or Unity 6. Works on Windows, macOS, Linux, Meta Quest, SteamVR, iOS, and Android.
+> Tested with Unity 2022.3 LTS & Unity 6.3 LTS. Works on Windows, macOS, Linux, Meta Quest, SteamVR, iOS, and Android.
 
 ## Features
 
