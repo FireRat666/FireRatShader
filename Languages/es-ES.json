@@ -1,0 +1,4035 @@
+{
+  "languageCode": "es-ES",
+  "languageName": "Español",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "Búsqueda",
+    "searchPlaceholder": "Buscar propiedades materiales...",
+    "matchingProperties": "Propiedades coincidentes",
+    "clearSearch": "Búsqueda clara",
+    "noPropertiesFound": "No se han encontrado propiedades",
+    "lockMaterial": "🔒 Material bloqueado & optimizado (Haga clic para desbloquear)",
+    "unlockMaterial": "Desbloquear material",
+    "lockAndOptimize": "Cerrar \" Optimizar \"",
+    "savePreset": "Guarda a Preset...",
+    "loadPreset": "Carga Preset...",
+    "copy": "Copiado",
+    "paste": "Pegado",
+    "reset": "Reset",
+    "language": "Idioma",
+    "cycle": "Ciclo",
+    "performanceTip": "Tip de rendimiento: Este material está desbloqueado. Para el mejor rendimiento de tiempo de ejecución (especialmente en Quest/VR), utilice 'Lock & Optimize' arriba. Esta tiras de tono no utilizado pasa, ramas de código muerto, y hornea palabras clave para la renderización de cero cabeza.",
+    "lockedWarning": "El material está LOCKED (sólo lectura). Desbloquear a través de la barra de herramientas para modificar propiedades.",
+    "Global UV Controls": "Controles UV globales",
+    "UV Tile Grid (4×4)": "Grid de azulejos UV (4×4)",
+    "Uncheck tiles to discard those UV regions.": "Desmarque las fichas para descartar esas regiones UV.",
+    "Global Color Animation": "Animación mundial del color",
+    "Color Adjustments": "Ajustes de color",
+    "Red Zone (R Channel)": "Zona roja (R Channel)",
+    "Green Zone (G Channel)": "Zona verde (canal G)",
+    "Blue Zone (B Channel)": "Zona Azul (B Channel)",
+    "Alpha Zone (A Channel)": "Zona Alfa (A Channel)",
+    "Color Correction": "Corrección de color",
+    "Dedicated Shading Models": "Modelos de Shading dedicados",
+    "Render States": "Render States",
+    "Camera & Mirror Visibility": "Cámara & Espejo Visibilidad",
+    "Stencil Buffer Settings": "Ajustes de amortiguación de plantilla",
+    "Global AudioLink Controls": "Controles Globales de AudioLink",
+    "Per-Band Delay & Timing (History Buffer)": "Per-Band Delay & Timing (History Buffer)",
+    "Audio Spectrum": "Audio Spectrum",
+    "Audio Waveform": "Audio Waveform",
+    "Avatar Param Fallback": "Avatar Param Fallback",
+    "AvatarParamFallbackTooltip": "Retroceder a los parámetros de avatar locales / entradas de OSC cuando ninguna fuente de AudioLink mundial está presente.",
+    "Pulse Alpha Range": "Pulse Alpha Range",
+    "PulseAlphaRangeTooltip": "Controla el alfa mínimo y máximo para el pulso de intensidad.",
+    "Color": "Color",
+    "Transform": "Transformación",
+    "Texture": "Textura",
+    "Normal Map": "Mapa normal",
+    "UV": "UV",
+    "UV0": "UV0",
+    "UV1": "UV1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "Espacio Mundial (Triplanar)",
+    "Local Space (Triplanar)": "Espacio local (Triplanar)",
+    "Screen Space": "Espacio de pantalla",
+    "Planar (Local XY)": "Planar (Local XY)",
+    "Spherical (Local)": "Spherical (Local)",
+    "Cylindrical (Local)": "Cilíndrico (Local)",
+    "Biplanar (World)": "Biplanar (World)",
+    "Panosphere (Equirectangular 360)": "Panosfera (Equirectangular 360)",
+    "Polar Coordinates": "Polar Coordinates",
+    "Off": "Fuera",
+    "Bass": "Bass",
+    "Low Mid": "Low Mid",
+    "High Mid": "High Mid",
+    "Treble": "Treble",
+    "High": "Alto",
+    "Medium": "Mediana",
+    "Low": "Baja",
+    "Opaque": "Opaque",
+    "Cutout": "Cutout",
+    "Transparent": "Transparent",
+    "Additive": "Aditivo",
+    "Multiply": "Multiply",
+    "Premultiplied": "Premultiplicado",
+    "None": "Ninguno",
+    "R": "R",
+    "G": "G",
+    "B": "B",
+    "A": "A",
+    "RGBA": "RGBA",
+    "RGB": "RGB",
+    "All": "Todos",
+    "Hue Shift": "Hue Shift",
+    "Gradient": "Gradiente",
+    "Rainbow Gradient": "Rainbow Gradient",
+    "AudioLink Theme": "AudioLink Tema",
+    "Direct": "Direct",
+    "AudioLink": "AudioLink",
+    "HueShift": "HueShift",
+    "Hue Shift/Gradient": "Hue Shift/Gradient",
+    "Velocity": "Velocity",
+    "Stylized_PBR": "Stylized PBR",
+    "Standard_PBR": "Standard PBR",
+    "Toon": "Toon",
+    "Basic": "Básica",
+    "Unlit": "Sin iluminación",
+    "Flat": "Piso",
+    "Ambient": "Ambient",
+    "ShadowColor": "ShadowColor",
+    "Ambient/ShadowColor": "Ambient/ShadowColor",
+    "TwoTone": "Dos",
+    "ThreeTone": "Tres",
+    "FourTone": "Cuatro",
+    "Whiteout_UDN": "Whiteout UDN",
+    "RNM": "RNM",
+    "OverrideProbes": "OverrideProbes",
+    "FallbackWhenProbesDark": "FallbackCuandoProbesDark",
+    "Screen": "Pantalla",
+    "Metallic": "Metallic",
+    "Specular": "Especular",
+    "Override": "Anulación",
+    "Add": "Añadir",
+    "Replace": "Sustitución",
+    "Lighten": "Lighten",
+    "Overlay": "Superposición",
+    "SoftLight": "SoftLight",
+    "Alpha Blend": "Alpha Blend",
+    "Lerp": "Lerp",
+    "Max": "Max",
+    "Circle": "Circle",
+    "Square": "Plaza",
+    "Star": "Star",
+    "MatCap": "MatCap",
+    "Glass": "Cristal",
+    "Anisotropic": "Anisotropic",
+    "SubsurfaceScattering": "SubsurfaceScattering",
+    "Retro_PSX": "Retro PSX",
+    "Retro_HalfLambert": "Retro HalfLambert",
+    "Ward": "Ward",
+    "Stretched-Blinn": "Stretched-Blinn",
+    "Default": "Default",
+    "Hologram": "Holograma",
+    "Crystal": "Cristal",
+    "Triplanar": "Triplanar",
+    "Iridescence": "Iridescence",
+    "Glitter": "Glitter",
+    "Psychedelic": "Psiquiatría",
+    "Fractal3D": "Fractal3D",
+    "Galaxy": "Galaxy",
+    "Skybox": "Skybox",
+    "EQ Bars": "EQ Bars",
+    "Continuous Curve": "Curva continua",
+    "Radial": "Radial",
+    "Waterfall": "Waterfall",
+    "Solid": "Solid",
+    "Frequency Gradient": "Gradiente de frecuencia",
+    "Emissive Lerp": "Emissive Lerp",
+    "Oscilloscope": "Osciloscopio",
+    "Ribbon": "Ribbon",
+    "Polar": "Polar",
+    "Lissajous": "Lissajous",
+    "Vertex Displacement": "Desplazamiento de Vertex",
+    "Mono": "Mono",
+    "Left": "Izquierda",
+    "Right": "Bien",
+    "Local": "Local",
+    "World": "Mundo",
+    "ScreenSpace": "Pantalla",
+    "ObjectSpace": "ObjectSpace",
+    "FullBillboard": "FullBillboard",
+    "YAxisBillboard": "YAxisBillboard",
+    "Local Space": "Espacio local",
+    "World Space": "Espacio Mundial",
+    "Mandelbulb": "Mandelbulb",
+    "Menger Sponge": "Menger Sponge",
+    "Kaleidoscopic IFS": "Kaleidoscopio IFS",
+    "Mandelbox": "Mandelbox",
+    "Julia Set 3D": "Julia Set 3D",
+    "Sierpinski Tetrahedron": "Sierpinski Tetrahedron",
+    "Apollonian Gasket": "Apollonian Gasket",
+    "Burning Ship": "Burning Ship",
+    "Tricorn": "Tricorn",
+    "Mandelbulb Power 2": "Mandelbulb Power 2",
+    "Mandelbulb Power 8": "Mandelbulb Power 8",
+    "Quaternion Julia": "Quaternion Julia",
+    "IFS Tetrahedron": "IFS Tetraedron",
+    "Octahedron": "Octahedron",
+    "Dodecahedron": "Dodecahedron",
+    "Icosahedron": "Icosahedron",
+    "Cubic Fractal": "Cubic Fractal",
+    "Hybrid Box-Bulb": "Hybrid Box-Bulb",
+    "Single Instance": "Instalación única",
+    "Repeated (Clipped)": "Repetida (Clipped)",
+    "Endless": "Endless",
+    "Yaw": "Yaw",
+    "Pitch": "Pitch",
+    "Roll": "Roll",
+    "Tumble": "Tumble",
+    "Sway": "Sway",
+    "Pulsate": "Pulsate",
+    "Grid": "Grid",
+    "Scanlines": "Scanlines",
+    "Noise": "Noise",
+    "Voronoi": "Voronoi",
+    "Wave": "Wave",
+    "Sierpinski": "Sierpinski",
+    "Checkerboard": "Checkerboard",
+    "PolkaDot": "PolkaDot",
+    "HexagonGrid": "HexagonGrid",
+    "Herringbone": "Herringbone",
+    "Houndstooth": "Houndstooth",
+    "CarbonFiber": "CarbonFiber",
+    "Plaid": "Plaid",
+    "CircuitBoard": "CircuitBoard",
+    "HalftoneDot": "HalftoneDot",
+    "TruchetTile": "TruchetTile",
+    "ReactionDiffusion": "ReactionDiffusion",
+    "Brick": "Brick",
+    "Intensity": "Intensidad",
+    "Glitch": "Glitch",
+    "Stretch": "Stretch",
+    "Wind": "Viento",
+    "Flap": "Flap",
+    "ButterflyFlap": "Mariposa",
+    "Blocky": "Bloqueo",
+    "Strobe": "Strobe",
+    "Sine": "Sine",
+    "Spherical": "Spherical",
+    "MainTexture": "Textura principal",
+    "Emission": "Emission",
+    "Occlusion": "Occlusion",
+    "DetailMap": "DetalleMap",
+    "DissolveMask": "DissolveMask",
+    "Cells": "Celdas",
+    "Cracks": "Crack",
+    "Dots": "Puntos",
+    "Organic": "Orgánico",
+    "Flow": "Flujo",
+    "Outer": "Externa",
+    "Inner": "Inner",
+    "Fresnel": "Fresnel",
+    "Depth": "Profundidad",
+    "MeshNormals": "MeshNormals",
+    "VertexColors": "VertexColors",
+    "Linear": "Linear",
+    "PingPong": "PingPong",
+    "Loop": "Loop",
+    "Random": "Aleatorio",
+    "EaseInOut": "Facilidad de entrada",
+    "Expand": "Ampliación",
+    "Contract": "Contrato",
+    "Pulse": "Pulso",
+    "Vertical": "Vertical",
+    "Directional": "Directional",
+    "Bottom": "Bottom",
+    "Top": "Top",
+    "X": "X",
+    "Y": "Y",
+    "Z": "Z",
+    "Front": "Frente",
+    "Back": "Atrás",
+    "Culling": "Cultivos",
+    "Depth Test": "Prueba de profundidad",
+    "Comparison": "Comparación",
+    "Disabled": "Discapacitados",
+    "Never": "Nunca",
+    "Less": "Menos",
+    "Equal": "Igualdad",
+    "LessEqual": "MenosEqual",
+    "Greater": "Mayor",
+    "NotEqual": "No igual",
+    "GreaterEqual": "Mayor",
+    "Always": "Siempre",
+    "Keep": "Sigue",
+    "Zero": "Cero",
+    "IncrSat": "IncrSat",
+    "DecrSat": "DecrSat",
+    "Invert": "Inversión",
+    "IncrWrap": "IncrWrap",
+    "DecrWrap": "DecrWrap",
+    "One": "Uno",
+    "DstColor": "DstColor",
+    "SrcColor": "SrcColor",
+    "OneMinusDstColor": "OneMinusDstColor",
+    "SrcAlpha": "SrcAlpha",
+    "OneMinusSrcColor": "OneMinusSrcColor",
+    "DstAlpha": "DstAlpha",
+    "OneMinusDstAlpha": "OneMinusDstAlpha",
+    "SrcAlphaSaturate": "SrcAlphaSaturate",
+    "OneMinusSrcAlpha": "OneMinusSrcAlpha",
+    "Show Always": "Mostrar siempre",
+    "Hide In Mirrors": "Escóndete en espejos",
+    "Show Only In Mirrors": "Mostrar sólo en espejos",
+    "VR Headset Eyes Only": "VR Headset Eyes Only",
+    "Desktop Stream Spectator Only": "Espectador de corriente de escritorio sólo",
+    "Auto Oblique And Inverted Transform": "Transformación auto oblicua e invertida",
+    "Oblique Matrix Only": "Matriz oblicua solamente",
+    "Inverted Transform Only": "Transformación invertida solamente",
+    "Visibility Mode": "Modo de visibilidad",
+    "Mirror Detection Method": "Método de detección de espejos",
+    "VRCFallback": "VRCFallback",
+    "VRChat Fallback Tag": "Tag",
+    "ToonStandard": "ToonStandard",
+    "Standard": "Estándar",
+    "Hidden": "Oculto",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "Este objetivo requiere que el modo de iluminación se establezca en 'Stylized PBR' en la sección de iluminación.",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "Este objetivo requiere que \"Enable Detail Texture\" se encienda en la sección Overlays.",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "Este objetivo requiere que 'Enable Dissolve' se encienda en la sección Transitions."
+  },
+  "sections": {
+    "Performance Settings": "Ajustes de rendimiento",
+    "Render Mode": "Modo de Render",
+    "Main Settings": "Ajustes principales",
+    "Procedural Textures": "Texturas de procedimiento",
+    "Advanced Animation Controls": "Controles avanzados de animación",
+    "Color Controls": "Controles de color",
+    "Lighting": "Iluminación",
+    "Surface Style": "Estilo superficial",
+    "Overlays": "Superficies",
+    "Effects": "Efectos",
+    "Glitches": "Glitches",
+    "Transitions": "Transiciones",
+    "AudioLink Visualizers": "AudioLink Visualizers",
+    "Advanced Settings": "Ajustes avanzados"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "Modo de Render",
+      "tooltip": "Controla cómo se hace el sombreador. Opaque es más rápido. El corte es para la transparencia dura. Transparent es para efectos suaves y mezclados."
+    },
+    "_PerformanceLevel": {
+      "label": "Nivel de ejecución",
+      "tooltip": "Establece una base de resultados, desactivando características costosas a niveles inferiores."
+    },
+    "_ZWrite": {
+      "label": "Force Depth Write (ZWrite)",
+      "tooltip": "Control manualmente si este material escribe al búfer de profundidad. Permite esto para objetos transparentes que aún deben ocultar objetos detrás de ellos."
+    },
+    "_Cutoff": {
+      "label": "Alpha Cutoff",
+      "tooltip": "El umbral de alfa para el efecto de corte."
+    },
+    "_UseUVTileDiscard": {
+      "label": "UV Tile Discard",
+      "tooltip": "Desvelar los azulejos UV específicos. Útil para recoger piezas de ropa."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "Rema de azulejos UV 3 (Top)",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "Remo de azulejos UV 2",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "Remo de azulejos UV 1",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "Rema de azulejos UV 0 (Bottom)",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "Use Base Color",
+      "tooltip": "Toggles el color base sólido."
+    },
+    "_BaseColor": {
+      "label": "Color",
+      "tooltip": "El color principal del holograma cuando no utiliza una textura."
+    },
+    "_BaseColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "Use Vertex Colors",
+      "tooltip": "Pinta el tono usando colores pintados sobre los vértices del modelo. Requiere un modelo con colores de vértice."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "Alpha As Opacity",
+      "tooltip": "Usa el canal de alfa de color vértice como multiplicador de opacidad."
+    },
+    "_UseEmission": {
+      "label": "Permitir la emisión",
+      "tooltip": "Hace brillar el objeto. Requiere un efecto de procesamiento post Bloom en la escena para ver el resplandor."
+    },
+    "_UseEmissionPulse": {
+      "label": "Pulso de emisión habilitado",
+      "tooltip": "Pulses intensidad de emisión rítmicamente sin afectar la iluminación difusa."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "Velocidad de pulso",
+      "tooltip": "Velocidad de la animación de emisión pulsante."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "Intensidad de pulso",
+      "tooltip": "Cuánto pulsos de emisión (0 = sin pulso, 1 = pulso completo de 0 a fuerza máxima)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "Use Vertex Color para la emisión",
+      "tooltip": "Utiliza los canales RGB de los colores del vértice para marcar el brillo de la emisión."
+    },
+    "_UseAlphaToEmission": {
+      "label": "Use Texture Alpha for Emission",
+      "tooltip": "Utiliza el canal alfa de la textura principal como mapa de emisión. Una forma poderosa de crear mapas de brillo sin una textura separada."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "Fuerza",
+      "tooltip": "Cuánto alfa afecta la emisión (los valores más altos brillan más)."
+    },
+    "_EmissionStrength": {
+      "label": "Fuerza de emisión",
+      "tooltip": "Qué brillante es el efecto brillante."
+    },
+    "_AL_EmissionBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "2a Emisión",
+      "tooltip": "Añade una segunda capa de emisión de desplazamiento."
+    },
+    "_Emission2Map": {
+      "label": "2o Mapa de Emisiones",
+      "tooltip": "Segundo mapa de emisiones (RGB)"
+    },
+    "_Emission2Color": {
+      "label": "Color",
+      "tooltip": "Segundo color de emisión"
+    },
+    "_Emission2Strength": {
+      "label": "Fuerza",
+      "tooltip": "Segunda fuerza de emisión"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "Segunda velocidad de desplazamiento de emisiones X"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Second Emission Scroll Speed Y"
+    },
+    "_AL_Emission2Band": {
+      "label": "AL 2a Banda de Emisión",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "AL 2nd Emission Strength",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "Habilitación 3a Emisión",
+      "tooltip": "Añade una tercera capa de emisión de desplazamiento."
+    },
+    "_Emission3Map": {
+      "label": "Tercer Mapa de Emisiones",
+      "tooltip": "Tercer Mapa de Emisiones (RGB)"
+    },
+    "_Emission3Color": {
+      "label": "Color",
+      "tooltip": "Tercer color de emisión"
+    },
+    "_Emission3Strength": {
+      "label": "Fuerza",
+      "tooltip": "Tercera Fuerza de Emisión"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "Tercera velocidad de desplazamiento de emisiones X"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Tercera Emission Scroll Speed Y"
+    },
+    "_AL_Emission3Band": {
+      "label": "AL 3rd Emission Band",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "AL 3rd Emission Strength",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "Habilitación 4a Emisión",
+      "tooltip": "Añade una cuarta capa de emisión de desplazamiento."
+    },
+    "_Emission4Map": {
+      "label": "Cuarto Mapa de Emisiones",
+      "tooltip": "Cuarto Mapa de Emisiones (RGB)"
+    },
+    "_Emission4Color": {
+      "label": "Color",
+      "tooltip": "Cuarto color de emisión"
+    },
+    "_Emission4Strength": {
+      "label": "Fuerza",
+      "tooltip": "Cuarta Fuerza de Emisión"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "IV Emission Scroll Speed X"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Cuarta Emission Scroll Speed Y"
+    },
+    "_AL_Emission4Band": {
+      "label": "AL IV Banda de Emisión",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "AL 4a Fuerza de Emisión",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "Textura procesal enable",
+      "tooltip": "Reemplaza una propiedad material con un patrón generado."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "Meta",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "Modo de procedimiento",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "Color 1",
+      "tooltip": "El primer color del patrón procesal."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "Habilitación de Hue/Color",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "Procedural Color 1 Shift",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "Color 2",
+      "tooltip": "El segundo color del patrón procesal."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "Habilitación de Hue/Color",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "Procedural Color 2 Shift",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "Escala",
+      "tooltip": "Controla el tamaño y la inclinación del patrón."
+    },
+    "_ProceduralSpeed": {
+      "label": "Speed",
+      "tooltip": "Controla la velocidad de animación del patrón."
+    },
+    "_ProceduralDirection": {
+      "label": "Dirección",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "Espesor",
+      "tooltip": "El espesor de las líneas de patrón."
+    },
+    "_ProceduralDensity": {
+      "label": "Densidad",
+      "tooltip": "Controla el tamaño de los elementos del patrón. Los valores superiores aumentan el tamaño."
+    },
+    "_ProceduralSparsity": {
+      "label": "Sparsity",
+      "tooltip": "Controla la distancia entre elementos en el patrón. Los valores superiores aumentan el espaciamiento."
+    },
+    "_ProceduralRotation": {
+      "label": "Rotación",
+      "tooltip": "Rota todo el patrón procesal. Un valor de 0,125 es de 45 grados."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "Espacio de coordinación",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "Octaves",
+      "tooltip": "Añade capas de ruido a diferentes escalas para crear patrones mucho más detallados y naturales."
+    },
+    "_NoiseLacunarity": {
+      "label": "Lacunaridad",
+      "tooltip": "Controla cómo cambia la frecuencia del ruido con cada octava."
+    },
+    "_NoiseGain": {
+      "label": "Gain",
+      "tooltip": "Controla cómo cambia la amplitud del ruido con cada octava."
+    },
+    "_VoronoiStyle": {
+      "label": "Estilo",
+      "tooltip": "Controla el estilo visual del patrón Voronoi."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "Multiplicador de velocidad global",
+      "tooltip": "Multiplicador de velocidad de animación maestra. Animate esto a través de VRChat Avatar Dynamics / Parámetros de imagen para controlar o congelar todas las animaciones de procedimiento sombreadas."
+    },
+    "_UseAdvancedAnim": {
+      "label": "Activar controles avanzados de animación",
+      "tooltip": "Expone controles maestros para escalar tiempo, modo de reproducción y tiempo compensado para todas las animaciones de tonos."
+    },
+    "_AnimTimeScale": {
+      "label": "Time Scale",
+      "tooltip": "Controla la velocidad total de todas las animaciones sombreadas. Se puede utilizar para reducir o acelerar los efectos."
+    },
+    "_AnimPlayMode": {
+      "label": "Modo de Playback",
+      "tooltip": "Establece el modo de reproducción global. 0 = Loop (restaurantes desde el principio), 1 = Ping-Pong (dirección reversa)."
+    },
+    "_AnimOffset": {
+      "label": "Time Offset",
+      "tooltip": "Aplica un tiempo global compensado a todas las animaciones, útiles para sincronizar o desincronizar efectos."
+    },
+    "_TwoSidedLighting": {
+      "label": "Iluminación de dos brazos",
+      "tooltip": "Flips dirección normal en las caras traseras para la iluminación correcta de dos caras cuando Cull está apagado."
+    },
+    "_LightingMode": {
+      "label": "Modo de iluminación",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "Activar AA Especular",
+      "tooltip": "Resúmenes especulativos anti-alias, reduciendo el brillo y el deslizamiento en superficies brillantes."
+    },
+    "_UseOpenLitMath": {
+      "label": "OpenLit Harmony Mode",
+      "tooltip": "Utilice OpenLit CC0 estándar de matemáticas difusas de media madera para una iluminación consistente a través de avatares de multitud en mundos de fotos."
+    },
+    "_SpecularAAVariance": {
+      "label": "Diferencia",
+      "tooltip": "Controla lo agresivamente que se aplica el borrón AA."
+    },
+    "_SpecularAAThreshold": {
+      "label": "Umbral",
+      "tooltip": "El umbral para la intensidad de resaltado especular antes de que AA entre."
+    },
+    "_ShadowColor": {
+      "label": "Color de sombra",
+      "tooltip": "El color de las áreas no golpeadas por la luz."
+    },
+    "_ShadowColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "Umbral",
+      "tooltip": "El tamaño del área iluminada en modo Toon."
+    },
+    "_ToonHardness": {
+      "label": "Hardness",
+      "tooltip": "La agudeza del borde de sombra en modo Toon."
+    },
+    "_ToonShadowBorder": {
+      "label": "Shadow Border",
+      "tooltip": "Desactiva el límite de la línea de sombra Toon."
+    },
+    "_ToonShadowBlur": {
+      "label": "Shadow Blur",
+      "tooltip": "Suaviza el paso de la sombra Toon borroso."
+    },
+    "_ToonShadowAO": {
+      "label": "Modulación de sombras AO",
+      "tooltip": "Modula el límite de sombra cel utilizando el mapa de oclusión ambiente."
+    },
+    "_NormalMap": {
+      "label": "Mapa normal",
+      "tooltip": "Añade detalles de superficie usando un mapa normal."
+    },
+    "_BumpScale": {
+      "label": "Escala normal",
+      "tooltip": "Fuerza y profundidad de los golpes normales de la superficie."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "Permite Detalle Mapa Normal",
+      "tooltip": "Añade un mapa normal secundario para los golpes de detalle de la microsuperficie."
+    },
+    "_DetailNormalMap": {
+      "label": "Detalle Mapa Normal",
+      "tooltip": "Un segundo mapa normal se superpone en la base normal para mayor detalle de superficie."
+    },
+    "_DetailNormalScale": {
+      "label": "Detalle de la fuerza normal",
+      "tooltip": "Controla la fuerza del detalle mapa normal."
+    },
+    "_NormalBlendMode": {
+      "label": "Modo Blend normal",
+      "tooltip": "Blending algoritmo entre base y detalle mapas normales (Whiteout vs Reoriented Normal Mapping / RNM)."
+    },
+    "_MetallicGlossMap": {
+      "label": "Metallic (R) Smoothness (A)",
+      "tooltip": "Mapa de Metallic (R) y Smoothness (A). (Nota: Se ignora la suavidad si se proporciona un mapa separado de la Roughness)"
+    },
+    "_Metallic": {
+      "label": "Metallic",
+      "tooltip": "Controla cómo es metálica la superficie (0 = dielectric/plástico, 1 = metal puro)."
+    },
+    "_Glossiness": {
+      "label": "Smoothness",
+      "tooltip": "Controla lo suave y reflectante que es la superficie (0 = áspero/matte, 1 = espejo liso)."
+    },
+    "_UseAmbientLighting": {
+      "label": "Use Ambient Lighting",
+      "tooltip": "Toggles muestreo de escena luz ambiente y sondas de reflexión. Hace la iluminación más consistente en diferentes mundos."
+    },
+    "_UseSHAmbient": {
+      "label": "Use Ambient de alta calidad (SH)",
+      "tooltip": "Habilitar ambiente armónico esférico de alta calidad. Nota: OFF forzada en niveles de rendimiento medio/bajo."
+    },
+    "_AmbientFallbackMode": {
+      "label": "Modo de Fallback Ambient",
+      "tooltip": "Selecciona el modelo de iluminación de retroceso cuando High Quality SH está desactivado o apagado."
+    },
+    "_UseLightOverride": {
+      "label": "Override Scene Light",
+      "tooltip": "Supera la dirección, el color y la intensidad de la luz de escena principal."
+    },
+    "_LightDirOverride": {
+      "label": "Dirección",
+      "tooltip": "Un vector personalizado de dirección de luz."
+    },
+    "_LightColorOverride": {
+      "label": "Color",
+      "tooltip": "Tinte de color ligero personalizado."
+    },
+    "_LightIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Escala de intensidad de luz personalizada."
+    },
+    "_ShadowStrength": {
+      "label": "Fuerza de sombra",
+      "tooltip": "Multiplicador de fuerza de sombras arrojados de esta luz."
+    },
+    "_RampTex": {
+      "label": "Toon Ramp",
+      "tooltip": "Textura de tono. Transiciones sombra (izquierda) a luz (derecha)."
+    },
+    "_ToonToneCount": {
+      "label": "Tone Count",
+      "tooltip": "Número de bandas discretas de cuarentena para iluminación Toon."
+    },
+    "_MidColor": {
+      "label": "Mid-Color",
+      "tooltip": "Color de banda de Midtone."
+    },
+    "_MidThreshold": {
+      "label": "Mid Threshold",
+      "tooltip": "Límite de rastreo para la banda de Midtone."
+    },
+    "_HighlightColor": {
+      "label": "Color de alta luz",
+      "tooltip": "Color de banda de alta calidad."
+    },
+    "_HighlightThreshold": {
+      "label": "Alto alcance",
+      "tooltip": "Límite de empuje para la banda más destacada."
+    },
+    "_SpecularMode": {
+      "label": "Flujo de trabajo",
+      "tooltip": "Selecciona entre los flujos de trabajo de iluminación PBR de Metallic-Smoothness y Specular-Color."
+    },
+    "_SpecColor": {
+      "label": "Color espectacular",
+      "tooltip": "Color de tinte de reflexión espectacular."
+    },
+    "_SpecGlossMap": {
+      "label": "Gloss (A)",
+      "tooltip": "Mapa Especular de color (RGB) y Smoothness (A)."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "Shadowmask Fallback",
+      "tooltip": "El comportamiento de Fallback cuando las texturas de la máscara de sombra no están disponibles."
+    },
+    "_RoughnessMap": {
+      "label": "Mapa Roughness (R)",
+      "tooltip": "Mapa Roughness (R)."
+    },
+    "_Roughness": {
+      "label": "Roughness",
+      "tooltip": "Valor de la tosicidad."
+    },
+    "_OcclusionMap": {
+      "label": "Mapa de Oclusión (G)",
+      "tooltip": "Oclusión Mapa (G) para hornear sombras en grietas."
+    },
+    "_OcclusionStrength": {
+      "label": "Fuerza de exclusión",
+      "tooltip": "La fuerza de las grietas de sombra ambiente del mapa de oclusión."
+    },
+    "_DetailMask": {
+      "label": "Máscara de Detalle (A)",
+      "tooltip": "Máscara de Detalle (A) para restringir la aplicación de la Textura de Detalle secundario."
+    },
+    "_UseSSS": {
+      "label": "Enable Subsurface Scattering",
+      "tooltip": "Simula la luz dispersando a través de objetos delgados como la piel o las hojas."
+    },
+    "_SSS_Scale": {
+      "label": "Escala",
+      "tooltip": "La fuerza general del efecto SSS."
+    },
+    "_SSS_Radius": {
+      "label": "Radius",
+      "tooltip": "Cuán lejos la luz se dispersa dentro del material."
+    },
+    "_SSS_Color": {
+      "label": "Tinta",
+      "tooltip": "El tinte de color aplicado a la luz dispersa."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "Enable Thickness Map",
+      "tooltip": "Usa una textura para simular la transmisión de la luz a través de áreas delgadas (tierras, hojas, etc.)."
+    },
+    "_ThicknessMap": {
+      "label": "Mapa de Thickness (R)",
+      "tooltip": "Mapa de espesor (R canal). Blanco = grueso (sin transmisión), Negro = delgado (transmisión completa)."
+    },
+    "_ThicknessStrength": {
+      "label": "Fuerza de tensión",
+      "tooltip": "Controla la intensidad del efecto de transmisión de la luz trasera."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "Use SSS Transmission Texture",
+      "tooltip": "Mapa de color personalizado que indica la transmisión de la luz trasera."
+    },
+    "_SSSTransmissionTex": {
+      "label": "Mapa de Transmisión SSS",
+      "tooltip": "Mapa de color de transmisión."
+    },
+    "_UseAnisotropy": {
+      "label": "Activar la reflexión anisotropica",
+      "tooltip": "Crea relieves estirados, comunes en metal cepillado o pelo."
+    },
+    "_Aniso_Mode": {
+      "label": "Modo Aniso",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "Roughness U",
+      "tooltip": "Roughness a lo largo de la dirección U (tangente)."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "Roughness V",
+      "tooltip": "Roughness en la dirección V (binormal)."
+    },
+    "_Aniso_Strength": {
+      "label": "Fuerza especulativa",
+      "tooltip": "El brillo general del relieve anisotrópico."
+    },
+    "_Aniso_TangentMap": {
+      "label": "Mapa Tangente (opcional)",
+      "tooltip": "Un mapa tangente (canales RR) para controlar la dirección de los aspectos más destacados del anisotrópico."
+    },
+    "_UseClearCoat": {
+      "label": "Enable Clear Coat",
+      "tooltip": "Añade una capa especulativa de capa clara secundaria sobre el material base PBR. Útil para superficies pintadas/caladas."
+    },
+    "_ClearCoatStrength": {
+      "label": "Fuerza de carga clara",
+      "tooltip": "Intensidad de la capa secundaria de laca automotriz / resina clara."
+    },
+    "_ClearCoatRoughness": {
+      "label": "Tosca transparente",
+      "tooltip": "Tosibilidad de la capa secundaria de capa de capa clara."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "Enable Eye Iris Parallax",
+      "tooltip": "Simula profundidad/refracción del alumno e iris debajo de la córnea."
+    },
+    "_IrisTiling": {
+      "label": "Iris UV Tiling",
+      "tooltip": "Controla el revestimiento de la textura iris."
+    },
+    "_IrisDepth": {
+      "label": "Iris Depth Offset",
+      "tooltip": "Offset de profundidad de refracción simulada."
+    },
+    "_PupilSize": {
+      "label": "Escala de pupilas",
+      "tooltip": "Controla la escala de tamaño del alumno."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "Enable Skin Diffuse Wrap",
+      "tooltip": "Suaviza las sombras de iluminación sobre superficies curvas orgánicas."
+    },
+    "_SkinWrapAmount": {
+      "label": "Wrap Amount",
+      "tooltip": "Cuánta luz se envuelve alrededor del terminador de sombras."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "Enable Cabello Anisotrópico Especular (Kajiya-Kay)",
+      "tooltip": "Destacados de estilo anisotrópico específicamente para las hebras de pelo."
+    },
+    "_HairSpecColor": {
+      "label": "Color espectacular",
+      "tooltip": "Color de los relieves especulativos del pelo."
+    },
+    "_HairSpecExponent": {
+      "label": "Exposición primaria",
+      "tooltip": "Sharpness of the primary highlight."
+    },
+    "_HairSpecExponent2": {
+      "label": "Exposición secundaria",
+      "tooltip": "Sharpness of the secondary shifted highlight."
+    },
+    "_HairSpecStrength": {
+      "label": "Fuerza especulativa",
+      "tooltip": "Brillante fuerza de los aspectos más destacados."
+    },
+    "_HairSpecShift": {
+      "label": "Cambio especulativo",
+      "tooltip": "Cambio de posición a lo largo de la dirección del cabello."
+    },
+    "_UseGrid": {
+      "label": "Enable Grid",
+      "tooltip": "Supera un patrón de rejilla en la superficie."
+    },
+    "_GridMode": {
+      "label": "Grid Pattern",
+      "tooltip": "Estilo de red procesal (Square, Hexagonal, Radial, Wireframe)."
+    },
+    "_GridColor": {
+      "label": "Color",
+      "tooltip": "El color de las líneas de rejilla."
+    },
+    "_GridColor_Shift": {
+      "label": "Grid Color Shift",
+      "tooltip": "AudioLink o cambio de color animado para líneas de rejilla procesal."
+    },
+    "_GridDensity": {
+      "label": "Densidad",
+      "tooltip": "¿Cuántos patrones de rejilla aparecen."
+    },
+    "_GridSparsity": {
+      "label": "Sparsity",
+      "tooltip": "Controla la distancia entre elementos en el patrón. Los valores superiores aumentan el espaciamiento."
+    },
+    "_GridSpace": {
+      "label": "Espacio de coordinación",
+      "tooltip": "Coordina espacio para la cartografía de la red procesal (Objeto UV, malla local, espacio mundial)."
+    },
+    "_GridThickness": {
+      "label": "Grid Line Thickness",
+      "tooltip": "Espesor de línea para la superposición procesal."
+    },
+    "_UseGridScroll": {
+      "label": "Desplazamiento de la capacidad",
+      "tooltip": "Anima el patrón espiral."
+    },
+    "_GridScrollSpeed": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "Cuán rápido se desplaza la cuadrícula a lo largo de su primer eje (mundo X)."
+    },
+    "_GridRotation": {
+      "label": "Rotación",
+      "tooltip": "Rota todo el patrón de la red. Un valor de 0,125 es de 45 grados."
+    },
+    "_GridScrollSpeedY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Cuán rápido se desplaza la cuadrícula a lo largo de su segundo eje (mundo Z)."
+    },
+    "_BoxFractalIsFill": {
+      "label": "Usar estilo de relleno",
+      "tooltip": "Intercambia el marco de caja entre un patrón de relleno y un patrón de contorno."
+    },
+    "_GridPatternIsFill": {
+      "label": "Usar estilo de relleno",
+      "tooltip": "Intercambia el patrón entre un relleno y un contorno."
+    },
+    "_MandelboxIsFill": {
+      "label": "Usar estilo de relleno",
+      "tooltip": "Intercambia el Mandelbox entre un patrón de relleno y un patrón de contorno."
+    },
+    "_GridPulseMode": {
+      "label": "Modo de pulso a presión",
+      "tooltip": "Forma de onda de pulso de animación a la parrilla (Sine, Triangle, AudioLink)."
+    },
+    "_GridPulseSpeed": {
+      "label": "Velocidad de pulso",
+      "tooltip": "La velocidad de la animación del pulso."
+    },
+    "_GridPulseIntensity": {
+      "label": "Intensidad de pulso",
+      "tooltip": "La fuerza del efecto del pulso."
+    },
+    "_GridPulseMin": {
+      "label": "Grid Pulse Min",
+      "tooltip": "Multiplicador mínimo de brillo de la red durante el pulsor."
+    },
+    "_GridPulseMax": {
+      "label": "Pulso Grid Max",
+      "tooltip": "Maximum grid brightness/thickness multiplier during pulsing."
+    },
+    "_UseGridDepthColor": {
+      "label": "Usar color de profundidad",
+      "tooltip": "Cambia el color de la red basado en su proximidad a otras superficies."
+    },
+    "_GridDepthColor": {
+      "label": "Color de profundidad",
+      "tooltip": "El color de la cuadrícula cambia a cuando cerca de una superficie."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "Depth Range",
+      "tooltip": "La distancia sobre la cual se produce el cambio de color."
+    },
+    "_AL_GridBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "Use Grid Mask",
+      "tooltip": "Usa una textura para enmascarar el efecto de la red."
+    },
+    "_GridMask": {
+      "label": "Grid Mask",
+      "tooltip": "La textura utilizada para enmascarar la cuadrícula. El canal rojo se utiliza."
+    },
+    "_InvertGridMask": {
+      "label": "Máscara de Inversión",
+      "tooltip": "Invierte la máscara, por lo que las áreas negras son visibles y las áreas blancas están ocultas."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "Distorsión de Vertex",
+      "tooltip": "Toggles procedimiento de distorsión de vértice animación en o apagado."
+    },
+    "_DistortionMode": {
+      "label": "Modo de distorsión",
+      "tooltip": "Algoritmo de distorsión de vértice procedural (Ola de Sane, Turbulencia de ruido, Flapping, etc.)."
+    },
+    "_DistortionStrength": {
+      "label": "Fuerza",
+      "tooltip": "Hasta dónde están desplazados los vértices."
+    },
+    "_DistortionSpeed": {
+      "label": "Speed",
+      "tooltip": "La velocidad de la animación de distorsión."
+    },
+    "_AL_DistortionBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "Textura de distorsión (RG para offset)",
+      "tooltip": "Una textura para controlar la distorsión (R=X offset, G=Z offset)."
+    },
+    "_DistortionTexScrollX": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "Desplaza la textura de la distorsión horizontalmente."
+    },
+    "_DistortionTexScrollY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Desplaza la textura de la distorsión verticalmente."
+    },
+    "_StretchAxis": {
+      "label": "Eje de estiramiento",
+      "tooltip": "Eje de malla a lo largo del cual se aplica el estiramiento del vértice procesal."
+    },
+    "_WindDirection": {
+      "label": "Dirección",
+      "tooltip": "La dirección local-espacial del viento (en relación con el objeto)."
+    },
+    "_WindScale": {
+      "label": "Escala",
+      "tooltip": "El tamaño de las ráfagas de viento. Los valores más pequeños crean ondas más grandes y más lentas."
+    },
+    "_FlapScale": {
+      "label": "Escala",
+      "tooltip": "Controla la curvatura o la 'waviness' del movimiento de aplausos."
+    },
+    "_FlapPhaseOffset": {
+      "label": "Fase Offset",
+      "tooltip": "Añade un retraso de tiempo a un lado, creando una solapa asimétrica. 0 es simétrico."
+    },
+    "_FlapMode": {
+      "label": "Modo de Flap",
+      "tooltip": "Dirección y estilo de la animación del vértice (Alas, Banderas, Foliage)."
+    },
+    "_FlapPivot": {
+      "label": "Flap Pivot",
+      "tooltip": "Posición de punto/pivot de anclaje de vértice."
+    },
+    "_FlapDirection": {
+      "label": "Dirección",
+      "tooltip": "Un vector que define la dirección local-espacial personalizada para el movimiento de acoplamiento."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "Enable Dissolve",
+      "tooltip": "Hace que el objeto aparezca/desaparece usando un patrón de ruido."
+    },
+    "_DissolveMode": {
+      "label": "Modo de disolución",
+      "tooltip": "Selecciona el algoritmo de matemáticas disueltas (Linear, Radial, Spherical, Voronoi ruido, etc.)."
+    },
+    "_DissolveScale": {
+      "label": "Escala",
+      "tooltip": "Controla el tamaño/spread del efecto disuelto."
+    },
+    "_DissolveDirection": {
+      "label": "Dirección",
+      "tooltip": "La dirección del espacio-mundo viaja la ola disuelta."
+    },
+    "_DissolveOrigin": {
+      "label": "World Origin",
+      "tooltip": "El centro del espacio-mundial desde el que emana la disuelta."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "Use Object Center",
+      "tooltip": "Cuando está habilitado, la disuelta se origina desde el punto de pivote del objeto. Cuando está deshabilitado, utiliza una coordenadas del espacio-mundo fijo."
+    },
+    "_DissolveMap": {
+      "label": "Mapa de Noise disuelve",
+      "tooltip": "La textura del ruido utilizada para el efecto disuelto (utiliza el canal rojo)."
+    },
+    "_DissolveProjMode": {
+      "label": "Modo de proyección de mapas disuelve",
+      "tooltip": "Modo de mapeo de proyección UV para la textura disuelta."
+    },
+    "_DissolveAmount": {
+      "label": "Monto",
+      "tooltip": "El progreso del efecto disuelto (0-1)."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "Edge Width",
+      "tooltip": "El ancho del borde brillante en la línea disuelta."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "Tamaño del bloque",
+      "tooltip": "El tamaño de los bloques de glitch en el espacio de pantalla."
+    },
+    "_DissolveEdgeColor": {
+      "label": "Color de borde",
+      "tooltip": "El color del brillante borde disuelto."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "Cambio de color de borde",
+      "tooltip": "AudioLink o cambio de color animado para el borde quema disuelto."
+    },
+    "_UseDissolveGradient": {
+      "label": "Usar gradiente",
+      "tooltip": "Usa una textura gradiente para colorear el borde disuelto en lugar de un color sólido."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "Uso de tiempo avanzado",
+      "tooltip": "Utilice el tiempo personalizado para la animación disuelta en lugar de un simple loop/ping-pong."
+    },
+    "_DissolveOnDuration": {
+      "label": "Disuelva en la duración",
+      "tooltip": "El tiempo necesario para que la animación disuelta en juego."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "Duración visible",
+      "tooltip": "El tiempo que el objeto permanece completamente visible (en máx disolver)."
+    },
+    "_DissolveOffDuration": {
+      "label": "Dissolve Off Duración",
+      "tooltip": "El tiempo que se necesita para la animación disuelta para jugar."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "Duración oculta",
+      "tooltip": "El tiempo que el objeto permanece completamente oculto (en min disolver)."
+    },
+    "_DissolveGradient": {
+      "label": "Gradiente disuelve",
+      "tooltip": "La rampa de color para el borde disuelto. El gradiente se mapea a través de la anchura del borde."
+    },
+    "_AnimateDissolve": {
+      "label": "Animate",
+      "tooltip": "Automáticamente anima la cantidad disuelta con el tiempo."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "Speed",
+      "tooltip": "La velocidad de la animación."
+    },
+    "_DissolveAnimMode": {
+      "label": "Use Ping-Pong",
+      "tooltip": "Si está activada, la animación jugará hacia adelante y luego hacia atrás. Si está deshabilitado, se hundirá."
+    },
+    "_DissolveAnimMin": {
+      "label": "Animation Min",
+      "tooltip": "Corte mínimo de disolver cuando se activa la animación."
+    },
+    "_DissolveAnimMax": {
+      "label": "Animación Max",
+      "tooltip": "Máximo corte disuelto cuando se activa la animación."
+    },
+    "_AL_DissolveBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "Enable Planar Wipe",
+      "tooltip": "Revela el objeto con una toallita suave y direccional."
+    },
+    "_WipeDirection": {
+      "label": "Dirección",
+      "tooltip": "La dirección de la toallita viaja a través del objeto."
+    },
+    "_WipeProgress": {
+      "label": "Progresos",
+      "tooltip": "El progreso del efecto de la toallita."
+    },
+    "_WipeHardness": {
+      "label": "Hardness",
+      "tooltip": "La agudeza del borde de la toalla."
+    },
+    "_AnimateWipe": {
+      "label": "Animate Wipe",
+      "tooltip": "Automáticamente anima el progreso de la limpieza con el tiempo."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "Uso de tiempo avanzado",
+      "tooltip": "Utilice el tiempo personalizado para la animación de la toallita en lugar de un simple loop/ping-pong."
+    },
+    "_WipeOnDuration": {
+      "label": "Espía sobre la duración",
+      "tooltip": "El tiempo que se necesita para que la animación del limpiaparabrisas juegue."
+    },
+    "_WipeVisibleDuration": {
+      "label": "Duración visible",
+      "tooltip": "El tiempo que el objeto permanece completamente visible."
+    },
+    "_WipeOffDuration": {
+      "label": "Vigencia de duración",
+      "tooltip": "El tiempo que se necesita para la animación de borrado para jugar."
+    },
+    "_WipeHiddenDuration": {
+      "label": "Duración oculta",
+      "tooltip": "El tiempo que el objeto permanece completamente oculto antes de bucle."
+    },
+    "_WipeAnimSpeed": {
+      "label": "Speed",
+      "tooltip": "La velocidad de la animación."
+    },
+    "_WipeAnimMode": {
+      "label": "Use Ping-Pong",
+      "tooltip": "Si está activada, la animación jugará hacia adelante y luego hacia atrás. Si está deshabilitado, se hundirá."
+    },
+    "_UseTransparency": {
+      "label": "Transparencia",
+      "tooltip": "Hace que el objeto sea uniformemente transparente."
+    },
+    "_Alpha": {
+      "label": "Alfa",
+      "tooltip": "Controla la transparencia general. 1 = totalmente opaco, 0 = completamente invisible."
+    },
+    "_UseFresnelTransparency": {
+      "label": "Transparencia de los túneles",
+      "tooltip": "Hace que el objeto sea más transparente en el centro y opaco en los bordes."
+    },
+    "_FresnelPower": {
+      "label": "Poder",
+      "tooltip": "Controla la curva de declive. Los valores superiores empujan la transparencia hacia los bordes."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "Edge Alpha",
+      "tooltip": "Transparencia en los ángulos de pastoreo."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "Center",
+      "tooltip": "Transparencia frente a la cámara."
+    },
+    "_AL_FresnelBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "Use Texture",
+      "tooltip": "Toggles la textura principal."
+    },
+    "_MainTex": {
+      "label": "Textura principal",
+      "tooltip": "La textura de albedo de superficie primaria."
+    },
+    "_MainTexProjMode": {
+      "label": "Modo de Proyección de Textura Base",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "Modo de reproductor de vídeo",
+      "tooltip": "Configura la textura para recibir datos de reproductor de vídeo."
+    },
+    "_VideoIsAVPro": {
+      "label": "Es AVPro Video",
+      "tooltip": "Revise esto si el reproductor de vídeo está usando AVPro."
+    },
+    "_Rotation": {
+      "label": "Rotación",
+      "tooltip": "Rota todas las texturas alrededor del centro del espacio UV."
+    },
+    "_ScrollX": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "Velocidad de animación UV horizontal."
+    },
+    "_ScrollY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Velocidad de animación UV vertical."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "Use Ping-Pong Scroll",
+      "tooltip": "Intercambia el modo de desplazamiento a un movimiento de ping-pong posterior y posterior."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "Speed",
+      "tooltip": "Velocidad del movimiento de desplazamiento posterior y largo."
+    },
+    "_PingPongScrollRange": {
+      "label": "Rango",
+      "tooltip": "Distancia del movimiento de desplazamiento posterior y largo."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "Permitir la distorsión UV",
+      "tooltip": "Usa una textura para evitar las coordenadas UV, creando efectos como la escobilla de calor o las ondas de agua."
+    },
+    "_UVDistortionMap": {
+      "label": "Mapa de la distorsión UV",
+      "tooltip": "La textura utilizada para distorsionar los rayos UV. Los canales rojo y verde controlan el offset X y Y."
+    },
+    "_UVDistortionStrength": {
+      "label": "Fuerza",
+      "tooltip": "Qué intenso es la oscilación de la distorsión UV."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "Velocidad X",
+      "tooltip": "Velocidad horizontal de la onda de distorsión."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "Speed Y",
+      "tooltip": "Velocidad vertical de la onda de distorsión."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "Activar Animación Flipbook",
+      "tooltip": "Anima la textura principal usando un diseño de spritesheet. Esto anulará el revestimiento y el offset de la textura principal."
+    },
+    "_FlipbookMode": {
+      "label": "Modo",
+      "tooltip": "El modo de reproducción de animación."
+    },
+    "_FlipbookColumns": {
+      "label": "Columnas (X)",
+      "tooltip": "El número de columnas (frames horizontalmente) en la spritesheet."
+    },
+    "_FlipbookRows": {
+      "label": "Rows (Y)",
+      "tooltip": "El número de filas (frames verticalmente) en la spritesheet."
+    },
+    "_FlipbookSpeed": {
+      "label": "Velocidad (FPS)",
+      "tooltip": "La velocidad de animación en marcos por segundo."
+    },
+    "_FlipbookStartFrame": {
+      "label": "Inicio Frame",
+      "tooltip": "El marco inicial de la animación, permitiendo un offset."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "Use Detail Texture",
+      "tooltip": "Supera una textura secundaria, a menudo para detalles finos o grunge."
+    },
+    "_DetailTex": {
+      "label": "Textura de cola",
+      "tooltip": "La textura secundaria a la superposición."
+    },
+    "_DetailTexProjMode": {
+      "label": "Modo de Proyección de Textura Detalle",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Cuán fuerte se mezcla la textura del detalle."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "Use Emission Mask",
+      "tooltip": "Usa una textura para controlar qué partes de la superficie emiten luz."
+    },
+    "_EmissionMaskTex": {
+      "label": "Máscara de emisión",
+      "tooltip": "Una textura para controlar la emisión (emisión blanca=full, negro=no emisión)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "Modo de proyección de máscaras de emisión",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "Mapping paralax",
+      "tooltip": "Utiliza un mapa de altura para compensar los rayos UV para su profundidad."
+    },
+    "_HeightMap": {
+      "label": "Mapa de altura (R)",
+      "tooltip": "Una textura grayscale donde el blanco es alto y el negro es bajo."
+    },
+    "_ParallaxStrength": {
+      "label": "Fuerza",
+      "tooltip": "Qué profundo aparece el efecto paralaje."
+    },
+    "_USE_POM_ON": {
+      "label": "Mapping paralax",
+      "tooltip": "Permite un paralaje de varios pasos para un efecto de profundidad de mayor calidad. Alto perf solamente."
+    },
+    "_POMSteps": {
+      "label": "Max Steps",
+      "tooltip": "Número máximo de pasos paralajes."
+    },
+    "_POMMinSteps": {
+      "label": "Min Steps",
+      "tooltip": "Número mínimo de pasos de paralaje (en ángulos de glancing)."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "Reflections Enable Environment",
+      "tooltip": "Muestra sondas de reflexión para añadir reflexiones ambientales, incluso en modos Basic/Toon."
+    },
+    "_EnvReflectionStrength": {
+      "label": "Fuerza de reflexión",
+      "tooltip": "Fuerza de reflexión ambiental."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "Tosca de reflexión",
+      "tooltip": "Roughness of the reflection (blurriness)."
+    },
+    "_USE_VAT_ON": {
+      "label": "Textura de animación Vertex",
+      "tooltip": "Aplica la animación del vértice horneado de una textura del IVA. Se utiliza para efectos pre-baqueados de tela, líquido o destrucción."
+    },
+    "_VATPositionTex": {
+      "label": "Texto de posición",
+      "tooltip": "La textura offset de posición del IVA. Cada fila es un marco."
+    },
+    "_VATFrameCount": {
+      "label": "Frame Count",
+      "tooltip": "Número total de marcos de animación en la textura."
+    },
+    "_VATSpeed": {
+      "label": "Speed",
+      "tooltip": "Velocidad de reproducción de la animación del vértice."
+    },
+    "_VATBoundsMin": {
+      "label": "Bounds Min",
+      "tooltip": "Límites mínimos para remapping de posición."
+    },
+    "_VATBoundsMax": {
+      "label": "Bounds Max",
+      "tooltip": "Límites máximos para remapping de posición."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "Activar la humedad",
+      "tooltip": "Simula una superficie mojada con efectos de rotura y lluvia."
+    },
+    "_WetnessStrength": {
+      "label": "Fuerza de tensión",
+      "tooltip": "Intensidad general de humedad."
+    },
+    "_WetnessSmoothness": {
+      "label": "Smoothness húmedo",
+      "tooltip": "Incremento de sofocalidad para superficies húmedas (afectos de agudeza especular)."
+    },
+    "_WetnessDarkening": {
+      "label": "Oscuro",
+      "tooltip": "Cuanto la superficie se oscurece cuando se moja."
+    },
+    "_RainRippleMap": {
+      "label": "Mapa normal de la lluvia Ripple",
+      "tooltip": "Mapa normal utilizado para la animación de lluvia ondulada."
+    },
+    "_RainRippleScale": {
+      "label": "Escala de Ripple",
+      "tooltip": "Escala del patrón de lluvia."
+    },
+    "_RainRippleSpeed": {
+      "label": "Velocidad de Ripple",
+      "tooltip": "Velocidad de la animación de lluvia madura."
+    },
+    "_USE_DECAL_ON": {
+      "label": "Enable Decal",
+      "tooltip": "Supera una textura principal de calcomanía / pegatina."
+    },
+    "_DecalTex": {
+      "label": "Textura decorativa",
+      "tooltip": "La textura de calcomanía. Utilice el tiling/offset para posicionarlo."
+    },
+    "_DecalBlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Cómo se mezcla la calcomanía con el color base."
+    },
+    "_DecalStrength": {
+      "label": "Fuerza",
+      "tooltip": "Opacidad total/forzamiento de la calcomanía."
+    },
+    "_DecalNormal": {
+      "label": "Mapa normal",
+      "tooltip": "Mapa normal para la calcomanía."
+    },
+    "_DecalNormalStrength": {
+      "label": "Fuerza normal",
+      "tooltip": "Fuerza del mapa normal de la calcomanía."
+    },
+    "_DecalMetallic": {
+      "label": "Metallic",
+      "tooltip": "Valor metálico para el área de calcomanía."
+    },
+    "_DecalSmoothness": {
+      "label": "Smoothness",
+      "tooltip": "Valor de suavidad para el área de calcomanía."
+    },
+    "_DecalAffectsPBR": {
+      "label": "Afectos PBR",
+      "tooltip": "Permite modificar Normal, Metallic y Smoothness a través de la calcomanía."
+    },
+    "_SurfaceStyle": {
+      "label": "Estilo superficial",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "Escala de cambios de olor",
+      "tooltip": "Multiplicador para el cambio de tono psicodélico."
+    },
+    "_PsychedelicSpeed": {
+      "label": "Velocidad de flujo",
+      "tooltip": "Velocidad en la que el ruido psicodélico fluye por la superficie."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "Espacio de coordinación",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "Fractal3DMode",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "FractalRepetitionMode",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "Escala",
+      "tooltip": "Escala del fractal dentro del espacio del objeto."
+    },
+    "_FractalAnimMode": {
+      "label": "FractalAnimMode",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "Velocidad de animación",
+      "tooltip": "Velocidad a la que anima el fractal."
+    },
+    "_FractalPower": {
+      "label": "Mandelbulb Power",
+      "tooltip": "Parámetro de potencia para el Mandelbulb. ¡Intente animar esto!"
+    },
+    "_FractalIter": {
+      "label": "Iteraciones",
+      "tooltip": "Número de iteraciones. Más alto es más detallado pero más lento."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "Angles (X,Y,Z)",
+      "tooltip": "Ángulos para la rotación Kaleidoscopio IFS."
+    },
+    "_FractalColorShift": {
+      "label": "Fractal Depth Hue Shift",
+      "tooltip": "Multiplicador para el movimiento del casco del fractal basado en la profundidad."
+    },
+    "_FractalUseAutoShift": {
+      "label": "FractalUseAutoShift",
+      "tooltip": "Continuamente cambia el color base fractal con el tiempo."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "Auto Shift Speed",
+      "tooltip": "Velocidad del cambio de color automático."
+    },
+    "_FractalJuliaC": {
+      "label": "Julia C Constant",
+      "tooltip": "La constante de quaternion C para Julia Set. Controla la forma del fractal."
+    },
+    "_FractalMandelboxScale": {
+      "label": "Escala híbrida",
+      "tooltip": "Factor de escala para el fractal híbrido. Prueba valores entre 1,5 y 3.0."
+    },
+    "_AL_FractalBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "Mapa de Noise de reflexión",
+      "tooltip": "Una textura de ruido para controlar la distorsión cambiante."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "Fuerza de reflexión",
+      "tooltip": "Cuán fuerte se distorsiona la opinión."
+    },
+    "_UseScreenRefraction": {
+      "label": "Revisión de pantalla",
+      "tooltip": "Distorsiona la pantalla detrás del objeto."
+    },
+    "_RefractionStrength": {
+      "label": "Fuerza",
+      "tooltip": "La fuerza de la refracción."
+    },
+    "_RefractionIOR": {
+      "label": "IOR",
+      "tooltip": "Índice de Reflexión."
+    },
+    "_ChromaticAberration": {
+      "label": "Aberración cromática",
+      "tooltip": "Simula la separación de color, creando flecos rojos/azul."
+    },
+    "_GalaxyMap": {
+      "label": "Mapa de Galaxy",
+      "tooltip": "La textura para mostrar dentro del objeto."
+    },
+    "_GalaxyDepth": {
+      "label": "Profundidad",
+      "tooltip": "Crea un efecto paralaje 2D, haciendo que la textura parezca tener profundidad."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "Velocidad de rotación",
+      "tooltip": "Rota la textura de la galaxia."
+    },
+    "_SkyboxMap": {
+      "label": "Skybox Cubemap",
+      "tooltip": "El cubemap para mostrar dentro del objeto, como un portal."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "Velocidad de rotación",
+      "tooltip": "Rota el skybox alrededor del eje Y."
+    },
+    "_TriplanarTex": {
+      "label": "Textura tri-planar",
+      "tooltip": "Textura para proyectar sobre el modelo desde tres ejes."
+    },
+    "_TriplanarScale": {
+      "label": "Escala",
+      "tooltip": "Controla el tamaño de la textura proyectada."
+    },
+    "_TriplanarBlend": {
+      "label": "Blend Sharpness",
+      "tooltip": "Controla la agudeza de la mezcla entre las tres proyecciones de textura."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "Activar Mapa Normal Triplanar",
+      "tooltip": "Proyectos un mapa normal a través de 3 ejes."
+    },
+    "_TriplanarNormalMap": {
+      "label": "Mapa Normal Triplanar",
+      "tooltip": "Mapa normal proyectado a lo largo de tres ejes."
+    },
+    "_TriplanarNormalScale": {
+      "label": "Fuerza normal",
+      "tooltip": "Fuerza de mapa normal triplanar."
+    },
+    "_MatCapTex": {
+      "label": "MatCap Texture",
+      "tooltip": "Una textura de captura material que define la iluminación y las reflexiones del objeto."
+    },
+    "_MatCapIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Controla el brillo del efecto MatCap."
+    },
+    "_MatCapBlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Controla cómo la textura MatCap se mezcla con el color base. Override lo reemplaza por completo."
+    },
+    "_IridescenceScale": {
+      "label": "Escala de color",
+      "tooltip": "Controla la frecuencia del cambio de color a través de la superficie."
+    },
+    "_IridescenceStrength": {
+      "label": "Fuerza",
+      "tooltip": "Controla la intensidad del efecto iridiscente."
+    },
+    "_GlitterBlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Controla cómo se mezcla el color brillante con la superficie. El aditivo puede ponerse sobresaliente. Lerp reemplaza el color base (emisivo). Max asegura que nunca es más oscuro que el color brillante."
+    },
+    "_GlitterColor": {
+      "label": "Color",
+      "tooltip": "El color de las chispas."
+    },
+    "_GlitterColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "Escala",
+      "tooltip": "Controla el tamaño del patrón de ruido de brillo. Los valores superiores significan chispas más pequeñas."
+    },
+    "_GlitterSparsity": {
+      "label": "Sparsity",
+      "tooltip": "Controla cuántas chispas aparecen. Los valores superiores significan menos, más espumosas."
+    },
+    "_GlitterSpaceMode": {
+      "label": "Espacio de coordinación",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "Uso Animación de ranura",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "Glitter Speed",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "Enable Rim Glow",
+      "tooltip": "Añade un resplandor a los bordes del objeto basado en el ángulo de visualización."
+    },
+    "_RimColor": {
+      "label": "Rim Color",
+      "tooltip": "Color del borde Llanura de franela."
+    },
+    "_RimColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "Usar gradiente",
+      "tooltip": "Usa una textura gradiente para colorear el brillo del borde en lugar de un color sólido."
+    },
+    "_RimGradient": {
+      "label": "Rim Gradient",
+      "tooltip": "La rampa de color para el brillo del borde. El gradiente se mapea desde el centro (izquierda) hasta el borde (derecha)."
+    },
+    "_RimPower": {
+      "label": "Rim Power",
+      "tooltip": "Agudización de la llanta."
+    },
+    "_RimIntensity": {
+      "label": "Intensidad en el borde",
+      "tooltip": "Multiplicador de brillo para el brillo del borde."
+    },
+    "_AL_RimBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "Efecto de intersección habilitado",
+      "tooltip": "Se desvanece a un color donde el objeto está cerca o intersecta con otros objetos en la escena."
+    },
+    "_IntersectionMode": {
+      "label": "Modo de intersección",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "Color",
+      "tooltip": "El color del efecto de intersección."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "Distancia",
+      "tooltip": "La distancia sobre la que se produce la desaparición."
+    },
+    "_UsePulse": {
+      "label": "Pulso enable",
+      "tooltip": "Añade una animación pulsante a la fuerza de emisión."
+    },
+    "_PulseSpeed": {
+      "label": "Speed",
+      "tooltip": "Qué rápido son los pulsos de emisión."
+    },
+    "_PulseIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Qué brillante es el pulso."
+    },
+    "_AL_PulseBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "Enable Outline",
+      "tooltip": "Añade un esbozo sólido alrededor del objeto. Esto añade una segunda llamada al objeto."
+    },
+    "_OutlineColor": {
+      "label": "Color de línea",
+      "tooltip": "Tinte de color base del contorno de malla."
+    },
+    "_OutlineColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "Textura de color en línea",
+      "tooltip": "Mapa de textura de color en línea."
+    },
+    "_OutlineWorldSpace": {
+      "label": "Legacy Outline World Space",
+      "tooltip": "Legacy Outline World Space"
+    },
+    "_OutlineSpace": {
+      "label": "Espacio de referencia",
+      "tooltip": "Espacio de coordinación para la extrusión de contorno (espacio de objeto local, espacio de pantalla, distancia de cámara independiente)."
+    },
+    "_OutlineWidth": {
+      "label": "Ancho fijo",
+      "tooltip": "Espesor del perfil de casco invertido."
+    },
+    "_AL_OutlineBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "Usar el color Vertex para la anchura",
+      "tooltip": "Modula el ancho del contorno usando el color del vértice del modelo (canal rojo)."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "Uso Mapa de Width",
+      "tooltip": "Usa una textura a escala gris para modular el espesor del contorno por píxel."
+    },
+    "_OutlineWidthMap": {
+      "label": "Mapa de Width",
+      "tooltip": "Máscara a escala gris para ancho de contorno (blanco=full, negro=cero)."
+    },
+    "_UseRippleEffect": {
+      "label": "Enable Ripple Effect",
+      "tooltip": "Crea un efecto ondulado concéntrico que emana de una coordenadas UV."
+    },
+    "_RippleCenterUV": {
+      "label": "Center (UV)",
+      "tooltip": "El centro de las ondas en el espacio UV (X,Y)."
+    },
+    "_RippleProgress": {
+      "label": "Progresos",
+      "tooltip": "El progreso manual de la animación ondulada, que controla la fase."
+    },
+    "_RippleCount": {
+      "label": "Conde de Ripple",
+      "tooltip": "El número de anillos de onda concéntricos a través de 1 unidad UV."
+    },
+    "_RippleMaxRadius": {
+      "label": "Fadeout Radius",
+      "tooltip": "La distancia del centro en el que las ondas se desvanecen completamente."
+    },
+    "_RippleWidth": {
+      "label": "Width",
+      "tooltip": "El ancho de cada anillo de onda individual."
+    },
+    "_RippleColor": {
+      "label": "Color",
+      "tooltip": "El color de las ondas."
+    },
+    "_RippleColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "Fuerza de destrucción",
+      "tooltip": "Cuánta la onda desplaza los vértices del modelo a lo largo de sus normales."
+    },
+    "_RippleStrength": {
+      "label": "Fuerza",
+      "tooltip": "El brillo de las ondas."
+    },
+    "_AnimateRipple": {
+      "label": "Animate Ripple",
+      "tooltip": "Automáticamente anima la animación ondulada."
+    },
+    "_RippleAnimSpeed": {
+      "label": "Speed",
+      "tooltip": "La velocidad de la animación."
+    },
+    "_RippleAnimMode": {
+      "label": "Use Ping-Pong",
+      "tooltip": "Si está activada, la animación jugará hacia adelante y luego hacia atrás."
+    },
+    "_AL_RippleBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "Activar el cambio de color de base",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "Modo de animación",
+      "tooltip": "Establece el método global para animaciones de color."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "Activar el cambio global de color auto",
+      "tooltip": "Cuando está activado, anima automáticamente los deslizadores de cambio de color (> 0) continuamente. Cuando está deshabilitado, los deslizadores de cambio de color aceptan valores estáticos o animados."
+    },
+    "_AnimatedGradient": {
+      "label": "Gradiente animado",
+      "tooltip": "Una textura gradiente que todos los colores animados mostrarán."
+    },
+    "_GradientAnimPingPong": {
+      "label": "Animación Ping-Pong",
+      "tooltip": "Anima el gradiente de ida y vuelta en lugar de bucle."
+    },
+    "_GradientAnimVertical": {
+      "label": "Use Scroll vertical",
+      "tooltip": "Desplaza el gradiente de arriba a abajo en lugar de izquierda a derecha."
+    },
+    "_ColorShiftSpeed": {
+      "label": "Velocidad de animación",
+      "tooltip": "Controla la velocidad de todos los colores animados. Para Hue Shift, es una velocidad de rotación. Para Gradient, es una velocidad de desplazamiento."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "Desaturación",
+      "tooltip": "Blends el color final hacia grayscale (0=Full Color, 1=Grayscale)."
+    },
+    "_UseInvert": {
+      "label": "Color Invertido",
+      "tooltip": "Invierte el color final del tono."
+    },
+    "_ColorTint": {
+      "label": "Color final Tinta",
+      "tooltip": "Multiplica un color sobre el resultado final, útil para la tintura o la clasificación."
+    },
+    "_ColorTint_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "Brillo",
+      "tooltip": "Ajusta el brillo general del color final."
+    },
+    "_Contrast": {
+      "label": "Contraste",
+      "tooltip": "Ajusta el contraste general del color final."
+    },
+    "_Gamma": {
+      "label": "Gamma",
+      "tooltip": "Aplica corrección gamma al color final."
+    },
+    "_UsePixelation": {
+      "label": "Pixelación enable",
+      "tooltip": "Crea un efecto bloqueado y de baja resolución."
+    },
+    "_PixelationAmount": {
+      "label": "Cantidad de pixelación",
+      "tooltip": "El número de 'pixels' a través de la textura (más alto es menos pixelated)."
+    },
+    "_UsePosterize": {
+      "label": "Posterización",
+      "tooltip": "Reduce el número de colores, dando un aspecto retro/digital."
+    },
+    "_PosterizeLevels": {
+      "label": "Niveles",
+      "tooltip": "El número de pasos de color por canal."
+    },
+    "_UseDistanceFade": {
+      "label": "Fade de distancia habilitada",
+      "tooltip": "Se desvanece el objeto cuando está lejos de la cámara."
+    },
+    "_FadeDistance": {
+      "label": "Distancia de inicio",
+      "tooltip": "La distancia de la cámara donde comienza la moda."
+    },
+    "_FadeRange": {
+      "label": "Rango",
+      "tooltip": "Cuán rápido el objeto se desvanece a lo largo de la distancia."
+    },
+    "_UseDepthFade": {
+      "label": "Enable Depth Fade (partículas de popa)",
+      "tooltip": "Suaviza las intersecciones de polígono contra la geometría de escena para superficies transparentes y aditivas."
+    },
+    "_DepthFadeDistance": {
+      "label": "Fade Distancia",
+      "tooltip": "Distancia sobre la cual la geometría se desvanece cuando se intersectan superficies opacas."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "Fade de distancia del efecto",
+      "tooltip": "Fades graves efectos de procedimiento (Glitter, Fractals, Grid, Psychedelic) más allá de una distancia establecida para mejorar el rendimiento de VR."
+    },
+    "_EffectFadeStart": {
+      "label": "Distancia de inicio de destino",
+      "tooltip": "Distancia en metros donde los efectos comienzan a desaparecer."
+    },
+    "_EffectFadeEnd": {
+      "label": "Fade End Distancia",
+      "tooltip": "Distancia en metros donde los efectos están completamente deshabilitados."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "Enable Vertex Collapse",
+      "tooltip": "Arruga el modelo en su punto central."
+    },
+    "_CollapseEnableAnim": {
+      "label": "Collapse Enable (Anim)",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "Monto",
+      "tooltip": "El progreso del efecto de colapso (0=Normal, 1=Collapsed)."
+    },
+    "_AnimateCollapse": {
+      "label": "Animate Collapse",
+      "tooltip": "Automáticamente anima la cantidad de colapso con el tiempo."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "Uso de tiempo avanzado",
+      "tooltip": "Utilice el tiempo personalizado para la animación del colapso en lugar de un simple loop/ping-pong."
+    },
+    "_CollapseOnDuration": {
+      "label": "Duración del colapso",
+      "tooltip": "El tiempo necesario para que el modelo colapse."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "Duración suprimida",
+      "tooltip": "El tiempo que el modelo permanece completamente colapsado."
+    },
+    "_CollapseOffDuration": {
+      "label": "Ampliar la duración",
+      "tooltip": "El tiempo necesario para que el modelo se expanda de nuevo a la normalidad."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "Duración normal",
+      "tooltip": "El tiempo que el modelo permanece en su estado normal antes de bucle."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "Speed",
+      "tooltip": "La velocidad de la animación."
+    },
+    "_CollapseAnimMin": {
+      "label": "Animation Min",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "Animación Max",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "Use Ping-Pong",
+      "tooltip": "Si está activada, la animación jugará hacia adelante y luego hacia atrás. Si está deshabilitado, se hundirá."
+    },
+    "_AL_CollapseBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "Enable Glitch Flicker",
+      "tooltip": "Aplica un efecto agitador para todo el objeto."
+    },
+    "_FlickerMode": {
+      "label": "Modo Flicker",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "Speed",
+      "tooltip": "La velocidad del flicker."
+    },
+    "_FlickerIntensity": {
+      "label": "Intensidad",
+      "tooltip": "La fuerza del flicker (cuán oscuro se pone)."
+    },
+    "_AL_FlickerBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "Inversa",
+      "tooltip": "Invierte la dirección de desplazamiento de las escanografías de fallos."
+    },
+    "_FlickerBlockSize": {
+      "label": "Tamaño del bloque",
+      "tooltip": "El tamaño de los bloques de glitch."
+    },
+    "_FlickerDirection": {
+      "label": "Dirección",
+      "tooltip": "La dirección de las escanografías."
+    },
+    "_FlickerDensity": {
+      "label": "Densidad",
+      "tooltip": "El número de escaneos de glitch."
+    },
+    "_FlickerLineThickness": {
+      "label": "Espesor",
+      "tooltip": "El espesor de las escaneos de fallo."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "Activación de Transparencia",
+      "tooltip": "Causa el efecto del flicker para también afectar la transparencia."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "Fuerza",
+      "tooltip": "Cuánto afecta la transparencia."
+    },
+    "_UseScanlines": {
+      "label": "Enable Scanlines",
+      "tooltip": "Simula la mirada de un monitor CRT."
+    },
+    "_ScanlineColor": {
+      "label": "Color",
+      "tooltip": "El color y la transparencia de las escanografías."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "Densidad",
+      "tooltip": "Cuantas escanografías aparecen en pantalla."
+    },
+    "_ScanlineSpeed": {
+      "label": "Speed",
+      "tooltip": "Cuán rápido se desplazan los escaneos."
+    },
+    "_ScanlineThickness": {
+      "label": "Espesor",
+      "tooltip": "El espesor de las escanografías."
+    },
+    "_ScanlineDirection": {
+      "label": "Dirección",
+      "tooltip": "La dirección de los escaneos (0=Vertical, 1=Horizontal)."
+    },
+    "_AL_ScanlineBand": {
+      "label": "AudioLink Band",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "Enable Audio Spectrum",
+      "tooltip": "Presenta una visualización de espectro de frecuencias en tiempo real impulsada por AudioLink."
+    },
+    "_AudioSpectrumMode": {
+      "label": "Modo de espectro",
+      "tooltip": "El estilo de visualización para el espectro."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "Bar Count",
+      "tooltip": "Número de barras de frecuencia."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "Bar Gap",
+      "tooltip": "Gap entre barras (0 = sin espacio)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "Gain",
+      "tooltip": "Amplificación de la señal de audio."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "Edge Thickness",
+      "tooltip": "Suavidad de borde de las barras radiales."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "Fill Alpha",
+      "tooltip": "Opacity of the filled area under the curve."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "Escala logarítmica",
+      "tooltip": "Use escalado de frecuencia logarítmica para un equilibrio más natural bajo/treble."
+    },
+    "_AudioSpectrumColor": {
+      "label": "Color",
+      "tooltip": "Color primario (o color de baja frecuencia para gradiente)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "Alto Freq Color",
+      "tooltip": "Color de alta frecuencia para el modo gradiente."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "Modo de color",
+      "tooltip": "Cómo se colorea el espectro."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "Velocidad de Hue",
+      "tooltip": "Velocidad del turno del casco / animación del arco iris."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "Espacio de proyección",
+      "tooltip": "Coordina espacio para el visualizador."
+    },
+    "_AudioSpectrumScale": {
+      "label": "Escala",
+      "tooltip": "Escala del visualizador."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "Offset",
+      "tooltip": "Offset."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "Rotación",
+      "tooltip": "Rotación en grados."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Cómo se mezcla el espectro con la superficie."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "Espejo",
+      "tooltip": "Espejo el espectro horizontalmente."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "Inner Radius",
+      "tooltip": "Radio interior de la pantalla radial."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "Suavidad del borde",
+      "tooltip": "Arista espacial antialiasing y suavidad fronteriza de barras o curvas."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Multiplicador de brillo general."
+    },
+    "_AudioSmoothingMode": {
+      "label": "Modo de movimiento de audio",
+      "tooltip": "Método de suavizado temporal para el espectro/ondaforma: Raw (none), Frame Blend (2-frame EMA), o Buffer Temporal (historia CRT)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "Smoothing Temporal Spectrum",
+      "tooltip": "Fuerza de suavidad temporal aplicada al espectro (Modos de amortiguación estructural / temporal)."
+    },
+    "_UseAudioWaveform": {
+      "label": "Enable Audio Waveform",
+      "tooltip": "Renders a real-time waveform/oscilloscope visualization driven by AudioLink."
+    },
+    "_AudioWaveformMode": {
+      "label": "Modo de onda",
+      "tooltip": "El estilo de visualización para la forma de onda."
+    },
+    "_AudioWaveformChannel": {
+      "label": "Canal",
+      "tooltip": "Que canal de audio para visualizar."
+    },
+    "_AudioWaveformCycles": {
+      "label": "Ciclos",
+      "tooltip": "Número de ciclos de onda visibles."
+    },
+    "_AudioWaveformGain": {
+      "label": "Gain",
+      "tooltip": "Amplificación de la señal de audio."
+    },
+    "_AudioWaveformThickness": {
+      "label": "Tinte de línea",
+      "tooltip": "Espesor de la línea de traza."
+    },
+    "_AudioWaveformGlow": {
+      "label": "Glow",
+      "tooltip": "La intensidad del resplandor de neón florece."
+    },
+    "_AudioWaveformColor": {
+      "label": "Color",
+      "tooltip": "Color de onda primaria."
+    },
+    "_AudioWaveformColor2": {
+      "label": "Color 2",
+      "tooltip": "Color secundario (estrella de la diversidad o tinte de brillo)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "Modo de color",
+      "tooltip": "Cómo se colorea la forma de onda."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "Velocidad de Hue",
+      "tooltip": "Velocidad del turno del casco / animación del arco iris."
+    },
+    "_AudioWaveformSpace": {
+      "label": "Espacio de proyección",
+      "tooltip": "Coordina espacio para el visualizador."
+    },
+    "_AudioWaveformScale": {
+      "label": "Escala",
+      "tooltip": "Escala del visualizador."
+    },
+    "_AudioWaveformOffset": {
+      "label": "Offset",
+      "tooltip": "Offset."
+    },
+    "_AudioWaveformRotation": {
+      "label": "Rotación",
+      "tooltip": "Rotación en grados."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Cómo la forma de onda se mezcla con la superficie."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "Polar Radius",
+      "tooltip": "Radio base del anillo polar."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "Fuerza de desplazamiento",
+      "tooltip": "Fuerza de desplazamiento del vértice a lo largo de las normales."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "Suavidad del borde",
+      "tooltip": "Arista espacial anti-aliasing y suavidad de golpe."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Multiplicador de brillo general."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "Momento temporal de Waveform",
+      "tooltip": "Fuerza de suavidad temporal aplicada a la forma de onda (Modo de amortiguación temporal)."
+    },
+    "_FRSmoothedAudio": {
+      "label": "Smoothed Audio CRT",
+      "tooltip": "Textura Render personalizada (FireRat AudioSmoothingCRT activo) conteniendo el audio temporizado. Se requiere para el modo de amortiguación temporal."
+    },
+    "_UseInterlace": {
+      "label": "Habilitación de enlace",
+      "tooltip": "Oscurece cada otra fila de pantalla para simular una pantalla entrelazada."
+    },
+    "_InterlaceIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Qué oscuros son las líneas entrelazadas."
+    },
+    "_UseClippingMask": {
+      "label": "Enable Máscara de Clipping",
+      "tooltip": "Usa una textura para cortar (hacer partes invisibles) del material. Este es un clip duro, no una transparencia suave."
+    },
+    "_ClippingMask": {
+      "label": "Máscara de Clipping",
+      "tooltip": "La textura utilizada para cortar. El canal seleccionado determina la visibilidad (negro = recortado)."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "Mask Scroll Speed X",
+      "tooltip": "Desplaza la textura de la máscara horizontalmente."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "Mask Scroll Speed Y",
+      "tooltip": "Desplaza la textura de la máscara verticalmente."
+    },
+    "_ClippingMaskChannel": {
+      "label": "Mask Channel",
+      "tooltip": "Que canal de color de la máscara para usar para cortar."
+    },
+    "_InvertClippingMask": {
+      "label": "Máscara de Inversión",
+      "tooltip": "Invierte el efecto de máscara (blanco = recortado)."
+    },
+    "_UseNoise": {
+      "label": "Activar ruido/grano",
+      "tooltip": "Añade un sobrevalor de ruido animado."
+    },
+    "_NoiseIntensity": {
+      "label": "Intensidad",
+      "tooltip": "La fuerza del efecto del ruido."
+    },
+    "_NoiseColor": {
+      "label": "Color",
+      "tooltip": "El color de las partículas de ruido."
+    },
+    "_NoiseColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "Velocidad de animación",
+      "tooltip": "Los marcos por segundo de la animación del ruido."
+    },
+    "_Cull": {
+      "label": "Cultivos",
+      "tooltip": "Modo de corte poligonal (Off, Front, Back)."
+    },
+    "_CullShadow": {
+      "label": "Shadow Cull Mode",
+      "tooltip": "Modo de corte de polígono utilizado específicamente para pasar de fundición sombra."
+    },
+    "_ZTest": {
+      "label": "ZTest",
+      "tooltip": "Controla cómo se realizan las pruebas de profundidad."
+    },
+    "_ColorWriteMask": {
+      "label": "Color Escriba máscara",
+      "tooltip": "Controla los canales de color que se escriben en la pantalla."
+    },
+    "_QueueOffset": {
+      "label": "Queue Offset",
+      "tooltip": "Desactiva la cola de renderización relativa al Modo de Render seleccionado."
+    },
+    "_SrcBlend": {
+      "label": "Src Blend Mode",
+      "tooltip": "Modo de mezcla fuente para la mezcla de transparencia."
+    },
+    "_DstBlend": {
+      "label": "Dst Blend Mode",
+      "tooltip": "Modo de mezcla de destino para la mezcla de transparencia."
+    },
+    "_Stencil": {
+      "label": "Stencil Ref",
+      "tooltip": "Valor de referencia Stencil."
+    },
+    "_StencilReadMask": {
+      "label": "Leer Máscara",
+      "tooltip": "Stencil lee máscara."
+    },
+    "_StencilWriteMask": {
+      "label": "Escribe Mascara",
+      "tooltip": "Stencil escribe máscara."
+    },
+    "_StencilComp": {
+      "label": "Comparación",
+      "tooltip": "Función de comparación de plantillas."
+    },
+    "_StencilPass": {
+      "label": "Paso",
+      "tooltip": "Stencil pasa la operación."
+    },
+    "_StencilFail": {
+      "label": "Fail",
+      "tooltip": "Stencil falló la operación."
+    },
+    "_StencilZFail": {
+      "label": "ZFail",
+      "tooltip": "Operación Stencil zfail."
+    },
+    "_NormalMapUVSet": {
+      "label": "Conjunto UV normal",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para el mapa normal."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "Detalle Conjunto UV normal",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para el mapa normal detallado."
+    },
+    "_DetailTexUVSet": {
+      "label": "Detalle UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la textura del detalle."
+    },
+    "_DecalTexUVSet": {
+      "label": "Decal UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la calcomanía."
+    },
+    "_DissolveMapUVSet": {
+      "label": "Conjunto UV disuelto",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para el mapa disuelto."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "Emission Mask UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la máscara de emisión."
+    },
+    "_OutlineTex": {
+      "label": "Textura en línea",
+      "tooltip": "Textura mapeada sobre geometría del esbozo."
+    },
+    "_OutlineTexUVSet": {
+      "label": "Tex UV Set",
+      "tooltip": "Canal UV para textura de contorno."
+    },
+    "_OutlineTexScrollX": {
+      "label": "Scroll X",
+      "tooltip": "Velocidad de desplazamiento X para textura de contorno."
+    },
+    "_OutlineTexScrollY": {
+      "label": "Outline Scroll Y",
+      "tooltip": "Velocidad de desplazamiento Y para textura de contorno."
+    },
+    "_UseOutlineGradient": {
+      "label": "Activar gradiente lineal",
+      "tooltip": "Aplica un gradiente vertical superior/bottom a través del esquema."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "Color superior",
+      "tooltip": "Color superior del gradiente de contorno."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "Color de fondo",
+      "tooltip": "Color inferior del gradiente de contorno."
+    },
+    "_RimMode": {
+      "label": "Modo de movimiento",
+      "tooltip": "Llanura exterior (glows hacia los bordes) o borde interior (glows hacia el centro de orientación)."
+    },
+    "_RimDepthMode": {
+      "label": "Modo de profundidad",
+      "tooltip": "Usa diferencias de profundidad de escena en lugar de ver ángulo para iluminación de bordes."
+    },
+    "_RimDepthWidth": {
+      "label": "Rim Depth Ancho",
+      "tooltip": "Ancho de distancia para bordes basados en profundidad."
+    },
+    "_GridTilingX": {
+      "label": "Grid Tiling X",
+      "tooltip": "Tilo horizontal para líneas de rejilla procesal."
+    },
+    "_GridTilingY": {
+      "label": "Grid Tiling Y",
+      "tooltip": "Tiling vertical para líneas de rejilla procesal."
+    },
+    "_DecalRotation": {
+      "label": "Rotación",
+      "tooltip": "Ángulo de rotación (0-360 grados) para la calcomanía."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "Habilitar la calcomanía 2",
+      "tooltip": "Supera una textura secundaria de calcomanía / pegatina."
+    },
+    "_Decal2Tex": {
+      "label": "Textura de nivel 2",
+      "tooltip": "La segunda textura de calcomanía."
+    },
+    "_Decal2BlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Cómo se mezcla Decal 2 con el color base."
+    },
+    "_Decal2Strength": {
+      "label": "Fuerza",
+      "tooltip": "Opacidad total/forzamiento de la calcomanía 2."
+    },
+    "_Decal2Normal": {
+      "label": "Mapa normal",
+      "tooltip": "Mapa normal para Decal 2."
+    },
+    "_Decal2NormalStrength": {
+      "label": "Fuerza normal",
+      "tooltip": "Fuerza de Decal 2 mapa normal."
+    },
+    "_Decal2Metallic": {
+      "label": "Metallic",
+      "tooltip": "Valor metálico para el área Decal 2."
+    },
+    "_Decal2Smoothness": {
+      "label": "Smoothness",
+      "tooltip": "Valor de suavidad para el área Decal 2."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "Afectos PBR",
+      "tooltip": "Permite modificar Normal, Metallic y Smoothness a través de la calcomanía."
+    },
+    "_Decal2TexUVSet": {
+      "label": "Decal 2 UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para Decal 2."
+    },
+    "_Decal2Rotation": {
+      "label": "Rotación",
+      "tooltip": "Ángulo de rotación (0-360 grados) para Decal 2."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "Habilitar la calcomanía 3",
+      "tooltip": "Supera una textura terciaria de calcomanía / pegatina."
+    },
+    "_Decal3Tex": {
+      "label": "Textura de nivel 3",
+      "tooltip": "La tercera textura de calcomanía."
+    },
+    "_Decal3BlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Cómo Decal 3 se mezcla con el color base."
+    },
+    "_Decal3Strength": {
+      "label": "Fuerza",
+      "tooltip": "Opacidad total/forzamiento de la calcomanía 3."
+    },
+    "_Decal3Normal": {
+      "label": "Mapa normal",
+      "tooltip": "Mapa normal para Decal 3."
+    },
+    "_Decal3NormalStrength": {
+      "label": "Fuerza normal",
+      "tooltip": "Fuerza de Decal 3 mapa normal."
+    },
+    "_Decal3Metallic": {
+      "label": "Metallic",
+      "tooltip": "Valor metálico para el área Decal 3."
+    },
+    "_Decal3Smoothness": {
+      "label": "Smoothness",
+      "tooltip": "Valor de suavidad para el área Decal 3."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "Afectos PBR",
+      "tooltip": "Permite modificar Normal, Metallic y Smoothness a través de la calcomanía."
+    },
+    "_Decal3TexUVSet": {
+      "label": "Decal 3 UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para Decal 3."
+    },
+    "_Decal3Rotation": {
+      "label": "Rotación",
+      "tooltip": "Ángulo de rotación (0-360 grados) para Decal 3."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "Rain Ripple UV Set",
+      "tooltip": "Canal UV para las ondas de lluvia (UV0 vs UV1)."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "AudioLink Blink Band",
+      "tooltip": "Banda AudioLink para pulsar/blinking emisión en ritmos de audio."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "Fuerza de enlace",
+      "tooltip": "Fuerza del efecto de parpadeo de emisión AudioLink."
+    },
+    "_UseBackFaceColor": {
+      "label": "Activar el color de la cara",
+      "tooltip": "Aplica un color separado a los polígonos de la espalda."
+    },
+    "_BackFaceColor": {
+      "label": "Color de la cara posterior",
+      "tooltip": "El color de las caras traseras."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "Cambio",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "Usar la textura de backface",
+      "tooltip": "Aplica una textura separada a los polígonos de espalda."
+    },
+    "_BackFaceTex": {
+      "label": "Texto de la cara posterior",
+      "tooltip": "La textura de las caras traseras."
+    },
+    "_BackFaceEmission": {
+      "label": "Back Face Emission",
+      "tooltip": "La textura de emisión de las caras traseras."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "Fuerza de emisión",
+      "tooltip": "Fuerza de la emisión de la cara posterior."
+    },
+    "_HueShift": {
+      "label": "Hue Shift",
+      "tooltip": "Rota el tono alrededor de la rueda de color."
+    },
+    "_SaturationAdjust": {
+      "label": "Saturación",
+      "tooltip": "Multiplica la saturación de color (0=Grayscale, 1=Default, 2=Vibrant)."
+    },
+    "_ValueAdjust": {
+      "label": "Valor (Brightness)",
+      "tooltip": "Escalas HSV valor/brightness."
+    },
+    "_UseHSVMask": {
+      "label": "HSV Mask",
+      "tooltip": "Máscara Ajustes HSV utilizando un mapa de textura."
+    },
+    "_HSVMask": {
+      "label": "Máscara HSV (R)",
+      "tooltip": "Textura de máscara para el cambio Hue/Saturation/Value (White=Full Shift, Black=Original)."
+    },
+    "_NormalMapFlipY": {
+      "label": "Flip Y (DirectX / OpenGL)",
+      "tooltip": "Invierte el canal verde del mapa normal para compatibilidad con formato DirectX/OpenGL."
+    },
+    "_DetailBlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Modo Blend para textura de detalle (Overlay, Multiply, Additive, SoftLight)."
+    },
+    "_VertexColorMode": {
+      "label": "Modo de color Vertex",
+      "tooltip": "Selecciona cómo se mezclan los colores del vértice con el color base (Reemplazar, Multiply, Add)."
+    },
+    "_GlitterShape": {
+      "label": "Glitter Shape",
+      "tooltip": "Controla la forma geométrica de los brillos."
+    },
+    "_MatCapMask": {
+      "label": "MatCap Mask (R)",
+      "tooltip": "Textura de máscara (R) controlando la visibilidad MatCap."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "MatCap Mask UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la máscara MatCap."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "Usar gradiente de contorno de borde",
+      "tooltip": "Permite un gradiente multicolor a lo largo del contorno de borde disuelto."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "Dissolve Edge Gradient",
+      "tooltip": "Textura gradiente aplicada a lo largo del contorno de borde disuelto."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "Mask Scroll Speed X",
+      "tooltip": "Velocidad de desplazamiento X para máscara de emisión."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "Mask Scroll Speed Y",
+      "tooltip": "Velocidad de desplazamiento Y para máscara de emisión."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "Global Smoothing",
+      "tooltip": "La respuesta global se suaviza a través de bandas de frecuencia AudioLink."
+    },
+    "_AL_GlobalMin": {
+      "label": "Global Floor / Min",
+      "tooltip": "Umbral de ruido para la reactividad de AudioLink."
+    },
+    "_AL_GlobalMax": {
+      "label": "Global Ceiling / Max",
+      "tooltip": "Alcance del umbral de techo AudioLink amplitud."
+    },
+    "_DetailNormalScrollX": {
+      "label": "Velocidad de desplazamiento X",
+      "tooltip": "Velocidad de desplazamiento X para el detalle normal."
+    },
+    "_DetailNormalScrollY": {
+      "label": "Scroll Speed Y",
+      "tooltip": "Velocidad de desplazamiento Y para el detalle normal."
+    },
+    "_ColorMask": {
+      "label": "Textura de máscara de color",
+      "tooltip": "Textura utilizada para enmascarar y restringir animaciones de color."
+    },
+    "_ColorMaskUVSet": {
+      "label": "Color Mask UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la máscara de color."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "Color Mask Alfa Fuente",
+      "tooltip": "Canal fuente utilizado para mezclar alfa la máscara de color."
+    },
+    "_MainTexUVSet": {
+      "label": "Conjunto UV de textura principal",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la textura principal."
+    },
+    "_Shadow2Color": {
+      "label": "2o color sombra",
+      "tooltip": "Color de sombra profunda para el segundo nivel de sombra de cel."
+    },
+    "_ToonThreshold2": {
+      "label": "2o Toon Threshold",
+      "tooltip": "Límite del umbral para el segundo nivel de sombra profunda."
+    },
+    "_ToonHardness2": {
+      "label": "2° Toon Hardness",
+      "tooltip": "Afilado de borde para el segundo nivel de sombra profunda."
+    },
+    "_MinLightBrightness": {
+      "label": "Min Light Brightness",
+      "tooltip": "Piso mínimo de brillo para evitar que los avatares se conviertan en negro de lanzamiento."
+    },
+    "_MaxLightBrightness": {
+      "label": "Max Light Brightness",
+      "tooltip": "Máximo techo de brillo para evitar la sobreexposición en mundos brillantes."
+    },
+    "_ShadeShiftMap": {
+      "label": "Mapa de Shade Shift",
+      "tooltip": "Textura sesgada la línea de sombras cel (pliegues fijos / AO)."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "Shade Shift UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para el mapa Shade Shift."
+    },
+    "_ShadeShiftStrength": {
+      "label": "Shade Shift Strength",
+      "tooltip": "Intensidad del sesgo de la línea de sombras del mapa del cambio de sombra."
+    },
+    "_StepSpecular": {
+      "label": "Paso Especular",
+      "tooltip": "Convierte puntos de brillo suaves de PBR en manchas brillantes de dibujos animados."
+    },
+    "_StepSpecularThreshold": {
+      "label": "Paso Especular Umbral",
+      "tooltip": "Límite del umbral para paso especulativo."
+    },
+    "_StepSpecularHardness": {
+      "label": "Dureza Especular",
+      "tooltip": "Agudización del borde para el paso especular."
+    },
+    "_UseMatCap2": {
+      "label": "MatCap 2",
+      "tooltip": "Añade una capa MatCap secundaria para acentos metálicos o de bordes de múltiples tonos."
+    },
+    "_MatCap2Tex": {
+      "label": "MatCap 2 Textura",
+      "tooltip": "Textura de reflexión esférica MatCap secundaria."
+    },
+    "_MatCap2BlendMode": {
+      "label": "Modo Blend",
+      "tooltip": "Modo Blend para MatCap 2 (Añadir, Multiply, Replace, Lighten, Overlay)."
+    },
+    "_MatCap2Intensity": {
+      "label": "Intensidad",
+      "tooltip": "Multiplicador de brillo para MatCap 2."
+    },
+    "_MatCap2Mask": {
+      "label": "MatCap 2 Mascara (R)",
+      "tooltip": "Textura de máscara (R) controlando la visibilidad MatCap 2."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "Mask UV Set",
+      "tooltip": "Canal UV para máscara MatCap 2."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "Mapa normal Perturbación",
+      "tooltip": "Deforma reflejos MatCap usando mapas normales de superficie."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "Corrección de perspectiva",
+      "tooltip": "Corrige la distorsión de perspectiva de TV en VR."
+    },
+    "_HairSpecMask": {
+      "label": "Máscara de piel",
+      "tooltip": "Textura de máscaras controlando donde aparecen aspectos especulativos del cabello."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "Mask UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la máscara especular del cabello."
+    },
+    "_OutlineNormalSource": {
+      "label": "Fuente normal",
+      "tooltip": "Flujo de Vertex usado para extrusión de contorno (Mesh Normals, Colores Vertex, UV2, UV3)."
+    },
+    "_OutlineMinWidth": {
+      "label": "Min Width",
+      "tooltip": "Espesor mínimo de píxel para contornos a distancia."
+    },
+    "_OutlineMaxWidth": {
+      "label": "Max Width",
+      "tooltip": "Espesor máximo de píxel para los contornos de cerca."
+    },
+    "_OutlineNoiseScale": {
+      "label": "Escala de ruido",
+      "tooltip": "Frecuencia de esbozo animado ruido del rompecabezas."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "Velocidad de ruido",
+      "tooltip": "Velocidad de animación del ruido del rompecabezas del esbozo."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "Fuerza de ruido",
+      "tooltip": "Fuerza de esbozo de desplazamiento del vertex jitter."
+    },
+    "_UseDitheredAlpha": {
+      "label": "Dithered Alpha",
+      "tooltip": "Screen-space Bayer matriz de separación para clasificar telas transparentes y pelo libre de clasificación."
+    },
+    "_DitherStrength": {
+      "label": "Dither Strength",
+      "tooltip": "Dither blend strength (0 = cutout agudo, 1 = estippleto completo)."
+    },
+    "_ShadowCutoff": {
+      "label": "Shadow Cutoff",
+      "tooltip": "Umbral de corte alfa para el casting de sombras."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "Use Shadow Cutoff Override",
+      "tooltip": "Anula el umbral de corte alfa específicamente para pases de fundición sombra."
+    },
+    "_AL_DecalBand": {
+      "label": "AudioLink Decal 1 Band",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "AudioLink Decal 1 Fuerza",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "AudioLink Decal 2 Band",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "AudioLink Decal 2 Strength",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "AudioLink Decal 3 Band",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "AudioLink Decal 3 Strength",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "Cerca de la cámara Fade",
+      "tooltip": "Smoothly disuelve la geometría cuando la cámara se acerca demasiado (prevents VR clipping cabeza)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "Fade Radius",
+      "tooltip": "Distancia de la cámara donde la geometría empieza a desaparecer."
+    },
+    "_NearCameraFadeRange": {
+      "label": "Fade Range",
+      "tooltip": "Distancia de transición para la moda de cámara cercana."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "Fade Shadows",
+      "tooltip": "También recorta sombras cuando está dentro de la distancia de desvanecimiento."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "Velocidad de pulso",
+      "tooltip": "Velocidad de oscilación para el esbozo de respiración/pulsión."
+    },
+    "_OutlinePulseStrength": {
+      "label": "Fuerza de pulso",
+      "tooltip": "Ampliación de oscilación para el esbozo de respiración/pulsión."
+    },
+    "_UseChromaKey": {
+      "label": "Use Chroma Key",
+      "tooltip": "Hace que un rango de color específico sea transparente (por ejemplo, el teclado de pantalla verde)."
+    },
+    "_ChromaKeyColor": {
+      "label": "Color clave",
+      "tooltip": "Color a la llave."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "Umbral",
+      "tooltip": "Umbral de distancia alrededor del color clave para eliminar."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "Momento",
+      "tooltip": "Suavidad de la transición del borde."
+    },
+    "_DistanceFade_LOD": {
+      "label": "Distancia LOD Inicio",
+      "tooltip": "Distancia de la cámara para empezar a simplificar los detalles de afeitado para la optimización LOD (0 = discapacitados)."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "Modo de parámetros de Avatar",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "Use holograma",
+      "tooltip": "Efecto de holograma de ciencia ficción con escanografías animadas, borde de borde y flicker."
+    },
+    "_HoloColor": {
+      "label": "Holograma Color",
+      "tooltip": "Tinte de color de la proyección de holograma."
+    },
+    "_HoloScanlineTiling": {
+      "label": "Tiro de escanografía",
+      "tooltip": "Densidad de los escaneos horizontales."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "Velocidad de Scanline",
+      "tooltip": "Velocidad de mover escanografías."
+    },
+    "_HoloRimPower": {
+      "label": "Rim Power",
+      "tooltip": "Agudización del borde del holograma."
+    },
+    "_HoloStrength": {
+      "label": "Fuerza de holograma",
+      "tooltip": "Fuerza superior de holograma sobre superficie base."
+    },
+    "_HoloAlphaStrength": {
+      "label": "Modulación alfa",
+      "tooltip": "Modula la transparencia con patrón de escaneo."
+    },
+    "_UseCustomFogColor": {
+      "label": "Color de la niebla personalizada",
+      "tooltip": "Supera el color de la niebla de escena global con un tinte localizado personalizado."
+    },
+    "_CustomFogColor": {
+      "label": "Color de Fog personalizado",
+      "tooltip": "Color tinte personalizado para niebla atmosférica."
+    },
+    "_AlphaToCoverage": {
+      "label": "Alfa a cobertura (MSAA)",
+      "tooltip": "Permite hardware Alpha a Coverage (MSAA anti-aliasing) en los bordes de corte, suavizar follaje y pelo."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "A2C Sharpen",
+      "tooltip": "Afila el Alfa a los bordes de cobertura."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "La sombra recibe fuerza",
+      "tooltip": "Controla cómo aparecen sombras oscuras de escena en tiempo real en el material (1.0 = sombra completa, 0.0 = no sombra)."
+    },
+    "_DecalClamp": {
+      "label": "Clamp Decal Bounds",
+      "tooltip": "Abrazaderas calcomanales UV coordenadas para que el calcomancillo no repita fuera [0, 1]."
+    },
+    "_Decal2Clamp": {
+      "label": "Clamp Decal Bounds",
+      "tooltip": "Abrazaderas calcomanales UV coordenadas así que Decal 2 no se repite fuera [0, 1]."
+    },
+    "_Decal3Clamp": {
+      "label": "Clamp Decal Bounds",
+      "tooltip": "Abrazaderas calcomanales UV coordenadas así que Decal 3 no repite fuera [0, 1]."
+    },
+    "_RimMask": {
+      "label": "Rim Mask",
+      "tooltip": "Máscara de textura (R) para restringir o pintar el brillo del borde en áreas de malla específicas."
+    },
+    "_RimMaskUVSet": {
+      "label": "Rim Mask UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para la máscara Rim."
+    },
+    "_OutlineLightingMix": {
+      "label": "Mezcla de iluminación",
+      "tooltip": "Iluminación de la escena de Blends en el contorno (0 = unlit, 1 = completamente sombreado por las luces de escena)."
+    },
+    "_OutlineZOffset": {
+      "label": "Z-Offset (Depth Bias)",
+      "tooltip": "Aplica un sesgo a fondo Z de cámara para evitar que los contornos recortan la geometría adyacente."
+    },
+    "_UseFaceSDF": {
+      "label": "Enable SDF Face Shadows",
+      "tooltip": "Señalado Distancia Campo de sombra mapeo para caracteres anime."
+    },
+    "_FaceShadowMap": {
+      "label": "Mapa Face Shadow (SDF)",
+      "tooltip": "SDF Face Shadow textura codificando gradientes umbral de luz."
+    },
+    "_FaceShadowOffset": {
+      "label": "Face Shadow Offset",
+      "tooltip": "Desactiva el ángulo de umbral de sombra frontal/a."
+    },
+    "_FaceShadowBlur": {
+      "label": "Suavidad de la sombra cara",
+      "tooltip": "Suaviza el borde de sombra SDF."
+    },
+    "_FaceShadowInvert": {
+      "label": "Invert Face Shadow",
+      "tooltip": "Invierte el gradiente de sombra SDF."
+    },
+    "_CameraVisibilityMode": {
+      "label": "Modo de visibilidad",
+      "tooltip": "Controla la visibilidad en espejos, auriculares VR y cámaras de corriente/foto de escritorio."
+    },
+    "_MirrorDetectMode": {
+      "label": "Método de detección de espejos",
+      "tooltip": "Algoritmo para detectar cámaras de espejo/reflexión."
+    },
+    "_CustomCameraFilter": {
+      "label": "ID de cámara personalizada",
+      "tooltip": "Filtro por ID de cámara global personalizado (0 = discapacitados)."
+    },
+    "_OffsetFactor": {
+      "label": "Factor de Offset de poligon",
+      "tooltip": "Factor de compensación de profundidad de polígono (prevents z-fighting)."
+    },
+    "_OffsetUnits": {
+      "label": "Unidades de Offset Polygon",
+      "tooltip": "Unidades de compensación de profundidad de polígono (preventos z-fighting)."
+    },
+    "_UseEnvRim": {
+      "label": "Environmental Rim",
+      "tooltip": "Tintes/modula el brillo de la llanta usando SH ambiente y sondas de reflexión."
+    },
+    "_EnvRimMix": {
+      "label": "Environmental Mix",
+      "tooltip": "Blend entre el color puro de la llanta (0) y la llanta del medio ambiente (1)."
+    },
+    "_MonochromeLighting": {
+      "label": "Iluminación monocromo",
+      "tooltip": "Desatura el color de iluminación de escena para preservar los tonos de piel de carácter precisos."
+    },
+    "_AsUnlitLighting": {
+      "label": "Iluminación no iluminada",
+      "tooltip": "Iluminación de bloques hacia un suelo uniforme sin iluminación en ambientes oscuros."
+    },
+    "_UseVRCLV": {
+      "label": "VRC Light Volumes",
+      "tooltip": "Muestras VRC Light Volumes (REDSIM) para la iluminación ambiental per-pixel en mundos soportados. Regresa a sondas de luz estándar en otro lugar. OFF forzada en niveles de rendimiento medio/bajo."
+    },
+    "_VRCLVIntensity": {
+      "label": "Intensidad LV",
+      "tooltip": "Escala la contribución ambiental del volumen de luz."
+    },
+    "_VRCLVNormalBias": {
+      "label": "LV bias normales",
+      "tooltip": "Desactiva la muestra de volumen a lo largo de la superficie normal para reducir el acné voxel en la geometría delgada."
+    },
+    "_UseFluorescence": {
+      "label": "Incapacidad de fluorescencia",
+      "tooltip": "Reacciones con intensidad de luz ambiental/direccional (glows en la oscuridad)."
+    },
+    "_FluorescenceMap": {
+      "label": "Mapa de Fluorescencia",
+      "tooltip": "Mapa de Fluorescencia (RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "Juego UV de mapa de fluorescencia",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para el mapa de fluorescencia."
+    },
+    "_FluorescenceColor": {
+      "label": "Color",
+      "tooltip": "Tinta de color HDR de fluorescencia"
+    },
+    "_FluorescenceStrength": {
+      "label": "Fuerza",
+      "tooltip": "Fuerza de Emisión de Fluorescencia"
+    },
+    "_FluorescenceThreshold": {
+      "label": "Luz",
+      "tooltip": "Umbral de nivel de luz que desencadena el resplandor de fluorescencia."
+    },
+    "_FluorescenceHardness": {
+      "label": "Hardness",
+      "tooltip": "Agudización de transición entre estado oscuro y iluminado."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "Sólo en la oscuridad",
+      "tooltip": "Cuando está habilitado, sólo brilla en ambientes de poca luz (glow-in-the-dark)."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "Enable PS1 Vertex Snapping",
+      "tooltip": "Quantiza posiciones de vértice a una rejilla de baja resolución para una estética retro PS1 / affine jitter."
+    },
+    "_PS1SnapResolution": {
+      "label": "Resolución",
+      "tooltip": "Resolución de agarre / precisión para el rompimiento de vértice (por ejemplo, 240p)."
+    },
+    "_PS1SnapSpace": {
+      "label": "Espacio Snap",
+      "tooltip": "Coordinar el espacio para romper (Screen-space jitter vs Object-space vertex quantize)."
+    },
+    "_UseLookAt": {
+      "label": "Activar mirada en el cartel",
+      "tooltip": "Rota vertices de malla para enfrentar dinámicamente la cámara activa."
+    },
+    "_LookAtMode": {
+      "label": "Modo de cartón",
+      "tooltip": "Eje de orientación de Billboarding (publique esférico 3D completo vs Y-Axis cartulina cilíndrica)."
+    },
+    "_LookAtStrength": {
+      "label": "Fuerza",
+      "tooltip": "Fuerza superior entre la orientación original de malla y la orientación vallada."
+    },
+    "_UseUVFlow": {
+      "label": "Habilitar flujo UV",
+      "tooltip": "Animas texturas a lo largo de los senderos del mapa de flujo vectorial utilizando ciclos sin costuras de 2 fases."
+    },
+    "_FlowMap": {
+      "label": "Flow Map (RG Vector)",
+      "tooltip": "Mapa de flujo (GR vectores de dirección, 0.5 = neutral)"
+    },
+    "_FlowMapUVSet": {
+      "label": "Flow Map UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para el mapa de flujo."
+    },
+    "_FlowSpeed": {
+      "label": "Velocidad de flujo",
+      "tooltip": "Velocidad de animación de movimiento de flujo."
+    },
+    "_FlowStrength": {
+      "label": "Fuerza lenta",
+      "tooltip": "Magnitud del desplazamiento de distorsión UV a lo largo de los vectores de flujo."
+    },
+    "_FlowCycleRate": {
+      "label": "Tasa de ciclo",
+      "tooltip": "Frecuencia de ciclos de crossfade de doble fase."
+    },
+    "_UseRGBAColorMask": {
+      "label": "Enable RGBA Color Masking",
+      "tooltip": "Permite 4 tintes de color independientes y canales emisivos mapeados a canales RGBA de una textura de máscara."
+    },
+    "_RGBAColorMask": {
+      "label": "Máscara de color (RGBA)",
+      "tooltip": "Máscara de color (canales de GRBA aisla 4 zonas recolorables)"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "UV Set",
+      "tooltip": "Selecciona el canal de coordenadas (UV0 o UV1) para RGBA Color Mask."
+    },
+    "_ColorMaskR_Color": {
+      "label": "Tinta roja",
+      "tooltip": "Tinta para máscara de canal R."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "Emission roja (HDR)",
+      "tooltip": "Emisión para máscara de canal R."
+    },
+    "_ColorMaskG_Color": {
+      "label": "Tinta verde",
+      "tooltip": "Tinta para máscara de canal G."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "Emission verde (HDR)",
+      "tooltip": "Emisión para máscara de canal G."
+    },
+    "_ColorMaskB_Color": {
+      "label": "Tinta azul",
+      "tooltip": "Tinta para máscara de canal B."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "Emisión Azul (HDR)",
+      "tooltip": "Emisión para máscara de canal B."
+    },
+    "_ColorMaskA_Color": {
+      "label": "Alpha Tint",
+      "tooltip": "Tinta para una máscara de canal."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "Alpha Emission (HDR)",
+      "tooltip": "Emisión para una máscara de canal."
+    },
+    "_UseNetworkTime": {
+      "label": "Habilitar tiempo sincronizado con la red",
+      "tooltip": "Sincroniza tiempo de animación continuo de sombreador a través de clientes de red a través de AudioLink/Udon reloj cronológico (prevende animación deriva en VRChat)."
+    },
+    "_NetworkTimeScale": {
+      "label": "Escala de tiempo de red",
+      "tooltip": "Factor de escala aplicado a tiempo de sincronización de red."
+    },
+    "_UseStochasticSampling": {
+      "label": "Enable muestreo estocástico",
+      "tooltip": "Proceduralmente mezcla muestras de textura aleatorizada para eliminar completamente los patrones de repetición en superficies grandes."
+    },
+    "_StochasticScale": {
+      "label": "Escala estocástica",
+      "tooltip": "Multiplicador de escala para la distribución de celosía triangular."
+    },
+    "_UseDetailNormalFade": {
+      "label": "Permite Detalle de distancia normal",
+      "tooltip": "Smoothly se desvanece con los detalles de alta frecuencia normales a distancia para prevenir el aliasing/shimmering VR."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "Distancia de inicio de destino",
+      "tooltip": "Distancia de cámara donde los detalles normales comienzan a desaparecer."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "Fade End Distancia",
+      "tooltip": "Distancia de cámara donde los detalles normales son completamente planos."
+    },
+    "_UseInternalParallax": {
+      "label": "Enable Interna Parallax",
+      "tooltip": "Simula profundidad interior capa debajo de vidrio, lentes, cristales y anime irises."
+    },
+    "_InternalParallaxMap": {
+      "label": "Textura de capa interna",
+      "tooltip": "Textura de capa de profundidad interior."
+    },
+    "_InternalParallaxColor": {
+      "label": "Color de capa",
+      "tooltip": "Tinte de color de capa interior."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "Cambio de color paralaje interno",
+      "tooltip": "AudioLink o cambio de color animado para el efecto de paralaje de capa interna."
+    },
+    "_InternalParallaxDepth": {
+      "label": "Escala de profundidad",
+      "tooltip": "Escala de profundidad interior simulada."
+    },
+    "_InternalParallaxLayers": {
+      "label": "Pasos de muestra",
+      "tooltip": "Número de pasos de muestra a través de la profundidad interior."
+    },
+    "_InternalParallaxStrength": {
+      "label": "Layer Strength",
+      "tooltip": "Multiplicador de brillo/opacidad de capa interna."
+    },
+    "_InternalParallaxEmission": {
+      "label": "Emissive Boost",
+      "tooltip": "Incremento de brillo emisivo para capas internas."
+    },
+    "_UseThemeColors": {
+      "label": "Habilitar colores temáticos globales",
+      "tooltip": "Define 4 colores maestros globales para impulsar temas unificados a través de materiales, con modulación opcional AudioLink y Hue."
+    },
+    "_ThemeColor1": {
+      "label": "Tema Color 1",
+      "tooltip": "Master Tema Color 1."
+    },
+    "_ThemeColor2": {
+      "label": "Tema Color 2",
+      "tooltip": "Master Tema Color 2."
+    },
+    "_ThemeColor3": {
+      "label": "Tema Color 3",
+      "tooltip": "Master Tema Color 3."
+    },
+    "_ThemeColor4": {
+      "label": "Tema Color 4",
+      "tooltip": "Master Tema Color 4."
+    },
+    "_ThemeMode": {
+      "label": "Modo de modulación",
+      "tooltip": "Selecciona el modo de modulación (Direct, AudioLink Reactive o Continuous Hue Shift)."
+    },
+    "_AL_ThemeBand": {
+      "label": "AudioLink Band",
+      "tooltip": "Selecciona la modulación de tema de conducción de banda de frecuencia."
+    },
+    "_AL_ThemeStrength": {
+      "label": "Fuerza de AudioLink",
+      "tooltip": "Multiplicador de intensidad de la reacción AudioLink."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "Velocidad de movimiento de Hueft",
+      "tooltip": "Velocidad de rotación continua del movimiento del casco."
+    },
+    "_ThemeTargetMask": {
+      "label": "Theme Target Mask",
+      "tooltip": "Pesos de la influencia: R=Base Color, G=Outlines, B=Rim, A=Emission."
+    },
+    "_UseCustomCubemap": {
+      "label": "Cubemap personalizado",
+      "tooltip": "Añade un cubemap personalizado para reflejos locales o retroceso cuando las sondas de reflexión están desaparecidas / oscuras."
+    },
+    "_CustomCubemap": {
+      "label": "Cubemap personalizado",
+      "tooltip": "Textura de cubemap personalizada para reflexiones."
+    },
+    "_CustomCubemapColor": {
+      "label": "Cubemap Tint",
+      "tooltip": "Cubemap reflejo color tinte."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "Roughness",
+      "tooltip": "Roughness / borrón del reflejo de la cubemap."
+    },
+    "_CustomCubemapMode": {
+      "label": "Modo Blend",
+      "tooltip": "Modo (Override Probes, Fallback When Probes Dark, o Additive)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "Intensidad",
+      "tooltip": "Multiplicador de intensidad de reflexión."
+    },
+    "_AL_DelayBass": {
+      "label": "Bass Delay",
+      "tooltip": "Delay offset along history buffer for Bass."
+    },
+    "_AL_DelayLowMid": {
+      "label": "Bajo Mid Delay",
+      "tooltip": "Delay offset along history buffer for Low Mid."
+    },
+    "_AL_DelayHighMid": {
+      "label": "High Mid Delay",
+      "tooltip": "Delay offset along history buffer for High Mid."
+    },
+    "_AL_DelayTreble": {
+      "label": "Treble Delay",
+      "tooltip": "Delay offset along history buffer for Treble."
+    },
+    "_UseLTCGI": {
+      "label": "Habilitar LTCGI",
+      "tooltip": "Reactúa a luz de área poligonal LTCGI en tiempo real y pantallas de vídeo en mundos compatibles de VRChat."
+    },
+    "_LTCGI_Intensity": {
+      "label": "Intensidad",
+      "tooltip": "Multiplicador de intensidad de iluminación de área LTCGI."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "Roughness Multiplier",
+      "tooltip": "Factor de escala de tosificación para las reflexiones de LTCGI."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "Fotosensitivity Strobe Clamp",
+      "tooltip": "La abrazadera de seguridad limita la frecuencia máxima de strobe/flash para salvaguardar contra las incautaciones epilépticas."
+    },
+    "_MaxFlashFrequency": {
+      "label": "Max Flash Hz",
+      "tooltip": "Frecuencia máxima permitida de flash / oscilación en Hz."
+    },
+    "_UseFur": {
+      "label": "Enable Shell Fur",
+      "tooltip": "Extruye múltiples capas de cáscara pasa hacia fuera a lo largo de las normales de vértice con enmascaramiento de ruido de hilo."
+    },
+    "_FurLayers": {
+      "label": "Shell Layers",
+      "tooltip": "Número de capas de capas extruidas (1 a 8). Los recuentos de capas superiores producen piel más completa pero cuestan más rasterización de geometría GPU."
+    },
+    "_FurLength": {
+      "label": "Duración",
+      "tooltip": "Longitud física de las hebras de piel en el espacio objeto/mundo."
+    },
+    "_FurMaskTex": {
+      "label": "Mapa de Fur Strand Noise",
+      "tooltip": "Textura ruido que controla la distribución y densidad de las cadenas."
+    },
+    "_FurDensity": {
+      "label": "Strand Density",
+      "tooltip": "Densidad de inclinación del patrón de ruido del hilo de piel."
+    },
+    "_FurThinning": {
+      "label": "Tip Thinning",
+      "tooltip": "Progresivamente delgadas y tapers varillas de piel hacia las puntas externas."
+    },
+    "_FurGravity": {
+      "label": "Gravity Vector",
+      "tooltip": "Deflection vector simulando gravedad tirando de varas hacia abajo."
+    },
+    "_FurWindStrength": {
+      "label": "Fuerza de viento",
+      "tooltip": "Fuerza de oscilación de viento procesal a través de las puntas de piel."
+    },
+    "_FurWindSpeed": {
+      "label": "Velocidad del viento",
+      "tooltip": "Velocidad de oscilación del viento procesal."
+    },
+    "_FurRootColor": {
+      "label": "Root Tint",
+      "tooltip": "Tinte de color en la base/raíz de cada hilo de piel."
+    },
+    "_FurTipColor": {
+      "label": "Tip Tint",
+      "tooltip": "Color tinte en la punta exterior de cada hilo de piel."
+    },
+    "_FurAO": {
+      "label": "Root AO Shadow",
+      "tooltip": "Simula la oclusión ambiental que sombra en la raíz de la piel."
+    },
+    "_FurCutoff": {
+      "label": "Strand Cutoff",
+      "tooltip": "Límite de fijación alfa para el espesor de la raíz del hilo."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "Activar la emisión Bloom Clamp",
+      "tooltip": "Activar la emisión Bloom Clamp"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "Max Emission Luminance",
+      "tooltip": "Max Emission Luminance"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "Clamp suave rodilla",
+      "tooltip": "Clamp suave rodilla"
+    },
+    "_OutlineStencil": {
+      "label": "Identificación de plantilla",
+      "tooltip": "Identificación de plantilla"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "Máscara de lectura",
+      "tooltip": "Máscara de lectura"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "Stencil de escribir máscara",
+      "tooltip": "Stencil de escribir máscara"
+    },
+    "_OutlineStencilComp": {
+      "label": "Comparación de plantillas",
+      "tooltip": "Comparación de plantillas"
+    },
+    "_OutlineStencilPass": {
+      "label": "Op Stencil Pass",
+      "tooltip": "Op Stencil Pass"
+    },
+    "_OutlineStencilFail": {
+      "label": "Opción de disco de plantilla",
+      "tooltip": "Opción de disco de plantilla"
+    },
+    "_OutlineStencilZFail": {
+      "label": "Stencil ZFail Op",
+      "tooltip": "Stencil ZFail Op"
+    },
+    "_UseProximityEffect": {
+      "label": "Efecto de proximidad enable",
+      "tooltip": "Efecto de proximidad enable"
+    },
+    "_ProximityMode": {
+      "label": "Modo de proximidad",
+      "tooltip": "Modo de proximidad"
+    },
+    "_ProximityAction": {
+      "label": "Proximity Action",
+      "tooltip": "Proximity Action"
+    },
+    "_ProximityRadius": {
+      "label": "Radius de proximidad",
+      "tooltip": "Radius de proximidad"
+    },
+    "_ProximitySoftness": {
+      "label": "Suavidad de proximidad",
+      "tooltip": "Suavidad de proximidad"
+    },
+    "_ProximityInvert": {
+      "label": "Invertir la proximidad",
+      "tooltip": "Invertir la proximidad"
+    },
+    "_ProximityColor": {
+      "label": "Color de proximidad",
+      "tooltip": "Color de proximidad"
+    },
+    "_ProximityColor_Shift": {
+      "label": "Cambio de color de proximidad",
+      "tooltip": "Cambio de color de proximidad"
+    },
+    "_ProximityCustomPos": {
+      "label": "Posición Mundial Aduanera",
+      "tooltip": "Posición Mundial Aduanera"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "Escala de Mip A2C",
+      "tooltip": "Escalada a base de derivativa para estabilizar el borde de corte a través de distancias en VR."
+    },
+    "_DetailNormalBicubic": {
+      "label": "Filtros bicubicos normales",
+      "tooltip": "Permite el muestreo bicubo Catmull-Rom de 5 puntas para eliminar artefactos de límite de texel en VR."
+    },
+    "_DetailNormalCount": {
+      "label": "Detalle de capas normales",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "Detalle Normal 2 Mapa",
+      "tooltip": "Segundo detalle capa de mapa normal."
+    },
+    "_DetailNormal2Scale": {
+      "label": "Capa 2 Fuerza",
+      "tooltip": "Controla la fuerza del detalle capa normal 2."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "Detalle Normal 2 UV Set",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "Capa 2 velocidad de desplazamiento X",
+      "tooltip": "Velocidad de desplazamiento X para detalle capa normal 2."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "Layer 2 Scroll Speed Y",
+      "tooltip": "Velocidad de desplazamiento Y para detalle capa normal 2."
+    },
+    "_DetailNormal3Map": {
+      "label": "Detalle Normal 3 Mapa",
+      "tooltip": "Tercera capa de mapa normal."
+    },
+    "_DetailNormal3Scale": {
+      "label": "Capa 3 Fuerza",
+      "tooltip": "Controla la fuerza del detalle capa normal 3."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "Detalle Normal 3 UV Set",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "Capa 3 velocidad de desplazamiento X",
+      "tooltip": "Velocidad de desplazamiento X para detalle capa normal 3."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "Layer 3 Scroll Speed Y",
+      "tooltip": "Velocidad de desplazamiento Y para detalle capa normal 3."
+    },
+    "_DetailNormal4Map": {
+      "label": "Detalle Normal 4 Mapa",
+      "tooltip": "Cuarto detalle capa de mapa normal."
+    },
+    "_DetailNormal4Scale": {
+      "label": "Capa 4 Fuerza",
+      "tooltip": "Controla la fuerza del detalle capa normal 4."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "Detalle Normal 4 UV Set",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "Capa 4 velocidad de desplazamiento X",
+      "tooltip": "Velocidad de desplazamiento X para detalle capa normal 4."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "Layer 4 Scroll Speed Y",
+      "tooltip": "Velocidad de desplazamiento Y para detalle capa normal 4."
+    },
+    "_UseOKLabBlending": {
+      "label": "OKLab Color Blending",
+      "tooltip": "Permite la mezcla de espacio de color OKLab de Björn Ottosson para tintes y temas para eliminar la desaturación fangosa."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "MatCap Global Mask Channel",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "Rim Global Mask Channel",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "Glitter Global Mask Channel",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "Dissolve Global Mask Channel",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "Activar la recepción VRSL",
+      "tooltip": "Realiza correcciones de escenarios DMX en tiempo real, láseres y iluminación de clubes volumétricos en mundos compatibles de VRChat."
+    },
+    "_VRSLIntensity": {
+      "label": "GI Intensity",
+      "tooltip": "GI e intensidad de recepción de lavado ambiente."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "Intensidad directa",
+      "tooltip": "Intensidad de recepción de luz de fijación directa."
+    },
+    "_VRSLSpecular": {
+      "label": "Recepción especulativa",
+      "tooltip": "Especular reflexión de relieve de accesorios."
+    },
+    "_UseDebugMode": {
+      "label": "Enable Debug Ver",
+      "tooltip": "Inspeccione los búferes de afeitado intermedio y los diagnósticos en el mirador."
+    },
+    "_DebugMode": {
+      "label": "Modo de depuración",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "Material bloqueado",
+      "tooltip": "Material bloqueado"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "Animate",
+      "tooltip": "Automáticamente anima la cantidad de colapso con el tiempo."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "Corte de sombras personalizado",
+      "tooltip": "Anula el umbral de corte alfa específicamente para pases de fundición sombra."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "Activar controles avanzados de animación",
+      "tooltip": "Expone controles maestros para escalar tiempo, modo de reproducción y tiempo compensado para todas las animaciones de tonos."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "Activar la reflexión anisotropica",
+      "tooltip": "Crea relieves estirados, comunes en metal cepillado o pelo."
+    },
+    "Enable Back Face Color": {
+      "label": "Activar el color de la cara",
+      "tooltip": "Aplica un color separado a los polígonos de la espalda."
+    },
+    "Enable Back Face Texture": {
+      "label": "Activar la textura facial",
+      "tooltip": "Aplica una textura separada a los polígonos de espalda."
+    },
+    "Enable Chroma Keying": {
+      "label": "Cayo de croma habilitado",
+      "tooltip": "Hace que un rango de color específico sea transparente (por ejemplo, el teclado de pantalla verde)."
+    },
+    "Enable Clear Coat": {
+      "label": "Enable Clear Coat",
+      "tooltip": "Añade una capa especulativa de capa clara secundaria sobre el material base PBR. Útil para superficies pintadas/caladas."
+    },
+    "Enable Clipping Mask": {
+      "label": "Enable Máscara de Clipping",
+      "tooltip": "Usa una textura para cortar (hacer partes invisibles) del material. Este es un clip duro, no una transparencia suave."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "Activación de Cubemap personalizado",
+      "tooltip": "Añade un cubemap personalizado para reflejos locales o retroceso cuando las sondas de reflexión están desaparecidas / oscuras."
+    },
+    "Enable Custom Fog Color": {
+      "label": "Color de la niebla personalizada",
+      "tooltip": "Supera el color de la niebla de escena global con un tinte localizado personalizado."
+    },
+    "Enable Decal 1": {
+      "label": "Localización 1",
+      "tooltip": "Supera una textura principal de calcomanía / pegatina."
+    },
+    "Enable Decal 2": {
+      "label": "Habilitar la calcomanía 2",
+      "tooltip": "Supera una textura secundaria de calcomanía / pegatina."
+    },
+    "Enable Decal 3": {
+      "label": "Habilitar la calcomanía 3",
+      "tooltip": "Supera una textura terciaria de calcomanía / pegatina."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "Enable Depth Fade (partículas de popa)",
+      "tooltip": "Suaviza las intersecciones de polígono contra la geometría de escena para superficies transparentes y aditivas."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "Permite Detalle de distancia normal",
+      "tooltip": "Smoothly se desvanece con los detalles de alta frecuencia normales a distancia para prevenir el aliasing/shimmering VR."
+    },
+    "Enable Detail Normal Map": {
+      "label": "Permite Detalle Mapa Normal",
+      "tooltip": "Añade un mapa normal secundario para los golpes de detalle de la microsuperficie."
+    },
+    "Enable Detail Texture": {
+      "label": "Activar la textura de detalle",
+      "tooltip": "Supera una textura secundaria, a menudo para detalles finos o grunge."
+    },
+    "Enable Dissolve": {
+      "label": "Enable Dissolve",
+      "tooltip": "Hace que el objeto aparezca/desaparece usando un patrón de ruido."
+    },
+    "Enable Distance Fade": {
+      "label": "Fade de distancia habilitada",
+      "tooltip": "Se desvanece el objeto cuando está lejos de la cámara."
+    },
+    "Enable Dithered Transparency": {
+      "label": "Transparencia sumergida",
+      "tooltip": "Screen-space Bayer matriz de separación para clasificar telas transparentes y pelo libre de clasificación."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "Fade de distancia de efecto (LOD)",
+      "tooltip": "Fades graves efectos de procedimiento (Glitter, Fractals, Grid, Psychedelic) más allá de una distancia establecida para mejorar el rendimiento de VR."
+    },
+    "Enable Emission": {
+      "label": "Permitir la emisión",
+      "tooltip": "Hace brillar el objeto. Requiere un efecto de procesamiento post Bloom en la escena para ver el resplandor."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "Activar la emisión Bloom Clamp",
+      "tooltip": "Abraza la máxima luminancia HDR de emisión para evitar cegados brotes de floración."
+    },
+    "Enable Emission Pulse": {
+      "label": "Pulso de emisión habilitado",
+      "tooltip": "Pulses intensidad de emisión rítmicamente sin afectar la iluminación difusa."
+    },
+    "Enable Environment Reflections": {
+      "label": "Reflections Enable Environment",
+      "tooltip": "Muestra sondas de reflexión para añadir reflexiones ambientales, incluso en modos Basic/Toon."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "Enable Eye Iris Parallax",
+      "tooltip": "Simula profundidad/refracción del alumno e iris debajo de la córnea."
+    },
+    "Enable Flipbook Animation": {
+      "label": "Activar Animación Flipbook",
+      "tooltip": "Anima la textura principal usando un diseño de spritesheet. Esto anulará el revestimiento y el offset de la textura principal."
+    },
+    "Enable Fluorescence": {
+      "label": "Incapacidad de fluorescencia",
+      "tooltip": "Reacciones con intensidad de luz ambiental/direccional (glows en la oscuridad)."
+    },
+    "Enable Fourth Emission": {
+      "label": "IV. Habilitación de la cuarta misión",
+      "tooltip": "Añade una cuarta capa de emisión de desplazamiento."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "Transparencia de los túneles",
+      "tooltip": "Hace que el objeto sea más transparente en el centro y opaco en los bordes."
+    },
+    "Enable Glitch Flicker": {
+      "label": "Enable Glitch Flicker",
+      "tooltip": "Aplica un efecto agitador para todo el objeto."
+    },
+    "Enable Global Theme Colors": {
+      "label": "Habilitar colores temáticos globales",
+      "tooltip": "Define 4 colores maestros globales para impulsar temas unificados a través de materiales, con modulación opcional AudioLink y Hue."
+    },
+    "Enable Grid": {
+      "label": "Enable Grid",
+      "tooltip": "Supera un patrón de rejilla en la superficie."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "Enable Hair Specular (Kajiya-Kay)",
+      "tooltip": "Destacados de estilo anisotrópico específicamente para las hebras de pelo."
+    },
+    "Enable Hologram": {
+      "label": "Holograma habilitado",
+      "tooltip": "Efecto de holograma de ciencia ficción con escanografías animadas, borde de borde y flicker."
+    },
+    "Enable HSV Mask": {
+      "label": "HSV Mask",
+      "tooltip": "Máscara Ajustes HSV utilizando un mapa de textura."
+    },
+    "Enable Interlacing": {
+      "label": "Habilitación de enlace",
+      "tooltip": "Oscurece cada otra fila de pantalla para simular una pantalla entrelazada."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "Activar paralaje interno (Gems / pestañas)",
+      "tooltip": "Simula profundidad interior capa debajo de vidrio, lentes, cristales y anime irises."
+    },
+    "Enable Intersection Effect": {
+      "label": "Efecto de intersección habilitado",
+      "tooltip": "Se desvanece a un color donde el objeto está cerca o intersecta con otros objetos en la escena."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "Activar mirada en el cartel",
+      "tooltip": "Rota vertices de malla para enfrentar dinámicamente la cámara activa."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "Habilitar LTCGI (Area Light GI)",
+      "tooltip": "Reactúa a luz de área poligonal LTCGI en tiempo real y pantallas de vídeo en mundos compatibles de VRChat."
+    },
+    "Enable MatCap 2": {
+      "label": "MatCap 2",
+      "tooltip": "Añade una capa MatCap secundaria para acentos metálicos o de bordes de múltiples tonos."
+    },
+    "Enable Near Camera Fade": {
+      "label": "Enable cerca de la cámara de Fade",
+      "tooltip": "Smoothly disuelve la geometría cuando la cámara se acerca demasiado (prevents VR clipping cabeza)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "Habilitar tiempo sincronizado con la red",
+      "tooltip": "Sincroniza tiempo de animación continuo de sombreador a través de clientes de red a través de AudioLink/Udon reloj cronológico (prevende animación deriva en VRChat)."
+    },
+    "Enable Noise/Grain": {
+      "label": "Activar ruido/grano",
+      "tooltip": "Añade un sobrevalor de ruido animado."
+    },
+    "Enable Outline": {
+      "label": "Enable Outline",
+      "tooltip": "Añade un esbozo sólido alrededor del objeto. Esto añade una segunda llamada al objeto."
+    },
+    "Enable Outline Gradient": {
+      "label": "Activar gradiente lineal",
+      "tooltip": "Aplica un gradiente vertical superior/bottom a través del esquema."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "Enable Parallax Mapping (Mapa de altura)",
+      "tooltip": "Utiliza un mapa de altura para compensar los rayos UV para su profundidad."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "Mapping paralax",
+      "tooltip": "Permite un paralaje de varios pasos para un efecto de profundidad de mayor calidad. Alto perf solamente."
+    },
+    "Enable Pixelation": {
+      "label": "Pixelación enable",
+      "tooltip": "Crea un efecto bloqueado y de baja resolución."
+    },
+    "Enable Planar Wipe": {
+      "label": "Enable Planar Wipe",
+      "tooltip": "Revela el objeto con una toallita suave y direccional."
+    },
+    "Enable Posterization": {
+      "label": "Posterización",
+      "tooltip": "Reduce el número de colores, dando un aspecto retro/digital."
+    },
+    "Enable Procedural Texture": {
+      "label": "Textura procesal enable",
+      "tooltip": "Reemplaza una propiedad material con un patrón generado."
+    },
+    "Enable Proximity Effect": {
+      "label": "Efecto de proximidad enable",
+      "tooltip": "Provoca efectos visuales (glow, disolver, dither o tint) basados en la distancia a la cámara, el pivote de objetos o la posición del mundo personalizada."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "Enable PS1 Retro Vertex Snapping",
+      "tooltip": "Quantiza posiciones de vértice a una rejilla de baja resolución para una estética retro PS1 / affine jitter."
+    },
+    "Enable Pulse": {
+      "label": "Pulso enable",
+      "tooltip": "Añade una animación pulsante a la fuerza de emisión."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "Activar RGBA Color Masking (Recolor Workflow)",
+      "tooltip": "Permite 4 tintes de color independientes y canales emisivos mapeados a canales RGBA de una textura de máscara."
+    },
+    "Enable Rim Glow": {
+      "label": "Enable Rim Glow",
+      "tooltip": "Añade un resplandor a los bordes del objeto basado en el ángulo de visualización."
+    },
+    "Enable Ripple Effect": {
+      "label": "Enable Ripple Effect",
+      "tooltip": "Crea un efecto ondulado concéntrico que emana de una coordenadas UV."
+    },
+    "Enable Scanlines": {
+      "label": "Enable Scanlines",
+      "tooltip": "Simula la mirada de un monitor CRT."
+    },
+    "Enable Screen Refraction": {
+      "label": "Activar la reacción de la pantalla",
+      "tooltip": "Distorsiona la pantalla detrás del objeto."
+    },
+    "Enable Scrolling": {
+      "label": "Desplazamiento de la capacidad",
+      "tooltip": "Desplaza el patrón de la red."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "Enable SDF Face Shadows",
+      "tooltip": "Señalado Distancia Campo de sombra mapeo para caracteres anime."
+    },
+    "Enable Second Emission": {
+      "label": "Permitir la segunda emisión",
+      "tooltip": "Añade una segunda capa de emisión de desplazamiento."
+    },
+    "Enable Shader Debug View": {
+      "label": "Hable Shader Debug Ver",
+      "tooltip": "Inspeccione los búferes de afeitado intermedio y los diagnósticos en el mirador."
+    },
+    "Enable Shell Fur": {
+      "label": "Enable Shell Fur",
+      "tooltip": "Extruye múltiples capas de cáscara pasa hacia fuera a lo largo de las normales de vértice con enmascaramiento de ruido de hilo."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "Enable Skin Diffuse Wrap",
+      "tooltip": "Suaviza las sombras de iluminación sobre superficies curvas orgánicas."
+    },
+    "Enable Step Specular": {
+      "label": "Activar el paso Especular",
+      "tooltip": "Convierte puntos de brillo suaves de PBR en manchas brillantes de dibujos animados."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "Enable muestreo estocástico",
+      "tooltip": "Proceduralmente mezcla muestras de textura aleatorizada para eliminar completamente los patrones de repetición en superficies grandes."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "Enable Subsurface Scattering",
+      "tooltip": "Simula la luz dispersando a través de objetos delgados como la piel o las hojas."
+    },
+    "Enable Thickness Map": {
+      "label": "Enable Thickness Map",
+      "tooltip": "Usa una textura para simular la transmisión de la luz a través de áreas delgadas (tierras, hojas, etc.)."
+    },
+    "Enable Third Emission": {
+      "label": "Permitir la tercera misión",
+      "tooltip": "Añade una tercera capa de emisión de desplazamiento."
+    },
+    "Enable Transparency": {
+      "label": "Transparencia",
+      "tooltip": "Hace que el objeto sea uniformemente transparente."
+    },
+    "Enable Transparency Glitch": {
+      "label": "Activación de Transparencia",
+      "tooltip": "Causa el efecto del flicker para también afectar la transparencia."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "Activar Mapa Normal Triplanar",
+      "tooltip": "Proyectos un mapa normal a través de 3 ejes."
+    },
+    "Enable UV Distortion": {
+      "label": "Permitir la distorsión UV",
+      "tooltip": "Usa una textura para evitar las coordenadas UV, creando efectos como la escobilla de calor o las ondas de agua."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "Habilitar el flujo UV (Pathing)",
+      "tooltip": "Animas texturas a lo largo de los senderos del mapa de flujo vectorial utilizando ciclos sin costuras de 2 fases."
+    },
+    "Enable UV Tile Discard": {
+      "label": "Activar el disco de azulejos UV",
+      "tooltip": "Desvelar los azulejos UV específicos. Útil para recoger piezas de ropa."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "Textura de animación Vertex",
+      "tooltip": "Aplica la animación del vértice horneado de una textura del IVA. Se utiliza para efectos pre-baqueados de tela, líquido o destrucción."
+    },
+    "Enable Vertex Collapse": {
+      "label": "Enable Vertex Collapse",
+      "tooltip": "Arruga el modelo en su punto central."
+    },
+    "Enable Video Player": {
+      "label": "Activar el reproductor de vídeo",
+      "tooltip": "Configura la textura para recibir datos de reproductor de vídeo."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "Habilitar VRSL (VRC Studio Lighting)",
+      "tooltip": "Realiza correcciones de escenarios DMX en tiempo real, láseres y iluminación de clubes volumétricos en mundos compatibles de VRChat."
+    },
+    "Enable Wetness": {
+      "label": "Activar la humedad",
+      "tooltip": "Simula una superficie mojada con efectos de rotura y lluvia."
+    },
+    "Override Scene Light": {
+      "label": "Override Scene Light",
+      "tooltip": "Supera la dirección, el color y la intensidad de la luz de escena principal."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "Fotosensitivity Strobe Clamp",
+      "tooltip": "La abrazadera de seguridad limita la frecuencia máxima de strobe/flash para salvaguardar contra las incautaciones epilépticas."
+    },
+    "Use Auto Hue Shift": {
+      "label": "Use Auto Hue Shift",
+      "tooltip": "Continuamente cambia el color base fractal con el tiempo."
+    },
+    "Use Base Color": {
+      "label": "Use Base Color",
+      "tooltip": "Toggles el color base sólido."
+    },
+    "Use Base Texture": {
+      "label": "Use Base Texture",
+      "tooltip": "Toggles la textura principal."
+    },
+    "Use Depth-Based Color": {
+      "label": "Usar color de profundidad",
+      "tooltip": "Cambia el color de la red basado en su proximidad a otras superficies."
+    },
+    "Use Emission Mask": {
+      "label": "Use Emission Mask",
+      "tooltip": "Usa una textura para controlar qué partes de la superficie emiten luz."
+    },
+    "Use Grid Mask": {
+      "label": "Use Grid Mask",
+      "tooltip": "Usa una textura para enmascarar el efecto de la red."
+    },
+    "Use Outline Width Map": {
+      "label": "Uso Mapa de Width",
+      "tooltip": "Usa una textura a escala gris para modular el espesor del contorno por píxel."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "Use Texture Alpha for Emission",
+      "tooltip": "Utiliza el canal alfa de la textura principal como mapa de emisión. Una forma poderosa de crear mapas de brillo sin una textura separada."
+    },
+    "Use Transmission Texture": {
+      "label": "Use Transmission Texture",
+      "tooltip": "Mapa de color personalizado que indica la transmisión de la luz trasera."
+    }
+  }
+}

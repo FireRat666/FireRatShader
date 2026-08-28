@@ -1,0 +1,4035 @@
+{
+  "languageCode": "ru-RU",
+  "languageName": "Русский",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск свойств материалов...",
+    "matchingProperties": "Соответствующие свойства",
+    "clearSearch": "Четкий поиск",
+    "noPropertiesFound": "Не найдено никаких свойств",
+    "lockMaterial": "Материал заблокирован и оптимизирован (нажмите, чтобы разблокировать)",
+    "unlockMaterial": "Разблокировать материал",
+    "lockAndOptimize": "Lock & Optimize скачать",
+    "savePreset": "Сохранить Preset...",
+    "loadPreset": "Загрузить Preset...",
+    "copy": "Копия",
+    "paste": "Паста",
+    "reset": "Сброс",
+    "language": "Язык языка",
+    "cycle": "Цикл",
+    "performanceTip": "Совет по производительности: этот материал разблокирован. Для лучшей производительности во время выполнения (особенно на Quest / VR) используйте «Заблокировать и оптимизировать» выше. Это полоски неиспользуемых проходов шейдера, ветвей мертвого кода и ключевых слов для рендеринга с нулевым накладным расходом.",
+    "lockedWarning": "Материал закрыт (только для чтения). Разблокируйте через панель инструментов для изменения свойств.",
+    "Global UV Controls": "Глобальный УФ-контроль",
+    "UV Tile Grid (4×4)": "Ультрафиолетовая решетка (4×4)",
+    "Uncheck tiles to discard those UV regions.": "Отключите плитку, чтобы отбросить эти УФ-области.",
+    "Global Color Animation": "Глобальная цветовая анимация",
+    "Color Adjustments": "Цветовые корректировки",
+    "Red Zone (R Channel)": "Красная зона (R Channel)",
+    "Green Zone (G Channel)": "Зеленая зона (G Channel)",
+    "Blue Zone (B Channel)": "Голубая зона (B Channel)",
+    "Alpha Zone (A Channel)": "Альфа-зона (канал)",
+    "Color Correction": "Коррекция цвета",
+    "Dedicated Shading Models": "Выделенные модели затенения",
+    "Render States": "Отдать государства",
+    "Camera & Mirror Visibility": "Камера и зеркальная видимость",
+    "Stencil Buffer Settings": "Настройки буфера Stencil",
+    "Global AudioLink Controls": "Глобальный контроль AudioLink",
+    "Per-Band Delay & Timing (History Buffer)": "Per-Band Delay & Timing (альбом)",
+    "Audio Spectrum": "Аудиоспектр",
+    "Audio Waveform": "Аудио Waveform",
+    "Avatar Param Fallback": "Обсуждение Avatar Param Fallback",
+    "AvatarParamFallbackTooltip": "Обратная связь с локальными параметрами аватара / входами OSC, когда отсутствует мировой источник AudioLink.",
+    "Pulse Alpha Range": "Пульс Alpha Range",
+    "PulseAlphaRangeTooltip": "Контролирует минимальную и максимальную альфу пульса.",
+    "Color": "Цвет",
+    "Transform": "Трансформация",
+    "Texture": "Текстура",
+    "Normal Map": "Нормальная карта",
+    "UV": "УФ",
+    "UV0": "UV0",
+    "UV1": "UV1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "Мировое пространство (Трипланар)",
+    "Local Space (Triplanar)": "Местное пространство (Трипланар)",
+    "Screen Space": "Пространство экрана",
+    "Planar (Local XY)": "Планар (местный XY)",
+    "Spherical (Local)": "Сферический (местный)",
+    "Cylindrical (Local)": "Цилиндрический (местный)",
+    "Biplanar (World)": "Бипланар (Мир)",
+    "Panosphere (Equirectangular 360)": "Паносфера (Equirectangular 360)",
+    "Polar Coordinates": "Полярные координаты",
+    "Off": "Оставить",
+    "Bass": "Басс",
+    "Low Mid": "Низкий уровень",
+    "High Mid": "Средний",
+    "Treble": "Трепет",
+    "High": "Высокий",
+    "Medium": "Средний",
+    "Low": "Низкий",
+    "Opaque": "Непрозрачный",
+    "Cutout": "Вырезать",
+    "Transparent": "Прозрачный",
+    "Additive": "Аддитивный",
+    "Multiply": "Умножать",
+    "Premultiplied": "Умноженный",
+    "None": "Никто",
+    "R": "R",
+    "G": "G",
+    "B": "B",
+    "A": "А",
+    "RGBA": "РГБА",
+    "RGB": "RGB",
+    "All": "Все",
+    "Hue Shift": "Сдвиг Хюэ",
+    "Gradient": "Градиент",
+    "Rainbow Gradient": "Радужный градиент",
+    "AudioLink Theme": "AudioLink Тема",
+    "Direct": "Прямой",
+    "AudioLink": "AudioLink",
+    "HueShift": "Hue Shift",
+    "Hue Shift/Gradient": "Hue Shift/Градиент",
+    "Velocity": "Скорость",
+    "Stylized_PBR": "Стилизованный PBR",
+    "Standard_PBR": "Стандартный PBR",
+    "Toon": "Тун",
+    "Basic": "Базовый",
+    "Unlit": "Без света",
+    "Flat": "Плоский",
+    "Ambient": "Окружающая среда",
+    "ShadowColor": "Shadow Color",
+    "Ambient/ShadowColor": "Цвет / ShadowColor",
+    "TwoTone": "Двухцветный",
+    "ThreeTone": "Тритон",
+    "FourTone": "FourTone",
+    "Whiteout_UDN": "Whiteout UDN",
+    "RNM": "РНМ",
+    "OverrideProbes": "Оверрайдзонды",
+    "FallbackWhenProbesDark": "Обсуждение FallbackWhenProbesDark",
+    "Screen": "Экран",
+    "Metallic": "Металлический",
+    "Specular": "Необычный",
+    "Override": "Отменять",
+    "Add": "Добавить",
+    "Replace": "Заменить",
+    "Lighten": "Светлый",
+    "Overlay": "Наложение",
+    "SoftLight": "Мягкий свет",
+    "Alpha Blend": "Альфа-блеск",
+    "Lerp": "Лерп",
+    "Max": "Макс",
+    "Circle": "Круг",
+    "Square": "Площадь",
+    "Star": "Звезда",
+    "MatCap": "MatCap",
+    "Glass": "Стекло",
+    "Anisotropic": "Анизотропный",
+    "SubsurfaceScattering": "Подповерхностное рассеяние",
+    "Retro_PSX": "Ретро PSX",
+    "Retro_HalfLambert": "Retro HalfLambert",
+    "Ward": "Уорд",
+    "Stretched-Blinn": "Растянутый-Блинн",
+    "Default": "По умолчанию",
+    "Hologram": "Голограмма",
+    "Crystal": "Кристаллический",
+    "Triplanar": "Трипланар",
+    "Iridescence": "Иридисценция",
+    "Glitter": "Блеск",
+    "Psychedelic": "Психоделический",
+    "Fractal3D": "Fractal3D",
+    "Galaxy": "Галактика",
+    "Skybox": "Скайбокс",
+    "EQ Bars": "Бары EQ",
+    "Continuous Curve": "Непрерывная кривая",
+    "Radial": "Радиальный",
+    "Waterfall": "Водопад",
+    "Solid": "Твердый",
+    "Frequency Gradient": "Частотный градиент",
+    "Emissive Lerp": "Эмиссивный Lerp",
+    "Oscilloscope": "Осциллограф",
+    "Ribbon": "Лента",
+    "Polar": "Полярный",
+    "Lissajous": "Лиссажу",
+    "Vertex Displacement": "Смещение Vertex",
+    "Mono": "Моно",
+    "Left": "Левый",
+    "Right": "Правильно",
+    "Local": "Местный",
+    "World": "Мир",
+    "ScreenSpace": "ScreenSpace",
+    "ObjectSpace": "Объектное пространство",
+    "FullBillboard": "Full Billboard",
+    "YAxisBillboard": "YAxisBillboard",
+    "Local Space": "Местное пространство",
+    "World Space": "Мировое пространство",
+    "Mandelbulb": "Мандельбулл",
+    "Menger Sponge": "Менгер Губка",
+    "Kaleidoscopic IFS": "Калейдоскопическая ИФС",
+    "Mandelbox": "Мандельбокс",
+    "Julia Set 3D": "Джулия 3D",
+    "Sierpinski Tetrahedron": "Серпинский тетраэдр",
+    "Apollonian Gasket": "Гаскет Аполлона",
+    "Burning Ship": "Горящий корабль",
+    "Tricorn": "Трикорн",
+    "Mandelbulb Power 2": "Мандельбулл Power 2",
+    "Mandelbulb Power 8": "Мандельбулл Power 8",
+    "Quaternion Julia": "Кватернион Юлия",
+    "IFS Tetrahedron": "IFS Тетраэдр",
+    "Octahedron": "Октаэдр",
+    "Dodecahedron": "Додекаэдр",
+    "Icosahedron": "Икосаэдр",
+    "Cubic Fractal": "Кубический фрактал",
+    "Hybrid Box-Bulb": "Гибридный Box-Bulb",
+    "Single Instance": "Единая инстанция",
+    "Repeated (Clipped)": "Повторяющийся (Clipped)",
+    "Endless": "Бесконечный",
+    "Yaw": "Ясно",
+    "Pitch": "Стучать",
+    "Roll": "Ролл",
+    "Tumble": "Спотыкаться",
+    "Sway": "Свэй",
+    "Pulsate": "Пульсировать",
+    "Grid": "Сетка",
+    "Scanlines": "Сканирование",
+    "Noise": "Шум",
+    "Voronoi": "Вороной",
+    "Wave": "Волна",
+    "Sierpinski": "Серпинский",
+    "Checkerboard": "Верхняя часть",
+    "PolkaDot": "Полкадот",
+    "HexagonGrid": "HexagonGrid",
+    "Herringbone": "Сельдь",
+    "Houndstooth": "Охотник за головами",
+    "CarbonFiber": "Углеродное волокно",
+    "Plaid": "Простая",
+    "CircuitBoard": "Кольцевой борт",
+    "HalftoneDot": "HalftoneDot",
+    "TruchetTile": "Тручеттиле",
+    "ReactionDiffusion": "Диффузия реакций",
+    "Brick": "Кирпич",
+    "Intensity": "Интенсивность",
+    "Glitch": "Глюк",
+    "Stretch": "Растяжка",
+    "Wind": "Ветер",
+    "Flap": "Пощечина",
+    "ButterflyFlap": "Баттерфляй",
+    "Blocky": "Блоки",
+    "Strobe": "Строб",
+    "Sine": "Сине",
+    "Spherical": "Сферический",
+    "MainTexture": "ГлавнаяТекстура",
+    "Emission": "Выбросы",
+    "Occlusion": "Закрытие",
+    "DetailMap": "Детальная карта",
+    "DissolveMask": "Растворить Маска",
+    "Cells": "Клетки",
+    "Cracks": "Трещины",
+    "Dots": "Точки",
+    "Organic": "Органический",
+    "Flow": "Поток",
+    "Outer": "Внешний",
+    "Inner": "Внутренний",
+    "Fresnel": "Френель",
+    "Depth": "Глубина",
+    "MeshNormals": "MeshNormals",
+    "VertexColors": "Цвета Vertex",
+    "Linear": "Линейный",
+    "PingPong": "Пингпонг",
+    "Loop": "Луп",
+    "Random": "Случайность",
+    "EaseInOut": "Спокойно",
+    "Expand": "Расширять",
+    "Contract": "Контракт",
+    "Pulse": "Пульс",
+    "Vertical": "Вертикальный",
+    "Directional": "Направленный",
+    "Bottom": "Нижняя часть",
+    "Top": "Топ",
+    "X": "XX",
+    "Y": "Y",
+    "Z": "Z",
+    "Front": "Фронт",
+    "Back": "Назад",
+    "Culling": "Каллинг",
+    "Depth Test": "Глубинное испытание",
+    "Comparison": "Сравнение",
+    "Disabled": "Инвалид",
+    "Never": "Никогда",
+    "Less": "Меньше",
+    "Equal": "Равный",
+    "LessEqual": "Менее равный",
+    "Greater": "Больше",
+    "NotEqual": "Неравный",
+    "GreaterEqual": "Большее равное",
+    "Always": "Всегда",
+    "Keep": "Держите",
+    "Zero": "Ноль",
+    "IncrSat": "IncrSat",
+    "DecrSat": "Декрсат",
+    "Invert": "Перевернуть",
+    "IncrWrap": "IncrWrap",
+    "DecrWrap": "Обсуждение",
+    "One": "Один",
+    "DstColor": "DstColor",
+    "SrcColor": "SRCCOLOR",
+    "OneMinusDstColor": "OneMinusDstColor",
+    "SrcAlpha": "SrcAlpha",
+    "OneMinusSrcColor": "OneMinusSrcColor",
+    "DstAlpha": "DstAlpha",
+    "OneMinusDstAlpha": "OneMinusDstAlpha",
+    "SrcAlphaSaturate": "SrcAlphaSaturate",
+    "OneMinusSrcAlpha": "OneMinusSrcAlpha",
+    "Show Always": "Показать всегда",
+    "Hide In Mirrors": "Спрятаться в зеркалах",
+    "Show Only In Mirrors": "Показать только в зеркалах",
+    "VR Headset Eyes Only": "VR Headset только для глаз",
+    "Desktop Stream Spectator Only": "Десктопный Stream Spectator",
+    "Auto Oblique And Inverted Transform": "Автонаклонная и перевернутая трансформация",
+    "Oblique Matrix Only": "Только косая матрица",
+    "Inverted Transform Only": "Перевернутая трансформация",
+    "Visibility Mode": "Режим видимости",
+    "Mirror Detection Method": "Метод обнаружения зеркал",
+    "VRCFallback": "VRCFallback",
+    "VRChat Fallback Tag": "VRChat Fallback скачать",
+    "ToonStandard": "ToonStandard",
+    "Standard": "Стандарт",
+    "Hidden": "Скрытый",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "Эта цель требует, чтобы режим освещения был установлен в разделе «Stylized PBR».",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "Эта цель требует включения «Enable Detail Texture» в разделе «Наложения».",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "Эта цель требует включения «Enable Dissolve» в разделе Переходы."
+  },
+  "sections": {
+    "Performance Settings": "Настройки производительности",
+    "Render Mode": "Режим Рендера",
+    "Main Settings": "Основные настройки",
+    "Procedural Textures": "Процедурные текстуры",
+    "Advanced Animation Controls": "Расширенный анимационный контроль",
+    "Color Controls": "Цветовой контроль",
+    "Lighting": "Освещение",
+    "Surface Style": "Поверхность стиль",
+    "Overlays": "Накладки",
+    "Effects": "Последствия",
+    "Glitches": "Глюки",
+    "Transitions": "Переходы",
+    "AudioLink Visualizers": "Визуализатор AudioLink",
+    "Advanced Settings": "Расширенные настройки"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "Режим Рендера",
+      "tooltip": "Контролирует, как выполняется шейдер. Опаке быстрее. Cutout – это жесткая прозрачность. Прозрачный для мягких, смешанных эффектов."
+    },
+    "_PerformanceLevel": {
+      "label": "Уровень производительности",
+      "tooltip": "Устанавливает базовый уровень производительности, отключая дорогие функции на более низких уровнях."
+    },
+    "_ZWrite": {
+      "label": "Force Depth Write (альбом)",
+      "tooltip": "Ручно контролировать, если этот материал записывается в буфер глубины. Включите это для прозрачных объектов, которые все равно должны закрывать объекты за ними."
+    },
+    "_Cutoff": {
+      "label": "Альфа Катофф",
+      "tooltip": "Альфа-порог для эффекта выреза."
+    },
+    "_UseUVTileDiscard": {
+      "label": "UV Tile скачать",
+      "tooltip": "Откажитесь от определенных УФ плиток. Полезно для перетаскивания частей одежды."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "UV Tile Row 3 (Топ)",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "UV Tile Row 2",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "UV Tile Row 1",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "UV Tile Row 0 (нижний)",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "Используйте базовый цвет",
+      "tooltip": "Перемещает твердый базовый цвет."
+    },
+    "_BaseColor": {
+      "label": "Цвет",
+      "tooltip": "Основной цвет голограммы при неиспользовании текстуры."
+    },
+    "_BaseColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "Используйте цвета Vertex",
+      "tooltip": "Оттеняет шейдер, используя цвета, нарисованные на вершинах модели. Требуется модель с вершинными цветами."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "Альфа как возможность",
+      "tooltip": "Использует цветной альфа-канал в качестве множителя непрозрачности."
+    },
+    "_UseEmission": {
+      "label": "Включить выбросы",
+      "tooltip": "Заставляет объект светиться. Требуется эффект постобработки Bloom в сцене, чтобы увидеть свечение."
+    },
+    "_UseEmissionPulse": {
+      "label": "Включить пульс выбросов",
+      "tooltip": "Интенсивность излучения пульсирует ритмично, не влияя на диффузное освещение."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "Скорость импульса",
+      "tooltip": "Скорость анимации пульсирующего излучения."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "Интенсивность пульса",
+      "tooltip": "Сколько импульсов излучения (0 = нет импульса, 1 = полный импульс от 0 до максимальной силы)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "Использование цвета Vertex для выбросов",
+      "tooltip": "Использует RGB каналы вершинных цветов, чтобы оттенить свечение излучения."
+    },
+    "_UseAlphaToEmission": {
+      "label": "Использование Texture Alpha для выбросов",
+      "tooltip": "В качестве карты выбросов используется альфа-канал основной текстуры. Мощный способ создания светящихся карт без отдельной фактуры."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "Сила",
+      "tooltip": "Насколько альфа влияет на излучение (более высокие значения светятся ярче)."
+    },
+    "_EmissionStrength": {
+      "label": "Сила выбросов",
+      "tooltip": "Насколько яркий светящийся эффект."
+    },
+    "_AL_EmissionBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "2-й уровень выбросов",
+      "tooltip": "Добавляет второй прокруточный эмиссионный слой."
+    },
+    "_Emission2Map": {
+      "label": "2-я карта выбросов",
+      "tooltip": "Вторая карта выбросов (RGB)"
+    },
+    "_Emission2Color": {
+      "label": "Цвет",
+      "tooltip": "Второй цвет выбросов"
+    },
+    "_Emission2Strength": {
+      "label": "Сила",
+      "tooltip": "Вторая сила выбросов"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "Скачать Speed X",
+      "tooltip": "Второй свиток выбросов Speed X"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Вторая скорость прокрутки выбросов Y"
+    },
+    "_AL_Emission2Band": {
+      "label": "2-я полоса выбросов",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "AL 2nd Сила выбросов",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "Включить 3-ю эмиссию",
+      "tooltip": "Добавляет третий прокруточный эмиссионный слой."
+    },
+    "_Emission3Map": {
+      "label": "3-я карта выбросов",
+      "tooltip": "Третья карта выбросов (RGB)"
+    },
+    "_Emission3Color": {
+      "label": "Цвет",
+      "tooltip": "Третий цвет выбросов"
+    },
+    "_Emission3Strength": {
+      "label": "Сила",
+      "tooltip": "Третья сила выбросов"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "Скачать Speed X",
+      "tooltip": "Третий свиток выбросов Speed X"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Третья скорость прокрутки выбросов Y"
+    },
+    "_AL_Emission3Band": {
+      "label": "3-я группа выбросов",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "AL 3rd Сила выбросов",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "4-й уровень выбросов",
+      "tooltip": "Добавляет четвертый прокруточный эмиссионный слой."
+    },
+    "_Emission4Map": {
+      "label": "4-я карта выбросов",
+      "tooltip": "Четвертая карта выбросов (RGB)"
+    },
+    "_Emission4Color": {
+      "label": "Цвет",
+      "tooltip": "Четвертый цвет выбросов"
+    },
+    "_Emission4Strength": {
+      "label": "Сила",
+      "tooltip": "Четвертая сила выбросов"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "Скачать Speed X",
+      "tooltip": "Четвертый свиток выбросов Speed X"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Четвёртая скорость прокрутки выбросов Y"
+    },
+    "_AL_Emission4Band": {
+      "label": "4-я полоса выбросов",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "AL 4th Сила выбросов",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "Включить процессуальную текстуру",
+      "tooltip": "Заменяет материальное свойство сгенерированным рисунком."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "Цель",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "Процедурный режим",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "Цвет 1",
+      "tooltip": "Первый цвет процедурного рисунка."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "Смена цвета / Hue Shift",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "Процедурный цвет 1 Сдвиг",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "Цвет 2",
+      "tooltip": "Второй цвет процедурного рисунка."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "Смена цвета / Hue Shift",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "Процедурное изменение цвета 2",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "Масштаб",
+      "tooltip": "Контролирует размер / наклон шаблона."
+    },
+    "_ProceduralSpeed": {
+      "label": "Скорость",
+      "tooltip": "Контролирует скорость анимации шаблона."
+    },
+    "_ProceduralDirection": {
+      "label": "Направление",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "Толщина",
+      "tooltip": "Толщина линий рисунка."
+    },
+    "_ProceduralDensity": {
+      "label": "Плотность",
+      "tooltip": "Контролирует размер элементов шаблона. Более высокие значения увеличивают размер."
+    },
+    "_ProceduralSparsity": {
+      "label": "Сварливость",
+      "tooltip": "Контролирует расстояние между элементами в рисунке. Более высокие значения увеличивают интервал."
+    },
+    "_ProceduralRotation": {
+      "label": "Вращение",
+      "tooltip": "Поворот всей процедурной модели. Значение 0,125 составляет 45 градусов."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "Координация пространства",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "Октавы",
+      "tooltip": "Добавляет слои шума в разных масштабах, чтобы создать гораздо более подробные и естественные узоры."
+    },
+    "_NoiseLacunarity": {
+      "label": "Лакунарность",
+      "tooltip": "Контролирует, как частота шума меняется с каждой октавой."
+    },
+    "_NoiseGain": {
+      "label": "Выигрыш",
+      "tooltip": "Контролирует изменение амплитуды шума с каждой октавой."
+    },
+    "_VoronoiStyle": {
+      "label": "Стиль",
+      "tooltip": "Контролирует визуальный стиль рисунка Вороной."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "Глобальный мультипликатор скорости",
+      "tooltip": "Мастер мультипликатора скорости анимации. Оживите это с помощью параметров VRChat Avatar Dynamics / Animator, чтобы контролировать или замораживать все процедурные анимации шейдера."
+    },
+    "_UseAdvancedAnim": {
+      "label": "Включить Advanced Animation Controls",
+      "tooltip": "Выставляет мастер-контроль для масштабирования времени, режима воспроизведения и смещения времени для всех анимаций шейдеров."
+    },
+    "_AnimTimeScale": {
+      "label": "Шкала времени",
+      "tooltip": "Контролирует общую скорость всех шейдерных анимаций. Может использоваться для замедления или ускорения эффектов."
+    },
+    "_AnimPlayMode": {
+      "label": "Режим воспроизведения",
+      "tooltip": "Устанавливает глобальный режим воспроизведения. 0 = петля (перезапускается с начала), 1 = пинг-понг (обратное направление)."
+    },
+    "_AnimOffset": {
+      "label": "Время вышло",
+      "tooltip": "Применяется глобальное смещение времени для всех анимаций, полезное для синхронизации или десинхронизации эффектов."
+    },
+    "_TwoSidedLighting": {
+      "label": "Двухстороннее освещение",
+      "tooltip": "Переворачивает нормальное направление на задних гранях для правильного двустороннего освещения при выключении Cull."
+    },
+    "_LightingMode": {
+      "label": "Режим освещения",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "Включить Specular AA",
+      "tooltip": "Антиалиазы зеркальных изюминок, уменьшающие мерцание и мерцание на глянцевых поверхностях."
+    },
+    "_UseOpenLitMath": {
+      "label": "Режим OpenLit Harmony",
+      "tooltip": "Используйте стандартную полуламбертовскую диффузную математику OpenLit CC0 для последовательного освещения аватаров толпы в фотомирах."
+    },
+    "_SpecularAAVariance": {
+      "label": "Разница",
+      "tooltip": "Контролирует, насколько агрессивно применяется размытие АА."
+    },
+    "_SpecularAAThreshold": {
+      "label": "Порог",
+      "tooltip": "Порог интенсивности свечения перед началом АА."
+    },
+    "_ShadowColor": {
+      "label": "Цвет тени",
+      "tooltip": "Цвет участков, не пораженных светом."
+    },
+    "_ShadowColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "Порог",
+      "tooltip": "Размер освещенной зоны в режиме Toon."
+    },
+    "_ToonHardness": {
+      "label": "Твердость",
+      "tooltip": "Резкость края тени в режиме Toon."
+    },
+    "_ToonShadowBorder": {
+      "label": "Темная граница",
+      "tooltip": "Пересекает границу теневой линии Туна."
+    },
+    "_ToonShadowBlur": {
+      "label": "Shadow Blur",
+      "tooltip": "Смягчает шаг тени Туна."
+    },
+    "_ToonShadowAO": {
+      "label": "Модуляция теней AO",
+      "tooltip": "Модулирует границу тени с помощью карты окклюзии окружающей среды."
+    },
+    "_NormalMap": {
+      "label": "Нормальная карта",
+      "tooltip": "Добавляет детали поверхности с помощью обычной карты."
+    },
+    "_BumpScale": {
+      "label": "Нормальная шкала",
+      "tooltip": "Прочность и глубина поверхности нормальные шишки."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "Включите подробную нормальную карту",
+      "tooltip": "Добавлена вторичная нормальная карта для микроповерхностей с деталями."
+    },
+    "_DetailNormalMap": {
+      "label": "Подробная нормальная карта",
+      "tooltip": "Вторая нормальная карта, наложенная на основание нормально для дополнительной детализации поверхности."
+    },
+    "_DetailNormalScale": {
+      "label": "Детальная нормальная сила",
+      "tooltip": "Контролирует силу детали обычной карты."
+    },
+    "_NormalBlendMode": {
+      "label": "Обычный мягкий режим",
+      "tooltip": "Смешивание алгоритма между базовыми и подробными обычными картами (Whiteout vs Reoriented Normal Mapping / RNM)."
+    },
+    "_MetallicGlossMap": {
+      "label": "Металлическая (R) гладкость (A)",
+      "tooltip": "Металлическая (R) и гладкие (A) карты. (Примечание: Гладкость игнорируется, если предоставлена отдельная карта грубости)"
+    },
+    "_Metallic": {
+      "label": "Металлический",
+      "tooltip": "Контролирует металлическую поверхность (0 = диэлектрический/пластиковый, 1 = чистый металл)."
+    },
+    "_Glossiness": {
+      "label": "Мягкость",
+      "tooltip": "Контролирует, насколько гладкая и отражающая поверхность (0 = грубая / матовая, 1 = зеркальная гладкая)."
+    },
+    "_UseAmbientLighting": {
+      "label": "Используйте освещение окружающей среды",
+      "tooltip": "Переключает выборку зондов окружающего света и отражения сцены. Это делает освещение более последовательным в разных мирах."
+    },
+    "_UseSHAmbient": {
+      "label": "Использование высококачественной среды (SH)",
+      "tooltip": "Включите высококачественную сферическую гармонику. Примечание: Вынужденный отказ в средних / низких уровнях производительности."
+    },
+    "_AmbientFallbackMode": {
+      "label": "Режим Fallback Ambient",
+      "tooltip": "Выбирает модель резервного освещения при отключении или выключении High Quality SH."
+    },
+    "_UseLightOverride": {
+      "label": "Скриншоты Override Scene Light",
+      "tooltip": "Перекрывает направление, цвет и интенсивность света главной сцены."
+    },
+    "_LightDirOverride": {
+      "label": "Направление",
+      "tooltip": "Обычный вектор направления света."
+    },
+    "_LightColorOverride": {
+      "label": "Цвет",
+      "tooltip": "Обычный оттенок светлого цвета."
+    },
+    "_LightIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Стандартная шкала интенсивности света."
+    },
+    "_ShadowStrength": {
+      "label": "Сила теней",
+      "tooltip": "Умножитель силы теней, отбрасываемых от этого света."
+    },
+    "_RampTex": {
+      "label": "Тун Рэмп",
+      "tooltip": "Текстура Toon Ramp. Переходы тени (слева) на свет (справа)."
+    },
+    "_ToonToneCount": {
+      "label": "Граф тонов",
+      "tooltip": "Количество дискретных полос затенения для освещения Toon."
+    },
+    "_MidColor": {
+      "label": "Среднего цвета",
+      "tooltip": "Цвет группы Midtone."
+    },
+    "_MidThreshold": {
+      "label": "Средний порог",
+      "tooltip": "Пороговая граница для средней полосы."
+    },
+    "_HighlightColor": {
+      "label": "Выделить цвет",
+      "tooltip": "Выделите цвет полосы."
+    },
+    "_HighlightThreshold": {
+      "label": "Обсуждение Threshold",
+      "tooltip": "Пороговая граница для основной полосы."
+    },
+    "_SpecularMode": {
+      "label": "Рабочий процесс",
+      "tooltip": "Выбор между металлической гладкостью и светотехникой спектрального цвета PBR."
+    },
+    "_SpecColor": {
+      "label": "Угловой цвет",
+      "tooltip": "Светоотражающий оттенок."
+    },
+    "_SpecGlossMap": {
+      "label": "Спекулярный (RGB) Глосс (A)",
+      "tooltip": "Спекулярный цвет (RGB) и карта гладкости (A)."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "Обсуждение Shadowmask Fallback",
+      "tooltip": "Обратное поведение, когда текстуры теневой маски недоступны."
+    },
+    "_RoughnessMap": {
+      "label": "Карта грубости (R)",
+      "tooltip": "Карта жесткости (R)."
+    },
+    "_Roughness": {
+      "label": "Грубость",
+      "tooltip": "Значение жесткости."
+    },
+    "_OcclusionMap": {
+      "label": "Карта окклюзии (G)",
+      "tooltip": "Карта затвора (G) для выпекания теней в расщелинах."
+    },
+    "_OcclusionStrength": {
+      "label": "Сила затвора",
+      "tooltip": "Сила окружающей тени расщелины от карты окклюзии."
+    },
+    "_DetailMask": {
+      "label": "Детальная маска (А)",
+      "tooltip": "Маска детализации (A) для ограничения применения вторичной текстуры детализации."
+    },
+    "_UseSSS": {
+      "label": "Позволяет рассеивать подповерхность",
+      "tooltip": "Имитирует рассеяние света через тонкие предметы, такие как кожа или листья."
+    },
+    "_SSS_Scale": {
+      "label": "Масштаб",
+      "tooltip": "Общая сила эффекта SSS."
+    },
+    "_SSS_Radius": {
+      "label": "Радиус",
+      "tooltip": "Как далеко свет рассеивается внутри материала."
+    },
+    "_SSS_Color": {
+      "label": "Тонкий",
+      "tooltip": "Цветовой оттенок наносился на рассеянный свет."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "Скачать Thickness Map",
+      "tooltip": "Использует текстуру для имитации передачи света через тонкие области (уши, листья и т. д.)."
+    },
+    "_ThicknessMap": {
+      "label": "Карта толщины (R)",
+      "tooltip": "Карта толщины (R-канал). Белый = толстый (без передачи), черный = тонкий (полная передача)."
+    },
+    "_ThicknessStrength": {
+      "label": "Толщина сила",
+      "tooltip": "Контролирует интенсивность эффекта передачи подсветки."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "Используйте текстуру передачи SSS",
+      "tooltip": "Пользовательская цветовая карта, тонирующая передачу подсветки."
+    },
+    "_SSSTransmissionTex": {
+      "label": "Карта передачи SSS",
+      "tooltip": "Цветовая карта передачи."
+    },
+    "_UseAnisotropy": {
+      "label": "Включить анизотропное отражение",
+      "tooltip": "Создает растянутые изюминки, распространенные на кистевом металле или волосах."
+    },
+    "_Aniso_Mode": {
+      "label": "Режим Анисо",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "Грубость U",
+      "tooltip": "Направленность в направлении U (тангенс)."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "Грубость V",
+      "tooltip": "Грубость по V (бинормальному) направлению."
+    },
+    "_Aniso_Strength": {
+      "label": "Спекулярная сила",
+      "tooltip": "Общая яркость анизотропной изюминки."
+    },
+    "_Aniso_TangentMap": {
+      "label": "Tangent Map (необязательно)",
+      "tooltip": "Тангенсная карта (каналы RG) для управления направлением анизотропных выделений."
+    },
+    "_UseClearCoat": {
+      "label": "Позволяет чистить пальто",
+      "tooltip": "Добавляет вторичный прозрачный шаровой слой поверх основного материала PBR. Полезно для окрашенных / покрытых поверхностей."
+    },
+    "_ClearCoatStrength": {
+      "label": "Чистая шерсть Сила",
+      "tooltip": "Интенсивность вторичного автомобильного лака/смолы прозрачного слоя."
+    },
+    "_ClearCoatRoughness": {
+      "label": "Чистая грубость пальто",
+      "tooltip": "Грубость вторичного слоя плаща."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "Включить Eye Iris Parallax",
+      "tooltip": "Имитирует глубину/рефракцию зрачка и радужной оболочки под роговицей."
+    },
+    "_IrisTiling": {
+      "label": "Iris UV Tiling",
+      "tooltip": "Контролирует наклон текстуры радужной оболочки."
+    },
+    "_IrisDepth": {
+      "label": "Iris Depth Offset",
+      "tooltip": "Смещение глубины рефракции."
+    },
+    "_PupilSize": {
+      "label": "Шкала зрачков",
+      "tooltip": "Контролирует размерную шкалу зрачка."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "Включить диффузную обертку кожи",
+      "tooltip": "Смягчает световые тени на органических изогнутых поверхностях."
+    },
+    "_SkinWrapAmount": {
+      "label": "Обернуть сумму",
+      "tooltip": "Сколько света окружает теневой терминатор."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "Включить анизотропный вид волос (Kajiya-Kay)",
+      "tooltip": "Анизотропные изюминки, стилизованные специально для волос."
+    },
+    "_HairSpecColor": {
+      "label": "Угловой цвет",
+      "tooltip": "Цвет волос сингулярные блики."
+    },
+    "_HairSpecExponent": {
+      "label": "Первичный показатель",
+      "tooltip": "Резкость первичной подсветки."
+    },
+    "_HairSpecExponent2": {
+      "label": "Вторичный показатель",
+      "tooltip": "Резкость вторичной смещенной подсветки."
+    },
+    "_HairSpecStrength": {
+      "label": "Спекулярная сила",
+      "tooltip": "Яркая сила ярких моментов."
+    },
+    "_HairSpecShift": {
+      "label": "Спекулятивный сдвиг",
+      "tooltip": "Сдвиг положения вдоль направления волос."
+    },
+    "_UseGrid": {
+      "label": "Включить Grid",
+      "tooltip": "Накладывает сетку на поверхность."
+    },
+    "_GridMode": {
+      "label": "Сетчатый шаблон",
+      "tooltip": "Процедурный стиль сетки (Square, Hexagonal, Radial, Wireframe)."
+    },
+    "_GridColor": {
+      "label": "Цвет",
+      "tooltip": "Цвет линий сетки."
+    },
+    "_GridColor_Shift": {
+      "label": "Сдвиг цвета Grid",
+      "tooltip": "AudioLink или анимированный цветовой сдвиг для процедурных линий сетки."
+    },
+    "_GridDensity": {
+      "label": "Плотность",
+      "tooltip": "Сколько сеток появляется."
+    },
+    "_GridSparsity": {
+      "label": "Сварливость",
+      "tooltip": "Контролирует расстояние между элементами в рисунке. Более высокие значения увеличивают интервал."
+    },
+    "_GridSpace": {
+      "label": "Координация пространства",
+      "tooltip": "Координация пространства для процедурного картирования сетки (объект УФ, локальная сетка, мировое пространство)."
+    },
+    "_GridThickness": {
+      "label": "Толщина линии сетки",
+      "tooltip": "Толщина линии для процедурного наложения сетки."
+    },
+    "_UseGridScroll": {
+      "label": "Включить Scrolling",
+      "tooltip": "Оживляет спиральный узор."
+    },
+    "_GridScrollSpeed": {
+      "label": "Скачать Speed X",
+      "tooltip": "Как быстро сетка прокручивается вдоль своей первой оси (мир X)."
+    },
+    "_GridRotation": {
+      "label": "Вращение",
+      "tooltip": "Вращение всей сетки. Значение 0,125 составляет 45 градусов."
+    },
+    "_GridScrollSpeedY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Как быстро сетка прокручивается по своей второй оси (мир Z)."
+    },
+    "_BoxFractalIsFill": {
+      "label": "Используйте стиль Fill",
+      "tooltip": "Переключает фрактал коробки между рисунком заполнения и рисунком контура."
+    },
+    "_GridPatternIsFill": {
+      "label": "Используйте стиль Fill",
+      "tooltip": "Переключает шаблон между заполнением и контуром."
+    },
+    "_MandelboxIsFill": {
+      "label": "Используйте стиль Fill",
+      "tooltip": "Переключает Mandelbox между рисунком заполнения и рисунком контура."
+    },
+    "_GridPulseMode": {
+      "label": "Режим Grid Pulse",
+      "tooltip": "Сетчатая анимация импульсной формы волны (Sine, Triangle, AudioLink)."
+    },
+    "_GridPulseSpeed": {
+      "label": "Скорость импульса",
+      "tooltip": "Скорость импульсной анимации."
+    },
+    "_GridPulseIntensity": {
+      "label": "Интенсивность пульса",
+      "tooltip": "Сила импульсного эффекта."
+    },
+    "_GridPulseMin": {
+      "label": "Сетка Pulse Min",
+      "tooltip": "Минимальный множитель яркости/толщины сетки при пульсации."
+    },
+    "_GridPulseMax": {
+      "label": "Сетчатый импульс Max",
+      "tooltip": "Умножитель максимальной яркости/толщины сетки при пульсации."
+    },
+    "_UseGridDepthColor": {
+      "label": "Используйте глубинный цвет",
+      "tooltip": "Меняет цвет сетки в зависимости от ее близости к другим поверхностям."
+    },
+    "_GridDepthColor": {
+      "label": "Глубина цвета",
+      "tooltip": "Цвет сетки сдвигается, когда она находится вблизи поверхности."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "Глубина диапазона",
+      "tooltip": "Расстояние, на котором происходит изменение цвета."
+    },
+    "_AL_GridBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "Используйте Grid Mask",
+      "tooltip": "Использует текстуру для маскировки эффекта сетки."
+    },
+    "_GridMask": {
+      "label": "Сетчатая маска",
+      "tooltip": "Текстура используется для маскировки сетки. Используется красный канал."
+    },
+    "_InvertGridMask": {
+      "label": "Перевернутая маска",
+      "tooltip": "Переворачивает маску, поэтому черные области видны, а белые скрыты."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "Включить искажение Vertex",
+      "tooltip": "Переключает процедурную анимацию искажения вершины на или вне."
+    },
+    "_DistortionMode": {
+      "label": "Режим искажения",
+      "tooltip": "Процедурный алгоритм искажения вершины (Sine wave, Noise turbulence, Flapping и др.)."
+    },
+    "_DistortionStrength": {
+      "label": "Сила",
+      "tooltip": "Насколько удалены вершины."
+    },
+    "_DistortionSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость анимации искажений."
+    },
+    "_AL_DistortionBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "Текстура искажений (RG для смещения)",
+      "tooltip": "Текстура для управления искажением (R=X смещения, G=Z смещения)."
+    },
+    "_DistortionTexScrollX": {
+      "label": "Скачать Speed X",
+      "tooltip": "Прокручивает текстуру искажений горизонтально."
+    },
+    "_DistortionTexScrollY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Прокручивает текстуру искажения вертикально."
+    },
+    "_StretchAxis": {
+      "label": "Растянутая ось",
+      "tooltip": "Сетчатая ось, вдоль которой применяется процедурное растяжение вершины."
+    },
+    "_WindDirection": {
+      "label": "Направление",
+      "tooltip": "Локально-пространственное направление ветра (относительно объекта)."
+    },
+    "_WindScale": {
+      "label": "Масштаб",
+      "tooltip": "Размер порывов ветра. Меньшие значения создают большие, более медленные волны."
+    },
+    "_FlapScale": {
+      "label": "Масштаб",
+      "tooltip": "Контролирует кривизну или «бодрость» колеблющегося движения."
+    },
+    "_FlapPhaseOffset": {
+      "label": "Фазовое выключение",
+      "tooltip": "Добавляет временную задержку в одну сторону, создавая асимметричный лоскут. 0 является симметричным."
+    },
+    "_FlapMode": {
+      "label": "Режим Flap",
+      "tooltip": "Направление и стиль анимации вертикального взмаха (Крылья, Флаги, Фолиаг)."
+    },
+    "_FlapPivot": {
+      "label": "Флэп Пивот",
+      "tooltip": "Якорная точка/поворотное положение для осцилляции вершинного взмаха."
+    },
+    "_FlapDirection": {
+      "label": "Направление",
+      "tooltip": "Вектор, который определяет настраиваемое направление локального пространства для колеблющегося движения."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "Включить Dissolve",
+      "tooltip": "Заставляет объект появляться/исчезать с помощью шаблона шума."
+    },
+    "_DissolveMode": {
+      "label": "Режим растворения",
+      "tooltip": "Выбирает алгоритм растворения (Linear, Radial, Spherical, Voronoi noise и др.)."
+    },
+    "_DissolveScale": {
+      "label": "Масштаб",
+      "tooltip": "Контролирует размер / распространение эффекта растворения."
+    },
+    "_DissolveDirection": {
+      "label": "Направление",
+      "tooltip": "Направление мирового пространства, в котором движется растворенная волна."
+    },
+    "_DissolveOrigin": {
+      "label": "Мировое происхождение",
+      "tooltip": "Точка мирового пространства, из которой исходит раствор."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "Используйте Object Center",
+      "tooltip": "При включении раствор исходит из точки поворота объекта. При отключении используется фиксированная координата мирового пространства."
+    },
+    "_DissolveMap": {
+      "label": "Растворить шумовую карту",
+      "tooltip": "Текстура шума, используемая для эффекта растворения (используется красный канал)."
+    },
+    "_DissolveProjMode": {
+      "label": "Режим проекции карты Dissolve",
+      "tooltip": "Режим отображения УФ-проекции для растворенной текстуры."
+    },
+    "_DissolveAmount": {
+      "label": "Сумма",
+      "tooltip": "Прогресс эффекта растворения (0-1)."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "Крайний вид",
+      "tooltip": "Ширина светящегося края на линии растворения."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "Размер блока",
+      "tooltip": "Размер блоков сбоев в пространстве экрана."
+    },
+    "_DissolveEdgeColor": {
+      "label": "Цвет края",
+      "tooltip": "Цвет светящегося растворимого края."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "Цветовой сдвиг Edge",
+      "tooltip": "AudioLink или анимированный цветовой сдвиг для края горения раствора."
+    },
+    "_UseDissolveGradient": {
+      "label": "Используйте градиент",
+      "tooltip": "Использует градиентную текстуру для окрашивания растворимого края вместо твердого цвета."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "Используйте Advanced Timing",
+      "tooltip": "Используйте индивидуальное время для анимации раствора вместо простого цикла / пинг-понга."
+    },
+    "_DissolveOnDuration": {
+      "label": "Раствориться в течение срока",
+      "tooltip": "Время, необходимое для анимации растворения."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "Видимая продолжительность",
+      "tooltip": "Время, когда объект остается полностью видимым (при максимальном растворении)."
+    },
+    "_DissolveOffDuration": {
+      "label": "Расторгнуть срок",
+      "tooltip": "Время, необходимое для анимации растворения."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "Скрытая продолжительность",
+      "tooltip": "Время, когда объект остается полностью скрытым (в минуту растворяется)."
+    },
+    "_DissolveGradient": {
+      "label": "Растворимый градиент",
+      "tooltip": "Цветовая рампа для края растворения. Градиент отображается по ширине края."
+    },
+    "_AnimateDissolve": {
+      "label": "Анимированный",
+      "tooltip": "Автоматически оживляет количество раствора с течением времени."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость анимации."
+    },
+    "_DissolveAnimMode": {
+      "label": "Используйте Ping-Pong",
+      "tooltip": "Если включено, анимация будет играть вперед, а затем назад. Если он отключен, он будет петлеть."
+    },
+    "_DissolveAnimMin": {
+      "label": "Анимационный мин",
+      "tooltip": "Минимальное отключение растворения при включенной анимации."
+    },
+    "_DissolveAnimMax": {
+      "label": "Анимационный Макс",
+      "tooltip": "Максимально растворите отсечение, когда включена анимация."
+    },
+    "_AL_DissolveBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "Включить Planar Wipe",
+      "tooltip": "Выявляет объект с гладкой, направленной протиркой."
+    },
+    "_WipeDirection": {
+      "label": "Направление",
+      "tooltip": "Направление, в котором салфетка проходит через объект."
+    },
+    "_WipeProgress": {
+      "label": "Прогресс",
+      "tooltip": "Прогресс эффекта стирания."
+    },
+    "_WipeHardness": {
+      "label": "Твердость",
+      "tooltip": "Острость края салфетки."
+    },
+    "_AnimateWipe": {
+      "label": "Анимационный Wipe",
+      "tooltip": "Автоматически оживляет прогресс стирки с течением времени."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "Используйте Advanced Timing",
+      "tooltip": "Используйте индивидуальное время для анимации стирки вместо простого цикла / пинг-понга."
+    },
+    "_WipeOnDuration": {
+      "label": "Стирать на длительность",
+      "tooltip": "Время, необходимое для анимации стирания, чтобы играть."
+    },
+    "_WipeVisibleDuration": {
+      "label": "Видимая продолжительность",
+      "tooltip": "Время, когда объект остается полностью видимым."
+    },
+    "_WipeOffDuration": {
+      "label": "Стирать длительность",
+      "tooltip": "Время, необходимое для анимации стирания, чтобы играть."
+    },
+    "_WipeHiddenDuration": {
+      "label": "Скрытая продолжительность",
+      "tooltip": "Время, когда объект остается полностью скрытым перед зацикливанием."
+    },
+    "_WipeAnimSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость анимации."
+    },
+    "_WipeAnimMode": {
+      "label": "Используйте Ping-Pong",
+      "tooltip": "Если включено, анимация будет играть вперед, а затем назад. Если он отключен, он будет петлеть."
+    },
+    "_UseTransparency": {
+      "label": "Обеспечить прозрачность",
+      "tooltip": "Делает объект равномерно прозрачным."
+    },
+    "_Alpha": {
+      "label": "Альфа",
+      "tooltip": "Контролирует общую прозрачность. 1 = полностью непрозрачный, 0 = полностью невидимый."
+    },
+    "_UseFresnelTransparency": {
+      "label": "Обеспечение прозрачности френеля",
+      "tooltip": "Делает объект более прозрачным в центре и непрозрачным по краям."
+    },
+    "_FresnelPower": {
+      "label": "Власть",
+      "tooltip": "Контролирует кривую падения. Более высокие ценности подталкивают прозрачность к краям."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "Эдж Альфа",
+      "tooltip": "Прозрачность на углах выпаса."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "Центр Альфа",
+      "tooltip": "Прозрачность непосредственно перед камерой."
+    },
+    "_AL_FresnelBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "Используйте текстуру",
+      "tooltip": "Переключает основную текстуру."
+    },
+    "_MainTex": {
+      "label": "Основная текстура",
+      "tooltip": "Первичная текстура альбедо поверхности."
+    },
+    "_MainTexProjMode": {
+      "label": "Режим проекции текстуры",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "Режим видеоплеера",
+      "tooltip": "Настраивает текстуру для получения данных видеоплеера."
+    },
+    "_VideoIsAVPro": {
+      "label": "Видео AVPro",
+      "tooltip": "Проверьте, использует ли видеоплеер AVPro."
+    },
+    "_Rotation": {
+      "label": "Вращение",
+      "tooltip": "Вращает все текстуры вокруг центра ультрафиолетового пространства."
+    },
+    "_ScrollX": {
+      "label": "Скачать Speed X",
+      "tooltip": "Горизонтальная скорость UV анимации."
+    },
+    "_ScrollY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Вертикальная скорость UV анимации."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "Используйте Ping-Pong Scroll",
+      "tooltip": "Переключает режим прокрутки на обратное движение пинг-понга."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость движения задней и задней прокрутки."
+    },
+    "_PingPongScrollRange": {
+      "label": "Диапазон",
+      "tooltip": "Расстояние движения задней и задней прокрутки."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "Включить УФ искажение",
+      "tooltip": "Использует текстуру для деформации УФ-координат, создавая такие эффекты, как тепловая дымка или рябь воды."
+    },
+    "_UVDistortionMap": {
+      "label": "Карта УФ искажений",
+      "tooltip": "Текстура, используемая для искажения УФ. Красный и зеленый каналы контролируют смещение X и Y."
+    },
+    "_UVDistortionStrength": {
+      "label": "Сила",
+      "tooltip": "Насколько интенсивно колебание УФ-искажения."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "Скорость X",
+      "tooltip": "Горизонтальная скорость волны искажения."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "Скорость Y",
+      "tooltip": "Вертикальная скорость волны искажения."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "Скачать Flipbook Animation",
+      "tooltip": "Оживляет основную текстуру с помощью раскладки спрайтшита. Это переопределит наклон основной текстуры и смещение."
+    },
+    "_FlipbookMode": {
+      "label": "Режим",
+      "tooltip": "Режим воспроизведения анимации."
+    },
+    "_FlipbookColumns": {
+      "label": "Колонны (X)",
+      "tooltip": "Количество колонн (кадров горизонтально) в спрайте."
+    },
+    "_FlipbookRows": {
+      "label": "Ряды (Y)",
+      "tooltip": "Количество рядов (кадров вертикально) в спрайте."
+    },
+    "_FlipbookSpeed": {
+      "label": "Скорость (FPS)",
+      "tooltip": "Скорость анимации в кадрах в секунду."
+    },
+    "_FlipbookStartFrame": {
+      "label": "Начать фрейм",
+      "tooltip": "Стартовый кадр анимации, позволяющий сместить."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "Используйте подробный текст",
+      "tooltip": "Накладывает вторичную текстуру, часто для мелких деталей или гранжа."
+    },
+    "_DetailTex": {
+      "label": "Детальная текстура",
+      "tooltip": "Вторичная текстура для наложения."
+    },
+    "_DetailTexProjMode": {
+      "label": "Подробный текстурный режим",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Насколько сильно смешивается текстура деталей."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "Используйте эмиссионную маску",
+      "tooltip": "Использует текстуру для контроля того, какие части поверхности излучают свет."
+    },
+    "_EmissionMaskTex": {
+      "label": "Маска для выбросов",
+      "tooltip": "Текстура для контроля выбросов (белый = полный выброс, черный = отсутствие выбросов)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "Режим проекции эмиссионной маски",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "Включить Parallax Mapping",
+      "tooltip": "Использует карту высоты, чтобы компенсировать УФ для глубины."
+    },
+    "_HeightMap": {
+      "label": "Карта высоты (R)",
+      "tooltip": "Серая текстура, где белый высокий, а черный низкий."
+    },
+    "_ParallaxStrength": {
+      "label": "Сила",
+      "tooltip": "Насколько глубок эффект параллакса."
+    },
+    "_USE_POM_ON": {
+      "label": "Скачать Parallax Occlusion Mapping",
+      "tooltip": "Позволяет многоступенчатый параллакс для более высокого качества эффекта глубины. Только высокий перф."
+    },
+    "_POMSteps": {
+      "label": "Макс Шаги",
+      "tooltip": "Максимальное количество шагов параллакса."
+    },
+    "_POMMinSteps": {
+      "label": "Мин Шаги",
+      "tooltip": "Минимальное количество шагов параллакса (при взгляде на углы)."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "Размышления об окружающей среде",
+      "tooltip": "Образцы зондов отражения для добавления экологических отражений даже в режимах Basic/Toon."
+    },
+    "_EnvReflectionStrength": {
+      "label": "Отражение силы",
+      "tooltip": "Сила отражения окружающей среды."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "Грубость отражения",
+      "tooltip": "Грубость отражения (размытость)."
+    },
+    "_USE_VAT_ON": {
+      "label": "Включить текстуру анимации Vertex",
+      "tooltip": "Применяет запеченную анимацию вершины из текстуры НДС. Используется для предварительно запеченной ткани, жидкости или эффектов разрушения."
+    },
+    "_VATPositionTex": {
+      "label": "Текстура позиции НДС",
+      "tooltip": "Позиция НДС компенсирует текстуру. Каждый ряд — это кадр."
+    },
+    "_VATFrameCount": {
+      "label": "Граф Рамы",
+      "tooltip": "Общее количество анимационных кадров в текстуре."
+    },
+    "_VATSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость воспроизведения верхней анимации."
+    },
+    "_VATBoundsMin": {
+      "label": "Связь мин",
+      "tooltip": "Минимальные ограничения для перераспределения позиций."
+    },
+    "_VATBoundsMax": {
+      "label": "Связь Макса",
+      "tooltip": "Максимальные границы для перераспределения позиций."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "Позволяет влажность",
+      "tooltip": "Имитирует влажную поверхность с потемнением и эффектами ряби дождя."
+    },
+    "_WetnessStrength": {
+      "label": "Влажная сила",
+      "tooltip": "Общая интенсивность влажности."
+    },
+    "_WetnessSmoothness": {
+      "label": "Влажная гладкость",
+      "tooltip": "Повышение гладкости для влажных поверхностей (влияет на остроту зеркального освещения)."
+    },
+    "_WetnessDarkening": {
+      "label": "Затемнение",
+      "tooltip": "Насколько темнеет поверхность при влажности."
+    },
+    "_RainRippleMap": {
+      "label": "Rain Ripple Нормальная карта",
+      "tooltip": "Обычная карта, используемая для анимации дождевой ряби."
+    },
+    "_RainRippleScale": {
+      "label": "Шкала Ripple",
+      "tooltip": "Масштаб ряби дождя."
+    },
+    "_RainRippleSpeed": {
+      "label": "Скорость Ripple",
+      "tooltip": "Скорость анимации дождевой ряби."
+    },
+    "_USE_DECAL_ON": {
+      "label": "Включить Decal",
+      "tooltip": "Накладывает первичную текстуру наклейки/наклейки."
+    },
+    "_DecalTex": {
+      "label": "Декальная текстура",
+      "tooltip": "Декальная текстура. Используйте наклон / сброс, чтобы позиционировать его."
+    },
+    "_DecalBlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Как декаль смешивается с базовым цветом."
+    },
+    "_DecalStrength": {
+      "label": "Сила",
+      "tooltip": "Общая непрозрачность/сила декаля."
+    },
+    "_DecalNormal": {
+      "label": "Нормальная карта",
+      "tooltip": "Обычная карта для декаля."
+    },
+    "_DecalNormalStrength": {
+      "label": "Нормальная сила",
+      "tooltip": "Прочность декальной нормальной карты."
+    },
+    "_DecalMetallic": {
+      "label": "Металлический",
+      "tooltip": "Металлическое значение для области декаля."
+    },
+    "_DecalSmoothness": {
+      "label": "Мягкость",
+      "tooltip": "Значение гладкости для области декаля."
+    },
+    "_DecalAffectsPBR": {
+      "label": "Влияет на PBR",
+      "tooltip": "Возможность модифицировать Normal, Metallic и Smoothness через декаль."
+    },
+    "_SurfaceStyle": {
+      "label": "Поверхность стиль",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "Шкала Hue Shift",
+      "tooltip": "Умножитель для изменения психоделического оттенка."
+    },
+    "_PsychedelicSpeed": {
+      "label": "Скорость потока",
+      "tooltip": "Скорость, с которой психоделический шум течет по поверхности."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "Координация пространства",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "Fractal3DMode",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "FractalRepetitionMode",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "Масштаб",
+      "tooltip": "Шкала фрактала в пространстве объекта."
+    },
+    "_FractalAnimMode": {
+      "label": "FractalAnimMode",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "Скорость анимации",
+      "tooltip": "Скорость, с которой фрактал оживляет."
+    },
+    "_FractalPower": {
+      "label": "Мандельбуль Пауэр",
+      "tooltip": "Параметр мощности для Мандельбулба. Попробуйте анимировать это!"
+    },
+    "_FractalIter": {
+      "label": "Итерации",
+      "tooltip": "Количество итераций. Выше — более подробно, но медленнее."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "Углы (X,Y,Z)",
+      "tooltip": "Углы для Калейдоскопического вращения ИФС."
+    },
+    "_FractalColorShift": {
+      "label": "Оригинальное название: Fractal Depth Hue Shift",
+      "tooltip": "Умножитель для смещения оттенка фрактала на основе глубины."
+    },
+    "_FractalUseAutoShift": {
+      "label": "FractalUseAutoShift",
+      "tooltip": "Постоянно меняет цвет фрактальной основы с течением времени."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "Скорость автоматического сдвига",
+      "tooltip": "Скорость автоматического сдвига цвета."
+    },
+    "_FractalJuliaC": {
+      "label": "Джулия Констан",
+      "tooltip": "Константа кватерниона С для набора Джулии. Контролирует форму фрактала."
+    },
+    "_FractalMandelboxScale": {
+      "label": "Гибридная шкала",
+      "tooltip": "Масштабный фактор для гибридного фрактала. Попробуйте значения между 1,5 и 3.0."
+    },
+    "_AL_FractalBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "Карта преломления шума",
+      "tooltip": "Текстура шума для контроля смещения искажений."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "Сила преломления",
+      "tooltip": "Насколько сильно искажена точка зрения."
+    },
+    "_UseScreenRefraction": {
+      "label": "Преломление экрана",
+      "tooltip": "Искажает экран позади объекта."
+    },
+    "_RefractionStrength": {
+      "label": "Сила",
+      "tooltip": "Сила преломления."
+    },
+    "_RefractionIOR": {
+      "label": "ИЛИ",
+      "tooltip": "Индекс преломления."
+    },
+    "_ChromaticAberration": {
+      "label": "Хроматическая аберрация",
+      "tooltip": "Имитирует разделение цвета, создавая красные / синие края."
+    },
+    "_GalaxyMap": {
+      "label": "Карта галактики",
+      "tooltip": "Текстура для отображения внутри объекта."
+    },
+    "_GalaxyDepth": {
+      "label": "Глубина",
+      "tooltip": "Создает эффект 2D параллакса, что делает текстуру более глубокой."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "Скорость вращения",
+      "tooltip": "Вращение текстуры галактики."
+    },
+    "_SkyboxMap": {
+      "label": "Скайбокс кубемап",
+      "tooltip": "Кубемап для отображения внутри объекта, как портал."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "Скорость вращения",
+      "tooltip": "Вращает скайбокс вокруг оси Y."
+    },
+    "_TriplanarTex": {
+      "label": "Трипланарная текстура",
+      "tooltip": "Текстура для проецирования на модель с трех осей."
+    },
+    "_TriplanarScale": {
+      "label": "Масштаб",
+      "tooltip": "Контролирует размер проектируемой текстуры."
+    },
+    "_TriplanarBlend": {
+      "label": "Смелая резкость",
+      "tooltip": "Контролирует резкость смеси между тремя проекциями текстуры."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "Включить тройную нормальную карту",
+      "tooltip": "Проецирует обычную карту по 3 осям."
+    },
+    "_TriplanarNormalMap": {
+      "label": "Тройная нормальная карта",
+      "tooltip": "Нормальная карта проецируется по трем осям."
+    },
+    "_TriplanarNormalScale": {
+      "label": "Нормальная сила",
+      "tooltip": "Сила обычной карты."
+    },
+    "_MatCapTex": {
+      "label": "Текстура MatCap",
+      "tooltip": "Текстура захвата материала, которая определяет освещение и отражения объекта."
+    },
+    "_MatCapIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Управляет яркостью эффекта MatCap."
+    },
+    "_MatCapBlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Контролирует, как текстура MatCap сочетается с базовым цветом. Оверрайд полностью заменяет его."
+    },
+    "_IridescenceScale": {
+      "label": "Цветовой масштаб",
+      "tooltip": "Контролирует частоту смещения цвета по поверхности."
+    },
+    "_IridescenceStrength": {
+      "label": "Сила",
+      "tooltip": "Контролирует интенсивность переливающегося эффекта."
+    },
+    "_GlitterBlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Контролирует, как блеск цвета смешивается с поверхностью. Присадка может стать яркой. Lerp заменяет базовый цвет (эмиссивный). Макс гарантирует, что он никогда не будет темнее блеска."
+    },
+    "_GlitterColor": {
+      "label": "Цвет",
+      "tooltip": "Цвет блеска."
+    },
+    "_GlitterColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "Масштаб",
+      "tooltip": "Контролирует размер блестящего шума. Более высокие значения означают меньшие искры."
+    },
+    "_GlitterSparsity": {
+      "label": "Сварливость",
+      "tooltip": "Контролирует, сколько искр появляется. Более высокие значения означают меньшее количество разреженных искр."
+    },
+    "_GlitterSpaceMode": {
+      "label": "Координация пространства",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "Используйте Scrolling Animation",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "Скорость блеска",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "Скачать Rim Glow",
+      "tooltip": "Добавляет свечение к краям объекта на основе угла обзора."
+    },
+    "_RimColor": {
+      "label": "Окраска",
+      "tooltip": "Цвет края ободка Френеля светится."
+    },
+    "_RimColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "Используйте градиент",
+      "tooltip": "Использует градиентную текстуру для окрашивания свечения обода вместо сплошного цвета."
+    },
+    "_RimGradient": {
+      "label": "Рим Градиент",
+      "tooltip": "Цветовой пандус для ободка светится. Градиент отображается от центра (слева) до края (справа)."
+    },
+    "_RimPower": {
+      "label": "Rim Power",
+      "tooltip": "Падение резкости обода светится."
+    },
+    "_RimIntensity": {
+      "label": "Интенсивность Рима",
+      "tooltip": "Мультипликатор яркости для сияния обода."
+    },
+    "_AL_RimBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "Включить эффект пересечения",
+      "tooltip": "Отклоняется к цвету, где объект находится близко или пересекается с другими объектами в сцене."
+    },
+    "_IntersectionMode": {
+      "label": "Режим пересечения",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "Цвет",
+      "tooltip": "Цвет эффекта пересечения."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "Расстояние",
+      "tooltip": "Расстояние, на котором происходит увядание."
+    },
+    "_UsePulse": {
+      "label": "Включить пульс",
+      "tooltip": "Добавляет пульсирующую анимацию к силе излучения."
+    },
+    "_PulseSpeed": {
+      "label": "Скорость",
+      "tooltip": "Насколько быстры импульсы излучения."
+    },
+    "_PulseIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Насколько яркий пульс."
+    },
+    "_AL_PulseBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "Включить Outline",
+      "tooltip": "Добавляет твердый контур вокруг объекта. Это добавляет второй призыв к объекту."
+    },
+    "_OutlineColor": {
+      "label": "Очертания цвета",
+      "tooltip": "Базовый оттенок цвета сетки."
+    },
+    "_OutlineColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "Цветовая текстура Outline",
+      "tooltip": "Карта цветовой текстуры."
+    },
+    "_OutlineWorldSpace": {
+      "label": "Наследие очерчивает мировое пространство",
+      "tooltip": "Наследие очерчивает мировое пространство"
+    },
+    "_OutlineSpace": {
+      "label": "Очертания пространства",
+      "tooltip": "Координировать пространство для экструзии контура (локальное пространство объекта, экранное пространство, независимое расстояние камеры)."
+    },
+    "_OutlineWidth": {
+      "label": "Очертания широты",
+      "tooltip": "Толщина контура перевернутого корпуса."
+    },
+    "_AL_OutlineBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "Использование Vertex Color для Width",
+      "tooltip": "Модулирует ширину контура с использованием верхнего цвета модели (красный канал)."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "Используйте Outline Width Map",
+      "tooltip": "Использует текстуру серого масштаба для модуляции толщины контура на пиксель."
+    },
+    "_OutlineWidthMap": {
+      "label": "Очертания Width Map",
+      "tooltip": "Серая маска для ширины контура (белый = полный, черный = ноль)."
+    },
+    "_UseRippleEffect": {
+      "label": "Скачать Ripple Effect",
+      "tooltip": "Создает концентрический волновой эффект, исходящий от УФ-координаты."
+    },
+    "_RippleCenterUV": {
+      "label": "Центр (UV)",
+      "tooltip": "Центр ряби в УФ-пространстве (X,Y)."
+    },
+    "_RippleProgress": {
+      "label": "Прогресс",
+      "tooltip": "Ручное продвижение пульсирующей анимации, которая контролирует фазу."
+    },
+    "_RippleCount": {
+      "label": "Граф Риппл",
+      "tooltip": "Количество концентрических пульсирующих колец в 1 УФ-блоке."
+    },
+    "_RippleMaxRadius": {
+      "label": "Фадеут Радиус",
+      "tooltip": "Расстояние от центра, на котором рябь полностью исчезает."
+    },
+    "_RippleWidth": {
+      "label": "Широта",
+      "tooltip": "Ширина каждого отдельного пульсирующего кольца."
+    },
+    "_RippleColor": {
+      "label": "Цвет",
+      "tooltip": "Цвет ряби."
+    },
+    "_RippleColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "Искажение силы",
+      "tooltip": "Насколько рябь смещает вершины модели вдоль их нормы."
+    },
+    "_RippleStrength": {
+      "label": "Сила",
+      "tooltip": "Яркость ряби."
+    },
+    "_AnimateRipple": {
+      "label": "Анимационный Ripple",
+      "tooltip": "Автоматически анимирует рябь анимации."
+    },
+    "_RippleAnimSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость анимации."
+    },
+    "_RippleAnimMode": {
+      "label": "Используйте Ping-Pong",
+      "tooltip": "Если включено, анимация будет играть вперед, а затем назад."
+    },
+    "_AL_RippleBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "Включить цветовое смещение базы",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "Анимационный режим",
+      "tooltip": "Устанавливает глобальный метод цветной анимации."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "Глобальный автоматический сдвиг цвета",
+      "tooltip": "При включении автоматически анимирует слайдеры цветового сдвига (> 0) непрерывно. При отключении слайдеры цветового сдвига принимают статические или анимированные значения."
+    },
+    "_AnimatedGradient": {
+      "label": "Анимированный градиент",
+      "tooltip": "Градиентная текстура, из которой будут взяты все анимированные цвета."
+    },
+    "_GradientAnimPingPong": {
+      "label": "Анимация Ping-Pong",
+      "tooltip": "Оживляет градиент туда и обратно вместо петли."
+    },
+    "_GradientAnimVertical": {
+      "label": "Используйте вертикальный свиток",
+      "tooltip": "Прокрутите градиент сверху вниз, а не слева направо."
+    },
+    "_ColorShiftSpeed": {
+      "label": "Скорость анимации",
+      "tooltip": "Контролирует скорость для всех анимированных цветов. Для Hue Shift это скорость вращения. Для Gradient это скорость прокрутки."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "Десатурация",
+      "tooltip": "Смешивает конечный цвет в серую шкалу (0 = полный цвет, 1 = шкала грая)."
+    },
+    "_UseInvert": {
+      "label": "Инвертированный цвет",
+      "tooltip": "Перевернуть окончательный цвет шейдера."
+    },
+    "_ColorTint": {
+      "label": "Последний цветной оттенок",
+      "tooltip": "Умножает цвет на конечный результат, полезный для тонирования или градации."
+    },
+    "_ColorTint_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "Яркость",
+      "tooltip": "Настройка общей яркости конечного цвета."
+    },
+    "_Contrast": {
+      "label": "Контраст",
+      "tooltip": "Настройка общего контраста конечного цвета."
+    },
+    "_Gamma": {
+      "label": "Гамма",
+      "tooltip": "Применяется гамма-коррекция к окончательному цвету."
+    },
+    "_UsePixelation": {
+      "label": "Включить Pixelation",
+      "tooltip": "Создает блокирующий эффект низкого разрешения."
+    },
+    "_PixelationAmount": {
+      "label": "Количество пикселей",
+      "tooltip": "Количество «пикселей» в текстуре (выше меньше пикселей)."
+    },
+    "_UsePosterize": {
+      "label": "Включите постеризацию",
+      "tooltip": "Уменьшает количество цветов, придавая ретро/цифровой вид."
+    },
+    "_PosterizeLevels": {
+      "label": "Уровни",
+      "tooltip": "Количество цветовых шагов на канал."
+    },
+    "_UseDistanceFade": {
+      "label": "Скачать Distance Fade",
+      "tooltip": "Вытесняет объект, когда он находится далеко от камеры."
+    },
+    "_FadeDistance": {
+      "label": "Начать расстояние",
+      "tooltip": "Расстояние от камеры, где начинается выцветание."
+    },
+    "_FadeRange": {
+      "label": "Диапазон",
+      "tooltip": "Как быстро объект исчезает на расстоянии."
+    },
+    "_UseDepthFade": {
+      "label": "Depth Fade (мягкие частицы)",
+      "tooltip": "Смягчает пересечения многоугольников против геометрии сцены для прозрачных и аддитивных поверхностей."
+    },
+    "_DepthFadeDistance": {
+      "label": "Расстояние Fade",
+      "tooltip": "Расстояние, на котором геометрия исчезает при пересечении непрозрачных поверхностей."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "Обсуждение Effect Distance Fade",
+      "tooltip": "Жесткие процедурные эффекты (Glitter, Fractals, Grid, Psychedelic) за пределами установленного расстояния для улучшения производительности VR."
+    },
+    "_EffectFadeStart": {
+      "label": "Расстояние Fade Start",
+      "tooltip": "Расстояние в метрах, где эффекты начинают исчезать."
+    },
+    "_EffectFadeEnd": {
+      "label": "Расстояние Fade End",
+      "tooltip": "Расстояние в метрах, где эффекты полностью отключены."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "Включить Vertex Collapse",
+      "tooltip": "Уменьшает модель до ее центральной точки."
+    },
+    "_CollapseEnableAnim": {
+      "label": "Collapse Enable (альбом)",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "Сумма",
+      "tooltip": "Прогресс эффекта коллапса (0 = Нормальный, 1 = Коллапсированный)."
+    },
+    "_AnimateCollapse": {
+      "label": "Анимационный коллапс",
+      "tooltip": "Автоматически анимирует количество коллапса с течением времени."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "Используйте Advanced Timing",
+      "tooltip": "Используйте индивидуальное время для анимации коллапса вместо простого цикла / пинг-понга."
+    },
+    "_CollapseOnDuration": {
+      "label": "Продолжительность коллапса",
+      "tooltip": "Время, необходимое для того, чтобы модель рухнула."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "Коллапсирующая продолжительность",
+      "tooltip": "Время, когда модель остается полностью разрушенной."
+    },
+    "_CollapseOffDuration": {
+      "label": "Увеличить продолжительность",
+      "tooltip": "Время, необходимое для того, чтобы модель вернулась к нормальной жизни."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "Нормальная продолжительность",
+      "tooltip": "Время, когда модель остается в нормальном состоянии, прежде чем зацикливаться."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость анимации."
+    },
+    "_CollapseAnimMin": {
+      "label": "Анимационный мин",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "Анимационный Макс",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "Используйте Ping-Pong",
+      "tooltip": "Если включено, анимация будет играть вперед, а затем назад. Если он отключен, он будет петлеть."
+    },
+    "_AL_CollapseBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "Скачать Glitch Flicker",
+      "tooltip": "Применяет мерцающий эффект ко всему объекту."
+    },
+    "_FlickerMode": {
+      "label": "Режим мерцания",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "Скорость",
+      "tooltip": "Скорость мерцания."
+    },
+    "_FlickerIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Сила мерцания (как темно становится)."
+    },
+    "_AL_FlickerBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "Обратный свиток",
+      "tooltip": "Обратное направление прокрутки линий сканирования сбоев."
+    },
+    "_FlickerBlockSize": {
+      "label": "Размер блока",
+      "tooltip": "Размер блоков глюка."
+    },
+    "_FlickerDirection": {
+      "label": "Направление",
+      "tooltip": "Направление сканирования сбоев."
+    },
+    "_FlickerDensity": {
+      "label": "Плотность",
+      "tooltip": "Количество сканирований глюка."
+    },
+    "_FlickerLineThickness": {
+      "label": "Толщина",
+      "tooltip": "Толщина сканирования сбоев."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "Включить Transparency Glitch",
+      "tooltip": "Эффект мерцания также влияет на прозрачность."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "Сила",
+      "tooltip": "Насколько сильно мерцание влияет на прозрачность."
+    },
+    "_UseScanlines": {
+      "label": "Включить Scanlines",
+      "tooltip": "Имитирует внешний вид монитора CRT."
+    },
+    "_ScanlineColor": {
+      "label": "Цвет",
+      "tooltip": "Цвет и прозрачность сканирования."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "Плотность",
+      "tooltip": "Сколько сканов появляется на экране."
+    },
+    "_ScanlineSpeed": {
+      "label": "Скорость",
+      "tooltip": "Как быстро прокручиваются сканы."
+    },
+    "_ScanlineThickness": {
+      "label": "Толщина",
+      "tooltip": "Толщина сканирующих линий."
+    },
+    "_ScanlineDirection": {
+      "label": "Направление",
+      "tooltip": "Направление линий сканирования (0=Вертикальный, 1=Горизонтальный)."
+    },
+    "_AL_ScanlineBand": {
+      "label": "Группа AudioLink",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "Включить Audio Spectrum",
+      "tooltip": "Осуществляет визуализацию частотного спектра в реальном времени, управляемую AudioLink."
+    },
+    "_AudioSpectrumMode": {
+      "label": "Режим Spectrum",
+      "tooltip": "Стиль визуализации для спектра."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "Бар Граф",
+      "tooltip": "Количество частотных баров."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "Разрыв в баре",
+      "tooltip": "Разрыв между барами (0 = отсутствие зазора)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "Выигрыш",
+      "tooltip": "Усиление звукового сигнала."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "Толщина края",
+      "tooltip": "Край мягкости радиальных брусьев."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "Заполнить Альфа",
+      "tooltip": "Непрозрачность заполненной области под кривой."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "Логарифмическая шкала",
+      "tooltip": "Используйте логарифмическое частотное масштабирование для более естественного басового / тройного баланса."
+    },
+    "_AudioSpectrumColor": {
+      "label": "Цвет",
+      "tooltip": "Первичный цвет (или низкочастотный цвет для градиента)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "Высокий цвет Freq",
+      "tooltip": "Высокочастотный цвет для градиентного режима."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "Цветовой режим",
+      "tooltip": "Как окрашен спектр."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "Hue Speed",
+      "tooltip": "Скорость смены оттенков / радужная анимация."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "Проекционное пространство",
+      "tooltip": "Координируйте пространство для визуализации."
+    },
+    "_AudioSpectrumScale": {
+      "label": "Масштаб",
+      "tooltip": "Масштабность визуализатора."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "Оффсет",
+      "tooltip": "Смещение позиции."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "Вращение",
+      "tooltip": "Вращение в градусах."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Как спектр смешивается с поверхностью."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "Зеркало",
+      "tooltip": "Зеркало спектра горизонтально."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "Внутренний Радиус",
+      "tooltip": "Внутренний радиус радиального дисплея."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "Мягкость края",
+      "tooltip": "Пространственное сглаживание края и пограничная мягкость баров или кривой."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Умножитель общей яркости."
+    },
+    "_AudioSmoothingMode": {
+      "label": "Аудио режим Smoothing",
+      "tooltip": "Метод временного сглаживания для спектра/волновой формы: Raw (нет), Frame Blend (2-кадровый EMA) или Temporal Buffer (история CRT)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "Спектр временной гладкости",
+      "tooltip": "Сила временного сглаживания, применяемая к спектру (режимы кадра / временного буфера)."
+    },
+    "_UseAudioWaveform": {
+      "label": "Включить Audio Waveform",
+      "tooltip": "Осуществляет визуализацию формы волны / осциллографа в реальном времени, управляемую AudioLink."
+    },
+    "_AudioWaveformMode": {
+      "label": "Режим Waveform",
+      "tooltip": "Стиль визуализации для формы волны."
+    },
+    "_AudioWaveformChannel": {
+      "label": "Канал",
+      "tooltip": "Какой аудиоканал визуализировать."
+    },
+    "_AudioWaveformCycles": {
+      "label": "Циклы",
+      "tooltip": "Количество видимых циклов формы волны."
+    },
+    "_AudioWaveformGain": {
+      "label": "Выигрыш",
+      "tooltip": "Усиление звукового сигнала."
+    },
+    "_AudioWaveformThickness": {
+      "label": "Толщина линии",
+      "tooltip": "Толщина следовой линии."
+    },
+    "_AudioWaveformGlow": {
+      "label": "Сияние",
+      "tooltip": "Интенсивность неонового свечения цветет."
+    },
+    "_AudioWaveformColor": {
+      "label": "Цвет",
+      "tooltip": "Первичный цвет формы волны."
+    },
+    "_AudioWaveformColor2": {
+      "label": "Цвет 2",
+      "tooltip": "Вторичный цвет (скорость выделения или оттенок свечения)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "Цветовой режим",
+      "tooltip": "Как окрашивается форма волны."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "Hue Speed",
+      "tooltip": "Скорость смены оттенков / радужная анимация."
+    },
+    "_AudioWaveformSpace": {
+      "label": "Проекционное пространство",
+      "tooltip": "Координируйте пространство для визуализации."
+    },
+    "_AudioWaveformScale": {
+      "label": "Масштаб",
+      "tooltip": "Масштабность визуализатора."
+    },
+    "_AudioWaveformOffset": {
+      "label": "Оффсет",
+      "tooltip": "Смещение позиции."
+    },
+    "_AudioWaveformRotation": {
+      "label": "Вращение",
+      "tooltip": "Вращение в градусах."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Как форма волны смешивается с поверхностью."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "Полярный Радиус",
+      "tooltip": "Радиус основания полярного кольца."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "Сила перемещения",
+      "tooltip": "Сила смещения вершины вдоль нормы."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "Мягкость края",
+      "tooltip": "Пространственное сглаживание края и мягкость хода."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Умножитель общей яркости."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "Волнообразное временное успокаивание",
+      "tooltip": "Сила временного сглаживания, применяемая к форме волны (режим временного буфера)."
+    },
+    "_FRSmoothedAudio": {
+      "label": "Гладкий аудио CRT",
+      "tooltip": "Custom Render Texture (актив FireRat AudioSmoothingCRT), содержащий временно гладкий звук. Требуется режим временного буфера."
+    },
+    "_UseInterlace": {
+      "label": "Включить переплетение",
+      "tooltip": "Темнеет каждый другой ряд экрана, чтобы имитировать переплетенный дисплей."
+    },
+    "_InterlaceIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Как темны переплетенные линии."
+    },
+    "_UseClippingMask": {
+      "label": "Позволяет нажимать маску",
+      "tooltip": "Использует текстуру для обрезания (сделать части невидимыми) материала. Это жесткий клип, а не мягкая прозрачность."
+    },
+    "_ClippingMask": {
+      "label": "Маска для скалолазания",
+      "tooltip": "Текстура, используемая для обрезки. Выбранный канал определяет видимость (черный = обрезанный)."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "Маска Scroll Speed X",
+      "tooltip": "Прокручивает текстуру маски горизонтально."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "Маска Scroll Speed Y",
+      "tooltip": "Прокручивает текстуру маски вертикально."
+    },
+    "_ClippingMaskChannel": {
+      "label": "Канал Маска",
+      "tooltip": "Какой цветной канал маски использовать для обрезки."
+    },
+    "_InvertClippingMask": {
+      "label": "Перевернутая маска",
+      "tooltip": "Эффект маски (белый = обрезанный)."
+    },
+    "_UseNoise": {
+      "label": "Включить шум/дождь",
+      "tooltip": "Добавляет анимированный шум."
+    },
+    "_NoiseIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Сила шумового эффекта."
+    },
+    "_NoiseColor": {
+      "label": "Цвет",
+      "tooltip": "Цвет шумовых частиц."
+    },
+    "_NoiseColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "Скорость анимации",
+      "tooltip": "«Кадры в секунду» шумовой анимации."
+    },
+    "_Cull": {
+      "label": "Каллинг",
+      "tooltip": "Режим выбраковки полигона (Off, Front, Back)."
+    },
+    "_CullShadow": {
+      "label": "Режим Shadow Cull",
+      "tooltip": "Режим отбраковки полигона, используемый специально для пропуска теней."
+    },
+    "_ZTest": {
+      "label": "Тест",
+      "tooltip": "Контролирует, как проводится глубинное тестирование."
+    },
+    "_ColorWriteMask": {
+      "label": "Цветная маска Write Mask",
+      "tooltip": "Контролирует, какие цветные каналы записываются на экран."
+    },
+    "_QueueOffset": {
+      "label": "Обсуждение Offset",
+      "tooltip": "Снимает очередь рендеринга относительно выбранного режима Рендера."
+    },
+    "_SrcBlend": {
+      "label": "Режим Src Blend",
+      "tooltip": "Режим сочетания источников для смешивания прозрачности."
+    },
+    "_DstBlend": {
+      "label": "Режим Blend Mode",
+      "tooltip": "Режим назначения для смешивания прозрачности."
+    },
+    "_Stencil": {
+      "label": "Стенограмма Ref",
+      "tooltip": "Ссылочное значение трафарета."
+    },
+    "_StencilReadMask": {
+      "label": "Читать Маска",
+      "tooltip": "Стенцил читает маску."
+    },
+    "_StencilWriteMask": {
+      "label": "Написать маску",
+      "tooltip": "Стенцил пишет маску."
+    },
+    "_StencilComp": {
+      "label": "Сравнение",
+      "tooltip": "Функция сравнения трафаретов."
+    },
+    "_StencilPass": {
+      "label": "Пассажир",
+      "tooltip": "Операция по пропуску трафарета."
+    },
+    "_StencilFail": {
+      "label": "Провал",
+      "tooltip": "Операция по отказу трафарета."
+    },
+    "_StencilZFail": {
+      "label": "ЗФайл",
+      "tooltip": "Операция Стенцила Зфаила."
+    },
+    "_NormalMapUVSet": {
+      "label": "Нормальный УФ-набор",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для обычной карты."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "Обычный UV-набор",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для обычной карты детализации."
+    },
+    "_DetailTexUVSet": {
+      "label": "Подробнее UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для текстуры деталей."
+    },
+    "_DecalTexUVSet": {
+      "label": "Ультрафиолетовый набор Decal UV",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для декаля."
+    },
+    "_DissolveMapUVSet": {
+      "label": "Растворить UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для карты растворения."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "Ультрафиолетовая маска UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для маски излучения."
+    },
+    "_OutlineTex": {
+      "label": "Очертания текстуры",
+      "tooltip": "Текстура отображена на геометрию контура."
+    },
+    "_OutlineTexUVSet": {
+      "label": "Установка Tex UV Set",
+      "tooltip": "УФ-канал для контурной текстуры."
+    },
+    "_OutlineTexScrollX": {
+      "label": "Обсуждение Scroll X",
+      "tooltip": "Скорость прокрутки X для контурной текстуры."
+    },
+    "_OutlineTexScrollY": {
+      "label": "Скриншоты Scroll Y",
+      "tooltip": "Скорость прокрутки Y для контурной текстуры."
+    },
+    "_UseOutlineGradient": {
+      "label": "Включить оптоволоконный градиент",
+      "tooltip": "Применяет вертикальный верхний / нижний градиент по всему контуру."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "Лучший цвет",
+      "tooltip": "Верхний цвет градиента очертаний."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "Нижний цвет",
+      "tooltip": "Нижний цвет градиента очертаний."
+    },
+    "_RimMode": {
+      "label": "Режим Rim",
+      "tooltip": "Внешний обод (сверкает к краям) или внутренний обод (сверкает к центру)."
+    },
+    "_RimDepthMode": {
+      "label": "Режим Rim Depth Mode",
+      "tooltip": "Использует различия глубины сцены вместо угла обзора для освещения обода."
+    },
+    "_RimDepthWidth": {
+      "label": "Прохождение Rim Depth Width",
+      "tooltip": "Ширина расстояния для диска на основе глубины."
+    },
+    "_GridTilingX": {
+      "label": "Скриншоты Tiling X",
+      "tooltip": "Горизонтальная плитка для процедурных линий сетки."
+    },
+    "_GridTilingY": {
+      "label": "Сетка Tiling Y",
+      "tooltip": "Вертикальная плитка для процедурных линий сетки."
+    },
+    "_DecalRotation": {
+      "label": "Вращение",
+      "tooltip": "Угол поворота (0-360 градусов) для декаля."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "Скачать Decal 2",
+      "tooltip": "Накладывает вторичную текстуру decal/sticker."
+    },
+    "_Decal2Tex": {
+      "label": "Декаль 2 Текстура",
+      "tooltip": "Вторая декальная текстура."
+    },
+    "_Decal2BlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Как Decal 2 сочетается с базовым цветом."
+    },
+    "_Decal2Strength": {
+      "label": "Сила",
+      "tooltip": "Общая непрозрачность/сила 2 декабря."
+    },
+    "_Decal2Normal": {
+      "label": "Нормальная карта",
+      "tooltip": "Обычная карта для 2 декабря."
+    },
+    "_Decal2NormalStrength": {
+      "label": "Нормальная сила",
+      "tooltip": "Обычная карта Decal 2."
+    },
+    "_Decal2Metallic": {
+      "label": "Металлический",
+      "tooltip": "Металлическое значение для области Decal 2."
+    },
+    "_Decal2Smoothness": {
+      "label": "Мягкость",
+      "tooltip": "Значение гладкости для области Decal 2."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "Влияет на PBR",
+      "tooltip": "Возможность модифицировать Normal, Metallic и Smoothness через декаль."
+    },
+    "_Decal2TexUVSet": {
+      "label": "Decal 2 УФ-набор",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для Decal 2."
+    },
+    "_Decal2Rotation": {
+      "label": "Вращение",
+      "tooltip": "Угол поворота (0-360 градусов) для Decal 2."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "Скачать Decal 3",
+      "tooltip": "Накладывает третичную текстуру decal/sticker."
+    },
+    "_Decal3Tex": {
+      "label": "Декаль 3 Текстура",
+      "tooltip": "Третья декальная текстура."
+    },
+    "_Decal3BlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Как Decal 3 сочетается с базовым цветом."
+    },
+    "_Decal3Strength": {
+      "label": "Сила",
+      "tooltip": "Общая непрозрачность/сила 3 декабря."
+    },
+    "_Decal3Normal": {
+      "label": "Нормальная карта",
+      "tooltip": "Обычная карта для 3 декабря."
+    },
+    "_Decal3NormalStrength": {
+      "label": "Нормальная сила",
+      "tooltip": "Обычная карта Decal 3."
+    },
+    "_Decal3Metallic": {
+      "label": "Металлический",
+      "tooltip": "Металлическое значение для области Decal 3."
+    },
+    "_Decal3Smoothness": {
+      "label": "Мягкость",
+      "tooltip": "Значение гладкости для области Decal 3."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "Влияет на PBR",
+      "tooltip": "Возможность модифицировать Normal, Metallic и Smoothness через декаль."
+    },
+    "_Decal3TexUVSet": {
+      "label": "Decal 3 УФ-набор",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для Decal 3."
+    },
+    "_Decal3Rotation": {
+      "label": "Вращение",
+      "tooltip": "Угол поворота (0-360 градусов) для Decal 3."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "УФ-набор Rain Ripple",
+      "tooltip": "УФ-канал для ряби дождя (UV0 против UV1)."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "Обсуждение AudioLink Blink Band",
+      "tooltip": "Диапазон AudioLink для пульсирующего / мигающего излучения на звуковых битах."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "Сила моргания",
+      "tooltip": "Сила эффекта мигания излучения AudioLink."
+    },
+    "_UseBackFaceColor": {
+      "label": "Включить Back Face Color",
+      "tooltip": "Применяет отдельный цвет к обратным многоугольникам."
+    },
+    "_BackFaceColor": {
+      "label": "Цвет лица",
+      "tooltip": "Цвет задних лиц."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "Сдвиг",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "Используйте Backface Texture",
+      "tooltip": "Применяет отдельную текстуру к обращенным назад многоугольникам."
+    },
+    "_BackFaceTex": {
+      "label": "Текстура Back Face",
+      "tooltip": "Текстура задних лиц."
+    },
+    "_BackFaceEmission": {
+      "label": "Обратная связь Face Emission",
+      "tooltip": "Текстура излучения задних лиц."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "Сила выбросов",
+      "tooltip": "Сила излучения на задней поверхности."
+    },
+    "_HueShift": {
+      "label": "Сдвиг Хюэ",
+      "tooltip": "Вращает оттенок вокруг цветового колеса."
+    },
+    "_SaturationAdjust": {
+      "label": "Насыщение",
+      "tooltip": "Умножает насыщенность цвета (0=Grayscale, 1=Default, 2=Vibrant)."
+    },
+    "_ValueAdjust": {
+      "label": "Яркость (Brightness)",
+      "tooltip": "Весы HSV значение / яркость."
+    },
+    "_UseHSVMask": {
+      "label": "Включить маску HSV",
+      "tooltip": "Настройка маски HSV с использованием карты текстуры."
+    },
+    "_HSVMask": {
+      "label": "Маска HSV (R)",
+      "tooltip": "Текстура маски для Hue/Saturation/Value shift (белый = полный сдвиг, черный = исходный)."
+    },
+    "_NormalMapFlipY": {
+      "label": "Flip Y (DirectX/OpenGL)",
+      "tooltip": "Преобразует зеленый канал обычной карты для совместимости формата DirectX/OpenGL."
+    },
+    "_DetailBlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Режим Blend для детализации текстуры (Overlay, Multiply, Additive, SoftLight)."
+    },
+    "_VertexColorMode": {
+      "label": "Режим Vertex Color",
+      "tooltip": "Выберите, как вертикальные цвета сочетаются с базовым цветом (заменить, умножить, добавить)."
+    },
+    "_GlitterShape": {
+      "label": "Блестящая форма",
+      "tooltip": "Контролирует геометрическую форму блеска сверкает."
+    },
+    "_MatCapMask": {
+      "label": "Маткап Маска (R)",
+      "tooltip": "Текстура маски (R), управляющая видимостью MatCap."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "MatCap Маска УФ-набор",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для маски MatCap."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "Использование Edge Contour Gradient",
+      "tooltip": "Включает многоцветный градиент вдоль контура края растворения."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "Скачать Edge Gradient",
+      "tooltip": "Градиентная текстура, нанесенная вдоль контура растворимого края."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "Маска Scroll Speed X",
+      "tooltip": "Скорость прокрутки X для эмиссионной маски."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "Маска Scroll Speed Y",
+      "tooltip": "Скорость прокрутки Y для эмиссионной маски."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "Глобальный гладкий",
+      "tooltip": "Глобальное сглаживание отклика в частотных диапазонах AudioLink."
+    },
+    "_AL_GlobalMin": {
+      "label": "Глобальный этаж / Min",
+      "tooltip": "Порог шума для реактивности AudioLink."
+    },
+    "_AL_GlobalMax": {
+      "label": "Глобальный потолок / Max",
+      "tooltip": "Потолочный порог масштабирования пиковой амплитуды AudioLink."
+    },
+    "_DetailNormalScrollX": {
+      "label": "Скачать Speed X",
+      "tooltip": "Скорость прокрутки X для деталей нормальная."
+    },
+    "_DetailNormalScrollY": {
+      "label": "Скорость прокрутки Y",
+      "tooltip": "Скорость прокрутки Y для деталей нормальная."
+    },
+    "_ColorMask": {
+      "label": "Цветовая маска Текстура",
+      "tooltip": "Текстура используется для маскировки и ограничения цветовой анимации."
+    },
+    "_ColorMaskUVSet": {
+      "label": "Цветная маска UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для цветной маски."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "Цветная маска Alpha Source",
+      "tooltip": "Источник канала используется для альфа-смешивания цветовой маски."
+    },
+    "_MainTexUVSet": {
+      "label": "Главная Текстура UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для основной текстуры."
+    },
+    "_Shadow2Color": {
+      "label": "2-й цвет тени",
+      "tooltip": "Глубокий теневой цвет для 2-го уровня тени."
+    },
+    "_ToonThreshold2": {
+      "label": "2-й лунный порог",
+      "tooltip": "Пороговая граница для 2-го глубокого яруса тени."
+    },
+    "_ToonHardness2": {
+      "label": "2-й Тун твердость",
+      "tooltip": "Краевая резкость для 2-го глубокого оттенка яруса."
+    },
+    "_MinLightBrightness": {
+      "label": "Мин Светлая Яркость",
+      "tooltip": "Минимальная яркость пола, чтобы аватары не становились черными."
+    },
+    "_MaxLightBrightness": {
+      "label": "Макс Светлая яркость",
+      "tooltip": "Максимальная яркость потолка для предотвращения чрезмерного воздействия в ярких мирах."
+    },
+    "_ShadeShiftMap": {
+      "label": "Карта Shade Shift",
+      "tooltip": "Текстура, смещающая линию тени cel (фиксированные складки / AO)."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "Shade Shift UV-версия",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для карты Shade Shift."
+    },
+    "_ShadeShiftStrength": {
+      "label": "Shade Shift Сила",
+      "tooltip": "Интенсивность смещения теневой линии от карты сдвига теней."
+    },
+    "_StepSpecular": {
+      "label": "Ступенчатый",
+      "tooltip": "Преобразует мягкие спектральные блики PBR в четкие пятна блеска мультфильма."
+    },
+    "_StepSpecularThreshold": {
+      "label": "Степной спектральный порог",
+      "tooltip": "Пороговая граница для зеркального шага."
+    },
+    "_StepSpecularHardness": {
+      "label": "Шаг Спекулярная твердость",
+      "tooltip": "Резкость края для зеркального шага."
+    },
+    "_UseMatCap2": {
+      "label": "Скачать MatCap 2",
+      "tooltip": "Добавляет вторичный слой MatCap для многотоновых металлических или ободовых акцентов."
+    },
+    "_MatCap2Tex": {
+      "label": "MatCap 2 Текстура",
+      "tooltip": "Вторичная текстура сферического отражения MatCap."
+    },
+    "_MatCap2BlendMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Режим Blend для MatCap 2 (Add, Multiply, Replace, Lighten, Overlay)."
+    },
+    "_MatCap2Intensity": {
+      "label": "Интенсивность",
+      "tooltip": "Мультипликатор яркости для MatCap 2."
+    },
+    "_MatCap2Mask": {
+      "label": "Маткап 2 Маска (R)",
+      "tooltip": "Текстура маски (R), управляющая видимостью MatCap 2."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "Маска UV Set",
+      "tooltip": "УФ-канал для маски MatCap 2."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "Нормальная карта возмущения",
+      "tooltip": "Деформирует отражения MatCap с помощью обычных карт поверхности."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "Перспективная коррекция",
+      "tooltip": "Исправляет широкоформатное искажение перспективы в VR."
+    },
+    "_HairSpecMask": {
+      "label": "Волосы Спекулярная маска",
+      "tooltip": "Текстура маски, контролирующая, где появляются зеркальные блики волос."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "Маска UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для волос."
+    },
+    "_OutlineNormalSource": {
+      "label": "Нормальный источник",
+      "tooltip": "Поток Vertex используется для экструзии контуров (Mesh Normals, Vertex Colors, UV2, UV3)."
+    },
+    "_OutlineMinWidth": {
+      "label": "Мин Уидт",
+      "tooltip": "Минимальная толщина пикселей для контуров на расстоянии."
+    },
+    "_OutlineMaxWidth": {
+      "label": "Макс Уидт",
+      "tooltip": "Максимальная толщина пикселей для очертаний близко."
+    },
+    "_OutlineNoiseScale": {
+      "label": "Шкала шума",
+      "tooltip": "Частота анимированного контура дрожащего шума."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "Скорость шума",
+      "tooltip": "Скорость анимации контурного дрожащего шума."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "Шумовая сила",
+      "tooltip": "Сила смещения верхнего джиттера."
+    },
+    "_UseDitheredAlpha": {
+      "label": "Стертая Альфа",
+      "tooltip": "Матрица Bayer для сортировки прозрачных тканей и волос без экрана."
+    },
+    "_DitherStrength": {
+      "label": "Дитер Сила",
+      "tooltip": "Прочность смеси дитера (0 = резкая вырезка, 1 = полная стрижка)."
+    },
+    "_ShadowCutoff": {
+      "label": "Shadow Cutoff",
+      "tooltip": "Альфа порог отсечения для отбрасывания теней."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "Скачать Shadow Cutoff Override",
+      "tooltip": "Перекрывает порог альфа-отсечения специально для пропусков отбрасывания теней."
+    },
+    "_AL_DecalBand": {
+      "label": "Обсуждение Decal 1 Band",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "AudioLink Decal 1 Сила",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "Обсуждение Decal 2 Band",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "АудиоLink Decal 2 Сила",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "Обсуждение AudioLink Decal 3 Band",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "АудиоLink Decal 3 Сила",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "Рядом с камерой",
+      "tooltip": "Плавно растворяет геометрию, когда камера становится слишком близко (предотвращает зажимание головы VR)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "Фаде Радиус",
+      "tooltip": "Расстояние от камеры, где геометрия начинает угасать."
+    },
+    "_NearCameraFadeRange": {
+      "label": "Фейд Рейндж",
+      "tooltip": "Переходное расстояние для ближней камеры исчезает."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "Фейд Тени",
+      "tooltip": "Также обрезает тени, когда в пределах расстояния выцветания."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "Скорость импульса",
+      "tooltip": "Скорость колебания для дыхания/пульсации контура."
+    },
+    "_OutlinePulseStrength": {
+      "label": "Сила пульса",
+      "tooltip": "Амплитуда колебаний для дыхания/пульсации контура."
+    },
+    "_UseChromaKey": {
+      "label": "Используйте Chroma Key",
+      "tooltip": "Делает определенный цветовой диапазон прозрачным (например, зелёный экран)."
+    },
+    "_ChromaKeyColor": {
+      "label": "Ключевой цвет",
+      "tooltip": "Цвет на ключ."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "Порог",
+      "tooltip": "Порог расстояния вокруг ключевого цвета для устранения."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "Гладкий",
+      "tooltip": "Мягкость краевого перехода."
+    },
+    "_DistanceFade_LOD": {
+      "label": "Дистанционный старт LOD",
+      "tooltip": "Расстояние от камеры до начала упрощения затенения деталей для оптимизации LOD (0 = отключен)."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "Режим параметров аватара",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "Используйте голограмму",
+      "tooltip": "Эффект голограммы Sci-fi с анимированными сканирующими линиями, краевым краем и мерцанием."
+    },
+    "_HoloColor": {
+      "label": "Цвет голограммы",
+      "tooltip": "Цветовой оттенок голограммной проекции."
+    },
+    "_HoloScanlineTiling": {
+      "label": "Сканирование Tiling",
+      "tooltip": "Плотность горизонтальных сканирований."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "Скорость сканирования",
+      "tooltip": "Скорость перемещения сканирования."
+    },
+    "_HoloRimPower": {
+      "label": "Rim Power",
+      "tooltip": "Падение резкости голограммного края светится."
+    },
+    "_HoloStrength": {
+      "label": "Сила голограммы",
+      "tooltip": "Прочность голограммы на поверхности основания."
+    },
+    "_HoloAlphaStrength": {
+      "label": "Альфа-модуляция",
+      "tooltip": "Модулирует прозрачность со схемой сканирования."
+    },
+    "_UseCustomFogColor": {
+      "label": "Включить Custom Fog Color",
+      "tooltip": "Перекрывает глобальную сцену туманным цветом с индивидуальным локализованным оттенком."
+    },
+    "_CustomFogColor": {
+      "label": "Обычный цвет тумана",
+      "tooltip": "Обычный оттенок для атмосферного тумана."
+    },
+    "_AlphaToCoverage": {
+      "label": "Альфа для покрытия (MSAA)",
+      "tooltip": "Позволяет аппаратному обеспечению Alpha to Coverage (MSAA anti-aliasing) на краях вырезов, сглаживая листву и волосы."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "A2C Шарпен",
+      "tooltip": "Шарпенс Альфа к краям покрытия."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "Тень получает силу",
+      "tooltip": "Контролирует, как темные тени сцены в реальном времени появляются на материале (1.0 = полная тень, 0,0 = нет тени)."
+    },
+    "_DecalClamp": {
+      "label": "Декальские зажимы",
+      "tooltip": "УФ-координаты зажимов декальны, поэтому декаль не повторяется снаружи [0, 1]."
+    },
+    "_Decal2Clamp": {
+      "label": "Декальские зажимы",
+      "tooltip": "Зажимы декальных УФ-координат, поэтому Decal 2 не повторяется снаружи [0, 1]."
+    },
+    "_Decal3Clamp": {
+      "label": "Декальские зажимы",
+      "tooltip": "Зажимы декальных УФ-координат, поэтому Decal 3 не повторяется снаружи [0, 1]."
+    },
+    "_RimMask": {
+      "label": "Рим маска",
+      "tooltip": "Текстурная маска (R) для ограничения или окрашивания свечения обода на определенных участках сетки."
+    },
+    "_RimMaskUVSet": {
+      "label": "УФ-набор Rim Mask",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для Rim Mask."
+    },
+    "_OutlineLightingMix": {
+      "label": "Световая смесь",
+      "tooltip": "Смешивает освещение сцены на контур (0 = неосвещенный, 1 = полностью затененный огнями сцены)."
+    },
+    "_OutlineZOffset": {
+      "label": "Z-Offset (глубокая предвзятость)",
+      "tooltip": "Применяет смещение Z-глубины пространства камеры, чтобы предотвратить отсечение контуров смежной геометрии."
+    },
+    "_UseFaceSDF": {
+      "label": "Обсуждение SDF Face Shadows",
+      "tooltip": "Подписанное Дистанционное поле отображает тень персонажей аниме."
+    },
+    "_FaceShadowMap": {
+      "label": "Face Shadow Map (SDF)",
+      "tooltip": "SDF Face Shadow кодирует градиенты светового порога."
+    },
+    "_FaceShadowOffset": {
+      "label": "Обсуждение Shadow Offset",
+      "tooltip": "Отклоняет передний/задний пороговый угол тени."
+    },
+    "_FaceShadowBlur": {
+      "label": "Скриншоты Shadow Softness",
+      "tooltip": "Смягчает границу тени SDF."
+    },
+    "_FaceShadowInvert": {
+      "label": "Обратная тень лица",
+      "tooltip": "Перевернуть теневой градиент SDF."
+    },
+    "_CameraVisibilityMode": {
+      "label": "Режим видимости",
+      "tooltip": "Контролирует видимость в зеркалах, гарнитуре VR и настольных потоковых / фотокамерах."
+    },
+    "_MirrorDetectMode": {
+      "label": "Метод обнаружения зеркал",
+      "tooltip": "Алгоритм обнаружения зеркальных/рефлексионных камер."
+    },
+    "_CustomCameraFilter": {
+      "label": "Пользовательский идентификатор камеры",
+      "tooltip": "Фильтр по пользовательскому идентификатору глобальной камеры (0 = отключен)."
+    },
+    "_OffsetFactor": {
+      "label": "Оффсетный фактор полигона",
+      "tooltip": "Коэффициент компенсации глубины полигона (предотвращает Z-бои)."
+    },
+    "_OffsetUnits": {
+      "label": "Polygon Offset Units",
+      "tooltip": "Полигон глубинного смещения блоков (предотвращает Z-бои)."
+    },
+    "_UseEnvRim": {
+      "label": "Окружающая среда",
+      "tooltip": "Оттенки / модулирует свечение обода с использованием окружающих SH и зондов отражения."
+    },
+    "_EnvRimMix": {
+      "label": "Экологическая смесь",
+      "tooltip": "Смесь между чистым цветом обода (0) и модулированным окружающей средой ободом (1)."
+    },
+    "_MonochromeLighting": {
+      "label": "Монохромное освещение",
+      "tooltip": "Насыщает цвет освещения сцены, чтобы сохранить точные тона кожи персонажа."
+    },
+    "_AsUnlitLighting": {
+      "label": "Неосвещенное освещение",
+      "tooltip": "Смешивает освещение в сторону однородного неосвещенного пола в темных условиях."
+    },
+    "_UseVRCLV": {
+      "label": "Световые тома VRC",
+      "tooltip": "Образцы VRC Light Volumes (REDSIM) для перпиксельного освещения в поддерживаемых мирах. Возвращается к стандартным световым зондам в другом месте. Вынужденный выключен в средних / низких уровнях производительности."
+    },
+    "_VRCLVIntensity": {
+      "label": "Интенсивность LV",
+      "tooltip": "Масштабирует вклад окружающей среды в объем света."
+    },
+    "_VRCLVNormalBias": {
+      "label": "LV Нормальное поведение",
+      "tooltip": "Снимает объемный образец вдоль нормальной поверхности, чтобы уменьшить акне вокселя на тонкой геометрии."
+    },
+    "_UseFluorescence": {
+      "label": "Включить флуоресценцию",
+      "tooltip": "Реакции с интенсивностью света окружающей среды/направления (свечение в темноте)."
+    },
+    "_FluorescenceMap": {
+      "label": "Флуоресцентная карта",
+      "tooltip": "Флуоресцентная карта (RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "Флуоресцентная карта UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для флуоресцентной карты."
+    },
+    "_FluorescenceColor": {
+      "label": "Цвет",
+      "tooltip": "Цветовой оттенок HDR"
+    },
+    "_FluorescenceStrength": {
+      "label": "Сила",
+      "tooltip": "Сила флуоресценции выбросов"
+    },
+    "_FluorescenceThreshold": {
+      "label": "Световой порог",
+      "tooltip": "Порог уровня света, запускающий флуоресцентное свечение."
+    },
+    "_FluorescenceHardness": {
+      "label": "Твердость",
+      "tooltip": "Переходная резкость между темным и освещенным состоянием."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "Свет только в темноте",
+      "tooltip": "При включении светится только в условиях низкой освещенности (свечение в темноте)."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "Скачать PS1 Vertex Snapping",
+      "tooltip": "Количественные положения вершины к сетке низкого разрешения для ретро PS1 / аффинного джиттера эстетики."
+    },
+    "_PS1SnapResolution": {
+      "label": "Резолюция Snap",
+      "tooltip": "Разрешение сетки / точность для защелкивания вершины (например, 240p)."
+    },
+    "_PS1SnapSpace": {
+      "label": "Snap Space",
+      "tooltip": "Координировать пространство для скэппинга (Screen-space jitter vs Object-space vertex quantize)."
+    },
+    "_UseLookAt": {
+      "label": "Скачать LookAt Billboarding",
+      "tooltip": "Вращает сетчатые вершины, чтобы динамически смотреть на активную камеру."
+    },
+    "_LookAtMode": {
+      "label": "Режим Billboard",
+      "tooltip": "Ось ориентации билбординга (полный 3D-сферический билборд против цилиндрического билборда Y-Axis)."
+    },
+    "_LookAtStrength": {
+      "label": "Сила",
+      "tooltip": "Смешайте прочность между оригинальной ориентацией сетки и ориентацией на рекламном щите."
+    },
+    "_UseUVFlow": {
+      "label": "Включить UV Flow",
+      "tooltip": "Оживляет текстуры по путям векторного потока с использованием бесшовного 2-фазного цикла."
+    },
+    "_FlowMap": {
+      "label": "Потоковая карта (RG Vector)",
+      "tooltip": "Карта потока (векторы направления RG, 0,5 = нейтральный)"
+    },
+    "_FlowMapUVSet": {
+      "label": "Карта потока UV Set",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для карты потока."
+    },
+    "_FlowSpeed": {
+      "label": "Скорость потока",
+      "tooltip": "Скорость анимации движения."
+    },
+    "_FlowStrength": {
+      "label": "Сила потока",
+      "tooltip": "Магнитуда смещения УФ искажений по векторам потока."
+    },
+    "_FlowCycleRate": {
+      "label": "Циклическая ставка",
+      "tooltip": "Частота двухфазных перекрестных циклов."
+    },
+    "_UseRGBAColorMask": {
+      "label": "Использование цветовой маски RGBA",
+      "tooltip": "Разрешает 4 независимых цветовых оттенка и излучающих канала, отображаемых на RGBA-каналы текстуры маски."
+    },
+    "_RGBAColorMask": {
+      "label": "Цветная маска (RGBA)",
+      "tooltip": "Цветовая маска (каналы RGBA изолируют 4 зоны окраски)"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "УФ-набор",
+      "tooltip": "Выберите канал координат (UV0 или UV1) для цветовой маски RGBA."
+    },
+    "_ColorMaskR_Color": {
+      "label": "Красный оттенок",
+      "tooltip": "Оттенок для маски канала R."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "Красная эмиссия (HDR)",
+      "tooltip": "Выбросы для маски канала R."
+    },
+    "_ColorMaskG_Color": {
+      "label": "Зеленый оттенок",
+      "tooltip": "Для маски канала G."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "Зеленая эмиссия (HDR)",
+      "tooltip": "Выбросы для маски канала G."
+    },
+    "_ColorMaskB_Color": {
+      "label": "Синий оттенок",
+      "tooltip": "Оттенок для маски канала B."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "Синие выбросы (HDR)",
+      "tooltip": "Выбросы для маски канала B."
+    },
+    "_ColorMaskA_Color": {
+      "label": "Альфа Тинт",
+      "tooltip": "Для маски канала."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "Альфа-эмиссия (HDR)",
+      "tooltip": "Выбросы для маски канала."
+    },
+    "_UseNetworkTime": {
+      "label": "Включить сетевое время",
+      "tooltip": "Синхронизация непрерывного времени анимации шейдера между сетевыми клиентами через хронологические часы AudioLink / Udon (предотвращает дрейф анимации в VRChat)."
+    },
+    "_NetworkTimeScale": {
+      "label": "Шкала сетевого времени",
+      "tooltip": "Масштабный коэффициент, применяемый к синхронизированному времени сети."
+    },
+    "_UseStochasticSampling": {
+      "label": "Включить стохастическую выборку",
+      "tooltip": "Процедурно смешивает рандомизированные образцы текстуры, чтобы полностью устранить повторяющиеся узоры плитки на больших поверхностях."
+    },
+    "_StochasticScale": {
+      "label": "Стохастическая шкала",
+      "tooltip": "Умножитель масштаба для стохастического треугольного распределения решетки."
+    },
+    "_UseDetailNormalFade": {
+      "label": "Включите детальную нормальную дистанцию",
+      "tooltip": "Гладкие выцветают высокочастотные детали на расстоянии, чтобы предотвратить псевдоним VR / мерцание."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "Расстояние Fade Start",
+      "tooltip": "Расстояние камеры, где нормальные детали начинают исчезать."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "Расстояние Fade End",
+      "tooltip": "Расстояние до камеры, где нормальные детали полностью плоские."
+    },
+    "_UseInternalParallax": {
+      "label": "Включить внутренний параллакс",
+      "tooltip": "Имитирует слоистую внутреннюю глубину под стеклом, линзами, кристаллами и аниме-ирисами."
+    },
+    "_InternalParallaxMap": {
+      "label": "Внутренняя текстура слоя",
+      "tooltip": "Текстура внутреннего слоя глубины."
+    },
+    "_InternalParallaxColor": {
+      "label": "Слойный цвет",
+      "tooltip": "Цветовой оттенок внутреннего слоя."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "Внутренний параллаксный сдвиг цвета",
+      "tooltip": "AudioLink или анимированный сдвиг цвета для внутреннего эффекта параллакса."
+    },
+    "_InternalParallaxDepth": {
+      "label": "Шкала глубины",
+      "tooltip": "Имитация внутренней глубины."
+    },
+    "_InternalParallaxLayers": {
+      "label": "Образцы шагов",
+      "tooltip": "Количество шагов пробы через внутреннюю глубину."
+    },
+    "_InternalParallaxStrength": {
+      "label": "Сила слоя",
+      "tooltip": "Мультипликатор яркости/непрозрачности внутреннего слоя."
+    },
+    "_InternalParallaxEmission": {
+      "label": "Эмиссивный рост",
+      "tooltip": "Эмиссивный импульс свечения для внутренних слоев."
+    },
+    "_UseThemeColors": {
+      "label": "Включить глобальные цвета темы",
+      "tooltip": "Определяет 4 глобальных основных цвета для управления унифицированными темами между материалами с дополнительной модуляцией AudioLink и Hue."
+    },
+    "_ThemeColor1": {
+      "label": "Цвет темы 1",
+      "tooltip": "Основная тема Цвет 1."
+    },
+    "_ThemeColor2": {
+      "label": "Тема Цвет 2",
+      "tooltip": "Основная тема Цвет 2."
+    },
+    "_ThemeColor3": {
+      "label": "Цвет темы 3",
+      "tooltip": "Основная тема Цвет 3."
+    },
+    "_ThemeColor4": {
+      "label": "Цвет темы 4",
+      "tooltip": "Основная тема Цвет 4."
+    },
+    "_ThemeMode": {
+      "label": "Режим модуляции",
+      "tooltip": "Выберите режим модуляции (прямой, AudioLink Reactive или непрерывный сдвиг тона)."
+    },
+    "_AL_ThemeBand": {
+      "label": "Группа AudioLink",
+      "tooltip": "Выберите частотную модуляцию темы вождения."
+    },
+    "_AL_ThemeStrength": {
+      "label": "AudioLink Сила",
+      "tooltip": "Умножитель интенсивности реакции AudioLink."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "Hue Shift Speed",
+      "tooltip": "Скорость непрерывной смены оттенков."
+    },
+    "_ThemeTargetMask": {
+      "label": "Тема: Целевая маска",
+      "tooltip": "Весы влияния: R=Base Color, G=Outlines, B=Rim, A=Emission."
+    },
+    "_UseCustomCubemap": {
+      "label": "Включить Custom Cubemap",
+      "tooltip": "Добавляет пользовательский кубемап для локальных отражений или резервных копий, когда зонды отражения отсутствуют / темные."
+    },
+    "_CustomCubemap": {
+      "label": "Пользовательский кубемап",
+      "tooltip": "Обычная текстура кубемапа для отражений."
+    },
+    "_CustomCubemapColor": {
+      "label": "Кубемап Тинт",
+      "tooltip": "Цвет отражения кубемапа."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "Грубость",
+      "tooltip": "Грубость/размытость отражения кубемапа."
+    },
+    "_CustomCubemapMode": {
+      "label": "Блестящий режим",
+      "tooltip": "Режим (Override Probes, Fallback When Probes Dark или Additive)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "Интенсивность",
+      "tooltip": "Умножитель интенсивности отражения."
+    },
+    "_AL_DelayBass": {
+      "label": "Бассовая задержка",
+      "tooltip": "Задержка смещения по буферу истории для Басса."
+    },
+    "_AL_DelayLowMid": {
+      "label": "Низкая средняя задержка",
+      "tooltip": "Смещение задержки по буферу истории для Low Mid."
+    },
+    "_AL_DelayHighMid": {
+      "label": "Средняя задержка",
+      "tooltip": "Задержка смещения по буферу истории для High Mid."
+    },
+    "_AL_DelayTreble": {
+      "label": "Задержка Treble",
+      "tooltip": "Задержка смещения вдоль буфера истории для Treble."
+    },
+    "_UseLTCGI": {
+      "label": "Включить LTCGI",
+      "tooltip": "Реагирует на многоугольные огни и видеоэкраны LTCGI в реальном времени в поддерживаемых мирах VRChat."
+    },
+    "_LTCGI_Intensity": {
+      "label": "Интенсивность",
+      "tooltip": "Умножитель интенсивности освещения области LTCGI."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "Умножитель грубости",
+      "tooltip": "Коэффициент грубости для отражений LTCGI."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "Фоточувствительность Strobe Clamp",
+      "tooltip": "Зажим безопасности, ограничивающий максимальную частоту строба / вспышки для защиты от эпилептических припадков."
+    },
+    "_MaxFlashFrequency": {
+      "label": "Макс Флэш Гц",
+      "tooltip": "Максимально допустимая частота мигания/колебания в Гц."
+    },
+    "_UseFur": {
+      "label": "Скачать Shell Fur",
+      "tooltip": "Выдавливает многослойную оболочку, проходит наружу вдоль нормальных вершин с шумовой маскировкой нити."
+    },
+    "_FurLayers": {
+      "label": "Слои оболочки",
+      "tooltip": "Количество экструдированных слоев оболочки (1-8). Более высокие уровни слоя производят более полный мех, но стоят больше растеризации геометрии GPU."
+    },
+    "_FurLength": {
+      "label": "Длина",
+      "tooltip": "Физическая длина нитей меха в объектном/мировом пространстве."
+    },
+    "_FurMaskTex": {
+      "label": "Карта шума Fur Strand",
+      "tooltip": "Шумовая текстура, контролирующая распределение и плотность нитей."
+    },
+    "_FurDensity": {
+      "label": "Плотность Strand",
+      "tooltip": "Плотность уплотнения шумового рисунка меховой нити."
+    },
+    "_FurThinning": {
+      "label": "Утончение чаевых",
+      "tooltip": "Постепенно истончает и сужает меховые нити к внешним кончикам."
+    },
+    "_FurGravity": {
+      "label": "Вектор гравитации",
+      "tooltip": "Вектор отклонения, имитирующий гравитацию, тянущую меховые нити вниз."
+    },
+    "_FurWindStrength": {
+      "label": "Сила ветра Sway",
+      "tooltip": "Сила процедурных колебаний ветра по кончикам меха."
+    },
+    "_FurWindSpeed": {
+      "label": "Скорость ветра",
+      "tooltip": "Скорость процедурных колебаний ветра."
+    },
+    "_FurRootColor": {
+      "label": "Корневой оттенок",
+      "tooltip": "Цветной оттенок у основания/корня каждой шерстяной нити."
+    },
+    "_FurTipColor": {
+      "label": "Тип Тинт",
+      "tooltip": "Цветной оттенок на внешней оконечности каждой меховой нити."
+    },
+    "_FurAO": {
+      "label": "Исполнитель: AO Shadow",
+      "tooltip": "Имитирует окружающую окклюзию, скрывающуюся в корне меха."
+    },
+    "_FurCutoff": {
+      "label": "Стрэнд Катофф",
+      "tooltip": "Базовый порог альфа-обрезания для толщины корня нити."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "Скачать Emission Bloom Clamp",
+      "tooltip": "Скачать Emission Bloom Clamp"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "Max Emission Luminance",
+      "tooltip": "Max Emission Luminance"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "Мягкое колено",
+      "tooltip": "Мягкое колено"
+    },
+    "_OutlineStencil": {
+      "label": "Идентификатор Stencil ID",
+      "tooltip": "Идентификатор Stencil ID"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "Обсуждение Stencil Read Mask",
+      "tooltip": "Обсуждение Stencil Read Mask"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "Оригинальное название: Stencil Write Mask",
+      "tooltip": "Оригинальное название: Stencil Write Mask"
+    },
+    "_OutlineStencilComp": {
+      "label": "Оригинальное название: Stencil Comparison",
+      "tooltip": "Оригинальное название: Stencil Comparison"
+    },
+    "_OutlineStencilPass": {
+      "label": "Обсуждение Stencil Pass Op",
+      "tooltip": "Обсуждение Stencil Pass Op"
+    },
+    "_OutlineStencilFail": {
+      "label": "Обсуждение Stencil Fail Op",
+      "tooltip": "Обсуждение Stencil Fail Op"
+    },
+    "_OutlineStencilZFail": {
+      "label": "Обсуждение Stencil ZFail Op",
+      "tooltip": "Обсуждение Stencil ZFail Op"
+    },
+    "_UseProximityEffect": {
+      "label": "Включить эффект близости",
+      "tooltip": "Включить эффект близости"
+    },
+    "_ProximityMode": {
+      "label": "Режим близости",
+      "tooltip": "Режим близости"
+    },
+    "_ProximityAction": {
+      "label": "Близость Действие",
+      "tooltip": "Близость Действие"
+    },
+    "_ProximityRadius": {
+      "label": "Близость Радиус",
+      "tooltip": "Близость Радиус"
+    },
+    "_ProximitySoftness": {
+      "label": "Близость мягкость",
+      "tooltip": "Близость мягкость"
+    },
+    "_ProximityInvert": {
+      "label": "Инвертированная близость",
+      "tooltip": "Инвертированная близость"
+    },
+    "_ProximityColor": {
+      "label": "Близость цвета",
+      "tooltip": "Близость цвета"
+    },
+    "_ProximityColor_Shift": {
+      "label": "Близкое изменение цвета",
+      "tooltip": "Близкое изменение цвета"
+    },
+    "_ProximityCustomPos": {
+      "label": "Пользовательская мировая позиция",
+      "tooltip": "Пользовательская мировая позиция"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "Шкала A2C Mip",
+      "tooltip": "Производное микромасштабирование для стабилизации ширины края выреза на расстояниях в VR."
+    },
+    "_DetailNormalBicubic": {
+      "label": "Бикубическая нормальная фильтрация",
+      "tooltip": "Позволяет 5-нажмите Catmull-Rom бикубическую выборку, чтобы устранить артефакты границы текселя в VR."
+    },
+    "_DetailNormalCount": {
+      "label": "Детальные нормальные слои",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "Нормальная карта 2",
+      "tooltip": "Вторая деталь обычного слоя карты."
+    },
+    "_DetailNormal2Scale": {
+      "label": "Слой 2 Сила",
+      "tooltip": "Контролирует прочность детали нормального слоя 2."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "Обычный 2 UV набор",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "Слой 2 Scroll Speed X",
+      "tooltip": "Скорость прокрутки X для детализации нормального слоя 2."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "Слой 2 Scroll Speed Y",
+      "tooltip": "Скорость прокрутки Y для детализации нормального слоя 2."
+    },
+    "_DetailNormal3Map": {
+      "label": "Обычная 3 карта",
+      "tooltip": "Третья деталь обычного слоя карты."
+    },
+    "_DetailNormal3Scale": {
+      "label": "Слой 3 Сила",
+      "tooltip": "Контролирует прочность детали нормального слоя 3."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "Обычный 3 UV набор",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "Слой 3 Scroll Speed X",
+      "tooltip": "Скорость прокрутки X для детализации нормального слоя 3."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "Слой 3 Scroll Speed Y",
+      "tooltip": "Скорость прокрутки Y для детализации нормального слоя 3."
+    },
+    "_DetailNormal4Map": {
+      "label": "Нормальная карта 4",
+      "tooltip": "Четвёртая деталь нормального слоя карты."
+    },
+    "_DetailNormal4Scale": {
+      "label": "Слой 4 Сила",
+      "tooltip": "Контролирует прочность детали нормального слоя 4."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "Обычный 4 UV набор",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "Слой 4 Scroll Speed X",
+      "tooltip": "Скорость прокрутки X для детализации нормального слоя 4."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "Слой 4 Scroll Speed Y",
+      "tooltip": "Скорость прокрутки Y для детализации нормального слоя 4."
+    },
+    "_UseOKLabBlending": {
+      "label": "ОКЛАБ Цветовое слияние",
+      "tooltip": "Позволяет цветовому пространству Björn Ottosson OKLab смешиваться для оттенков и тем, чтобы устранить мутную десатурацию."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "MatCap Global Mask Channel",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "Канал глобальной маски",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "Глобальный канал маски Glitter",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "Глобальный канал Маска",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "Включить прием VRSL",
+      "tooltip": "Реагирует на сценические приборы DMX в реальном времени, лазеры и объемное клубное освещение в поддерживаемых мирах VRChat."
+    },
+    "_VRSLIntensity": {
+      "label": "Интенсивность ГИ",
+      "tooltip": "Интенсивность приема GI и окружающей стирки."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "Прямая интенсивность",
+      "tooltip": "Интенсивность приема света прямым светильником."
+    },
+    "_VRSLSpecular": {
+      "label": "Спекулярный прием",
+      "tooltip": "Светоотражающий прием от светильников."
+    },
+    "_UseDebugMode": {
+      "label": "Скачать Debug View",
+      "tooltip": "Осмотрите промежуточные затеняющие буферы и диагностику в режиме зрения."
+    },
+    "_DebugMode": {
+      "label": "Режим отладки",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "Заблокированный материал",
+      "tooltip": "Заблокированный материал"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "Анимированный",
+      "tooltip": "Автоматически анимирует количество коллапса с течением времени."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "Исполнитель: Shadow Cutoff",
+      "tooltip": "Перекрывает порог альфа-отсечения специально для пропусков отбрасывания теней."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "Включить Advanced Animation Controls",
+      "tooltip": "Выставляет мастер-контроль для масштабирования времени, режима воспроизведения и смещения времени для всех анимаций шейдеров."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "Включить анизотропное отражение",
+      "tooltip": "Создает растянутые изюминки, распространенные на кистевом металле или волосах."
+    },
+    "Enable Back Face Color": {
+      "label": "Включить Back Face Color",
+      "tooltip": "Применяет отдельный цвет к обратным многоугольникам."
+    },
+    "Enable Back Face Texture": {
+      "label": "Скачать Back Face Texture",
+      "tooltip": "Применяет отдельную текстуру к обращенным назад многоугольникам."
+    },
+    "Enable Chroma Keying": {
+      "label": "Включить Chroma Keying",
+      "tooltip": "Делает определенный цветовой диапазон прозрачным (например, зелёный экран)."
+    },
+    "Enable Clear Coat": {
+      "label": "Позволяет чистить пальто",
+      "tooltip": "Добавляет вторичный прозрачный шаровой слой поверх основного материала PBR. Полезно для окрашенных / покрытых поверхностей."
+    },
+    "Enable Clipping Mask": {
+      "label": "Позволяет нажимать маску",
+      "tooltip": "Использует текстуру для обрезания (сделать части невидимыми) материала. Это жесткий клип, а не мягкая прозрачность."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "Отражение Custom Cubemap",
+      "tooltip": "Добавляет пользовательский кубемап для локальных отражений или резервных копий, когда зонды отражения отсутствуют / темные."
+    },
+    "Enable Custom Fog Color": {
+      "label": "Включить Custom Fog Color",
+      "tooltip": "Перекрывает глобальную сцену туманным цветом с индивидуальным локализованным оттенком."
+    },
+    "Enable Decal 1": {
+      "label": "Включить Decal 1",
+      "tooltip": "Накладывает первичную текстуру наклейки/наклейки."
+    },
+    "Enable Decal 2": {
+      "label": "Скачать Decal 2",
+      "tooltip": "Накладывает вторичную текстуру decal/sticker."
+    },
+    "Enable Decal 3": {
+      "label": "Скачать Decal 3",
+      "tooltip": "Накладывает третичную текстуру decal/sticker."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "Depth Fade (мягкие частицы)",
+      "tooltip": "Смягчает пересечения многоугольников против геометрии сцены для прозрачных и аддитивных поверхностей."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "Включите детальную нормальную дистанцию",
+      "tooltip": "Гладкие выцветают высокочастотные детали на расстоянии, чтобы предотвратить псевдоним VR / мерцание."
+    },
+    "Enable Detail Normal Map": {
+      "label": "Включите подробную нормальную карту",
+      "tooltip": "Добавлена вторичная нормальная карта для микроповерхностей с деталями."
+    },
+    "Enable Detail Texture": {
+      "label": "Включите детальную текстуру",
+      "tooltip": "Накладывает вторичную текстуру, часто для мелких деталей или гранжа."
+    },
+    "Enable Dissolve": {
+      "label": "Включить Dissolve",
+      "tooltip": "Заставляет объект появляться/исчезать с помощью шаблона шума."
+    },
+    "Enable Distance Fade": {
+      "label": "Скачать Distance Fade",
+      "tooltip": "Вытесняет объект, когда он находится далеко от камеры."
+    },
+    "Enable Dithered Transparency": {
+      "label": "Обеспечить дифференцированную прозрачность",
+      "tooltip": "Матрица Bayer для сортировки прозрачных тканей и волос без экрана."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "Enable Effect Distance Fade (альбом)",
+      "tooltip": "Жесткие процедурные эффекты (Glitter, Fractals, Grid, Psychedelic) за пределами установленного расстояния для улучшения производительности VR."
+    },
+    "Enable Emission": {
+      "label": "Включить выбросы",
+      "tooltip": "Заставляет объект светиться. Требуется эффект постобработки Bloom в сцене, чтобы увидеть свечение."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "Скачать Emission Bloom Clamp",
+      "tooltip": "Зажимы максимальной яркости HDR излучения для предотвращения ослепляющих отбеливаний цветения."
+    },
+    "Enable Emission Pulse": {
+      "label": "Включить пульс выбросов",
+      "tooltip": "Интенсивность излучения пульсирует ритмично, не влияя на диффузное освещение."
+    },
+    "Enable Environment Reflections": {
+      "label": "Размышления об окружающей среде",
+      "tooltip": "Образцы зондов отражения для добавления экологических отражений даже в режимах Basic/Toon."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "Включить Eye Iris Parallax",
+      "tooltip": "Имитирует глубину/рефракцию зрачка и радужной оболочки под роговицей."
+    },
+    "Enable Flipbook Animation": {
+      "label": "Скачать Flipbook Animation",
+      "tooltip": "Оживляет основную текстуру с помощью раскладки спрайтшита. Это переопределит наклон основной текстуры и смещение."
+    },
+    "Enable Fluorescence": {
+      "label": "Включить флуоресценцию",
+      "tooltip": "Реакции с интенсивностью света окружающей среды/направления (свечение в темноте)."
+    },
+    "Enable Fourth Emission": {
+      "label": "Включить четвертую эмиссию",
+      "tooltip": "Добавляет четвертый прокруточный эмиссионный слой."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "Обеспечение прозрачности френеля",
+      "tooltip": "Делает объект более прозрачным в центре и непрозрачным по краям."
+    },
+    "Enable Glitch Flicker": {
+      "label": "Скачать Glitch Flicker",
+      "tooltip": "Применяет мерцающий эффект ко всему объекту."
+    },
+    "Enable Global Theme Colors": {
+      "label": "Включить глобальные цвета темы",
+      "tooltip": "Определяет 4 глобальных основных цвета для управления унифицированными темами между материалами с дополнительной модуляцией AudioLink и Hue."
+    },
+    "Enable Grid": {
+      "label": "Включить Grid",
+      "tooltip": "Накладывает сетку на поверхность."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "Enable Hair Specular (Кадзия-Кай)",
+      "tooltip": "Анизотропные изюминки, стилизованные специально для волос."
+    },
+    "Enable Hologram": {
+      "label": "Включить голограмму",
+      "tooltip": "Эффект голограммы Sci-fi с анимированными сканирующими линиями, краевым краем и мерцанием."
+    },
+    "Enable HSV Mask": {
+      "label": "Включить маску HSV",
+      "tooltip": "Настройка маски HSV с использованием карты текстуры."
+    },
+    "Enable Interlacing": {
+      "label": "Включить переплетение",
+      "tooltip": "Темнеет каждый другой ряд экрана, чтобы имитировать переплетенный дисплей."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "Включить внутренний параллакс (Gems / Eye Layers)",
+      "tooltip": "Имитирует слоистую внутреннюю глубину под стеклом, линзами, кристаллами и аниме-ирисами."
+    },
+    "Enable Intersection Effect": {
+      "label": "Включить эффект пересечения",
+      "tooltip": "Отклоняется к цвету, где объект находится близко или пересекается с другими объектами в сцене."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "Скачать LookAt Billboarding",
+      "tooltip": "Вращает сетчатые вершины, чтобы динамически смотреть на активную камеру."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "Включить LTCGI (Area Light GI)",
+      "tooltip": "Реагирует на многоугольные огни и видеоэкраны LTCGI в реальном времени в поддерживаемых мирах VRChat."
+    },
+    "Enable MatCap 2": {
+      "label": "Скачать MatCap 2",
+      "tooltip": "Добавляет вторичный слой MatCap для многотоновых металлических или ободовых акцентов."
+    },
+    "Enable Near Camera Fade": {
+      "label": "Включить Near Camera Fade",
+      "tooltip": "Плавно растворяет геометрию, когда камера становится слишком близко (предотвращает зажимание головы VR)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "Включить сетевое время",
+      "tooltip": "Синхронизация непрерывного времени анимации шейдера между сетевыми клиентами через хронологические часы AudioLink / Udon (предотвращает дрейф анимации в VRChat)."
+    },
+    "Enable Noise/Grain": {
+      "label": "Включить шум/дождь",
+      "tooltip": "Добавляет анимированный шум."
+    },
+    "Enable Outline": {
+      "label": "Включить Outline",
+      "tooltip": "Добавляет твердый контур вокруг объекта. Это добавляет второй призыв к объекту."
+    },
+    "Enable Outline Gradient": {
+      "label": "Включить оптоволоконный градиент",
+      "tooltip": "Применяет вертикальный верхний / нижний градиент по всему контуру."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "Parallax Mapping (высотная карта)",
+      "tooltip": "Использует карту высоты, чтобы компенсировать УФ для глубины."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "Скачать Parallax Occlusion Mapping",
+      "tooltip": "Позволяет многоступенчатый параллакс для более высокого качества эффекта глубины. Только высокий перф."
+    },
+    "Enable Pixelation": {
+      "label": "Включить Pixelation",
+      "tooltip": "Создает блокирующий эффект низкого разрешения."
+    },
+    "Enable Planar Wipe": {
+      "label": "Включить Planar Wipe",
+      "tooltip": "Выявляет объект с гладкой, направленной протиркой."
+    },
+    "Enable Posterization": {
+      "label": "Включите постеризацию",
+      "tooltip": "Уменьшает количество цветов, придавая ретро/цифровой вид."
+    },
+    "Enable Procedural Texture": {
+      "label": "Включить процессуальную текстуру",
+      "tooltip": "Заменяет материальное свойство сгенерированным рисунком."
+    },
+    "Enable Proximity Effect": {
+      "label": "Включить эффект близости",
+      "tooltip": "Триггеры визуальных эффектов (свечение, растворение, дитер или оттенок) на основе расстояния до камеры, поворота объекта или пользовательского положения мира."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "Скачать PS1 Retro Vertex",
+      "tooltip": "Количественные положения вершины к сетке низкого разрешения для ретро PS1 / аффинного джиттера эстетики."
+    },
+    "Enable Pulse": {
+      "label": "Включить пульс",
+      "tooltip": "Добавляет пульсирующую анимацию к силе излучения."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "Использование цветовой маски RGBA (Recolor Workflow)",
+      "tooltip": "Разрешает 4 независимых цветовых оттенка и излучающих канала, отображаемых на RGBA-каналы текстуры маски."
+    },
+    "Enable Rim Glow": {
+      "label": "Скачать Rim Glow",
+      "tooltip": "Добавляет свечение к краям объекта на основе угла обзора."
+    },
+    "Enable Ripple Effect": {
+      "label": "Скачать Ripple Effect",
+      "tooltip": "Создает концентрический волновой эффект, исходящий от УФ-координаты."
+    },
+    "Enable Scanlines": {
+      "label": "Включить Scanlines",
+      "tooltip": "Имитирует внешний вид монитора CRT."
+    },
+    "Enable Screen Refraction": {
+      "label": "Включить рефракцию экрана",
+      "tooltip": "Искажает экран позади объекта."
+    },
+    "Enable Scrolling": {
+      "label": "Включить Scrolling",
+      "tooltip": "Прокрутите схему сетки."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "Обсуждение SDF Face Shadows",
+      "tooltip": "Подписанное Дистанционное поле отображает тень персонажей аниме."
+    },
+    "Enable Second Emission": {
+      "label": "Включить вторую эмиссию",
+      "tooltip": "Добавляет второй прокруточный эмиссионный слой."
+    },
+    "Enable Shader Debug View": {
+      "label": "Обсуждение Shader Debug View",
+      "tooltip": "Осмотрите промежуточные затеняющие буферы и диагностику в режиме зрения."
+    },
+    "Enable Shell Fur": {
+      "label": "Скачать Shell Fur",
+      "tooltip": "Выдавливает многослойную оболочку, проходит наружу вдоль нормальных вершин с шумовой маскировкой нити."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "Включить диффузную обертку кожи",
+      "tooltip": "Смягчает световые тени на органических изогнутых поверхностях."
+    },
+    "Enable Step Specular": {
+      "label": "Включить Step Specular",
+      "tooltip": "Преобразует мягкие спектральные блики PBR в четкие пятна блеска мультфильма."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "Включить стохастическую выборку",
+      "tooltip": "Процедурно смешивает рандомизированные образцы текстуры, чтобы полностью устранить повторяющиеся узоры плитки на больших поверхностях."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "Позволяет рассеивать подповерхность",
+      "tooltip": "Имитирует рассеяние света через тонкие предметы, такие как кожа или листья."
+    },
+    "Enable Thickness Map": {
+      "label": "Скачать Thickness Map",
+      "tooltip": "Использует текстуру для имитации передачи света через тонкие области (уши, листья и т. д.)."
+    },
+    "Enable Third Emission": {
+      "label": "Включить третью эмиссию",
+      "tooltip": "Добавляет третий прокруточный эмиссионный слой."
+    },
+    "Enable Transparency": {
+      "label": "Обеспечить прозрачность",
+      "tooltip": "Делает объект равномерно прозрачным."
+    },
+    "Enable Transparency Glitch": {
+      "label": "Включить Transparency Glitch",
+      "tooltip": "Эффект мерцания также влияет на прозрачность."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "Включить тройную нормальную карту",
+      "tooltip": "Проецирует обычную карту по 3 осям."
+    },
+    "Enable UV Distortion": {
+      "label": "Включить УФ искажение",
+      "tooltip": "Использует текстуру для деформации УФ-координат, создавая такие эффекты, как тепловая дымка или рябь воды."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "УФ-поток (Pathing)",
+      "tooltip": "Оживляет текстуры по путям векторного потока с использованием бесшовного 2-фазного цикла."
+    },
+    "Enable UV Tile Discard": {
+      "label": "Скачать UV Tile Discard",
+      "tooltip": "Откажитесь от определенных УФ плиток. Полезно для перетаскивания частей одежды."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "Включить текстуру анимации Vertex",
+      "tooltip": "Применяет запеченную анимацию вершины из текстуры НДС. Используется для предварительно запеченной ткани, жидкости или эффектов разрушения."
+    },
+    "Enable Vertex Collapse": {
+      "label": "Включить Vertex Collapse",
+      "tooltip": "Уменьшает модель до ее центральной точки."
+    },
+    "Enable Video Player": {
+      "label": "Включить Video Player",
+      "tooltip": "Настраивает текстуру для получения данных видеоплеера."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "Включить VRSL (VRC Studio Lighting)",
+      "tooltip": "Реагирует на сценические приборы DMX в реальном времени, лазеры и объемное клубное освещение в поддерживаемых мирах VRChat."
+    },
+    "Enable Wetness": {
+      "label": "Позволяет влажность",
+      "tooltip": "Имитирует влажную поверхность с потемнением и эффектами ряби дождя."
+    },
+    "Override Scene Light": {
+      "label": "Скриншоты Override Scene Light",
+      "tooltip": "Перекрывает направление, цвет и интенсивность света главной сцены."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "Фоточувствительность Strobe Clamp",
+      "tooltip": "Зажим безопасности, ограничивающий максимальную частоту строба / вспышки для защиты от эпилептических припадков."
+    },
+    "Use Auto Hue Shift": {
+      "label": "Используйте Auto Hue Shift",
+      "tooltip": "Постоянно меняет цвет фрактальной основы с течением времени."
+    },
+    "Use Base Color": {
+      "label": "Используйте базовый цвет",
+      "tooltip": "Перемещает твердый базовый цвет."
+    },
+    "Use Base Texture": {
+      "label": "Использование Base Texture",
+      "tooltip": "Переключает основную текстуру."
+    },
+    "Use Depth-Based Color": {
+      "label": "Используйте глубинный цвет",
+      "tooltip": "Меняет цвет сетки в зависимости от ее близости к другим поверхностям."
+    },
+    "Use Emission Mask": {
+      "label": "Используйте эмиссионную маску",
+      "tooltip": "Использует текстуру для контроля того, какие части поверхности излучают свет."
+    },
+    "Use Grid Mask": {
+      "label": "Используйте Grid Mask",
+      "tooltip": "Использует текстуру для маскировки эффекта сетки."
+    },
+    "Use Outline Width Map": {
+      "label": "Используйте Outline Width Map",
+      "tooltip": "Использует текстуру серого масштаба для модуляции толщины контура на пиксель."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "Использование Texture Alpha для выбросов",
+      "tooltip": "В качестве карты выбросов используется альфа-канал основной текстуры. Мощный способ создания светящихся карт без отдельной фактуры."
+    },
+    "Use Transmission Texture": {
+      "label": "Используйте текстуру передачи",
+      "tooltip": "Пользовательская цветовая карта, тонирующая передачу подсветки."
+    }
+  }
+}

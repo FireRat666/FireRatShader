@@ -1,0 +1,4035 @@
+{
+  "languageCode": "zh-CN",
+  "languageName": "简体中文",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "搜索",
+    "searchPlaceholder": "搜索物质属性...",
+    "matchingProperties": "匹配属性",
+    "clearSearch": "清除搜索",
+    "noPropertiesFound": "未找到匹配属性",
+    "lockMaterial": "QQ 材料锁定和优化( 点击到解锁)",
+    "unlockMaterial": "解锁材料",
+    "lockAndOptimize": "锁定优化( U)",
+    "savePreset": "保存预设...",
+    "loadPreset": "装入预设...",
+    "copy": "复制",
+    "paste": "粘贴",
+    "reset": "重设",
+    "language": "语言",
+    "cycle": "周期",
+    "performanceTip": "QQ性能提示:此材料已解锁. 对于最佳运行时间性能(特别是在Quest/VR上),使用上面的\"Lock & 优化\". 这条带子是未使用的荫影通道,死码分支,并烤制零头渲染的关键词.",
+    "lockedWarning": "材料为LOCKED(只读). 通过工具栏解锁以修改属性 .",
+    "Global UV Controls": "全球紫外线控制",
+    "UV Tile Grid (4×4)": "紫外线拖网网(4x4)",
+    "Uncheck tiles to discard those UV regions.": "取消检查以丢弃这些紫外线区域.",
+    "Global Color Animation": "全局色彩动画",
+    "Color Adjustments": "颜色调整",
+    "Red Zone (R Channel)": "红区 (R频道)",
+    "Green Zone (G Channel)": "绿区(G频道)",
+    "Blue Zone (B Channel)": "蓝区(B频道)",
+    "Alpha Zone (A Channel)": "阿尔法区(A频道)",
+    "Color Correction": "颜色校正",
+    "Dedicated Shading Models": "专用沙丁型号",
+    "Render States": "发件国",
+    "Camera & Mirror Visibility": "相机可见度( M)",
+    "Stencil Buffer Settings": "Stencil 缓冲设置",
+    "Global AudioLink Controls": "全球音频链接控制",
+    "Per-Band Delay & Timing (History Buffer)": "每班延迟和计时( 历史缓冲)",
+    "Audio Spectrum": "音频光谱",
+    "Audio Waveform": "音频波形",
+    "Avatar Param Fallback": "阿凡达帕拉姆倒计时",
+    "AvatarParamFallbackTooltip": "当没有世界音频链接源时, 返回到本地的 avatar 参数 / OSC 输入 .",
+    "Pulse Alpha Range": "脉冲阿尔法范围",
+    "PulseAlphaRangeTooltip": "控制强度脉冲的最小和最大α.",
+    "Color": "颜色",
+    "Transform": "变形",
+    "Texture": "纹理",
+    "Normal Map": "普通地图",
+    "UV": "紫外线",
+    "UV0": "紫外线0",
+    "UV1": "紫外线1",
+    "UV2": "紫外线2",
+    "UV3": "紫外线3",
+    "World Space (Triplanar)": "世界空间(特里普兰)",
+    "Local Space (Triplanar)": "本地空间( Triplanar)",
+    "Screen Space": "屏幕空间",
+    "Planar (Local XY)": "计划(当地XY)",
+    "Spherical (Local)": "球形(当地)",
+    "Cylindrical (Local)": "圆柱形(当地)",
+    "Biplanar (World)": "双板( 世界)",
+    "Panosphere (Equirectangular 360)": "Panosphere(平方厘米360)",
+    "Polar Coordinates": "极坐标",
+    "Off": "关",
+    "Bass": "贝斯",
+    "Low Mid": "中间",
+    "High Mid": "高中点",
+    "Treble": "双倍",
+    "High": "高级",
+    "Medium": "中型",
+    "Low": "低级",
+    "Opaque": "不透明",
+    "Cutout": "剪断",
+    "Transparent": "透明",
+    "Additive": "添加",
+    "Multiply": "乘数",
+    "Premultiplied": "倍数",
+    "None": "无",
+    "R": "R级",
+    "G": "一般事务人员",
+    "B": "页:1",
+    "A": "页:1",
+    "RGBA": "RGBA 红十字与红新月运动",
+    "RGB": "RGB 语言",
+    "All": "全体",
+    "Hue Shift": "调色调",
+    "Gradient": "渐变",
+    "Rainbow Gradient": "彩虹渐变",
+    "AudioLink Theme": "音频链接 主题",
+    "Direct": "直接",
+    "AudioLink": "音频链接",
+    "HueShift": "宽度",
+    "Hue Shift/Gradient": "色调移/大小",
+    "Velocity": "速度",
+    "Stylized_PBR": "缩写  PBR",
+    "Standard_PBR": "标准   PBR",
+    "Toon": "卡通语Name",
+    "Basic": "基础",
+    "Unlit": "解开",
+    "Flat": "平面",
+    "Ambient": "环境",
+    "ShadowColor": "阴影颜色",
+    "Ambient/ShadowColor": "环境/Shadow彩色",
+    "TwoTone": "双Tone",
+    "ThreeTone": "三号线",
+    "FourTone": "四进制",
+    "Whiteout_UDN": "白发( UDN)",
+    "RNM": "共和国",
+    "OverrideProbes": "覆盖前景",
+    "FallbackWhenProbesDark": "暗处时退后",
+    "Screen": "屏幕",
+    "Metallic": "金属",
+    "Specular": "光谱",
+    "Override": "覆盖",
+    "Add": "添加",
+    "Replace": "替换",
+    "Lighten": "淡化",
+    "Overlay": "重叠",
+    "SoftLight": "软光",
+    "Alpha Blend": "阿尔法组合",
+    "Lerp": "脉冲",
+    "Max": "马克斯",
+    "Circle": "圆形",
+    "Square": "方块",
+    "Star": "星号",
+    "MatCap": "马特卡普",
+    "Glass": "眼镜",
+    "Anisotropic": "异形",
+    "SubsurfaceScattering": "地表线",
+    "Retro_PSX": "反转  PSX",
+    "Retro_HalfLambert": "逆变 哈尔夫兰伯特",
+    "Ward": "病房",
+    "Stretched-Blinn": "伸展线",
+    "Default": "默认",
+    "Hologram": "全息图",
+    "Crystal": "晶体",
+    "Triplanar": "三边形",
+    "Iridescence": "迷恋",
+    "Glitter": "闪烁",
+    "Psychedelic": "迷幻药",
+    "Fractal3D": "分形3D",
+    "Galaxy": "银河",
+    "Skybox": "天盘",
+    "EQ Bars": "EQ 条",
+    "Continuous Curve": "连续曲线",
+    "Radial": "辐射",
+    "Waterfall": "瀑布",
+    "Solid": "固态",
+    "Frequency Gradient": "频率梯度",
+    "Emissive Lerp": "传声器",
+    "Oscilloscope": "示波器",
+    "Ribbon": "丝带",
+    "Polar": "极点",
+    "Lissajous": "L",
+    "Vertex Displacement": "Vertex 流离失所问题",
+    "Mono": "单曲",
+    "Left": "左边",
+    "Right": "对",
+    "Local": "当地",
+    "World": "世界",
+    "ScreenSpace": "屏幕空间",
+    "ObjectSpace": "对象空间",
+    "FullBillboard": "全纸板",
+    "YAxisBillboard": "YAxisBill 板块",
+    "Local Space": "本地空间",
+    "World Space": "世界空间",
+    "Mandelbulb": "曼德尔布尔b",
+    "Menger Sponge": "门格海绵",
+    "Kaleidoscopic IFS": "大型综合筹资战略",
+    "Mandelbox": "曼德尔框",
+    "Julia Set 3D": "Julia 设置 3D",
+    "Sierpinski Tetrahedron": "锡尔平斯基·特特拉黑德龙",
+    "Apollonian Gasket": "阿波罗尼亚气垫",
+    "Burning Ship": "烧船",
+    "Tricorn": "三角兽",
+    "Mandelbulb Power 2": "曼德尔布尔",
+    "Mandelbulb Power 8": "曼德尔布尔8型电力机车",
+    "Quaternion Julia": "奎特尼翁·朱莉娅",
+    "IFS Tetrahedron": "IFS Tetrahedron 综合筹资框架",
+    "Octahedron": "八面体",
+    "Dodecahedron": "十二面体",
+    "Icosahedron": "伊科萨西德龙",
+    "Cubic Fractal": "立方体分形",
+    "Hybrid Box-Bulb": "组合框",
+    "Single Instance": "单一实例",
+    "Repeated (Clipped)": "重复( 剪辑)",
+    "Endless": "无尽",
+    "Yaw": "丫头",
+    "Pitch": "皮条",
+    "Roll": "滚动",
+    "Tumble": "弯曲",
+    "Sway": "摇摆",
+    "Pulsate": "脉冲",
+    "Grid": "网格",
+    "Scanlines": "扫描线",
+    "Noise": "噪声",
+    "Voronoi": "沃罗诺伊",
+    "Wave": "挥手",
+    "Sierpinski": "锡尔平斯基",
+    "Checkerboard": "检查板",
+    "PolkaDot": "波尔卡点",
+    "HexagonGrid": "六边形",
+    "Herringbone": "红骨",
+    "Houndstooth": "猎犬牙",
+    "CarbonFiber": "碳纤维",
+    "Plaid": "平板",
+    "CircuitBoard": "电路板",
+    "HalftoneDot": "半圆点",
+    "TruchetTile": "横切图",
+    "ReactionDiffusion": "反应",
+    "Brick": "砖头",
+    "Intensity": "强度",
+    "Glitch": "滑动",
+    "Stretch": "伸缩",
+    "Wind": "风",
+    "Flap": "飞翔",
+    "ButterflyFlap": "蝴蝶飞",
+    "Blocky": "块头",
+    "Strobe": "斯特罗贝",
+    "Sine": "正弦",
+    "Spherical": "球状",
+    "MainTexture": "主图解",
+    "Emission": "排放",
+    "Occlusion": "隐藏",
+    "DetailMap": "细节映射",
+    "DissolveMask": "解析任务",
+    "Cells": "单元格",
+    "Cracks": "裂缝",
+    "Dots": "点",
+    "Organic": "有机",
+    "Flow": "流动",
+    "Outer": "外部",
+    "Inner": "内在",
+    "Fresnel": "弗雷斯内尔",
+    "Depth": "深度",
+    "MeshNormals": "网门",
+    "VertexColors": "Vertex 颜色",
+    "Linear": "线性",
+    "PingPong": "乒乓球队",
+    "Loop": "循环",
+    "Random": "随机",
+    "EaseInOut": "释放",
+    "Expand": "扩展",
+    "Contract": "合同",
+    "Pulse": "脉搏",
+    "Vertical": "垂直",
+    "Directional": "方向",
+    "Bottom": "底层",
+    "Top": "顶",
+    "X": "页:1",
+    "Y": "Y",
+    "Z": "页:1",
+    "Front": "前导",
+    "Back": "回来",
+    "Culling": "弯曲",
+    "Depth Test": "深度测试",
+    "Comparison": "比较",
+    "Disabled": "已禁用",
+    "Never": "永远",
+    "Less": "减",
+    "Equal": "平等",
+    "LessEqual": "减平价",
+    "Greater": "大点",
+    "NotEqual": "不均匀",
+    "GreaterEqual": "更大的平等",
+    "Always": "总是",
+    "Keep": "保留",
+    "Zero": "无",
+    "IncrSat": "内存",
+    "DecrSat": "解密卫星",
+    "Invert": "反转",
+    "IncrWrap": "内存",
+    "DecrWrap": "解冻",
+    "One": "一个",
+    "DstColor": "颜色",
+    "SrcColor": "颜色",
+    "OneMinusDstColor": "最小颜色",
+    "SrcAlpha": "斯卡尔法",
+    "OneMinusSrcColor": "单减色",
+    "DstAlpha": "斯特阿尔法",
+    "OneMinusDstAlpha": "单减法",
+    "SrcAlphaSaturate": "SrcAlpha饱和",
+    "OneMinusSrcAlpha": "(原始内容存档于2018-09-31). One minusSrcAlpha",
+    "Show Always": "总是显示",
+    "Hide In Mirrors": "在镜像中隐藏",
+    "Show Only In Mirrors": "仅在镜像中显示",
+    "VR Headset Eyes Only": "只有 VR 头目",
+    "Desktop Stream Spectator Only": "只有桌面流观察器",
+    "Auto Oblique And Inverted Transform": "自动 Oblique 和反向变形",
+    "Oblique Matrix Only": "仅 Oblique 矩阵",
+    "Inverted Transform Only": "只反转变形",
+    "Visibility Mode": "可见模式",
+    "Mirror Detection Method": "镜像检测方法",
+    "VRCFallback": "VRC 缩放",
+    "VRChat Fallback Tag": "VRChat 退后标签",
+    "ToonStandard": "吨标准",
+    "Standard": "标准",
+    "Hidden": "隐藏",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "这个目标需要将照明模式设定为照明部分的\"Stylized PBR\".",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "此目标需要在重叠部分打开“ Enable详细纹理 ” .",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "此目标需要“ 允许溶解” 在过渡部分打开 ."
+  },
+  "sections": {
+    "Performance Settings": "性能设置",
+    "Render Mode": "渲染模式",
+    "Main Settings": "主设置",
+    "Procedural Textures": "程序化纹理",
+    "Advanced Animation Controls": "高级动画控制",
+    "Color Controls": "颜色控制",
+    "Lighting": "光照",
+    "Surface Style": "表面样式",
+    "Overlays": "覆层",
+    "Effects": "特效",
+    "Glitches": "故障效果",
+    "Transitions": "过渡",
+    "AudioLink Visualizers": "AudioLink 可视化",
+    "Advanced Settings": "高级设置"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "渲染模式",
+      "tooltip": "控制阴影的产生 不透明最快 剪切是为了硬化的透明度。 透明是用于软的,混合的效果."
+    },
+    "_PerformanceLevel": {
+      "label": "业绩水平",
+      "tooltip": "设定性能基线, 降低低级的昂贵特性 ."
+    },
+    "_ZWrite": {
+      "label": "强制深度写入( ZWrite)",
+      "tooltip": "手动控制此材料是否写入深度缓冲 。 启用此功能, 用于透明对象, 这些对象仍应隐藏在其后面 ."
+    },
+    "_Cutoff": {
+      "label": "阿尔法截断",
+      "tooltip": "切除效果的α阈值."
+    },
+    "_UseUVTileDiscard": {
+      "label": "UV 砖块丢弃",
+      "tooltip": "丢弃特定的紫外线瓦片. 用来搬运衣服."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "紫外线拖行 3 (Top)",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "紫外线拖行 2",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "紫外线拖行1",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "UV 拖行 0 (Bottom)",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "使用底色",
+      "tooltip": "切换固态基色 ."
+    },
+    "_BaseColor": {
+      "label": "颜色",
+      "tooltip": "不使用纹理时全息图的主要颜色."
+    },
+    "_BaseColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "使用 Vertex 颜色",
+      "tooltip": "用涂在模型顶部的颜色将遮蔽器擦亮。 需要一个带有顶点颜色的模型."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "阿尔法为不透明",
+      "tooltip": "使用顶点色α通道作为不透明倍数."
+    },
+    "_UseEmission": {
+      "label": "启用排放",
+      "tooltip": "使物体发光。 需要现场的Bloom处理后效果才能看到光芒."
+    },
+    "_UseEmissionPulse": {
+      "label": "启用排放脉冲",
+      "tooltip": "脉冲按节奏释放强度,但不影响散射照明."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "脉冲速度",
+      "tooltip": "脉冲排放动画速度."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "脉搏强度",
+      "tooltip": "排放脉冲的多少(0=无脉冲,1=0至最大强度的全脉冲)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "使用 Vertex 颜色进行排放",
+      "tooltip": "使用顶点颜色的 RGB 通道对排放光线下注."
+    },
+    "_UseAlphaToEmission": {
+      "label": "对排放使用纹理阿尔法",
+      "tooltip": "使用主纹理的α通道作为排放图。 一种强大的方法,在没有单独纹理的情况下创建发光图."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "强度",
+      "tooltip": "Α对排放的影响有多大(更高的值发光更亮)."
+    },
+    "_EmissionStrength": {
+      "label": "排放强度",
+      "tooltip": "发光效果有多亮."
+    },
+    "_AL_EmissionBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "启用第二次排放",
+      "tooltip": "添加第二个滚动排放层."
+    },
+    "_Emission2Map": {
+      "label": "第2次排放图",
+      "tooltip": "第二次排放图(RGB)"
+    },
+    "_Emission2Color": {
+      "label": "颜色",
+      "tooltip": "第二次排放颜色"
+    },
+    "_Emission2Strength": {
+      "label": "强度",
+      "tooltip": "第二次排放强度"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "滚动速度 X",
+      "tooltip": "第二次排放滚动速度X"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "滚动速度 Y",
+      "tooltip": "第二排污速度 Y"
+    },
+    "_AL_Emission2Band": {
+      "label": "AL 2 排放范围",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "AL 2 排放强度",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "启用第三次排放",
+      "tooltip": "添加第三个滚动排放层."
+    },
+    "_Emission3Map": {
+      "label": "第三次排放图",
+      "tooltip": "第三次排放图(RGB)"
+    },
+    "_Emission3Color": {
+      "label": "颜色",
+      "tooltip": "第三次排放颜色"
+    },
+    "_Emission3Strength": {
+      "label": "强度",
+      "tooltip": "第三次排放强度"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "滚动速度 X",
+      "tooltip": "第三次排放滚动速度X"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "滚动速度 Y",
+      "tooltip": "第三次排放滚动速度 Y"
+    },
+    "_AL_Emission3Band": {
+      "label": "AL 第3排出区",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "AL 第3次排放强度",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "启用第4次排放",
+      "tooltip": "添加第四个滚动排放层."
+    },
+    "_Emission4Map": {
+      "label": "第4次排放图",
+      "tooltip": "第四次排放图(RGB)"
+    },
+    "_Emission4Color": {
+      "label": "颜色",
+      "tooltip": "第四次排放颜色"
+    },
+    "_Emission4Strength": {
+      "label": "强度",
+      "tooltip": "第四次排放强度"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "滚动速度 X",
+      "tooltip": "第四次排放滚动速度X"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "滚动速度 Y",
+      "tooltip": "第四次排放滚动速度 Y"
+    },
+    "_AL_Emission4Band": {
+      "label": "AL 第4排出区",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "AL 第4次排放强度",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "启用程序纹理",
+      "tooltip": "将物质属性替换为生成模式."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "目标",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "程序模式",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "颜色 1",
+      "tooltip": "程序图案的第一色."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "启用色调/ 颜色移动",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "程序颜色 1 移动",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "颜色 2",
+      "tooltip": "程序图案的第二色."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "启用色调/ 颜色移动",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "程序颜色 2 移动",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "缩放",
+      "tooltip": "控制图案的大小/倾斜."
+    },
+    "_ProceduralSpeed": {
+      "label": "速度",
+      "tooltip": "控制图案的动画速度."
+    },
+    "_ProceduralDirection": {
+      "label": "方向",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "厚度",
+      "tooltip": "图案线的厚度."
+    },
+    "_ProceduralDensity": {
+      "label": "密度",
+      "tooltip": "控制图案元素的大小。 更高的值会增加大小."
+    },
+    "_ProceduralSparsity": {
+      "label": "比例",
+      "tooltip": "控制图案中元素之间的距离。 更高的数值会增加间隔."
+    },
+    "_ProceduralRotation": {
+      "label": "旋转",
+      "tooltip": "旋转整个程序模式。 值0.125为45度."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "坐标空间",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "奥克塔夫",
+      "tooltip": "在不同尺度上添加层层噪声,以创造出更详细和自然的规律."
+    },
+    "_NoiseLacunarity": {
+      "label": "空白",
+      "tooltip": "控制噪声的频率随着每个八进制的变化."
+    },
+    "_NoiseGain": {
+      "label": "增益",
+      "tooltip": "控制噪声的振幅与每个八进制的变化."
+    },
+    "_VoronoiStyle": {
+      "label": "样式",
+      "tooltip": "控制Voroni图案的视觉风格."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "全球速度乘数",
+      "tooltip": "主动画速度乘数. 通过VRChat Avatar Dynamics / 动画参数来激活此功能,以控制或冻结所有阴影程序动画."
+    },
+    "_UseAdvancedAnim": {
+      "label": "启用高级动画控制",
+      "tooltip": "曝光主控器用于时间缩放,回放模式,以及所有阴影动画的时间抵消."
+    },
+    "_AnimTimeScale": {
+      "label": "时间尺度",
+      "tooltip": "控制所有阴影动画的整体速度。 可用于减速或加速效果."
+    },
+    "_AnimPlayMode": {
+      "label": "回放模式",
+      "tooltip": "设置全局播放模式。 0=循环(从头开始重开),1=乒乓球(逆向)."
+    },
+    "_AnimOffset": {
+      "label": "时间偏移",
+      "tooltip": "将全局时间抵消到所有动画中,用于同步或非同步效果."
+    },
+    "_TwoSidedLighting": {
+      "label": "双边灯光",
+      "tooltip": "Cull 关闭时, 将正常方向翻转到后脸上进行正确的双面照明 ."
+    },
+    "_LightingMode": {
+      "label": "照明模式",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "启用光谱 AA",
+      "tooltip": "反异形光谱突出,减少光泽表面的闪烁和闪烁."
+    },
+    "_UseOpenLitMath": {
+      "label": "OpenLit 和谐模式",
+      "tooltip": "使用OpenLit CC0标准半兰伯特散射数学,用于在图片世界中贯穿人群浮雕的一致照明."
+    },
+    "_SpecularAAVariance": {
+      "label": "差额",
+      "tooltip": "控制AA模糊的应用程度."
+    },
+    "_SpecularAAThreshold": {
+      "label": "阈值",
+      "tooltip": "光谱的阈值在AA踢入前突出强度."
+    },
+    "_ShadowColor": {
+      "label": "阴影颜色",
+      "tooltip": "不被光击中的区域的颜色."
+    },
+    "_ShadowColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "阈值",
+      "tooltip": "以 Toon 模式显示的点亮区域大小 ."
+    },
+    "_ToonHardness": {
+      "label": "硬度",
+      "tooltip": "图恩模式中阴影边缘的锐度."
+    },
+    "_ToonShadowBorder": {
+      "label": "阴影边框",
+      "tooltip": "偏移卡通阴影线边界."
+    },
+    "_ToonShadowBlur": {
+      "label": "阴影模糊",
+      "tooltip": "软化了卡通阴影的步子."
+    },
+    "_ToonShadowAO": {
+      "label": "AO 阴影调制",
+      "tooltip": "利用环境封存图来修改环影边界."
+    },
+    "_NormalMap": {
+      "label": "普通地图",
+      "tooltip": "使用普通地图添加表面细节."
+    },
+    "_BumpScale": {
+      "label": "正常缩放",
+      "tooltip": "表面正常凸起的强度和深度."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "启用详细正常映射",
+      "tooltip": "为微表面细节凸起添加二级普通地图."
+    },
+    "_DetailNormalMap": {
+      "label": "详细普通地图",
+      "tooltip": "第二张普通地图覆盖在基座正常上,用于添加表面细节."
+    },
+    "_DetailNormalScale": {
+      "label": "详细正常强度",
+      "tooltip": "控制细节正常地图的强度."
+    },
+    "_NormalBlendMode": {
+      "label": "普通组合模式",
+      "tooltip": "碱和细化普通地图之间的混合算法(Whiteout vs 重定向正常映射 / RNM)."
+    },
+    "_MetallicGlossMap": {
+      "label": "金属(R)平滑度(A)",
+      "tooltip": "金属(R)和光滑(A)地图。 (注:如果提供单独的粗糙度地图,则忽略平滑度)"
+    },
+    "_Metallic": {
+      "label": "金属",
+      "tooltip": "控制表面的金属(0=二电/塑料,1=纯金属)."
+    },
+    "_Glossiness": {
+      "label": "平滑度",
+      "tooltip": "控制表面的平滑度和反射度(0=粗糙/平滑,1=镜面平滑)."
+    },
+    "_UseAmbientLighting": {
+      "label": "使用环境照明",
+      "tooltip": "切换现场环境光和反射探测器的取样。 使不同世界的照明更加一致."
+    },
+    "_UseSHAmbient": {
+      "label": "使用高质量环境( SH)",
+      "tooltip": "启用高质量的球形谐波环境. 注:在中度/低效水平下被迫取消."
+    },
+    "_AmbientFallbackMode": {
+      "label": "环境后退模式",
+      "tooltip": "在高品质SH被禁用或关闭时选择倒置照明模式."
+    },
+    "_UseLightOverride": {
+      "label": "覆盖场景光",
+      "tooltip": "覆盖了主景光的方向,颜色,强度."
+    },
+    "_LightDirOverride": {
+      "label": "方向",
+      "tooltip": "自定义光向矢量 ."
+    },
+    "_LightColorOverride": {
+      "label": "颜色",
+      "tooltip": "自定义的浅色衬衫 ."
+    },
+    "_LightIntensity": {
+      "label": "强度",
+      "tooltip": "自定义轻强度尺度 ."
+    },
+    "_ShadowStrength": {
+      "label": "阴影强度",
+      "tooltip": "从此光影投出的力量倍增."
+    },
+    "_RampTex": {
+      "label": "东风灯",
+      "tooltip": "通兰普纹理. 转换阴影(左)到光(右)."
+    },
+    "_ToonToneCount": {
+      "label": "音量计数",
+      "tooltip": "用于Ton照明的离散阴影量化波段数."
+    },
+    "_MidColor": {
+      "label": "中级",
+      "tooltip": "中音乐队颜色."
+    },
+    "_MidThreshold": {
+      "label": "中阈值",
+      "tooltip": "中弦波段的阈值边界."
+    },
+    "_HighlightColor": {
+      "label": "突出显示颜色",
+      "tooltip": "突出乐队颜色."
+    },
+    "_HighlightThreshold": {
+      "label": "突出显示阈值",
+      "tooltip": "亮点波段的阈值边界 ."
+    },
+    "_SpecularMode": {
+      "label": "工作流程",
+      "tooltip": "在Metallic-Smoothness和Specular-Color PBR照明工作流程之间进行选择."
+    },
+    "_SpecColor": {
+      "label": "光谱颜色",
+      "tooltip": "光谱反射色."
+    },
+    "_SpecGlossMap": {
+      "label": "光谱 (RGB) Gloss (A)",
+      "tooltip": "光谱颜色(RGB)和光滑度(A)映射."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "阴影罩倒置",
+      "tooltip": "阴影纹理没有可用时的后退行为 ."
+    },
+    "_RoughnessMap": {
+      "label": "粗略图(R)",
+      "tooltip": "粗糙图(R)."
+    },
+    "_Roughness": {
+      "label": "粗糙",
+      "tooltip": "粗糙价值."
+    },
+    "_OcclusionMap": {
+      "label": "地图(G)",
+      "tooltip": "隐蔽图(G)用于在裂缝中烘烤阴影."
+    },
+    "_OcclusionStrength": {
+      "label": "占用强度",
+      "tooltip": "闭合图中环境阴影裂缝的强度."
+    },
+    "_DetailMask": {
+      "label": "详细面具( A)",
+      "tooltip": "详细面罩(A)用于限制次级详细纹理的应用."
+    },
+    "_UseSSS": {
+      "label": "启用地表线",
+      "tooltip": "模拟光散射于皮肤或叶子等细小物体."
+    },
+    "_SSS_Scale": {
+      "label": "缩放",
+      "tooltip": "SSS效应的整体强度."
+    },
+    "_SSS_Radius": {
+      "label": "半径",
+      "tooltip": "光在材料内部散射多远."
+    },
+    "_SSS_Color": {
+      "label": "叮当",
+      "tooltip": "色线适用于散光."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "启用厚度映射",
+      "tooltip": "利用纹理模拟光通过稀疏区域(耳,叶等)的传播."
+    },
+    "_ThicknessMap": {
+      "label": "厚度图( R)",
+      "tooltip": "厚度地图 (R频道). 白色=厚(无传输),黑色=薄(全传输)."
+    },
+    "_ThicknessStrength": {
+      "label": "强度",
+      "tooltip": "控制背光传输效果的强度."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "使用 SSS 传输纹理",
+      "tooltip": "自定义颜色映射给背光传输涂色 ."
+    },
+    "_SSSTransmissionTex": {
+      "label": "SSS 传输地图",
+      "tooltip": "传输颜色图."
+    },
+    "_UseAnisotropy": {
+      "label": "启用异构反射",
+      "tooltip": "创建拉长的亮点,常见于刷过的金属或头发上."
+    },
+    "_Aniso_Mode": {
+      "label": "Aniso 模式",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "粗糙度 U",
+      "tooltip": "U(tangent)方向的粗糙."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "粗略程度 五",
+      "tooltip": "沿V(异常)方向的粗糙度."
+    },
+    "_Aniso_Strength": {
+      "label": "光谱强度",
+      "tooltip": "无异体整体亮度突出."
+    },
+    "_Aniso_TangentMap": {
+      "label": "切换图( 可选)",
+      "tooltip": "精确图(RG channel),用来控制异位突起的方向."
+    },
+    "_UseClearCoat": {
+      "label": "启用清除外套",
+      "tooltip": "在底部PBR材料上添加一个二级清晰的外衣光谱层. 可用于涂装/涂装表面."
+    },
+    "_ClearCoatStrength": {
+      "label": "清除外套强度",
+      "tooltip": "二级汽车喷漆/树脂清衣层强度."
+    },
+    "_ClearCoatRoughness": {
+      "label": "清煤粗糙度",
+      "tooltip": "二级清衣层粗糙."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "启用眼 Iris 参数",
+      "tooltip": "模拟角膜下瞳孔和虹膜的深度/折射."
+    },
+    "_IrisTiling": {
+      "label": "Iris UV 倾斜",
+      "tooltip": "控制虹膜纹理的板块."
+    },
+    "_IrisDepth": {
+      "label": "Iris 深度偏移",
+      "tooltip": "模拟折射深度偏移."
+    },
+    "_PupilSize": {
+      "label": "学生规模",
+      "tooltip": "控制学生的大小."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "启用皮肤 Diffuse 包",
+      "tooltip": "软化光影在有机曲线表面."
+    },
+    "_SkinWrapAmount": {
+      "label": "环绕数量",
+      "tooltip": "多少光环绕着阴影终结者."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "启用头发异形谱( Kajiya- Kay)",
+      "tooltip": "特别为毛线设计的异形突出."
+    },
+    "_HairSpecColor": {
+      "label": "光谱颜色",
+      "tooltip": "发色谱亮点."
+    },
+    "_HairSpecExponent": {
+      "label": "初级指标",
+      "tooltip": "尖锐的主要亮点."
+    },
+    "_HairSpecExponent2": {
+      "label": "中学指标",
+      "tooltip": "二次转向的亮度."
+    },
+    "_HairSpecStrength": {
+      "label": "光谱强度",
+      "tooltip": "亮度强 亮度强."
+    },
+    "_HairSpecShift": {
+      "label": "光谱移动",
+      "tooltip": "位移沿发型方向."
+    },
+    "_UseGrid": {
+      "label": "启用网格",
+      "tooltip": "覆盖表面的网格图案."
+    },
+    "_GridMode": {
+      "label": "网格图案",
+      "tooltip": "程序网格样式(Square, Hexagonal, Radial, Wireframe)."
+    },
+    "_GridColor": {
+      "label": "颜色",
+      "tooltip": "网格线的颜色."
+    },
+    "_GridColor_Shift": {
+      "label": "网格颜色移动",
+      "tooltip": "用于程序网格线的音频链接或动画色移."
+    },
+    "_GridDensity": {
+      "label": "密度",
+      "tooltip": "有多少网格图案出现."
+    },
+    "_GridSparsity": {
+      "label": "比例",
+      "tooltip": "控制图案中元素之间的距离。 更高的数值会增加间隔."
+    },
+    "_GridSpace": {
+      "label": "坐标空间",
+      "tooltip": "程序网格绘图的坐标空间(Object UV, Local Mesh, World Space)."
+    },
+    "_GridThickness": {
+      "label": "网格线宽度",
+      "tooltip": "程序网格覆盖线厚度."
+    },
+    "_UseGridScroll": {
+      "label": "启用滚动",
+      "tooltip": "动画螺旋图案."
+    },
+    "_GridScrollSpeed": {
+      "label": "滚动速度 X",
+      "tooltip": "沿第一轴(world X)的网格滚动速度有多快."
+    },
+    "_GridRotation": {
+      "label": "旋转",
+      "tooltip": "旋转整个网格模式。 值0.125为45度."
+    },
+    "_GridScrollSpeedY": {
+      "label": "滚动速度 Y",
+      "tooltip": "沿其第二轴(世界Z)的网格滚动速度有多快."
+    },
+    "_BoxFractalIsFill": {
+      "label": "使用填充样式",
+      "tooltip": "在填充图案和大纲图案之间切换“框形”."
+    },
+    "_GridPatternIsFill": {
+      "label": "使用填充样式",
+      "tooltip": "在填充和大纲之间切换模式."
+    },
+    "_MandelboxIsFill": {
+      "label": "使用填充样式",
+      "tooltip": "在填充模式和大纲模式之间切换Mandelbox."
+    },
+    "_GridPulseMode": {
+      "label": "网格脉冲模式",
+      "tooltip": "网格动画脉冲波形(Sine, Triangle, AudioLink)."
+    },
+    "_GridPulseSpeed": {
+      "label": "脉冲速度",
+      "tooltip": "脉动动的速率."
+    },
+    "_GridPulseIntensity": {
+      "label": "脉搏强度",
+      "tooltip": "脉效之力."
+    },
+    "_GridPulseMin": {
+      "label": "网格脉冲元",
+      "tooltip": "脉冲时最小网格亮度/厚度乘数."
+    },
+    "_GridPulseMax": {
+      "label": "网格脉冲最大值",
+      "tooltip": "脉冲时最大网格亮度/厚度乘数."
+    },
+    "_UseGridDepthColor": {
+      "label": "使用基于深度的颜色",
+      "tooltip": "根据其靠近其他表面而改变网格颜色."
+    },
+    "_GridDepthColor": {
+      "label": "深度颜色",
+      "tooltip": "网格的颜色转换到接近表面时."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "深度范围",
+      "tooltip": "颜色变化的距离 ."
+    },
+    "_AL_GridBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "使用网格遮盖",
+      "tooltip": "使用纹理掩盖网格效应."
+    },
+    "_GridMask": {
+      "label": "网格遮罩",
+      "tooltip": "纹理用来掩盖网格. 红色通道被使用."
+    },
+    "_InvertGridMask": {
+      "label": "反向遮罩",
+      "tooltip": "反转面具,因此黑色区域可见,白色区域隐藏."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "启用 Vertex 扭曲",
+      "tooltip": "切换程序顶点扭曲动画打开或关闭."
+    },
+    "_DistortionMode": {
+      "label": "扭曲模式",
+      "tooltip": "程序顶点扭曲算法(Sine波,噪声动荡,Flaping等)."
+    },
+    "_DistortionStrength": {
+      "label": "强度",
+      "tooltip": "Vert椎多远流离."
+    },
+    "_DistortionSpeed": {
+      "label": "速度",
+      "tooltip": "扭曲动画的速度."
+    },
+    "_AL_DistortionBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "(单位:千美元)",
+      "tooltip": "用于控制扭曲的纹理(RXX偏移,G=Z偏移)."
+    },
+    "_DistortionTexScrollX": {
+      "label": "滚动速度 X",
+      "tooltip": "横向滚动扭曲纹理."
+    },
+    "_DistortionTexScrollY": {
+      "label": "滚动速度 Y",
+      "tooltip": "垂直滚动扭曲纹理."
+    },
+    "_StretchAxis": {
+      "label": "伸展轴",
+      "tooltip": "程序顶点拉伸的网轴."
+    },
+    "_WindDirection": {
+      "label": "方向",
+      "tooltip": "风的局部-空间方向(相对于物体)."
+    },
+    "_WindScale": {
+      "label": "缩放",
+      "tooltip": "风涌之大小. 更小的数值产生更大的,更慢的波."
+    },
+    "_FlapScale": {
+      "label": "缩放",
+      "tooltip": "控制扇动运动的曲率或“宽度”."
+    },
+    "_FlapPhaseOffset": {
+      "label": "阶段偏移",
+      "tooltip": "将时间延迟添加到一边,从而形成不对称的襟翼。 0是对称的."
+    },
+    "_FlapMode": {
+      "label": "襟翼模式",
+      "tooltip": "顶点扇动画(Wings, Flags, Foliage)的方向和风格."
+    },
+    "_FlapPivot": {
+      "label": "飞跃支点",
+      "tooltip": "顶点/支点位置,用于顶点扇动振荡."
+    },
+    "_FlapDirection": {
+      "label": "方向",
+      "tooltip": "用于定义扇动的本地空间方向的向量 ."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "启用溶解",
+      "tooltip": "用噪音模式使对象出现/消失."
+    },
+    "_DissolveMode": {
+      "label": "溶解模式",
+      "tooltip": "选择溶解的数学算法(Linear, Radial, Sphellical, Voronoi 噪声等)."
+    },
+    "_DissolveScale": {
+      "label": "缩放",
+      "tooltip": "控制溶解效果的大小/范围."
+    },
+    "_DissolveDirection": {
+      "label": "方向",
+      "tooltip": "世界空间的方向 溶解波行走."
+    },
+    "_DissolveOrigin": {
+      "label": "世界起源组织",
+      "tooltip": "溶解产生的世界空间中心点."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "使用对象中心",
+      "tooltip": "启用时, 溶解来自对象的中枢点 。 禁用时使用固定的世界空间坐标."
+    },
+    "_DissolveMap": {
+      "label": "溶解噪声映射",
+      "tooltip": "用于溶解效果的噪音纹理(使用红色通道)."
+    },
+    "_DissolveProjMode": {
+      "label": "解析映射模式",
+      "tooltip": "溶解纹理的紫外线投影映射模式."
+    },
+    "_DissolveAmount": {
+      "label": "数额",
+      "tooltip": "溶解效应的进展(0-1)."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "边缘宽度",
+      "tooltip": "溶解线上发光边缘的宽度."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "块大小",
+      "tooltip": "屏幕空间中的闪烁块大小 ."
+    },
+    "_DissolveEdgeColor": {
+      "label": "边缘颜色",
+      "tooltip": "发光边缘的颜色溶解."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "边缘颜色移动",
+      "tooltip": "用于溶解燃烧边缘的音频链接或动画色彩变换."
+    },
+    "_UseDissolveGradient": {
+      "label": "使用渐变",
+      "tooltip": "使用梯度纹理来给溶解边缘配色,而不是扎实的颜色."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "使用高级时间",
+      "tooltip": "使用自定义的解析动画时间, 而不是简单的循环/ ping- pong ."
+    },
+    "_DissolveOnDuration": {
+      "label": "持续溶解",
+      "tooltip": "解散的动画需要时间来播放."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "可见的持续时间",
+      "tooltip": "该天体保持完全可见的时间(最大溶解)."
+    },
+    "_DissolveOffDuration": {
+      "label": "脱离期限",
+      "tooltip": "解散动画的播放需要时间."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "隐藏时间",
+      "tooltip": "该天体保持完全隐藏的时间(在分钟溶解)."
+    },
+    "_DissolveGradient": {
+      "label": "溶解渐变",
+      "tooltip": "溶解边缘的彩色斜坡. 梯度分布在边缘宽度之间."
+    },
+    "_AnimateDissolve": {
+      "label": "动画",
+      "tooltip": "随时间推移自动动画溶解量."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "速度",
+      "tooltip": "动画的速度."
+    },
+    "_DissolveAnimMode": {
+      "label": "使用乒乓球",
+      "tooltip": "如果启用, 动画会向前播放, 然后向后播放 。 如果禁用, 它会循环 ."
+    },
+    "_DissolveAnimMin": {
+      "label": "动画min",
+      "tooltip": "启用动画时最小溶解截断 ."
+    },
+    "_DissolveAnimMax": {
+      "label": "动画 Max",
+      "tooltip": "启用动画时最大溶解截断 ."
+    },
+    "_AL_DissolveBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "启用 Planar 擦拭",
+      "tooltip": "以平滑,方向擦拭的方式揭示物体."
+    },
+    "_WipeDirection": {
+      "label": "方向",
+      "tooltip": "擦拭穿过物体的方向."
+    },
+    "_WipeProgress": {
+      "label": "进展",
+      "tooltip": "擦拭效果的进步."
+    },
+    "_WipeHardness": {
+      "label": "硬度",
+      "tooltip": "擦拭边缘的尖锐性."
+    },
+    "_AnimateWipe": {
+      "label": "动画擦拭",
+      "tooltip": "随时间推移自动动画擦拭进度."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "使用高级时间",
+      "tooltip": "使用自定义的擦拭动画时间代替简单的循环/乒乓球."
+    },
+    "_WipeOnDuration": {
+      "label": "持续时间擦除",
+      "tooltip": "擦拭动画的播放需要时间."
+    },
+    "_WipeVisibleDuration": {
+      "label": "可见的持续时间",
+      "tooltip": "该天体仍然完全可见的时间 ."
+    },
+    "_WipeOffDuration": {
+      "label": "淘汰时间",
+      "tooltip": "擦拭动画的播放需要时间."
+    },
+    "_WipeHiddenDuration": {
+      "label": "隐藏时间",
+      "tooltip": "对象在循环前完全隐藏的时间 ."
+    },
+    "_WipeAnimSpeed": {
+      "label": "速度",
+      "tooltip": "动画的速度."
+    },
+    "_WipeAnimMode": {
+      "label": "使用乒乓球",
+      "tooltip": "如果启用, 动画会向前播放, 然后向后播放 。 如果禁用, 它会循环 ."
+    },
+    "_UseTransparency": {
+      "label": "启用透明",
+      "tooltip": "使对象统一透明."
+    },
+    "_Alpha": {
+      "label": "阿尔法",
+      "tooltip": "控制总体透明度。 1=完全不透明,0=完全隐形."
+    },
+    "_UseFresnelTransparency": {
+      "label": "启用 Fresnel 透明",
+      "tooltip": "使物体在中央更加透明,在边缘更加不透明."
+    },
+    "_FresnelPower": {
+      "label": "权力",
+      "tooltip": "控制掉落曲线。 更高的价值将透明度推向边缘."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "边缘阿尔法",
+      "tooltip": "放牧角度的透明度."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "阿尔法中心",
+      "tooltip": "镜头直接面对透明."
+    },
+    "_AL_FresnelBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "使用纹理",
+      "tooltip": "切换主纹理 ."
+    },
+    "_MainTex": {
+      "label": "主纹理",
+      "tooltip": "主表面反照纹理."
+    },
+    "_MainTexProjMode": {
+      "label": "底质投影模式",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "视频播放器模式",
+      "tooltip": "配置纹理以接收视频播放器数据."
+    },
+    "_VideoIsAVPro": {
+      "label": "是 AVPro 视频",
+      "tooltip": "检查此视频播放器是否使用 AVPro ."
+    },
+    "_Rotation": {
+      "label": "旋转",
+      "tooltip": "围绕紫外空间中心旋转所有纹理."
+    },
+    "_ScrollX": {
+      "label": "滚动速度 X",
+      "tooltip": "水平紫外线动画速度."
+    },
+    "_ScrollY": {
+      "label": "滚动速度 Y",
+      "tooltip": "垂直紫外线动画速度."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "使用乒乓卷",
+      "tooltip": "将滚动模式切换为回转式乒乓球运动."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "速度",
+      "tooltip": "前后卷轴运动速度."
+    },
+    "_PingPongScrollRange": {
+      "label": "范围",
+      "tooltip": "前后转动的距离 ."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "启用紫外线扭曲",
+      "tooltip": "使用纹理来扭曲紫外线坐标,产生热雾或水波波效应."
+    },
+    "_UVDistortionMap": {
+      "label": "UV 扭曲图",
+      "tooltip": "纹理用来扭曲紫外线. 红绿频道控制X和Y抵消."
+    },
+    "_UVDistortionStrength": {
+      "label": "强度",
+      "tooltip": "紫外线扭曲的颤动有多激烈."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "速度 X",
+      "tooltip": "扭曲波的横向速度 ."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "速度 Y",
+      "tooltip": "扭曲波的垂直速度 ."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "启用翻转本动画",
+      "tooltip": "使用图示表布局来模拟主纹理。 这将取代主纹理的硬化和抵消."
+    },
+    "_FlipbookMode": {
+      "label": "模式",
+      "tooltip": "动画回放模式."
+    },
+    "_FlipbookColumns": {
+      "label": "栏(X)",
+      "tooltip": "图表中的列数( 横向框架) ."
+    },
+    "_FlipbookRows": {
+      "label": "行数( Y)",
+      "tooltip": "图示表格中的行数( 垂直框) ."
+    },
+    "_FlipbookSpeed": {
+      "label": "速度( FPS)",
+      "tooltip": "动画速度在帧每秒."
+    },
+    "_FlipbookStartFrame": {
+      "label": "启动框架",
+      "tooltip": "动画的起始帧,可以进行偏移."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "使用详细纹理",
+      "tooltip": "叠加二级纹理,通常用于细细的细细或粘结."
+    },
+    "_DetailTex": {
+      "label": "详细纹理",
+      "tooltip": "二次纹理来覆."
+    },
+    "_DetailTexProjMode": {
+      "label": "详细纹理投影模式",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "强度",
+      "tooltip": "细节纹理的混合程度有多强."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "使用排放罩",
+      "tooltip": "使用纹理来控制表面的哪些部分发光."
+    },
+    "_EmissionMaskTex": {
+      "label": "排放罩",
+      "tooltip": "控制排放的纹理(白色=全部排放,黑色=无排放)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "排放罩投影模式",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "启用 Parallax 映射",
+      "tooltip": "使用高度图来抵消紫外线的深度."
+    },
+    "_HeightMap": {
+      "label": "高度图 (R)",
+      "tooltip": "灰度纹理,白色高,黑色低."
+    },
+    "_ParallaxStrength": {
+      "label": "强度",
+      "tooltip": "截面效应有多深."
+    },
+    "_USE_POM_ON": {
+      "label": "启用 Parallax 占用映射",
+      "tooltip": "启用多步 Parallax,以达到更高的质量深度效果. 只有高纯度."
+    },
+    "_POMSteps": {
+      "label": "最大步骤",
+      "tooltip": "最大参数步数 ."
+    },
+    "_POMMinSteps": {
+      "label": "最小步骤",
+      "tooltip": "最小的 Parallax 步数( 在闪烁角度) ."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "启用环境反射",
+      "tooltip": "样本反射探测器可以添加环境反射,即使在Basic/Ton模式中也是如此."
+    },
+    "_EnvReflectionStrength": {
+      "label": "反射强度",
+      "tooltip": "环境反思的力量."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "反映粗略",
+      "tooltip": "反射粗糙(粗糙)."
+    },
+    "_USE_VAT_ON": {
+      "label": "启用 Vertex 动画纹理",
+      "tooltip": "应用增值税纹理制作的烤制顶点动画. 用于预烤布,液,或破坏效果."
+    },
+    "_VATPositionTex": {
+      "label": "VAT 位置纹理",
+      "tooltip": "增值税位置抵消了纹理。 每行为框."
+    },
+    "_VATFrameCount": {
+      "label": "框架计数",
+      "tooltip": "纹理中的动画帧总数."
+    },
+    "_VATSpeed": {
+      "label": "速度",
+      "tooltip": "顶点动画的回放速度."
+    },
+    "_VATBoundsMin": {
+      "label": "边框",
+      "tooltip": "位置再映射的最低界限 ."
+    },
+    "_VATBoundsMax": {
+      "label": "约束最大",
+      "tooltip": "位置重映射的最大范围 ."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "启用湿度",
+      "tooltip": "模拟湿水面的变暗和雨波效应."
+    },
+    "_WetnessStrength": {
+      "label": "湿度强度",
+      "tooltip": "整体湿度强度."
+    },
+    "_WetnessSmoothness": {
+      "label": "湿滑",
+      "tooltip": "湿表面的平滑性提升(影响光谱突出亮度)."
+    },
+    "_WetnessDarkening": {
+      "label": "变暗",
+      "tooltip": "湿润时表面会变暗多少."
+    },
+    "_RainRippleMap": {
+      "label": "降雨平面图",
+      "tooltip": "用于雨波动画的普通地图."
+    },
+    "_RainRippleScale": {
+      "label": "缩放",
+      "tooltip": "雨波图案的缩放 ."
+    },
+    "_RainRippleSpeed": {
+      "label": "撕裂速度",
+      "tooltip": "雨波动画速度."
+    },
+    "_USE_DECAL_ON": {
+      "label": "启用解密",
+      "tooltip": "覆盖主标记/粘贴纹理."
+    },
+    "_DecalTex": {
+      "label": "解析纹理",
+      "tooltip": "解脱纹理. 使用平板/平板来定位它."
+    },
+    "_DecalBlendMode": {
+      "label": "混合模式",
+      "tooltip": "标记如何与底色混合."
+    },
+    "_DecalStrength": {
+      "label": "强度",
+      "tooltip": "整体不透明度/地标强度."
+    },
+    "_DecalNormal": {
+      "label": "普通地图",
+      "tooltip": "标记的普通地图 ."
+    },
+    "_DecalNormalStrength": {
+      "label": "正常强度",
+      "tooltip": "地标正常地图的强度."
+    },
+    "_DecalMetallic": {
+      "label": "金属",
+      "tooltip": "标记区域的金属值."
+    },
+    "_DecalSmoothness": {
+      "label": "平滑度",
+      "tooltip": "标记区域的平滑度值 ."
+    },
+    "_DecalAffectsPBR": {
+      "label": "PBR 影响",
+      "tooltip": "允许通过标记修改普通、金属和滑动."
+    },
+    "_SurfaceStyle": {
+      "label": "表面样式",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "色调移动缩放",
+      "tooltip": "乘以精神分裂变换器."
+    },
+    "_PsychedelicSpeed": {
+      "label": "流量速度",
+      "tooltip": "迷幻噪音流过表面的速度."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "坐标空间",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "分形3Dmode",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "重复模式( F)",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "缩放",
+      "tooltip": "物体空间内分形的尺度."
+    },
+    "_FractalAnimMode": {
+      "label": "分形动画模式( F)",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "动画速度",
+      "tooltip": "分形动画的速度 ."
+    },
+    "_FractalPower": {
+      "label": "曼德尔布尔",
+      "tooltip": "曼德尔布尔号的动力参数. 试试这个动画!"
+    },
+    "_FractalIter": {
+      "label": "迭代数",
+      "tooltip": "重复次数。 更高更详细,但更慢."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "角度( X, Y, Z)",
+      "tooltip": "万象综合筹资战略旋转角."
+    },
+    "_FractalColorShift": {
+      "label": "分形深度色调移动",
+      "tooltip": "基于深度的分形变换乘法."
+    },
+    "_FractalUseAutoShift": {
+      "label": "有机用户自动Shift",
+      "tooltip": "不断改变分形基色."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "自动移动速度",
+      "tooltip": "自动换色速度."
+    },
+    "_FractalJuliaC": {
+      "label": "茱莉亚C常数",
+      "tooltip": "朱莉娅集的四角C常数 控制分形的形状."
+    },
+    "_FractalMandelboxScale": {
+      "label": "混合比例",
+      "tooltip": "混合分形的缩放系数。 尝试1.5到3.0之间的值."
+    },
+    "_AL_FractalBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "折射噪声映射",
+      "tooltip": "用于控制变化扭曲的噪音纹理."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "折射强度",
+      "tooltip": "观点被扭曲的程度如何."
+    },
+    "_UseScreenRefraction": {
+      "label": "屏幕折射",
+      "tooltip": "扭曲对象后面的屏幕."
+    },
+    "_RefractionStrength": {
+      "label": "强度",
+      "tooltip": "逆顺之力."
+    },
+    "_RefractionIOR": {
+      "label": "离线",
+      "tooltip": "折射指数."
+    },
+    "_ChromaticAberration": {
+      "label": "染色异常",
+      "tooltip": "模拟颜色分离,创建红色/蓝色边缘."
+    },
+    "_GalaxyMap": {
+      "label": "银河地图",
+      "tooltip": "在对象内显示的纹理."
+    },
+    "_GalaxyDepth": {
+      "label": "深度",
+      "tooltip": "创建2D参数效应,使纹理看起来有深度."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "旋转速度",
+      "tooltip": "旋转星系纹理."
+    },
+    "_SkyboxMap": {
+      "label": "天盒立方体图",
+      "tooltip": "用于在物体内显示的立方体, 如传送门 ."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "旋转速度",
+      "tooltip": "围绕Y轴旋转天盒."
+    },
+    "_TriplanarTex": {
+      "label": "三线纹理",
+      "tooltip": "从三轴投影到模型上."
+    },
+    "_TriplanarScale": {
+      "label": "缩放",
+      "tooltip": "控制预测纹理的大小."
+    },
+    "_TriplanarBlend": {
+      "label": "混合锐度",
+      "tooltip": "控制三个纹理预测之间混合的锐度."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "启用 Triplanar 正常映射",
+      "tooltip": "投射一个正常的地图跨越3轴."
+    },
+    "_TriplanarNormalMap": {
+      "label": "三边形普通地图",
+      "tooltip": "正常地图沿三轴投射."
+    },
+    "_TriplanarNormalScale": {
+      "label": "正常强度",
+      "tooltip": "三连环图的优势."
+    },
+    "_MatCapTex": {
+      "label": "马特卡普纹理",
+      "tooltip": "物质捕捉纹理,定义物体的照明和反射."
+    },
+    "_MatCapIntensity": {
+      "label": "强度",
+      "tooltip": "控制 MatCap 效果的亮度."
+    },
+    "_MatCapBlendMode": {
+      "label": "混合模式",
+      "tooltip": "控制 MatCap 纹理与底色的混合。 覆盖完全取代它."
+    },
+    "_IridescenceScale": {
+      "label": "颜色缩放",
+      "tooltip": "控制整个表面的颜色变化频率."
+    },
+    "_IridescenceStrength": {
+      "label": "强度",
+      "tooltip": "控制刺激效应的强度."
+    },
+    "_GlitterBlendMode": {
+      "label": "混合模式",
+      "tooltip": "控制闪光色与表面的混合。 Additive会变得太夸张了。 lerp取代基色(发送). Max保证它永远不会比闪光的颜色更暗."
+    },
+    "_GlitterColor": {
+      "label": "颜色",
+      "tooltip": "火花的颜色."
+    },
+    "_GlitterColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "缩放",
+      "tooltip": "控制闪烁噪声模式的大小。 更高的值意味着较小的闪光."
+    },
+    "_GlitterSparsity": {
+      "label": "比例",
+      "tooltip": "控制有多少闪光出现。 更高的价值意味着更少,更稀少的火花."
+    },
+    "_GlitterSpaceMode": {
+      "label": "坐标空间",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "使用滚动动画",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "闪烁速度",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "启用环光线",
+      "tooltip": "基于视图角度在对象边缘上添加一个光亮."
+    },
+    "_RimColor": {
+      "label": "环形颜色",
+      "tooltip": "边缘的颜色 Fresnel 光线."
+    },
+    "_RimColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "使用渐变",
+      "tooltip": "使用梯度纹理来染色轮廓发光而不是扎实的颜色."
+    },
+    "_RimGradient": {
+      "label": "环渐变",
+      "tooltip": "轮廓发光的彩色斜坡. 梯度从中央(左)到边缘(右)均映射."
+    },
+    "_RimPower": {
+      "label": "环形电源",
+      "tooltip": "轮回的锋利."
+    },
+    "_RimIntensity": {
+      "label": "环绕强度",
+      "tooltip": "光亮倍增的光线."
+    },
+    "_AL_RimBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "启用交互效应",
+      "tooltip": "异形为物体靠近或与场景中的其他物体相交的颜色."
+    },
+    "_IntersectionMode": {
+      "label": "交叉模式",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "颜色",
+      "tooltip": "交汇效应的颜色."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "距离",
+      "tooltip": "衰变发生的距离 ."
+    },
+    "_UsePulse": {
+      "label": "启用脉冲",
+      "tooltip": "将脉冲动动画加入排放强度."
+    },
+    "_PulseSpeed": {
+      "label": "速度",
+      "tooltip": "如何是排放脉搏之快."
+    },
+    "_PulseIntensity": {
+      "label": "强度",
+      "tooltip": "脉多阳明."
+    },
+    "_AL_PulseBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "启用大纲",
+      "tooltip": "围绕对象添加一个坚实的轮廓。 这为对象增加了第二个绘图调用 ."
+    },
+    "_OutlineColor": {
+      "label": "大纲颜色",
+      "tooltip": "网状轮廓的基色锡."
+    },
+    "_OutlineColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "外观颜色纹理",
+      "tooltip": "轮廓颜色纹理图."
+    },
+    "_OutlineWorldSpace": {
+      "label": "世界空间遗产大纲",
+      "tooltip": "世界空间遗产大纲"
+    },
+    "_OutlineSpace": {
+      "label": "大纲空间",
+      "tooltip": "外观轮廓坐标空间(局部物体空间,屏幕空间,相机距离独立)."
+    },
+    "_OutlineWidth": {
+      "label": "大纲宽度",
+      "tooltip": "颠倒壳轮廓粗细."
+    },
+    "_AL_OutlineBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "宽度使用 Vertex 颜色",
+      "tooltip": "用模型的顶点颜色(红色通道)来修改大纲宽度."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "使用大纲宽度映射",
+      "tooltip": "用灰度纹理来调制每像素的轮廓厚度."
+    },
+    "_OutlineWidthMap": {
+      "label": "外观宽度图",
+      "tooltip": "轮廓宽度的灰度罩(白色=满,黑色=零)."
+    },
+    "_UseRippleEffect": {
+      "label": "启用波纹效果",
+      "tooltip": "创建由紫外线坐标产生的同心连环效应."
+    },
+    "_RippleCenterUV": {
+      "label": "中心(紫外线)",
+      "tooltip": "紫外空间的波纹中心(X,Y)."
+    },
+    "_RippleProgress": {
+      "label": "进展",
+      "tooltip": "控制相位的波纹动画的人工进度."
+    },
+    "_RippleCount": {
+      "label": "撕裂计数",
+      "tooltip": "1个紫外线的同心连环数."
+    },
+    "_RippleMaxRadius": {
+      "label": "淡出半径",
+      "tooltip": "与波纹的中央的距离完全淡出."
+    },
+    "_RippleWidth": {
+      "label": "宽度",
+      "tooltip": "每个波纹环的宽度."
+    },
+    "_RippleColor": {
+      "label": "颜色",
+      "tooltip": "Rip纹之色."
+    },
+    "_RippleColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "扭曲强度",
+      "tooltip": "有多少波纹使模型的顶点随正常情况而改变."
+    },
+    "_RippleStrength": {
+      "label": "强度",
+      "tooltip": "Rip带之亮."
+    },
+    "_AnimateRipple": {
+      "label": "动画曲",
+      "tooltip": "自动动画波纹动画."
+    },
+    "_RippleAnimSpeed": {
+      "label": "速度",
+      "tooltip": "动画的速度."
+    },
+    "_RippleAnimMode": {
+      "label": "使用乒乓球",
+      "tooltip": "如果启用, 动画会向前播放, 然后向后播放 ."
+    },
+    "_AL_RippleBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "启用基色移",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "动画模式",
+      "tooltip": "设置彩色动画的全球方法."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "启用全局自动颜色移动",
+      "tooltip": "启用时, 自动动画变色滑动器( > 0) 。 禁用时,色移滑动器会接受静态或动画值."
+    },
+    "_AnimatedGradient": {
+      "label": "动画渐变",
+      "tooltip": "梯度纹理,所有动画颜色都将从中采样."
+    },
+    "_GradientAnimPingPong": {
+      "label": "乒乓动画",
+      "tooltip": "动画前后向梯度而不是循环."
+    },
+    "_GradientAnimVertical": {
+      "label": "使用垂直滚动",
+      "tooltip": "从上到下滚动梯度,而不是从左到右."
+    },
+    "_ColorShiftSpeed": {
+      "label": "动画速度",
+      "tooltip": "控制所有动画颜色的速度。 对Hue Shift来说,这是一个旋转速度。 对于渐变,这是一个滚动速度."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "饱和度",
+      "tooltip": "将最终颜色向灰度(0=全色,1=灰度)混合."
+    },
+    "_UseInvert": {
+      "label": "反向颜色",
+      "tooltip": "倒置阴影的最后颜色."
+    },
+    "_ColorTint": {
+      "label": "最终颜色",
+      "tooltip": "将颜色乘以最终结果, 用于加锡或分级 ."
+    },
+    "_ColorTint_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "亮度",
+      "tooltip": "调整最终颜色的总体亮度."
+    },
+    "_Contrast": {
+      "label": "对比度",
+      "tooltip": "调整最终颜色的总体对比度."
+    },
+    "_Gamma": {
+      "label": "伽玛",
+      "tooltip": "将伽马校正应用到最终颜色."
+    },
+    "_UsePixelation": {
+      "label": "启用像素",
+      "tooltip": "创建块状低分辨率效果."
+    },
+    "_PixelationAmount": {
+      "label": "象素数量",
+      "tooltip": "整个纹理的“ 像素” 数( 更高的像素较少) ."
+    },
+    "_UsePosterize": {
+      "label": "启用张贴",
+      "tooltip": "减少颜色数量,提供复古/数字外观."
+    },
+    "_PosterizeLevels": {
+      "label": "职等",
+      "tooltip": "每个通道的颜色阶次数 ."
+    },
+    "_UseDistanceFade": {
+      "label": "启用距离淡出",
+      "tooltip": "当物体远离摄像头时."
+    },
+    "_FadeDistance": {
+      "label": "开始距离",
+      "tooltip": "离相机的距离 渐渐消失."
+    },
+    "_FadeRange": {
+      "label": "范围",
+      "tooltip": "物体在距离上消失的速度有多快."
+    },
+    "_UseDepthFade": {
+      "label": "启用深度淡出( 软粒子)",
+      "tooltip": "软化多边形与场景几何相交,用于透明与添加剂表面."
+    },
+    "_DepthFadeDistance": {
+      "label": "缩小距离",
+      "tooltip": "相交不透明表面时,几何的距离会消失."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "启用效果距离淡出",
+      "tooltip": "花序重程序效应(Glitter,Fractals,Grid,Physedelic)超出设定距离以提高VR性能."
+    },
+    "_EffectFadeStart": {
+      "label": "淡出开始距离",
+      "tooltip": "距离以米计,影响开始消失."
+    },
+    "_EffectFadeEnd": {
+      "label": "结束距离",
+      "tooltip": "完全禁用效果的米数距离 ."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "启用 Vertex 折叠",
+      "tooltip": "把模型磨成中心点."
+    },
+    "_CollapseEnableAnim": {
+      "label": "折叠启用( Anim)",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "数额",
+      "tooltip": "坍塌效应的进展(0=正常,1=缩合)."
+    },
+    "_AnimateCollapse": {
+      "label": "动画折叠",
+      "tooltip": "随时间推移自动动画崩溃量 ."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "使用高级时间",
+      "tooltip": "使用自定义的崩溃动画时间来代替简单的循环/平拍."
+    },
+    "_CollapseOnDuration": {
+      "label": "折叠持续时间",
+      "tooltip": "模型需要多长时间才能崩溃."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "折叠持续时间",
+      "tooltip": "该模型仍然完全崩溃的时间."
+    },
+    "_CollapseOffDuration": {
+      "label": "扩展持续时间",
+      "tooltip": "模型需要时间才能恢复正常."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "正常持续时间",
+      "tooltip": "该模型在循环前保持正常状态的时间."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "速度",
+      "tooltip": "动画的速度."
+    },
+    "_CollapseAnimMin": {
+      "label": "动画min",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "动画 Max",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "使用乒乓球",
+      "tooltip": "如果启用, 动画会向前播放, 然后向后播放 。 如果禁用, 它会循环 ."
+    },
+    "_AL_CollapseBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "启用滑动闪烁器",
+      "tooltip": "对整个物体应用闪烁效果."
+    },
+    "_FlickerMode": {
+      "label": "闪烁模式",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "速度",
+      "tooltip": "闪烁的速度."
+    },
+    "_FlickerIntensity": {
+      "label": "强度",
+      "tooltip": "闪烁器的强度(它有多暗)."
+    },
+    "_AL_FlickerBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "反转滚动",
+      "tooltip": "反转闪烁扫描线的滚动方向."
+    },
+    "_FlickerBlockSize": {
+      "label": "块大小",
+      "tooltip": "滑块大小."
+    },
+    "_FlickerDirection": {
+      "label": "方向",
+      "tooltip": "闪烁扫描线的方向."
+    },
+    "_FlickerDensity": {
+      "label": "密度",
+      "tooltip": "故障扫描线的数量."
+    },
+    "_FlickerLineThickness": {
+      "label": "厚度",
+      "tooltip": "光滑扫描线的厚度."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "启用透明滑块",
+      "tooltip": "造成闪烁效应也影响透明度."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "强度",
+      "tooltip": "闪光灯对透明度的影响有多大."
+    },
+    "_UseScanlines": {
+      "label": "启用扫描线",
+      "tooltip": "模拟 CRT 显示器的外观 ."
+    },
+    "_ScanlineColor": {
+      "label": "颜色",
+      "tooltip": "扫描线的颜色和透明度."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "密度",
+      "tooltip": "屏幕上出现多少条扫描线."
+    },
+    "_ScanlineSpeed": {
+      "label": "速度",
+      "tooltip": "扫描线的卷轴有多快."
+    },
+    "_ScanlineThickness": {
+      "label": "厚度",
+      "tooltip": "扫描线的厚度."
+    },
+    "_ScanlineDirection": {
+      "label": "方向",
+      "tooltip": "扫描线的方向(0=Vertical,1=Horizontal)."
+    },
+    "_AL_ScanlineBand": {
+      "label": "音频链接带",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "音频链接强度",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "启用音频光谱",
+      "tooltip": "渲染由AudioLink驱动的实时频谱可视化."
+    },
+    "_AudioSpectrumMode": {
+      "label": "光谱模式",
+      "tooltip": "光谱的可视化风格."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "栏数",
+      "tooltip": "频条数."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "栏杆缺口",
+      "tooltip": "栏间间距(0=无间距)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "增益",
+      "tooltip": "放大音频信号."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "边缘厚度",
+      "tooltip": "边缘柔软的光圈."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "填充阿尔法",
+      "tooltip": "曲线下填充区域不透明."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "对数缩放",
+      "tooltip": "使用对数频率缩放来进行更多的自然低音/三调平衡."
+    },
+    "_AudioSpectrumColor": {
+      "label": "颜色",
+      "tooltip": "主色(或梯度的低频色)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "高发色",
+      "tooltip": "梯度模式的高频颜色."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "颜色模式",
+      "tooltip": "如何是谱色."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "调色速",
+      "tooltip": "呼号转向/彩虹动画速度."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "投影空间",
+      "tooltip": "可视化器的坐标空间."
+    },
+    "_AudioSpectrumScale": {
+      "label": "缩放",
+      "tooltip": "缩放可视化器 ."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "折换",
+      "tooltip": "页:1."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "旋转",
+      "tooltip": "旋转度."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "混合模式",
+      "tooltip": "光谱如何与表面混合."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "镜像",
+      "tooltip": "横向镜像光谱."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "内半径",
+      "tooltip": "射线显示的内半径."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "边缘软度",
+      "tooltip": "空间边缘反变异和边框软度的条或曲线."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "强度",
+      "tooltip": "整体亮度乘数."
+    },
+    "_AudioSmoothingMode": {
+      "label": "音频平滑模式",
+      "tooltip": "频谱/波形的调温平滑方法:Raw(无),Frame Blend(2-frame EMA),或Temperal Buffer(CRT历史)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "光谱时间平滑",
+      "tooltip": "对光谱应用的时间平滑强度(Frame Blend / Tempolar 缓冲模式)."
+    },
+    "_UseAudioWaveform": {
+      "label": "启用音频波形",
+      "tooltip": "由AudioLink驱动的实时波形/示波镜可视化."
+    },
+    "_AudioWaveformMode": {
+      "label": "波形模式",
+      "tooltip": "波形的可视化风格."
+    },
+    "_AudioWaveformChannel": {
+      "label": "频道",
+      "tooltip": "哪个音频频道可视化 ."
+    },
+    "_AudioWaveformCycles": {
+      "label": "循环",
+      "tooltip": "可见波形周期数."
+    },
+    "_AudioWaveformGain": {
+      "label": "增益",
+      "tooltip": "放大音频信号."
+    },
+    "_AudioWaveformThickness": {
+      "label": "行宽",
+      "tooltip": "微细线的厚度."
+    },
+    "_AudioWaveformGlow": {
+      "label": "光线",
+      "tooltip": "强烈的霓虹灯花开."
+    },
+    "_AudioWaveformColor": {
+      "label": "颜色",
+      "tooltip": "主波形颜色."
+    },
+    "_AudioWaveformColor2": {
+      "label": "颜色 2",
+      "tooltip": "次要颜色(速度突出或发光)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "颜色模式",
+      "tooltip": "如何是波涛形色."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "调色速",
+      "tooltip": "呼号转向/彩虹动画速度."
+    },
+    "_AudioWaveformSpace": {
+      "label": "投影空间",
+      "tooltip": "可视化器的坐标空间."
+    },
+    "_AudioWaveformScale": {
+      "label": "缩放",
+      "tooltip": "缩放可视化器 ."
+    },
+    "_AudioWaveformOffset": {
+      "label": "折换",
+      "tooltip": "页:1."
+    },
+    "_AudioWaveformRotation": {
+      "label": "旋转",
+      "tooltip": "旋转度."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "混合模式",
+      "tooltip": "波形如何与表面融合."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "极半径",
+      "tooltip": "极地环基半径."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "流离失所强度",
+      "tooltip": "顶点沿常态迁移的力量."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "边缘软度",
+      "tooltip": "空间边缘抗异形和中风柔软."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "强度",
+      "tooltip": "整体亮度乘数."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "波形时态平滑",
+      "tooltip": "时间平滑的强度应用到波形上(临时缓冲模式)."
+    },
+    "_FRSmoothedAudio": {
+      "label": "平滑音频 CRT",
+      "tooltip": "自定义 Render 纹理( FireRat AudioSmoothingCRT 资产) , 持有时间性散乱的音频 。 需要临时缓冲模式 ."
+    },
+    "_UseInterlace": {
+      "label": "启用连接",
+      "tooltip": "使其他屏幕行都变暗,以模拟插合显示."
+    },
+    "_InterlaceIntensity": {
+      "label": "强度",
+      "tooltip": "插线多暗."
+    },
+    "_UseClippingMask": {
+      "label": "启用剪贴面具",
+      "tooltip": "使用纹理来剪辑材料(使部件看不见). 这是一个硬片段,而不是软透明度."
+    },
+    "_ClippingMask": {
+      "label": "擦拭面具",
+      "tooltip": "用于剪切的纹理. 选定频道决定能见度(黑色=剪辑)."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "遮罩滚动速度 X",
+      "tooltip": "横向滚动口罩纹理."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "遮罩滚动速度 Y",
+      "tooltip": "垂直滚动面具纹理."
+    },
+    "_ClippingMaskChannel": {
+      "label": "遮罩通道",
+      "tooltip": "用于剪切的面具的哪个颜色通道 ."
+    },
+    "_InvertClippingMask": {
+      "label": "反向遮罩",
+      "tooltip": "反转口罩效果( 白色 = 剪辑) ."
+    },
+    "_UseNoise": {
+      "label": "启用噪声/ 频率",
+      "tooltip": "添加动画噪声覆盖."
+    },
+    "_NoiseIntensity": {
+      "label": "强度",
+      "tooltip": "噪音效应的强度."
+    },
+    "_NoiseColor": {
+      "label": "颜色",
+      "tooltip": "噪声粒子的颜色."
+    },
+    "_NoiseColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "动画速度",
+      "tooltip": "噪音动画的\"帧每秒\"."
+    },
+    "_Cull": {
+      "label": "弯曲",
+      "tooltip": "多边形凸起模式(Off, Front, Back)."
+    },
+    "_CullShadow": {
+      "label": "阴影库模式",
+      "tooltip": "专用于阴影铸造传球的多边形凸轮模式."
+    },
+    "_ZTest": {
+      "label": "Z 测试",
+      "tooltip": "控制如何进行深度测试."
+    },
+    "_ColorWriteMask": {
+      "label": "颜色写面罩",
+      "tooltip": "控制哪些颜色通道被写入屏幕."
+    },
+    "_QueueOffset": {
+      "label": "队列偏移",
+      "tooltip": "与选定的渲染模式相对的向导队列."
+    },
+    "_SrcBlend": {
+      "label": "Src 组合模式",
+      "tooltip": "来源混合模式用于透明混合."
+    },
+    "_DstBlend": {
+      "label": "Dst 组合模式",
+      "tooltip": "目标混合模式用于透明混合."
+    },
+    "_Stencil": {
+      "label": "Stencil 参考文献",
+      "tooltip": "Stencil 参考值 ."
+    },
+    "_StencilReadMask": {
+      "label": "读取面罩",
+      "tooltip": "斯坦西尔读面具."
+    },
+    "_StencilWriteMask": {
+      "label": "写入遮罩",
+      "tooltip": "斯坦西尔写面具."
+    },
+    "_StencilComp": {
+      "label": "比较",
+      "tooltip": "Stencil 比较函数."
+    },
+    "_StencilPass": {
+      "label": "过",
+      "tooltip": "斯坦西尔通过操作."
+    },
+    "_StencilFail": {
+      "label": "失败",
+      "tooltip": "Stencil故障操作."
+    },
+    "_StencilZFail": {
+      "label": "Z 失败",
+      "tooltip": "Stencil zfail 操作 ."
+    },
+    "_NormalMapUVSet": {
+      "label": "普通紫外线集",
+      "tooltip": "为普通地图选择坐标信道(UV0或UV1)."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "详细普通紫外线集",
+      "tooltip": "为细节普通地图选择坐标通道(UV0或UV1)."
+    },
+    "_DetailTexUVSet": {
+      "label": "详细紫外线集",
+      "tooltip": "为细节纹理选择坐标通道(UV0或UV1)."
+    },
+    "_DecalTexUVSet": {
+      "label": "解密紫外线集",
+      "tooltip": "为标记选择坐标通道(UV0或UV1)."
+    },
+    "_DissolveMapUVSet": {
+      "label": "溶解紫外线集",
+      "tooltip": "为溶解地图选择坐标通道(UV0或UV1)."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "排放罩紫外线装置",
+      "tooltip": "为排放罩选择坐标通道(UV0或UV1)."
+    },
+    "_OutlineTex": {
+      "label": "外观纹理",
+      "tooltip": "纹理映射到轮廓几何."
+    },
+    "_OutlineTexUVSet": {
+      "label": "大纲 Tex 紫外线集",
+      "tooltip": "轮廓纹理的紫外通道."
+    },
+    "_OutlineTexScrollX": {
+      "label": "大纲滚动 X",
+      "tooltip": "为大纲纹理滚动速度 X ."
+    },
+    "_OutlineTexScrollY": {
+      "label": "大纲卷 Y",
+      "tooltip": "为大纲纹理滚动速度 Y ."
+    },
+    "_UseOutlineGradient": {
+      "label": "启用大纲渐变",
+      "tooltip": "在整个大纲中采用垂直的上/下梯度."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "顶色",
+      "tooltip": "轮廓梯度的顶色 ."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "底部颜色",
+      "tooltip": "大纲梯度的底色 ."
+    },
+    "_RimMode": {
+      "label": "环形模式",
+      "tooltip": "外缘(向边缘闪烁)或内缘(向面向中心闪烁)."
+    },
+    "_RimDepthMode": {
+      "label": "环绕深度模式",
+      "tooltip": "使用场景深度差异而不是取景角度来进行环形照明."
+    },
+    "_RimDepthWidth": {
+      "label": "环绕深度宽度",
+      "tooltip": "深度轮廓的距离宽度 ."
+    },
+    "_GridTilingX": {
+      "label": "网格倾斜 X",
+      "tooltip": "程序网格线的横向跳动."
+    },
+    "_GridTilingY": {
+      "label": "网格倾斜 Y",
+      "tooltip": "用于程序网格线的垂直跳动."
+    },
+    "_DecalRotation": {
+      "label": "旋转",
+      "tooltip": "标记的旋转角(0-360度)."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "启用解密 2",
+      "tooltip": "重叠一个二级标记/粘贴纹理."
+    },
+    "_Decal2Tex": {
+      "label": "解析 2 纹理",
+      "tooltip": "第二解脱纹身."
+    },
+    "_Decal2BlendMode": {
+      "label": "混合模式",
+      "tooltip": "德甲2如何与基色融合."
+    },
+    "_Decal2Strength": {
+      "label": "强度",
+      "tooltip": "总体不透明度/强度为二级."
+    },
+    "_Decal2Normal": {
+      "label": "普通地图",
+      "tooltip": "DDecal 2 的普通地图."
+    },
+    "_Decal2NormalStrength": {
+      "label": "正常强度",
+      "tooltip": "DDecal 2普通地图的强项."
+    },
+    "_Decal2Metallic": {
+      "label": "金属",
+      "tooltip": "DDecal 2 区域的金属值."
+    },
+    "_Decal2Smoothness": {
+      "label": "平滑度",
+      "tooltip": "Decal 2 区域的平滑度值 ."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "PBR 影响",
+      "tooltip": "允许通过标记修改普通、金属和滑动."
+    },
+    "_Decal2TexUVSet": {
+      "label": "解密 2 紫外线集",
+      "tooltip": "为Decal 2选择坐标信道(UV0或UV1)."
+    },
+    "_Decal2Rotation": {
+      "label": "旋转",
+      "tooltip": "Decal 2. 旋转角(0-360度)."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "启用解码 3",
+      "tooltip": "覆盖第三层装饰/粘贴纹理."
+    },
+    "_Decal3Tex": {
+      "label": "解析 3 纹理",
+      "tooltip": "第三解脱纹理."
+    },
+    "_Decal3BlendMode": {
+      "label": "混合模式",
+      "tooltip": "德甲3如何与底色融合."
+    },
+    "_Decal3Strength": {
+      "label": "强度",
+      "tooltip": "总体不透明度/德甲3的强度."
+    },
+    "_Decal3Normal": {
+      "label": "普通地图",
+      "tooltip": "德甲3的普通地图."
+    },
+    "_Decal3NormalStrength": {
+      "label": "正常强度",
+      "tooltip": "DDecal 3普通地图的优势."
+    },
+    "_Decal3Metallic": {
+      "label": "金属",
+      "tooltip": "DDecal 3 区域的金属值."
+    },
+    "_Decal3Smoothness": {
+      "label": "平滑度",
+      "tooltip": "DDecal 3 区域的平滑度值 ."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "PBR 影响",
+      "tooltip": "允许通过标记修改普通、金属和滑动."
+    },
+    "_Decal3TexUVSet": {
+      "label": "解密 3 紫外线集",
+      "tooltip": "为Decal 3选择坐标信道(UV0或UV1)."
+    },
+    "_Decal3Rotation": {
+      "label": "旋转",
+      "tooltip": "Decal 3. 旋转角度(0-360度)."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "彩虹紫外线集",
+      "tooltip": "雨波波的紫外通道(UV0 vs UV1)."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "音频链接闪烁带",
+      "tooltip": "音频Link带,用于音频节拍上的脉冲/闪烁排放."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "闪烁强度",
+      "tooltip": "AudioLink 排放闪烁效应的强度 ."
+    },
+    "_UseBackFaceColor": {
+      "label": "启用背面颜色",
+      "tooltip": "对反向多边形应用单独的颜色."
+    },
+    "_BackFaceColor": {
+      "label": "背面颜色",
+      "tooltip": "背面的颜色."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "使用背面纹理",
+      "tooltip": "对反向多边形应用单独的纹理."
+    },
+    "_BackFaceTex": {
+      "label": "背面纹理",
+      "tooltip": "背面的纹理."
+    },
+    "_BackFaceEmission": {
+      "label": "后脸排放",
+      "tooltip": "背面的排放纹理."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "排放强度",
+      "tooltip": "背面排放的强度."
+    },
+    "_HueShift": {
+      "label": "调色调",
+      "tooltip": "绕着彩色轮旋转."
+    },
+    "_SaturationAdjust": {
+      "label": "饱和度",
+      "tooltip": "乘色饱和度(0=Grayscale,1=default,2=Vibrant)."
+    },
+    "_ValueAdjust": {
+      "label": "数值( 亮度)",
+      "tooltip": "缩放 HSV 值/ 亮度 ."
+    },
+    "_UseHSVMask": {
+      "label": "启用 HSV 遮盖",
+      "tooltip": "使用纹理图进行遮罩HSV调整."
+    },
+    "_HSVMask": {
+      "label": "HSV 遮罩( R)",
+      "tooltip": "Hue/饱和/Value shift的遮罩纹理(White=Full Shift,黑=原件)."
+    },
+    "_NormalMapFlipY": {
+      "label": "翻转 Y( DirectX / OpenGL)",
+      "tooltip": "为 DirectX/OpenGL 格式兼容性反转普通地图的绿色通道."
+    },
+    "_DetailBlendMode": {
+      "label": "混合模式",
+      "tooltip": "细节纹理的混合模式(重叠,乘法,Additive,SoftLight)."
+    },
+    "_VertexColorMode": {
+      "label": "Vertex 颜色模式",
+      "tooltip": "选择顶点颜色如何与基准颜色混合(替换、乘法、添加)."
+    },
+    "_GlitterShape": {
+      "label": "闪烁形状",
+      "tooltip": "控制闪光闪烁的几何形状."
+    },
+    "_MatCapMask": {
+      "label": "马特卡普面具( R)",
+      "tooltip": "面具纹理(R)控制 MatCap 可见度."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "MatCap 遮罩紫外线集",
+      "tooltip": "为 MatCap 掩码选择坐标通道(UV0或UV1)."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "使用边沿曲线梯度",
+      "tooltip": "启用沿溶解边缘轮廓的多颜色梯度."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "溶解边缘梯度",
+      "tooltip": "沿溶解边缘轮廓应用渐变纹理."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "遮罩滚动速度 X",
+      "tooltip": "滚动速度 X 用于排放罩."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "遮罩滚动速度 Y",
+      "tooltip": "为排放面具滚动速度 Y."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "全球平滑",
+      "tooltip": "全球反应平滑跨越AudioLink频段."
+    },
+    "_AL_GlobalMin": {
+      "label": "全球楼层/米",
+      "tooltip": "AudioLink反应的噪音地板阈值."
+    },
+    "_AL_GlobalMax": {
+      "label": "全球上限/ 最大值",
+      "tooltip": "最高阈值缩放峰值 AudioLink 振幅 ."
+    },
+    "_DetailNormalScrollX": {
+      "label": "滚动速度 X",
+      "tooltip": "滚动速度 X 用于细节正常."
+    },
+    "_DetailNormalScrollY": {
+      "label": "滚动速度 Y",
+      "tooltip": "卷轴速度 Y 为细节正常."
+    },
+    "_ColorMask": {
+      "label": "颜色遮盖纹理",
+      "tooltip": "纹理用来掩盖和限制色彩动画."
+    },
+    "_ColorMaskUVSet": {
+      "label": "彩色遮罩紫外线集",
+      "tooltip": "选择颜色遮罩的坐标通道(UV0或UV1)."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "彩色面具阿尔法源",
+      "tooltip": "用于Alpha混合颜色面具的源通道."
+    },
+    "_MainTexUVSet": {
+      "label": "主纹理紫外线集",
+      "tooltip": "为主纹理选择坐标通道(UV0或UV1)."
+    },
+    "_Shadow2Color": {
+      "label": "第二阴影颜色",
+      "tooltip": "2°C的深阴影颜色."
+    },
+    "_ToonThreshold2": {
+      "label": "第二吨阈值",
+      "tooltip": "第二深荫层的阈值边界."
+    },
+    "_ToonHardness2": {
+      "label": "第二卡通困难",
+      "tooltip": "二层深荫线的边缘锋利度."
+    },
+    "_MinLightBrightness": {
+      "label": "闪光亮度",
+      "tooltip": "最低限度的亮度地板 防止阿凡达人变成黑色."
+    },
+    "_MaxLightBrightness": {
+      "label": "最大光亮度",
+      "tooltip": "最大亮度天花板防止在亮度世界中发生过度曝光."
+    },
+    "_ShadeShiftMap": {
+      "label": "阴影移动映射",
+      "tooltip": "纹理偏差的环阴影线(固定折叠 / AO)."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "阴影移动紫外线集",
+      "tooltip": "为 Shade Shift 映射选择坐标通道(UV0或UV1)."
+    },
+    "_ShadeShiftStrength": {
+      "label": "阴影移动强度",
+      "tooltip": "阴影线偏移强度来自阴影移图."
+    },
+    "_StepSpecular": {
+      "label": "步骤光谱",
+      "tooltip": "将柔软的 PBR 光谱亮点转换成脆脆的卡通亮点 ."
+    },
+    "_StepSpecularThreshold": {
+      "label": "步骤光谱阈值",
+      "tooltip": "光谱步骤的阈值边界 ."
+    },
+    "_StepSpecularHardness": {
+      "label": "步态硬度",
+      "tooltip": "边缘尖锐的光谱步骤."
+    },
+    "_UseMatCap2": {
+      "label": "启用 MatCap 2",
+      "tooltip": "为多通金属或边音添加二级 MatCap 层."
+    },
+    "_MatCap2Tex": {
+      "label": "MatCap 2 纹理",
+      "tooltip": "二级MatCap球面反射纹理."
+    },
+    "_MatCap2BlendMode": {
+      "label": "混合模式",
+      "tooltip": "MatCap 2 的混合模式(Add, multiply, 替换, Lighten, Overlay)."
+    },
+    "_MatCap2Intensity": {
+      "label": "强度",
+      "tooltip": "MatCap 2 的亮度乘数."
+    },
+    "_MatCap2Mask": {
+      "label": "马特卡普2 遮罩( R)",
+      "tooltip": "遮罩纹理(R)控制 MatCap 2 可见度."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "遮罩紫外线集",
+      "tooltip": "MatCap 2面具的紫外线频道."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "普通地图扰动",
+      "tooltip": "使用表面普通地图进行MatCap反射."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "视角校正",
+      "tooltip": "校正 VR 中的宽FOV视角扭曲."
+    },
+    "_HairSpecMask": {
+      "label": "头发外罩",
+      "tooltip": "遮罩纹理控制发斑亮点出现的地方."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "遮罩紫外线集",
+      "tooltip": "为毛发光谱罩选择坐标通道(UV0或UV1)."
+    },
+    "_OutlineNormalSource": {
+      "label": "大纲普通源",
+      "tooltip": "用于外观轮廓的Vertex流(Mesh Normals,Vertex Colors,UV2,UV3)."
+    },
+    "_OutlineMinWidth": {
+      "label": "最小宽度",
+      "tooltip": "距离的轮廓最小像素厚度 ."
+    },
+    "_OutlineMaxWidth": {
+      "label": "最大宽度",
+      "tooltip": "近距离布局的最大像素厚度 ."
+    },
+    "_OutlineNoiseScale": {
+      "label": "噪声缩放",
+      "tooltip": "动画轮廓颤抖噪音的频率."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "噪声速度",
+      "tooltip": "轮廓焦躁噪音的动画速度."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "噪音强度",
+      "tooltip": "轮廓顶点颤抖的移动强度."
+    },
+    "_UseDitheredAlpha": {
+      "label": "抖动的 Alpha",
+      "tooltip": "屏幕空间 Bayer 矩阵脱色,用于无分拣的透明织物和头发."
+    },
+    "_DitherStrength": {
+      "label": "抖动强度",
+      "tooltip": "Dither 混合强度(0 = 锐切,1 = 满分)."
+    },
+    "_ShadowCutoff": {
+      "label": "阴影截断",
+      "tooltip": "暗影铸造的Alpha截断阈值."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "使用阴影截断覆盖",
+      "tooltip": "超过阿尔法断面阈值 专门用于阴影铸造通道."
+    },
+    "_AL_DecalBand": {
+      "label": "音频链接解密 1 带",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "音频链接解密 1 强度",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "音频链接解密 2 带",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "音频链接解密 2 强度",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "音频链接解密 3 带",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "音频链接解密 3 强度",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "近相机关闭",
+      "tooltip": "相机太近时平滑溶解几何(防止VR头部剪切)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "淡出半径",
+      "tooltip": "距离几何开始消失的相机."
+    },
+    "_NearCameraFadeRange": {
+      "label": "淡出范围",
+      "tooltip": "近相机的过渡距离逐渐缩小."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "淡出阴影",
+      "tooltip": "在渐渐消失的距离内,也会剪影."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "脉冲速度",
+      "tooltip": "轮廓呼吸/脉冲的振荡速度."
+    },
+    "_OutlinePulseStrength": {
+      "label": "脉冲强度",
+      "tooltip": "用于轮廓呼吸/脉冲的振幅."
+    },
+    "_UseChromaKey": {
+      "label": "使用 Chroma 密钥",
+      "tooltip": "使特定的颜色范围透明(如绿屏密钥)."
+    },
+    "_ChromaKeyColor": {
+      "label": "密钥颜色",
+      "tooltip": "颜色到密钥退出 ."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "阈值",
+      "tooltip": "要消除密钥颜色周围的距离阈值 ."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "滑动",
+      "tooltip": "边缘过渡的柔软性."
+    },
+    "_DistanceFade_LOD": {
+      "label": "远程 LOD 启动",
+      "tooltip": "从相机开始简化LOD优化的阴影细节(0=禁用)的距离."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "Avatar 参数模式",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "使用全息图",
+      "tooltip": "具有动画扫描线,边缘环线,和闪烁的科幻全息效果."
+    },
+    "_HoloColor": {
+      "label": "全息图颜色",
+      "tooltip": "全息投影的颜色."
+    },
+    "_HoloScanlineTiling": {
+      "label": "扫描线倾斜",
+      "tooltip": "横向扫描线密度."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "扫描速度",
+      "tooltip": "移动扫描线的速度 ."
+    },
+    "_HoloRimPower": {
+      "label": "环形电源",
+      "tooltip": "全息边缘发光的坠落锋利."
+    },
+    "_HoloStrength": {
+      "label": "全息图强度",
+      "tooltip": "全息图在基部表面的混合强度."
+    },
+    "_HoloAlphaStrength": {
+      "label": "阿尔法调制",
+      "tooltip": "以扫描线模式修改透明度."
+    },
+    "_UseCustomFogColor": {
+      "label": "启用自定义雾色",
+      "tooltip": "覆盖全局场景雾色, 并带有本地化的色彩 ."
+    },
+    "_CustomFogColor": {
+      "label": "自定义雾色",
+      "tooltip": "大气雾的自定义颜色 ."
+    },
+    "_AlphaToCoverage": {
+      "label": "阿尔法到覆盖( MSAA)",
+      "tooltip": "使硬件Alpha在剪切边缘上能够覆盖(MSAA反变形),平滑叶片和毛发."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "A2C 锐化",
+      "tooltip": "将阿尔法冲到覆盖边缘."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "阴影接收强度",
+      "tooltip": "控制材料上如何出现暗的实时场景阴影(1.0=全影,0.0=无影)."
+    },
+    "_DecalClamp": {
+      "label": "剪贴底盘",
+      "tooltip": "胶片标记紫外线坐标 这样标记就不会在外部重复 [0, 1]."
+    },
+    "_Decal2Clamp": {
+      "label": "剪贴底盘",
+      "tooltip": "Clamps decal UV坐标 所以Decal 2在外不重复 [0, 1]."
+    },
+    "_Decal3Clamp": {
+      "label": "剪贴底盘",
+      "tooltip": "Clamps decal UV 坐标 所以Decal 3不重复外部 [0, 1]."
+    },
+    "_RimMask": {
+      "label": "环面",
+      "tooltip": "纹理遮罩(R),用于限制或涂抹特定网状区域边缘的光芒."
+    },
+    "_RimMaskUVSet": {
+      "label": "环面紫外线集",
+      "tooltip": "选择环面坐标通道(UV0或UV1)."
+    },
+    "_OutlineLightingMix": {
+      "label": "点燃混合",
+      "tooltip": "混合场景照明到轮廓上(0 = 未亮, 1 = 完全遮蔽着场景灯)."
+    },
+    "_OutlineZOffset": {
+      "label": "Z-Offset( 深度比亚斯)",
+      "tooltip": "应用相机-空格Z-深度偏差来防止大纲剪切相邻几何."
+    },
+    "_UseFaceSDF": {
+      "label": "启用 SDF 面部阴影",
+      "tooltip": "已签名的远程字段为动画字符面对阴影映射 ."
+    },
+    "_FaceShadowMap": {
+      "label": "面部阴影映射 (SDF)",
+      "tooltip": "SDF 面影纹理编码光阈梯度."
+    },
+    "_FaceShadowOffset": {
+      "label": "面影偏移",
+      "tooltip": "偏移前/后阴影阈值角度."
+    },
+    "_FaceShadowBlur": {
+      "label": "面影柔软",
+      "tooltip": "软化SDF阴影边缘边界."
+    },
+    "_FaceShadowInvert": {
+      "label": "反面阴影",
+      "tooltip": "反转 SDF 阴影梯度 ."
+    },
+    "_CameraVisibilityMode": {
+      "label": "可见模式",
+      "tooltip": "在镜像,VR耳机,以及桌面流/相机中控制能见度."
+    },
+    "_MirrorDetectMode": {
+      "label": "镜像检测方法",
+      "tooltip": "用于检测镜像/反光相机的算法."
+    },
+    "_CustomCameraFilter": {
+      "label": "自定义相机标识",
+      "tooltip": "通过自定义全局相机ID进行过滤(0=禁用)."
+    },
+    "_OffsetFactor": {
+      "label": "多边形偏移因数",
+      "tooltip": "多边形深度抵消因子(预防z战)."
+    },
+    "_OffsetUnits": {
+      "label": "多边形偏移单位",
+      "tooltip": "多边形深度抵消单位(预防z战)."
+    },
+    "_UseEnvRim": {
+      "label": "环环环境",
+      "tooltip": "利用环境SH和反射探测器来调制圆环发光."
+    },
+    "_EnvRimMix": {
+      "label": "环境混合",
+      "tooltip": "纯边色(0)和环境调制的边色(1)之间的混合."
+    },
+    "_MonochromeLighting": {
+      "label": "单色照明",
+      "tooltip": "绝食场景照明颜色以保存准确的人物皮肤色素."
+    },
+    "_AsUnlitLighting": {
+      "label": "取消灯光",
+      "tooltip": "混合灯光在黑暗环境中朝向统一的未亮地板."
+    },
+    "_UseVRCLV": {
+      "label": "VRC 轻音量",
+      "tooltip": "被支持世界中用于每像素环境照明的VRC光量样本(REDSIM). 回到其他地方的标准光探测器。 在中度/低效水平下被迫停用."
+    },
+    "_VRCLVIntensity": {
+      "label": "LV 强度",
+      "tooltip": "缩放光量环境贡献."
+    },
+    "_VRCLVNormalBias": {
+      "label": "LV 普通比亚斯",
+      "tooltip": "沿表层正常位置对体积样本进行偏移,以减少薄几何上的阴性阴性."
+    },
+    "_UseFluorescence": {
+      "label": "启用荧光",
+      "tooltip": "环境/方向光强度反应(暗处发光)."
+    },
+    "_FluorescenceMap": {
+      "label": "荧光图",
+      "tooltip": "荧光图 (RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "荧光映射紫外线集",
+      "tooltip": "为荧光映射选择坐标通道(UV0或UV1)."
+    },
+    "_FluorescenceColor": {
+      "label": "颜色",
+      "tooltip": "荧光HDR 彩色丁丁"
+    },
+    "_FluorescenceStrength": {
+      "label": "强度",
+      "tooltip": "氟化物排放强度"
+    },
+    "_FluorescenceThreshold": {
+      "label": "光阈值",
+      "tooltip": "轻度阈值触发荧光发光."
+    },
+    "_FluorescenceHardness": {
+      "label": "硬度",
+      "tooltip": "黑暗状态和光线状态之间的过渡锐度."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "只在黑暗中拖动",
+      "tooltip": "启用时,只在低光度环境中发光(glow-in-the-dark)."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "启用 PS1 虚拟抓取",
+      "tooltip": "将顶点位置量化为低分辨率网格,用于回转PS1/afine jitter美学."
+    },
+    "_PS1SnapResolution": {
+      "label": "同步分辨率",
+      "tooltip": "网格分辨率/顶点断裂精度(如240p)."
+    },
+    "_PS1SnapSpace": {
+      "label": "同步空间",
+      "tooltip": "坐标空间用于断裂(Screen-space jitter vs Object-space vertex quantize)."
+    },
+    "_UseLookAt": {
+      "label": "启用挂牌查看",
+      "tooltip": "旋转网状顶点以动态面对活动相机."
+    },
+    "_LookAtMode": {
+      "label": "广告牌模式",
+      "tooltip": "Billboarding方向轴(Full 3D球形 Billboard vs Y-Axis 圆柱形 Billboard)."
+    },
+    "_LookAtStrength": {
+      "label": "强度",
+      "tooltip": "介于原始网格定向和公告牌定向之间的混合强度."
+    },
+    "_UseUVFlow": {
+      "label": "启用紫外线流动",
+      "tooltip": "利用无缝的二相循环,沿矢量流图路径进行动画纹理."
+    },
+    "_FlowMap": {
+      "label": "流程图( RG 矢量)",
+      "tooltip": "流程图(RG方向向量,0.5=中性)"
+    },
+    "_FlowMapUVSet": {
+      "label": "流图紫外线集",
+      "tooltip": "为流图选择坐标通道(UV0或UV1)."
+    },
+    "_FlowSpeed": {
+      "label": "流量速度",
+      "tooltip": "流动动动画速度."
+    },
+    "_FlowStrength": {
+      "label": "流量强度",
+      "tooltip": "紫外线沿流矢量扭曲迁移的幅度很大."
+    },
+    "_FlowCycleRate": {
+      "label": "周期率",
+      "tooltip": "双相交叉裂变周期的频率."
+    },
+    "_UseRGBAColorMask": {
+      "label": "启用 RGBA 彩色遮盖",
+      "tooltip": "允许 4 个独立的彩色衬衫和发射通道映射到 面具纹理的 RGBA 通道 ."
+    },
+    "_RGBAColorMask": {
+      "label": "彩色面罩( RGBA)",
+      "tooltip": "彩色遮罩( RGBA 通道隔离 4 个可换色区域)"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "紫外线集",
+      "tooltip": "为 RGBA 颜色罩选择坐标信道(UV0或UV1)."
+    },
+    "_ColorMaskR_Color": {
+      "label": "红丁",
+      "tooltip": "叮当R频道口罩."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "红色排放(HDR)",
+      "tooltip": "R频道口罩排放."
+    },
+    "_ColorMaskG_Color": {
+      "label": "绿丁",
+      "tooltip": "叮当G频道口罩."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "绿色排放(HDR)",
+      "tooltip": "G频道口罩排放."
+    },
+    "_ColorMaskB_Color": {
+      "label": "蓝天",
+      "tooltip": "丁为B频道口罩."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "蓝色排放(HDR)",
+      "tooltip": "B频道口罩排放."
+    },
+    "_ColorMaskA_Color": {
+      "label": "阿尔法叮当",
+      "tooltip": "一个频道面具的衬衫."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "阿尔法排放(HDR)",
+      "tooltip": "A频道口罩排放."
+    },
+    "_UseNetworkTime": {
+      "label": "启用网络同步时间",
+      "tooltip": "通过AudioLink/Udon时间钟(在VRChat中防止动画漂移),同步跨网络客户端的阴影连续动画时间."
+    },
+    "_NetworkTimeScale": {
+      "label": "网络时间缩放",
+      "tooltip": "适用于网络同步时间的缩放因子 ."
+    },
+    "_UseStochasticSampling": {
+      "label": "启用随机抽样",
+      "tooltip": "程序上将随机化的纹理样品混合,以完全消除大表面的重复的叠加图案."
+    },
+    "_StochasticScale": {
+      "label": "缩放",
+      "tooltip": "缩放倍数,用于拼接三角纹饰分布."
+    },
+    "_UseDetailNormalFade": {
+      "label": "启用详细正常距离淡出",
+      "tooltip": "平滑淡出远处的高频细节正常,以防止VR异名/震动."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "淡出开始距离",
+      "tooltip": "相机距离 细节正常开始消失."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "结束距离",
+      "tooltip": "相机距离 细节是完全平坦的."
+    },
+    "_UseInternalParallax": {
+      "label": "启用内部参数",
+      "tooltip": "模拟玻璃下层的内深,镜片,晶体,和动ime irises."
+    },
+    "_InternalParallaxMap": {
+      "label": "内部层纹理",
+      "tooltip": "内部深度层纹理."
+    },
+    "_InternalParallaxColor": {
+      "label": "层颜色",
+      "tooltip": "内部层彩色衬衫."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "内部 Parallax 颜色移动",
+      "tooltip": "音频链接(AudioLink)或动画的色彩变换,用于内部分层的伞形效果."
+    },
+    "_InternalParallaxDepth": {
+      "label": "深度缩放",
+      "tooltip": "模拟内部深度尺度."
+    },
+    "_InternalParallaxLayers": {
+      "label": "步骤样本",
+      "tooltip": "通过内部深度的样本步骤数量."
+    },
+    "_InternalParallaxStrength": {
+      "label": "层强度",
+      "tooltip": "内部层的亮度/不透明乘数."
+    },
+    "_InternalParallaxEmission": {
+      "label": "注意脚步",
+      "tooltip": "内层的发光助推."
+    },
+    "_UseThemeColors": {
+      "label": "启用全局主题颜色",
+      "tooltip": "定义4个全局主色调,以驱动跨材料的统一主题,并带有可选的AudioLink和Hue调制."
+    },
+    "_ThemeColor1": {
+      "label": "主题颜色 1",
+      "tooltip": "主主题颜色 1 ."
+    },
+    "_ThemeColor2": {
+      "label": "主题颜色 2",
+      "tooltip": "主主题颜色 2 ."
+    },
+    "_ThemeColor3": {
+      "label": "主题颜色 3",
+      "tooltip": "主主题颜色 3 ."
+    },
+    "_ThemeColor4": {
+      "label": "主题颜色 4",
+      "tooltip": "主主题颜色 4."
+    },
+    "_ThemeMode": {
+      "label": "模式",
+      "tooltip": "选择调制模式(Direct, AudioLink Reactive, 或连续的Hue Shift)."
+    },
+    "_AL_ThemeBand": {
+      "label": "音频链接带",
+      "tooltip": "选择频带驱动主题调制."
+    },
+    "_AL_ThemeStrength": {
+      "label": "音频链接强度",
+      "tooltip": "AudioLink反应的强度乘数."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "色调移动速度",
+      "tooltip": "持续旋转的速度."
+    },
+    "_ThemeTargetMask": {
+      "label": "主题 目标面具",
+      "tooltip": "影响权重:R=Base颜色,G=外线,B=Rim,A=排放."
+    },
+    "_UseCustomCubemap": {
+      "label": "启用自定义立方体图",
+      "tooltip": "在反射探测器缺失/暗时添加本地反射或反射的自定义立方体 ."
+    },
+    "_CustomCubemap": {
+      "label": "自定义立方体图",
+      "tooltip": "自定义反射的立方体纹理 ."
+    },
+    "_CustomCubemapColor": {
+      "label": "立方体图",
+      "tooltip": "立方体反射颜色."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "粗糙",
+      "tooltip": "立方体反射的粗糙度/ 模糊度 ."
+    },
+    "_CustomCubemapMode": {
+      "label": "混合模式",
+      "tooltip": "模式(Override Probes,探测暗时倒置,或Additive)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "强度",
+      "tooltip": "反射强度乘数."
+    },
+    "_AL_DelayBass": {
+      "label": "贝斯延迟",
+      "tooltip": "Bass历史缓冲器的延迟抵消."
+    },
+    "_AL_DelayLowMid": {
+      "label": "中低延迟",
+      "tooltip": "Low Mid 历史缓冲器的延迟抵消 ."
+    },
+    "_AL_DelayHighMid": {
+      "label": "高中延时",
+      "tooltip": "High Mid 历史缓冲器的延迟抵消 ."
+    },
+    "_AL_DelayTreble": {
+      "label": "三重延迟",
+      "tooltip": "Treble 历史缓冲器的延迟抵消 ."
+    },
+    "_UseLTCGI": {
+      "label": "启用 LTCGI",
+      "tooltip": "在支持的VRChat世界中实时对LTCGI多边形区域灯光和视频屏幕的反应."
+    },
+    "_LTCGI_Intensity": {
+      "label": "强度",
+      "tooltip": "LTCGI区域照明强度乘数."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "粗略倍数",
+      "tooltip": "LTCGI 反射的粗略尺度系数."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "光敏度 Strobe 胶片",
+      "tooltip": "安全夹,限制最大斜拉/斜拉频率,以防止癫痫发作."
+    },
+    "_MaxFlashFrequency": {
+      "label": "最大闪光赫兹",
+      "tooltip": "Hz允许的最大闪烁/振荡频率."
+    },
+    "_UseFur": {
+      "label": "启用 Shell 富尔",
+      "tooltip": "挤出多层外壳沿顶点正常向外穿行,并有线条噪声遮挡."
+    },
+    "_FurLayers": {
+      "label": "贝壳层",
+      "tooltip": "挤压壳层数量(1至8). 高一层的计数产生更完整的毛皮,但花费更多的GPU几何光栅化."
+    },
+    "_FurLength": {
+      "label": "长度",
+      "tooltip": "物体/世界空间中毛线的物理长度."
+    },
+    "_FurMaskTex": {
+      "label": "Fur Strand 噪音地图",
+      "tooltip": "噪音纹理控制线条分布和密度."
+    },
+    "_FurDensity": {
+      "label": "密度",
+      "tooltip": "毛线噪声图案的倾斜密度."
+    },
+    "_FurThinning": {
+      "label": "线索",
+      "tooltip": "渐渐的细毛和细毛向外倾斜."
+    },
+    "_FurGravity": {
+      "label": "重力矢量",
+      "tooltip": "阻力矢量模拟引力将毛线拉向下."
+    },
+    "_FurWindStrength": {
+      "label": "风向强度",
+      "tooltip": "程序风振荡的强度 穿过皮毛尖."
+    },
+    "_FurWindSpeed": {
+      "label": "风速",
+      "tooltip": "程序风振荡速度."
+    },
+    "_FurRootColor": {
+      "label": "根纹",
+      "tooltip": "每个毛线的底部/根部有颜色."
+    },
+    "_FurTipColor": {
+      "label": "小叮当",
+      "tooltip": "每条毛线的外端都有颜色."
+    },
+    "_FurAO": {
+      "label": "根 AO 阴影",
+      "tooltip": "模拟皮毛根部的环境隔离阴影."
+    },
+    "_FurCutoff": {
+      "label": "断线",
+      "tooltip": "线根厚度的底α剪切阈值."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "启用释放 Bloom Clamp",
+      "tooltip": "启用释放 Bloom Clamp"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "最大排放水平",
+      "tooltip": "最大排放水平"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "软膝盖",
+      "tooltip": "软膝盖"
+    },
+    "_OutlineStencil": {
+      "label": "轮廓 Stencil ID",
+      "tooltip": "轮廓 Stencil ID"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "大纲 Stencil 读面",
+      "tooltip": "大纲 Stencil 读面"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "大纲 Stencil 写面罩",
+      "tooltip": "大纲 Stencil 写面罩"
+    },
+    "_OutlineStencilComp": {
+      "label": "大纲 Stencil 比较",
+      "tooltip": "大纲 Stencil 比较"
+    },
+    "_OutlineStencilPass": {
+      "label": "大纲 Stencil 通道 Op",
+      "tooltip": "大纲 Stencil 通道 Op"
+    },
+    "_OutlineStencilFail": {
+      "label": "大纲 Stencil 失败操作",
+      "tooltip": "大纲 Stencil 失败操作"
+    },
+    "_OutlineStencilZFail": {
+      "label": "大纲 Stencil Zfail 操作",
+      "tooltip": "大纲 Stencil Zfail 操作"
+    },
+    "_UseProximityEffect": {
+      "label": "启用近似效应",
+      "tooltip": "启用近似效应"
+    },
+    "_ProximityMode": {
+      "label": "近似模式",
+      "tooltip": "近似模式"
+    },
+    "_ProximityAction": {
+      "label": "近距离行动",
+      "tooltip": "近距离行动"
+    },
+    "_ProximityRadius": {
+      "label": "近半径",
+      "tooltip": "近半径"
+    },
+    "_ProximitySoftness": {
+      "label": "近似柔软",
+      "tooltip": "近似柔软"
+    },
+    "_ProximityInvert": {
+      "label": "反转近距离",
+      "tooltip": "反转近距离"
+    },
+    "_ProximityColor": {
+      "label": "近似颜色",
+      "tooltip": "近似颜色"
+    },
+    "_ProximityColor_Shift": {
+      "label": "近似颜色移动",
+      "tooltip": "近似颜色移动"
+    },
+    "_ProximityCustomPos": {
+      "label": "自定义世界位置",
+      "tooltip": "自定义世界位置"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "A2C 缩放",
+      "tooltip": "基于衍生物的MIP缩放在VR中稳定跨距离剪切边宽."
+    },
+    "_DetailNormalBicubic": {
+      "label": "Bicubic 正常过滤",
+      "tooltip": "启用 5- tap Catmull- Rom 双立方体采样,以便在 VR 中消除 Texel 边界文物 ."
+    },
+    "_DetailNormalCount": {
+      "label": "详细普通图层",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "详细普通 2 地图",
+      "tooltip": "第二细节普通地图层."
+    },
+    "_DetailNormal2Scale": {
+      "label": "第2层强度",
+      "tooltip": "控制细节强度的正常第2层."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "详细普通 2 紫外线集",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "第2层滚动速度 X",
+      "tooltip": "滚动速度 X 用于细节 普通层 2."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "第2层滚动速度 Y",
+      "tooltip": "细节普通层2的滚动速度 Y ."
+    },
+    "_DetailNormal3Map": {
+      "label": "详细正常 3 映射",
+      "tooltip": "第三细节普通地图层."
+    },
+    "_DetailNormal3Scale": {
+      "label": "第3层强度",
+      "tooltip": "控制细节强度的正常第3层."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "详细常规 3 UV 集",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "第3层滚动速度 X",
+      "tooltip": "滚动速度 X 用于细节普通层 3 ."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "第3层滚动速度 Y",
+      "tooltip": "细节普通层3的滚动速度 Y ."
+    },
+    "_DetailNormal4Map": {
+      "label": "详细普通 4 地图",
+      "tooltip": "第四细节普通地图层."
+    },
+    "_DetailNormal4Scale": {
+      "label": "第4层 强度",
+      "tooltip": "控制细节的强度 正常层4."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "详细正常 4 紫外线集",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "第4层 滚动速度 X",
+      "tooltip": "滚动速度 X 用于细节普通层 4 ."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "第4层 滚动速度 Y",
+      "tooltip": "细节普通层4的滚动速度 Y ."
+    },
+    "_UseOKLabBlending": {
+      "label": "OKLab 颜色组合",
+      "tooltip": "启用 Björn Ottosson 的 OKLab 彩色空间混合用于锡和主题,以消除泥质的饱和."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "MatCap 全球遮罩频道",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "环球面罩频道",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "闪烁全球遮罩通道",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "解析全球遮罩频道",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "启用 VRSL 接收",
+      "tooltip": "对支持的VRChat世界的DMX舞台固定装置、激光和体积俱乐部照明的实时反应."
+    },
+    "_VRSLIntensity": {
+      "label": "GI 强度",
+      "tooltip": "GI和环境洗涤接收强度."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "直接强度",
+      "tooltip": "直接固定光接收强度."
+    },
+    "_VRSLSpecular": {
+      "label": "光谱接收",
+      "tooltip": "光谱突出来自固定装置的反射信号."
+    },
+    "_UseDebugMode": {
+      "label": "启用调试视图",
+      "tooltip": "在景点中检查中间阴影缓冲和诊断."
+    },
+    "_DebugMode": {
+      "label": "调试模式",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "材料已锁定",
+      "tooltip": "材料已锁定"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "动画",
+      "tooltip": "随时间推移自动动画崩溃量 ."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "自定义阴影截断",
+      "tooltip": "超过阿尔法断面阈值 专门用于阴影铸造通道."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "启用高级动画控制",
+      "tooltip": "曝光主控器用于时间缩放,回放模式,以及所有阴影动画的时间抵消."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "启用异构反射",
+      "tooltip": "创建拉长的亮点,常见于刷过的金属或头发上."
+    },
+    "Enable Back Face Color": {
+      "label": "启用背面颜色",
+      "tooltip": "对反向多边形应用单独的颜色."
+    },
+    "Enable Back Face Texture": {
+      "label": "启用后面纹理",
+      "tooltip": "对反向多边形应用单独的纹理."
+    },
+    "Enable Chroma Keying": {
+      "label": "启用 Chroma 密钥",
+      "tooltip": "使特定的颜色范围透明(如绿屏密钥)."
+    },
+    "Enable Clear Coat": {
+      "label": "启用清除外套",
+      "tooltip": "在底部PBR材料上添加一个二级清晰的外衣光谱层. 可用于涂装/涂装表面."
+    },
+    "Enable Clipping Mask": {
+      "label": "启用剪贴面具",
+      "tooltip": "使用纹理来剪辑材料(使部件看不见). 这是一个硬片段,而不是软透明度."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "启用自定义立方体映射",
+      "tooltip": "在反射探测器缺失/暗时添加本地反射或反射的自定义立方体 ."
+    },
+    "Enable Custom Fog Color": {
+      "label": "启用自定义雾色",
+      "tooltip": "覆盖全局场景雾色, 并带有本地化的色彩 ."
+    },
+    "Enable Decal 1": {
+      "label": "启用解码 1",
+      "tooltip": "覆盖主标记/粘贴纹理."
+    },
+    "Enable Decal 2": {
+      "label": "启用解密 2",
+      "tooltip": "重叠一个二级标记/粘贴纹理."
+    },
+    "Enable Decal 3": {
+      "label": "启用解码 3",
+      "tooltip": "覆盖第三层装饰/粘贴纹理."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "启用深度淡出( 软粒子)",
+      "tooltip": "软化多边形与场景几何相交,用于透明与添加剂表面."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "启用详细正常距离淡出",
+      "tooltip": "平滑淡出远处的高频细节正常,以防止VR异名/震动."
+    },
+    "Enable Detail Normal Map": {
+      "label": "启用详细正常映射",
+      "tooltip": "为微表面细节凸起添加二级普通地图."
+    },
+    "Enable Detail Texture": {
+      "label": "启用详细纹理",
+      "tooltip": "叠加二级纹理,通常用于细细的细细或粘结."
+    },
+    "Enable Dissolve": {
+      "label": "启用溶解",
+      "tooltip": "用噪音模式使对象出现/消失."
+    },
+    "Enable Distance Fade": {
+      "label": "启用距离淡出",
+      "tooltip": "当物体远离摄像头时."
+    },
+    "Enable Dithered Transparency": {
+      "label": "启用抖动透明",
+      "tooltip": "屏幕空间 Bayer 矩阵脱色,用于无分拣的透明织物和头发."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "启用效果距离淡出( LOD)",
+      "tooltip": "花序重程序效应(Glitter,Fractals,Grid,Physedelic)超出设定距离以提高VR性能."
+    },
+    "Enable Emission": {
+      "label": "启用排放",
+      "tooltip": "使物体发光。 需要现场的Bloom处理后效果才能看到光芒."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "启用释放 Bloom Clamp",
+      "tooltip": "将HDR的最大排放亮度标注在内,以防止开花白化."
+    },
+    "Enable Emission Pulse": {
+      "label": "启用排放脉冲",
+      "tooltip": "脉冲按节奏释放强度,但不影响散射照明."
+    },
+    "Enable Environment Reflections": {
+      "label": "启用环境反射",
+      "tooltip": "样本反射探测器可以添加环境反射,即使在Basic/Ton模式中也是如此."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "启用眼 Iris 参数",
+      "tooltip": "模拟角膜下瞳孔和虹膜的深度/折射."
+    },
+    "Enable Flipbook Animation": {
+      "label": "启用翻转本动画",
+      "tooltip": "使用图示表布局来模拟主纹理。 这将取代主纹理的硬化和抵消."
+    },
+    "Enable Fluorescence": {
+      "label": "启用荧光",
+      "tooltip": "环境/方向光强度反应(暗处发光)."
+    },
+    "Enable Fourth Emission": {
+      "label": "启用第四次排放",
+      "tooltip": "添加第四个滚动排放层."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "启用 Fresnel 透明",
+      "tooltip": "使物体在中央更加透明,在边缘更加不透明."
+    },
+    "Enable Glitch Flicker": {
+      "label": "启用滑动闪烁器",
+      "tooltip": "对整个物体应用闪烁效果."
+    },
+    "Enable Global Theme Colors": {
+      "label": "启用全局主题颜色",
+      "tooltip": "定义4个全局主色调,以驱动跨材料的统一主题,并带有可选的AudioLink和Hue调制."
+    },
+    "Enable Grid": {
+      "label": "启用网格",
+      "tooltip": "覆盖表面的网格图案."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "启用头发光谱 (Kajiya- Kay)",
+      "tooltip": "特别为毛线设计的异形突出."
+    },
+    "Enable Hologram": {
+      "label": "启用全息图",
+      "tooltip": "具有动画扫描线,边缘环线,和闪烁的科幻全息效果."
+    },
+    "Enable HSV Mask": {
+      "label": "启用 HSV 遮盖",
+      "tooltip": "使用纹理图进行遮罩HSV调整."
+    },
+    "Enable Interlacing": {
+      "label": "启用连接",
+      "tooltip": "使其他屏幕行都变暗,以模拟插合显示."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "启用内部 Parallax( Gems/ 眼层)",
+      "tooltip": "模拟玻璃下层的内深,镜片,晶体,和动ime irises."
+    },
+    "Enable Intersection Effect": {
+      "label": "启用交互效应",
+      "tooltip": "异形为物体靠近或与场景中的其他物体相交的颜色."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "启用挂牌查看",
+      "tooltip": "旋转网状顶点以动态面对活动相机."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "启用 LTCGI( 区域 Light GI)",
+      "tooltip": "在支持的VRChat世界中实时对LTCGI多边形区域灯光和视频屏幕的反应."
+    },
+    "Enable MatCap 2": {
+      "label": "启用 MatCap 2",
+      "tooltip": "为多通金属或边音添加二级 MatCap 层."
+    },
+    "Enable Near Camera Fade": {
+      "label": "启用相机关闭",
+      "tooltip": "相机太近时平滑溶解几何(防止VR头部剪切)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "启用网络同步时间",
+      "tooltip": "通过AudioLink/Udon时间钟(在VRChat中防止动画漂移),同步跨网络客户端的阴影连续动画时间."
+    },
+    "Enable Noise/Grain": {
+      "label": "启用噪声/ 频率",
+      "tooltip": "添加动画噪声覆盖."
+    },
+    "Enable Outline": {
+      "label": "启用大纲",
+      "tooltip": "围绕对象添加一个坚实的轮廓。 这为对象增加了第二个绘图调用 ."
+    },
+    "Enable Outline Gradient": {
+      "label": "启用大纲渐变",
+      "tooltip": "在整个大纲中采用垂直的上/下梯度."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "启用 Parallax 映射( 重度映射)",
+      "tooltip": "使用高度图来抵消紫外线的深度."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "启用 Parallax 占用映射",
+      "tooltip": "启用多步 Parallax,以达到更高的质量深度效果. 只有高纯度."
+    },
+    "Enable Pixelation": {
+      "label": "启用像素",
+      "tooltip": "创建块状低分辨率效果."
+    },
+    "Enable Planar Wipe": {
+      "label": "启用 Planar 擦拭",
+      "tooltip": "以平滑,方向擦拭的方式揭示物体."
+    },
+    "Enable Posterization": {
+      "label": "启用张贴",
+      "tooltip": "减少颜色数量,提供复古/数字外观."
+    },
+    "Enable Procedural Texture": {
+      "label": "启用程序纹理",
+      "tooltip": "将物质属性替换为生成模式."
+    },
+    "Enable Proximity Effect": {
+      "label": "启用近似效应",
+      "tooltip": "触发视觉效果(glow,溶解,dither,或tint),基于与相机的距离,对象支点,或自定义的世界位置."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "启用 PS1 逆向 Vertex 抓取",
+      "tooltip": "将顶点位置量化为低分辨率网格,用于回转PS1/afine jitter美学."
+    },
+    "Enable Pulse": {
+      "label": "启用脉冲",
+      "tooltip": "将脉冲动动画加入排放强度."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "启用 RGBA 彩色遮罩( 重彩工作流程)",
+      "tooltip": "允许 4 个独立的彩色衬衫和发射通道映射到 面具纹理的 RGBA 通道 ."
+    },
+    "Enable Rim Glow": {
+      "label": "启用环光线",
+      "tooltip": "基于视图角度在对象边缘上添加一个光亮."
+    },
+    "Enable Ripple Effect": {
+      "label": "启用波纹效果",
+      "tooltip": "创建由紫外线坐标产生的同心连环效应."
+    },
+    "Enable Scanlines": {
+      "label": "启用扫描线",
+      "tooltip": "模拟 CRT 显示器的外观 ."
+    },
+    "Enable Screen Refraction": {
+      "label": "启用屏幕折射",
+      "tooltip": "扭曲对象后面的屏幕."
+    },
+    "Enable Scrolling": {
+      "label": "启用滚动",
+      "tooltip": "滚动网格图案."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "启用 SDF 面部阴影",
+      "tooltip": "已签名的远程字段为动画字符面对阴影映射 ."
+    },
+    "Enable Second Emission": {
+      "label": "启用第二次排放",
+      "tooltip": "添加第二个滚动排放层."
+    },
+    "Enable Shader Debug View": {
+      "label": "启用阴影除错视图",
+      "tooltip": "在景点中检查中间阴影缓冲和诊断."
+    },
+    "Enable Shell Fur": {
+      "label": "启用 Shell 富尔",
+      "tooltip": "挤出多层外壳沿顶点正常向外穿行,并有线条噪声遮挡."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "启用皮肤 Diffuse 包",
+      "tooltip": "软化光影在有机曲线表面."
+    },
+    "Enable Step Specular": {
+      "label": "启用步骤光谱",
+      "tooltip": "将柔软的 PBR 光谱亮点转换成脆脆的卡通亮点 ."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "启用随机抽样",
+      "tooltip": "程序上将随机化的纹理样品混合,以完全消除大表面的重复的叠加图案."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "启用地表线",
+      "tooltip": "模拟光散射于皮肤或叶子等细小物体."
+    },
+    "Enable Thickness Map": {
+      "label": "启用厚度映射",
+      "tooltip": "利用纹理模拟光通过稀疏区域(耳,叶等)的传播."
+    },
+    "Enable Third Emission": {
+      "label": "启用第三次排放",
+      "tooltip": "添加第三个滚动排放层."
+    },
+    "Enable Transparency": {
+      "label": "启用透明",
+      "tooltip": "使对象统一透明."
+    },
+    "Enable Transparency Glitch": {
+      "label": "启用透明滑块",
+      "tooltip": "造成闪烁效应也影响透明度."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "启用 Triplanar 正常映射",
+      "tooltip": "投射一个正常的地图跨越3轴."
+    },
+    "Enable UV Distortion": {
+      "label": "启用紫外线扭曲",
+      "tooltip": "使用纹理来扭曲紫外线坐标,产生热雾或水波波效应."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "启用紫外线流动( 路径)",
+      "tooltip": "利用无缝的二相循环,沿矢量流图路径进行动画纹理."
+    },
+    "Enable UV Tile Discard": {
+      "label": "启用紫外线砖丢弃",
+      "tooltip": "丢弃特定的紫外线瓦片. 用来搬运衣服."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "启用 Vertex 动画纹理",
+      "tooltip": "应用增值税纹理制作的烤制顶点动画. 用于预烤布,液,或破坏效果."
+    },
+    "Enable Vertex Collapse": {
+      "label": "启用 Vertex 折叠",
+      "tooltip": "把模型磨成中心点."
+    },
+    "Enable Video Player": {
+      "label": "启用视频播放器",
+      "tooltip": "配置纹理以接收视频播放器数据."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "启用 VRSL( VRC 工作室照明)",
+      "tooltip": "对支持的VRChat世界的DMX舞台固定装置、激光和体积俱乐部照明的实时反应."
+    },
+    "Enable Wetness": {
+      "label": "启用湿度",
+      "tooltip": "模拟湿水面的变暗和雨波效应."
+    },
+    "Override Scene Light": {
+      "label": "覆盖场景光",
+      "tooltip": "覆盖了主景光的方向,颜色,强度."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "光敏度 Strobe 胶片",
+      "tooltip": "安全夹,限制最大斜拉/斜拉频率,以防止癫痫发作."
+    },
+    "Use Auto Hue Shift": {
+      "label": "使用自动色调 Shift",
+      "tooltip": "不断改变分形基色."
+    },
+    "Use Base Color": {
+      "label": "使用底色",
+      "tooltip": "切换固态基色 ."
+    },
+    "Use Base Texture": {
+      "label": "使用底质素",
+      "tooltip": "切换主纹理 ."
+    },
+    "Use Depth-Based Color": {
+      "label": "使用基于深度的颜色",
+      "tooltip": "根据其靠近其他表面而改变网格颜色."
+    },
+    "Use Emission Mask": {
+      "label": "使用排放罩",
+      "tooltip": "使用纹理来控制表面的哪些部分发光."
+    },
+    "Use Grid Mask": {
+      "label": "使用网格遮盖",
+      "tooltip": "使用纹理掩盖网格效应."
+    },
+    "Use Outline Width Map": {
+      "label": "使用大纲宽度映射",
+      "tooltip": "用灰度纹理来调制每像素的轮廓厚度."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "对排放使用纹理阿尔法",
+      "tooltip": "使用主纹理的α通道作为排放图。 一种强大的方法,在没有单独纹理的情况下创建发光图."
+    },
+    "Use Transmission Texture": {
+      "label": "使用传输纹理",
+      "tooltip": "自定义颜色映射给背光传输涂色 ."
+    }
+  }
+}

@@ -1,0 +1,4035 @@
+{
+  "languageCode": "ja-JP",
+  "languageName": "日本語",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "インフォメーション",
+    "searchPlaceholder": "素材のプロパティを検索...",
+    "matchingProperties": "マッチングプロパティ",
+    "clearSearch": "明確な検索",
+    "noPropertiesFound": "物件が見つかりません",
+    "lockMaterial": "素材のロックと最適化(クリックしてロック解除)",
+    "unlockMaterial": "鍵を開けて下さい材料",
+    "lockAndOptimize": "ロック&最適化",
+    "savePreset": "プリセットを保存...",
+    "loadPreset": "ロードプリセット...",
+    "copy": "コピー",
+    "paste": "ペースト",
+    "reset": "リセット",
+    "language": "用語集",
+    "cycle": "サイクル",
+    "performanceTip": "⚡ 性能の先端: この材料は鍵を開けられます。 最高のランタイムパフォーマンス(特にQuest/VR)では、上記の「ロック&最適化」を使用します。 このストリップは、未使用シェーダーパス、デッドコードブランチ、およびゼロオーバーヘッドレンダリングのためのキーワードを焼く.",
+    "lockedWarning": "素材はロックされています(読み込みのみ)。 プロパティを変更するためにツールバーを介してロック解除します.",
+    "Global UV Controls": "グローバルUV制御",
+    "UV Tile Grid (4×4)": "紫外線タイルの格子 (4×4)",
+    "Uncheck tiles to discard those UV regions.": "これらの紫外線領域を破棄するためにタイルをオフにします.",
+    "Global Color Animation": "グローバルカラーアニメーション",
+    "Color Adjustments": "色の調節",
+    "Red Zone (R Channel)": "レッドゾーン(Rチャンネル)",
+    "Green Zone (G Channel)": "グリーンゾーン(Gチャンネル)",
+    "Blue Zone (B Channel)": "ブルーゾーン(Bチャンネル)",
+    "Alpha Zone (A Channel)": "アルファゾーン(Aチャンネル)",
+    "Color Correction": "色の訂正",
+    "Dedicated Shading Models": "専用シェーディングモデル",
+    "Render States": "レンダー・アメリカ",
+    "Camera & Mirror Visibility": "カメラとミラーの可視性",
+    "Stencil Buffer Settings": "ステンシルバッファ設定",
+    "Global AudioLink Controls": "グローバルAudioLinkコントロール",
+    "Per-Band Delay & Timing (History Buffer)": "Per-Band Delay & Timing(歴史バッファ)",
+    "Audio Spectrum": "オーディオスペクトラム",
+    "Audio Waveform": "オーディオ波形",
+    "Avatar Param Fallback": "アバターパラムフォールバック",
+    "AvatarParamFallbackTooltip": "世界中のAudioLinkソースが存在しない場合、ローカルアバターパラメータ/OSC入力へのフォールバック.",
+    "Pulse Alpha Range": "脈拍のアルファ範囲",
+    "PulseAlphaRangeTooltip": "強度の脈拍のための最低そして最高のアルファを制御して下さい.",
+    "Color": "カラー",
+    "Transform": "トランスフォーム",
+    "Texture": "コンテンツ",
+    "Normal Map": "サイトマップ",
+    "UV": "紫外線",
+    "UV0": "紫外線0",
+    "UV1": "紫外線1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "ワールドスペース(Triplanar)",
+    "Local Space (Triplanar)": "ローカルスペース(Triplanar)",
+    "Screen Space": "スクリーン スペース",
+    "Planar (Local XY)": "平面(ローカルXY)",
+    "Spherical (Local)": "球面(ローカル)",
+    "Cylindrical (Local)": "Cylindrical (ローカル)",
+    "Biplanar (World)": "Biplanar(世界)",
+    "Panosphere (Equirectangular 360)": "パノスフィア(Equirectangular 360)",
+    "Polar Coordinates": "ポーラ座標",
+    "Off": "オフ",
+    "Bass": "バス",
+    "Low Mid": "低い中間",
+    "High Mid": "ハイ・ミッド",
+    "Treble": "トレブル",
+    "High": "高い",
+    "Medium": "メディア",
+    "Low": "低い",
+    "Opaque": "オパケ",
+    "Cutout": "カットアウト",
+    "Transparent": "トランスペアレント",
+    "Additive": "添加剤",
+    "Multiply": "マルチプライ",
+    "Premultiplied": "参加資格",
+    "None": "なし",
+    "R": "ツイート",
+    "G": "ツイート",
+    "B": "ツイート",
+    "A": "ツイート",
+    "RGBA": "RGBAの特長",
+    "RGB": "ハードウェア",
+    "All": "すべて",
+    "Hue Shift": "ヒュー・シフト",
+    "Gradient": "グラデーション",
+    "Rainbow Gradient": "虹の勾配",
+    "AudioLink Theme": "オーディオリンク テーマ",
+    "Direct": "ダイレクト",
+    "AudioLink": "オーディオリンク",
+    "HueShift": "フエシフト",
+    "Hue Shift/Gradient": "ヒュー・シフト/グラデーション",
+    "Velocity": "ヴェロシティ",
+    "Stylized_PBR": "Stylized PBRの特長",
+    "Standard_PBR": "スタンダード PBR",
+    "Toon": "トゥーン",
+    "Basic": "基本情報",
+    "Unlit": "ログイン",
+    "Flat": "フラット",
+    "Ambient": "アクセス",
+    "ShadowColor": "シャドーカラー",
+    "Ambient/ShadowColor": "包囲された/影色",
+    "TwoTone": "ツートーン",
+    "ThreeTone": "3トン",
+    "FourTone": "フォートーン",
+    "Whiteout_UDN": "ホワイトアウト UDN",
+    "RNM": "ログイン",
+    "OverrideProbes": "オーバーライドプローブ",
+    "FallbackWhenProbesDark": "FallbackWhenProbesダーク",
+    "Screen": "スクリーン",
+    "Metallic": "メタリック",
+    "Specular": "スペック",
+    "Override": "オーバーライド",
+    "Add": "追加する",
+    "Replace": "リプレース",
+    "Lighten": "ライトン",
+    "Overlay": "オーバーレイ",
+    "SoftLight": "ソフトライト",
+    "Alpha Blend": "アルファブレンド",
+    "Lerp": "ログイン",
+    "Max": "マックス",
+    "Circle": "サークル",
+    "Square": "スクエア",
+    "Star": "ログイン",
+    "MatCap": "マットキャップ",
+    "Glass": "ガラス",
+    "Anisotropic": "アニソトロピック",
+    "SubsurfaceScattering": "サブサーフェス散布",
+    "Retro_PSX": "レトロ PSX",
+    "Retro_HalfLambert": "レトロ ハーフランバート",
+    "Ward": "ワードワード",
+    "Stretched-Blinn": "ストレッチ・ブリン",
+    "Default": "デフォルト",
+    "Hologram": "ホログラム",
+    "Crystal": "クリスタル",
+    "Triplanar": "トリップラン",
+    "Iridescence": "ログイン",
+    "Glitter": "グリッター",
+    "Psychedelic": "サイケデリック",
+    "Fractal3D": "フラクタル3D",
+    "Galaxy": "ギャラクシー",
+    "Skybox": "スカイボックス",
+    "EQ Bars": "EQバー",
+    "Continuous Curve": "連続カーブ",
+    "Radial": "ラジアル",
+    "Waterfall": "ウォーターフォール",
+    "Solid": "ソリッド",
+    "Frequency Gradient": "頻度 勾配",
+    "Emissive Lerp": "従順な Lerp",
+    "Oscilloscope": "オシロスコープ",
+    "Ribbon": "リボン",
+    "Polar": "パープル",
+    "Lissajous": "リッサジュース",
+    "Vertex Displacement": "Vertexの変位",
+    "Mono": "モノクロ",
+    "Left": "ふりがな",
+    "Right": "アクセス",
+    "Local": "ローカル",
+    "World": "ワールドワールド",
+    "ScreenSpace": "スクリーンスペース",
+    "ObjectSpace": "オブジェクトスペース",
+    "FullBillboard": "フルビルボード",
+    "YAxisBillboard": "YAxisビルボード",
+    "Local Space": "ローカルスペース",
+    "World Space": "ワールドスペース",
+    "Mandelbulb": "マンデルブル",
+    "Menger Sponge": "メッセンジャーのスポンジ",
+    "Kaleidoscopic IFS": "カレイドスコープ IFS",
+    "Mandelbox": "マンデルボックス",
+    "Julia Set 3D": "ジュリアセット3D",
+    "Sierpinski Tetrahedron": "Sierpinski テトラヘドロン",
+    "Apollonian Gasket": "アポロニアガスケット",
+    "Burning Ship": "燃える船",
+    "Tricorn": "トライコーン",
+    "Mandelbulb Power 2": "マンデルビルパワー2",
+    "Mandelbulb Power 8": "マンデルビル力 8",
+    "Quaternion Julia": "Quaternion ジュリア",
+    "IFS Tetrahedron": "IFSテトラヘドロン",
+    "Octahedron": "オタヘドロン",
+    "Dodecahedron": "ドデカエドロン",
+    "Icosahedron": "イコサヘドロン",
+    "Cubic Fractal": "キュービックフラクタール",
+    "Hybrid Box-Bulb": "ハイブリッドボックスバルブ",
+    "Single Instance": "シングルインスタンス",
+    "Repeated (Clipped)": "繰り返し(クリッピング)",
+    "Endless": "エンドレス",
+    "Yaw": "ヤウ",
+    "Pitch": "ピッチ",
+    "Roll": "ロール",
+    "Tumble": "タンブル",
+    "Sway": "スウェイ",
+    "Pulsate": "パルセート",
+    "Grid": "グリッド",
+    "Scanlines": "スキャンライン",
+    "Noise": "ノイズ",
+    "Voronoi": "ヴォロニ",
+    "Wave": "ウェーブ",
+    "Sierpinski": "シエパンスキー",
+    "Checkerboard": "チェックボード",
+    "PolkaDot": "ポリカドット",
+    "HexagonGrid": "ヘキサゴングリッド",
+    "Herringbone": "ハーリンボーン",
+    "Houndstooth": "ハウンドスト",
+    "CarbonFiber": "カーボンファイバー",
+    "Plaid": "プライド",
+    "CircuitBoard": "サーキットボード",
+    "HalftoneDot": "ハーフトーンドット",
+    "TruchetTile": "トルチェットタイル",
+    "ReactionDiffusion": "反応拡散",
+    "Brick": "ログイン",
+    "Intensity": "インテンシティ",
+    "Glitch": "ログイン",
+    "Stretch": "ストレッチ",
+    "Wind": "ウインド",
+    "Flap": "フラップ",
+    "ButterflyFlap": "バタフライフラップ",
+    "Blocky": "ブロック",
+    "Strobe": "ストロボ",
+    "Sine": "サインイン",
+    "Spherical": "スフェリカル",
+    "MainTexture": "メインテクスチャ",
+    "Emission": "ミッション",
+    "Occlusion": "オクルージョン",
+    "DetailMap": "詳細地図",
+    "DissolveMask": "ディスソルブマスク",
+    "Cells": "セル",
+    "Cracks": "クラック",
+    "Dots": "ドット",
+    "Organic": "オーガニック",
+    "Flow": "フローリング",
+    "Outer": "アウター",
+    "Inner": "インナー",
+    "Fresnel": "フレネル",
+    "Depth": "フィードバック",
+    "MeshNormals": "メッシュノーマル",
+    "VertexColors": "Vertexカラー",
+    "Linear": "リニア",
+    "PingPong": "ピンポン",
+    "Loop": "ループ",
+    "Random": "ランダム",
+    "EaseInOut": "イースインアウト",
+    "Expand": "プロモーション",
+    "Contract": "契約条件",
+    "Pulse": "パルス",
+    "Vertical": "プロフィール",
+    "Directional": "アクセス",
+    "Bottom": "ボトム",
+    "Top": "トップページ",
+    "X": "ツイート",
+    "Y": "お問い合わせ",
+    "Z": "ツイート",
+    "Front": "フロント",
+    "Back": "バックナンバー",
+    "Culling": "キューリング",
+    "Depth Test": "深さテスト",
+    "Comparison": "比較比較",
+    "Disabled": "バリアフリー",
+    "Never": "決して",
+    "Less": "キャンセル",
+    "Equal": "エコール",
+    "LessEqual": "より少ないアルコール",
+    "Greater": "グレーター",
+    "NotEqual": "ノエコール",
+    "GreaterEqual": "グレーターエコール",
+    "Always": "常に",
+    "Keep": "お問い合わせ",
+    "Zero": "ゼロ",
+    "IncrSat": "代表取締役",
+    "DecrSat": "デカールサット",
+    "Invert": "インバート",
+    "IncrWrap": "インラップ",
+    "DecrWrap": "デカールラップ",
+    "One": "ワンポイント",
+    "DstColor": "ドストカラー",
+    "SrcColor": "センカラー",
+    "OneMinusDstColor": "OneMinusDstColorの特長",
+    "SrcAlpha": "Srcアルファ",
+    "OneMinusSrcColor": "OneMinusSrcカラー",
+    "DstAlpha": "デストアルファ",
+    "OneMinusDstAlpha": "OneMinusDstアルファ",
+    "SrcAlphaSaturate": "SrcAlpha飽和",
+    "OneMinusSrcAlpha": "OneMinusSrcアルファ",
+    "Show Always": "常に表示",
+    "Hide In Mirrors": "ミラーで隠す",
+    "Show Only In Mirrors": "ミラーでのみ表示",
+    "VR Headset Eyes Only": "VRのヘッドホーンの目だけ",
+    "Desktop Stream Spectator Only": "デスクトップストリームスペクターのみ",
+    "Auto Oblique And Inverted Transform": "自動斜めおよび転換された変形",
+    "Oblique Matrix Only": "斜めのマトリックスだけ",
+    "Inverted Transform Only": "反転トランスフォームのみ",
+    "Visibility Mode": "可視性モード",
+    "Mirror Detection Method": "ミラー検出方法",
+    "VRCFallback": "VRCFallbackの特長",
+    "VRChat Fallback Tag": "VRChatフォールバックタグ",
+    "ToonStandard": "トゥーンスタンダード",
+    "Standard": "スタンダード",
+    "Hidden": "隠し",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "このターゲットは、照明セクションの「Stylized PBR」に設定する照明モードが必要です.",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "このターゲットは、オーバーレイセクションでオンになっている「詳細テクスチャを有効にする」が必要です.",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "このターゲットは、トランジションセクションでオンになっている「無効化」が必要です."
+  },
+  "sections": {
+    "Performance Settings": "パフォーマンス設定",
+    "Render Mode": "描画モード",
+    "Main Settings": "メイン設定",
+    "Procedural Textures": "プロシージャルテクスチャ",
+    "Advanced Animation Controls": "高度なアニメーション制御",
+    "Color Controls": "カラー制御",
+    "Lighting": "ライティング",
+    "Surface Style": "サーフェススタイル",
+    "Overlays": "オーバーレイ",
+    "Effects": "エフェクト",
+    "Glitches": "グリッチ",
+    "Transitions": "トランジション",
+    "AudioLink Visualizers": "AudioLink ビジュアライザー",
+    "Advanced Settings": "高度な設定"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "レンダリングモード",
+      "tooltip": "シェーダーがレンダリングされる方法を制御します。 オパクは最速です。 カットアウトは、ハードエッジの透明性のためにあります。 透明は柔らかく、混合された効果のためです."
+    },
+    "_PerformanceLevel": {
+      "label": "性能レベル",
+      "tooltip": "パフォーマンスベースラインを設定し、低レベルの高価な機能を無効にします."
+    },
+    "_ZWrite": {
+      "label": "力の深さの記述(ZWrite)",
+      "tooltip": "この材料が深さの緩衝に書いていれば手動で制御して下さい。 オブジェクトの背後にあるオブジェクトを省略するべき透明なオブジェクトのためにこれを有効にします."
+    },
+    "_Cutoff": {
+      "label": "アルファカットオフ",
+      "tooltip": "カットアウト効果のアルファ閾値."
+    },
+    "_UseUVTileDiscard": {
+      "label": "紫外線タイルのDiscoverard",
+      "tooltip": "特定の紫外線タイルを分けて下さい。 衣類のパーツをトゲリングするのに便利です."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "UV タイル 列 3 (トップ)",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "紫外線タイルの列2",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "紫外線タイルの列 1",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "紫外線タイルの列 0 (底)",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "基礎色を使用して下さい",
+      "tooltip": "ソリッドベースカラーをトグルします."
+    },
+    "_BaseColor": {
+      "label": "カラー",
+      "tooltip": "テクスチャを使用しないときのホログラムの主な色."
+    },
+    "_BaseColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "Vertexカラーを使用する",
+      "tooltip": "モデルの頂点に塗られた色を使ってシェーダーを染めます。 頂点カラーのモデルが必要です."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "アルファはOpacityとして",
+      "tooltip": "頂点カラーアルファチャンネルをオパシティマルチプライヤーとして使用します."
+    },
+    "_UseEmission": {
+      "label": "排出可能",
+      "tooltip": "オブジェクトが輝きます。 輝度を見るために、シーンのブルームポスト処理効果が必要です."
+    },
+    "_UseEmissionPulse": {
+      "label": "排出の脈拍を有効にして下さい",
+      "tooltip": "拡散照明に影響を与えることなく、リズム的にパルス発光強度."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "脈拍の速度",
+      "tooltip": "脈動放出のアニメーションの速度."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "パルス強度",
+      "tooltip": "排出の脈拍(0 =脈拍無し、0から最高の強さへの1 =完全な脈拍無し)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "排出のためのVertex色を使用して下さい",
+      "tooltip": "頂点カラーのRGBチャンネルを使用して、発光速度を小さくします."
+    },
+    "_UseAlphaToEmission": {
+      "label": "テキストアルファを使用してエミッション",
+      "tooltip": "メインテクスチャのアルファチャンネルをエミッションマップとして使用します。 別々のテクスチャーなしで白地図を作成する強力な方法."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "強み",
+      "tooltip": "どのくらいのアルファがエミッションに影響を及ぼすか(より高い値が明るくなります)."
+    },
+    "_EmissionStrength": {
+      "label": "排出の強さ",
+      "tooltip": "輝いた効果がいかに明るいか."
+    },
+    "_AL_EmissionBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "第2次排出を有効にする",
+      "tooltip": "2番目のスクロールエミッションレイヤーを追加します."
+    },
+    "_Emission2Map": {
+      "label": "第2回 排出マップ",
+      "tooltip": "二次排出図(RGB)"
+    },
+    "_Emission2Color": {
+      "label": "カラー",
+      "tooltip": "第2排出色"
+    },
+    "_Emission2Strength": {
+      "label": "強み",
+      "tooltip": "第2排出強度"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "スクロール速度 X",
+      "tooltip": "二次排出スクロール速度X"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "二次排出スクロール速度Y"
+    },
+    "_AL_Emission2Band": {
+      "label": "AL第2回排出バンド",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "AL第2排出強度",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "第3回排出可能",
+      "tooltip": "3番目のスクロールエミッションレイヤーを追加します."
+    },
+    "_Emission3Map": {
+      "label": "第3回廃炉マップ",
+      "tooltip": "第三次排出マップ(RGB)"
+    },
+    "_Emission3Color": {
+      "label": "カラー",
+      "tooltip": "第三排出色"
+    },
+    "_Emission3Strength": {
+      "label": "強み",
+      "tooltip": "第三の排出強度"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "スクロール速度 X",
+      "tooltip": "第三次排出スクロール速度X"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "第三の排出のスクロール速度Y"
+    },
+    "_AL_Emission3Band": {
+      "label": "AL第3回排出バンド",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "AL第3回排出強度",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "第4回排出可能",
+      "tooltip": "4つのスクロールエミッションレイヤーを追加します."
+    },
+    "_Emission4Map": {
+      "label": "第4回 排出マップ",
+      "tooltip": "第4回エミッションマップ(RGB)"
+    },
+    "_Emission4Color": {
+      "label": "カラー",
+      "tooltip": "第4回発光色"
+    },
+    "_Emission4Strength": {
+      "label": "強み",
+      "tooltip": "第4回排出強度"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "スクロール速度 X",
+      "tooltip": "第4回エミッションスクロール速度X"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "第4回エミッションスクロール速度 Y"
+    },
+    "_AL_Emission4Band": {
+      "label": "AL第4回排出バンド",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "第4回 排出強度",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "手順のテクスチャを有効にする",
+      "tooltip": "生成されたパターンでマテリアルプロパティを置換します."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "ターゲット",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "手続きモード",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "色 1",
+      "tooltip": "手続きパターンの最初の色."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "Hue/Colorシフトを有効にする",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "手順色 1 シフト",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "色 2",
+      "tooltip": "手順パターンの第二色."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "Hue/Colorシフトを有効にする",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "手順色2シフト",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "スケール",
+      "tooltip": "パターンのサイズ/タイルを制御します."
+    },
+    "_ProceduralSpeed": {
+      "label": "スピード",
+      "tooltip": "パターンのアニメーション速度を制御します."
+    },
+    "_ProceduralDirection": {
+      "label": "アクセス",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "厚さ:",
+      "tooltip": "パターン線の厚さ."
+    },
+    "_ProceduralDensity": {
+      "label": "コンテンツ",
+      "tooltip": "パターン要素のサイズを制御します。 値が高いとサイズが増加します."
+    },
+    "_ProceduralSparsity": {
+      "label": "ジャグジー",
+      "tooltip": "パターン内の要素間の距離をコントロールします。 スペーシング値が高まります."
+    },
+    "_ProceduralRotation": {
+      "label": "ローテーション",
+      "tooltip": "プロシージャパターン全体を回転させます。 0.125の値は45度です."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "座標空間",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "オクタブ",
+      "tooltip": "さまざまなスケールでノイズ層を追加し、より詳細で自然なパターンを作成します."
+    },
+    "_NoiseLacunarity": {
+      "label": "ラカナルティ",
+      "tooltip": "各オクターブでノイズの頻度がどのように変化するかを制御します."
+    },
+    "_NoiseGain": {
+      "label": "メリット",
+      "tooltip": "各オクターブとノイズの振幅がどのように変化するかを制御します."
+    },
+    "_VoronoiStyle": {
+      "label": "スタイル",
+      "tooltip": "Voronoiパターンのビジュアルスタイルを制御します."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "グローバルスピードマルチプライヤー",
+      "tooltip": "マスターアニメーション速度マルチプライヤー。 VRChat Avatar Dynamics / Animatorパラメーターを使用してこれを実行して、すべてのシェーダーの手続き型アニメーションを制御または凍結します."
+    },
+    "_UseAdvancedAnim": {
+      "label": "高度なアニメーション制御を有効にする",
+      "tooltip": "すべてのシェーダーアニメーションのタイムスケーリング、再生モード、時間オフセットのマスターコントロールを公開します."
+    },
+    "_AnimTimeScale": {
+      "label": "タイムスケール",
+      "tooltip": "すべてのシェーダーアニメーションの全体的な速度を制御します。 効果を遅くまたはスピードアップするために使用することができます."
+    },
+    "_AnimPlayMode": {
+      "label": "再生モード",
+      "tooltip": "グローバルな再生モードを設定します。 0 = ループ(最初から再起動)、1 = ピンポン(逆方向)."
+    },
+    "_AnimOffset": {
+      "label": "時間オフセット",
+      "tooltip": "すべてのアニメーションにグローバルタイムオフセットを適用します。, 同期または非同期効果に役立ちます."
+    },
+    "_TwoSidedLighting": {
+      "label": "両面照明",
+      "tooltip": "Cullが消えるとき正しい2面の照明のための背部の表面のフリップ正常な方向."
+    },
+    "_LightingMode": {
+      "label": "照明モード",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "スペクトルAAを有効にする",
+      "tooltip": "光沢のある表面に沈着および明滅を減らす反aliases の鏡面のハイライト."
+    },
+    "_UseOpenLitMath": {
+      "label": "OpenLitハーモニーモード",
+      "tooltip": "OpenLit CC0標準ハーフランバート拡散数学を使用して、フォトワールドのクラウドアバターを横断する一貫した照明."
+    },
+    "_SpecularAAVariance": {
+      "label": "バリエーション",
+      "tooltip": "AA のブールリングがいかに積極的なか制御します."
+    },
+    "_SpecularAAThreshold": {
+      "label": "パスワード",
+      "tooltip": "AAが蹴る前のスペクトルハイライト強度の閾値."
+    },
+    "_ShadowColor": {
+      "label": "シャドー色",
+      "tooltip": "光が当たるエリアのカラー."
+    },
+    "_ShadowColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "パスワード",
+      "tooltip": "Toon モードの lit 区域のサイズ."
+    },
+    "_ToonHardness": {
+      "label": "フリガナ",
+      "tooltip": "トゥーンモードのシャドウエッジのシャープネス."
+    },
+    "_ToonShadowBorder": {
+      "label": "シャドーボーダー",
+      "tooltip": "Toon の影線境界線をオフセットします."
+    },
+    "_ToonShadowBlur": {
+      "label": "シャドー・ブルー",
+      "tooltip": "トンシャドウステップブラーを柔らかくします."
+    },
+    "_ToonShadowAO": {
+      "label": "AOシャドウモジュレーション",
+      "tooltip": "周囲のオクルージョンマップを使用してセルの影境界を変更します."
+    },
+    "_NormalMap": {
+      "label": "サイトマップ",
+      "tooltip": "通常のマップを使用して表面の詳細を追加します."
+    },
+    "_BumpScale": {
+      "label": "ノーマルスケール",
+      "tooltip": "表面の正常なバンプの強さそして深さ."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "詳細を有効活用 ノーマルマップ",
+      "tooltip": "マイクロサーフェスディテールバンプ用のセカンダメンタルマップを追加します."
+    },
+    "_DetailNormalMap": {
+      "label": "詳細 ノーマルマップ",
+      "tooltip": "加えられた表面細部のための基盤の常態の秒の正常な地図のoverlaid."
+    },
+    "_DetailNormalScale": {
+      "label": "細部 正常な強さ",
+      "tooltip": "細部の正常な地図の強さを制御して下さい."
+    },
+    "_NormalBlendMode": {
+      "label": "ノーマルブレンドモード",
+      "tooltip": "ベースと詳細の通常のマップ(ホワイトアウト対リダクトノーマルマッピング/ RNM)の間のアルゴリズムをブレンドします."
+    },
+    "_MetallicGlossMap": {
+      "label": "メタリック(R)スムース(A)",
+      "tooltip": "メタリック(R)とスムース(A)のマップ。 (注:別々の粗さマップが提供されている場合は、スムースは無視されます)"
+    },
+    "_Metallic": {
+      "label": "メタリック",
+      "tooltip": "表面が(0 =誘電体/プラスチック、1 =純金属)どのように金属を制御します."
+    },
+    "_Glossiness": {
+      "label": "滑らかさ",
+      "tooltip": "表面が(0 = 荒/マット、1 = 鏡面が滑らか)滑らかで反射率をコントロールします."
+    },
+    "_UseAmbientLighting": {
+      "label": "使用周囲照明",
+      "tooltip": "シーン周囲光と反射プローブのサンプリングを切り替えます。 さまざまな世界で照明をより一貫したものにします."
+    },
+    "_UseSHAmbient": {
+      "label": "良質の包囲された(SH)を使用して下さい",
+      "tooltip": "高品質の球面のハリモニックの周囲を有効にします。 注意:中・低レベルの強制オフ."
+    },
+    "_AmbientFallbackMode": {
+      "label": "周囲のフォールバック モード",
+      "tooltip": "高品質SHが無効になったりオフになったりすると、フォールバック照明モデルを選択します."
+    },
+    "_UseLightOverride": {
+      "label": "オーバーライドシーンライト",
+      "tooltip": "メインシーンの光の方向、色、強度をオーバーライドします."
+    },
+    "_LightDirOverride": {
+      "label": "アクセス",
+      "tooltip": "注文の軽い方向ベクトル."
+    },
+    "_LightColorOverride": {
+      "label": "カラー",
+      "tooltip": "習慣ライト色の錫."
+    },
+    "_LightIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "カスタム光強度スケール."
+    },
+    "_ShadowStrength": {
+      "label": "シャドーの強さ",
+      "tooltip": "この光から投げられた影の強さの乗合器."
+    },
+    "_RampTex": {
+      "label": "トンランプ",
+      "tooltip": "Toon Rampのテクスチャ。 トランジションシャドウ(左)からライト(右)へ."
+    },
+    "_ToonToneCount": {
+      "label": "トーンカウント",
+      "tooltip": "トーン照明用離散シェーディング定量バンドの数."
+    },
+    "_MidColor": {
+      "label": "ミッドカラー",
+      "tooltip": "ミッドトン バンド色."
+    },
+    "_MidThreshold": {
+      "label": "ミッド・スローズホールド",
+      "tooltip": "ミドルトーンバンドの境界線を投げる."
+    },
+    "_HighlightColor": {
+      "label": "ハイライト色",
+      "tooltip": "ハイライトバンド色."
+    },
+    "_HighlightThreshold": {
+      "label": "ハイライトの境界",
+      "tooltip": "ハイライトバンドの境界線を投げる."
+    },
+    "_SpecularMode": {
+      "label": "ワークフロー",
+      "tooltip": "メタリック・スムースとスペクラルカラーのPBR照明ワークフローから選択します."
+    },
+    "_SpecColor": {
+      "label": "スペクトル色",
+      "tooltip": "スペクトル反射の色合い."
+    },
+    "_SpecGlossMap": {
+      "label": "スペキュラー(RGB) 光沢(A)",
+      "tooltip": "スペックカラー(RGB)とスムース(A)のマップ."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "Shadowmask フォールバック",
+      "tooltip": "Shadowmask テクスチャが利用できなくなったときにフォールバック挙動."
+    },
+    "_RoughnessMap": {
+      "label": "ラフネスマップ(R)",
+      "tooltip": "粗さ地図(R)."
+    },
+    "_Roughness": {
+      "label": "ラフネス",
+      "tooltip": "粗さ値."
+    },
+    "_OcclusionMap": {
+      "label": "Occlusion マップ (G)",
+      "tooltip": "Occlusion マップ (G) は、デバイス内の影を焼く."
+    },
+    "_OcclusionStrength": {
+      "label": "Occlusionの強さ",
+      "tooltip": "Occlusionのマップから周囲の影の隙間の強さ."
+    },
+    "_DetailMask": {
+      "label": "詳細マスク(A)",
+      "tooltip": "詳細マスク(A)は、二次詳細テクスチャの適用を制限します."
+    },
+    "_UseSSS": {
+      "label": "Subsurface 散乱を有効にする",
+      "tooltip": "皮か葉のような薄い目的によって軽い散布を模倣して下さい."
+    },
+    "_SSS_Scale": {
+      "label": "スケール",
+      "tooltip": "SSS効果の全体的な強さ."
+    },
+    "_SSS_Radius": {
+      "label": "ラディウス",
+      "tooltip": "素材内の光の散布機は、どのくらいのところです."
+    },
+    "_SSS_Color": {
+      "label": "ログイン",
+      "tooltip": "散らばらされたライトに適用される色の色合い."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "厚さマップを有効にする",
+      "tooltip": "薄い領域(耳、葉など)を介して光伝送をシミュレートするテクスチャを使用します."
+    },
+    "_ThicknessMap": {
+      "label": "厚さマップ(R)",
+      "tooltip": "厚さマップ(Rチャンネル)。 白い = 厚い(伝達無し)、黒 = 薄い(完全な伝達)."
+    },
+    "_ThicknessStrength": {
+      "label": "厚さの強さ",
+      "tooltip": "バックライト伝送効果の強度を制御します."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "SSS伝送テクスチャを使用する",
+      "tooltip": "バックライト伝達を錫メッキするカスタムカラーマップ."
+    },
+    "_SSSTransmissionTex": {
+      "label": "SSS伝送マップ",
+      "tooltip": "伝達色の地図."
+    },
+    "_UseAnisotropy": {
+      "label": "Anisotropic Reflectionを有効にする",
+      "tooltip": "ブラシをかけられた金属か毛で共通伸張されたハイライトを作成します."
+    },
+    "_Aniso_Mode": {
+      "label": "アニソモード",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "粗さ U",
+      "tooltip": "U(タンジェント)方向に沿って粗さ."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "粗さ V",
+      "tooltip": "V(バイノーマ)方向に沿って粗さ."
+    },
+    "_Aniso_Strength": {
+      "label": "鏡面強度",
+      "tooltip": "異方性のハイライトの全体的な明るさ."
+    },
+    "_Aniso_TangentMap": {
+      "label": "タンジェントマップ(オプション)",
+      "tooltip": "異方性地図(RGチャンネル)で、異方性図の方向性を制御する."
+    },
+    "_UseClearCoat": {
+      "label": "クリアコートを有効にする",
+      "tooltip": "ベースPBR材料に2次クリアコートのスペキュラー層を追加します。 塗られた/塗られた表面のために有用な."
+    },
+    "_ClearCoatStrength": {
+      "label": "明確なコートの強さ",
+      "tooltip": "二次自動車漆・樹脂透明コート層の強度."
+    },
+    "_ClearCoatRoughness": {
+      "label": "クリアコートの粗さ",
+      "tooltip": "二次クリアコート層の粗さ."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "アイリスパララックスを有効にする",
+      "tooltip": "パーピルとアイリスの深さ/反射をコルニーの下にシミュレートします."
+    },
+    "_IrisTiling": {
+      "label": "アイリスUVチリング",
+      "tooltip": "Irisのテクスチャのタイルを制御します."
+    },
+    "_IrisDepth": {
+      "label": "Irisの深さのオフセット",
+      "tooltip": "模倣された屈折の深さのオフセット."
+    },
+    "_PupilSize": {
+      "label": "瞳孔スケール",
+      "tooltip": "Pupilのサイズのスケールを制御します."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "スキン拡散ラップを有効にする",
+      "tooltip": "有機曲線面の影を柔らかくします."
+    },
+    "_SkinWrapAmount": {
+      "label": "ラップ量",
+      "tooltip": "影のターミネーターの周りにどのくらいの光がラップします."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "毛の異方性スペクラルを有効にして下さい(梶屋ケイ)",
+      "tooltip": "Anisotropicは毛のストランドのために特にスタイルを付けられた強調します."
+    },
+    "_HairSpecColor": {
+      "label": "スペクトル色",
+      "tooltip": "毛の斑点のハイライトの色."
+    },
+    "_HairSpecExponent": {
+      "label": "第一次博覧会",
+      "tooltip": "主なハイライトのシャープネス."
+    },
+    "_HairSpecExponent2": {
+      "label": "二次曝露",
+      "tooltip": "二次シフトハイライトのシャープネス."
+    },
+    "_HairSpecStrength": {
+      "label": "鏡面強度",
+      "tooltip": "ハイライトの明るさ強度."
+    },
+    "_HairSpecShift": {
+      "label": "スペックルシフト",
+      "tooltip": "毛の方向に沿って位置シフト."
+    },
+    "_UseGrid": {
+      "label": "グリッドを有効にする",
+      "tooltip": "表面にグリッドパターンをオーバーレイします."
+    },
+    "_GridMode": {
+      "label": "格子パターン",
+      "tooltip": "手順格子様式(正方形、六角形、放射状、ワイヤー フレーム)."
+    },
+    "_GridColor": {
+      "label": "カラー",
+      "tooltip": "グリッド線の色."
+    },
+    "_GridColor_Shift": {
+      "label": "グリッドカラーシフト",
+      "tooltip": "AudioLink または 先進的なグリッド線のアニメーションカラーシフト."
+    },
+    "_GridDensity": {
+      "label": "コンテンツ",
+      "tooltip": "グリッドパターンはいくつも表示されます."
+    },
+    "_GridSparsity": {
+      "label": "ジャグジー",
+      "tooltip": "パターン内の要素間の距離をコントロールします。 スペーシング値が高まります."
+    },
+    "_GridSpace": {
+      "label": "座標空間",
+      "tooltip": "グリッドマッピング(オブジェクトUV、ローカルメッシュ、ワールドスペース)のための座標空間."
+    },
+    "_GridThickness": {
+      "label": "格子ライン厚さ",
+      "tooltip": "格子上敷のためのライン厚さ."
+    },
+    "_UseGridScroll": {
+      "label": "スクロールを有効にする",
+      "tooltip": "スパイラルパターンをアニメーション化."
+    },
+    "_GridScrollSpeed": {
+      "label": "スクロール速度 X",
+      "tooltip": "グリッドが最初の軸線に沿ってスクロールする速度(世界X)."
+    },
+    "_GridRotation": {
+      "label": "ローテーション",
+      "tooltip": "グリッドパターン全体を回転させます。 0.125の値は45度です."
+    },
+    "_GridScrollSpeedY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "グリッドが2番目の軸線(世界Z)に沿ってスクロールを高速化する方法."
+    },
+    "_BoxFractalIsFill": {
+      "label": "充填スタイルを使用する",
+      "tooltip": "塗りつぶしパターンと輪郭パターンの間のボックスフラクタルを切り替えます."
+    },
+    "_GridPatternIsFill": {
+      "label": "充填スタイルを使用する",
+      "tooltip": "塗りつぶしと輪郭のパターンを切り替えます."
+    },
+    "_MandelboxIsFill": {
+      "label": "充填スタイルを使用する",
+      "tooltip": "塗りつぶしパターンと輪郭パターンの間のMandelboxを切り替えます."
+    },
+    "_GridPulseMode": {
+      "label": "グリッドパルスモード",
+      "tooltip": "グリッドアニメーションパルス波形(Sine、Triangle、AudioLink)."
+    },
+    "_GridPulseSpeed": {
+      "label": "脈拍の速度",
+      "tooltip": "パルスアニメーションの速度."
+    },
+    "_GridPulseIntensity": {
+      "label": "パルス強度",
+      "tooltip": "脈拍の効果の強さ."
+    },
+    "_GridPulseMin": {
+      "label": "格子脈拍分",
+      "tooltip": "脈動の間の最低の格子明るさ/厚さのmultiplier."
+    },
+    "_GridPulseMax": {
+      "label": "格子脈拍 最高",
+      "tooltip": "脈動の間の最高の格子明るさ/厚さのmultiplier."
+    },
+    "_UseGridDepthColor": {
+      "label": "深さベースの色の使用",
+      "tooltip": "格子色を他の表面に近づけることに基づいて変更して下さい."
+    },
+    "_GridDepthColor": {
+      "label": "深さ色",
+      "tooltip": "表面の近くで格子がシフトする色."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "深さの範囲",
+      "tooltip": "色の変化が起こる間隔."
+    },
+    "_AL_GridBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "グリッドマスクを使用する",
+      "tooltip": "テクスチャを使用してグリッド効果をマスクします."
+    },
+    "_GridMask": {
+      "label": "グリッドマスク",
+      "tooltip": "グリッドをマスクするために使用されるテクスチャ。 赤いチャネルが使用されます."
+    },
+    "_InvertGridMask": {
+      "label": "インバーター マスク",
+      "tooltip": "マスクを反転させるので、黒い部分が見え、白い部分が隠されています."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "Vertexディストーションを有効にする",
+      "tooltip": "強制的な頂点歪みアニメーションをオンまたはオフに切り替えます."
+    },
+    "_DistortionMode": {
+      "label": "歪みモード",
+      "tooltip": "手続き型頂点歪みアルゴリズム(正弦波、騒音乱流、フラッピングなど)."
+    },
+    "_DistortionStrength": {
+      "label": "強み",
+      "tooltip": "頂点が変わってきます."
+    },
+    "_DistortionSpeed": {
+      "label": "スピード",
+      "tooltip": "歪みアニメーションの速度."
+    },
+    "_AL_DistortionBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "歪みテクスチャ(オフセット用RG)",
+      "tooltip": "歪みを制御するテクスチャ(R=Xオフセット、G=Zオフセット)."
+    },
+    "_DistortionTexScrollX": {
+      "label": "スクロール速度 X",
+      "tooltip": "歪みのテクスチャを水平にスクロールします."
+    },
+    "_DistortionTexScrollY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "歪みのテクスチャを縦にスクロールします."
+    },
+    "_StretchAxis": {
+      "label": "ストレッチ軸",
+      "tooltip": "網の軸線はプロシージャの頂点の伸張を適用します."
+    },
+    "_WindDirection": {
+      "label": "アクセス",
+      "tooltip": "風(オブジェクトへの相対的な)のローカル空間の方向."
+    },
+    "_WindScale": {
+      "label": "スケール",
+      "tooltip": "風力の大きさ。 より小さい値はより大きい、より遅い波を作成します."
+    },
+    "_FlapScale": {
+      "label": "スケール",
+      "tooltip": "折り返しの動きの湾曲か「狂気」を制御します."
+    },
+    "_FlapPhaseOffset": {
+      "label": "フェーズオフセット",
+      "tooltip": "1つの側面に時間遅れを加え、非対称折り返しを作成します。 0 は対称です."
+    },
+    "_FlapMode": {
+      "label": "折り返しモード",
+      "tooltip": "頂点フラッピングアニメーションの方向とスタイル(ウィング、フラグ、フォリッジ)."
+    },
+    "_FlapPivot": {
+      "label": "フラップピボット",
+      "tooltip": "頂点の折り返しの振動のためのアンカー ポイント/ピボット位置."
+    },
+    "_FlapDirection": {
+      "label": "アクセス",
+      "tooltip": "フラッピングモーションのカスタムローカルスペース方向を定義するベクトル."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "Dissolveを有効にする",
+      "tooltip": "オブジェクトをノイズパターンで表示/無効にします."
+    },
+    "_DissolveMode": {
+      "label": "モードを分解して下さい",
+      "tooltip": "溶解した数学アルゴリズム(リニア、放射状、球面、Voronoiノイズなど)を選択します."
+    },
+    "_DissolveScale": {
+      "label": "スケール",
+      "tooltip": "溶解効果のサイズ/スプレッドを制御します."
+    },
+    "_DissolveDirection": {
+      "label": "アクセス",
+      "tooltip": "溶解波旅行の世界空間方向."
+    },
+    "_DissolveOrigin": {
+      "label": "世界の起源",
+      "tooltip": "溶解するエマネートから世界規模のセンターポイント."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "オブジェクトセンターを使用する",
+      "tooltip": "有効にすると、オブジェクトのピボットポイントから溶解が発生します。 無効にすると、固定された世界空間座標を使用します."
+    },
+    "_DissolveMap": {
+      "label": "ノイズマップ",
+      "tooltip": "溶解効果に使用されるノイズテクスチャ(赤のチャンネルを使用)."
+    },
+    "_DissolveProjMode": {
+      "label": "地図の映写モードを分解して下さい",
+      "tooltip": "溶解テクスチャのUVプロジェクションマッピングモード."
+    },
+    "_DissolveAmount": {
+      "label": "株式について",
+      "tooltip": "溶解効果(0-1)の進行."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "エッジ幅",
+      "tooltip": "溶解ラインの輝くエッジの幅."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "ブロックサイズ",
+      "tooltip": "画面スペースのグリッチブロックのサイズ."
+    },
+    "_DissolveEdgeColor": {
+      "label": "エッジカラー",
+      "tooltip": "艶消しエッジの色."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "エッジカラーシフト",
+      "tooltip": "可聴周波リンクまたは溶解の焼却の端のためのアニメーション色の転位."
+    },
+    "_UseDissolveGradient": {
+      "label": "Gradientの使用",
+      "tooltip": "グラデーションなテクスチャを使用して、ソリッドカラーではなく、溶融エッジを色付けします."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "高度なタイミングを使用する",
+      "tooltip": "単純なループ/ピンポンの代わりに、溶解アニメーションのカスタムタイミングを使用します."
+    },
+    "_DissolveOnDuration": {
+      "label": "期限切れ",
+      "tooltip": "解散したアニメーションを再生する時間."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "可視期間",
+      "tooltip": "オブジェクトが完全に見える時間(最大溶解時)."
+    },
+    "_DissolveOffDuration": {
+      "label": "期限切れ",
+      "tooltip": "解散アニメーションを再生する時間."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "隠された期間",
+      "tooltip": "オブジェクトが完全に隠される時間(分溶解時)."
+    },
+    "_DissolveGradient": {
+      "label": "分解の勾配",
+      "tooltip": "溶解エッジのカラーランプ。 勾配は端の幅を渡ってマッピングされます."
+    },
+    "_AnimateDissolve": {
+      "label": "アニメイト",
+      "tooltip": "溶解量を時間単位で自動生成します."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "スピード",
+      "tooltip": "アニメーションの速度."
+    },
+    "_DissolveAnimMode": {
+      "label": "ピンポンを使用する",
+      "tooltip": "有効にすると、アニメーションはフォワードを再生し、後方を再生します。 無効にするとループされます."
+    },
+    "_DissolveAnimMin": {
+      "label": "アニメーション 分",
+      "tooltip": "アニメーションを有効にしたときに最小限の分解カットオフ."
+    },
+    "_DissolveAnimMax": {
+      "label": "アニメーションマックス",
+      "tooltip": "アニメーションを有効にしたときに最大分解カットオフ."
+    },
+    "_AL_DissolveBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "平面ワイプを有効にする",
+      "tooltip": "オブジェクトを滑らかで、方向的なワイプで回復します."
+    },
+    "_WipeDirection": {
+      "label": "アクセス",
+      "tooltip": "ワイプがオブジェクトを渡る方向."
+    },
+    "_WipeProgress": {
+      "label": "ニュース",
+      "tooltip": "拭き効果の進行."
+    },
+    "_WipeHardness": {
+      "label": "フリガナ",
+      "tooltip": "拭き先の鋭さ."
+    },
+    "_AnimateWipe": {
+      "label": "アニメーションワイプ",
+      "tooltip": "自動的にワイプの進行を時間をかけてアニメーション化します."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "高度なタイミングを使用する",
+      "tooltip": "シンプルなループ/ピンポンではなく、ワイプアニメーションのカスタムタイミングを使用します."
+    },
+    "_WipeOnDuration": {
+      "label": "期間のワイプ",
+      "tooltip": "ふわふわのアニメーションを再生する時間."
+    },
+    "_WipeVisibleDuration": {
+      "label": "可視期間",
+      "tooltip": "オブジェクトが完全に見える時間."
+    },
+    "_WipeOffDuration": {
+      "label": "期間を離れたワイプ",
+      "tooltip": "再生するワイプオフアニメーションに要する時間."
+    },
+    "_WipeHiddenDuration": {
+      "label": "隠された期間",
+      "tooltip": "オブジェクトがループする前に完全に隠されている時間."
+    },
+    "_WipeAnimSpeed": {
+      "label": "スピード",
+      "tooltip": "アニメーションの速度."
+    },
+    "_WipeAnimMode": {
+      "label": "ピンポンを使用する",
+      "tooltip": "有効にすると、アニメーションはフォワードを再生し、後方を再生します。 無効にするとループされます."
+    },
+    "_UseTransparency": {
+      "label": "透明性を有効にする",
+      "tooltip": "オブジェクトを均一に透明にします."
+    },
+    "_Alpha": {
+      "label": "アルファ",
+      "tooltip": "全体的な透明度を制御する。 1 = 完全に不透明, 0 = 完全に見えない."
+    },
+    "_UseFresnelTransparency": {
+      "label": "Fresnelの透明性を有効にする",
+      "tooltip": "エッジの中央と不透明でオブジェクトをより透明にします."
+    },
+    "_FresnelPower": {
+      "label": "パワー",
+      "tooltip": "フォールオフカーブを制御する。 透明性のエッジに向かって、より高い値が押し込まれます."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "エッジアルファ",
+      "tooltip": "溝の角度の透明度."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "センターアルファ",
+      "tooltip": "カメラに直接直面する透明度."
+    },
+    "_AL_FresnelBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "テキストの使用",
+      "tooltip": "メインテクスチャを切り替えます."
+    },
+    "_MainTex": {
+      "label": "主なテクスチャ",
+      "tooltip": "第一次表面albedoの質感."
+    },
+    "_MainTexProjMode": {
+      "label": "基礎質の映写モード",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "ビデオ プレイヤー モード",
+      "tooltip": "ビデオプレーヤーのデータを受信するためのテクスチャを設定します."
+    },
+    "_VideoIsAVPro": {
+      "label": "AVProビデオ",
+      "tooltip": "ビデオプレーヤーがAVProを使用しているかどうかを確認してください."
+    },
+    "_Rotation": {
+      "label": "ローテーション",
+      "tooltip": "UV空間の中央にテクスチャを回転させます."
+    },
+    "_ScrollX": {
+      "label": "スクロール速度 X",
+      "tooltip": "水平UVアニメーション速度."
+    },
+    "_ScrollY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "垂直UVアニメーション速度."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "Ping-Pongスクロールを使用する",
+      "tooltip": "スクロールモードをバック・アンド・フォース・ピンポン・モーションに切り替えます."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "スピード",
+      "tooltip": "前後スクロール運動の速度."
+    },
+    "_PingPongScrollRange": {
+      "label": "レンジ",
+      "tooltip": "前後スクロールモーションの間隔."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "UVディストーションを有効にする",
+      "tooltip": "テクスチャを使用してUV座標を警戒し、熱ヘイズや水リップルなどの効果を作成します."
+    },
+    "_UVDistortionMap": {
+      "label": "UV蒸着マップ",
+      "tooltip": "UVを歪めるために使用されるテクスチャ。 レッドとグリーンのチャネルは、XとYのオフセットを制御します."
+    },
+    "_UVDistortionStrength": {
+      "label": "強み",
+      "tooltip": "どのように激しいUV歪みwobbleです."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "速度 X",
+      "tooltip": "歪み波の横速度."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "速度 Y",
+      "tooltip": "歪み波の垂直速度."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "Flipbookアニメーションを有効にする",
+      "tooltip": "スプライトシートレイアウトでメインテクスチャをアニメーション化。 これは、メインテクスチャのタイルとオフセットをオーバーライドします."
+    },
+    "_FlipbookMode": {
+      "label": "モード",
+      "tooltip": "アニメーション再生モード."
+    },
+    "_FlipbookColumns": {
+      "label": "コラム(X)",
+      "tooltip": "スプライトシートの列(水平にフレーム)の数."
+    },
+    "_FlipbookRows": {
+      "label": "行 (Y)",
+      "tooltip": "スプライトシートの行数(縦にフレーム)."
+    },
+    "_FlipbookSpeed": {
+      "label": "速度(FPS)",
+      "tooltip": "1秒あたりのフレームのアニメーション速度."
+    },
+    "_FlipbookStartFrame": {
+      "label": "スタートフレーム",
+      "tooltip": "アニメーションの開始フレームで、オフセットが可能."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "詳細テクスチャを使用する",
+      "tooltip": "二次的なテクスチャーを重ねて、細かいディテールやグラウンジにもよく使われます."
+    },
+    "_DetailTex": {
+      "label": "詳細 テクスチャ",
+      "tooltip": "二次テクスチャをオーバーレイします."
+    },
+    "_DetailTexProjMode": {
+      "label": "詳細 テクスチャの映写モード",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "細部の質感がいかに強くブレンドされるか."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "排出マスクの使用",
+      "tooltip": "表面が発光する部分を制御するためにテクスチャを使用します."
+    },
+    "_EmissionMaskTex": {
+      "label": "排出マスク",
+      "tooltip": "排出を制御するテクスチャ(white=fullエミッション、black=noエミッション)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "排出マスクの映写モード",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "Parallaxマッピングを有効にする",
+      "tooltip": "高さマップを使用してUVをオフセットします."
+    },
+    "_HeightMap": {
+      "label": "高さマップ(R)",
+      "tooltip": "白と黒が低いグレースケールの質感."
+    },
+    "_ParallaxStrength": {
+      "label": "強み",
+      "tooltip": "パララックス効果を深くする方法が現れます."
+    },
+    "_USE_POM_ON": {
+      "label": "Parallax Occlusion Mappingを有効にする",
+      "tooltip": "高品質深度効果の高いマルチステップパララックスを有効にします。 高いパーフだけ."
+    },
+    "_POMSteps": {
+      "label": "最高のステップ",
+      "tooltip": "パララックスステップの最大数."
+    },
+    "_POMMinSteps": {
+      "label": "最小ステップ",
+      "tooltip": "パララックスステップの最小数(グランシング角度)."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "環境の反射を有効にする",
+      "tooltip": "反射プローブをサンプル化し、環境の反射を基本モード/音モードに追加します."
+    },
+    "_EnvReflectionStrength": {
+      "label": "反射強さ",
+      "tooltip": "環境の反射の強さ."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "反射の粗さ",
+      "tooltip": "反射の粗さ(明るさ)."
+    },
+    "_USE_VAT_ON": {
+      "label": "Vertexアニメーションテクスチャを有効にする",
+      "tooltip": "焼きたての頂点アニメーションをVATテクスチャから応用。 あらかじめ焼かれた布、液体、または破壊効果のために使用される."
+    },
+    "_VATPositionTex": {
+      "label": "付加価値税ポジションのテクスチャ",
+      "tooltip": "付加価値税ポジションオフセットテクスチャ。 各行はフレームです."
+    },
+    "_VATFrameCount": {
+      "label": "フレームカウント",
+      "tooltip": "テクスチャ内のアニメーションフレームの総数."
+    },
+    "_VATSpeed": {
+      "label": "スピード",
+      "tooltip": "頂点アニメーションの再生速度."
+    },
+    "_VATBoundsMin": {
+      "label": "バウンド 分",
+      "tooltip": "位置のリマッピングのための最小限の境界."
+    },
+    "_VATBoundsMax": {
+      "label": "バウンドマックス",
+      "tooltip": "位置のリマッピングのための最高の境界."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "湿潤を有効にする",
+      "tooltip": "湿った表面を暗くすることおよび雨のさざ波の効果と模倣して下さい."
+    },
+    "_WetnessStrength": {
+      "label": "ぬれた強さ",
+      "tooltip": "全体湿潤強度."
+    },
+    "_WetnessSmoothness": {
+      "label": "ぬれた滑らかさ",
+      "tooltip": "スムースは湿った表面のための後押しします(斑点の強調の鋭さを)."
+    },
+    "_WetnessDarkening": {
+      "label": "ダークニング",
+      "tooltip": "濡れたときに表面がどれだけ暗くなるか."
+    },
+    "_RainRippleMap": {
+      "label": "レインリップル ノーマルマップ",
+      "tooltip": "雨波アニメーションに用いられるノーマルマップ."
+    },
+    "_RainRippleScale": {
+      "label": "リップルスケール",
+      "tooltip": "雨の波紋パターンのスケール."
+    },
+    "_RainRippleSpeed": {
+      "label": "Rippleの速度",
+      "tooltip": "雨波アニメーションの速度."
+    },
+    "_USE_DECAL_ON": {
+      "label": "Decalを有効にする",
+      "tooltip": "プライマリデカール/ステッカーのテクスチャをオーバーレイします."
+    },
+    "_DecalTex": {
+      "label": "デカールテクスチャ",
+      "tooltip": "デカールテクスチャ。 タイル/オフセットを使用して配置します."
+    },
+    "_DecalBlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "ベースカラーでデカールをブレンドする方法."
+    },
+    "_DecalStrength": {
+      "label": "強み",
+      "tooltip": "全体的な不透明度/デカールの強度."
+    },
+    "_DecalNormal": {
+      "label": "サイトマップ",
+      "tooltip": "デカールのノーマルマップ."
+    },
+    "_DecalNormalStrength": {
+      "label": "正常な強さ",
+      "tooltip": "デカールノーマルマップの強度."
+    },
+    "_DecalMetallic": {
+      "label": "メタリック",
+      "tooltip": "デカール領域のメタリック値."
+    },
+    "_DecalSmoothness": {
+      "label": "滑らかさ",
+      "tooltip": "デカールエリアのスムース値."
+    },
+    "_DecalAffectsPBR": {
+      "label": "効果 PBR",
+      "tooltip": "正規、メタリック、スムースをデカールで変更可能."
+    },
+    "_SurfaceStyle": {
+      "label": "表面様式",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "Hueシフトスケール",
+      "tooltip": "サイケデリックヒューシフトのマルチプライヤー."
+    },
+    "_PsychedelicSpeed": {
+      "label": "流れの速度",
+      "tooltip": "サイケデリックなノイズが表面に流れている速度."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "座標空間",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "フラクタル3DMode",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "フラクタル繰り返しモード",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "スケール",
+      "tooltip": "オブジェクト空間内のフラクタルのスケール."
+    },
+    "_FractalAnimMode": {
+      "label": "フラクタルアニメモード",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "アニメーション速度",
+      "tooltip": "フラクタルが目指す速度."
+    },
+    "_FractalPower": {
+      "label": "マンデルビル力",
+      "tooltip": "Mandelbulbのパワーパラメータ。 お問い合わせ!"
+    },
+    "_FractalIter": {
+      "label": "ツイート",
+      "tooltip": "反復の数。 より詳細ですが遅くなります."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "角度(X、Y、Z)",
+      "tooltip": "Kaleidoscopic IFSの回転のための角度."
+    },
+    "_FractalColorShift": {
+      "label": "フラクタルデプス ヒューシフト",
+      "tooltip": "深みを基調としたフラクタルの色合いシフトのマルチプライヤー."
+    },
+    "_FractalUseAutoShift": {
+      "label": "FractalUseAutoシフト",
+      "tooltip": "フラクタルベースカラーを長時間連続的にシフト."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "自動シフト速度",
+      "tooltip": "自動色のシフトの速度."
+    },
+    "_FractalJuliaC": {
+      "label": "Julia C 定数",
+      "tooltip": "ジュリアセットのクオータニオンC定数。 フラクタルの形状をコントロールします."
+    },
+    "_FractalMandelboxScale": {
+      "label": "ハイブリッドスケール",
+      "tooltip": "ハイブリッドフラクタールのスケール係数。 1.5～3.0の値を試してみましょう."
+    },
+    "_AL_FractalBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "反射ノイズマップ",
+      "tooltip": "シフト歪みを制御するノイズテクスチャ."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "屈折強さ",
+      "tooltip": "視界を歪めるほど強くなる."
+    },
+    "_UseScreenRefraction": {
+      "label": "スクリーンの屈折",
+      "tooltip": "オブジェクトの後ろに画面を分散させます."
+    },
+    "_RefractionStrength": {
+      "label": "強み",
+      "tooltip": "屈折の強さ."
+    },
+    "_RefractionIOR": {
+      "label": "アイオー",
+      "tooltip": "リフラクションのインデックス."
+    },
+    "_ChromaticAberration": {
+      "label": "クロマチック・アバレーション",
+      "tooltip": "色の分離を模倣し、赤/青のフリンジを作成します."
+    },
+    "_GalaxyMap": {
+      "label": "ギャラクシーマップ",
+      "tooltip": "オブジェクト内で表示するテクスチャ."
+    },
+    "_GalaxyDepth": {
+      "label": "フィードバック",
+      "tooltip": "2Dパララックス効果を生成し、テクスチャを深さに見せる."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "回転速度",
+      "tooltip": "銀河の質感を回転させます."
+    },
+    "_SkyboxMap": {
+      "label": "スカイボックスキューブマップ",
+      "tooltip": "ポータルのようにオブジェクト内で表示するキューブマップ."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "回転速度",
+      "tooltip": "Y軸周りのスカイボックスを回転させます."
+    },
+    "_TriplanarTex": {
+      "label": "トライプラナーテクスチャ",
+      "tooltip": "3つの軸からモデルに投影するテクスチャ."
+    },
+    "_TriplanarScale": {
+      "label": "スケール",
+      "tooltip": "投影したテクスチャのサイズを制御します."
+    },
+    "_TriplanarBlend": {
+      "label": "ブレンドシャープネス",
+      "tooltip": "3つのテクスチャ・プロジェクションのブレンドのシャープネスをコントロールします."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "Triplanarのノーマルマップを有効にする",
+      "tooltip": "3つの軸を渡る正常な地図を写し出して下さい."
+    },
+    "_TriplanarNormalMap": {
+      "label": "Triplanar ノーマルマップ",
+      "tooltip": "3軸に沿って写し出されるノーマルマップ."
+    },
+    "_TriplanarNormalScale": {
+      "label": "正常な強さ",
+      "tooltip": "トラベララーの通常のマップの強さ."
+    },
+    "_MatCapTex": {
+      "label": "MatCapのテクスチャ",
+      "tooltip": "オブジェクトの照明と反射を定義するマテリアルキャプチャテクスチャ."
+    },
+    "_MatCapIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "MatCap の効果の明るさを制御して下さい."
+    },
+    "_MatCapBlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "ベースカラーでMatCapテクスチャのブレンド方法を制御する。 オーバーライドは完全に交換します."
+    },
+    "_IridescenceScale": {
+      "label": "色スケール",
+      "tooltip": "表面を渡る色のシフトの頻度を制御します."
+    },
+    "_IridescenceStrength": {
+      "label": "強み",
+      "tooltip": "Iridescent効果の強度を制御する."
+    },
+    "_GlitterBlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "きらめきの色が表面と調和する方法を制御します。 Additive はオーバーブライトを得ることができます。 Lerp はベースカラー(必須)を置き換えます。 きらめき色よりも暗くなっても最高です."
+    },
+    "_GlitterColor": {
+      "label": "カラー",
+      "tooltip": "輝きの色."
+    },
+    "_GlitterColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "スケール",
+      "tooltip": "きらめきノイズパターンのサイズを制御します。 より高い値は、より小さい輝きを意味します."
+    },
+    "_GlitterSparsity": {
+      "label": "ジャグジー",
+      "tooltip": "たくさんの輝きが現れているかを制御します。 より高く評価される価値はより少なく、より多くのスパースの輝きを意味します."
+    },
+    "_GlitterSpaceMode": {
+      "label": "座標空間",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "スクロールアニメーションを使用する",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "スリッター速度",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "リム・グロウを有効にする",
+      "tooltip": "視野角に基づいてオブジェクトのエッジに輝きを追加します."
+    },
+    "_RimColor": {
+      "label": "縁色",
+      "tooltip": "エッジのカラー フレネルリム 輝き."
+    },
+    "_RimColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "Gradientの使用",
+      "tooltip": "グラデーションなテクスチャを使用して、ソリッドカラーの代わりにリムグローを色付けします."
+    },
+    "_RimGradient": {
+      "label": "リムグラデーション",
+      "tooltip": "リムグローのカラーランプ。 グラデーションはセンター(左)からエッジ(右)までマップされます."
+    },
+    "_RimPower": {
+      "label": "リムパワー",
+      "tooltip": "リムの輝きのフォールオフシャープネス."
+    },
+    "_RimIntensity": {
+      "label": "リム強度",
+      "tooltip": "リムの輝きのための明るさのマルチプライヤー."
+    },
+    "_AL_RimBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "断面効果を有効にする",
+      "tooltip": "オブジェクトが閉じているか、シーン内の他のオブジェクトと交差する色にフェードします."
+    },
+    "_IntersectionMode": {
+      "label": "断面モード",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "カラー",
+      "tooltip": "交差の効果の色."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "交通アクセス",
+      "tooltip": "フェードが起こる距離."
+    },
+    "_UsePulse": {
+      "label": "脈拍を有効にして下さい",
+      "tooltip": "発光強度にパルスアニメーションを追加します."
+    },
+    "_PulseSpeed": {
+      "label": "スピード",
+      "tooltip": "排出の脈拍をいかに速くするか."
+    },
+    "_PulseIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "脈拍がいかに明るいか."
+    },
+    "_AL_PulseBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "概要を有効にする",
+      "tooltip": "オブジェクトの周りの固体輪郭を追加します。 オブジェクトに2番目の描画呼び出しを追加します."
+    },
+    "_OutlineColor": {
+      "label": "輪郭色",
+      "tooltip": "メッシュ輪郭のベースカラーの色合い."
+    },
+    "_OutlineColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "輪郭色テクスチャ",
+      "tooltip": "輪郭色のテクスチャマップ."
+    },
+    "_OutlineWorldSpace": {
+      "label": "レガシー・アウトライン 世界空間",
+      "tooltip": "レガシー・アウトライン 世界空間"
+    },
+    "_OutlineSpace": {
+      "label": "概要スペース",
+      "tooltip": "輪郭の放出(ローカル オブジェクト スペース、スクリーン スペース、カメラの間隔の独立者)のための座標スペース."
+    },
+    "_OutlineWidth": {
+      "label": "輪郭の幅",
+      "tooltip": "転倒された船体の輪郭の厚さ."
+    },
+    "_AL_OutlineBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "幅のためのVertex色を使用して下さい",
+      "tooltip": "モデルの頂点色(赤いチャネル)を使用して輪郭の幅を変更します."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "用途 概要 幅 地図",
+      "tooltip": "グレースケールのテクスチャを使用して、輪郭の厚さをピクセルごとに調整します."
+    },
+    "_OutlineWidthMap": {
+      "label": "概要の幅 地図",
+      "tooltip": "輪郭の幅(white=full、black=zero)のためのグレースケールのマスク."
+    },
+    "_UseRippleEffect": {
+      "label": "Ripple効果を有効にする",
+      "tooltip": "UV座標からの同心なさざ波効果を作成します."
+    },
+    "_RippleCenterUV": {
+      "label": "センター(UV)",
+      "tooltip": "UV空間の波紋の中心(X、Y)."
+    },
+    "_RippleProgress": {
+      "label": "ニュース",
+      "tooltip": "波紋アニメーションの手動進行で、段階をコントロールします."
+    },
+    "_RippleCount": {
+      "label": "Ripple カウント",
+      "tooltip": "1つの紫外線単位を渡る同心なさざ波リングの数."
+    },
+    "_RippleMaxRadius": {
+      "label": "フェードアウトの半径",
+      "tooltip": "Ripplesが完全にフェードアウトする中央からの距離."
+    },
+    "_RippleWidth": {
+      "label": "フリガナ",
+      "tooltip": "各個々のリップリングの幅."
+    },
+    "_RippleColor": {
+      "label": "カラー",
+      "tooltip": "さざ波の色."
+    },
+    "_RippleColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "歪み強さ",
+      "tooltip": "Rippleがモデルの頂点を通常の値に置き換えるのはいくらですか."
+    },
+    "_RippleStrength": {
+      "label": "強み",
+      "tooltip": "さざ波の明るさ."
+    },
+    "_AnimateRipple": {
+      "label": "Animateリップル",
+      "tooltip": "Rippleアニメーションを自動的にアニメーション化します."
+    },
+    "_RippleAnimSpeed": {
+      "label": "スピード",
+      "tooltip": "アニメーションの速度."
+    },
+    "_RippleAnimMode": {
+      "label": "ピンポンを使用する",
+      "tooltip": "有効にすると、アニメーションはフォワードを再生し、後方を再生します."
+    },
+    "_AL_RippleBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "ベースカラーシフトを有効にする",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "アニメーションモード",
+      "tooltip": "カラーアニメーションのグローバルメソッドを設定します."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "グローバルオートカラーシフトを有効にする",
+      "tooltip": "有効にすると、自動的にカラーシフトスライダ(> 0)を継続的にアニメーション化します。 無効にすると、色のシフトスライダーは静的またはアニメーション値を受け入れます."
+    },
+    "_AnimatedGradient": {
+      "label": "アニメーショングラデーション",
+      "tooltip": "すべてのアニメーション色がからサンプルされるグラデーションな質感."
+    },
+    "_GradientAnimPingPong": {
+      "label": "ピンポンアニメーション",
+      "tooltip": "ループではなくグラデーションバックとフォスをアニメーション化します."
+    },
+    "_GradientAnimVertical": {
+      "label": "縦スクロールの使用",
+      "tooltip": "左から右へ左から下へグラデーションをスクロールします."
+    },
+    "_ColorShiftSpeed": {
+      "label": "アニメーション速度",
+      "tooltip": "すべてのアニメーション色の速度を制御します。 Hue Shift では、回転速度です。 Gradientではスクロール速度です."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "デザート",
+      "tooltip": "グレースケール(0=フルカラー、1=グレースケール)の最終色をブレンドします."
+    },
+    "_UseInvert": {
+      "label": "インバーター色",
+      "tooltip": "シェーダーの最終色を反転させます."
+    },
+    "_ColorTint": {
+      "label": "最終的な色のペンキ",
+      "tooltip": "最終的な結果上の色を多彩にして下さい、錫メッキするか、または等級分けのために有用."
+    },
+    "_ColorTint_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "明るさ",
+      "tooltip": "最終的な色の全体的な明るさを調節して下さい."
+    },
+    "_Contrast": {
+      "label": "コントラスト",
+      "tooltip": "最終色の全体的なコントラストを調整します."
+    },
+    "_Gamma": {
+      "label": "ガンマ",
+      "tooltip": "最終的な色にガンマ補正を適用します."
+    },
+    "_UsePixelation": {
+      "label": "ピクセル化を有効にする",
+      "tooltip": "ブロック性、低解像効果を作成します."
+    },
+    "_PixelationAmount": {
+      "label": "ピクセル化量",
+      "tooltip": "テクスチャ全体で「ピクセル」の数(ピクセル数が少ない)."
+    },
+    "_UsePosterize": {
+      "label": "ポスター化を有効にする",
+      "tooltip": "レトロ/デジタル一見を与える色の数を減らして下さい."
+    },
+    "_PosterizeLevels": {
+      "label": "レベル",
+      "tooltip": "チャネルごとの色のステップの数."
+    },
+    "_UseDistanceFade": {
+      "label": "有効距離 フェード",
+      "tooltip": "カメラから遠くにあるときにオブジェクトをフェードアウトします."
+    },
+    "_FadeDistance": {
+      "label": "開始間隔",
+      "tooltip": "フェードが始まるカメラからの距離."
+    },
+    "_FadeRange": {
+      "label": "レンジ",
+      "tooltip": "オブジェクトが距離を追い越すのはどれくらい早いか."
+    },
+    "_UseDepthFade": {
+      "label": "奥行きフェード(ソフト粒子)を有効にする",
+      "tooltip": "透明で添加物の表面のための場面の幾何学に対してポリゴンの交差を柔らかくして下さい."
+    },
+    "_DepthFadeDistance": {
+      "label": "フェードの間隔",
+      "tooltip": "ジオメトリが不透明の表面を交差するときに消える距離."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "効果の間隔のフェードを有効にする",
+      "tooltip": "VRの性能を改善するためにセットの間隔を越えるフェードの頑丈なprocedural効果(Glitter、Fractals、格子、Psychedelic)."
+    },
+    "_EffectFadeStart": {
+      "label": "フェードスタート距離",
+      "tooltip": "効果が消え始めるメートルの間隔."
+    },
+    "_EffectFadeEnd": {
+      "label": "フェードエンド距離",
+      "tooltip": "効果が十分に無効であるメートルの間隔."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "Vertex Collapseを有効にする",
+      "tooltip": "モデルを中心点に縮小します."
+    },
+    "_CollapseEnableAnim": {
+      "label": "崩壊 有効 (Anim)",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "株式について",
+      "tooltip": "崩壊効果の進行(0=正常、1=崩壊)."
+    },
+    "_AnimateCollapse": {
+      "label": "Animate 崩壊",
+      "tooltip": "自動的に崩壊量を時間を超過させます."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "高度なタイミングを使用する",
+      "tooltip": "シンプルなループ/ピンポンの代わりに、崩壊アニメーションのカスタムタイミングを使用します."
+    },
+    "_CollapseOnDuration": {
+      "label": "崩壊期間",
+      "tooltip": "モデルが崩壊するまでにかかる時間."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "崩壊期間",
+      "tooltip": "モデルが完全に崩壊した時."
+    },
+    "_CollapseOffDuration": {
+      "label": "拡張期間",
+      "tooltip": "モデルは、モデルが通常に戻って拡大するのにかかる時間."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "正常な持続期間",
+      "tooltip": "モデルはループする前に正常な状態に残ります."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "スピード",
+      "tooltip": "アニメーションの速度."
+    },
+    "_CollapseAnimMin": {
+      "label": "アニメーション 分",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "アニメーションマックス",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "ピンポンを使用する",
+      "tooltip": "有効にすると、アニメーションはフォワードを再生し、後方を再生します。 無効にするとループされます."
+    },
+    "_AL_CollapseBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "Glitch Flickerを有効にする",
+      "tooltip": "オブジェクト全体にフリッカリング効果を適用します."
+    },
+    "_FlickerMode": {
+      "label": "フリッカーモード",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "スピード",
+      "tooltip": "フリッカーの速度."
+    },
+    "_FlickerIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "フリッカーの強さ(暗くなれば)."
+    },
+    "_AL_FlickerBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "逆スクロール",
+      "tooltip": "グリッチスキャンラインのスクロール方向を反転します."
+    },
+    "_FlickerBlockSize": {
+      "label": "ブロックサイズ",
+      "tooltip": "グリッチブロックのサイズ."
+    },
+    "_FlickerDirection": {
+      "label": "アクセス",
+      "tooltip": "グリッチスキャンラインの方向."
+    },
+    "_FlickerDensity": {
+      "label": "コンテンツ",
+      "tooltip": "グリッチスキャンラインの数."
+    },
+    "_FlickerLineThickness": {
+      "label": "厚さ:",
+      "tooltip": "グリッチスキャンラインの厚さ."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "透明性のグリッチを有効にする",
+      "tooltip": "フリッカー効果も影響します。 透明性."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "強み",
+      "tooltip": "フリッカーが透明性にどれだけ影響を及ぼすか."
+    },
+    "_UseScanlines": {
+      "label": "Scanlinesを有効にする",
+      "tooltip": "CRTモニターの外観を模倣します."
+    },
+    "_ScanlineColor": {
+      "label": "カラー",
+      "tooltip": "スキャンラインの色と透明度."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "コンテンツ",
+      "tooltip": "画面に表示されるスキャンラインの数."
+    },
+    "_ScanlineSpeed": {
+      "label": "スピード",
+      "tooltip": "スキャンラインのスクロールを速くする方法."
+    },
+    "_ScanlineThickness": {
+      "label": "厚さ:",
+      "tooltip": "スキャンラインの厚さ."
+    },
+    "_ScanlineDirection": {
+      "label": "アクセス",
+      "tooltip": "スキャンライン(0=Vertical、1=Horizontal)の方向."
+    },
+    "_AL_ScanlineBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "可聴周波スペクトルを有効にする",
+      "tooltip": "AudioLink によるリアルタイムの周波数スペクトル可視化をレンダリングします."
+    },
+    "_AudioSpectrumMode": {
+      "label": "スペクトルモード",
+      "tooltip": "スペクトルの可視化スタイル."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "バーカウント",
+      "tooltip": "周波数バーの数."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "バーギャップ",
+      "tooltip": "バー間のギャップ(0 =ギャップなし)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "メリット",
+      "tooltip": "音声信号の増幅."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "端の厚さ",
+      "tooltip": "ラジアルバーのエッジの柔らかさ."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "アルファを埋めて下さい",
+      "tooltip": "カーブの下に埋められた区域の不透明."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "ロジスミックスケール",
+      "tooltip": "より自然な低音/trebleバランスのためのlogarithmic頻度のスケーリングを使用して下さい."
+    },
+    "_AudioSpectrumColor": {
+      "label": "カラー",
+      "tooltip": "第一次色(または勾配のための低頻度色)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "高いFreq色",
+      "tooltip": "グラデーションモードの高周波色."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "色モード",
+      "tooltip": "スペクトルが色付けされる方法."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "Hue の速度",
+      "tooltip": "ヒューシフト/レインボーアニメーションの速度."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "投影空間",
+      "tooltip": "視覚化者のための座標空間."
+    },
+    "_AudioSpectrumScale": {
+      "label": "スケール",
+      "tooltip": "視覚化者のスケール."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "オフセット",
+      "tooltip": "位置のオフセット."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "ローテーション",
+      "tooltip": "程度の回転."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "スペクトルが表面と混合する方法."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "ミラー",
+      "tooltip": "スペクトルを水平に映して下さい."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "内部の半径",
+      "tooltip": "放射状の表示の内部の半径."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "エッジの柔らかさ",
+      "tooltip": "空間エッジのアンチエイリアシングとバーや曲線の柔らかさを境界線."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "全面的な明るさのmultiplier."
+    },
+    "_AudioSmoothingMode": {
+      "label": "可聴周波滑らかになるモード",
+      "tooltip": "スペクトル/波形の緩和方法:未加工(なし)、フレームブレンド(2フレームEMA)、またはテンポラルバッファ(CRT履歴)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "スペクトラムの一時的なスムース",
+      "tooltip": "スペクトル(フレームブレンド/テンポラルバッファモード)に適用される一時的なスムースの強さ."
+    },
+    "_UseAudioWaveform": {
+      "label": "オーディオ波形を有効にする",
+      "tooltip": "AudioLink によるリアルタイム波形/オシロスコープの可視化をレンダリングします."
+    },
+    "_AudioWaveformMode": {
+      "label": "波形モード",
+      "tooltip": "波形の見える化スタイル."
+    },
+    "_AudioWaveformChannel": {
+      "label": "チャンネル",
+      "tooltip": "どのオーディオチャネルが見えるか."
+    },
+    "_AudioWaveformCycles": {
+      "label": "サイクル",
+      "tooltip": "波形サイクルの数が見える."
+    },
+    "_AudioWaveformGain": {
+      "label": "メリット",
+      "tooltip": "音声信号の増幅."
+    },
+    "_AudioWaveformThickness": {
+      "label": "ライン厚さ",
+      "tooltip": "トレースラインの厚さ."
+    },
+    "_AudioWaveformGlow": {
+      "label": "グロウ",
+      "tooltip": "ネオンの輝きの咲く."
+    },
+    "_AudioWaveformColor": {
+      "label": "カラー",
+      "tooltip": "第一次波形色."
+    },
+    "_AudioWaveformColor2": {
+      "label": "色 2",
+      "tooltip": "セカンダリーカラー(ベロシティハイライトまたはグローティント)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "色モード",
+      "tooltip": "波形が色づく方法."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "Hue の速度",
+      "tooltip": "ヒューシフト/レインボーアニメーションの速度."
+    },
+    "_AudioWaveformSpace": {
+      "label": "投影空間",
+      "tooltip": "視覚化者のための座標空間."
+    },
+    "_AudioWaveformScale": {
+      "label": "スケール",
+      "tooltip": "視覚化者のスケール."
+    },
+    "_AudioWaveformOffset": {
+      "label": "オフセット",
+      "tooltip": "位置のオフセット."
+    },
+    "_AudioWaveformRotation": {
+      "label": "ローテーション",
+      "tooltip": "程度の回転."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "波形が表面とどのように混合するか."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "極度半径",
+      "tooltip": "極端リングのベース半径."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "変位の強さ",
+      "tooltip": "ノーマルに沿って頂点変位の強さ."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "エッジの柔らかさ",
+      "tooltip": "空間エッジのアンチエイリアシングとストロークの柔らかさ."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "全面的な明るさのmultiplier."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "波形の一時的なスムース",
+      "tooltip": "波形(仮バッファモード)に適用される一時的なスムースの強さ."
+    },
+    "_FRSmoothedAudio": {
+      "label": "スムーズなオーディオCRT",
+      "tooltip": "カスタムレンダリングテクスチャ (FireRat AudioSmoothingCRTアセット) は、温度調節されたオーディオを保持します。 Temporal Bufferモードが必要です."
+    },
+    "_UseInterlace": {
+      "label": "インターレースを有効にする",
+      "tooltip": "他のすべての画面行を暗くし、インターレース表示をシミュレートします."
+    },
+    "_InterlaceIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "インターレースラインが暗くなる方法."
+    },
+    "_UseClippingMask": {
+      "label": "クリップマスクを有効にする",
+      "tooltip": "素材のクリップ(見えない部分を作る)にテクスチャを使用します。 ソフトな透明感ではなく、硬いクリップです."
+    },
+    "_ClippingMask": {
+      "label": "クリップマスク",
+      "tooltip": "クリップに使用するテクスチャ。 選択されたチャネルは可視性(黒=クリッピング)を決定します."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "マスクスクロール速度X",
+      "tooltip": "マスクのテクスチャを水平にスクロールします."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "マスクスクロール速度 Y",
+      "tooltip": "マスクのテクスチャを縦にスクロールします."
+    },
+    "_ClippingMaskChannel": {
+      "label": "マスクチャネル",
+      "tooltip": "クリップに使用するマスクのカラーチャンネル."
+    },
+    "_InvertClippingMask": {
+      "label": "インバーター マスク",
+      "tooltip": "マスク効果(白=クリッピング)を反転します."
+    },
+    "_UseNoise": {
+      "label": "騒音・排出が可能",
+      "tooltip": "アニメーションノイズオーバーレイを追加します."
+    },
+    "_NoiseIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "騒音効果の強さ."
+    },
+    "_NoiseColor": {
+      "label": "カラー",
+      "tooltip": "ノイズパーティクルの色."
+    },
+    "_NoiseColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "アニメーション速度",
+      "tooltip": "ノイズアニメーションの1秒あたりのフレーム."
+    },
+    "_Cull": {
+      "label": "キューリング",
+      "tooltip": "ポリゴンの彫刻モード(オフ、フロント、バック)."
+    },
+    "_CullShadow": {
+      "label": "Shadow Cullモード",
+      "tooltip": "影の鋳造のパスのために特に使用される多角形のcullingモード."
+    },
+    "_ZTest": {
+      "label": "Zテスト",
+      "tooltip": "深さのテストの実行方法を制御します."
+    },
+    "_ColorWriteMask": {
+      "label": "色はマスクを書きます",
+      "tooltip": "画面にカラーチャンネルが書かれているかを制御します."
+    },
+    "_QueueOffset": {
+      "label": "キューオフセット",
+      "tooltip": "選択したレンダーモードに相対的にレンダーキューをオフセットします."
+    },
+    "_SrcBlend": {
+      "label": "Srcブレンドモード",
+      "tooltip": "透明ブレンドのソースブレンドモード."
+    },
+    "_DstBlend": {
+      "label": "Dstのブレンド モード",
+      "tooltip": "透明ブレンドのデスティネーションブレンドモード."
+    },
+    "_Stencil": {
+      "label": "ステンシルRef",
+      "tooltip": "ステンシル参照値."
+    },
+    "_StencilReadMask": {
+      "label": "マスクを読んで下さい",
+      "tooltip": "ステンシル読み取りマスク."
+    },
+    "_StencilWriteMask": {
+      "label": "マスクを書く",
+      "tooltip": "ステンシルはマスクを書きます."
+    },
+    "_StencilComp": {
+      "label": "比較比較",
+      "tooltip": "ステンシル比較機能."
+    },
+    "_StencilPass": {
+      "label": "パス",
+      "tooltip": "ステンシルパス操作."
+    },
+    "_StencilFail": {
+      "label": "失敗",
+      "tooltip": "ステンシルは動作に失敗します."
+    },
+    "_StencilZFail": {
+      "label": "ログイン",
+      "tooltip": "ステンシルのzfail操作."
+    },
+    "_NormalMapUVSet": {
+      "label": "ノーマルUVセット",
+      "tooltip": "ノーマルマップの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "細部 正常な紫外線セット",
+      "tooltip": "詳細はノーマルマップの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_DetailTexUVSet": {
+      "label": "詳細UVセット",
+      "tooltip": "座標チャンネル(UV0 または UV1)を選択し、詳細なテクスチャーを選択します."
+    },
+    "_DecalTexUVSet": {
+      "label": "ステッカーUVセット",
+      "tooltip": "座標チャンネル(UV0またはUV1)をデカールで選択します."
+    },
+    "_DissolveMapUVSet": {
+      "label": "紫外線セットを分解して下さい",
+      "tooltip": "溶解マップの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "排出マスクUVセット",
+      "tooltip": "エミッションマスクの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_OutlineTex": {
+      "label": "概要のテクスチャ",
+      "tooltip": "輪郭の幾何学にマッピングされる質."
+    },
+    "_OutlineTexUVSet": {
+      "label": "輪郭テックスUVセット",
+      "tooltip": "輪郭の質感のための紫外線チャネル."
+    },
+    "_OutlineTexScrollX": {
+      "label": "概要 スクロール X",
+      "tooltip": "輪郭の質感のためのスクロール速度X."
+    },
+    "_OutlineTexScrollY": {
+      "label": "概要 スクロール Y",
+      "tooltip": "スクロール速度 Y 輪郭のテクスチャ."
+    },
+    "_UseOutlineGradient": {
+      "label": "概要の勾配を有効にして下さい",
+      "tooltip": "輪郭全体に垂直トップ/ボトムグラデーションを適用します."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "トップカラー",
+      "tooltip": "輪郭の勾配の上の色."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "最下色",
+      "tooltip": "輪郭の勾配の最下色."
+    },
+    "_RimMode": {
+      "label": "リムモード",
+      "tooltip": "外側リム(エッジに向かっている)またはインナーリム(フェーシングセンターに向かっている)."
+    },
+    "_RimDepthMode": {
+      "label": "縁の深さモード",
+      "tooltip": "リム照明の視野角ではなくシーンの深さの違いを使用します."
+    },
+    "_RimDepthWidth": {
+      "label": "縁の深さの幅",
+      "tooltip": "深さベースの縁のための間隔の幅."
+    },
+    "_GridTilingX": {
+      "label": "グリッドタイリングX",
+      "tooltip": "格子ラインのための横のタイル."
+    },
+    "_GridTilingY": {
+      "label": "グリッドタイリング Y",
+      "tooltip": "格子ラインのための縦のタイル."
+    },
+    "_DecalRotation": {
+      "label": "ローテーション",
+      "tooltip": "回転角度(0〜360度)をデカールします."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "Decal 2を有効にする",
+      "tooltip": "二次デカール/ステッカーのテクスチャをオーバーレイします."
+    },
+    "_Decal2Tex": {
+      "label": "2つのテクスチャを飾る",
+      "tooltip": "2番目のデカールテクスチャ."
+    },
+    "_Decal2BlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "ベースカラーで2のデカールをブレンドする方法."
+    },
+    "_Decal2Strength": {
+      "label": "強み",
+      "tooltip": "全体的な不透明度/決定の強度 2."
+    },
+    "_Decal2Normal": {
+      "label": "サイトマップ",
+      "tooltip": "ノーマルマップのデカール2."
+    },
+    "_Decal2NormalStrength": {
+      "label": "正常な強さ",
+      "tooltip": "デカール2のノーマルマップの強度."
+    },
+    "_Decal2Metallic": {
+      "label": "メタリック",
+      "tooltip": "Decal 2エリアのメタリック値."
+    },
+    "_Decal2Smoothness": {
+      "label": "滑らかさ",
+      "tooltip": "Decal 2エリアのスムース値."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "効果 PBR",
+      "tooltip": "正規、メタリック、スムースをデカールで変更可能."
+    },
+    "_Decal2TexUVSet": {
+      "label": "ステッカー2 UVセット",
+      "tooltip": "座標チャンネル(UV0 または UV1) を Decal 2 で選択します."
+    },
+    "_Decal2Rotation": {
+      "label": "ローテーション",
+      "tooltip": "回転角度(0-360度)を12倍にする."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "Decal 3を有効にする",
+      "tooltip": "Tertiaryデカール/ステッカーのテクスチャをオーバーレイします."
+    },
+    "_Decal3Tex": {
+      "label": "3つのテクスチャを飾る",
+      "tooltip": "3番目のデカールテクスチャ."
+    },
+    "_Decal3BlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "ベースカラーで3のデカールをブレンドする方法."
+    },
+    "_Decal3Strength": {
+      "label": "強み",
+      "tooltip": "全体的な不透明度/決定の強度 3."
+    },
+    "_Decal3Normal": {
+      "label": "サイトマップ",
+      "tooltip": "ノーマルマップ(デカール3)."
+    },
+    "_Decal3NormalStrength": {
+      "label": "正常な強さ",
+      "tooltip": "デカール3のノーマルマップの強度."
+    },
+    "_Decal3Metallic": {
+      "label": "メタリック",
+      "tooltip": "Decal 3エリアのメタリック値."
+    },
+    "_Decal3Smoothness": {
+      "label": "滑らかさ",
+      "tooltip": "Decal 3区域のための滑らかさの価値."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "効果 PBR",
+      "tooltip": "正規、メタリック、スムースをデカールで変更可能."
+    },
+    "_Decal3TexUVSet": {
+      "label": "ステッカー3 UVセット",
+      "tooltip": "座標チャンネル (UV0 または UV1) を Decal 3 で選択します."
+    },
+    "_Decal3Rotation": {
+      "label": "ローテーション",
+      "tooltip": "転位角度(0-360度)を12月3日."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "レインリップルUVセット",
+      "tooltip": "雨のさざ波(UV0対UV1)のためのUVチャネル."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "AudioLink Blinkバンド",
+      "tooltip": "可聴周波ビートの脈動/点滅の放出のためのAudioLinkバンド."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "点滅の強さ",
+      "tooltip": "AudioLinkエミッションブリンク効果の強さ."
+    },
+    "_UseBackFaceColor": {
+      "label": "背部表面色を有効にして下さい",
+      "tooltip": "後向きのポリゴンに別々の色をつけます."
+    },
+    "_BackFaceColor": {
+      "label": "背部表面色",
+      "tooltip": "バックフェイスの色."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "バックフェイステクスチャを使う",
+      "tooltip": "バックフェーシングポリゴンに別々のテクスチャーがあります."
+    },
+    "_BackFaceTex": {
+      "label": "バックフェイステクスチャ",
+      "tooltip": "バックフェイスの質感."
+    },
+    "_BackFaceEmission": {
+      "label": "バックフェイスの排出",
+      "tooltip": "バックフェイスのエミッションテクスチャ."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "排出の強さ",
+      "tooltip": "背部表面の放出の強さ."
+    },
+    "_HueShift": {
+      "label": "ヒュー・シフト",
+      "tooltip": "カラーホイールの周りの色合いを回転させます."
+    },
+    "_SaturationAdjust": {
+      "label": "飽和",
+      "tooltip": "多層色彩度(0=グレースケール、1=デフォルト、2=有効)."
+    },
+    "_ValueAdjust": {
+      "label": "価値(明るさ)",
+      "tooltip": "HSV値/明るさをスケールアップ."
+    },
+    "_UseHSVMask": {
+      "label": "HSVマスクを有効にする",
+      "tooltip": "マスクHSVの調整は、テクスチャマップを使って行います."
+    },
+    "_HSVMask": {
+      "label": "HSVマスク(R)",
+      "tooltip": "Hue/Saturation/Valueシフト(White=Full Shift、Black=Original)用のマスクテクスチャ."
+    },
+    "_NormalMapFlipY": {
+      "label": "フリップY (DirectX/OpenGL)",
+      "tooltip": "DirectX/OpenGLフォーマットの互換性のための通常のマップの緑色のチャンネルを変換します."
+    },
+    "_DetailBlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "詳細なテクスチャ(オーバーレイ、マルチプライ、Additive、SoftLight)用のブレンドモード."
+    },
+    "_VertexColorMode": {
+      "label": "Vertexカラーモード",
+      "tooltip": "ベースカラー(リプレース、マルチプライ、追加)で頂点カラーをブレンドする方法を選択します."
+    },
+    "_GlitterShape": {
+      "label": "きらめきの形",
+      "tooltip": "グリッターの輝きの幾何学的形状を制御する."
+    },
+    "_MatCapMask": {
+      "label": "マットキャップマスク(R)",
+      "tooltip": "MatCapの可視性を制御するマスクテクスチャ(R)."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "MatCapマスクUVセット",
+      "tooltip": "MatCap マスクの座標チャンネル (UV0 または UV1) を選択します."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "Edge Contour Gradient を使用する",
+      "tooltip": "溶解エッジ輪郭に沿って多色グラデーションを有効にします."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "分解の端の勾配",
+      "tooltip": "溶解した端の輪郭に沿って適用される勾配のテクスチャ."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "マスクスクロール速度X",
+      "tooltip": "スクロール速度 X エミッションマスク用."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "マスクスクロール速度 Y",
+      "tooltip": "スクロール速度 排出マスクのためのY."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "グローバルスムース",
+      "tooltip": "AudioLinkの周波数帯域全体でスムーズなグローバル応答."
+    },
+    "_AL_GlobalMin": {
+      "label": "グローバルフロア/分",
+      "tooltip": "AudioLinkの反応のためのノイズフロアのしきい値."
+    },
+    "_AL_GlobalMax": {
+      "label": "全体的な天井/最高",
+      "tooltip": "天井閾値スケーリングピークAudioLink振幅."
+    },
+    "_DetailNormalScrollX": {
+      "label": "スクロール速度 X",
+      "tooltip": "速度 X をスクロールして詳細を正常にします."
+    },
+    "_DetailNormalScrollY": {
+      "label": "スクロール速度 Y",
+      "tooltip": "スクロール速度 Y 細部のための正常な."
+    },
+    "_ColorMask": {
+      "label": "カラーマスクテクスチャ",
+      "tooltip": "カラーアニメーションをマスクし、制限するために使用されるテクスチャ."
+    },
+    "_ColorMaskUVSet": {
+      "label": "カラーマスクUVセット",
+      "tooltip": "カラーマスクの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "カラーマスクアルファソース",
+      "tooltip": "カラーマスクをブレンドするアルファに使用されるソースチャンネル."
+    },
+    "_MainTexUVSet": {
+      "label": "主要な質紫外線セット",
+      "tooltip": "メインテクスチャの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_Shadow2Color": {
+      "label": "第2影色",
+      "tooltip": "2番目のセルシェード層の深みのある影色."
+    },
+    "_ToonThreshold2": {
+      "label": "第2回トゥーン・スローズホールド",
+      "tooltip": "2nd深層シェード層の境界線."
+    },
+    "_ToonHardness2": {
+      "label": "第2トオン硬度",
+      "tooltip": "2nd深層シェード層のエッジシャープネス."
+    },
+    "_MinLightBrightness": {
+      "label": "最低ライト明るさ",
+      "tooltip": "アバターが黒になるのを防ぐための最低の明るさの床."
+    },
+    "_MaxLightBrightness": {
+      "label": "最高の軽い明るさ",
+      "tooltip": "最高の明るさの天井は明るい世界の露出を防ぐため."
+    },
+    "_ShadeShiftMap": {
+      "label": "シェードシフトマップ",
+      "tooltip": "セルのシャドウライン(固定された折目/AO)を偏すテクスチャー."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "シェードシフトUVセット",
+      "tooltip": "シェードシフトマップの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_ShadeShiftStrength": {
+      "label": "陰のシフト強さ",
+      "tooltip": "陰シフトマップからの影線バイアスの強度."
+    },
+    "_StepSpecular": {
+      "label": "ステップ 仕様",
+      "tooltip": "ソフトなPBRのスペクシャルハイライトを鮮明な漫画の輝きのスポットに変換します."
+    },
+    "_StepSpecularThreshold": {
+      "label": "ステップ スペクトラムの境界",
+      "tooltip": "スペキュラーステップの境界線を投げる."
+    },
+    "_StepSpecularHardness": {
+      "label": "ステップ 標本の硬度",
+      "tooltip": "精密なステップのための端の鋭さ."
+    },
+    "_UseMatCap2": {
+      "label": "MatCap 2を有効にする",
+      "tooltip": "マルチトーンメタリックまたはリムアクセント用のセカンダリマットレイヤーを追加します."
+    },
+    "_MatCap2Tex": {
+      "label": "MatCap 2 テクスチャ",
+      "tooltip": "二次MatCapの球面反射の質感."
+    },
+    "_MatCap2BlendMode": {
+      "label": "ブレンドモード",
+      "tooltip": "MatCap 2 (Add, Multiply, Replace, Lighten, Overlay) 用のブレンドモード."
+    },
+    "_MatCap2Intensity": {
+      "label": "インテンシティ",
+      "tooltip": "MatCap 2 の明るさの乗合器."
+    },
+    "_MatCap2Mask": {
+      "label": "MatCap 2 マスク (R)",
+      "tooltip": "MatCap 2の可視性を制御するマスクテクスチャ(R)."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "マスクUVセット",
+      "tooltip": "MatCap 2マスク用のUVチャンネル."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "ノーマルマップのPerturbation",
+      "tooltip": "表面通常のマップを使用してMatCap反射を変形させます."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "パースペクティブ補正",
+      "tooltip": "VRでワイドFOVの視点歪みを修正."
+    },
+    "_HairSpecMask": {
+      "label": "毛の鏡面",
+      "tooltip": "毛の斑点のハイライトが現れているところを制御するマスクの質感."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "マスクUVセット",
+      "tooltip": "ヘアスモールマスクの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_OutlineNormalSource": {
+      "label": "輪郭の正常な源",
+      "tooltip": "輪郭の放出(メッシュ・ノーマ、ヴェルテックス色、UV2、UV3)に使用されるバーテックス・ストリーム."
+    },
+    "_OutlineMinWidth": {
+      "label": "最少幅",
+      "tooltip": "距離の輪郭のための最小ピクセル厚さ."
+    },
+    "_OutlineMaxWidth": {
+      "label": "最高の幅",
+      "tooltip": "輪郭のための最高のピクセル厚さは閉まります."
+    },
+    "_OutlineNoiseScale": {
+      "label": "騒音スケール",
+      "tooltip": "アニメーションアウトラインジッタノイズの頻度."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "騒音速度",
+      "tooltip": "輪郭のジッタノイズのアニメーション速度."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "騒音強度",
+      "tooltip": "輪郭の頂点のジッタの変位の強さ."
+    },
+    "_UseDitheredAlpha": {
+      "label": "ダイザードアルファ",
+      "tooltip": "スクリーン・スペース バイエルのマトリックスは分類なしの透明な生地および毛のために飾る."
+    },
+    "_DitherStrength": {
+      "label": "ダイザーの強さ",
+      "tooltip": "ダイザーのブレンドの強さ(0 =鋭い切り口、1 =完全なstipple)."
+    },
+    "_ShadowCutoff": {
+      "label": "シャドーカットオフ",
+      "tooltip": "影の鋳造のためのアルファ カットオフのしきい値."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "Shadow Cutoff オーバーライドを使用する",
+      "tooltip": "アルファカットオフのしきい値をシャドウキャスティングパス用に特別にオーバーライドします."
+    },
+    "_AL_DecalBand": {
+      "label": "AudioLinkデカール1バンド",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "AudioLinkの決定力1",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "AudioLinkデカール2バンド",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "AudioLinkの決定2の強さ",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "AudioLinkデカール3バンド",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "AudioLinkデカール3強度",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "カメラフェードの近く",
+      "tooltip": "カメラが閉じすぎるとジオメトリを滑らかに溶かします(VRヘッドクリッピングを防ぎます)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "フェード・ラディウス",
+      "tooltip": "幾何学が衰退するカメラからの間隔."
+    },
+    "_NearCameraFadeRange": {
+      "label": "フェード・レンジ",
+      "tooltip": "近くのカメラのフェードのための転移の間隔."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "フェードシャドウ",
+      "tooltip": "また、フェード距離内の影をクリップします."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "脈拍の速度",
+      "tooltip": "輪郭の呼吸/脈動のための振動速度."
+    },
+    "_OutlinePulseStrength": {
+      "label": "脈拍の強さ",
+      "tooltip": "輪郭の呼吸/脈動のための振動広さ."
+    },
+    "_UseChromaKey": {
+      "label": "クロムキーの使用",
+      "tooltip": "特定の色の範囲を透明にします(例えば緑スクリーンのキー)."
+    },
+    "_ChromaKeyColor": {
+      "label": "主色",
+      "tooltip": "キーアウトの色."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "パスワード",
+      "tooltip": "キーカラーの周りの距離のしきい値を除去します."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "スムース",
+      "tooltip": "エッジ移行の柔らかさ."
+    },
+    "_DistanceFade_LOD": {
+      "label": "間隔 LODの開始",
+      "tooltip": "カメラからの距離で、LOD の最適化(0 = 無効) のシェーディングの詳細を簡素化します."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "アバターパラメータモード",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "ホログラムの使用",
+      "tooltip": "アニメーションスキャンライン、エッジリム、フリッカーによるSci-fiホログラム効果."
+    },
+    "_HoloColor": {
+      "label": "ホログラム色",
+      "tooltip": "ホログラムの投射の色の色合い."
+    },
+    "_HoloScanlineTiling": {
+      "label": "スキャンラインのチリング",
+      "tooltip": "横のスキャンラインの密度."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "スキャンライン速度",
+      "tooltip": "スキャンラインの移動の速度."
+    },
+    "_HoloRimPower": {
+      "label": "リムパワー",
+      "tooltip": "ホログラムの端の輝きのFalloffの鋭さ."
+    },
+    "_HoloStrength": {
+      "label": "ホログラムの強さ",
+      "tooltip": "基礎表面上のホログラムのブレンドの強さ."
+    },
+    "_HoloAlphaStrength": {
+      "label": "アルファ変調",
+      "tooltip": "スキャンラインパターンで透明性を調節します."
+    },
+    "_UseCustomFogColor": {
+      "label": "カスタムフォグカラーを有効にする",
+      "tooltip": "独自のローカライズされた色合いで、グローバルシーンフォグカラーをオーバーライド."
+    },
+    "_CustomFogColor": {
+      "label": "カスタムフォグカラー",
+      "tooltip": "大気霧のための注文の色合い."
+    },
+    "_AlphaToCoverage": {
+      "label": "アルファからカバレッジ(MSAA)",
+      "tooltip": "ハードウェアアルファをカバレッジ(MSAAアンチエイリアシング)にカットアウトエッジを有効にし、葉や髪を滑らかにします."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "A2Cシャープン",
+      "tooltip": "アルファをカバレッジエッジにシャープに."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "Shadow の受信強さ",
+      "tooltip": "マテリアル(1.0 = フルシャドウ、0.0 =シャドウなし)にダークリアルタイムシーンシャドウが表示される方法を制御する."
+    },
+    "_DecalClamp": {
+      "label": "クランプ ステッカーの傷",
+      "tooltip": "クランプはUV座標を低下させ、デカールは[0, 1]の外で繰り返さない."
+    },
+    "_Decal2Clamp": {
+      "label": "クランプ ステッカーの傷",
+      "tooltip": "クランプのデカールUV座標なので、デカール2は[0, 1]外で繰り返さない."
+    },
+    "_Decal3Clamp": {
+      "label": "クランプ ステッカーの傷",
+      "tooltip": "クランプのデカールUV座標なので、デカール3は[0, 1]外で繰り返さない."
+    },
+    "_RimMask": {
+      "label": "リムマスク",
+      "tooltip": "特定のメッシュ領域にリムを制限または塗装するためのテクスチャマスク(R)."
+    },
+    "_RimMaskUVSet": {
+      "label": "リムマスクUVセット",
+      "tooltip": "リムマスクの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_OutlineLightingMix": {
+      "label": "照明ミックス",
+      "tooltip": "輪郭に光るシーン(0 = unlit, 1 = シーンライトで完全にシェード)をブレンドします."
+    },
+    "_OutlineZOffset": {
+      "label": "Zオフセット(Depth Bias)",
+      "tooltip": "隣接した幾何学をクリップすることから輪郭を防ぐため、カメラ空間のZ深さのバイアスが適用されます."
+    },
+    "_UseFaceSDF": {
+      "label": "SDFフェイスシャドウを有効にする",
+      "tooltip": "署名された距離フィールドは、アニメキャラクターの影マッピングに直面しています."
+    },
+    "_FaceShadowMap": {
+      "label": "フェイスシャドウマップ(SDF)",
+      "tooltip": "SDFの表面影の質の符号化の軽いしきい値の勾配."
+    },
+    "_FaceShadowOffset": {
+      "label": "顔の影のオフセット",
+      "tooltip": "フロント/バックシャドウの境界角をオフセットします."
+    },
+    "_FaceShadowBlur": {
+      "label": "顔の影の柔らかさ",
+      "tooltip": "SDFの影の端の境界を柔らかくして下さい."
+    },
+    "_FaceShadowInvert": {
+      "label": "Invert 顔の影",
+      "tooltip": "SDF シャドーグラデーションを反転します."
+    },
+    "_CameraVisibilityMode": {
+      "label": "可視性モード",
+      "tooltip": "ミラー、VR のヘッドホーンおよびデスクトップのストリーム/写真のカメラの可視性を制御して下さい."
+    },
+    "_MirrorDetectMode": {
+      "label": "ミラー検出方法",
+      "tooltip": "ミラー/反射カメラを検出するためのアルゴリズム."
+    },
+    "_CustomCameraFilter": {
+      "label": "カスタムカメラID",
+      "tooltip": "カスタムグローバルカメラID(0=無効)でフィルタリングします."
+    },
+    "_OffsetFactor": {
+      "label": "ポリゴンオフセットファクター",
+      "tooltip": "ポリゴンの深さのオフセットの要因(z-fightingを防ぎます)."
+    },
+    "_OffsetUnits": {
+      "label": "ポリゴンオフセットユニット",
+      "tooltip": "ポリゴンの深さのオフセットの単位(z-fightingを防ぎます)."
+    },
+    "_UseEnvRim": {
+      "label": "環境の縁",
+      "tooltip": "Tints/modulates は周囲の SH および反射の調査を使用して rim の輝きを."
+    },
+    "_EnvRimMix": {
+      "label": "環境の組合せ",
+      "tooltip": "純粋なリムカラー(0)と環境調整されたリム(1)のブレンド."
+    },
+    "_MonochromeLighting": {
+      "label": "Monochromeの照明",
+      "tooltip": "シーン照明の色を飽和させ、正確なキャラクターの肌の色を維持します."
+    },
+    "_AsUnlitLighting": {
+      "label": "無限照明",
+      "tooltip": "暗い環境で均一な床に向かって照明をブレンドします."
+    },
+    "_UseVRCLV": {
+      "label": "VRCの軽い容積",
+      "tooltip": "サポートされている世界のピクセル周囲照明用のVRC光量(REDSIM)のサンプル。 別の場所で標準的な軽い調査に戻って落ちて下さい。 中・低性能で強制オフ."
+    },
+    "_VRCLVIntensity": {
+      "label": "LVの強度",
+      "tooltip": "軽い容積の包囲された貢献をスケールアップして下さい."
+    },
+    "_VRCLVNormalBias": {
+      "label": "LV の正常なバイアス",
+      "tooltip": "オフセットは薄い幾何学の voxel のアクネを減らすために表面の常態に沿って容積のサンプル."
+    },
+    "_UseFluorescence": {
+      "label": "フッ素沈着を有効にする",
+      "tooltip": "環境・指向性光度(暗闇の光)による反応."
+    },
+    "_FluorescenceMap": {
+      "label": "蛍光地図",
+      "tooltip": "蛍光地図(RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "蛍光地図UVセット",
+      "tooltip": "蛍光マップの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_FluorescenceColor": {
+      "label": "カラー",
+      "tooltip": "Fluorescence HDR色の色合い"
+    },
+    "_FluorescenceStrength": {
+      "label": "強み",
+      "tooltip": "Fluorescenceの放出の強さ"
+    },
+    "_FluorescenceThreshold": {
+      "label": "光の境界線",
+      "tooltip": "蛍光光を誘発する軽いレベルのしきい値."
+    },
+    "_FluorescenceHardness": {
+      "label": "フリガナ",
+      "tooltip": "暗い状態とlit状態の間の遷移の鋭さ."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "暗いだけに輝く",
+      "tooltip": "有効にすると、低照度環境(暗い)でのみ輝きます."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "PS1 Vertex スナップを有効にする",
+      "tooltip": "レトロなPS1/アフィネのジッター美学のための低解像格子に頂点を量ります."
+    },
+    "_PS1SnapResolution": {
+      "label": "スナップの決断",
+      "tooltip": "頂点のスナップのための格子決断/精密(例えば240p)."
+    },
+    "_PS1SnapSpace": {
+      "label": "スナップスペース",
+      "tooltip": "スナップのための座標空間(画面スペースジッタ対オブジェクトスペース頂点定量)."
+    },
+    "_UseLookAt": {
+      "label": "LookAtビルボードを有効にする",
+      "tooltip": "メッシュ頂点を回転させ、アクティブカメラを動的に直面します."
+    },
+    "_LookAtMode": {
+      "label": "掲示板モード",
+      "tooltip": "分岐方向軸(フル3D球形の掲示板とY軸円筒形の掲示板)."
+    },
+    "_LookAtStrength": {
+      "label": "強み",
+      "tooltip": "元の網のオリエンテーションおよび掲示板されたオリエンテーション間のブレンドの強さ."
+    },
+    "_UseUVFlow": {
+      "label": "UVフローを有効にする",
+      "tooltip": "ベクトルフローマップパスに沿って、シームレスな2相サイクリングでテクスチャーをアニメーション化."
+    },
+    "_FlowMap": {
+      "label": "フローマップ(RGベクトル)",
+      "tooltip": "フローマップ(RG方向ベクトル、0.5 =ニュートラル)"
+    },
+    "_FlowMapUVSet": {
+      "label": "フローマップUVセット",
+      "tooltip": "フローマップの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_FlowSpeed": {
+      "label": "流れの速度",
+      "tooltip": "フローモーションアニメーション速度."
+    },
+    "_FlowStrength": {
+      "label": "フロー強度",
+      "tooltip": "フローベクトルに沿ってUV歪み変位の大きさ."
+    },
+    "_FlowCycleRate": {
+      "label": "サイクル率",
+      "tooltip": "デュアルフェーズクロスフェードサイクルの頻度."
+    },
+    "_UseRGBAColorMask": {
+      "label": "RGBA 色のマスキングを有効にする",
+      "tooltip": "マスクの質感のRGBAチャンネルにマッピングされた4つの独立したカラーの色合いと従順なチャンネルを許可します."
+    },
+    "_RGBAColorMask": {
+      "label": "カラーマスク(RGBA)",
+      "tooltip": "カラーマスク(RGBAチャンネルは4色ゾーン)"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "UVセット",
+      "tooltip": "RGBAカラーマスクの座標チャンネル(UV0またはUV1)を選択します."
+    },
+    "_ColorMaskR_Color": {
+      "label": "赤の色合い",
+      "tooltip": "R チャネルのマスクのための色合い."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "レッドエミッション(HDR)",
+      "tooltip": "Rチャンネルマスクの排出."
+    },
+    "_ColorMaskG_Color": {
+      "label": "緑の色合い",
+      "tooltip": "G チャンネル マスクの Tint."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "グリーンエミッション(HDR)",
+      "tooltip": "Gチャンネルマスクの排出."
+    },
+    "_ColorMaskB_Color": {
+      "label": "青の色合い",
+      "tooltip": "Bチャンネルマスク用ティント."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "ブルーエミッション(HDR)",
+      "tooltip": "Bチャンネルマスクの排出."
+    },
+    "_ColorMaskA_Color": {
+      "label": "アルファ シント",
+      "tooltip": "チャンネルマスク用のTint."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "アルファエミッション(HDR)",
+      "tooltip": "チャンネルマスクの排出."
+    },
+    "_UseNetworkTime": {
+      "label": "ネットワーク同期時間を有効にする",
+      "tooltip": "AudioLink/Udon chronological Clock 経由でネットワーククライアント間でシェーダーの連続アニメーション時間を同期(VRChat でアニメーションのドリフトを防ぎます)."
+    },
+    "_NetworkTimeScale": {
+      "label": "ネットワークタイムスケール",
+      "tooltip": "ネットワーク同期時間に適用されるスケール係数."
+    },
+    "_UseStochasticSampling": {
+      "label": "Stochastic Samplingを有効にする",
+      "tooltip": "多角的にランダム化されたテクスチャサンプルをブレンドし、大きな表面に繰り返すタイルパターンを完全に排除します."
+    },
+    "_StochasticScale": {
+      "label": "確率的スケール",
+      "tooltip": "Stochastic三角格子の配分のためのスケールのmultiplier."
+    },
+    "_UseDetailNormalFade": {
+      "label": "有効 細部 正常な間隔 フェード",
+      "tooltip": "VRのaliasing/shimmeringを防ぐために間隔で高周波細部の正常体を滑らかに衰退して下さい."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "フェードスタート距離",
+      "tooltip": "細部のnormalsが衰退を始めるカメラの間隔."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "フェードエンド距離",
+      "tooltip": "細部のノーマルが完全に平らであるカメラの間隔."
+    },
+    "_UseInternalParallax": {
+      "label": "内部パララックスを有効にする",
+      "tooltip": "ガラス、レンズ、クリスタル、アニメのアイリスの下にレイヤードインテリアの深さを模倣します."
+    },
+    "_InternalParallaxMap": {
+      "label": "内部層のテクスチャ",
+      "tooltip": "内部の深さの層の質."
+    },
+    "_InternalParallaxColor": {
+      "label": "層色",
+      "tooltip": "内部の層色の錫."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "内部パララックス色シフト",
+      "tooltip": "AudioLink または内部レイヤーされたパララックス効果のアニメーションカラーシフト."
+    },
+    "_InternalParallaxDepth": {
+      "label": "深さのスケール",
+      "tooltip": "室内深度スケールをシミュレート."
+    },
+    "_InternalParallaxLayers": {
+      "label": "サンプルステップ",
+      "tooltip": "インテリアの深さによるサンプルステップの数."
+    },
+    "_InternalParallaxStrength": {
+      "label": "層の強さ",
+      "tooltip": "内層の明るさ/透明度マルチプライヤー."
+    },
+    "_InternalParallaxEmission": {
+      "label": "Emissive ブースト",
+      "tooltip": "内部の層のためのEmissiveの白熱ブースト."
+    },
+    "_UseThemeColors": {
+      "label": "グローバルテーマカラーを有効にする",
+      "tooltip": "4つのグローバルマスターカラーを定義し、オプションのAudioLinkとHueモジュレーションで、統一されたテーマを駆動します."
+    },
+    "_ThemeColor1": {
+      "label": "テーマカラー 1",
+      "tooltip": "マスターの主題色 1."
+    },
+    "_ThemeColor2": {
+      "label": "テーマカラー2",
+      "tooltip": "マスターの主題色 2."
+    },
+    "_ThemeColor3": {
+      "label": "テーマカラー3",
+      "tooltip": "マスターの主題色 3."
+    },
+    "_ThemeColor4": {
+      "label": "テーマカラー4",
+      "tooltip": "マスターの主題色 4."
+    },
+    "_ThemeMode": {
+      "label": "変調モード",
+      "tooltip": "変調モード(直接、AudioLink反応、または連続したHueシフト)を選択します."
+    },
+    "_AL_ThemeBand": {
+      "label": "AudioLinkバンド",
+      "tooltip": "テーマの変調を運転する周波数帯域を選択します."
+    },
+    "_AL_ThemeStrength": {
+      "label": "AudioLinkの強み",
+      "tooltip": "AudioLink反応の強度マルチプライヤー."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "Hueシフト速度",
+      "tooltip": "連続hueシフト回転の速度."
+    },
+    "_ThemeTargetMask": {
+      "label": "テーマターゲットマスク",
+      "tooltip": "影響の重量: R=Base 色、G=Outlines、B=Rim、A=Emission."
+    },
+    "_UseCustomCubemap": {
+      "label": "カスタムキューブマップを有効にする",
+      "tooltip": "反射プローブが欠落/暗いときに、ローカル反射またはフォールバック用のカスタムキューブマップを追加します."
+    },
+    "_CustomCubemap": {
+      "label": "カスタムキューブマップ",
+      "tooltip": "反射用のカスタムキューブマップテクスチャ."
+    },
+    "_CustomCubemapColor": {
+      "label": "キューブマップ ティント",
+      "tooltip": "キューブマップ反射の色合い."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "ラフネス",
+      "tooltip": "キューブマップの反射の荒さ/ぼかし."
+    },
+    "_CustomCubemapMode": {
+      "label": "ブレンドモード",
+      "tooltip": "モード(オーバーライドプローブ、フォールバックプローブダーク、またはアディティブ)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "反射強度マルチプライヤー."
+    },
+    "_AL_DelayBass": {
+      "label": "低音遅延",
+      "tooltip": "ベース用の履歴バッファに沿ってオフセットを遅延させる."
+    },
+    "_AL_DelayLowMid": {
+      "label": "低い中間の遅れ",
+      "tooltip": "低い中間のための歴史の緩衝に沿って遅れのオフセット."
+    },
+    "_AL_DelayHighMid": {
+      "label": "高い中間の遅れ",
+      "tooltip": "ハイ・ミッドの履歴・バッファに沿った遅延オフセット."
+    },
+    "_AL_DelayTreble": {
+      "label": "トレブル・ディレイ",
+      "tooltip": "Treble の履歴バッファに沿った遅延オフセット."
+    },
+    "_UseLTCGI": {
+      "label": "LTCGI を有効にする",
+      "tooltip": "対応するVRChatの世界では、LTCGIの多角的なエリアライトやビデオ画面に反応します."
+    },
+    "_LTCGI_Intensity": {
+      "label": "インテンシティ",
+      "tooltip": "LTCGIエリア照明の強度マルチプライヤー."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "粗さの多プライヤー",
+      "tooltip": "LTCGIの反射のための粗さスケールの要因."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "感光性ストロボクランプ",
+      "tooltip": "防腐性発作から保護するために最高のストロボ/フラッシュ周波数を制限する安全クランプ."
+    },
+    "_MaxFlashFrequency": {
+      "label": "最高のフラッシュ Hz",
+      "tooltip": "Hzの最大許容点滅/振動周波数."
+    },
+    "_UseFur": {
+      "label": "シェルファーを有効にする",
+      "tooltip": "複数の層状のシェルを突き出し、頂点のノーマルに沿って、ストランドノイズマスキングをします."
+    },
+    "_FurLayers": {
+      "label": "シェルレイヤー",
+      "tooltip": "貝の層の数 突き出される(1から8)。 より高い層のカウントはより完全な毛皮を作り出すがより多くのGPUの幾何学のrasterizationを要します."
+    },
+    "_FurLength": {
+      "label": "長さ",
+      "tooltip": "オブジェクト/世界空間におけるファーストランドの物理的な長さ."
+    },
+    "_FurMaskTex": {
+      "label": "ファーストランドノイズマップ",
+      "tooltip": "繊維の配分および密度を制御する騒音の質の."
+    },
+    "_FurDensity": {
+      "label": "繊維密度",
+      "tooltip": "毛皮のストランドの騒音パターンの層密度."
+    },
+    "_FurThinning": {
+      "label": "チップシンニング",
+      "tooltip": "進歩的に薄く、テーパーは外側の先端に向かって毛皮をむきます."
+    },
+    "_FurGravity": {
+      "label": "重力ベクトル",
+      "tooltip": "偏向ベクターの模倣の重力は毛皮の鎖を下方に引っ張ります."
+    },
+    "_FurWindStrength": {
+      "label": "風道の強さ",
+      "tooltip": "毛皮の先端を渡るprocedural風振動の強さ."
+    },
+    "_FurWindSpeed": {
+      "label": "風速",
+      "tooltip": "風力の振動の速度."
+    },
+    "_FurRootColor": {
+      "label": "ルート ティント",
+      "tooltip": "各毛皮のストランドのベース/ルートの色の色合い."
+    },
+    "_FurTipColor": {
+      "label": "ヒント テント",
+      "tooltip": "各毛皮の糸の外側の先端で着色して下さい."
+    },
+    "_FurAO": {
+      "label": "ルートAOシャドウ",
+      "tooltip": "毛皮の根元に包囲された閉塞を模倣して下さい."
+    },
+    "_FurCutoff": {
+      "label": "ストランドカットオフ",
+      "tooltip": "ベースアルファはストランドの根の厚さのためのしきい値をクリップします."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "排出ブルームクランプを有効にする",
+      "tooltip": "排出ブルームクランプを有効にする"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "最高の放出の光度",
+      "tooltip": "最高の放出の光度"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "クランプ ソフトニー",
+      "tooltip": "クランプ ソフトニー"
+    },
+    "_OutlineStencil": {
+      "label": "概要のステンシルID",
+      "tooltip": "概要のステンシルID"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "輪郭のステンシルはマスクを読みました",
+      "tooltip": "輪郭のステンシルはマスクを読みました"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "概要のステンシルはマスクを書きます",
+      "tooltip": "概要のステンシルはマスクを書きます"
+    },
+    "_OutlineStencilComp": {
+      "label": "概要のステンシルの比較",
+      "tooltip": "概要のステンシルの比較"
+    },
+    "_OutlineStencilPass": {
+      "label": "概要のステンシル パスOp",
+      "tooltip": "概要のステンシル パスOp"
+    },
+    "_OutlineStencilFail": {
+      "label": "概要のステンシル失敗Op",
+      "tooltip": "概要のステンシル失敗Op"
+    },
+    "_OutlineStencilZFail": {
+      "label": "概要 Stencil ZFail Op",
+      "tooltip": "概要 Stencil ZFail Op"
+    },
+    "_UseProximityEffect": {
+      "label": "近接効果を有効にする",
+      "tooltip": "近接効果を有効にする"
+    },
+    "_ProximityMode": {
+      "label": "近接モード",
+      "tooltip": "近接モード"
+    },
+    "_ProximityAction": {
+      "label": "近接アクション",
+      "tooltip": "近接アクション"
+    },
+    "_ProximityRadius": {
+      "label": "近接半径",
+      "tooltip": "近接半径"
+    },
+    "_ProximitySoftness": {
+      "label": "近接の柔らかさ",
+      "tooltip": "近接の柔らかさ"
+    },
+    "_ProximityInvert": {
+      "label": "変換の近接",
+      "tooltip": "変換の近接"
+    },
+    "_ProximityColor": {
+      "label": "近接色",
+      "tooltip": "近接色"
+    },
+    "_ProximityColor_Shift": {
+      "label": "近接色シフト",
+      "tooltip": "近接色シフト"
+    },
+    "_ProximityCustomPos": {
+      "label": "注文の世界位置",
+      "tooltip": "注文の世界位置"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "A2CのMipのスケール",
+      "tooltip": "VRの間隔を渡る切断の端の幅を安定させるために派生に基づくmipのスケーリング."
+    },
+    "_DetailNormalBicubic": {
+      "label": "Bicubic の正常なろ過",
+      "tooltip": "5 tap Catmull-Rom の bicubic のサンプリングを可能にし、VR の繊維境界アーティファクトを除去します."
+    },
+    "_DetailNormalCount": {
+      "label": "細部 正常な層",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "詳細 ノーマル 2 マップ",
+      "tooltip": "第二の細部の正常な地図の層."
+    },
+    "_DetailNormal2Scale": {
+      "label": "層2の強さ",
+      "tooltip": "細部の正常な層の強さを制御して下さい 2."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "詳細 ノーマル2 UVセット",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "層2スクロール速度X",
+      "tooltip": "スクロール速度 X 細部の正常な層 2."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "層 2 スクロール速度 Y",
+      "tooltip": "スクロール速度 Y 細部のための正常な層 2."
+    },
+    "_DetailNormal3Map": {
+      "label": "詳細 ノーマル 3 マップ",
+      "tooltip": "第三の細部の正常な地図の層."
+    },
+    "_DetailNormal3Scale": {
+      "label": "層3の強さ",
+      "tooltip": "細部の正常な層の強さを制御して下さい 3."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "詳細 ノーマル3 UVセット",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "層 3 スクロール速度 X",
+      "tooltip": "スクロール速度 X 細部の正常な層 3."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "層 3 スクロール速度 Y",
+      "tooltip": "スクロール速度 Y 細部のための正常な層 3."
+    },
+    "_DetailNormal4Map": {
+      "label": "詳細 ノーマル 4 マップ",
+      "tooltip": "第4の細部の正常な地図の層."
+    },
+    "_DetailNormal4Scale": {
+      "label": "層4の強さ",
+      "tooltip": "細部の正常な層の強さを制御して下さい 4."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "詳細 ノーマル4 UVセット",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "層4スクロール速度X",
+      "tooltip": "スクロール速度 X 細部の正常な層 4."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "層 4 スクロール速度 Y",
+      "tooltip": "スクロール速度 細部の正常な層のためのY 4."
+    },
+    "_UseOKLabBlending": {
+      "label": "OKLabカラーブレンド",
+      "tooltip": "Björn OttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOttossonのOtossonのOttossonのOttossonのOttossonのOttossonのOtossonのOtossonのOttosのOtossonのOtossonのOtosのOtossonのOtossonのOtossonのOのOtossonのOtosのOtossonのOtossonのOのOtossonのO."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "MatCapグローバルマスクチャネル",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "リムグローバルマスクチャネル",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "Glitterグローバルマスクチャネル",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "グローバルマスクチャネルの解体",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "VRSL受信を有効にする",
+      "tooltip": "リアルタイムのDMXステージフィクスチャ、レーザー、およびサポートされたVRChatの世界におけるボリュームトリクラブ照明に反応します."
+    },
+    "_VRSLIntensity": {
+      "label": "GIの強度",
+      "tooltip": "GIおよび包囲された洗浄の受信の強度."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "直接強度",
+      "tooltip": "直接据え付け品の軽い受信の強度."
+    },
+    "_VRSLSpecular": {
+      "label": "特別レセプション",
+      "tooltip": "備品の反射受信を強調表示します."
+    },
+    "_UseDebugMode": {
+      "label": "Debug Viewを有効にする",
+      "tooltip": "中間の陰影の緩衝およびビューポートの診断を点検して下さい."
+    },
+    "_DebugMode": {
+      "label": "デバッグモード",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "物質的なロックされる",
+      "tooltip": "物質的なロックされる"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "アニメイト",
+      "tooltip": "自動的に崩壊量を時間を超過させます."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "カスタムシャドウカットオフ",
+      "tooltip": "アルファカットオフのしきい値をシャドウキャスティングパス用に特別にオーバーライドします."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "高度なアニメーション制御を有効にする",
+      "tooltip": "すべてのシェーダーアニメーションのタイムスケーリング、再生モード、時間オフセットのマスターコントロールを公開します."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "Anisotropic Reflectionを有効にする",
+      "tooltip": "ブラシをかけられた金属か毛で共通伸張されたハイライトを作成します."
+    },
+    "Enable Back Face Color": {
+      "label": "背部表面色を有効にして下さい",
+      "tooltip": "後向きのポリゴンに別々の色をつけます."
+    },
+    "Enable Back Face Texture": {
+      "label": "バックフェイステクスチャを有効にする",
+      "tooltip": "バックフェーシングポリゴンに別々のテクスチャーがあります."
+    },
+    "Enable Chroma Keying": {
+      "label": "クロマキーを有効にする",
+      "tooltip": "特定の色の範囲を透明にします(例えば緑スクリーンのキー)."
+    },
+    "Enable Clear Coat": {
+      "label": "クリアコートを有効にする",
+      "tooltip": "ベースPBR材料に2次クリアコートのスペキュラー層を追加します。 塗られた/塗られた表面のために有用な."
+    },
+    "Enable Clipping Mask": {
+      "label": "クリップマスクを有効にする",
+      "tooltip": "素材のクリップ(見えない部分を作る)にテクスチャを使用します。 ソフトな透明感ではなく、硬いクリップです."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "カスタムキューブマップの反射を有効に",
+      "tooltip": "反射プローブが欠落/暗いときに、ローカル反射またはフォールバック用のカスタムキューブマップを追加します."
+    },
+    "Enable Custom Fog Color": {
+      "label": "カスタムフォグカラーを有効にする",
+      "tooltip": "独自のローカライズされた色合いで、グローバルシーンフォグカラーをオーバーライド."
+    },
+    "Enable Decal 1": {
+      "label": "Decal 1を有効にする",
+      "tooltip": "プライマリデカール/ステッカーのテクスチャをオーバーレイします."
+    },
+    "Enable Decal 2": {
+      "label": "Decal 2を有効にする",
+      "tooltip": "二次デカール/ステッカーのテクスチャをオーバーレイします."
+    },
+    "Enable Decal 3": {
+      "label": "Decal 3を有効にする",
+      "tooltip": "Tertiaryデカール/ステッカーのテクスチャをオーバーレイします."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "奥行きフェード(ソフト粒子)を有効にする",
+      "tooltip": "透明で添加物の表面のための場面の幾何学に対してポリゴンの交差を柔らかくして下さい."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "有効 細部 正常な間隔 フェード",
+      "tooltip": "VRのaliasing/shimmeringを防ぐために間隔で高周波細部の正常体を滑らかに衰退して下さい."
+    },
+    "Enable Detail Normal Map": {
+      "label": "詳細を有効活用 ノーマルマップ",
+      "tooltip": "マイクロサーフェスディテールバンプ用のセカンダメンタルマップを追加します."
+    },
+    "Enable Detail Texture": {
+      "label": "詳細テクスチャを有効にする",
+      "tooltip": "二次的なテクスチャーを重ねて、細かいディテールやグラウンジにもよく使われます."
+    },
+    "Enable Dissolve": {
+      "label": "Dissolveを有効にする",
+      "tooltip": "オブジェクトをノイズパターンで表示/無効にします."
+    },
+    "Enable Distance Fade": {
+      "label": "有効距離 フェード",
+      "tooltip": "カメラから遠くにあるときにオブジェクトをフェードアウトします."
+    },
+    "Enable Dithered Transparency": {
+      "label": "ダイザードの透明性を有効にする",
+      "tooltip": "スクリーン・スペース バイエルのマトリックスは分類なしの透明な生地および毛のために飾る."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "効果の間隔 フェードを有効にして下さい(LOD)",
+      "tooltip": "VRの性能を改善するためにセットの間隔を越えるフェードの頑丈なprocedural効果(Glitter、Fractals、格子、Psychedelic)."
+    },
+    "Enable Emission": {
+      "label": "排出可能",
+      "tooltip": "オブジェクトが輝きます。 輝度を見るために、シーンのブルームポスト処理効果が必要です."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "排出ブルームクランプを有効にする",
+      "tooltip": "ブラインドの開花を防ぐため、放射の最大HDR発光をクランプします."
+    },
+    "Enable Emission Pulse": {
+      "label": "排出の脈拍を有効にして下さい",
+      "tooltip": "拡散照明に影響を与えることなく、リズム的にパルス発光強度."
+    },
+    "Enable Environment Reflections": {
+      "label": "環境の反射を有効にする",
+      "tooltip": "反射プローブをサンプル化し、環境の反射を基本モード/音モードに追加します."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "アイリスパララックスを有効にする",
+      "tooltip": "パーピルとアイリスの深さ/反射をコルニーの下にシミュレートします."
+    },
+    "Enable Flipbook Animation": {
+      "label": "Flipbookアニメーションを有効にする",
+      "tooltip": "スプライトシートレイアウトでメインテクスチャをアニメーション化。 これは、メインテクスチャのタイルとオフセットをオーバーライドします."
+    },
+    "Enable Fluorescence": {
+      "label": "フッ素沈着を有効にする",
+      "tooltip": "環境・指向性光度(暗闇の光)による反応."
+    },
+    "Enable Fourth Emission": {
+      "label": "第4回排出可能",
+      "tooltip": "4つのスクロールエミッションレイヤーを追加します."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "Fresnelの透明性を有効にする",
+      "tooltip": "エッジの中央と不透明でオブジェクトをより透明にします."
+    },
+    "Enable Glitch Flicker": {
+      "label": "Glitch Flickerを有効にする",
+      "tooltip": "オブジェクト全体にフリッカリング効果を適用します."
+    },
+    "Enable Global Theme Colors": {
+      "label": "グローバルテーマカラーを有効にする",
+      "tooltip": "4つのグローバルマスターカラーを定義し、オプションのAudioLinkとHueモジュレーションで、統一されたテーマを駆動します."
+    },
+    "Enable Grid": {
+      "label": "グリッドを有効にする",
+      "tooltip": "表面にグリッドパターンをオーバーレイします."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "毛のSpecularを有効にして下さい(Kajiya-Kay)",
+      "tooltip": "Anisotropicは毛のストランドのために特にスタイルを付けられた強調します."
+    },
+    "Enable Hologram": {
+      "label": "ホログラムを有効にする",
+      "tooltip": "アニメーションスキャンライン、エッジリム、フリッカーによるSci-fiホログラム効果."
+    },
+    "Enable HSV Mask": {
+      "label": "HSVマスクを有効にする",
+      "tooltip": "マスクHSVの調整は、テクスチャマップを使って行います."
+    },
+    "Enable Interlacing": {
+      "label": "インターレースを有効にする",
+      "tooltip": "他のすべての画面行を暗くし、インターレース表示をシミュレートします."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "内部の並列を有効にして下さい(Gems/目の層)",
+      "tooltip": "ガラス、レンズ、クリスタル、アニメのアイリスの下にレイヤードインテリアの深さを模倣します."
+    },
+    "Enable Intersection Effect": {
+      "label": "断面効果を有効にする",
+      "tooltip": "オブジェクトが閉じているか、シーン内の他のオブジェクトと交差する色にフェードします."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "LookAtビルボードを有効にする",
+      "tooltip": "メッシュ頂点を回転させ、アクティブカメラを動的に直面します."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "LTCGIを有効にする(エリアライトGI)",
+      "tooltip": "対応するVRChatの世界では、LTCGIの多角的なエリアライトやビデオ画面に反応します."
+    },
+    "Enable MatCap 2": {
+      "label": "MatCap 2を有効にする",
+      "tooltip": "マルチトーンメタリックまたはリムアクセント用のセカンダリマットレイヤーを追加します."
+    },
+    "Enable Near Camera Fade": {
+      "label": "カメラフェード近くを有効にする",
+      "tooltip": "カメラが閉じすぎるとジオメトリを滑らかに溶かします(VRヘッドクリッピングを防ぎます)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "ネットワーク同期時間を有効にする",
+      "tooltip": "AudioLink/Udon chronological Clock 経由でネットワーククライアント間でシェーダーの連続アニメーション時間を同期(VRChat でアニメーションのドリフトを防ぎます)."
+    },
+    "Enable Noise/Grain": {
+      "label": "騒音・排出が可能",
+      "tooltip": "アニメーションノイズオーバーレイを追加します."
+    },
+    "Enable Outline": {
+      "label": "概要を有効にする",
+      "tooltip": "オブジェクトの周りの固体輪郭を追加します。 オブジェクトに2番目の描画呼び出しを追加します."
+    },
+    "Enable Outline Gradient": {
+      "label": "概要の勾配を有効にして下さい",
+      "tooltip": "輪郭全体に垂直トップ/ボトムグラデーションを適用します."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "パララックスマッピングを有効にする(高さマップ)",
+      "tooltip": "高さマップを使用してUVをオフセットします."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "Parallax Occlusion Mappingを有効にする",
+      "tooltip": "高品質深度効果の高いマルチステップパララックスを有効にします。 高いパーフだけ."
+    },
+    "Enable Pixelation": {
+      "label": "ピクセル化を有効にする",
+      "tooltip": "ブロック性、低解像効果を作成します."
+    },
+    "Enable Planar Wipe": {
+      "label": "平面ワイプを有効にする",
+      "tooltip": "オブジェクトを滑らかで、方向的なワイプで回復します."
+    },
+    "Enable Posterization": {
+      "label": "ポスター化を有効にする",
+      "tooltip": "レトロ/デジタル一見を与える色の数を減らして下さい."
+    },
+    "Enable Procedural Texture": {
+      "label": "手順のテクスチャを有効にする",
+      "tooltip": "生成されたパターンでマテリアルプロパティを置換します."
+    },
+    "Enable Proximity Effect": {
+      "label": "近接効果を有効にする",
+      "tooltip": "カメラ、オブジェクトのピボット、またはカスタムの世界の位置への距離に基づいて、トリガの視覚効果(glow、溶解、ダイザー、または色合い)."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "PS1のレトロなヴェルテックススナップを有効にする",
+      "tooltip": "レトロなPS1/アフィネのジッター美学のための低解像格子に頂点を量ります."
+    },
+    "Enable Pulse": {
+      "label": "脈拍を有効にして下さい",
+      "tooltip": "発光強度にパルスアニメーションを追加します."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "RGBAカラーマスキングを有効にする(リカラーワークフロー)",
+      "tooltip": "マスクの質感のRGBAチャンネルにマッピングされた4つの独立したカラーの色合いと従順なチャンネルを許可します."
+    },
+    "Enable Rim Glow": {
+      "label": "リム・グロウを有効にする",
+      "tooltip": "視野角に基づいてオブジェクトのエッジに輝きを追加します."
+    },
+    "Enable Ripple Effect": {
+      "label": "Ripple効果を有効にする",
+      "tooltip": "UV座標からの同心なさざ波効果を作成します."
+    },
+    "Enable Scanlines": {
+      "label": "Scanlinesを有効にする",
+      "tooltip": "CRTモニターの外観を模倣します."
+    },
+    "Enable Screen Refraction": {
+      "label": "スクリーンの訂正を有効にする",
+      "tooltip": "オブジェクトの後ろに画面を分散させます."
+    },
+    "Enable Scrolling": {
+      "label": "スクロールを有効にする",
+      "tooltip": "グリッドパターンをスクロールします."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "SDFフェイスシャドウを有効にする",
+      "tooltip": "署名された距離フィールドは、アニメキャラクターの影マッピングに直面しています."
+    },
+    "Enable Second Emission": {
+      "label": "二次排出を有効にする",
+      "tooltip": "2番目のスクロールエミッションレイヤーを追加します."
+    },
+    "Enable Shader Debug View": {
+      "label": "Shader Debug Viewを有効にする",
+      "tooltip": "中間の陰影の緩衝およびビューポートの診断を点検して下さい."
+    },
+    "Enable Shell Fur": {
+      "label": "シェルファーを有効にする",
+      "tooltip": "複数の層状のシェルを突き出し、頂点のノーマルに沿って、ストランドノイズマスキングをします."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "スキン拡散ラップを有効にする",
+      "tooltip": "有機曲線面の影を柔らかくします."
+    },
+    "Enable Step Specular": {
+      "label": "ステップの仕様を有効にする",
+      "tooltip": "ソフトなPBRのスペクシャルハイライトを鮮明な漫画の輝きのスポットに変換します."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "Stochastic Samplingを有効にする",
+      "tooltip": "多角的にランダム化されたテクスチャサンプルをブレンドし、大きな表面に繰り返すタイルパターンを完全に排除します."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "Subsurface 散乱を有効にする",
+      "tooltip": "皮か葉のような薄い目的によって軽い散布を模倣して下さい."
+    },
+    "Enable Thickness Map": {
+      "label": "厚さマップを有効にする",
+      "tooltip": "薄い領域(耳、葉など)を介して光伝送をシミュレートするテクスチャを使用します."
+    },
+    "Enable Third Emission": {
+      "label": "第三次排出を有効にする",
+      "tooltip": "3番目のスクロールエミッションレイヤーを追加します."
+    },
+    "Enable Transparency": {
+      "label": "透明性を有効にする",
+      "tooltip": "オブジェクトを均一に透明にします."
+    },
+    "Enable Transparency Glitch": {
+      "label": "透明性のグリッチを有効にする",
+      "tooltip": "フリッカー効果も影響します。 透明性."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "Triplanarのノーマルマップを有効にする",
+      "tooltip": "3つの軸を渡る正常な地図を写し出して下さい."
+    },
+    "Enable UV Distortion": {
+      "label": "UVディストーションを有効にする",
+      "tooltip": "テクスチャを使用してUV座標を警戒し、熱ヘイズや水リップルなどの効果を作成します."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "UVフローを有効にする(Pathing)",
+      "tooltip": "ベクトルフローマップパスに沿って、シームレスな2相サイクリングでテクスチャーをアニメーション化."
+    },
+    "Enable UV Tile Discard": {
+      "label": "紫外線タイルのガードを有効にする",
+      "tooltip": "特定の紫外線タイルを分けて下さい。 衣類のパーツをトゲリングするのに便利です."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "Vertexアニメーションテクスチャを有効にする",
+      "tooltip": "焼きたての頂点アニメーションをVATテクスチャから応用。 あらかじめ焼かれた布、液体、または破壊効果のために使用される."
+    },
+    "Enable Vertex Collapse": {
+      "label": "Vertex Collapseを有効にする",
+      "tooltip": "モデルを中心点に縮小します."
+    },
+    "Enable Video Player": {
+      "label": "ビデオプレーヤーを有効にする",
+      "tooltip": "ビデオプレーヤーのデータを受信するためのテクスチャを設定します."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "VRSL (VRC Studio Lighting) を有効にする",
+      "tooltip": "リアルタイムのDMXステージフィクスチャ、レーザー、およびサポートされたVRChatの世界におけるボリュームトリクラブ照明に反応します."
+    },
+    "Enable Wetness": {
+      "label": "湿潤を有効にする",
+      "tooltip": "湿った表面を暗くすることおよび雨のさざ波の効果と模倣して下さい."
+    },
+    "Override Scene Light": {
+      "label": "オーバーライドシーンライト",
+      "tooltip": "メインシーンの光の方向、色、強度をオーバーライドします."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "感光性ストロボクランプ",
+      "tooltip": "防腐性発作から保護するために最高のストロボ/フラッシュ周波数を制限する安全クランプ."
+    },
+    "Use Auto Hue Shift": {
+      "label": "オートフエシフトの使用",
+      "tooltip": "フラクタルベースカラーを長時間連続的にシフト."
+    },
+    "Use Base Color": {
+      "label": "基礎色を使用して下さい",
+      "tooltip": "ソリッドベースカラーをトグルします."
+    },
+    "Use Base Texture": {
+      "label": "ベーステクスチャを使う",
+      "tooltip": "メインテクスチャを切り替えます."
+    },
+    "Use Depth-Based Color": {
+      "label": "深さベースの色の使用",
+      "tooltip": "格子色を他の表面に近づけることに基づいて変更して下さい."
+    },
+    "Use Emission Mask": {
+      "label": "排出マスクの使用",
+      "tooltip": "表面が発光する部分を制御するためにテクスチャを使用します."
+    },
+    "Use Grid Mask": {
+      "label": "グリッドマスクを使用する",
+      "tooltip": "テクスチャを使用してグリッド効果をマスクします."
+    },
+    "Use Outline Width Map": {
+      "label": "用途 概要 幅 地図",
+      "tooltip": "グレースケールのテクスチャを使用して、輪郭の厚さをピクセルごとに調整します."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "テキストアルファを使用してエミッション",
+      "tooltip": "メインテクスチャのアルファチャンネルをエミッションマップとして使用します。 別々のテクスチャーなしで白地図を作成する強力な方法."
+    },
+    "Use Transmission Texture": {
+      "label": "伝達テクスチャの使用",
+      "tooltip": "バックライト伝達を錫メッキするカスタムカラーマップ."
+    }
+  }
+}

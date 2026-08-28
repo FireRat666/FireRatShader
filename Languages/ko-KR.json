@@ -1,0 +1,4035 @@
+{
+  "languageCode": "ko-KR",
+  "languageName": "한국어",
+  "author": "Machine translated with LibreTranslate",
+  "version": "1.0.0",
+  "ui": {
+    "search": "제품정보",
+    "searchPlaceholder": "검색 재료 속성 ...",
+    "matchingProperties": "일치 재산",
+    "clearSearch": "자주 묻는 질문",
+    "noPropertiesFound": "제안 없음",
+    "lockMaterial": "└ 재질 잠금 및 최적화 (클립 클릭)",
+    "unlockMaterial": "관련 상품",
+    "lockAndOptimize": "잠금 및 최적화",
+    "savePreset": "저장 Preset ...",
+    "loadPreset": "로드 프리셋 ...",
+    "copy": "이름 *",
+    "paste": "이름 *",
+    "reset": "지원하다",
+    "language": "* 이름",
+    "cycle": "제품정보",
+    "performanceTip": "⚡: 이 자료는 자물쇠로 엽니다. 최고의 런타임 성능(특히 Quest/VR)을 위해 'Lock & Optimize'를 사용합니다. 이 스트립을 사용하지 않는 셰이퍼 패스, 죽은 코드 지점 및 제로 오버 헤드 렌더링에 대한 베이크 키워드.",
+    "lockedWarning": "자료는 LOCKED (읽기 전용)입니다. toolbar를 통해 속성을 수정합니다.",
+    "Global UV Controls": "글로벌 UV제어",
+    "UV Tile Grid (4×4)": "UV 타일 그리드 (4 × 4)",
+    "Uncheck tiles to discard those UV regions.": "UV 지구를 discard에 타일을 체크.",
+    "Global Color Animation": "글로벌 컬러 애니메이션",
+    "Color Adjustments": "색깔 조정",
+    "Red Zone (R Channel)": "빨간 지역 (R 채널)",
+    "Green Zone (G Channel)": "녹색 지역 (G 채널)",
+    "Blue Zone (B Channel)": "파란 지역 (B 채널)",
+    "Alpha Zone (A Channel)": "알파 존 (A 채널)",
+    "Color Correction": "색깔 개정",
+    "Dedicated Shading Models": "전용 쉐이딩 모델",
+    "Render States": "회사연혁",
+    "Camera & Mirror Visibility": "카메라 & 미러 가시성",
+    "Stencil Buffer Settings": "Stencil 버퍼 설정",
+    "Global AudioLink Controls": "Global AudioLink 제어",
+    "Per-Band Delay & Timing (History Buffer)": "Per-Band Delay & Timing (역사 버퍼)",
+    "Audio Spectrum": "오디오 스펙트럼",
+    "Audio Waveform": "오디오 Waveform",
+    "Avatar Param Fallback": "Avatar 퍼머 폴백",
+    "AvatarParamFallbackTooltip": "로컬 avatar 매개 변수 / OSC 입력에 Fallback 세계 AudioLink 소스가 존재 할 때.",
+    "Pulse Alpha Range": "맥박 알파 범위",
+    "PulseAlphaRangeTooltip": "강도 펄스의 최소 및 최대 알파를 제어합니다.",
+    "Color": "색깔: 회색",
+    "Transform": "관련 기사",
+    "Texture": "이름 *",
+    "Normal Map": "일반 지도",
+    "UV": "UV 파장",
+    "UV0": "UV0의",
+    "UV1": "자외선1",
+    "UV2": "UV2의",
+    "UV3": "UV3의",
+    "World Space (Triplanar)": "세계 공간 (Triplanar)",
+    "Local Space (Triplanar)": "지역 공간 (Triplanar)",
+    "Screen Space": "스크린 공간",
+    "Planar (Local XY)": "플래터 (Local XY)",
+    "Spherical (Local)": "둥근 (Local)",
+    "Cylindrical (Local)": "원통형 (Local)",
+    "Biplanar (World)": "Biplanar (세계)",
+    "Panosphere (Equirectangular 360)": "공로구 (각각 360)",
+    "Polar Coordinates": "Polar 좌표",
+    "Off": "이름 *",
+    "Bass": "기본 정보",
+    "Low Mid": "낮은 미드",
+    "High Mid": "높은 중간",
+    "Treble": "팟캐스트",
+    "High": "주요 특징",
+    "Medium": "주요 특징",
+    "Low": "이름 *",
+    "Opaque": "오파크",
+    "Cutout": "주 메뉴",
+    "Transparent": "제품정보",
+    "Additive": "제품정보",
+    "Multiply": "기타 제품",
+    "Premultiplied": "광고",
+    "None": "이름 *",
+    "R": "사이트맵",
+    "G": "사이트맵",
+    "B": "₢ 킹",
+    "A": "·",
+    "RGBA": "사이트맵",
+    "RGB": "RGB",
+    "All": "모든 것",
+    "Hue Shift": "Hue 시프트",
+    "Gradient": "사이트맵",
+    "Rainbow Gradient": "레인보우 Gradient",
+    "AudioLink Theme": "오디오 링크 이름 *",
+    "Direct": "제품정보",
+    "AudioLink": "오디오 링크",
+    "HueShift": "HueShift의 특징",
+    "Hue Shift/Gradient": "Hue 시프트/Gradient",
+    "Velocity": "언어 선택",
+    "Stylized_PBR": "사이트맵",
+    "Standard_PBR": "표준 PBR",
+    "Toon": "뚱 베어",
+    "Basic": "기본 정보",
+    "Unlit": "뚱 베어",
+    "Flat": "뚱 베어",
+    "Ambient": "주요 특징",
+    "ShadowColor": "그림자색",
+    "Ambient/ShadowColor": "주위/ShadowColor",
+    "TwoTone": "두여자",
+    "ThreeTone": "3대",
+    "FourTone": "네트론",
+    "Whiteout_UDN": "화이트아웃 UDN",
+    "RNM": "사이트맵",
+    "OverrideProbes": "채용정보",
+    "FallbackWhenProbesDark": "가을backWhenProbesDark",
+    "Screen": "제품정보",
+    "Metallic": "금속",
+    "Specular": "제품 정보",
+    "Override": "더 보기",
+    "Add": "기타",
+    "Replace": "기타 제품",
+    "Lighten": "글 탐색",
+    "Overlay": "오버레이",
+    "SoftLight": "소프트 라이트",
+    "Alpha Blend": "알파 혼합",
+    "Lerp": "뚱 베어",
+    "Max": "최대",
+    "Circle": "한국어",
+    "Square": "팟캐스트",
+    "Star": "이름 *",
+    "MatCap": "매트캡",
+    "Glass": "제품 정보",
+    "Anisotropic": "채용정보",
+    "SubsurfaceScattering": "하위표시",
+    "Retro_PSX": "복고풍 PSX",
+    "Retro_HalfLambert": "Retro HalfLambert, 이탈리아",
+    "Ward": "구마모토",
+    "Stretched-Blinn": "스트레치 블린",
+    "Default": "기본 정보",
+    "Hologram": "홀로그램",
+    "Crystal": "제품 정보",
+    "Triplanar": "여행 정보",
+    "Iridescence": "아이라이드",
+    "Glitter": "사이트맵",
+    "Psychedelic": "팟캐스트",
+    "Fractal3D": "Fractal3D는",
+    "Galaxy": "팟캐스트",
+    "Skybox": "스카이박스",
+    "EQ Bars": "EQ 바",
+    "Continuous Curve": "연속 곡선",
+    "Radial": "관련 기사",
+    "Waterfall": "최근 바뀜",
+    "Solid": "사이트맵",
+    "Frequency Gradient": "빈도 Gradient",
+    "Emissive Lerp": "임프린트",
+    "Oscilloscope": "Oscilloscope의 특징",
+    "Ribbon": "제품정보",
+    "Polar": "제품정보",
+    "Lissajous": "인기 카테고리",
+    "Vertex Displacement": "Vertex 진지변환",
+    "Mono": "팟캐스트",
+    "Left": "왼쪽",
+    "Right": "제품 정보",
+    "Local": "- 한국어",
+    "World": "- 한국어",
+    "ScreenSpace": "스크린 공간",
+    "ObjectSpace": "객체 공간",
+    "FullBillboard": "풀 빌보드",
+    "YAxisBillboard": "야시빌보드",
+    "Local Space": "지역우주",
+    "World Space": "세계 공간",
+    "Mandelbulb": "맨델비브",
+    "Menger Sponge": "Menger 갯솜",
+    "Kaleidoscopic IFS": "칼레도스코프 IFS",
+    "Mandelbox": "맨델박스",
+    "Julia Set 3D": "줄리아 세트 3D",
+    "Sierpinski Tetrahedron": "사이트 맵",
+    "Apollonian Gasket": "Apollonian 틈막이",
+    "Burning Ship": "불타는 배",
+    "Tricorn": "트리콘",
+    "Mandelbulb Power 2": "Mandelbulb 힘 2",
+    "Mandelbulb Power 8": "Mandelbulb 힘 8",
+    "Quaternion Julia": "Quaternion 줄리아",
+    "IFS Tetrahedron": "IFS 테트라헤드론",
+    "Octahedron": "옥타헤드론",
+    "Dodecahedron": "다운로드",
+    "Icosahedron": "Icosahedron, 오스트레일리아",
+    "Cubic Fractal": "Cubic 연습",
+    "Hybrid Box-Bulb": "하이브리드 박스-Bulb",
+    "Single Instance": "단일 Instance",
+    "Repeated (Clipped)": "반복 (Clipped)",
+    "Endless": "끝없는",
+    "Yaw": "야우",
+    "Pitch": "제품 정보",
+    "Roll": "사이트맵",
+    "Tumble": "전체장편",
+    "Sway": "오시는 길",
+    "Pulsate": "사이트맵",
+    "Grid": "제품정보",
+    "Scanlines": "검사 라인",
+    "Noise": "지원하다",
+    "Voronoi": "콜롬비아",
+    "Wave": "파기방법",
+    "Sierpinski": "스낵 바",
+    "Checkerboard": "옵션 정보",
+    "PolkaDot": "폴카닷",
+    "HexagonGrid": "육각형Grid",
+    "Herringbone": "헤링본",
+    "Houndstooth": "채용 정보",
+    "CarbonFiber": "탄소 섬유",
+    "Plaid": "뚱 베어",
+    "CircuitBoard": "회로 기판",
+    "HalftoneDot": "반돌Dot",
+    "TruchetTile": "사이트 맵",
+    "ReactionDiffusion": "관련 제품",
+    "Brick": "프로젝트",
+    "Intensity": "관련 기사",
+    "Glitch": "인기 카테고리",
+    "Stretch": "뚱 베어",
+    "Wind": "Ღ♥ღ",
+    "Flap": "뚱 베어",
+    "ButterflyFlap": "버터플라이",
+    "Blocky": "팟캐스트",
+    "Strobe": "사이트맵",
+    "Sine": "이름 *",
+    "Spherical": "관련 상품",
+    "MainTexture": "제품정보",
+    "Emission": "제출하기",
+    "Occlusion": "이름 *",
+    "DetailMap": "오시는 길",
+    "DissolveMask": "제품 소개",
+    "Cells": "사이트맵",
+    "Cracks": "팟캐스트",
+    "Dots": "사이트맵",
+    "Organic": "제품정보",
+    "Flow": "·",
+    "Outer": "기타 제품",
+    "Inner": "이름 *",
+    "Fresnel": "팟캐스트",
+    "Depth": "주요 특징",
+    "MeshNormals": "회사 소개",
+    "VertexColors": "Vertex 색상",
+    "Linear": "제품정보",
+    "PingPong": "핑퐁",
+    "Loop": "제품정보",
+    "Random": "이름 *",
+    "EaseInOut": "EaseIn아웃",
+    "Expand": "지원하다",
+    "Contract": "회사연혁",
+    "Pulse": "제품정보",
+    "Vertical": "수직",
+    "Directional": "오시는 길",
+    "Bottom": "이름 *",
+    "Top": "이름 *",
+    "X": "₢ 킹",
+    "Y": "₢ 킹",
+    "Z": "사이트맵",
+    "Front": "기타",
+    "Back": "이름 *",
+    "Culling": "회사 소개",
+    "Depth Test": "깊이 시험",
+    "Comparison": "제품정보",
+    "Disabled": "지원하다",
+    "Never": "이름 *",
+    "Less": "뚱 베어",
+    "Equal": "본부",
+    "LessEqual": "더 적은",
+    "Greater": "뚱 베어",
+    "NotEqual": "이름 *",
+    "GreaterEqual": "더 큰",
+    "Always": "(주)",
+    "Keep": "제품 정보",
+    "Zero": "한국어",
+    "IncrSat": "사이트맵",
+    "DecrSat": "프로모션",
+    "Invert": "뚱 베어",
+    "IncrWrap": "채용정보",
+    "DecrWrap": "프로젝트",
+    "One": "한국어",
+    "DstColor": "사이트맵",
+    "SrcColor": "사이트맵",
+    "OneMinusDstColor": "원MinusDstColor",
+    "SrcAlpha": "사이트맵",
+    "OneMinusSrcColor": "원MinusSrcColor",
+    "DstAlpha": "사이트맵",
+    "OneMinusDstAlpha": "원MinusDstAlpha",
+    "SrcAlphaSaturate": "RSS 피드",
+    "OneMinusSrcAlpha": "원MinusSrcAlpha",
+    "Show Always": "기타",
+    "Hide In Mirrors": "거울에서 숨기기",
+    "Show Only In Mirrors": "거울에서만 보기",
+    "VR Headset Eyes Only": "VR 헤드폰 눈만",
+    "Desktop Stream Spectator Only": "데스크탑 스트림 Spectator 만",
+    "Auto Oblique And Inverted Transform": "자동 Oblique와 거꾸로 한 Transform",
+    "Oblique Matrix Only": "Oblique Matrix 전용",
+    "Inverted Transform Only": "Inverted Transform 만",
+    "Visibility Mode": "Visibility 형태",
+    "Mirror Detection Method": "미러 검출 방법",
+    "VRCFallback": "VRCFallback의 특징",
+    "VRChat Fallback Tag": "VRChat Fallback 태그",
+    "ToonStandard": "회사 소개",
+    "Standard": "제품 정보",
+    "Hidden": "뚱 베어",
+    "This target requires the Lighting Mode to be set to 'Stylized_PBR' in the Lighting section.": "이 표적은 점화 단면도에 있는 'Stylized PBR'로 놓일 것이다 점화 형태를 요구합니다.",
+    "This target requires 'Enable Detail Texture' to be turned on in the Overlays section.": "이 대상은 'Enable Detail Texture'가 오버레이 섹션에서 설정되어야 합니다.",
+    "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "이 대상은 'Enable Dissolve'가 Transitions 섹션에서 설정되어야 합니다."
+  },
+  "sections": {
+    "Performance Settings": "성능 설정",
+    "Render Mode": "렌더 모드",
+    "Main Settings": "기본 설정",
+    "Procedural Textures": "절차적 텍스처",
+    "Advanced Animation Controls": "고급 애니메이션 제어",
+    "Color Controls": "색상 제어",
+    "Lighting": "라이팅",
+    "Surface Style": "서피스 스타일",
+    "Overlays": "오버레이",
+    "Effects": "이펙트",
+    "Glitches": "글리치",
+    "Transitions": "트랜지션",
+    "AudioLink Visualizers": "오디오링크 시각화",
+    "Advanced Settings": "고급 설정"
+  },
+  "properties": {
+    "_RenderMode": {
+      "label": "형태를 렌더링",
+      "tooltip": "그늘이 렌더링되는 방법을 제어합니다. Opaque는 가장 빠릅니다. Cutout는 어려운 투명성을 위해 입니다. 투명한은 연약하고, 혼합한 효력을 위해 입니다."
+    },
+    "_PerformanceLevel": {
+      "label": "성능 수준",
+      "tooltip": "성능 기본 설정, 낮은 수준에서 비싼 기능을 비활성화."
+    },
+    "_ZWrite": {
+      "label": "힘 깊이 쓰기 (ZWrite)",
+      "tooltip": "이 자료가 깊이 버퍼에 쓰면 수동으로 제어합니다. 아직도 그 뒤에 물체를 덮는 투명한 물체에 이것을 가능하게 합니다."
+    },
+    "_Cutoff": {
+      "label": "알파 커트오프",
+      "tooltip": "컷 아웃 효과의 알파 임계값."
+    },
+    "_UseUVTileDiscard": {
+      "label": "UV 타일 Discard",
+      "tooltip": "Discard 특정 UV 타일. toggling 의류 부품에 대 한 유용한."
+    },
+    "_UVTileDiscardRow3": {
+      "label": "UV 타일 행 3 (최고)",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow2": {
+      "label": "UV 타일 행 2",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow1": {
+      "label": "UV 타일 행 1",
+      "tooltip": ""
+    },
+    "_UVTileDiscardRow0": {
+      "label": "UV 타일 행 0 (바닥)",
+      "tooltip": ""
+    },
+    "_UseBaseColor": {
+      "label": "기본 색상 사용",
+      "tooltip": "솔리드베이스 색상을 토글."
+    },
+    "_BaseColor": {
+      "label": "색깔: 회색",
+      "tooltip": "텍스처를 사용하지 않을 때 홀로그램의 주요 색상."
+    },
+    "_BaseColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_UseVertexColors": {
+      "label": "Vertex 색상 사용",
+      "tooltip": "모델의 vertices에 그려진 색상을 사용하여 그늘을 넣으십시오. vertex 색상을 가진 모델이 필요합니다."
+    },
+    "_VertexColorAlphaAsOpacity": {
+      "label": "Opacity로 알파",
+      "tooltip": "Vertex 색상 알파 채널을 opacity multiplier로 사용합니다."
+    },
+    "_UseEmission": {
+      "label": "사용 약관",
+      "tooltip": "객체의 glow를 만듭니다. 을 필요 a Bloom post-processing 효과 에 그만큼 장면 에 참조 the glow."
+    },
+    "_UseEmissionPulse": {
+      "label": "Enable 방출 맥박",
+      "tooltip": "맥박 방출 강렬은 diffuse 점화에 영향을 미치기 없이 리듬으로."
+    },
+    "_EmissionPulseSpeed": {
+      "label": "맥박 속도",
+      "tooltip": "진동 방출 애니메이션의 속도."
+    },
+    "_EmissionPulseIntensity": {
+      "label": "맥박 강렬",
+      "tooltip": "얼마나 방출 맥박 (0 = 맥박 없음, 1 = 최대 힘 0에서 가득 차있는 맥박)."
+    },
+    "_UseVertexColorForEmission": {
+      "label": "배출을 위한 Vertex 색깔 사용",
+      "tooltip": "의 RGB 채널을 사용 vertex 색상을 주석 방출 빛을."
+    },
+    "_UseAlphaToEmission": {
+      "label": "Texture Alpha 사용",
+      "tooltip": "주요 질감의 알파 채널을 배출 맵으로 사용합니다. 별도의 텍스처 없이 glow 맵을 만드는 강력한 방법."
+    },
+    "_AlphaEmissionStrength": {
+      "label": "제품정보",
+      "tooltip": "알파가 방출에 영향을 미치는 방법 (higher value glow brighter)."
+    },
+    "_EmissionStrength": {
+      "label": "방출 힘",
+      "tooltip": "빛나는 효과는 무엇입니까."
+    },
+    "_AL_EmissionBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_EmissionStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseEmission2": {
+      "label": "2차 배출 가능",
+      "tooltip": "두 번째 스크롤 배출 층을 추가합니다."
+    },
+    "_Emission2Map": {
+      "label": "제2회 배출지도",
+      "tooltip": "두번째 방출 지도 (RGB)"
+    },
+    "_Emission2Color": {
+      "label": "색깔: 회색",
+      "tooltip": "두번째 방출 색깔"
+    },
+    "_Emission2Strength": {
+      "label": "제품정보",
+      "tooltip": "두번째 방출 힘"
+    },
+    "_Emission2ScrollSpeedX": {
+      "label": "스크롤 속도 X",
+      "tooltip": "두 번째 배출 스크롤 속도 X"
+    },
+    "_Emission2ScrollSpeedY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "두 번째 배출 스크롤 속도 Y"
+    },
+    "_AL_Emission2Band": {
+      "label": "AL 2nd 배출 밴드",
+      "tooltip": ""
+    },
+    "_AL_Emission2Strength": {
+      "label": "AL 2nd 배출 강도",
+      "tooltip": ""
+    },
+    "_UseEmission3": {
+      "label": "제3회 배출",
+      "tooltip": "세 번째 스크롤 배출 층을 추가합니다."
+    },
+    "_Emission3Map": {
+      "label": "3일 Emission 지도",
+      "tooltip": "세 번째 배출지도 (RGB)"
+    },
+    "_Emission3Color": {
+      "label": "색깔: 회색",
+      "tooltip": "세 번째 방출 색상"
+    },
+    "_Emission3Strength": {
+      "label": "제품정보",
+      "tooltip": "제 3의 방출 힘"
+    },
+    "_Emission3ScrollSpeedX": {
+      "label": "스크롤 속도 X",
+      "tooltip": "세 번째 배출 스크롤 속도 X"
+    },
+    "_Emission3ScrollSpeedY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "세 번째 배출 스크롤 속도 Y"
+    },
+    "_AL_Emission3Band": {
+      "label": "AL 3rd 배출 밴드",
+      "tooltip": ""
+    },
+    "_AL_Emission3Strength": {
+      "label": "AL 3rd 배출 강도",
+      "tooltip": ""
+    },
+    "_UseEmission4": {
+      "label": "제4회 배출",
+      "tooltip": "4 번째 스크롤 배출 층을 추가합니다."
+    },
+    "_Emission4Map": {
+      "label": "4일 Emission 지도",
+      "tooltip": "제 4 방출 지도 (RGB)"
+    },
+    "_Emission4Color": {
+      "label": "색깔: 회색",
+      "tooltip": "제 4 방출 색깔"
+    },
+    "_Emission4Strength": {
+      "label": "제품정보",
+      "tooltip": "제 4 방출 힘"
+    },
+    "_Emission4ScrollSpeedX": {
+      "label": "스크롤 속도 X",
+      "tooltip": "제 4 방출 스크롤 속도 X"
+    },
+    "_Emission4ScrollSpeedY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "넷째 방출 스크롤 속도 Y"
+    },
+    "_AL_Emission4Band": {
+      "label": "AL 4회 배출밴드",
+      "tooltip": ""
+    },
+    "_AL_Emission4Strength": {
+      "label": "AL 4 배출 강도",
+      "tooltip": ""
+    },
+    "_UseProceduralTexture": {
+      "label": "자주 묻는 질문",
+      "tooltip": "생성된 패턴으로 재료 속성을 대체합니다."
+    },
+    "_ProceduralTextureTarget": {
+      "label": "제품정보",
+      "tooltip": ""
+    },
+    "_ProceduralMode": {
+      "label": "Procedural 형태",
+      "tooltip": ""
+    },
+    "_ProceduralColor1": {
+      "label": "색깔 1",
+      "tooltip": "Procedural 본의 첫번째 색깔."
+    },
+    "_UseProceduralColor1Shift": {
+      "label": "Hue/Color Shift 사용 가능",
+      "tooltip": ""
+    },
+    "_ProceduralColor1_Shift": {
+      "label": "Procedural 색깔 1개의 교대",
+      "tooltip": ""
+    },
+    "_ProceduralColor2": {
+      "label": "색깔 2",
+      "tooltip": "Procedural 본의 두번째 색깔."
+    },
+    "_UseProceduralColor2Shift": {
+      "label": "Hue/Color Shift 사용 가능",
+      "tooltip": ""
+    },
+    "_ProceduralColor2_Shift": {
+      "label": "Procedural 색깔 2 교대",
+      "tooltip": ""
+    },
+    "_ProceduralScale": {
+      "label": "제품정보",
+      "tooltip": "패턴의 크기/틸링을 제어합니다."
+    },
+    "_ProceduralSpeed": {
+      "label": "제품 정보",
+      "tooltip": "패턴의 애니메이션 속도를 제어합니다."
+    },
+    "_ProceduralDirection": {
+      "label": "제품정보",
+      "tooltip": ""
+    },
+    "_AL_ProceduralBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_ProceduralStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_ProceduralThickness": {
+      "label": "제품 정보",
+      "tooltip": "패턴 라인의 두께."
+    },
+    "_ProceduralDensity": {
+      "label": "제품정보",
+      "tooltip": "패턴 요소의 크기를 제어합니다. 더 높은 가치는 크기를 증가합니다."
+    },
+    "_ProceduralSparsity": {
+      "label": "이름 *",
+      "tooltip": "패턴의 요소 사이의 거리를 제어합니다. 더 높은 가치는 간격을 증가합니다."
+    },
+    "_ProceduralRotation": {
+      "label": "회전 속도",
+      "tooltip": "전체적인 패턴을 회전합니다. 0.125의 가치는 45 도입니다."
+    },
+    "_ProceduralSpaceMode": {
+      "label": "연락처",
+      "tooltip": ""
+    },
+    "_NoiseOctaves": {
+      "label": "인기 카테고리",
+      "tooltip": "다른 가늠자에 소음의 층을 추가하여 훨씬 더 상세하고 자연스러운 패턴을 만듭니다."
+    },
+    "_NoiseLacunarity": {
+      "label": "주요 기능",
+      "tooltip": "각 옥타브와 소음의 빈도를 제어합니다."
+    },
+    "_NoiseGain": {
+      "label": "이름 *",
+      "tooltip": "각 octave와 소음의 진폭을 제어합니다."
+    },
+    "_VoronoiStyle": {
+      "label": "(주)",
+      "tooltip": "Voronoi 패턴의 시각적 스타일을 제어합니다."
+    },
+    "_AnimSpeedMultiplier": {
+      "label": "글로벌 속도 Multiplier",
+      "tooltip": "마스터 애니메이션 속도 multiplier. VRChat Avatar Dynamics / Animator 매개 변수를 통해 모든 음영 애니메이션을 제어하거나 동결하십시오."
+    },
+    "_UseAdvancedAnim": {
+      "label": "고급 애니메이션 컨트롤",
+      "tooltip": "시간 스케일링, 재생 모드 및 모든 셰이퍼 애니메이션 시간 오프셋을위한 마스터 컨트롤을 노출합니다."
+    },
+    "_AnimTimeScale": {
+      "label": "시간 가늠자",
+      "tooltip": "모든 쉐이더 애니메이션의 전반적인 속도를 제어합니다. 감소하거나 효력을 가속화하기 위하여 사용될 수 있습니다."
+    },
+    "_AnimPlayMode": {
+      "label": "Playback 형태",
+      "tooltip": "글로벌 재생 모드를 설정합니다. 0 = 루프 (시작 중), 1 = 탁구 (역 방향)."
+    },
+    "_AnimOffset": {
+      "label": "시간 상쇄",
+      "tooltip": "모든 애니메이션에 글로벌 타임 오프셋을 적용, 동기화 또는 동기화 효과에 유용합니다."
+    },
+    "_TwoSidedLighting": {
+      "label": "2면 조명",
+      "tooltip": "Cull가 꺼질 때 2 편들어진 조명을 위한 뒤 얼굴에 손가락 정상적인 방향."
+    },
+    "_LightingMode": {
+      "label": "점화 형태",
+      "tooltip": ""
+    },
+    "_UseSpecularAA": {
+      "label": "Enable 관 AA",
+      "tooltip": "Anti-aliases specular 하이라이트, 광택 있는 표면에 shimmering 그리고 flickering 감소."
+    },
+    "_UseOpenLitMath": {
+      "label": "OpenLit Harmony 모드",
+      "tooltip": "OpenLit CC0 표준 Half-Lambert diffuse math를 사용하여 사진 세계의 군중 avatars의 일관된 조명."
+    },
+    "_SpecularAAVariance": {
+      "label": "언어 선택",
+      "tooltip": "AA blurring이 적용된 방법을 제어합니다."
+    },
+    "_SpecularAAThreshold": {
+      "label": "뚱 베어",
+      "tooltip": "AA 킥 전에 사양 강조 강도에 대한 임계 값."
+    },
+    "_ShadowColor": {
+      "label": "섀도 컬러",
+      "tooltip": "빛에 의해 명중하지 않는 영역의 색상."
+    },
+    "_ShadowColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_ToonThreshold": {
+      "label": "뚱 베어",
+      "tooltip": "토온 모드에서 lit 영역의 크기."
+    },
+    "_ToonHardness": {
+      "label": "경도",
+      "tooltip": "토온 모드에서 그림자 가장자리의 날카로움."
+    },
+    "_ToonShadowBorder": {
+      "label": "섀도우 국경",
+      "tooltip": "Toon 그림자 선 경계선을 상쇄하십시오."
+    },
+    "_ToonShadowBlur": {
+      "label": "섀도 블루",
+      "tooltip": "Toon 그림자 단계 흐림을 부드럽게 합니다."
+    },
+    "_ToonShadowAO": {
+      "label": "AO 그림자 변조",
+      "tooltip": "주변의 망각지도를 사용하여 cel shadow 경계를 조절합니다."
+    },
+    "_NormalMap": {
+      "label": "일반 지도",
+      "tooltip": "일반 맵을 사용하여 표면 세부 사항 추가."
+    },
+    "_BumpScale": {
+      "label": "정상적인 가늠자",
+      "tooltip": "표면 정상적인 범프의 힘 그리고 깊이."
+    },
+    "_USE_DETAIL_NORMAL_ON": {
+      "label": "자주 묻는 질문",
+      "tooltip": "Micro-surface 세부 사항 범프에 대한 보조 정상적인지도를 추가합니다."
+    },
+    "_DetailNormalMap": {
+      "label": "정상적인 지도",
+      "tooltip": "추가 된 표면 세부 사항에 대 한 기본 정상에 두 번째 정상적인지도 overlaid."
+    },
+    "_DetailNormalScale": {
+      "label": "세부사항 정상적인 힘",
+      "tooltip": "세부사항 정상적인 지도의 힘을 통제하십시오."
+    },
+    "_NormalBlendMode": {
+      "label": "정상적인 혼합 형태",
+      "tooltip": "기초와 세부 사항 정상적인 맵 사이의 혼합 알고리즘 (Whiteout vs Recentric Normal Mapping / RNM)."
+    },
+    "_MetallicGlossMap": {
+      "label": "금속 (R) 매끈함 (A)",
+      "tooltip": "Metallic (R) 및 매끈함 (A) 지도. (주: 스무디움은 별도의 거친 지도가 제공된 경우 무시됩니다)"
+    },
+    "_Metallic": {
+      "label": "금속",
+      "tooltip": "금속이 표면이 (0 = 유전 / 플라스틱, 1 = 순수 금속) 인 방법을 제어합니다."
+    },
+    "_Glossiness": {
+      "label": "연락처",
+      "tooltip": "표면이 (0 = 거친 / 매트, 1 = 매끄럽게 미러) 인 방법을 제어합니다."
+    },
+    "_UseAmbientLighting": {
+      "label": "사용 주위 점화",
+      "tooltip": "장면 주위 빛과 반사 조사의 토글 샘플링. 다른 세계에 걸쳐 더 일관성을 조명한다."
+    },
+    "_UseSHAmbient": {
+      "label": "사용 고품질 주위 (SH)",
+      "tooltip": "고품질 Spherical Harmonics 주변. 주: 중간/낮은 성과 수준에서 떨어져 강제하십시오."
+    },
+    "_AmbientFallbackMode": {
+      "label": "주위 Fallback 형태",
+      "tooltip": "High Quality SH이 비활성화 될 때 fallback 조명 모델을 선택하거나 꺼집니다."
+    },
+    "_UseLightOverride": {
+      "label": "Override 장면 빛",
+      "tooltip": "방향, 색상, 강도의 메인 장면 빛."
+    },
+    "_LightDirOverride": {
+      "label": "제품정보",
+      "tooltip": "사용자 정의 빛 방향 벡터."
+    },
+    "_LightColorOverride": {
+      "label": "색깔: 회색",
+      "tooltip": "사용자 정의 빛 색상 통."
+    },
+    "_LightIntensity": {
+      "label": "관련 기사",
+      "tooltip": "사용자 정의 빛 강도 규모."
+    },
+    "_ShadowStrength": {
+      "label": "그림자 힘",
+      "tooltip": "이 빛에서 던지기 그림자의 힘 multiplier."
+    },
+    "_RampTex": {
+      "label": "카테고리",
+      "tooltip": "Toon Ramp 질감. 전사 그림자 (왼쪽) (오른쪽)."
+    },
+    "_ToonToneCount": {
+      "label": "톤 수",
+      "tooltip": "이온 점화를 위한 분리된 셰이딩 quantization 밴드의 수."
+    },
+    "_MidColor": {
+      "label": "중간 색깔",
+      "tooltip": "Midtone 밴드 색깔."
+    },
+    "_MidThreshold": {
+      "label": "연락처",
+      "tooltip": "미드스톤 밴드에 대한 Threshold 경계."
+    },
+    "_HighlightColor": {
+      "label": "높은 빛 색깔",
+      "tooltip": "Highlight 밴드 색깔."
+    },
+    "_HighlightThreshold": {
+      "label": "연락처",
+      "tooltip": "강조 밴드에 대한 Threshold 경계."
+    },
+    "_SpecularMode": {
+      "label": "작업 흐름",
+      "tooltip": "Metallic-Smoothness 및 Specular-Color PBR 조명 워크플로우 중에서 선택하십시오."
+    },
+    "_SpecColor": {
+      "label": "견본 색깔",
+      "tooltip": "견본 반사 색."
+    },
+    "_SpecGlossMap": {
+      "label": "관 (RGB) 광택 (A)",
+      "tooltip": "분광 색상 (RGB) 및 매끈함 (A)지도."
+    },
+    "_ShadowmaskFallbackMode": {
+      "label": "Shadowmask 폴백",
+      "tooltip": "Shadowmask 질감이 사용할 때 Fallback 동작."
+    },
+    "_RoughnessMap": {
+      "label": "소밀 맵 (R)",
+      "tooltip": "거친 지도 (R)."
+    },
+    "_Roughness": {
+      "label": "큰 가슴",
+      "tooltip": "거친 가치."
+    },
+    "_OcclusionMap": {
+      "label": "Occlusion 지도 (G)",
+      "tooltip": "Occlusion Map (G)는 크레이프의 베이지 그림자에."
+    },
+    "_OcclusionStrength": {
+      "label": "Occlusion 힘",
+      "tooltip": "악당 지도에서 주변 그림자 크레이프의 힘."
+    },
+    "_DetailMask": {
+      "label": "마스크 (A)",
+      "tooltip": "Detail Mask (A)는 보조 세부 텍스트의 응용 프로그램을 제한합니다."
+    },
+    "_UseSSS": {
+      "label": "Enable Subsurface 스카핑",
+      "tooltip": "피부나 잎과 같은 얇은 개체를 통해 빛이 흩어져."
+    },
+    "_SSS_Scale": {
+      "label": "제품정보",
+      "tooltip": "SSS 효과의 전반적인 힘."
+    },
+    "_SSS_Radius": {
+      "label": "채용정보",
+      "tooltip": "재료 내에서 멀리 빛이 흩어져."
+    },
+    "_SSS_Color": {
+      "label": "사이트맵",
+      "tooltip": "흩어진 빛에 적용된 색깔 주석."
+    },
+    "_USE_THICKNESS_MAP_ON": {
+      "label": "Enable 간격 지도",
+      "tooltip": "얇은 영역 (ears, 잎, 등)을 통해 광선 전송을 시뮬레이션하는 질감을 사용합니다."
+    },
+    "_ThicknessMap": {
+      "label": "두께 맵 (R)",
+      "tooltip": "두께 맵 (R 채널). 흰색 = 두꺼운 (변환 없음), 검정 = 얇은 (전송)."
+    },
+    "_ThicknessStrength": {
+      "label": "간격 힘",
+      "tooltip": "역광선 전송 효력의 강렬을 통제하십시오."
+    },
+    "_UseSSSTransmissionTex": {
+      "label": "SSS 전송 텍스처 사용",
+      "tooltip": "사용자 정의 색상지도 백라이트 전송을 주석."
+    },
+    "_SSSTransmissionTex": {
+      "label": "SSS 전송 지도",
+      "tooltip": "전송 색깔 지도."
+    },
+    "_UseAnisotropy": {
+      "label": "Enable Anisotropic 반사",
+      "tooltip": "스트레칭 된 하이라이트, 솔질 금속 또는 머리카락에 공통."
+    },
+    "_Aniso_Mode": {
+      "label": "Aniso 형태",
+      "tooltip": ""
+    },
+    "_Aniso_RoughnessU": {
+      "label": "거친 U",
+      "tooltip": "U (tangent) 방향을 따라 거칠기."
+    },
+    "_Aniso_RoughnessV": {
+      "label": "거친 V",
+      "tooltip": "V (일반) 방향을 따라 거칠기."
+    },
+    "_Aniso_Strength": {
+      "label": "Specular 힘",
+      "tooltip": "Anisotropic 하이라이트의 전반적인 광도."
+    },
+    "_Aniso_TangentMap": {
+      "label": "Tangent 지도 (선택)",
+      "tooltip": "Anisotropic 하이라이트의 방향을 제어하는 tangent지도 (RG 채널)."
+    },
+    "_UseClearCoat": {
+      "label": "사용 약관",
+      "tooltip": "기초 PBR 물자에 이차 명확한 외투 specular 층을 추가하십시오. 페인트/코팅 표면을 위해 유용한."
+    },
+    "_ClearCoatStrength": {
+      "label": "명확한 외투 힘",
+      "tooltip": "이차 자동차 래커/수지 clearcoat 층의 강렬."
+    },
+    "_ClearCoatRoughness": {
+      "label": "명확한 외투 거칠기",
+      "tooltip": "이차 clearcoat 층의 거칠기."
+    },
+    "_USE_EYE_REFRACTION_ON": {
+      "label": "눈에 띄는 아이리스 Parallax",
+      "tooltip": "옥수수 아래에 습지와 홍채의 깊이/재활을 자극합니다."
+    },
+    "_IrisTiling": {
+      "label": "아이리스 UV Tiling",
+      "tooltip": "아이리스 질감의 tiling을 제어합니다."
+    },
+    "_IrisDepth": {
+      "label": "Iris 깊이 상쇄",
+      "tooltip": "가장된 굴절 깊이 오프셋."
+    },
+    "_PupilSize": {
+      "label": "Pupil 가늠자",
+      "tooltip": "Pupil의 크기 가늠자를 통제하십시오."
+    },
+    "_USE_SKIN_WRAP_ON": {
+      "label": "Enable Skin Diffuse 랩",
+      "tooltip": "유기 곡선 표면에 연화 그림자."
+    },
+    "_SkinWrapAmount": {
+      "label": "랩 금액",
+      "tooltip": "그림자 terminator의 주위에 얼마나 많은 빛 랩."
+    },
+    "_USE_HAIR_SPEC_ON": {
+      "label": "Enable 머리 Anisotropic 관 (Kajiya-Kay)",
+      "tooltip": "Anisotropic는 머리 물가를 위해 특별히 특색짓습니다."
+    },
+    "_HairSpecColor": {
+      "label": "견본 색깔",
+      "tooltip": "머리 specular 하이라이트의 색깔."
+    },
+    "_HairSpecExponent": {
+      "label": "1 차적인 노출",
+      "tooltip": "주요 하이라이트의 날카로움."
+    },
+    "_HairSpecExponent2": {
+      "label": "두 번째 노출",
+      "tooltip": "이차의 날카로운 하이라이트."
+    },
+    "_HairSpecStrength": {
+      "label": "Specular 힘",
+      "tooltip": "하이라이트의 광도 힘."
+    },
+    "_HairSpecShift": {
+      "label": "Specular 이동",
+      "tooltip": "머리 방향을 따라 위치 이동."
+    },
+    "_UseGrid": {
+      "label": "Enable 격자",
+      "tooltip": "표면에 격자 무늬를 오버레이."
+    },
+    "_GridMode": {
+      "label": "격자 무늬",
+      "tooltip": "Procedural 격자 작풍 (사각, 6각형, 레이디얼, wireframe)."
+    },
+    "_GridColor": {
+      "label": "색깔: 회색",
+      "tooltip": "그리드 라인의 색상."
+    },
+    "_GridColor_Shift": {
+      "label": "격자 색깔 교대",
+      "tooltip": "Procedural 격자 선을 위한 AudioLink 또는 애니메이션 색깔 교대."
+    },
+    "_GridDensity": {
+      "label": "제품정보",
+      "tooltip": "몇 개의 그리드 패턴이 나타납니다."
+    },
+    "_GridSparsity": {
+      "label": "이름 *",
+      "tooltip": "패턴의 요소 사이의 거리를 제어합니다. 더 높은 가치는 간격을 증가합니다."
+    },
+    "_GridSpace": {
+      "label": "연락처",
+      "tooltip": "Procedural 그리드 매핑을위한 좌표 공간 (Object UV, Local Mesh, World Space)."
+    },
+    "_GridThickness": {
+      "label": "격자 선 간격",
+      "tooltip": "Procedural 격자 오바레이를 위한 선 간격."
+    },
+    "_UseGridScroll": {
+      "label": "비밀번호",
+      "tooltip": "나선 패턴에 대해."
+    },
+    "_GridScrollSpeed": {
+      "label": "스크롤 속도 X",
+      "tooltip": "첫 번째 축 (세계 X)를 따라 그리드 스크롤을 빠르게합니다."
+    },
+    "_GridRotation": {
+      "label": "회전 속도",
+      "tooltip": "전체 그리드 패턴을 회전합니다. 0.125의 가치는 45 도입니다."
+    },
+    "_GridScrollSpeedY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "두 번째 축 (세계 Z)를 따라 그리드 스크롤을 빠르게합니다."
+    },
+    "_BoxFractalIsFill": {
+      "label": "사용 필 스타일",
+      "tooltip": "채우기 패턴과 개요 패턴 사이에 상자 프랙탈을 전환합니다."
+    },
+    "_GridPatternIsFill": {
+      "label": "사용 필 스타일",
+      "tooltip": "채우기와 개요 사이의 패턴을 전환합니다."
+    },
+    "_MandelboxIsFill": {
+      "label": "사용 필 스타일",
+      "tooltip": "필 패턴과 윤곽 패턴 사이의 Mandelbox를 전환합니다."
+    },
+    "_GridPulseMode": {
+      "label": "격자 맥박 형태",
+      "tooltip": "그리드 애니메이션 펄스 파형 (신, 삼각형, AudioLink)."
+    },
+    "_GridPulseSpeed": {
+      "label": "맥박 속도",
+      "tooltip": "펄스 애니메이션의 속도."
+    },
+    "_GridPulseIntensity": {
+      "label": "맥박 강렬",
+      "tooltip": "맥박 효력의 힘."
+    },
+    "_GridPulseMin": {
+      "label": "격자 맥박 분",
+      "tooltip": "Pulsing 도중 최소한도 격자 광도/간격 승수."
+    },
+    "_GridPulseMax": {
+      "label": "격자 맥박 최대",
+      "tooltip": "Pulsing 도중 최대 격자 광도/간격 승수."
+    },
+    "_UseGridDepthColor": {
+      "label": "사용 깊이 기반 색상",
+      "tooltip": "다른 표면에 근접한 그리드 색상을 변경합니다."
+    },
+    "_GridDepthColor": {
+      "label": "깊이 색깔",
+      "tooltip": "색깔 배경의 가까이에 때 격자 이동."
+    },
+    "_GridDepthColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_GridDepthRange": {
+      "label": "깊이 범위",
+      "tooltip": "색상 변경이 발생합니다."
+    },
+    "_AL_GridBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_GridStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseGridMask": {
+      "label": "사용 Grid Mask",
+      "tooltip": "텍스처를 사용하여 그리드 효과."
+    },
+    "_GridMask": {
+      "label": "그리드 마스크",
+      "tooltip": "그리드에 사용되는 질감. 빨간 수로는 사용됩니다."
+    },
+    "_InvertGridMask": {
+      "label": "Invert 마스크",
+      "tooltip": "가면을, 그래서 까만 지역은 눈에 보이는 백색 지역은 숨겨집니다."
+    },
+    "_USE_DISTORTION_ON": {
+      "label": "Vertex Distortion 사용",
+      "tooltip": "에 또는 륙의 procedural vertex 왜곡 애니메이션."
+    },
+    "_DistortionMode": {
+      "label": "Distortion 형태",
+      "tooltip": "Procedural vertex distortion 알고리즘 (신파, 소음 turbulence, Flapping, 등)."
+    },
+    "_DistortionStrength": {
+      "label": "제품정보",
+      "tooltip": "얼마나 vertices는 displaced."
+    },
+    "_DistortionSpeed": {
+      "label": "제품 정보",
+      "tooltip": "왜곡 애니메이션의 속도."
+    },
+    "_AL_DistortionBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_DistortionStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_DistortionTex": {
+      "label": "Distortion 짜임새 (상쇄를 위한 RG)",
+      "tooltip": "찡그림 (R=X 상쇄, G=Z 상쇄)를 통제하는 짜임새."
+    },
+    "_DistortionTexScrollX": {
+      "label": "스크롤 속도 X",
+      "tooltip": "찡그림을 수평으로 스크롤합니다."
+    },
+    "_DistortionTexScrollY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "찡그림을 수직으로 스크롤합니다."
+    },
+    "_StretchAxis": {
+      "label": "뻗기 축선",
+      "tooltip": "다공성 vertex stretching가 적용되는 메쉬 축."
+    },
+    "_WindDirection": {
+      "label": "제품정보",
+      "tooltip": "바람의 지역 영역 방향 (물체에 관계)."
+    },
+    "_WindScale": {
+      "label": "제품정보",
+      "tooltip": "바람의 크기. 작은 값은 더 큰, 느린 파도를 만듭니다."
+    },
+    "_FlapScale": {
+      "label": "제품정보",
+      "tooltip": "캡핑 모션의 curvature 또는 'waviness'를 제어합니다."
+    },
+    "_FlapPhaseOffset": {
+      "label": "단계 상쇄",
+      "tooltip": "비대칭 플랩을 만드는 한쪽에 시간 지연을 추가합니다. 0은 비대칭입니다."
+    },
+    "_FlapMode": {
+      "label": "플랩 형태",
+      "tooltip": "Vertex flapping 애니메이션의 방향과 스타일 (Wings, Flags, Foliage)."
+    },
+    "_FlapPivot": {
+      "label": "플랩 피벗",
+      "tooltip": "Vertex flapping 진동을 위한 앵커 포인트/피벗 위치."
+    },
+    "_FlapDirection": {
+      "label": "제품정보",
+      "tooltip": "사용자 정의 로컬 공간 방향을 정의하는 벡터."
+    },
+    "_USE_DISSOLVE_ON": {
+      "label": "공급 업체",
+      "tooltip": "객체가 노이즈 패턴을 사용하여 표시/disappear를 만듭니다."
+    },
+    "_DissolveMode": {
+      "label": "Dissolve 형태",
+      "tooltip": "Math 알고리즘(Linear, Radial, Spherical, Voronoi 소음 등)을 선택합니다."
+    },
+    "_DissolveScale": {
+      "label": "제품정보",
+      "tooltip": "용해 효과의 크기 / 확산을 제어합니다."
+    },
+    "_DissolveDirection": {
+      "label": "제품정보",
+      "tooltip": "세계 공간 방향은 파 여행을 녹입니다."
+    },
+    "_DissolveOrigin": {
+      "label": "회사 소개",
+      "tooltip": "세계 공간 중심의 지점에서 녹이는 emanates."
+    },
+    "_DissolveOriginIsObject": {
+      "label": "Object Center 사용",
+      "tooltip": "활성화될 때, dissolve는 객체의 피벗 포인트에서 유래합니다. 비활성화되면 고정 된 세계 공간 좌표를 사용합니다."
+    },
+    "_DissolveMap": {
+      "label": "문제 해결",
+      "tooltip": "용해 효과에 사용되는 소음 질감 (빨간 채널 사용)."
+    },
+    "_DissolveProjMode": {
+      "label": "Map Projection 형태를 녹일",
+      "tooltip": "녹은 짜임새를 위한 UV 투상 매핑 형태."
+    },
+    "_DissolveAmount": {
+      "label": "계정 정보",
+      "tooltip": "용해 효과의 진행 (0-1)."
+    },
+    "_DissolveEdgeWidth": {
+      "label": "가장자리 폭",
+      "tooltip": "녹슬지 않는 선에 빛나는 가장자리의 폭."
+    },
+    "_DissolveGlitchBlockSize": {
+      "label": "구획 크기",
+      "tooltip": "스크린 공간에 있는 glitch 구획의 크기."
+    },
+    "_DissolveEdgeColor": {
+      "label": "가장자리 색깔",
+      "tooltip": "빛나는 용해 가장자리의 색상."
+    },
+    "_DissolveEdgeColor_Shift": {
+      "label": "가장자리 색깔 교대",
+      "tooltip": "AudioLink 또는 animated color shift for the dissolve 불타는 가장자리."
+    },
+    "_UseDissolveGradient": {
+      "label": "Gradient 사용",
+      "tooltip": "단단한 색깔 대신에 녹은 가장자리를 착색하는 gradient 짜임새를 사용하십시오."
+    },
+    "_UseAdvancedDissolveAnim": {
+      "label": "Advanced Timing 사용",
+      "tooltip": "간단한 루프/핑퐁 대신 용해 애니메이션에 대한 사용자 정의 타이밍을 사용합니다."
+    },
+    "_DissolveOnDuration": {
+      "label": "자주 묻는 질문",
+      "tooltip": "재생할 수 없는 애니메이션을 위해 시간이 걸립니다."
+    },
+    "_DissolveVisibleDuration": {
+      "label": "눈에 띄는 기간",
+      "tooltip": "객체는 완전히 볼 수 있습니다 (최대 용해)."
+    },
+    "_DissolveOffDuration": {
+      "label": "자주 묻는 질문",
+      "tooltip": "놀이에 녹아웃 애니메이션을 위해 시간이 걸립니다."
+    },
+    "_DissolveHiddenDuration": {
+      "label": "자위 행위",
+      "tooltip": "객체가 완전히 숨겨져 있습니다 (최소 용해)."
+    },
+    "_DissolveGradient": {
+      "label": "Gradient를 녹이십시오",
+      "tooltip": "녹은 가장자리를 위한 색깔 경사로. gradient는 가장자리의 폭에 걸쳐 맵핑됩니다."
+    },
+    "_AnimateDissolve": {
+      "label": "이름 *",
+      "tooltip": "적시에 녹이는 양을 자동화하십시오."
+    },
+    "_DissolveAnimSpeed": {
+      "label": "제품 정보",
+      "tooltip": "애니메이션의 속도."
+    },
+    "_DissolveAnimMode": {
+      "label": "Ping-Pong 사용",
+      "tooltip": "활성화되면 애니메이션이 앞으로 재생되고 뒤로됩니다. 비활성화되면 반복합니다."
+    },
+    "_DissolveAnimMin": {
+      "label": "애니메이션 Min",
+      "tooltip": "애니메이션이 활성화되면 최소 용해 차단."
+    },
+    "_DissolveAnimMax": {
+      "label": "애니메이션 Max",
+      "tooltip": "애니메이션이 활성화되면 최대 용해 차단."
+    },
+    "_AL_DissolveBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_DissolveStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UsePlanarWipe": {
+      "label": "사용 약관",
+      "tooltip": "매끄럽고 방향 와이퍼를 가진 객체를 수정합니다."
+    },
+    "_WipeDirection": {
+      "label": "제품정보",
+      "tooltip": "물체를 가로지르는 방향."
+    },
+    "_WipeProgress": {
+      "label": "주요사업",
+      "tooltip": "닦음 효력의 진행."
+    },
+    "_WipeHardness": {
+      "label": "경도",
+      "tooltip": "닦음의 날카로움."
+    },
+    "_AnimateWipe": {
+      "label": "연락처",
+      "tooltip": "적시에 자동적으로 닦음 진도."
+    },
+    "_UseAdvancedWipeAnim": {
+      "label": "Advanced Timing 사용",
+      "tooltip": "간단한 루프/핑퐁 대신 와이퍼 애니메이션에 대한 사용자 정의 타이밍을 사용합니다."
+    },
+    "_WipeOnDuration": {
+      "label": "Wipe 에 소요 시간",
+      "tooltip": "놀이에 와이퍼 애니메이션을 위해 시간이 걸립니다."
+    },
+    "_WipeVisibleDuration": {
+      "label": "눈에 띄는 기간",
+      "tooltip": "객체는 완전히 볼 수 있습니다."
+    },
+    "_WipeOffDuration": {
+      "label": "Wipe 륙 기간",
+      "tooltip": "놀이에 와이퍼 애니메이션을 위해 시간이 걸립니다."
+    },
+    "_WipeHiddenDuration": {
+      "label": "자위 행위",
+      "tooltip": "객체는 반복하기 전에 완전히 숨겨져 있습니다."
+    },
+    "_WipeAnimSpeed": {
+      "label": "제품 정보",
+      "tooltip": "애니메이션의 속도."
+    },
+    "_WipeAnimMode": {
+      "label": "Ping-Pong 사용",
+      "tooltip": "활성화되면 애니메이션이 앞으로 재생되고 뒤로됩니다. 비활성화되면 반복합니다."
+    },
+    "_UseTransparency": {
+      "label": "투명성",
+      "tooltip": "객체를 균일하게 투명하게 만듭니다."
+    },
+    "_Alpha": {
+      "label": "사이트맵",
+      "tooltip": "전반적인 투명도를 통제하십시오. 1 = 완전 불투명, 0 = 완전 보이지 않는."
+    },
+    "_UseFresnelTransparency": {
+      "label": "Enable Fresnel 투명성",
+      "tooltip": "중앙과 opaque에서 더 투명한 객체를 만듭니다."
+    },
+    "_FresnelPower": {
+      "label": "힘",
+      "tooltip": "Falloff 곡선을 제어합니다. 높은 가치는 가장자리를 향해 투명도를 밀어."
+    },
+    "_FresnelEdgeAlpha": {
+      "label": "가장자리 알파",
+      "tooltip": "Grazing 각에 투명도."
+    },
+    "_FresnelCenterAlpha": {
+      "label": "센터 알파",
+      "tooltip": "카메라에 직접 투명도."
+    },
+    "_AL_FresnelBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_FresnelStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseTexture": {
+      "label": "Texture 사용",
+      "tooltip": "본문내용 바로가기."
+    },
+    "_MainTex": {
+      "label": "본문내용",
+      "tooltip": "1 차적인 표면 albedo 짜임새."
+    },
+    "_MainTexProjMode": {
+      "label": "기본적인 짜임새 투상 형태",
+      "tooltip": ""
+    },
+    "_UseVideoPlayer": {
+      "label": "Video Player 모드",
+      "tooltip": "텍스처를 구성하여 비디오 플레이어 데이터를 수신합니다."
+    },
+    "_VideoIsAVPro": {
+      "label": "AVPro 비디오",
+      "tooltip": "비디오 플레이어가 AVPro를 사용하는 경우 이것을 확인하십시오."
+    },
+    "_Rotation": {
+      "label": "회전 속도",
+      "tooltip": "UV 공간의 중심 주변의 모든 질감을 회전시킵니다."
+    },
+    "_ScrollX": {
+      "label": "스크롤 속도 X",
+      "tooltip": "수평한 UV 생기 속도."
+    },
+    "_ScrollY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "수직 UV 생기 속도."
+    },
+    "_USE_PINGPONG_SCROLL_ON": {
+      "label": "Ping-Pong 스크롤 사용",
+      "tooltip": "스크롤 모드를 뒤쪽으로 핑퐁 모션으로 전환합니다."
+    },
+    "_PingPongScrollSpeed": {
+      "label": "제품 정보",
+      "tooltip": "Back-and-forth 스크롤 모션의 속도."
+    },
+    "_PingPongScrollRange": {
+      "label": "제품정보",
+      "tooltip": "Back-and-forth 스크롤 모션의 거리."
+    },
+    "_USE_UVDISTORT_ON": {
+      "label": "UV 증류법 사용",
+      "tooltip": "UV 좌표를 경고하는 짜임새를 사용해서, 열 안개 또는 물 잔물결 같이 효력을 창조하십시오."
+    },
+    "_UVDistortionMap": {
+      "label": "UV Distortion 지도",
+      "tooltip": "UV를 왜곡하는 데 사용되는 질감. 빨간색과 녹색 채널은 X 및 Y 오프셋을 제어합니다."
+    },
+    "_UVDistortionStrength": {
+      "label": "제품정보",
+      "tooltip": "UV 왜곡 wobble는 강렬한 방법."
+    },
+    "_UVDistortionSpeedX": {
+      "label": "속도 X",
+      "tooltip": "찡그림 파의 수평한 속도."
+    },
+    "_UVDistortionSpeedY": {
+      "label": "속도 Y",
+      "tooltip": "찡그림 파의 수직 속도."
+    },
+    "_USE_FLIPBOOK_ON": {
+      "label": "Enable Flipbook 애니메이션",
+      "tooltip": "Spritesheet 레이아웃을 사용하여 주요 질감. 메인 텍스처의 tiling 및 offset을 override합니다."
+    },
+    "_FlipbookMode": {
+      "label": "주요 특징",
+      "tooltip": "애니메이션 재생 모드."
+    },
+    "_FlipbookColumns": {
+      "label": "열 (X)",
+      "tooltip": "스프라이트 시트의 열 (frames Horizontally)의 수."
+    },
+    "_FlipbookRows": {
+      "label": "행 (Y)",
+      "tooltip": "스프라이트 시트의 행 (프레임 수직)의 수."
+    },
+    "_FlipbookSpeed": {
+      "label": "속도 (FPS)",
+      "tooltip": "초당 프레임의 애니메이션 속도."
+    },
+    "_FlipbookStartFrame": {
+      "label": "시작 구조",
+      "tooltip": "애니메이션의 시작 프레임, 오프셋을 허용."
+    },
+    "_USE_DETAIL_TEX_ON": {
+      "label": "본문 바로가기",
+      "tooltip": "이차 질감, 종종 정밀한 세부 사항 또는 grunge."
+    },
+    "_DetailTex": {
+      "label": "연락처",
+      "tooltip": "오버레이에 이차 질감."
+    },
+    "_DetailTexProjMode": {
+      "label": "세부사항 짜임새 투상 형태",
+      "tooltip": ""
+    },
+    "_DetailIntensity": {
+      "label": "관련 기사",
+      "tooltip": "얼마나 강하게 세부사항 짜임새는 혼합됩니다."
+    },
+    "_USE_EMISSION_MASK_ON": {
+      "label": "Emission Mask 사용",
+      "tooltip": "표면 방출 빛의 부품을 제어하는 질감을 사용합니다."
+    },
+    "_EmissionMaskTex": {
+      "label": "Emission 마스크",
+      "tooltip": "방출을 제어하는 질감 (white=full 배출, black=no 배출)."
+    },
+    "_EmissionMaskProjMode": {
+      "label": "방출 가면 투영 형태",
+      "tooltip": ""
+    },
+    "_USE_PARALLAX_ON": {
+      "label": "사용 가능한 Parallax Mapping",
+      "tooltip": "깊이를 위한 UV 상쇄에 고도 지도를 사용하십시오."
+    },
+    "_HeightMap": {
+      "label": "높이 맵 (R)",
+      "tooltip": "흰색이 높고 검은 색이 낮습니다."
+    },
+    "_ParallaxStrength": {
+      "label": "제품정보",
+      "tooltip": "Parallax 효과는 어떻게 나타납니다."
+    },
+    "_USE_POM_ON": {
+      "label": "사용 가능한 Parallax Occlusion Mapping",
+      "tooltip": "고품질 깊이 효과를 위한 다중 단계 parallax를 가능하게 합니다. 높은 퍼프 만."
+    },
+    "_POMSteps": {
+      "label": "최대 단계",
+      "tooltip": "Parallax 단계의 최대 수."
+    },
+    "_POMMinSteps": {
+      "label": "맨 위로",
+      "tooltip": "Parallax 단계의 최소 수 (glancing 각도에서)."
+    },
+    "_USE_ENV_REFLECTION_ON": {
+      "label": "환경 반사",
+      "tooltip": "샘플 반사 프로브는 Basic/Toon 모드에서도 환경 반사를 추가합니다."
+    },
+    "_EnvReflectionStrength": {
+      "label": "반사 강도",
+      "tooltip": "환경 반사의 힘."
+    },
+    "_EnvReflectionRoughness": {
+      "label": "반사 거칠기",
+      "tooltip": "반사의 거칠기 (맹세)."
+    },
+    "_USE_VAT_ON": {
+      "label": "Vertex 애니메이션 Texture 사용",
+      "tooltip": "VAT 텍스처에서 베이킹 버텍스 애니메이션. pre-baked cloth, 유체 또는 파괴 효과에 사용됩니다."
+    },
+    "_VATPositionTex": {
+      "label": "부가가치세",
+      "tooltip": "VAT 위치 오프셋 질감. 각 행은 구조입니다."
+    },
+    "_VATFrameCount": {
+      "label": "구조 조사",
+      "tooltip": "텍스처의 총 애니메이션 프레임."
+    },
+    "_VATSpeed": {
+      "label": "제품 정보",
+      "tooltip": "Vertex 애니메이션의 재생 속도."
+    },
+    "_VATBoundsMin": {
+      "label": "Bounds 분",
+      "tooltip": "위치 remapping를 위한 최소한 경계."
+    },
+    "_VATBoundsMax": {
+      "label": "Bounds 최대",
+      "tooltip": "위치 remapping를 위한 최대 경계."
+    },
+    "_USE_WETNESS_ON": {
+      "label": "공급 업체",
+      "tooltip": "어둠과 비 잔물한 효력을 가진 젖은 표면을 시뮬레이션합니다."
+    },
+    "_WetnessStrength": {
+      "label": "공급 능력",
+      "tooltip": "전체 젖은 강도."
+    },
+    "_WetnessSmoothness": {
+      "label": "젖은 Smoothness",
+      "tooltip": "습식 표면의 스무디움 부스트 (농장 강조 날카로움)."
+    },
+    "_WetnessDarkening": {
+      "label": "뚱 베어",
+      "tooltip": "얼마나 젖은 경우 표면 어둠."
+    },
+    "_RainRippleMap": {
+      "label": "Rain Ripple 정상 지도",
+      "tooltip": "비 리플 애니메이션에 사용되는 정상적인지도."
+    },
+    "_RainRippleScale": {
+      "label": "리플 스케일",
+      "tooltip": "비 잔물결 패턴의 규모."
+    },
+    "_RainRippleSpeed": {
+      "label": "Ripple 속도",
+      "tooltip": "비 리플 애니메이션의 속도."
+    },
+    "_USE_DECAL_ON": {
+      "label": "사용 약관",
+      "tooltip": "1 차적인 decal/sticker 짜임새를 극복하십시오."
+    },
+    "_DecalTex": {
+      "label": "연락처",
+      "tooltip": "Decal 질감. tiling/offset를 사용하여 위치에."
+    },
+    "_DecalBlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "기본 색상과 decal 혼합 방법."
+    },
+    "_DecalStrength": {
+      "label": "제품정보",
+      "tooltip": "Decal의 전체 불투명/힘."
+    },
+    "_DecalNormal": {
+      "label": "일반 지도",
+      "tooltip": "Decal의 정상지도."
+    },
+    "_DecalNormalStrength": {
+      "label": "정상적인 힘",
+      "tooltip": "Decal 정상 지도의 힘."
+    },
+    "_DecalMetallic": {
+      "label": "금속",
+      "tooltip": "Decal 영역의 금속 값."
+    },
+    "_DecalSmoothness": {
+      "label": "연락처",
+      "tooltip": "Decal 지역을 위한 매끈함 가치."
+    },
+    "_DecalAffectsPBR": {
+      "label": "완전한 PBR",
+      "tooltip": "Decal을 통해 Normal, Metallic 및 Smoothness를 수정할 수 있습니다."
+    },
+    "_SurfaceStyle": {
+      "label": "지상 작풍",
+      "tooltip": ""
+    },
+    "_PsychedelicColorShift": {
+      "label": "Hue Shift 스케일",
+      "tooltip": "Symedelic hue 교대를 위한 Multiplier."
+    },
+    "_PsychedelicSpeed": {
+      "label": "흐름 속도",
+      "tooltip": "심볼릭 노이즈가 표면에 흐르는 속도."
+    },
+    "_PsychedelicSpaceMode": {
+      "label": "연락처",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_PsychedelicStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_Fractal3DMode": {
+      "label": "Fractal3DMode의 특징",
+      "tooltip": ""
+    },
+    "_FractalRepetitionMode": {
+      "label": "FractalRepetition모드",
+      "tooltip": ""
+    },
+    "_FractalScale": {
+      "label": "제품정보",
+      "tooltip": "객체 공간 내에서 fractal의 스케일."
+    },
+    "_FractalAnimMode": {
+      "label": "FractalAnimMode의 특징",
+      "tooltip": ""
+    },
+    "_FractalSpeed": {
+      "label": "애니메이션 속도",
+      "tooltip": "정확한 animates."
+    },
+    "_FractalPower": {
+      "label": "Mandelbulb 힘",
+      "tooltip": "Mandelbulb를 위한 힘 모수. 이것을 시도하십시오!"
+    },
+    "_FractalIter": {
+      "label": "관련 기사",
+      "tooltip": "반복의 수. 더 이상 더 느리다."
+    },
+    "_FractalKaleidoAngles": {
+      "label": "각도 (X, Y, Z)",
+      "tooltip": "Kaleidoscopic IFS 교체를 위한 각."
+    },
+    "_FractalColorShift": {
+      "label": "파편 깊이 Hue Shift",
+      "tooltip": "깊이에 따라 fractal의 hue 교대를 위한 Multiplier."
+    },
+    "_FractalUseAutoShift": {
+      "label": "FractalUseAutoShift의 특징",
+      "tooltip": "지속적으로 시간에 fractal 기본적인 색깔을 바꿉니다."
+    },
+    "_FractalAutoShiftSpeed": {
+      "label": "자동 이동 속도",
+      "tooltip": "자동 색깔 교대의 속도."
+    },
+    "_FractalJuliaC": {
+      "label": "줄리아 C",
+      "tooltip": "Julia Set의 quaternion C 상수. fractal의 모양을 통제하십시오."
+    },
+    "_FractalMandelboxScale": {
+      "label": "하이브리드 스케일",
+      "tooltip": "하이브리드 fractal의 스케일 인자. 1.5와 3.0 사이의 값을보십시오."
+    },
+    "_AL_FractalBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_FractalStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_RefractionNoiseMap": {
+      "label": "Refraction 소음 지도",
+      "tooltip": "변속기를 제어하는 소음 질감."
+    },
+    "_CrystalRefractionStrength": {
+      "label": "공급 능력",
+      "tooltip": "얼마나 강하게 볼 수 있습니다."
+    },
+    "_UseScreenRefraction": {
+      "label": "스크린 Refraction",
+      "tooltip": "객체 뒤에 화면을 구별합니다."
+    },
+    "_RefractionStrength": {
+      "label": "제품정보",
+      "tooltip": "굴절의 힘."
+    },
+    "_RefractionIOR": {
+      "label": "이름 *",
+      "tooltip": "감정의 색인."
+    },
+    "_ChromaticAberration": {
+      "label": "색채화",
+      "tooltip": "색상 분리, 빨간색 / 파란색 프린트 만들기."
+    },
+    "_GalaxyMap": {
+      "label": "Galaxy 지도",
+      "tooltip": "객체 안쪽에 표시하는 질감."
+    },
+    "_GalaxyDepth": {
+      "label": "주요 특징",
+      "tooltip": "2D parallax 효력을 창조하고, 짜임새가 깊이 있는 것처럼 보입니다."
+    },
+    "_GalaxyRotationSpeed": {
+      "label": "회전 속도",
+      "tooltip": "Galaxy 질감."
+    },
+    "_SkyboxMap": {
+      "label": "Skybox 큐브 맵",
+      "tooltip": "Cubemap은 포털처럼 객체 내부에 표시합니다."
+    },
+    "_SkyboxRotationSpeed": {
+      "label": "회전 속도",
+      "tooltip": "Y축 주위에 skybox를 자전합니다."
+    },
+    "_TriplanarTex": {
+      "label": "Tri-Planar 질감",
+      "tooltip": "3개의 축에서 모형에 계획하는 짜임새."
+    },
+    "_TriplanarScale": {
+      "label": "제품정보",
+      "tooltip": "계획된 짜임새의 크기를 통제하십시오."
+    },
+    "_TriplanarBlend": {
+      "label": "혼합 Sharpness",
+      "tooltip": "3개의 질감 투상 사이에서 혼합의 날카로움을 통제합니다."
+    },
+    "_UseTriplanarNormalMap": {
+      "label": "Enable Triplanar 정상 지도",
+      "tooltip": "3개의 축의 정상적인 지도를 프로젝트합니다."
+    },
+    "_TriplanarNormalMap": {
+      "label": "Triplanar 정상 지도",
+      "tooltip": "3개의 축을 따라 계획된 정상적인 지도."
+    },
+    "_TriplanarNormalScale": {
+      "label": "정상적인 힘",
+      "tooltip": "Triplanar 정상 지도의 힘."
+    },
+    "_MatCapTex": {
+      "label": "MatCap 질감",
+      "tooltip": "물체의 조명과 반사를 정의하는 재료 캡처 질감."
+    },
+    "_MatCapIntensity": {
+      "label": "관련 기사",
+      "tooltip": "MatCap 효과의 밝기를 제어합니다."
+    },
+    "_MatCapBlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "MatCap 텍스처가 기본 색상으로 혼합하는 방법을 제어합니다. Override는 완전히 대체합니다."
+    },
+    "_IridescenceScale": {
+      "label": "색깔 가늠자",
+      "tooltip": "표면에 걸쳐 이동 색상의 주파수를 제어합니다."
+    },
+    "_IridescenceStrength": {
+      "label": "제품정보",
+      "tooltip": "Iridescent 효과의 강도를 제어합니다."
+    },
+    "_GlitterBlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "반짝이는 색상이 표면에 혼합되는 방법을 제어합니다. 첨가물은 overbright를 얻을 수 있습니다. Lerp는 기본 색상을 대체합니다 (emissive). 최대는 반짝이 색상보다 어둡게하지 않습니다."
+    },
+    "_GlitterColor": {
+      "label": "색깔: 회색",
+      "tooltip": "스파클의 색상."
+    },
+    "_GlitterColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_GlitterScale": {
+      "label": "제품정보",
+      "tooltip": "반짝이 잡음 패턴의 크기를 제어합니다. 더 높은 가치는 더 작은 sparkles를 의미합니다."
+    },
+    "_GlitterSparsity": {
+      "label": "이름 *",
+      "tooltip": "몇 가지 스파클이 나타나는 방법을 제어합니다. 더 높은 가치는 더 적은, 더 많은 sparse sparkles를 의미합니다."
+    },
+    "_GlitterSpaceMode": {
+      "label": "연락처",
+      "tooltip": ""
+    },
+    "_GlitterUseScrollAnim": {
+      "label": "스크롤 애니메이션",
+      "tooltip": ""
+    },
+    "_GlitterSpeed": {
+      "label": "Glitter 속도",
+      "tooltip": ""
+    },
+    "_AL_GlitterBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_GlitterStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseRim": {
+      "label": "사용 약관",
+      "tooltip": "표시 각도를 기반으로 객체의 가장자리에 빛을 추가합니다."
+    },
+    "_RimColor": {
+      "label": "림 색깔",
+      "tooltip": "가장자리 Fresnel 변죽의 색깔."
+    },
+    "_RimColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_UseRimGradient": {
+      "label": "Gradient 사용",
+      "tooltip": "단단한 색깔 대신에 rim glow를 착색하는 gradient 짜임새를 사용하십시오."
+    },
+    "_RimGradient": {
+      "label": "림 Gradient",
+      "tooltip": "림 빛을 위한 컬러램프. 그라디언트는 중심 (왼쪽)에서 가장자리 (오른쪽)로 맵핑됩니다."
+    },
+    "_RimPower": {
+      "label": "림 힘",
+      "tooltip": "림의 날카로움."
+    },
+    "_RimIntensity": {
+      "label": "연락처",
+      "tooltip": "림 빛을 위한 광도 multiplier."
+    },
+    "_AL_RimBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_RimStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseIntersectionFade": {
+      "label": "Enable Intersection 효력",
+      "tooltip": "대상물이 현장의 다른 개체와 가까이있는 색상으로 파드."
+    },
+    "_IntersectionMode": {
+      "label": "Intersection 형태",
+      "tooltip": ""
+    },
+    "_IntersectionColor": {
+      "label": "색깔: 회색",
+      "tooltip": "교차 효과의 색상."
+    },
+    "_IntersectionColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_IntersectionFadeDistance": {
+      "label": "주요 특징",
+      "tooltip": "퇴색이 생기는 거리."
+    },
+    "_UsePulse": {
+      "label": "공급 능력",
+      "tooltip": "진동 애니메이션을 방출 강도에 추가합니다."
+    },
+    "_PulseSpeed": {
+      "label": "제품 정보",
+      "tooltip": "빠른 방출 맥박."
+    },
+    "_PulseIntensity": {
+      "label": "관련 기사",
+      "tooltip": "맥박이 뛴 방법."
+    },
+    "_AL_PulseBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_PulseStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseOutline": {
+      "label": "자주 묻는 질문",
+      "tooltip": "객체의 주위에 단단한 개요를 추가합니다. 이 객체에 두 번째 draw 호출을 추가합니다."
+    },
+    "_OutlineColor": {
+      "label": "개략 색깔",
+      "tooltip": "메시 outline의 기본적인 색깔 주석."
+    },
+    "_OutlineColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_OutlineColorTex": {
+      "label": "개요 색상 질감",
+      "tooltip": "색깔 짜임새 지도."
+    },
+    "_OutlineWorldSpace": {
+      "label": "Legacy 개요 세계 공간",
+      "tooltip": "Legacy 개요 세계 공간"
+    },
+    "_OutlineSpace": {
+      "label": "더 알아보기",
+      "tooltip": "윤곽선 밀어남 (Local 목표 공간, 스크린 공간, 사진기 거리 자주)를 위한 공간."
+    },
+    "_OutlineWidth": {
+      "label": "개략 폭",
+      "tooltip": "거꾸로 선의 간격."
+    },
+    "_AL_OutlineBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_OutlineStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseVertexColorForOutline": {
+      "label": "Vertex 색상 사용",
+      "tooltip": "모형의 vertex 색깔 (빨간 수로)를 사용하여 윤곽 폭을 조입니다."
+    },
+    "_UseOutlineWidthMap": {
+      "label": "사용 개요 폭 지도",
+      "tooltip": "회색 조각을 사용하여 윤곽 두께를 조절합니다."
+    },
+    "_OutlineWidthMap": {
+      "label": "개요 폭 지도",
+      "tooltip": "윤곽 폭 (white=full, black=zero)를 위한 Greyscale 가면."
+    },
+    "_UseRippleEffect": {
+      "label": "Enable Ripple 효과",
+      "tooltip": "UV 좌표에서 동심 리플 효과를 만듭니다."
+    },
+    "_RippleCenterUV": {
+      "label": "센터 (UV)",
+      "tooltip": "UV 공간 (X,Y)의 리플 센터."
+    },
+    "_RippleProgress": {
+      "label": "주요사업",
+      "tooltip": "Ripple 애니메이션의 수동 진행, 이는 단계를 제어합니다."
+    },
+    "_RippleCount": {
+      "label": "잔물결",
+      "tooltip": "1개의 UV 단위를 통하여 동심 잔물결 반지의 수."
+    },
+    "_RippleMaxRadius": {
+      "label": "Fadeout 반경",
+      "tooltip": "Ripples가 완전히 퇴색 한 중심의 거리."
+    },
+    "_RippleWidth": {
+      "label": "제품 정보",
+      "tooltip": "각 개별 리플 링의 폭."
+    },
+    "_RippleColor": {
+      "label": "색깔: 회색",
+      "tooltip": "잔물의 색상."
+    },
+    "_RippleColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_RippleDistortionStrength": {
+      "label": "공급 능력",
+      "tooltip": "얼마나 잔물결은 모델의 베틱을 정상에 따라 분리합니다."
+    },
+    "_RippleStrength": {
+      "label": "제품정보",
+      "tooltip": "리플의 밝기."
+    },
+    "_AnimateRipple": {
+      "label": "Animate 리플",
+      "tooltip": "자동으로 ripple 애니메이션을 시작합니다."
+    },
+    "_RippleAnimSpeed": {
+      "label": "제품 정보",
+      "tooltip": "애니메이션의 속도."
+    },
+    "_RippleAnimMode": {
+      "label": "Ping-Pong 사용",
+      "tooltip": "활성화되면 애니메이션이 앞으로 재생되고 뒤로됩니다."
+    },
+    "_AL_RippleBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_RippleStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseColorShift": {
+      "label": "Enable 기본적인 색깔 교대",
+      "tooltip": ""
+    },
+    "_ColorAnimationMode": {
+      "label": "애니메이션 모드",
+      "tooltip": "색상 애니메이션을위한 글로벌 방법을 설정합니다."
+    },
+    "_UseGlobalAutoShift": {
+      "label": "Enable 글로벌 자동 색상 이동",
+      "tooltip": "활성화되면 자동으로 색상 전환 슬라이더 (> 0)을 지속적으로 시작합니다. 비활성화시, 색상 이동 슬라이더는 정적 또는 애니메이션 값을 수용합니다."
+    },
+    "_AnimatedGradient": {
+      "label": "애니메이션 Gradient",
+      "tooltip": "모든 애니메이션 색상이 샘플 것입니다 gradient 질감."
+    },
+    "_GradientAnimPingPong": {
+      "label": "Ping-Pong 애니메이션",
+      "tooltip": "그라디언트 백과 반복 대신에."
+    },
+    "_GradientAnimVertical": {
+      "label": "수직 스크롤",
+      "tooltip": "왼쪽에서 오른쪽으로 아래쪽으로 그라디언트를 스크롤합니다."
+    },
+    "_ColorShiftSpeed": {
+      "label": "애니메이션 속도",
+      "tooltip": "모든 애니메이션 색상의 속도를 제어합니다. Hue Shift의 경우 회전 속도입니다. Gradient의 경우 스크롤 속도입니다."
+    },
+    "_AL_ColorShiftBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_ColorShiftStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_Desaturation": {
+      "label": "이름 *",
+      "tooltip": "회색 가늠자 (0=Full Color, 1=Grayscale)에 최종 색상을 혼합합니다."
+    },
+    "_UseInvert": {
+      "label": "Invert 색깔",
+      "tooltip": "그늘의 최종 색상을 변환합니다."
+    },
+    "_ColorTint": {
+      "label": "최종 색상 Tint",
+      "tooltip": "최종 결과에 색상을 다루고, 주석 또는 등급에 유용합니다."
+    },
+    "_ColorTint_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_Brightness": {
+      "label": "사이트맵",
+      "tooltip": "최종 색상의 전체 밝기를 조정합니다."
+    },
+    "_Contrast": {
+      "label": "한국어",
+      "tooltip": "최종 색상의 전체 대조를 조정합니다."
+    },
+    "_Gamma": {
+      "label": "스낵 바",
+      "tooltip": "최종 색상에 gamma 보정을 적용합니다."
+    },
+    "_UsePixelation": {
+      "label": "사용 방법",
+      "tooltip": "Blocky, 낮은 해상도 효과를 만듭니다."
+    },
+    "_PixelationAmount": {
+      "label": "화소수량",
+      "tooltip": "질감의 맞은편에 'pixels'의 수 (higher는 더 적은 화소로 입니다)."
+    },
+    "_UsePosterize": {
+      "label": "사용 약관",
+      "tooltip": "색깔의 수를 감소시키고, retro/digital 보기를 줍니다."
+    },
+    "_PosterizeLevels": {
+      "label": "한국어",
+      "tooltip": "수로 당 색깔 단계의 수."
+    },
+    "_UseDistanceFade": {
+      "label": "Enable 거리 정면",
+      "tooltip": "카메라에서 멀게 될 때 객체를 붙여줍니다."
+    },
+    "_FadeDistance": {
+      "label": "시작 거리",
+      "tooltip": "파드가 시작되는 카메라의 거리."
+    },
+    "_FadeRange": {
+      "label": "제품정보",
+      "tooltip": "얼마나 신속하게 객체가 거리에서 퇴색합니다."
+    },
+    "_UseDepthFade": {
+      "label": "Enable Depth Fade (소프트 입자)",
+      "tooltip": "투명하고 첨가물 표면을 위한 장면 기하학에 대하여 Softens polygon 교차로."
+    },
+    "_DepthFadeDistance": {
+      "label": "Fade 거리",
+      "tooltip": "기하학이 opaque 표면을 방해 할 때 퇴색 한 거리."
+    },
+    "_UseEffectDistanceLOD": {
+      "label": "Enable 효력 거리 정면",
+      "tooltip": "Fractals, Grid, Psychedelic(Glitter, Fractals, Grid, Psychedelic), VR 성능 향상."
+    },
+    "_EffectFadeStart": {
+      "label": "Fade 시작 거리",
+      "tooltip": "효력이 퇴색하기 위하여 시작되는 미터에 있는 거리."
+    },
+    "_EffectFadeEnd": {
+      "label": "Fade 끝 거리",
+      "tooltip": "효력이 완전히 비활성화되는 미터에 있는 거리."
+    },
+    "_USE_VERTEX_COLLAPSE_ON": {
+      "label": "Vertex 붕괴",
+      "tooltip": "수축은 그것의 중심점으로 만듭니다."
+    },
+    "_CollapseEnableAnim": {
+      "label": "붕괴 사용 (Anim)",
+      "tooltip": ""
+    },
+    "_CollapseAmount": {
+      "label": "계정 정보",
+      "tooltip": "붕괴 효과의 진행 (0=Normal, 1=Collapsed)."
+    },
+    "_AnimateCollapse": {
+      "label": "연락처",
+      "tooltip": "자동적으로 시간이 지남에 따라 붕괴 금액."
+    },
+    "_UseAdvancedCollapseAnim": {
+      "label": "Advanced Timing 사용",
+      "tooltip": "간단한 루프/핑퐁 대신 붕괴 애니메이션에 대한 사용자 정의 타이밍을 사용합니다."
+    },
+    "_CollapseOnDuration": {
+      "label": "탈출 기간",
+      "tooltip": "모델이 붕괴 될 때."
+    },
+    "_CollapseVisibleDuration": {
+      "label": "탈출 기간",
+      "tooltip": "모델은 완전히 붕괴된다."
+    },
+    "_CollapseOffDuration": {
+      "label": "확장 기간",
+      "tooltip": "모델은 정상으로 다시 확장 할 수 있습니다."
+    },
+    "_CollapseHiddenDuration": {
+      "label": "일반 기간",
+      "tooltip": "모델은 반복하기 전에 정상적인 상태로 남아있다."
+    },
+    "_CollapseAnimSpeed": {
+      "label": "제품 정보",
+      "tooltip": "애니메이션의 속도."
+    },
+    "_CollapseAnimMin": {
+      "label": "애니메이션 Min",
+      "tooltip": ""
+    },
+    "_CollapseAnimMax": {
+      "label": "애니메이션 Max",
+      "tooltip": ""
+    },
+    "_CollapseAnimMode": {
+      "label": "Ping-Pong 사용",
+      "tooltip": "활성화되면 애니메이션이 앞으로 재생되고 뒤로됩니다. 비활성화되면 반복합니다."
+    },
+    "_AL_CollapseBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_CollapseStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseFlicker": {
+      "label": "사용 가능한 Glitch Flicker",
+      "tooltip": "전체 객체에 대한 흔들림 효과를 적용합니다."
+    },
+    "_FlickerMode": {
+      "label": "Flicker 모드",
+      "tooltip": ""
+    },
+    "_FlickerSpeed": {
+      "label": "제품 정보",
+      "tooltip": "흔들림의 속도."
+    },
+    "_FlickerIntensity": {
+      "label": "관련 기사",
+      "tooltip": "흔들림의 힘 (어떻게 얻게)."
+    },
+    "_AL_FlickerBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_FlickerStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_FlickerReverse": {
+      "label": "비밀번호",
+      "tooltip": "Glitch scanlines의 스크롤 방향을 반전합니다."
+    },
+    "_FlickerBlockSize": {
+      "label": "구획 크기",
+      "tooltip": "Glitch 블록의 크기."
+    },
+    "_FlickerDirection": {
+      "label": "제품정보",
+      "tooltip": "Glitch scanlines의 방향."
+    },
+    "_FlickerDensity": {
+      "label": "제품정보",
+      "tooltip": "Glitch scanlines의 수."
+    },
+    "_FlickerLineThickness": {
+      "label": "제품 정보",
+      "tooltip": "Glitch scanlines의 간격."
+    },
+    "_UseTransparencyGlitch": {
+      "label": "Enable 투명도 Glitch",
+      "tooltip": "또한 투명성에 영향을 미치는 흔들림 효과를 원인."
+    },
+    "_TransparencyGlitchIntensity": {
+      "label": "제품정보",
+      "tooltip": "얼마나 흔들리는 것은 투명성에 영향을줍니다."
+    },
+    "_UseScanlines": {
+      "label": "사용 방법",
+      "tooltip": "CRT 모니터의 모습을 시뮬레이션합니다."
+    },
+    "_ScanlineColor": {
+      "label": "색깔: 회색",
+      "tooltip": "스캔 라인의 색상과 투명성."
+    },
+    "_ScanlineColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_ScanlineDensity": {
+      "label": "제품정보",
+      "tooltip": "스크린에 몇 가지 검사가 나타납니다."
+    },
+    "_ScanlineSpeed": {
+      "label": "제품 정보",
+      "tooltip": "스캔 라인 스크롤을 얼마나 빨리."
+    },
+    "_ScanlineThickness": {
+      "label": "제품 정보",
+      "tooltip": "검사의 간격."
+    },
+    "_ScanlineDirection": {
+      "label": "제품정보",
+      "tooltip": "검사의 방향 (0=Vertical, 1=Horizontal)."
+    },
+    "_AL_ScanlineBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": ""
+    },
+    "_AL_ScanlineStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": ""
+    },
+    "_UseAudioSpectrum": {
+      "label": "Enable 오디오 스펙트럼",
+      "tooltip": "AudioLink에 의해 구동되는 실시간 주파수 스펙트럼 시각화 렌더링."
+    },
+    "_AudioSpectrumMode": {
+      "label": "스펙트럼 모드",
+      "tooltip": "스펙트럼의 시각화 스타일."
+    },
+    "_AudioSpectrumBarCount": {
+      "label": "바 카운트",
+      "tooltip": "빈도 막대기의 수."
+    },
+    "_AudioSpectrumBarGap": {
+      "label": "바 갭",
+      "tooltip": "막대기 사이 간격 (0 = 간격 없음)."
+    },
+    "_AudioSpectrumGain": {
+      "label": "이름 *",
+      "tooltip": "오디오 신호의 증폭."
+    },
+    "_AudioSpectrumThickness": {
+      "label": "가장자리 간격",
+      "tooltip": "광선 막대기의 가장자리 부드러움."
+    },
+    "_AudioSpectrumFillAlpha": {
+      "label": "필 알파",
+      "tooltip": "곡선의 밑에 채워진 지역의 Opacity."
+    },
+    "_AudioSpectrumLogScale": {
+      "label": "Logarithmic 규모",
+      "tooltip": "더 자연스러운베이스/리블 밸런스를 위한 logarithmic 주파수 스케일링을 사용합니다."
+    },
+    "_AudioSpectrumColor": {
+      "label": "색깔: 회색",
+      "tooltip": "1 차 색깔 (또는 gradient를 위한 저주파 색깔)."
+    },
+    "_AudioSpectrumColor2": {
+      "label": "높은 Freq 색깔",
+      "tooltip": "Gradient 형태를 위한 고주파 색깔."
+    },
+    "_AudioSpectrumColorMode": {
+      "label": "색깔 형태",
+      "tooltip": "스펙트럼이 착색되는 방법."
+    },
+    "_AudioSpectrumHueSpeed": {
+      "label": "Hue 속도",
+      "tooltip": "Hue shift / 무지개 애니메이션의 속도."
+    },
+    "_AudioSpectrumSpace": {
+      "label": "프로젝트 공간",
+      "tooltip": "시각화기를 위한 좌표 공간."
+    },
+    "_AudioSpectrumScale": {
+      "label": "제품정보",
+      "tooltip": "시각화의 규모."
+    },
+    "_AudioSpectrumOffset": {
+      "label": "제품정보",
+      "tooltip": "위치 오프셋."
+    },
+    "_AudioSpectrumRotation": {
+      "label": "회전 속도",
+      "tooltip": "도에 있는 교체."
+    },
+    "_AudioSpectrumBlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "스펙트럼이 표면에 혼합하는 방법."
+    },
+    "_AudioSpectrumMirror": {
+      "label": "기타 제품",
+      "tooltip": "수평으로 스펙트럼을 미러."
+    },
+    "_AudioSpectrumRadialRadius": {
+      "label": "내부 반경",
+      "tooltip": "광선 전시의 안 반경."
+    },
+    "_AudioSpectrumSmoothness": {
+      "label": "Edge 부드러움",
+      "tooltip": "Spatial 가장자리 반대로 aliasing 및 막대기 또는 곡선의 국경 부드러움."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "관련 기사",
+      "tooltip": "전반적인 광도 multiplier."
+    },
+    "_AudioSmoothingMode": {
+      "label": "오디오 스무딩 모드",
+      "tooltip": "스펙트럼/파형을 위한 임시 매끄러운 방법: 익지않는 (none), 구조 혼합 (2 구조 EMA), 또는 임시 완충기 (CRT 역사)."
+    },
+    "_AudioSpectrumTemporal": {
+      "label": "스펙트럼 Temporal 매끈함",
+      "tooltip": "스펙트럼 (Frame Blend / Temporal buffer modes)에 적용된 temporal smoothing의 힘."
+    },
+    "_UseAudioWaveform": {
+      "label": "Enable 오디오 파형",
+      "tooltip": "AudioLink에 의해 구동되는 실시간 파형/oscilloscope 시각화를 렌더링합니다."
+    },
+    "_AudioWaveformMode": {
+      "label": "Waveform 형태",
+      "tooltip": "파형의 시각화 스타일."
+    },
+    "_AudioWaveformChannel": {
+      "label": "채널:",
+      "tooltip": "어떤 오디오 채널을 시각화."
+    },
+    "_AudioWaveformCycles": {
+      "label": "주기",
+      "tooltip": "파형 주기의 수."
+    },
+    "_AudioWaveformGain": {
+      "label": "이름 *",
+      "tooltip": "오디오 신호의 증폭."
+    },
+    "_AudioWaveformThickness": {
+      "label": "선 간격",
+      "tooltip": "추적 라인의 두께."
+    },
+    "_AudioWaveformGlow": {
+      "label": "이름 *",
+      "tooltip": "불빛의 불빛."
+    },
+    "_AudioWaveformColor": {
+      "label": "색깔: 회색",
+      "tooltip": "1 차적인 파형 색깔."
+    },
+    "_AudioWaveformColor2": {
+      "label": "색깔 2",
+      "tooltip": "두 번째 색상 (velocity 하이라이트 또는 glow 틴트)."
+    },
+    "_AudioWaveformColorMode": {
+      "label": "색깔 형태",
+      "tooltip": "파형이 착색되는 방법."
+    },
+    "_AudioWaveformHueSpeed": {
+      "label": "Hue 속도",
+      "tooltip": "Hue shift / 무지개 애니메이션의 속도."
+    },
+    "_AudioWaveformSpace": {
+      "label": "프로젝트 공간",
+      "tooltip": "시각화기를 위한 좌표 공간."
+    },
+    "_AudioWaveformScale": {
+      "label": "제품정보",
+      "tooltip": "시각화의 규모."
+    },
+    "_AudioWaveformOffset": {
+      "label": "제품정보",
+      "tooltip": "위치 오프셋."
+    },
+    "_AudioWaveformRotation": {
+      "label": "회전 속도",
+      "tooltip": "도에 있는 교체."
+    },
+    "_AudioWaveformBlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "파형이 표면에 혼합하는 방법."
+    },
+    "_AudioWaveformPolarRadius": {
+      "label": "폴라 반경",
+      "tooltip": "극 링의 기본 반경."
+    },
+    "_AudioWaveformVertexStrength": {
+      "label": "진지변환 힘",
+      "tooltip": "정상적인에 따라 vertex 진지변환의 힘."
+    },
+    "_AudioWaveformSmoothness": {
+      "label": "Edge 부드러움",
+      "tooltip": "Spatial 가장자리 anti-aliasing와 치기 부드러움."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "관련 기사",
+      "tooltip": "전반적인 광도 multiplier."
+    },
+    "_AudioWaveformTemporal": {
+      "label": "파형 Temporal 매끈함",
+      "tooltip": "파형(Temporal buffer mode)에 적용된 temporal smoothing의 힘."
+    },
+    "_FRSmoothedAudio": {
+      "label": "부드럽게 한 오디오 CRT",
+      "tooltip": "사용자 정의 렌더링 질서 (FireRat AudioSmoothingCRT 자산) temporally-smoothed 오디오를 보유. Temporal 완충기 형태를 위해 필수."
+    },
+    "_UseInterlace": {
+      "label": "사용 방법",
+      "tooltip": "Darkens 모든 다른 화면 행은 interlaced 디스플레이를 시뮬레이션합니다."
+    },
+    "_InterlaceIntensity": {
+      "label": "관련 기사",
+      "tooltip": "앵글 라인이 어둡게하는 방법."
+    },
+    "_UseClippingMask": {
+      "label": "Enable Clipping 마스크",
+      "tooltip": "재료의 클립 (부품 보이지 않는)에 질감을 사용합니다. 이것은 단단한 클립, 연약한 투명성 아닙니다."
+    },
+    "_ClippingMask": {
+      "label": "클립핑 마스크",
+      "tooltip": "클립에 사용되는 질감. 선택한 채널은 가시성을 결정합니다 (블랙 = 클립)."
+    },
+    "_ClippingMaskScrollX": {
+      "label": "마스크 스크롤 속도 X",
+      "tooltip": "마스크 질감을 수평으로 스크롤합니다."
+    },
+    "_ClippingMaskScrollY": {
+      "label": "마스크 스크롤 속도 Y",
+      "tooltip": "마스크 질감을 수직으로 스크롤합니다."
+    },
+    "_ClippingMaskChannel": {
+      "label": "마스크 채널",
+      "tooltip": "클립을 위해 사용하는 가면의 어떤 색깔 수로."
+    },
+    "_InvertClippingMask": {
+      "label": "Invert 마스크",
+      "tooltip": "마스크 효과 (white = clipped)를 변환합니다."
+    },
+    "_UseNoise": {
+      "label": "사용가능한 소음/Grain",
+      "tooltip": "애니메이션 노이즈 오버레이를 추가합니다."
+    },
+    "_NoiseIntensity": {
+      "label": "관련 기사",
+      "tooltip": "소음의 힘."
+    },
+    "_NoiseColor": {
+      "label": "색깔: 회색",
+      "tooltip": "소음 입자의 색상."
+    },
+    "_NoiseColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_NoiseAnimationSpeed": {
+      "label": "애니메이션 속도",
+      "tooltip": "소음 애니메이션의 두 번째 당 '프레임."
+    },
+    "_Cull": {
+      "label": "회사 소개",
+      "tooltip": "Polygon culling 형태 (오프, 정면, 뒤)."
+    },
+    "_CullShadow": {
+      "label": "Shadow Cull 모드",
+      "tooltip": "Shadow Casting pass에 특히 사용되는 Polygon culling 모드."
+    },
+    "_ZTest": {
+      "label": "Z테스트",
+      "tooltip": "깊이 테스트를 수행하는 방법을 제어합니다."
+    },
+    "_ColorWriteMask": {
+      "label": "색깔 글쓰기 마스크",
+      "tooltip": "색상 채널이 화면에 기록되는 제어."
+    },
+    "_QueueOffset": {
+      "label": "Queue 상쇄",
+      "tooltip": "선택한 렌더링 모드와 상대를 상쇄합니다."
+    },
+    "_SrcBlend": {
+      "label": "Src 혼합 형태",
+      "tooltip": "Transparency Blending를 위한 근원 혼합 형태."
+    },
+    "_DstBlend": {
+      "label": "Dst 혼합 형태",
+      "tooltip": "투명성 혼합을 위한 목적지 혼합 형태."
+    },
+    "_Stencil": {
+      "label": "스텐실 Ref",
+      "tooltip": "Stencil 참고 값."
+    },
+    "_StencilReadMask": {
+      "label": "읽는 가면",
+      "tooltip": "Stencil는 가면을 읽었습니다."
+    },
+    "_StencilWriteMask": {
+      "label": "글쓰기 마스크",
+      "tooltip": "Stencil 쓰기 마스크."
+    },
+    "_StencilComp": {
+      "label": "제품정보",
+      "tooltip": "Stencil 비교 기능."
+    },
+    "_StencilPass": {
+      "label": "패스워드",
+      "tooltip": "Stencil 통행 가동."
+    },
+    "_StencilFail": {
+      "label": "뚱 베어",
+      "tooltip": "Stencil 실패 가동."
+    },
+    "_StencilZFail": {
+      "label": "사이트맵",
+      "tooltip": "스텐실 zfail 가동."
+    },
+    "_NormalMapUVSet": {
+      "label": "정상적인 UV 세트",
+      "tooltip": "정상적인 지도를 위한 좌표 수로 (UV0 또는 UV1)를 선정하십시오."
+    },
+    "_DetailNormalMapUVSet": {
+      "label": "세부사항 정상적인 UV 세트",
+      "tooltip": "정상적인 지도를 위한 좌표 수로 (UV0 또는 UV1)를 선정하십시오."
+    },
+    "_DetailTexUVSet": {
+      "label": "세부사항 UV 세트",
+      "tooltip": "디테일 텍스처를 위한 좌표 채널(UV0 또는 UV1)을 선택합니다."
+    },
+    "_DecalTexUVSet": {
+      "label": "Decal UV 세트",
+      "tooltip": "Decal를 위한 좌표 수로 (UV0 또는 UV1)를 선정하십시오."
+    },
+    "_DissolveMapUVSet": {
+      "label": "UV 설정 용해",
+      "tooltip": "컨트 채널 선택 (UV0 또는 UV1) 해산 맵에 대 한."
+    },
+    "_EmissionMaskUVSet": {
+      "label": "방출 가면 UV 세트",
+      "tooltip": "방출 마스크의 좌표 채널 (UV0 또는 UV1)를 선택합니다."
+    },
+    "_OutlineTex": {
+      "label": "본문 바로가기",
+      "tooltip": "아웃라인 형상에 매핑된 Texture."
+    },
+    "_OutlineTexUVSet": {
+      "label": "개요 Tex UV 세트",
+      "tooltip": "개요 질감을위한 UV 채널."
+    },
+    "_OutlineTexScrollX": {
+      "label": "개요 스크롤 X",
+      "tooltip": "스크롤 속도 X 선 질감."
+    },
+    "_OutlineTexScrollY": {
+      "label": "개요 스크롤 Y",
+      "tooltip": "스크롤 속도 Y 개요 질감."
+    },
+    "_UseOutlineGradient": {
+      "label": "사용 약관",
+      "tooltip": "개요를 통해 수직 상단/바닥 기온을 적용합니다."
+    },
+    "_OutlineGradientTopColor": {
+      "label": "최고 색깔",
+      "tooltip": "개요 gradient의 최고 색상."
+    },
+    "_OutlineGradientBottomColor": {
+      "label": "밑바닥 색깔",
+      "tooltip": "개요 gradient의 밑바닥 색깔."
+    },
+    "_RimMode": {
+      "label": "림 모드",
+      "tooltip": "외부 림 (지구를 향해 가십시오) 또는 안 변죽 (지구를 향해 가십시오)."
+    },
+    "_RimDepthMode": {
+      "label": "림 깊이 모드",
+      "tooltip": "림 조명에 대한 시야각 대신 장면 깊이 차이를 사용합니다."
+    },
+    "_RimDepthWidth": {
+      "label": "림 깊이 폭",
+      "tooltip": "깊이 기반 변죽을 위한 거리 폭."
+    },
+    "_GridTilingX": {
+      "label": "격자 Tiling X",
+      "tooltip": "Procedural 격자 선을 위한 수평한 tiling."
+    },
+    "_GridTilingY": {
+      "label": "격자 Tiling Y",
+      "tooltip": "수직 tiling for procedural 그리드 라인."
+    },
+    "_DecalRotation": {
+      "label": "회전 속도",
+      "tooltip": "회전 각도 (0-360도)."
+    },
+    "_USE_DECAL2_ON": {
+      "label": "사용 가능 2",
+      "tooltip": "이차 decal/sticker 질감 상감."
+    },
+    "_Decal2Tex": {
+      "label": "12월 2일",
+      "tooltip": "두 번째 decal 질감."
+    },
+    "_Decal2BlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "기본 색상으로 Decal 2 블렌드."
+    },
+    "_Decal2Strength": {
+      "label": "제품정보",
+      "tooltip": "Decal 2의 전체 불투명/힘."
+    },
+    "_Decal2Normal": {
+      "label": "일반 지도",
+      "tooltip": "정상적인 Decal 2. 지도."
+    },
+    "_Decal2NormalStrength": {
+      "label": "정상적인 힘",
+      "tooltip": "Decal 2 정상적인 지도의 힘."
+    },
+    "_Decal2Metallic": {
+      "label": "금속",
+      "tooltip": "Decal 2 영역의 금속 값."
+    },
+    "_Decal2Smoothness": {
+      "label": "연락처",
+      "tooltip": "Decal 2 영역의 부드러움 값."
+    },
+    "_Decal2AffectsPBR": {
+      "label": "완전한 PBR",
+      "tooltip": "Decal을 통해 Normal, Metallic 및 Smoothness를 수정할 수 있습니다."
+    },
+    "_Decal2TexUVSet": {
+      "label": "12월 2 UV 세트",
+      "tooltip": "Decal 2의 좌표 채널 (UV0 또는 UV1) 선택."
+    },
+    "_Decal2Rotation": {
+      "label": "회전 속도",
+      "tooltip": "회전 각도 (0-360도)."
+    },
+    "_USE_DECAL3_ON": {
+      "label": "사용 가능한 3",
+      "tooltip": "Tertiary decal/sticker 짜임새를 극복하십시오."
+    },
+    "_Decal3Tex": {
+      "label": "12월 3일",
+      "tooltip": "세 번째 decal 질감."
+    },
+    "_Decal3BlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "기본 색상으로 3 혼합하는 방법."
+    },
+    "_Decal3Strength": {
+      "label": "제품정보",
+      "tooltip": "Decal의 전체 불투명/힘 3."
+    },
+    "_Decal3Normal": {
+      "label": "일반 지도",
+      "tooltip": "Decal 3.를 위한 정상적인 지도."
+    },
+    "_Decal3NormalStrength": {
+      "label": "정상적인 힘",
+      "tooltip": "Decal의 힘 3 정상적인 지도."
+    },
+    "_Decal3Metallic": {
+      "label": "금속",
+      "tooltip": "Decal 3 영역의 금속 값."
+    },
+    "_Decal3Smoothness": {
+      "label": "연락처",
+      "tooltip": "Decal 3 영역에 대한 매끄러운 가치."
+    },
+    "_Decal3AffectsPBR": {
+      "label": "완전한 PBR",
+      "tooltip": "Decal을 통해 Normal, Metallic 및 Smoothness를 수정할 수 있습니다."
+    },
+    "_Decal3TexUVSet": {
+      "label": "3 UV 세트",
+      "tooltip": "Decal 3의 좌표 채널 (UV0 또는 UV1) 선택."
+    },
+    "_Decal3Rotation": {
+      "label": "회전 속도",
+      "tooltip": "회전 각도 (0-360도) Decal 3."
+    },
+    "_RainRippleMapUVSet": {
+      "label": "비 잔물결 UV 세트",
+      "tooltip": "비 잔물 (UV0 대 UV1)를 위한 UV 수로."
+    },
+    "_AL_EmissionBlinkBand": {
+      "label": "AudioLink Blink 밴드",
+      "tooltip": "오디오 비트에 진동 / 깜박임 방출을위한 AudioLink 밴드."
+    },
+    "_AL_EmissionBlinkStrength": {
+      "label": "Blink 힘",
+      "tooltip": "AudioLink 방출 blink 효력의 힘."
+    },
+    "_UseBackFaceColor": {
+      "label": "뒤 얼굴 색깔을 가능하게 하십시오",
+      "tooltip": "다각형 뒤쪽에 분리된 색상을 적용합니다."
+    },
+    "_BackFaceColor": {
+      "label": "뒤 얼굴 색깔",
+      "tooltip": "뒤 얼굴의 색깔."
+    },
+    "_BackFaceColor_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_UseBackFaceTex": {
+      "label": "Backface Texture 사용",
+      "tooltip": "다각형 뒤쪽에 별도의 질감을 적용합니다."
+    },
+    "_BackFaceTex": {
+      "label": "뒤 얼굴 짜임새",
+      "tooltip": "뒤 얼굴의 질감."
+    },
+    "_BackFaceEmission": {
+      "label": "뒤 얼굴 방출",
+      "tooltip": "뒤 얼굴의 방출 질감."
+    },
+    "_BackFaceEmissionStrength": {
+      "label": "방출 힘",
+      "tooltip": "뒤 얼굴 방출의 힘."
+    },
+    "_HueShift": {
+      "label": "Hue 시프트",
+      "tooltip": "색깔 바퀴의 주위에 hue를 자전하십시오."
+    },
+    "_SaturationAdjust": {
+      "label": "관련 기사",
+      "tooltip": "다색 포화 (0=Grayscale, 1=Default, 2=Vibrant)."
+    },
+    "_ValueAdjust": {
+      "label": "가치 (밝기)",
+      "tooltip": "가늠자 HSV 가치/밝기."
+    },
+    "_UseHSVMask": {
+      "label": "HSV 마스크",
+      "tooltip": "텍스처 맵을 사용하여 마스크 HSV 조정."
+    },
+    "_HSVMask": {
+      "label": "HSV 마스크 (R)",
+      "tooltip": "Hue/Saturation/Value shift(White=Full Shift, Black=Original)의 마스크 질감."
+    },
+    "_NormalMapFlipY": {
+      "label": "플립 Y (DirectX / OpenGL)",
+      "tooltip": "DirectX/OpenGL 형식의 호환성을 위한 정상적인 지도의 녹색 수로를 Inverts."
+    },
+    "_DetailBlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "텍스처용 블렌드 모드(Overlay, Multiply, 첨가제, SoftLight)."
+    },
+    "_VertexColorMode": {
+      "label": "Vertex 색깔 형태",
+      "tooltip": "기본 색상 (Replace, Multiply, Add)와 혼합하는 방법을 선택하십시오."
+    },
+    "_GlitterShape": {
+      "label": "Glitter 모양",
+      "tooltip": "반짝이 반짝이의 기하학적 모양을 제어합니다."
+    },
+    "_MatCapMask": {
+      "label": "MatCap 마스크 (R)",
+      "tooltip": "MatCap 가시성을 제어하는 마스크 질감 (R)."
+    },
+    "_MatCapMaskUVSet": {
+      "label": "MatCap 마스크 UV 세트",
+      "tooltip": "매트캡 마스크를 위한 좌표(UV0 또는 UV1)를 선택합니다."
+    },
+    "_UseDissolveEdgeGradient": {
+      "label": "Edge Contour Gradient 사용",
+      "tooltip": "녹은 가장자리 contour에 따라 다색 기온변화도를 가능하게 합니다."
+    },
+    "_DissolveEdgeGradientTex": {
+      "label": "용해 가장자리 Gradient",
+      "tooltip": "용해 가장자리 contour에 적용된 Gradient 짜임새."
+    },
+    "_EmissionMaskScrollX": {
+      "label": "마스크 스크롤 속도 X",
+      "tooltip": "배출 마스크의 스크롤 속도 X."
+    },
+    "_EmissionMaskScrollY": {
+      "label": "마스크 스크롤 속도 Y",
+      "tooltip": "방출 마스크를 위한 스크롤 속도 Y."
+    },
+    "_AL_GlobalSmoothing": {
+      "label": "글로벌 스무딩",
+      "tooltip": "AudioLink 주파수 대역의 글로벌 응답 매핑."
+    },
+    "_AL_GlobalMin": {
+      "label": "글로벌 층 / Min",
+      "tooltip": "AudioLink 반응성에 대한 소음 층 임계 값."
+    },
+    "_AL_GlobalMax": {
+      "label": "세계적인 천장/최대",
+      "tooltip": "천장 임계 값 스케일링 피크 AudioLink 진폭."
+    },
+    "_DetailNormalScrollX": {
+      "label": "스크롤 속도 X",
+      "tooltip": "세부사항 정상을 위한 스크롤 속도 X."
+    },
+    "_DetailNormalScrollY": {
+      "label": "스크롤 속도 Y",
+      "tooltip": "세부사항 정상을 위한 일폭 속도 Y."
+    },
+    "_ColorMask": {
+      "label": "색깔 가면 짜임새",
+      "tooltip": "마스크 및 제한 색상 애니메이션에 사용되는 질감."
+    },
+    "_ColorMaskUVSet": {
+      "label": "색깔 가면 UV 세트",
+      "tooltip": "색상 마스크의 좌표 채널 (UV0 또는 UV1)를 선택합니다."
+    },
+    "_ColorMaskAlphaSource": {
+      "label": "색깔 가면 알파 근원",
+      "tooltip": "소스 채널 알파 혼합 색상 마스크."
+    },
+    "_MainTexUVSet": {
+      "label": "주요 짜임새 UV 세트",
+      "tooltip": "주요 질감에 대한 좌표 채널 (UV0 또는 UV1)을 선택하십시오."
+    },
+    "_Shadow2Color": {
+      "label": "제 2 그림자 색상",
+      "tooltip": "2nd cel 그늘 층을위한 깊은 그림자 색상."
+    },
+    "_ToonThreshold2": {
+      "label": "제2회 토론 임계",
+      "tooltip": "2nd 깊은 그늘 계층에 대한 위협."
+    },
+    "_ToonHardness2": {
+      "label": "제2회 톤 경도",
+      "tooltip": "제 2 깊은 그늘 층을 위한 가장자리 날카로움."
+    },
+    "_MinLightBrightness": {
+      "label": "최소한도 빛 광도",
+      "tooltip": "최소 밝기 바닥은 avatars가 피치 검정을 방지합니다."
+    },
+    "_MaxLightBrightness": {
+      "label": "최대 빛 광도",
+      "tooltip": "밝은 세계에 있는 overexposure를 방지하는 최대 광도 천장."
+    },
+    "_ShadeShiftMap": {
+      "label": "Shade Shift 지도",
+      "tooltip": "Cel 그림자 선 (fixed 접 / AO)를 비스듬히기."
+    },
+    "_ShadeShiftMapUVSet": {
+      "label": "그늘 이동 UV 세트",
+      "tooltip": "Shade Shift 맵에 대한 좌표 채널 (UV0 또는 UV1)을 선택하십시오."
+    },
+    "_ShadeShiftStrength": {
+      "label": "Shade 교대 힘",
+      "tooltip": "그늘 이동 지도에서 그림자 선 bias의 강렬."
+    },
+    "_StepSpecular": {
+      "label": "단계 Specular",
+      "tooltip": "소프트 PBR 분광 하이라이트를 crisp 만화 빛의 명소로 변환합니다."
+    },
+    "_StepSpecularThreshold": {
+      "label": "단계 Specular 문",
+      "tooltip": "Threshold 경계를 위한 specular 단계."
+    },
+    "_StepSpecularHardness": {
+      "label": "단계 관 경도",
+      "tooltip": "Specular 단계를 위한 가장자리 날카로움."
+    },
+    "_UseMatCap2": {
+      "label": "매트캡 2",
+      "tooltip": "Multi-tone 금속 또는 변죽 악센트를 위한 이차 MatCap 층을 추가하십시오."
+    },
+    "_MatCap2Tex": {
+      "label": "MatCap 2 텍스처",
+      "tooltip": "두 번째 MatCap 둥근 반사 질감."
+    },
+    "_MatCap2BlendMode": {
+      "label": "혼합 형태",
+      "tooltip": "MatCap 2 용 혼합 모드 (Add, Multiply, replace, Lighten, Overlay)."
+    },
+    "_MatCap2Intensity": {
+      "label": "관련 기사",
+      "tooltip": "밝기 멀티 플라이어 MatCap 2."
+    },
+    "_MatCap2Mask": {
+      "label": "MatCap 2 마스크 (R)",
+      "tooltip": "MatCap 2 가시성을 제어하는 마스크 질감 (R)."
+    },
+    "_MatCap2MaskUVSet": {
+      "label": "가면 UV 세트",
+      "tooltip": "MatCap 2 마스크 용 UV 채널."
+    },
+    "_MatCapNormalPerturb": {
+      "label": "정상적인 지도 Perturbation",
+      "tooltip": "표면 정상지도를 사용하여 MatCap 반사를 변형시킵니다."
+    },
+    "_MatCapPerspectiveCorrection": {
+      "label": "선택적 수정",
+      "tooltip": "VR에서 넓은 FOV 관점 찡그림."
+    },
+    "_HairSpecMask": {
+      "label": "머리 Specular 가면",
+      "tooltip": "머리 specular 강조 표시를 통제하는 가면 짜임새."
+    },
+    "_HairSpecMaskUVSet": {
+      "label": "가면 UV 세트",
+      "tooltip": "선택 좌표 채널 (UV0 또는 UV1) 머리 사양 마스크에 대 한."
+    },
+    "_OutlineNormalSource": {
+      "label": "개요 정상적인 소스",
+      "tooltip": "개요 압출에 사용되는 Vertex 스트림 (Mesh Normals, Vertex Colors, UV2, UV3)."
+    },
+    "_OutlineMinWidth": {
+      "label": "최소한도 폭",
+      "tooltip": "거리에서 윤곽을 위한 최소한도 화소 간격."
+    },
+    "_OutlineMaxWidth": {
+      "label": "최대 폭",
+      "tooltip": "윤곽을 위한 최대 화소 간격은 닫힙니다."
+    },
+    "_OutlineNoiseScale": {
+      "label": "소음 가늠자",
+      "tooltip": "애니메이션 개요 jitter 소음의 주파수."
+    },
+    "_OutlineNoiseSpeed": {
+      "label": "소음 속도",
+      "tooltip": "Outline 지터의 애니메이션 속도."
+    },
+    "_OutlineNoiseStrength": {
+      "label": "공급 능력",
+      "tooltip": "개요 vertex 지터의 강도."
+    },
+    "_UseDitheredAlpha": {
+      "label": "알파벳",
+      "tooltip": "스크린 공간 Bayer matrix는 분류 자유로운 투명한 직물 및 머리를 위해 흐리게 합니다."
+    },
+    "_DitherStrength": {
+      "label": "공급 능력",
+      "tooltip": "Dither 혼합 강도 (0 = 날카로운 컷 아웃, 1 = 전체 stipple)."
+    },
+    "_ShadowCutoff": {
+      "label": "섀도 컷오프",
+      "tooltip": "그림자 주물을 위한 알파 커트오프 문턱."
+    },
+    "_UseShadowCutoffOverride": {
+      "label": "Shadow Cutoff 사용",
+      "tooltip": "그림자 주조 패스에 특별히 알파 컷오프 임계 값을 부여합니다."
+    },
+    "_AL_DecalBand": {
+      "label": "AudioLink 1 밴드",
+      "tooltip": ""
+    },
+    "_AL_DecalStrength": {
+      "label": "AudioLink 결정 1 힘",
+      "tooltip": ""
+    },
+    "_AL_Decal2Band": {
+      "label": "AudioLink Decal 2 밴드",
+      "tooltip": ""
+    },
+    "_AL_Decal2Strength": {
+      "label": "AudioLink 결정 2 힘",
+      "tooltip": ""
+    },
+    "_AL_Decal3Band": {
+      "label": "AudioLink 결정 3 밴드",
+      "tooltip": ""
+    },
+    "_AL_Decal3Strength": {
+      "label": "AudioLink 결정 3 힘",
+      "tooltip": ""
+    },
+    "_UseNearCameraFade": {
+      "label": "카메라 Fade 근처",
+      "tooltip": "카메라가 너무 닫을 때 기하학을 부드럽게 용해합니다 (Prevents VR 머리 클립)."
+    },
+    "_NearCameraFadeRadius": {
+      "label": "Fade 반경",
+      "tooltip": "기하학이 퇴색되는 카메라에서 거리."
+    },
+    "_NearCameraFadeRange": {
+      "label": "Fade 범위",
+      "tooltip": "주변 카메라 fade에 대한 이동 거리."
+    },
+    "_NearCameraFadeShadows": {
+      "label": "Fade 그림자",
+      "tooltip": "또한 fade 거리 안에 때 클립 그림자."
+    },
+    "_OutlinePulseSpeed": {
+      "label": "맥박 속도",
+      "tooltip": "윤곽을 그리는 outline를 위한 진동 속도."
+    },
+    "_OutlinePulseStrength": {
+      "label": "맥박 힘",
+      "tooltip": "발열/축질을 위한 진동 진폭."
+    },
+    "_UseChromaKey": {
+      "label": "Chroma Key 사용",
+      "tooltip": "특정 색상 범위 투명 (e.g. 녹색 스크린 키링)."
+    },
+    "_ChromaKeyColor": {
+      "label": "키 색상",
+      "tooltip": "열쇠에 색깔."
+    },
+    "_ChromaKeyThreshold": {
+      "label": "뚱 베어",
+      "tooltip": "주요 색상의 거리 임계 값 제거."
+    },
+    "_ChromaKeySmoothing": {
+      "label": "관련 제품",
+      "tooltip": "가장자리 전환의 부드러움."
+    },
+    "_DistanceFade_LOD": {
+      "label": "거리 LOD 시작",
+      "tooltip": "카메라의 거리는 LOD 최적화에 대한 쉐이딩 세부 사항을 단순화하기 시작합니다 (0 = 비활성화)."
+    },
+    "_AL_AvatarParamFallback": {
+      "label": "Avatar 모수 형태",
+      "tooltip": ""
+    },
+    "_UseHologram": {
+      "label": "Hologram 사용",
+      "tooltip": "Sci-fi 홀로그램 효과와 애니메이션 스캔 라인, 가장자리 변죽 및 흔들림."
+    },
+    "_HoloColor": {
+      "label": "홀로그램 색깔",
+      "tooltip": "홀로그램의 색 주석."
+    },
+    "_HoloScanlineTiling": {
+      "label": "Scanline 팁",
+      "tooltip": "수평한 검사의 조밀도."
+    },
+    "_HoloScanlineSpeed": {
+      "label": "Scanline 속도",
+      "tooltip": "이동하는 검사의 속도."
+    },
+    "_HoloRimPower": {
+      "label": "림 힘",
+      "tooltip": "홀로그램 가장자리의 날카로움."
+    },
+    "_HoloStrength": {
+      "label": "홀로그램 힘",
+      "tooltip": "기본적인 표면에 홀로그램의 혼합 힘."
+    },
+    "_HoloAlphaStrength": {
+      "label": "알파 변조",
+      "tooltip": "Scanline 패턴과 투명성을 조절합니다."
+    },
+    "_UseCustomFogColor": {
+      "label": "Enable 관례 안개 색깔",
+      "tooltip": "사용자 정의 현지화 주석과 글로벌 장면 안개 색상을 부여합니다."
+    },
+    "_CustomFogColor": {
+      "label": "주문 안개 색깔",
+      "tooltip": "대기 안개에 대 한 사용자 정의 통 색상."
+    },
+    "_AlphaToCoverage": {
+      "label": "적용에 알파 (MSAA)",
+      "tooltip": "절단 가장자리에 Coverage (MSAA 반대로 별칭)에 기계설비 알파, 매끄럽게 하는 단풍 및 머리."
+    },
+    "_AlphaToCoverageSharpen": {
+      "label": "A2C 샤프",
+      "tooltip": "덮음 가장자리에 알파를 샤프."
+    },
+    "_ShadowReceiveStrength": {
+      "label": "Shadow는 힘을 받습니다",
+      "tooltip": "어두운 실시간 장면 그림자가 재료 (1.0 = full shadow, 0.0 = no shadow)에 나타나는 방법을 제어합니다."
+    },
+    "_DecalClamp": {
+      "label": "클램프 결정 경계 경계",
+      "tooltip": "Decal UV 좌표를 클램프 그래서 decal은 외부를 반복하지 않습니다 [0, 1]."
+    },
+    "_Decal2Clamp": {
+      "label": "클램프 결정 경계 경계",
+      "tooltip": "클램프 decal UV 좌표 그래서 결정 2 외부를 반복하지 않습니다 [0, 1]."
+    },
+    "_Decal3Clamp": {
+      "label": "클램프 결정 경계 경계",
+      "tooltip": "클램프 decal UV 좌표 그래서 결정 3 외부를 반복하지 않습니다 [0, 1]."
+    },
+    "_RimMask": {
+      "label": "림 마스크",
+      "tooltip": "텍스처 마스크 (R)는 특정 메쉬 영역에 림글로우를 제한하거나 페인트합니다."
+    },
+    "_RimMaskUVSet": {
+      "label": "림 마스크 UV 세트",
+      "tooltip": "Rim Mask의 좌표 채널 (UV0 또는 UV1)를 선택합니다."
+    },
+    "_OutlineLightingMix": {
+      "label": "점화 혼합",
+      "tooltip": "윤곽에 혼합 장면 조명 (0 = unlit, 1 = 장면 조명으로 완전히 그늘)."
+    },
+    "_OutlineZOffset": {
+      "label": "Z-Offset (깊은 Bias)",
+      "tooltip": "Camera-space Z-depth bias를 적용하여 클립핑 지오메인에서 윤곽을 방지합니다."
+    },
+    "_UseFaceSDF": {
+      "label": "SDF 얼굴 그림자 사용",
+      "tooltip": "표시된 거리 필드 얼굴 그림자 mapping 애니메이션 문자."
+    },
+    "_FaceShadowMap": {
+      "label": "Face Shadow 지도(SDF)",
+      "tooltip": "SDF 얼굴 그림자 질 기호화 빛 문자 gradients."
+    },
+    "_FaceShadowOffset": {
+      "label": "Face Shadow 상쇄",
+      "tooltip": "앞/뒤 그림자 문각을 상쇄하십시오."
+    },
+    "_FaceShadowBlur": {
+      "label": "얼굴 그림자 부드러움",
+      "tooltip": "SDF 그림자 가장자리 경계를 부드럽게 합니다."
+    },
+    "_FaceShadowInvert": {
+      "label": "Invert 얼굴 그림자",
+      "tooltip": "SDF 그림자 그라디언트를 변환합니다."
+    },
+    "_CameraVisibilityMode": {
+      "label": "Visibility 형태",
+      "tooltip": "미러, VR 헤드셋 및 데스크톱 스트림/사진 카메라의 가시성을 제어합니다."
+    },
+    "_MirrorDetectMode": {
+      "label": "미러 검출 방법",
+      "tooltip": "미러 / 반사 카메라를 감지하기위한 알고리즘."
+    },
+    "_CustomCameraFilter": {
+      "label": "주문 사진기 ID",
+      "tooltip": "사용자 정의 글로벌 카메라 ID (0 = 비활성화) 필터."
+    },
+    "_OffsetFactor": {
+      "label": "Polygon 분파율",
+      "tooltip": "Polygon 깊이 오프셋 계수 (prevents z-fighting)."
+    },
+    "_OffsetUnits": {
+      "label": "Polygon 분파 단위",
+      "tooltip": "Polygon 깊이 오프셋 단위 (prevents z-fighting)."
+    },
+    "_UseEnvRim": {
+      "label": "환경 림",
+      "tooltip": "틴트 / 주위 SH 및 반사 프로브를 사용하여 림 글로우를 조절합니다."
+    },
+    "_EnvRimMix": {
+      "label": "환경 혼합",
+      "tooltip": "순수한 변죽 색깔 (0)와 환경 규정식 변죽 사이 혼합 (1)."
+    },
+    "_MonochromeLighting": {
+      "label": "Monochrome 점화",
+      "tooltip": "정확한 문자 피부 톤을 보존하는 장면 조명 색상을 Desaturates."
+    },
+    "_AsUnlitLighting": {
+      "label": "As-Unlit 조명",
+      "tooltip": "어둠 속에서 획일한 불빛 바닥에 조명을 섞는다."
+    },
+    "_UseVRCLV": {
+      "label": "VRC 빛 양",
+      "tooltip": "지원되는 세계에 있는 각 화소 주위 점화를 위한 VRC 빛 양 (REDSIM)를 간색하십시오. 다른 곳에 표준 빛 조사에 뒤를 폭포. 중간/낮은 성과 수준에서 떨어져 강제하십시오."
+    },
+    "_VRCLVIntensity": {
+      "label": "LV 강도",
+      "tooltip": "가벼운 양 주위 기여를 규모."
+    },
+    "_VRCLVNormalBias": {
+      "label": "LV 정상 별",
+      "tooltip": "얇은 기하학에 voxel 여드름을 감소시키기 위하여 표면 정상에 따라서 양 표본."
+    },
+    "_UseFluorescence": {
+      "label": "형광 기능",
+      "tooltip": "환경/지향성 광 강도를 가진 반응 (짙은 빛)."
+    },
+    "_FluorescenceMap": {
+      "label": "형광 맵",
+      "tooltip": "형광 지도 (RGB)"
+    },
+    "_FluorescenceMapUVSet": {
+      "label": "형광 지도 UV 세트",
+      "tooltip": "형광지도를 위한 좌표 채널 (UV0 또는 UV1)를 선택하십시오."
+    },
+    "_FluorescenceColor": {
+      "label": "색깔: 회색",
+      "tooltip": "형광 HDR 색깔 Tint"
+    },
+    "_FluorescenceStrength": {
+      "label": "제품정보",
+      "tooltip": "형광 방출 힘"
+    },
+    "_FluorescenceThreshold": {
+      "label": "빛 문",
+      "tooltip": "빛 수준 문턱 방아쇠 형광 빛을."
+    },
+    "_FluorescenceHardness": {
+      "label": "경도",
+      "tooltip": "어둠과 빛의 상태 사이의 전도 날카로움."
+    },
+    "_FluorescenceDarkOnly": {
+      "label": "어둠 속에서만",
+      "tooltip": "사용할 때, 낮은 조명 환경에서만 광택 (glow-in-the-dark)."
+    },
+    "_UsePS1VertexSnapping": {
+      "label": "PS1 버텍스 Snapping 사용",
+      "tooltip": "복고풍 PS1 / affine jitter 미학을 위한 저해상 격자에 vertex 위치를 Quantizes."
+    },
+    "_PS1SnapResolution": {
+      "label": "Snap 해상도",
+      "tooltip": "Vertex snapping를 위한 격자 해결책/정밀 (e.g. 240p)."
+    },
+    "_PS1SnapSpace": {
+      "label": "스냅 스페이스",
+      "tooltip": "스냅 용 좌표 공간 (Screen-space jitter vs Object-space vertex quantize)."
+    },
+    "_UseLookAt": {
+      "label": "Enable LookAt 게시판",
+      "tooltip": "역동적으로 활동적인 사진기를 직면하는 메시 vertices를 자전하십시오."
+    },
+    "_LookAtMode": {
+      "label": "게시판 형태",
+      "tooltip": "기판 방향 축 (풀 3D 구형 빌보드 대 Y-Axis 원통형 빌보드)."
+    },
+    "_LookAtStrength": {
+      "label": "제품정보",
+      "tooltip": "본래 메시 오리엔테이션과 게시판이 없는 오리엔테이션 사이 혼합 힘."
+    },
+    "_UseUVFlow": {
+      "label": "UV 흐름",
+      "tooltip": "벡터 플로우 맵 경로에 따라 Animates 질감은 2 상 사이클을 사용하여."
+    },
+    "_FlowMap": {
+      "label": "흐름 맵 (RG 벡터)",
+      "tooltip": "Flow Map (RG 방향 벡터, 0.5 = 중립)"
+    },
+    "_FlowMapUVSet": {
+      "label": "교류 지도 UV 세트",
+      "tooltip": "유량 맵을 위한 좌표 채널 (UV0 또는 UV1)를 선택하십시오."
+    },
+    "_FlowSpeed": {
+      "label": "흐름 속도",
+      "tooltip": "흐름 모션 애니메이션 속도."
+    },
+    "_FlowStrength": {
+      "label": "공급 능력",
+      "tooltip": "흐르는 벡터에 따라 UV 찡그림 진지변환의 Magnitude."
+    },
+    "_FlowCycleRate": {
+      "label": "주기 비율",
+      "tooltip": "이중 단계 crossfade 주기의 빈도."
+    },
+    "_UseRGBAColorMask": {
+      "label": "RGBA 색깔 보호",
+      "tooltip": "허가 4 독립적 인 색상 통 및 emissive 채널은 마스크 질감의 RGBA 채널에 매핑."
+    },
+    "_RGBAColorMask": {
+      "label": "색깔 가면 (RGBA)",
+      "tooltip": "색깔 가면 (RGBA 수로는 4개의 recolorable 지역을 고립시킵니다)"
+    },
+    "_RGBAColorMaskUVSet": {
+      "label": "UV 세트",
+      "tooltip": "RGBA Color Mask를 위한 좌표 채널 (UV0 또는 UV1)를 선택하십시오."
+    },
+    "_ColorMaskR_Color": {
+      "label": "빨간 Tint",
+      "tooltip": "R 채널 마스크에 대한 Tint."
+    },
+    "_ColorMaskR_Emission": {
+      "label": "빨간 방출 (HDR)",
+      "tooltip": "R 채널 마스크에 대한 배출."
+    },
+    "_ColorMaskG_Color": {
+      "label": "녹색 Tint",
+      "tooltip": "G 채널 마스크에 대한 Tint."
+    },
+    "_ColorMaskG_Emission": {
+      "label": "녹색 방출 (HDR)",
+      "tooltip": "G 채널 마스크에 대한 배출."
+    },
+    "_ColorMaskB_Color": {
+      "label": "파란 Tint",
+      "tooltip": "B 채널 마스크에 대한 Tint."
+    },
+    "_ColorMaskB_Emission": {
+      "label": "블루 방출 (HDR)",
+      "tooltip": "B 채널 마스크에 대한 배출."
+    },
+    "_ColorMaskA_Color": {
+      "label": "알파 Tint",
+      "tooltip": "채널 마스크에 대한 Tint."
+    },
+    "_ColorMaskA_Emission": {
+      "label": "알파 방출 (HDR)",
+      "tooltip": "채널 마스크의 방출."
+    },
+    "_UseNetworkTime": {
+      "label": "네트워크 동기화 시간",
+      "tooltip": "AudioLink/Udon chronological Clock (VRChat에서 애니메이션 드리프트)를 통해 네트워크 클라이언트를 통해 그늘 연속 애니메이션 시간을 동기화합니다."
+    },
+    "_NetworkTimeScale": {
+      "label": "네트워크 시간 규모",
+      "tooltip": "네트워크 동기화된 시간에 적용된 가늠자 요인."
+    },
+    "_UseStochasticSampling": {
+      "label": "Stochastic 표본 추출",
+      "tooltip": "Procedurally는 큰 표면에 반복 tiling 본을 완전히 삭제하기 위하여 무작위로 짜임새 표본을 혼합합니다."
+    },
+    "_StochasticScale": {
+      "label": "Stochastic 가늠자",
+      "tooltip": "스토캐스틱 삼각형 격자 배급을 위한 가늠자 multiplier."
+    },
+    "_UseDetailNormalFade": {
+      "label": "Enable 세부사항 정상적인 거리 정면",
+      "tooltip": "VR aliasing/shimmering를 막기 위하여 거리에서 고주파 세부사항 정상을 부드럽게 합니다."
+    },
+    "_DetailNormalFadeStart": {
+      "label": "Fade 시작 거리",
+      "tooltip": "세부사항 정상이 퇴색하는 사진기 거리."
+    },
+    "_DetailNormalFadeEnd": {
+      "label": "Fade 끝 거리",
+      "tooltip": "세부 사항 정상이 완전 평면 카메라 거리."
+    },
+    "_UseInternalParallax": {
+      "label": "Enable 내부 Parallax",
+      "tooltip": "유리, 렌즈, 크리스탈, 애니메이션의 밑에서 층의 인테리어 깊이를 시뮬레이션합니다."
+    },
+    "_InternalParallaxMap": {
+      "label": "내부 층 짜임새",
+      "tooltip": "내부 깊이 층 질감."
+    },
+    "_InternalParallaxColor": {
+      "label": "층 색깔",
+      "tooltip": "실내 층 색깔 주석."
+    },
+    "_InternalParallaxColor_Shift": {
+      "label": "내부 Parallax 색깔 교대",
+      "tooltip": "AudioLink 또는 내부 레이어된 parallax 효과에 대한 애니메이션 색상 이동."
+    },
+    "_InternalParallaxDepth": {
+      "label": "깊이 가늠자",
+      "tooltip": "심층적인 내부 깊이 가늠자."
+    },
+    "_InternalParallaxLayers": {
+      "label": "샘플 단계",
+      "tooltip": "내부 깊이를 통해 샘플 단계의 수."
+    },
+    "_InternalParallaxStrength": {
+      "label": "층 힘",
+      "tooltip": "내부 층의 광도/경도 multiplier."
+    },
+    "_InternalParallaxEmission": {
+      "label": "Emissive 부스트",
+      "tooltip": "내부 층을 위한 Emissive glow 후원."
+    },
+    "_UseThemeColors": {
+      "label": "Enable 글로벌 테마 색상",
+      "tooltip": "선택된 AudioLink 및 Hue modulation과 함께 재료 전체에 통합된 테마를 구동하기 위한 4개의 글로벌 마스터 색상을 갖추고 있습니다."
+    },
+    "_ThemeColor1": {
+      "label": "테마 색상 1",
+      "tooltip": "마스터 테마 색상 1."
+    },
+    "_ThemeColor2": {
+      "label": "테마 색상 2",
+      "tooltip": "마스터 테마 색상 2."
+    },
+    "_ThemeColor3": {
+      "label": "테마 색상 3",
+      "tooltip": "마스터 테마 색상 3."
+    },
+    "_ThemeColor4": {
+      "label": "테마 색상 4",
+      "tooltip": "마스터 테마 색상 4."
+    },
+    "_ThemeMode": {
+      "label": "Modulation 형태",
+      "tooltip": "Modulation 모드 선택 (Direct, AudioLink Reactive, 또는 연속 Hue Shift)."
+    },
+    "_AL_ThemeBand": {
+      "label": "AudioLink 밴드",
+      "tooltip": "선택 주파수 대 운전 테마 변조."
+    },
+    "_AL_ThemeStrength": {
+      "label": "AudioLink 힘",
+      "tooltip": "AudioLink 반응의 묽게함."
+    },
+    "_ThemeShiftSpeed": {
+      "label": "Hue 이동 속도",
+      "tooltip": "지속적인 hue 이동 교체의 속도."
+    },
+    "_ThemeTargetMask": {
+      "label": "테마 대상 마스크",
+      "tooltip": "영향력 무게: R=Base 색상, G=Outlines, B=Rim, A=Emission."
+    },
+    "_UseCustomCubemap": {
+      "label": "사용자 정의 Cubemap",
+      "tooltip": "반사 프로브가 누락/다크일 때 로컬 반사 또는 낙하에 대한 사용자 정의 큐브 맵을 추가합니다."
+    },
+    "_CustomCubemap": {
+      "label": "주문 Cubemap",
+      "tooltip": "반사에 대한 사용자 정의 cubemap 질감."
+    },
+    "_CustomCubemapColor": {
+      "label": "Cubemap 소개",
+      "tooltip": "Cubemap 반사 색."
+    },
+    "_CustomCubemapRoughness": {
+      "label": "큰 가슴",
+      "tooltip": "거친 / cubemap 반사의 흐림."
+    },
+    "_CustomCubemapMode": {
+      "label": "혼합 형태",
+      "tooltip": "모드(Override Probes, Fallback when Probes Dark, 또는 첨가제)."
+    },
+    "_CustomCubemapIntensity": {
+      "label": "관련 기사",
+      "tooltip": "반사 강도 multiplier."
+    },
+    "_AL_DelayBass": {
+      "label": "베이스 지연",
+      "tooltip": "베이스의 역사 버퍼를 따라 Delay offset."
+    },
+    "_AL_DelayLowMid": {
+      "label": "낮은 중간 지연",
+      "tooltip": "Low Mid의 역사 버퍼와 함께 지연 오프셋."
+    },
+    "_AL_DelayHighMid": {
+      "label": "높은 중간 지연",
+      "tooltip": "High Mid에 대한 역사 버퍼와 함께 지연 오프셋."
+    },
+    "_AL_DelayTreble": {
+      "label": "Treble 지연",
+      "tooltip": "Treble의 역사 버퍼와 함께 지연 오프셋."
+    },
+    "_UseLTCGI": {
+      "label": "사용 가능한 LTCGI",
+      "tooltip": "지원되는 VRChat 세계에 있는 실시간 LTCGI 다각형 지역 빛 및 영상 스크린에 반응하십시오."
+    },
+    "_LTCGI_Intensity": {
+      "label": "관련 기사",
+      "tooltip": "LTCGI 지역 점화의 강렬 승수."
+    },
+    "_LTCGI_RoughnessMultiplier": {
+      "label": "거친 Multiplier",
+      "tooltip": "LTCGI 반사를 위한 거칠기 가늠자 요인."
+    },
+    "_PhotosensitivitySafety": {
+      "label": "Photosensitivity 스트로브 클램프",
+      "tooltip": "안전 클램프 최대 스트로브 / flash 주파수를 제한하는 것은 epileptic seizures에 대해 보호합니다."
+    },
+    "_MaxFlashFrequency": {
+      "label": "최대 플래시 Hz",
+      "tooltip": "최대 허용 플래시 / 진동 주파수 Hz에서."
+    },
+    "_UseFur": {
+      "label": "Enable Shell 모피",
+      "tooltip": "Extrudes 다수 층을 꿴 포탄은 좌초 소음 masking를 가진 vertex 정상을 따라 나가."
+    },
+    "_FurLayers": {
+      "label": "포탄 층",
+      "tooltip": "쉘 레이어의 수 압출 (1 ~ 8). 더 높은 층은 더 가득 차있는 모피를 생성하고 그러나 더 많은 GPU 기하학 rasterization를 요합니다."
+    },
+    "_FurLength": {
+      "label": "제품 정보",
+      "tooltip": "물체 / 세계 공간에서 모피 물가의 물리적 길이."
+    },
+    "_FurMaskTex": {
+      "label": "Fur Strand 소음 지도",
+      "tooltip": "소음 질감 통제 물가 배급 및 조밀도."
+    },
+    "_FurDensity": {
+      "label": "물가 밀도",
+      "tooltip": "모피 물가 잡음 패턴의 비등 밀도."
+    },
+    "_FurThinning": {
+      "label": "팁 Thinning",
+      "tooltip": "객관적인 얇은과 테이퍼 모피는 외부 끝을 향해 물가."
+    },
+    "_FurGravity": {
+      "label": "중력 Vector",
+      "tooltip": "Deflection 벡터 중력 당기는 모피 물가 아래로."
+    },
+    "_FurWindStrength": {
+      "label": "바람 Sway 힘",
+      "tooltip": "모피 팁을 통해 번영 바람 진동의 힘."
+    },
+    "_FurWindSpeed": {
+      "label": "풍속",
+      "tooltip": "번식 바람 진동의 속도."
+    },
+    "_FurRootColor": {
+      "label": "루트 Tint",
+      "tooltip": "색깔 각 모피 물가의 기초/뿌리에 주석."
+    },
+    "_FurTipColor": {
+      "label": "팁 Tint",
+      "tooltip": "각 모피 물가의 외부 팁에 색 주석."
+    },
+    "_FurAO": {
+      "label": "루트 AO 섀도",
+      "tooltip": "모피의 뿌리에서 ambient occlusion 그림자."
+    },
+    "_FurCutoff": {
+      "label": "물가 커트오프",
+      "tooltip": "물가 뿌리 간격을 위한 기본적인 알파 클립 문턱."
+    },
+    "_UseEmissionLuminanceClamp": {
+      "label": "사용 가능한 방출 Bloom Clamp",
+      "tooltip": "사용 가능한 방출 Bloom Clamp"
+    },
+    "_MaxEmissionLuminance": {
+      "label": "최대 방출 발광성",
+      "tooltip": "최대 방출 발광성"
+    },
+    "_EmissionClampSoftKnee": {
+      "label": "클램프 소프트 무릎",
+      "tooltip": "클램프 소프트 무릎"
+    },
+    "_OutlineStencil": {
+      "label": "개요 스텐실 ID",
+      "tooltip": "개요 스텐실 ID"
+    },
+    "_OutlineStencilReadMask": {
+      "label": "개요 Stencil Read Mask",
+      "tooltip": "개요 Stencil Read Mask"
+    },
+    "_OutlineStencilWriteMask": {
+      "label": "개요 스텐실 글쓰기 마스크",
+      "tooltip": "개요 스텐실 글쓰기 마스크"
+    },
+    "_OutlineStencilComp": {
+      "label": "개요 Stencil 비교",
+      "tooltip": "개요 Stencil 비교"
+    },
+    "_OutlineStencilPass": {
+      "label": "개요 스텐실 패스 Op",
+      "tooltip": "개요 스텐실 패스 Op"
+    },
+    "_OutlineStencilFail": {
+      "label": "개요 스텐실 실패 Op",
+      "tooltip": "개요 스텐실 실패 Op"
+    },
+    "_OutlineStencilZFail": {
+      "label": "개요 스텐실 ZFail Op",
+      "tooltip": "개요 스텐실 ZFail Op"
+    },
+    "_UseProximityEffect": {
+      "label": "Proximity 효과 활성화",
+      "tooltip": "Proximity 효과 활성화"
+    },
+    "_ProximityMode": {
+      "label": "Proximity 형태",
+      "tooltip": "Proximity 형태"
+    },
+    "_ProximityAction": {
+      "label": "Proximity 활동",
+      "tooltip": "Proximity 활동"
+    },
+    "_ProximityRadius": {
+      "label": "근접 반경",
+      "tooltip": "근접 반경"
+    },
+    "_ProximitySoftness": {
+      "label": "근접성 부드러움",
+      "tooltip": "근접성 부드러움"
+    },
+    "_ProximityInvert": {
+      "label": "Invert 근접성",
+      "tooltip": "Invert 근접성"
+    },
+    "_ProximityColor": {
+      "label": "근접 색상",
+      "tooltip": "근접 색상"
+    },
+    "_ProximityColor_Shift": {
+      "label": "Proximity 색깔 교대",
+      "tooltip": "Proximity 색깔 교대"
+    },
+    "_ProximityCustomPos": {
+      "label": "주문 세계 위치",
+      "tooltip": "주문 세계 위치"
+    },
+    "_AlphaToCoverageMipScale": {
+      "label": "A2C Mip 가늠자",
+      "tooltip": "VR의 거리에서 컷 아웃 가장자리 폭을 안정화하기 위해 Derivative 기반 mip-scaling."
+    },
+    "_DetailNormalBicubic": {
+      "label": "Bicubic 정상적인 필터링",
+      "tooltip": "5 tap Catmull-Rom Bicubic sampling을 사용하여 texel 경계선을 VR에 제거 할 수 있습니다."
+    },
+    "_DetailNormalCount": {
+      "label": "세부사항 정상적인 층",
+      "tooltip": ""
+    },
+    "_DetailNormal2Map": {
+      "label": "세부사항 정상 2 지도",
+      "tooltip": "두번째 세부사항 정상적인 지도 층."
+    },
+    "_DetailNormal2Scale": {
+      "label": "층 2 힘",
+      "tooltip": "정상적인 층의 힘을 통제 2."
+    },
+    "_DetailNormal2UVSet": {
+      "label": "세부사항 정상 2 UV 세트",
+      "tooltip": ""
+    },
+    "_DetailNormal2ScrollX": {
+      "label": "레이어 2 스크롤 속도 X",
+      "tooltip": "세부적인 정상적인 층 2.를 위한 스크롤 속도 X."
+    },
+    "_DetailNormal2ScrollY": {
+      "label": "층 2 스크롤 속도 Y",
+      "tooltip": "정상적인 층을 위한 일폭 속도 Y 2."
+    },
+    "_DetailNormal3Map": {
+      "label": "세부 일반 3 지도",
+      "tooltip": "세 번째 세부 정상적인 맵 층."
+    },
+    "_DetailNormal3Scale": {
+      "label": "층 3 힘",
+      "tooltip": "세부사항 정상적인 층의 힘을 통제하십시오 3."
+    },
+    "_DetailNormal3UVSet": {
+      "label": "세부사항 정상적인 3 UV 세트",
+      "tooltip": ""
+    },
+    "_DetailNormal3ScrollX": {
+      "label": "레이어 3 스크롤 속도 X",
+      "tooltip": "세부적인 정상적인 층을 위한 스크롤 속도 X 3."
+    },
+    "_DetailNormal3ScrollY": {
+      "label": "층 3 스크롤 속도 Y",
+      "tooltip": "정상적인 층을 위한 일폭 속도 Y 3."
+    },
+    "_DetailNormal4Map": {
+      "label": "세부 일반 4 지도",
+      "tooltip": "4개의 세부사항 정상적인 지도 층."
+    },
+    "_DetailNormal4Scale": {
+      "label": "층 4 힘",
+      "tooltip": "정상적인 층의 힘을 통제하십시오 4."
+    },
+    "_DetailNormal4UVSet": {
+      "label": "세부사항 정상적인 4 UV 세트",
+      "tooltip": ""
+    },
+    "_DetailNormal4ScrollX": {
+      "label": "층 4 스크롤 속도 X",
+      "tooltip": "상세 정상적인 층 4.를 위한 스크롤 속도 X."
+    },
+    "_DetailNormal4ScrollY": {
+      "label": "층 4 스크롤 속도 Y",
+      "tooltip": "세부사항 정상적인 층 4.를 위한 일폭 속도 Y."
+    },
+    "_UseOKLabBlending": {
+      "label": "OKLab 색상 혼합",
+      "tooltip": "Enables Björn Ottosson의 OKLab 색상 공간 혼합에 대한 주석과 테마 muddy desaturation 제거."
+    },
+    "_MatCapGlobalMaskChannel": {
+      "label": "MatCap 글로벌 마스크 채널",
+      "tooltip": ""
+    },
+    "_RimGlobalMaskChannel": {
+      "label": "Rim 글로벌 마스크 채널",
+      "tooltip": ""
+    },
+    "_GlitterGlobalMaskChannel": {
+      "label": "Glitter 글로벌 마스크 채널",
+      "tooltip": ""
+    },
+    "_DissolveGlobalMaskChannel": {
+      "label": "글로벌 마스크 채널 용해",
+      "tooltip": ""
+    },
+    "_UseVRSL": {
+      "label": "VRSL 접수 가능",
+      "tooltip": "지원되는 VRChat 세계에 있는 순간 DMX 단계 정착물, 레이저 및 부피 측정 클럽 점화에 반응합니다."
+    },
+    "_VRSLIntensity": {
+      "label": "GI 강렬",
+      "tooltip": "GI와 주위 세척 접수 강도."
+    },
+    "_VRSLDirectIntensity": {
+      "label": "연락처",
+      "tooltip": "직접적인 정착물 빛 응접 강렬."
+    },
+    "_VRSLSpecular": {
+      "label": "Specular 접수",
+      "tooltip": "정착물에서 Specular 하이라이트 반사 리셉션."
+    },
+    "_UseDebugMode": {
+      "label": "Debug 보기",
+      "tooltip": "Viewport에서 중간 셰이딩 버퍼 및 진단 검사."
+    },
+    "_DebugMode": {
+      "label": "Debug 모드",
+      "tooltip": ""
+    },
+    "_MaterialLocked": {
+      "label": "물자 Locked",
+      "tooltip": "물자 Locked"
+    }
+  },
+  "custom": {
+    "Animate": {
+      "label": "이름 *",
+      "tooltip": "자동적으로 시간이 지남에 따라 붕괴 금액."
+    },
+    "Custom Shadow Cutoff": {
+      "label": "사용자 정의 Shadow Cutoff",
+      "tooltip": "그림자 주조 패스에 특별히 알파 컷오프 임계 값을 부여합니다."
+    },
+    "Enable Advanced Animation Controls": {
+      "label": "고급 애니메이션 컨트롤",
+      "tooltip": "시간 스케일링, 재생 모드 및 모든 셰이퍼 애니메이션 시간 오프셋을위한 마스터 컨트롤을 노출합니다."
+    },
+    "Enable Anisotropic Reflection": {
+      "label": "Enable Anisotropic 반사",
+      "tooltip": "스트레칭 된 하이라이트, 솔질 금속 또는 머리카락에 공통."
+    },
+    "Enable Back Face Color": {
+      "label": "뒤 얼굴 색깔을 가능하게 하십시오",
+      "tooltip": "다각형 뒤쪽에 분리된 색상을 적용합니다."
+    },
+    "Enable Back Face Texture": {
+      "label": "Enable 뒤 얼굴 짜임새",
+      "tooltip": "다각형 뒤쪽에 별도의 질감을 적용합니다."
+    },
+    "Enable Chroma Keying": {
+      "label": "사용 가능한 Chroma Keying",
+      "tooltip": "특정 색상 범위 투명 (e.g. 녹색 스크린 키링)."
+    },
+    "Enable Clear Coat": {
+      "label": "사용 약관",
+      "tooltip": "기초 PBR 물자에 이차 명확한 외투 specular 층을 추가하십시오. 페인트/코팅 표면을 위해 유용한."
+    },
+    "Enable Clipping Mask": {
+      "label": "Enable Clipping 마스크",
+      "tooltip": "재료의 클립 (부품 보이지 않는)에 질감을 사용합니다. 이것은 단단한 클립, 연약한 투명성 아닙니다."
+    },
+    "Enable Custom Cubemap Reflection": {
+      "label": "사용자 정의 Cubemap Reflection",
+      "tooltip": "반사 프로브가 누락/다크일 때 로컬 반사 또는 낙하에 대한 사용자 정의 큐브 맵을 추가합니다."
+    },
+    "Enable Custom Fog Color": {
+      "label": "Enable 관례 안개 색깔",
+      "tooltip": "사용자 정의 현지화 주석과 글로벌 장면 안개 색상을 부여합니다."
+    },
+    "Enable Decal 1": {
+      "label": "사용 1",
+      "tooltip": "1 차적인 decal/sticker 짜임새를 극복하십시오."
+    },
+    "Enable Decal 2": {
+      "label": "사용 가능 2",
+      "tooltip": "이차 decal/sticker 질감 상감."
+    },
+    "Enable Decal 3": {
+      "label": "사용 가능한 3",
+      "tooltip": "Tertiary decal/sticker 짜임새를 극복하십시오."
+    },
+    "Enable Depth Fade (Soft Particles)": {
+      "label": "Enable Depth Fade (소프트 입자)",
+      "tooltip": "투명하고 첨가물 표면을 위한 장면 기하학에 대하여 Softens polygon 교차로."
+    },
+    "Enable Detail Normal Distance Fade": {
+      "label": "Enable 세부사항 정상적인 거리 정면",
+      "tooltip": "VR aliasing/shimmering를 막기 위하여 거리에서 고주파 세부사항 정상을 부드럽게 합니다."
+    },
+    "Enable Detail Normal Map": {
+      "label": "자주 묻는 질문",
+      "tooltip": "Micro-surface 세부 사항 범프에 대한 보조 정상적인지도를 추가합니다."
+    },
+    "Enable Detail Texture": {
+      "label": "본문 바로가기",
+      "tooltip": "이차 질감, 종종 정밀한 세부 사항 또는 grunge."
+    },
+    "Enable Dissolve": {
+      "label": "공급 업체",
+      "tooltip": "객체가 노이즈 패턴을 사용하여 표시/disappear를 만듭니다."
+    },
+    "Enable Distance Fade": {
+      "label": "Enable 거리 정면",
+      "tooltip": "카메라에서 멀게 될 때 객체를 붙여줍니다."
+    },
+    "Enable Dithered Transparency": {
+      "label": "Enable Dithered 투명성",
+      "tooltip": "스크린 공간 Bayer matrix는 분류 자유로운 투명한 직물 및 머리를 위해 흐리게 합니다."
+    },
+    "Enable Effect Distance Fade (LOD)": {
+      "label": "Enable 효력 거리 정면 (LOD)",
+      "tooltip": "Fractals, Grid, Psychedelic(Glitter, Fractals, Grid, Psychedelic), VR 성능 향상."
+    },
+    "Enable Emission": {
+      "label": "사용 약관",
+      "tooltip": "객체의 glow를 만듭니다. 을 필요 a Bloom post-processing 효과 에 그만큼 장면 에 참조 the glow."
+    },
+    "Enable Emission Bloom Clamp": {
+      "label": "사용 가능한 방출 Bloom Clamp",
+      "tooltip": "블라인딩을 방지하기 위해 최대 HDR 발광성 최대의 방출을 클램프합니다."
+    },
+    "Enable Emission Pulse": {
+      "label": "Enable 방출 맥박",
+      "tooltip": "맥박 방출 강렬은 diffuse 점화에 영향을 미치기 없이 리듬으로."
+    },
+    "Enable Environment Reflections": {
+      "label": "환경 반사",
+      "tooltip": "샘플 반사 프로브는 Basic/Toon 모드에서도 환경 반사를 추가합니다."
+    },
+    "Enable Eye Iris Parallax": {
+      "label": "눈에 띄는 아이리스 Parallax",
+      "tooltip": "옥수수 아래에 습지와 홍채의 깊이/재활을 자극합니다."
+    },
+    "Enable Flipbook Animation": {
+      "label": "Enable Flipbook 애니메이션",
+      "tooltip": "Spritesheet 레이아웃을 사용하여 주요 질감. 메인 텍스처의 tiling 및 offset을 override합니다."
+    },
+    "Enable Fluorescence": {
+      "label": "형광 기능",
+      "tooltip": "환경/지향성 광 강도를 가진 반응 (짙은 빛)."
+    },
+    "Enable Fourth Emission": {
+      "label": "4회출 가능",
+      "tooltip": "4 번째 스크롤 배출 층을 추가합니다."
+    },
+    "Enable Fresnel Transparency": {
+      "label": "Enable Fresnel 투명성",
+      "tooltip": "중앙과 opaque에서 더 투명한 객체를 만듭니다."
+    },
+    "Enable Glitch Flicker": {
+      "label": "사용 가능한 Glitch Flicker",
+      "tooltip": "전체 객체에 대한 흔들림 효과를 적용합니다."
+    },
+    "Enable Global Theme Colors": {
+      "label": "Enable 글로벌 테마 색상",
+      "tooltip": "선택된 AudioLink 및 Hue modulation과 함께 재료 전체에 통합된 테마를 구동하기 위한 4개의 글로벌 마스터 색상을 갖추고 있습니다."
+    },
+    "Enable Grid": {
+      "label": "Enable 격자",
+      "tooltip": "표면에 격자 무늬를 오버레이."
+    },
+    "Enable Hair Specular (Kajiya-Kay)": {
+      "label": "헤어 스타일 (Kajiya-Kay)",
+      "tooltip": "Anisotropic는 머리 물가를 위해 특별히 특색짓습니다."
+    },
+    "Enable Hologram": {
+      "label": "홀로그램",
+      "tooltip": "Sci-fi 홀로그램 효과와 애니메이션 스캔 라인, 가장자리 변죽 및 흔들림."
+    },
+    "Enable HSV Mask": {
+      "label": "HSV 마스크",
+      "tooltip": "텍스처 맵을 사용하여 마스크 HSV 조정."
+    },
+    "Enable Interlacing": {
+      "label": "사용 방법",
+      "tooltip": "Darkens 모든 다른 화면 행은 interlaced 디스플레이를 시뮬레이션합니다."
+    },
+    "Enable Internal Parallax (Gems / Eye Layers)": {
+      "label": "Enable 내부 Parallax (Gems / 눈 층)",
+      "tooltip": "유리, 렌즈, 크리스탈, 애니메이션의 밑에서 층의 인테리어 깊이를 시뮬레이션합니다."
+    },
+    "Enable Intersection Effect": {
+      "label": "Enable Intersection 효력",
+      "tooltip": "대상물이 현장의 다른 개체와 가까이있는 색상으로 파드."
+    },
+    "Enable LookAt Billboarding": {
+      "label": "Enable LookAt 게시판",
+      "tooltip": "역동적으로 활동적인 사진기를 직면하는 메시 vertices를 자전하십시오."
+    },
+    "Enable LTCGI (Area Light GI)": {
+      "label": "Enable LTCGI (아rea Light GI)",
+      "tooltip": "지원되는 VRChat 세계에 있는 실시간 LTCGI 다각형 지역 빛 및 영상 스크린에 반응하십시오."
+    },
+    "Enable MatCap 2": {
+      "label": "매트캡 2",
+      "tooltip": "Multi-tone 금속 또는 변죽 악센트를 위한 이차 MatCap 층을 추가하십시오."
+    },
+    "Enable Near Camera Fade": {
+      "label": "카메라 Fade 근처 사용",
+      "tooltip": "카메라가 너무 닫을 때 기하학을 부드럽게 용해합니다 (Prevents VR 머리 클립)."
+    },
+    "Enable Network-Synced Time": {
+      "label": "네트워크 동기화 시간",
+      "tooltip": "AudioLink/Udon chronological Clock (VRChat에서 애니메이션 드리프트)를 통해 네트워크 클라이언트를 통해 그늘 연속 애니메이션 시간을 동기화합니다."
+    },
+    "Enable Noise/Grain": {
+      "label": "사용가능한 소음/Grain",
+      "tooltip": "애니메이션 노이즈 오버레이를 추가합니다."
+    },
+    "Enable Outline": {
+      "label": "자주 묻는 질문",
+      "tooltip": "객체의 주위에 단단한 개요를 추가합니다. 이 객체에 두 번째 draw 호출을 추가합니다."
+    },
+    "Enable Outline Gradient": {
+      "label": "사용 약관",
+      "tooltip": "개요를 통해 수직 상단/바닥 기온을 적용합니다."
+    },
+    "Enable Parallax Mapping (Height Map)": {
+      "label": "Enable Parallax 매핑 (높이 맵)",
+      "tooltip": "깊이를 위한 UV 상쇄에 고도 지도를 사용하십시오."
+    },
+    "Enable Parallax Occlusion Mapping": {
+      "label": "사용 가능한 Parallax Occlusion Mapping",
+      "tooltip": "고품질 깊이 효과를 위한 다중 단계 parallax를 가능하게 합니다. 높은 퍼프 만."
+    },
+    "Enable Pixelation": {
+      "label": "사용 방법",
+      "tooltip": "Blocky, 낮은 해상도 효과를 만듭니다."
+    },
+    "Enable Planar Wipe": {
+      "label": "사용 약관",
+      "tooltip": "매끄럽고 방향 와이퍼를 가진 객체를 수정합니다."
+    },
+    "Enable Posterization": {
+      "label": "사용 약관",
+      "tooltip": "색깔의 수를 감소시키고, retro/digital 보기를 줍니다."
+    },
+    "Enable Procedural Texture": {
+      "label": "자주 묻는 질문",
+      "tooltip": "생성된 패턴으로 재료 속성을 대체합니다."
+    },
+    "Enable Proximity Effect": {
+      "label": "Proximity 효과 활성화",
+      "tooltip": "카메라, 객체 피벗, 또는 사용자 정의 세계 위치로 거리를 기반으로 트리거 시각적 효과 (glow, dissolve, dither, or Tint)."
+    },
+    "Enable PS1 Retro Vertex Snapping": {
+      "label": "PS1 Retro Vertex 스냅",
+      "tooltip": "복고풍 PS1 / affine jitter 미학을 위한 저해상 격자에 vertex 위치를 Quantizes."
+    },
+    "Enable Pulse": {
+      "label": "공급 능력",
+      "tooltip": "진동 애니메이션을 방출 강도에 추가합니다."
+    },
+    "Enable RGBA Color Masking (Recolor Workflow)": {
+      "label": "RGBA Color Masking 사용 가능 (색상 작업 흐름)",
+      "tooltip": "허가 4 독립적 인 색상 통 및 emissive 채널은 마스크 질감의 RGBA 채널에 매핑."
+    },
+    "Enable Rim Glow": {
+      "label": "사용 약관",
+      "tooltip": "표시 각도를 기반으로 객체의 가장자리에 빛을 추가합니다."
+    },
+    "Enable Ripple Effect": {
+      "label": "Enable Ripple 효과",
+      "tooltip": "UV 좌표에서 동심 리플 효과를 만듭니다."
+    },
+    "Enable Scanlines": {
+      "label": "사용 방법",
+      "tooltip": "CRT 모니터의 모습을 시뮬레이션합니다."
+    },
+    "Enable Screen Refraction": {
+      "label": "Enable 스크린 굴절",
+      "tooltip": "객체 뒤에 화면을 구별합니다."
+    },
+    "Enable Scrolling": {
+      "label": "비밀번호",
+      "tooltip": "그리드 패턴을 스크롤합니다."
+    },
+    "Enable SDF Face Shadows": {
+      "label": "SDF 얼굴 그림자 사용",
+      "tooltip": "표시된 거리 필드 얼굴 그림자 mapping 애니메이션 문자."
+    },
+    "Enable Second Emission": {
+      "label": "두 번째 배출 가능",
+      "tooltip": "두 번째 스크롤 배출 층을 추가합니다."
+    },
+    "Enable Shader Debug View": {
+      "label": "Enable Shader 디버그 뷰",
+      "tooltip": "Viewport에서 중간 셰이딩 버퍼 및 진단 검사."
+    },
+    "Enable Shell Fur": {
+      "label": "Enable Shell 모피",
+      "tooltip": "Extrudes 다수 층을 꿴 포탄은 좌초 소음 masking를 가진 vertex 정상을 따라 나가."
+    },
+    "Enable Skin Diffuse Wrap": {
+      "label": "Enable Skin Diffuse 랩",
+      "tooltip": "유기 곡선 표면에 연화 그림자."
+    },
+    "Enable Step Specular": {
+      "label": "Enable 단계 Specular",
+      "tooltip": "소프트 PBR 분광 하이라이트를 crisp 만화 빛의 명소로 변환합니다."
+    },
+    "Enable Stochastic Sampling": {
+      "label": "Stochastic 표본 추출",
+      "tooltip": "Procedurally는 큰 표면에 반복 tiling 본을 완전히 삭제하기 위하여 무작위로 짜임새 표본을 혼합합니다."
+    },
+    "Enable Subsurface Scattering": {
+      "label": "Enable Subsurface 스카핑",
+      "tooltip": "피부나 잎과 같은 얇은 개체를 통해 빛이 흩어져."
+    },
+    "Enable Thickness Map": {
+      "label": "Enable 간격 지도",
+      "tooltip": "얇은 영역 (ears, 잎, 등)을 통해 광선 전송을 시뮬레이션하는 질감을 사용합니다."
+    },
+    "Enable Third Emission": {
+      "label": "세 번째 방출 가능",
+      "tooltip": "세 번째 스크롤 배출 층을 추가합니다."
+    },
+    "Enable Transparency": {
+      "label": "투명성",
+      "tooltip": "객체를 균일하게 투명하게 만듭니다."
+    },
+    "Enable Transparency Glitch": {
+      "label": "Enable 투명도 Glitch",
+      "tooltip": "또한 투명성에 영향을 미치는 흔들림 효과를 원인."
+    },
+    "Enable Triplanar Normal Map": {
+      "label": "Enable Triplanar 정상 지도",
+      "tooltip": "3개의 축의 정상적인 지도를 프로젝트합니다."
+    },
+    "Enable UV Distortion": {
+      "label": "UV 증류법 사용",
+      "tooltip": "UV 좌표를 경고하는 짜임새를 사용해서, 열 안개 또는 물 잔물결 같이 효력을 창조하십시오."
+    },
+    "Enable UV Flow (Pathing)": {
+      "label": "UV 유량(Pathing)",
+      "tooltip": "벡터 플로우 맵 경로에 따라 Animates 질감은 2 상 사이클을 사용하여."
+    },
+    "Enable UV Tile Discard": {
+      "label": "UV 타일 Discard 사용 가능",
+      "tooltip": "Discard 특정 UV 타일. toggling 의류 부품에 대 한 유용한."
+    },
+    "Enable Vertex Animation Texture": {
+      "label": "Vertex 애니메이션 Texture 사용",
+      "tooltip": "VAT 텍스처에서 베이킹 버텍스 애니메이션. pre-baked cloth, 유체 또는 파괴 효과에 사용됩니다."
+    },
+    "Enable Vertex Collapse": {
+      "label": "Vertex 붕괴",
+      "tooltip": "수축은 그것의 중심점으로 만듭니다."
+    },
+    "Enable Video Player": {
+      "label": "Enable 영상 선수",
+      "tooltip": "텍스처를 구성하여 비디오 플레이어 데이터를 수신합니다."
+    },
+    "Enable VRSL (VRC Studio Lighting)": {
+      "label": "VRSL (VRC 스튜디오 조명) 사용",
+      "tooltip": "지원되는 VRChat 세계에 있는 순간 DMX 단계 정착물, 레이저 및 부피 측정 클럽 점화에 반응합니다."
+    },
+    "Enable Wetness": {
+      "label": "공급 업체",
+      "tooltip": "어둠과 비 잔물한 효력을 가진 젖은 표면을 시뮬레이션합니다."
+    },
+    "Override Scene Light": {
+      "label": "Override 장면 빛",
+      "tooltip": "방향, 색상, 강도의 메인 장면 빛."
+    },
+    "Photosensitivity Strobe Clamp": {
+      "label": "Photosensitivity 스트로브 클램프",
+      "tooltip": "안전 클램프 최대 스트로브 / flash 주파수를 제한하는 것은 epileptic seizures에 대해 보호합니다."
+    },
+    "Use Auto Hue Shift": {
+      "label": "자동 Hue Shift 사용",
+      "tooltip": "지속적으로 시간에 fractal 기본적인 색깔을 바꿉니다."
+    },
+    "Use Base Color": {
+      "label": "기본 색상 사용",
+      "tooltip": "솔리드베이스 색상을 토글."
+    },
+    "Use Base Texture": {
+      "label": "Base Texture 사용",
+      "tooltip": "본문내용 바로가기."
+    },
+    "Use Depth-Based Color": {
+      "label": "사용 깊이 기반 색상",
+      "tooltip": "다른 표면에 근접한 그리드 색상을 변경합니다."
+    },
+    "Use Emission Mask": {
+      "label": "Emission Mask 사용",
+      "tooltip": "표면 방출 빛의 부품을 제어하는 질감을 사용합니다."
+    },
+    "Use Grid Mask": {
+      "label": "사용 Grid Mask",
+      "tooltip": "텍스처를 사용하여 그리드 효과."
+    },
+    "Use Outline Width Map": {
+      "label": "사용 개요 폭 지도",
+      "tooltip": "회색 조각을 사용하여 윤곽 두께를 조절합니다."
+    },
+    "Use Texture Alpha for Emission": {
+      "label": "Texture Alpha 사용",
+      "tooltip": "주요 질감의 알파 채널을 배출 맵으로 사용합니다. 별도의 텍스처 없이 glow 맵을 만드는 강력한 방법."
+    },
+    "Use Transmission Texture": {
+      "label": "사용 전송 Texture",
+      "tooltip": "사용자 정의 색상지도 백라이트 전송을 주석."
+    }
+  }
+}
