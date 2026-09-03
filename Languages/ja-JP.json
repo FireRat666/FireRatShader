@@ -1,23 +1,23 @@
 {
   "languageCode": "ja-JP",
   "languageName": "日本語",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "インフォメーション",
+    "search": "検索",
     "searchPlaceholder": "素材のプロパティを検索...",
-    "matchingProperties": "マッチングプロパティ",
-    "clearSearch": "明確な検索",
-    "noPropertiesFound": "物件が見つかりません",
+    "matchingProperties": "一致するプロパティ",
+    "clearSearch": "検索をクリア",
+    "noPropertiesFound": "一致するプロパティが見つかりません",
     "lockMaterial": "素材のロックと最適化(クリックしてロック解除)",
-    "unlockMaterial": "鍵を開けて下さい材料",
-    "lockAndOptimize": "ロック&最適化",
+    "unlockMaterial": "マテリアルのロック解除",
+    "lockAndOptimize": "ロック＆最適化",
     "savePreset": "プリセットを保存...",
-    "loadPreset": "ロードプリセット...",
+    "loadPreset": "プリセットを読み込み...",
     "copy": "コピー",
-    "paste": "ペースト",
+    "paste": "貼り付け",
     "reset": "リセット",
-    "language": "用語集",
+    "language": "言語",
     "cycle": "サイクル",
     "performanceTip": "⚡ 性能の先端: この材料は鍵を開けられます。 最高のランタイムパフォーマンス(特にQuest/VR)では、上記の「ロック&最適化」を使用します。 このストリップは、未使用シェーダーパス、デッドコードブランチ、およびゼロオーバーヘッドレンダリングのためのキーワードを焼く.",
     "lockedWarning": "素材はロックされています(読み込みのみ)。 プロパティを変更するためにツールバーを介してロック解除します.",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "アルファゾーン(Aチャンネル)",
     "Color Correction": "色の訂正",
     "Dedicated Shading Models": "専用シェーディングモデル",
-    "Render States": "レンダー・アメリカ",
+    "Render States": "レンダー状態",
     "Camera & Mirror Visibility": "カメラとミラーの可視性",
     "Stencil Buffer Settings": "ステンシルバッファ設定",
     "Global AudioLink Controls": "グローバルAudioLinkコントロール",
@@ -45,27 +45,27 @@
     "PulseAlphaRangeTooltip": "強度の脈拍のための最低そして最高のアルファを制御して下さい.",
     "Color": "カラー",
     "Transform": "トランスフォーム",
-    "Texture": "コンテンツ",
-    "Normal Map": "サイトマップ",
-    "UV": "紫外線",
-    "UV0": "紫外線0",
-    "UV1": "紫外線1",
+    "Texture": "テクスチャ",
+    "Normal Map": "ノーマルマップ",
+    "UV": "UV",
+    "UV0": "UV0",
+    "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "ワールドスペース(Triplanar)",
-    "Local Space (Triplanar)": "ローカルスペース(Triplanar)",
-    "Screen Space": "スクリーン スペース",
+    "World Space (Triplanar)": "ワールド空間 (Triplanar)",
+    "Local Space (Triplanar)": "ローカル空間 (Triplanar)",
+    "Screen Space": "スクリーン空間",
     "Planar (Local XY)": "平面(ローカルXY)",
     "Spherical (Local)": "球面(ローカル)",
     "Cylindrical (Local)": "Cylindrical (ローカル)",
     "Biplanar (World)": "Biplanar(世界)",
     "Panosphere (Equirectangular 360)": "パノスフィア(Equirectangular 360)",
     "Polar Coordinates": "ポーラ座標",
-    "Off": "オフ",
-    "Bass": "バス",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "低い中間",
     "High Mid": "ハイ・ミッド",
-    "Treble": "トレブル",
+    "Treble": "Treble",
     "High": "高い",
     "Medium": "メディア",
     "Low": "低い",
@@ -80,23 +80,23 @@
     "G": "ツイート",
     "B": "ツイート",
     "A": "ツイート",
-    "RGBA": "RGBAの特長",
-    "RGB": "ハードウェア",
+    "RGBA": "RGBA",
+    "RGB": "RGB",
     "All": "すべて",
-    "Hue Shift": "ヒュー・シフト",
+    "Hue Shift": "色相シフト",
     "Gradient": "グラデーション",
     "Rainbow Gradient": "虹の勾配",
     "AudioLink Theme": "オーディオリンク テーマ",
     "Direct": "ダイレクト",
-    "AudioLink": "オーディオリンク",
+    "AudioLink": "AudioLink",
     "HueShift": "フエシフト",
     "Hue Shift/Gradient": "ヒュー・シフト/グラデーション",
     "Velocity": "ヴェロシティ",
     "Stylized_PBR": "Stylized PBRの特長",
     "Standard_PBR": "スタンダード PBR",
     "Toon": "トゥーン",
-    "Basic": "基本情報",
-    "Unlit": "ログイン",
+    "Basic": "ベーシック",
+    "Unlit": "アンリット",
     "Flat": "フラット",
     "Ambient": "アクセス",
     "ShadowColor": "シャドーカラー",
@@ -252,7 +252,7 @@
     "Z": "ツイート",
     "Front": "フロント",
     "Back": "バックナンバー",
-    "Culling": "キューリング",
+    "Culling": "カリング",
     "Depth Test": "深さテスト",
     "Comparison": "比較比較",
     "Disabled": "バリアフリー",
@@ -318,7 +318,7 @@
   },
   "properties": {
     "_RenderMode": {
-      "label": "レンダリングモード",
+      "label": "描画モード",
       "tooltip": "シェーダーがレンダリングされる方法を制御します。 オパクは最速です。 カットアウトは、ハードエッジの透明性のためにあります。 透明は柔らかく、混合された効果のためです."
     },
     "_PerformanceLevel": {
@@ -594,7 +594,7 @@
       "tooltip": "各オクターブでノイズの頻度がどのように変化するかを制御します."
     },
     "_NoiseGain": {
-      "label": "メリット",
+      "label": "ゲイン",
       "tooltip": "各オクターブとノイズの振幅がどのように変化するかを制御します."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "周囲のオクルージョンマップを使用してセルの影境界を変更します."
     },
     "_NormalMap": {
-      "label": "サイトマップ",
+      "label": "ノーマルマップ",
       "tooltip": "通常のマップを使用して表面の詳細を追加します."
     },
     "_BumpScale": {
@@ -810,7 +810,7 @@
       "tooltip": "SSS効果の全体的な強さ."
     },
     "_SSS_Radius": {
-      "label": "ラディウス",
+      "label": "半径",
       "tooltip": "素材内の光の散布機は、どのくらいのところです."
     },
     "_SSS_Color": {
@@ -1034,7 +1034,7 @@
       "tooltip": "グリッドをマスクするために使用されるテクスチャ。 赤いチャネルが使用されます."
     },
     "_InvertGridMask": {
-      "label": "インバーター マスク",
+      "label": "マスク反転",
       "tooltip": "マスクを反転させるので、黒い部分が見え、白い部分が隠されています."
     },
     "_USE_DISTORTION_ON": {
@@ -1378,7 +1378,7 @@
       "tooltip": "1秒あたりのフレームのアニメーション速度."
     },
     "_FlipbookStartFrame": {
-      "label": "スタートフレーム",
+      "label": "開始フレーム",
       "tooltip": "アニメーションの開始フレームで、オフセットが可能."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "全体的な不透明度/デカールの強度."
     },
     "_DecalNormal": {
-      "label": "サイトマップ",
+      "label": "ノーマルマップ",
       "tooltip": "デカールのノーマルマップ."
     },
     "_DecalNormalStrength": {
@@ -1534,7 +1534,7 @@
       "tooltip": "正規、メタリック、スムースをデカールで変更可能."
     },
     "_SurfaceStyle": {
-      "label": "表面様式",
+      "label": "サーフェススタイル",
       "tooltip": ""
     },
     "_PsychedelicColorShift": {
@@ -1582,7 +1582,7 @@
       "tooltip": "Mandelbulbのパワーパラメータ。 お問い合わせ!"
     },
     "_FractalIter": {
-      "label": "ツイート",
+      "label": "反復回数",
       "tooltip": "反復の数。 より詳細ですが遅くなります."
     },
     "_FractalKaleidoAngles": {
@@ -1886,11 +1886,11 @@
       "tooltip": "1つの紫外線単位を渡る同心なさざ波リングの数."
     },
     "_RippleMaxRadius": {
-      "label": "フェードアウトの半径",
+      "label": "フェードアウト半径",
       "tooltip": "Ripplesが完全にフェードアウトする中央からの距離."
     },
     "_RippleWidth": {
-      "label": "フリガナ",
+      "label": "幅",
       "tooltip": "各個々のリップリングの幅."
     },
     "_RippleColor": {
@@ -2206,7 +2206,7 @@
       "tooltip": "バー間のギャップ(0 =ギャップなし)."
     },
     "_AudioSpectrumGain": {
-      "label": "メリット",
+      "label": "ゲイン",
       "tooltip": "音声信号の増幅."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "波形サイクルの数が見える."
     },
     "_AudioWaveformGain": {
-      "label": "メリット",
+      "label": "ゲイン",
       "tooltip": "音声信号の増幅."
     },
     "_AudioWaveformThickness": {
@@ -2398,7 +2398,7 @@
       "tooltip": "クリップに使用するマスクのカラーチャンネル."
     },
     "_InvertClippingMask": {
-      "label": "インバーター マスク",
+      "label": "マスク反転",
       "tooltip": "マスク効果(白=クリッピング)を反転します."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "ノイズアニメーションの1秒あたりのフレーム."
     },
     "_Cull": {
-      "label": "キューリング",
+      "label": "カリング",
       "tooltip": "ポリゴンの彫刻モード(オフ、フロント、バック)."
     },
     "_CullShadow": {
@@ -2430,7 +2430,7 @@
       "tooltip": "影の鋳造のパスのために特に使用される多角形のcullingモード."
     },
     "_ZTest": {
-      "label": "Zテスト",
+      "label": "ZTest",
       "tooltip": "深さのテストの実行方法を制御します."
     },
     "_ColorWriteMask": {
@@ -2570,7 +2570,7 @@
       "tooltip": "全体的な不透明度/決定の強度 2."
     },
     "_Decal2Normal": {
-      "label": "サイトマップ",
+      "label": "ノーマルマップ",
       "tooltip": "ノーマルマップのデカール2."
     },
     "_Decal2NormalStrength": {
@@ -2614,7 +2614,7 @@
       "tooltip": "全体的な不透明度/決定の強度 3."
     },
     "_Decal3Normal": {
-      "label": "サイトマップ",
+      "label": "ノーマルマップ",
       "tooltip": "ノーマルマップ(デカール3)."
     },
     "_Decal3NormalStrength": {
@@ -2682,7 +2682,7 @@
       "tooltip": "背部表面の放出の強さ."
     },
     "_HueShift": {
-      "label": "ヒュー・シフト",
+      "label": "色相シフト",
       "tooltip": "カラーホイールの周りの色合いを回転させます."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "ダイザーのブレンドの強さ(0 =鋭い切り口、1 =完全なstipple)."
     },
     "_ShadowCutoff": {
-      "label": "シャドーカットオフ",
+      "label": "シャドウカットオフ",
       "tooltip": "影の鋳造のためのアルファ カットオフのしきい値."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "AudioLink反応の強度マルチプライヤー."
     },
     "_ThemeShiftSpeed": {
-      "label": "Hueシフト速度",
+      "label": "色相シフト速度",
       "tooltip": "連続hueシフト回転の速度."
     },
     "_ThemeTargetMask": {

@@ -2,8 +2,8 @@
  * FireRatShader Docs — Language Switcher
  *
  * Loads JSON translation files from i18n/<locale>.json and swaps the
- * innerHTML of every [data-i18n] element. Falls back to the original
- * English content if a key is missing.
+ * innerHTML of every [data-i18n] element. Falls back to the current
+ * content if a key is missing.
  *
  * Features:
  *   - Dropdown selector (14 languages).
@@ -40,10 +40,6 @@
 
     // ---- Translation loading ----
     async function loadTranslations(locale) {
-        if (locale === 'en-US') {
-            translations[locale] = {};  // no swap needed for English
-            return;
-        }
         if (translations[locale]) return;
         // Determine the i18n base path relative to the current page.
         // Pages live at / and /docs/. The i18n folder is /docs/i18n/.
@@ -65,7 +61,6 @@
 
     // ---- Apply ----
     function applyTranslations() {
-        if (currentLocale === 'en-US') return;  // source language
         const strings = translations[currentLocale] || {};
         const els = document.querySelectorAll('[data-i18n]');
         let swapped = 0;

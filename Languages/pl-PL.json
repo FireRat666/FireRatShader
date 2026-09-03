@@ -1,22 +1,22 @@
 {
   "languageCode": "pl-PL",
   "languageName": "Polski",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
     "search": "Szukaj",
-    "searchPlaceholder": "Właściwości materiałów wyszukiwania...",
-    "matchingProperties": "Dopasowanie właściwości",
+    "searchPlaceholder": "Szukaj właściwości materiału...",
+    "matchingProperties": "Pasujące właściwości",
     "clearSearch": "Wyczyść wyszukiwanie",
-    "noPropertiesFound": "Brak właściwości pasujących",
+    "noPropertiesFound": "Nie znaleziono pasujących właściwości",
     "lockMaterial": "Zablokowany i zoptymalizowany materiał (kliknij przycisk Odblokuj)",
     "unlockMaterial": "Odblokuj materiał",
-    "lockAndOptimize": "Zablokuj & optymalizuj",
+    "lockAndOptimize": "Zablokuj i zoptymalizuj",
     "savePreset": "Zapisz preset...",
     "loadPreset": "Wczytaj preset...",
     "copy": "Kopiuj",
     "paste": "Wklej",
-    "reset": "Przywróć",
+    "reset": "Resetuj",
     "language": "Język",
     "cycle": "Cykl",
     "performanceTip": "Performance Tip: Ten materiał jest odblokowany. Dla najlepszej wydajności w czasie pracy (szczególnie na Quest / VR), użyj 'Lock & Optimize' powyżej. To paski nieużywane cieniowanie przechodzi, martwych oddziałów kodu, i piecze słowa kluczowe dla zero-napowietrznych renderowania.",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Strefa Alpha (A Channel)",
     "Color Correction": "Korekcja kolorów",
     "Dedicated Shading Models": "Dedykowane modele cieniowania",
-    "Render States": "Państwo dzierżawy",
+    "Render States": "Stany renderowania",
     "Camera & Mirror Visibility": "Widoczność kamery i lustra",
     "Stencil Buffer Settings": "Ustawienia bufora Stencil",
     "Global AudioLink Controls": "Globalne sterowanie AudioLink",
@@ -45,14 +45,14 @@
     "PulseAlphaRangeTooltip": "Kontroluje minimalną i maksymalną wartość alfa dla impulsu natężenia.",
     "Color": "Kolor",
     "Transform": "Transformacja",
-    "Texture": "Tekst",
-    "Normal Map": "Normalna mapa",
+    "Texture": "Tekstura",
+    "Normal Map": "Mapa normalnych",
     "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Przestrzeń Światowa (Triplanar)",
+    "World Space (Triplanar)": "Przestrzeń świata (Triplanar)",
     "Local Space (Triplanar)": "Przestrzeń lokalna (Triplanar)",
     "Screen Space": "Przestrzeń ekranu",
     "Planar (Local XY)": "Planar (lokalny XY)",
@@ -61,11 +61,11 @@
     "Biplanar (World)": "Biplanar (świat)",
     "Panosphere (Equirectangular 360)": "Panosfera (równowartość 360)",
     "Polar Coordinates": "Współrzędne polarne",
-    "Off": "Wyłącz",
+    "Off": "Off",
     "Bass": "Bass",
     "Low Mid": "Niska średnia",
     "High Mid": "High Mid",
-    "Treble": "Tradle",
+    "Treble": "Treble",
     "High": "Wysoki",
     "Medium": "Średni",
     "Low": "Niski",
@@ -83,7 +83,7 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Wszystkie",
-    "Hue Shift": "Zmiana barwy",
+    "Hue Shift": "Przesunięcie barwy",
     "Gradient": "Gradient",
     "Rainbow Gradient": "Gradient tęczowy",
     "AudioLink Theme": "AudioLink Motyw",
@@ -95,8 +95,8 @@
     "Stylized_PBR": "Stylizowane _ PBR",
     "Standard_PBR": "Standard _ PBR",
     "Toon": "Toon",
-    "Basic": "Podstawowe",
-    "Unlit": "Niepodświetlone",
+    "Basic": "Podstawowy",
+    "Unlit": "Nieoświetlony",
     "Flat": "Płaski",
     "Ambient": "Otoczenie",
     "ShadowColor": "ShadowColor",
@@ -109,7 +109,7 @@
     "OverrideProbes": "OverrideProbes",
     "FallbackWhenProbesDark": "FallbackWhenProbesDark",
     "Screen": "Ekran",
-    "Metallic": "Metaliczny",
+    "Metallic": "Metaliczność",
     "Specular": "Spekulacyjne",
     "Override": "Przekrocz",
     "Add": "Dodaj",
@@ -133,13 +133,13 @@
     "Stretched-Blinn": "Stretched- Blinn",
     "Default": "Domyślne",
     "Hologram": "Hologram",
-    "Crystal": "Crystal",
+    "Crystal": "Kryształ",
     "Triplanar": "Triplanar",
     "Iridescence": "Irydescencja",
-    "Glitter": "Glitter",
+    "Glitter": "Brokat",
     "Psychedelic": "Psychedelic",
     "Fractal3D": "Fractal3D",
-    "Galaxy": "Galaxy",
+    "Galaxy": "Galaktyka",
     "Skybox": "Skybox",
     "EQ Bars": "Bary EQ",
     "Continuous Curve": "Krzywa ciągła",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "Przód",
     "Back": "Tył",
-    "Culling": "Kulling",
+    "Culling": "Odrzucanie (Culling)",
     "Depth Test": "Badanie głębokości",
     "Comparison": "Porównanie",
     "Disabled": "Wyłączone",
@@ -304,16 +304,16 @@
     "Performance Settings": "Ustawienia wydajności",
     "Render Mode": "Tryb renderowania",
     "Main Settings": "Ustawienia główne",
-    "Procedural Textures": "Teksty proceduralne",
+    "Procedural Textures": "Tekstury proceduralne",
     "Advanced Animation Controls": "Zaawansowane sterowanie animacją",
-    "Color Controls": "Kontrola kolorów",
+    "Color Controls": "Sterowanie kolorami",
     "Lighting": "Oświetlenie",
     "Surface Style": "Styl powierzchni",
-    "Overlays": "Nakłady",
-    "Effects": "Skutki",
+    "Overlays": "Nakładki",
+    "Effects": "Efekty",
     "Glitches": "Glitche",
     "Transitions": "Przejścia",
-    "AudioLink Visualizers": "AudioLink Visualizer",
+    "AudioLink Visualizers": "Wizualizatory AudioLink",
     "Advanced Settings": "Ustawienia zaawansowane"
   },
   "properties": {
@@ -330,7 +330,7 @@
       "tooltip": "Ręczna kontrola, jeśli ten materiał pisze do bufora głębokości. Włącz to dla przezroczystych obiektów, które powinny nadal zamykać obiekty za nimi."
     },
     "_Cutoff": {
-      "label": "Alpha Cutoff",
+      "label": "Odcięcie alfa",
       "tooltip": "Próg alfa dla efektu wycięcia."
     },
     "_UseUVTileDiscard": {
@@ -594,7 +594,7 @@
       "tooltip": "Kontroluje jak częstotliwość hałasu zmienia się z każdą oktawą."
     },
     "_NoiseGain": {
-      "label": "Gain",
+      "label": "Wzmocnienie",
       "tooltip": "Kontroluje jak amplituda hałasu zmienia się z każdą oktawą."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "Modulizuje granicę cienia cel używając mapy okluzji otoczenia."
     },
     "_NormalMap": {
-      "label": "Normalna mapa",
+      "label": "Mapa normalnych",
       "tooltip": "Dodaje szczegóły powierzchni przy użyciu normalnej mapy."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "Mapa metaliczna (R) i gładkość (A). (Uwaga: Płynność jest ignorowana, jeśli dostarczona jest oddzielna mapa twardości)"
     },
     "_Metallic": {
-      "label": "Metaliczny",
+      "label": "Metaliczność",
       "tooltip": "Kontroluje jak metalowa jest powierzchnia (0 = dielektryk / plastik, 1 = czysty metal)."
     },
     "_Glossiness": {
-      "label": "Płynność",
+      "label": "Gładkość",
       "tooltip": "Kontroluje jak gładka i odblaskowa jest powierzchnia (0 = szorstka / matowa, 1 = gładka lusterko)."
     },
     "_UseAmbientLighting": {
@@ -1378,7 +1378,7 @@
       "tooltip": "Prędkość animacji w klatkach na sekundę."
     },
     "_FlipbookStartFrame": {
-      "label": "Uruchom ramkę",
+      "label": "Klatka początkowa",
       "tooltip": "Rama startowa animacji, pozwalająca na przesunięcie."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Całkowita nieprzezroczystość / wytrzymałość nacięcia."
     },
     "_DecalNormal": {
-      "label": "Normalna mapa",
+      "label": "Mapa normalnych",
       "tooltip": "Normalna mapa do nacięcia."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "Siła normalnej mapy narządu."
     },
     "_DecalMetallic": {
-      "label": "Metaliczny",
+      "label": "Metaliczność",
       "tooltip": "Wartość metaliczna dla powierzchni naciętej."
     },
     "_DecalSmoothness": {
-      "label": "Płynność",
+      "label": "Gładkość",
       "tooltip": "Wartość gładkości dla powierzchni przylegającej."
     },
     "_DecalAffectsPBR": {
@@ -1886,7 +1886,7 @@
       "tooltip": "Liczba koncentrycznych pierścieni w obrębie 1 jednostki UV."
     },
     "_RippleMaxRadius": {
-      "label": "Fadeout Radius",
+      "label": "Promień zanikania",
       "tooltip": "Odległość od centrum, w którym fale całkowicie zanikają."
     },
     "_RippleWidth": {
@@ -2206,7 +2206,7 @@
       "tooltip": "Odstęp między prętami (0 = brak luki)."
     },
     "_AudioSpectrumGain": {
-      "label": "Gain",
+      "label": "Wzmocnienie",
       "tooltip": "Wzmacnianie sygnału audio."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "Liczba widocznych cykli fali."
     },
     "_AudioWaveformGain": {
-      "label": "Gain",
+      "label": "Wzmocnienie",
       "tooltip": "Wzmacnianie sygnału audio."
     },
     "_AudioWaveformThickness": {
@@ -2422,7 +2422,7 @@
       "tooltip": "'Ramki na sekundę' animacji hałasu."
     },
     "_Cull": {
-      "label": "Kulling",
+      "label": "Odrzucanie (Culling)",
       "tooltip": "Tryb wybijania wielokąta (wyłącz, przód, tył)."
     },
     "_CullShadow": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Całkowita nieprzezroczystość / wytrzymałość Decal 2."
     },
     "_Decal2Normal": {
-      "label": "Normalna mapa",
+      "label": "Mapa normalnych",
       "tooltip": "Normalna mapa dla Decal 2."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "Siła Decal 2 normalnej mapy."
     },
     "_Decal2Metallic": {
-      "label": "Metaliczny",
+      "label": "Metaliczność",
       "tooltip": "Wartość metaliczna dla obszaru Decal 2."
     },
     "_Decal2Smoothness": {
-      "label": "Płynność",
+      "label": "Gładkość",
       "tooltip": "Wartość gładkości dla obszaru Decal 2."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Całkowita nieprzezroczystość / wytrzymałość Decal 3."
     },
     "_Decal3Normal": {
-      "label": "Normalna mapa",
+      "label": "Mapa normalnych",
       "tooltip": "Normalna mapa dla Decal 3."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "Wytrzymałość Decal 3 normalnej mapy."
     },
     "_Decal3Metallic": {
-      "label": "Metaliczny",
+      "label": "Metaliczność",
       "tooltip": "Wartość metaliczna dla obszaru Decal 3."
     },
     "_Decal3Smoothness": {
-      "label": "Płynność",
+      "label": "Gładkość",
       "tooltip": "Wartość gładkości dla obszaru Decal 3."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Siła emisji z tyłu."
     },
     "_HueShift": {
-      "label": "Zmiana barwy",
+      "label": "Przesunięcie barwy",
       "tooltip": "Obraca barwę wokół koła barwnego."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Wytrzymałość mieszania dither (0 = ostre wycięcie, 1 = pełny sztylet)."
     },
     "_ShadowCutoff": {
-      "label": "Shadow Cutoff",
+      "label": "Odcięcie cienia",
       "tooltip": "Próg odcięcia alfa do odlewania cieni."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Mnożnik intensywności reakcji AudioLink."
     },
     "_ThemeShiftSpeed": {
-      "label": "Prędkość zmiany barwy",
+      "label": "Szybkość przesunięcia barwy",
       "tooltip": "Prędkość ciągłej zmiany barwy."
     },
     "_ThemeTargetMask": {

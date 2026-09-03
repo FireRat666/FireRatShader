@@ -1,24 +1,24 @@
 {
   "languageCode": "th-TH",
   "languageName": "ไทย",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
     "search": "ค้นหา",
     "searchPlaceholder": "ค้นหาคุณสมบัติของวัสดุ...",
-    "matchingProperties": "คุณสมบัติที่เข้าคู่กัน",
+    "matchingProperties": "คุณสมบัติที่ตรงกัน",
     "clearSearch": "ล้างการค้นหา",
-    "noPropertiesFound": "ไม่พบคุณสมบัติที่เข้ากันได้",
+    "noPropertiesFound": "ไม่พบคุณสมบัติที่ตรงกัน",
     "lockMaterial": "○ วัตถุ ที่ ถูก ล็อค และ ถูก เปิด เผย (ปุ่ม ปลดล็อค)",
-    "unlockMaterial": "วัตถุปลดล็อค",
-    "lockAndOptimize": "ล็อคโฟกัส",
-    "savePreset": "บันทึกชุดสําเร็จ...",
-    "loadPreset": "โหลดชุดสําเร็จ...",
+    "unlockMaterial": "ปลดล็อกวัสดุ",
+    "lockAndOptimize": "ล็อกและปรับแต่งประสิทธิภาพ",
+    "savePreset": "บันทึกพรีเซ็ต...",
+    "loadPreset": "โหลดพรีเซ็ต...",
     "copy": "คัดลอก",
     "paste": "วาง",
-    "reset": "ตั้งค่าใหม่",
+    "reset": "รีเซ็ต",
     "language": "ภาษา",
-    "cycle": "วนรอบ",
+    "cycle": "วงรอบ",
     "performanceTip": "○ คํา แนะ นํา สําหรับ การ ตัดสิน ใจ: วัตถุ เหล่า นี้ ไม่ ถูก ต้อง. สําหรับประสิทธิภาพการทํางานที่ดีที่สุด (โดยเฉพาะอย่างยิ่งบน grav/ VR), ใช้ 'Lock & Offinize' ด้านบน แถบนี้ไม่มีการใช้ร่มเงา, กิ่งรหัสตาย, และอบคําสําคัญ สําหรับการแสดงผลหัวเป็นศูนย์.",
     "lockedWarning": "วัสดุที่ถูกล็อก (อ่านเท่านั้น) ปลดล็อคผ่านทางแถบเครื่องมือเพื่อแก้ไขคุณสมบัติ.",
     "Global UV Controls": "การควบคุมยูวีทั่วไป",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "พื้นที่อัลฟา (ช่อง)",
     "Color Correction": "การแก้สี",
     "Dedicated Shading Models": "โมเดลการเฉลิม",
-    "Render States": "ตั้งค่าสถานะ",
+    "Render States": "สถานะการแสดงผล",
     "Camera & Mirror Visibility": "ความเปรียบต่างของกล้อง",
     "Stencil Buffer Settings": "ตั้งค่าฟัฟเฟอร์ Stencil",
     "Global AudioLink Controls": "การควบคุมเสียงแบบทั่วไป",
@@ -44,28 +44,28 @@
     "Pulse Alpha Range": "ช่วงของชีพจร",
     "PulseAlphaRangeTooltip": "ควบคุมระยะต่ําสุดและสูงสุดของชีพจร.",
     "Color": "สี",
-    "Transform": "แปลง",
-    "Texture": "พื้นผิว",
-    "Normal Map": "แผนที่ปกติ",
-    "UV": "ยูวี",
+    "Transform": "การแปลงตำแหน่ง",
+    "Texture": "พื้นผิว (Texture)",
+    "Normal Map": "แผนที่ปกติ (Normal Map)",
+    "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "ขอบเขตโลก (Trimatinar)",
-    "Local Space (Triplanar)": "ขอบเขตพื้นที่ภายใน (Trimatinar)",
-    "Screen Space": "ขอบเขตสี",
+    "World Space (Triplanar)": "พื้นที่โลก (Triplanar)",
+    "Local Space (Triplanar)": "พื้นที่เฉพาะ (Triplanar)",
+    "Screen Space": "พื้นที่หน้าจอ",
     "Planar (Local XY)": "Planar (Local XY)",
     "Spherical (Local)": "เส้นต่อเนื่อง (แนวนอน)",
     "Cylindrical (Local)": "ไซลินโดรคอล (Lolcal)",
     "Biplanar (World)": "Bioplainar (โลก)",
     "Panosphere (Equirectangular 360)": "Pansphere (Equirctangar 360)",
     "Polar Coordinates": "พิกัดโพลาร์",
-    "Off": "ปิด",
-    "Bass": "เบส",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "ต่ํา",
     "High Mid": "สูงตรงกลาง",
-    "Treble": "เส้นพริ้วไหว",
+    "Treble": "Treble",
     "High": "สูง",
     "Medium": "สื่อ",
     "Low": "ต่ํา",
@@ -80,23 +80,23 @@
     "G": "ก",
     "B": "บี",
     "A": "A",
-    "RGBA": "แบบ RGBA",
+    "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "ทั้งหมด",
-    "Hue Shift": "ความเข้มสี",
+    "Hue Shift": "การเปลี่ยนเฉดสี",
     "Gradient": "ไล่ระดับสี",
     "Rainbow Gradient": "ไล่ระดับสี",
     "AudioLink Theme": "เชื่อมโยงเสียง ชุดตกแต่ง",
     "Direct": "ตรง",
-    "AudioLink": "เชื่อมโยงเสียง",
+    "AudioLink": "AudioLink",
     "HueShift": "ความเข้มสี",
     "Hue Shift/Gradient": "ความเข้มสี/ ความเข้มสี",
     "Velocity": "ความเร็ว",
     "Stylized_PBR": "Stylized  PBR",
     "Standard_PBR": "มาตรฐาน  PRR",
-    "Toon": "โทนสี",
+    "Toon": "การ์ตูน (Toon)",
     "Basic": "พื้นฐาน",
-    "Unlit": "ไม่สนใจ",
+    "Unlit": "ไม่มีแสง (Unlit)",
     "Flat": "แบน",
     "Ambient": "แอมเบียนต์",
     "ShadowColor": "สีเงา",
@@ -109,7 +109,7 @@
     "OverrideProbes": "โปรเซสที่แทนที่",
     "FallbackWhenProbesDark": "ถอยหลังเมื่อโครงการเดิร์ก",
     "Screen": "จอ",
-    "Metallic": "เมทัลลิก",
+    "Metallic": "ความเป็นโลหะ",
     "Specular": "สเปกตรัม",
     "Override": "การแทนที่",
     "Add": "เพิ่ม",
@@ -133,14 +133,14 @@
     "Stretched-Blinn": "ขยาย- บลินน์",
     "Default": "ค่าปริยาย",
     "Hologram": "โฮโลแกรม",
-    "Crystal": "คริสตัลName",
+    "Crystal": "คริสตัล",
     "Triplanar": "ทริปลันวาร์",
     "Iridescence": "ความทึบแสง",
-    "Glitter": "ตัวผสมเสียง",
+    "Glitter": "กลิตเตอร์",
     "Psychedelic": "จิตเวช",
     "Fractal3D": "Fractal3D",
     "Galaxy": "กาแล็กซี",
-    "Skybox": "กล่องสกาย",
+    "Skybox": "สกายบ็อกซ์",
     "EQ Bars": "แถบ EQ",
     "Continuous Curve": "เส้นโค้งต่อเนื่อง",
     "Radial": "เรเดียน",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "หน้า",
     "Back": "กลับ",
-    "Culling": "การจัดการ",
+    "Culling": "การตัดส่วน (Culling)",
     "Depth Test": "ทดสอบความลึก",
     "Comparison": "การเปรียบเทียบ",
     "Disabled": "ปิดการใช้งาน",
@@ -301,20 +301,20 @@
     "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "เป้าหมายนี้ต้องการ ' desolve' ที่จะเปิดในส่วนการแปลง."
   },
   "sections": {
-    "Performance Settings": "ตั้งค่าผล",
+    "Performance Settings": "การตั้งค่าประสิทธิภาพ",
     "Render Mode": "โหมดการแสดงผล",
-    "Main Settings": "ตั้งค่าหลัก",
-    "Procedural Textures": "พื้นผิวภาพ",
-    "Advanced Animation Controls": "การควบคุมการเคลื่อนไหวขั้นสูง",
+    "Main Settings": "การตั้งค่าหลัก",
+    "Procedural Textures": "พื้นผิวเชิงกระบวนการ",
+    "Advanced Animation Controls": "การควบคุมภาพเคลื่อนไหวขั้นสูง",
     "Color Controls": "การควบคุมสี",
-    "Lighting": "ไฟ",
+    "Lighting": "การจัดแสง",
     "Surface Style": "รูปแบบพื้นผิว",
-    "Overlays": "ค่าใช้จ่าย",
-    "Effects": "ลูกเล่น",
-    "Glitches": "นามแฝง",
-    "Transitions": "การแปลง",
-    "AudioLink Visualizers": "โปรแกรมรับข้อมูลเสียง Link",
-    "Advanced Settings": "ตั้งค่าขั้นสูง"
+    "Overlays": "โอเวอร์เลย์",
+    "Effects": "เอฟเฟกต์",
+    "Glitches": "ความผิดเพี้ยน (Glitches)",
+    "Transitions": "การเปลี่ยนผ่าน",
+    "AudioLink Visualizers": "ตัวแสดงผลตามจังหวะเสียง AudioLink",
+    "Advanced Settings": "การตั้งค่าขั้นสูง"
   },
   "properties": {
     "_RenderMode": {
@@ -330,7 +330,7 @@
       "tooltip": "ควบคุมด้วยตนเองถ้าวัสดุนี้เขียนไปยังแผ่นบัฟเฟอร์ความลึก เปิดใช้ตัวเลือกนี้ เพื่อใช้กับวัตถุโปร่งใสที่ยังคงใช้ยึดวัตถุอยู่."
     },
     "_Cutoff": {
-      "label": "อัลฟา",
+      "label": "การตัดค่าแอลฟา",
       "tooltip": "ขีดจํากัดของผลกระทบที่ถูกตัด."
     },
     "_UseUVTileDiscard": {
@@ -594,7 +594,7 @@
       "tooltip": "ควบคุมความถี่ของสัญญาณรบกวน ที่เปลี่ยนไปในแต่ละช่อง."
     },
     "_NoiseGain": {
-      "label": "เพิ่มจุด",
+      "label": "เกน",
       "tooltip": "ควบคุมการรบกวนของเสียง ที่เปลี่ยนไปในแต่ละ octave."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "ขยายขอบเขตสีเซล โดยใช้ลายเส้น."
     },
     "_NormalMap": {
-      "label": "แผนที่ปกติ",
+      "label": "แผนที่ปกติ (Normal Map)",
       "tooltip": "เพิ่มรายละเอียดพื้นผิวโดยใช้แผนที่ปกติ."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "เมทัลลิก (R) และแผนที่เรียบ (A) (ข้อสังเกต: ไม่แยแสความนุ่มนวล หากจัดทําแผนที่ความเหลื่อมล้ําแยกกัน)"
     },
     "_Metallic": {
-      "label": "เมทัลลิก",
+      "label": "ความเป็นโลหะ",
       "tooltip": "ควบคุมวิธีการที่โลหะพื้นผิวเป็น (0 = dielectric/plantic, 1 = โลหะบริสุทธิ์)."
     },
     "_Glossiness": {
-      "label": "ความนุ่มนวล",
+      "label": "ความเรียบเนียน",
       "tooltip": "ควบคุมวิธีการที่เรียบและสะท้อนพื้นผิวเป็น (0 =หยาบ/Matte, 1 = กระจกเรียบ)."
     },
     "_UseAmbientLighting": {
@@ -1034,7 +1034,7 @@
       "tooltip": "พื้นผิวที่ใช้ปกปิดตาราง ช่องสีแดงถูกใช้."
     },
     "_InvertGridMask": {
-      "label": "กลับค่าสี",
+      "label": "กลับค่ามาสก์",
       "tooltip": "เมื่อ เอา หน้ากาก ออก มา แล้ว บริเวณ ผิว ดํา ก็ จะ มอง เห็น ได้ และ บริเวณ ผิว ขาว ก็ ถูก ปิด ซ่อน ไว้."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "ความคืบหน้าของลูกเล่นละลาย (0-1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "ขอบความกว้าง",
+      "label": "ความกว้างขอบ",
       "tooltip": "ความกว้างของขอบแสงบนเส้นละลาย."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "ความเร็วแอนิเมชันในเฟรมต่อวินาที."
     },
     "_FlipbookStartFrame": {
-      "label": "เริ่มเฟรมภาพ",
+      "label": "เฟรมเริ่มต้น",
       "tooltip": "กรอบเริ่มต้นของแอนิเมชัน อนุญาตให้สําหรับออฟเซ็ต."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "ความทึบแสง/ ความแข็งแรงของเส้นตาย."
     },
     "_DecalNormal": {
-      "label": "แผนที่ปกติ",
+      "label": "แผนที่ปกติ (Normal Map)",
       "tooltip": "แผนที่ปกติสําหรับดีแคล."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "ความแข็งแกร่งของแผนที่ปกติ."
     },
     "_DecalMetallic": {
-      "label": "เมทัลลิก",
+      "label": "ความเป็นโลหะ",
       "tooltip": "ค่าโลหะสําหรับพื้นที่ดีเซล."
     },
     "_DecalSmoothness": {
-      "label": "ความนุ่มนวล",
+      "label": "ความเรียบเนียน",
       "tooltip": "ค่าความนุ่มนวลสําหรับพื้นที่การลดชั้นเสียง."
     },
     "_DecalAffectsPBR": {
@@ -1582,7 +1582,7 @@
       "tooltip": "พารามิเตอร์พลังงานสําหรับแมนเดลบูล ลองทําแบบนี้ดู!"
     },
     "_FractalIter": {
-      "label": "การทําซ้ํา",
+      "label": "จำนวนรอบการวนซ้ำ",
       "tooltip": "จํานวนของตัวเลข ความสูงเป็นรายละเอียดมากขึ้น แต่ช้า."
     },
     "_FractalKaleidoAngles": {
@@ -1886,7 +1886,7 @@
       "tooltip": "จํานวนของคลื่นลูกคลื่นลูกใหญ่ ที่ผ่าน 1 หน่วยยูวี."
     },
     "_RippleMaxRadius": {
-      "label": "ความแหลม:",
+      "label": "รัศมีการจางหาย",
       "tooltip": "ระยะทางจากศูนย์ที่คลื่นจะจางหายไปอย่างสมบูรณ์."
     },
     "_RippleWidth": {
@@ -2206,7 +2206,7 @@
       "tooltip": "ช่องระหว่างแถบ (0 = ไม่มีช่องว่าง)."
     },
     "_AudioSpectrumGain": {
-      "label": "เพิ่มจุด",
+      "label": "เกน",
       "tooltip": "การขยายสัญญาณเสียง."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "จํานวนของวงจรคลื่น."
     },
     "_AudioWaveformGain": {
-      "label": "เพิ่มจุด",
+      "label": "เกน",
       "tooltip": "การขยายสัญญาณเสียง."
     },
     "_AudioWaveformThickness": {
@@ -2398,7 +2398,7 @@
       "tooltip": "ช่องสีของหน้ากากที่จะใช้สําหรับการตัดส่วนภาพ."
     },
     "_InvertClippingMask": {
-      "label": "กลับค่าสี",
+      "label": "กลับค่ามาสก์",
       "tooltip": "กลับค่าลูกเล่นของสี."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "'เฟรมต่อวินาที' ของภาพเคลื่อนไหวรบกวน."
     },
     "_Cull": {
-      "label": "การจัดการ",
+      "label": "การตัดส่วน (Culling)",
       "tooltip": "โหมดการแยกรูปหลายเหลี่ยม (Off, Font, Back)."
     },
     "_CullShadow": {
@@ -2430,7 +2430,7 @@
       "tooltip": "โหมดการแยกรูปหลายเหลี่ยม ใช้สําหรับการไล่เงา."
     },
     "_ZTest": {
-      "label": "& ขาว",
+      "label": "ZTest",
       "tooltip": "ควบคุมการทํางานการทดสอบความลึก."
     },
     "_ColorWriteMask": {
@@ -2570,7 +2570,7 @@
       "tooltip": "ความทึบแสง/ ความเข้มของทศนิยม 2."
     },
     "_Decal2Normal": {
-      "label": "แผนที่ปกติ",
+      "label": "แผนที่ปกติ (Normal Map)",
       "tooltip": "แผนที่ ปกติ สําหรับ ข้อ 2."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "ความแข็งแกร่งของข้อ 2 แผนที่ปกติ."
     },
     "_Decal2Metallic": {
-      "label": "เมทัลลิก",
+      "label": "ความเป็นโลหะ",
       "tooltip": "ค่าโลหะสําหรับพื้นที่ Decal 2."
     },
     "_Decal2Smoothness": {
-      "label": "ความนุ่มนวล",
+      "label": "ความเรียบเนียน",
       "tooltip": "ค่าความนุ่มนวลสําหรับพื้นที่ทศนิยม 2 หน่วย."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "ความทึบแสง/ ความแข็งแรงของข้อ 3."
     },
     "_Decal3Normal": {
-      "label": "แผนที่ปกติ",
+      "label": "แผนที่ปกติ (Normal Map)",
       "tooltip": "แผนที่ ปกติ สําหรับ ข้อ 3."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "ความแข็งแกร่งของ 3 แผนที่ปกติ."
     },
     "_Decal3Metallic": {
-      "label": "เมทัลลิก",
+      "label": "ความเป็นโลหะ",
       "tooltip": "ค่าโลหะในขอบเขต 3 พื้นที่."
     },
     "_Decal3Smoothness": {
-      "label": "ความนุ่มนวล",
+      "label": "ความเรียบเนียน",
       "tooltip": "ค่าความนุ่มนวลสําหรับพื้นที่ที่ 3."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "ความแข็งแกร่งของหน้าหลังถูกพ่นออกมา."
     },
     "_HueShift": {
-      "label": "ความเข้มสี",
+      "label": "การเปลี่ยนเฉดสี",
       "tooltip": "หมุนสีรอบล้อสี."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "ความแข็งแรงที่ผสมได้ (0 = การตัดออกแบบคมชัด 1 = เต็มจังหวะ)."
     },
     "_ShadowCutoff": {
-      "label": "แปรงทาสี",
+      "label": "การตัดเงา",
       "tooltip": "อัลฟาตัดออกสําหรับหล่อเงา."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "การเพิ่มความเข้มของปฏิกิริยาเสียง."
     },
     "_ThemeShiftSpeed": {
-      "label": "ความเร็ว Shift ของความเข้มสี",
+      "label": "ความเร็วการเปลี่ยนเฉดสี",
       "tooltip": "ความเร็วของการสลับสีอย่างต่อเนื่อง."
     },
     "_ThemeTargetMask": {

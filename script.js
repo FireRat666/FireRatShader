@@ -31,10 +31,6 @@
     let translations = {};
 
     async function loadTranslations(locale) {
-        if (locale === 'en-US') {
-            translations[locale] = {};
-            return;
-        }
         if (translations[locale]) return;
         try {
             const res = await fetch('docs/i18n/' + locale + '.json', { cache: 'no-cache' });
@@ -48,7 +44,6 @@
     }
 
     function applyTranslations() {
-        if (currentLocale === 'en-US') return;
         const strings = translations[currentLocale] || {};
         const els = document.querySelectorAll('[data-i18n]');
         els.forEach(el => {
