@@ -1,24 +1,24 @@
 {
   "languageCode": "ko-KR",
   "languageName": "한국어",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "제품정보",
-    "searchPlaceholder": "검색 재료 속성 ...",
-    "matchingProperties": "일치 재산",
-    "clearSearch": "자주 묻는 질문",
-    "noPropertiesFound": "제안 없음",
+    "search": "검색",
+    "searchPlaceholder": "머티리얼 속성 검색...",
+    "matchingProperties": "일치하는 속성",
+    "clearSearch": "검색 지우기",
+    "noPropertiesFound": "일치하는 속성을 찾을 수 없습니다",
     "lockMaterial": "└ 재질 잠금 및 최적화 (클립 클릭)",
-    "unlockMaterial": "관련 상품",
+    "unlockMaterial": "머티리얼 잠금 해제",
     "lockAndOptimize": "잠금 및 최적화",
-    "savePreset": "저장 Preset ...",
-    "loadPreset": "로드 프리셋 ...",
-    "copy": "이름 *",
-    "paste": "이름 *",
-    "reset": "지원하다",
-    "language": "* 이름",
-    "cycle": "제품정보",
+    "savePreset": "프리셋 저장...",
+    "loadPreset": "프리셋 불러오기...",
+    "copy": "복사",
+    "paste": "붙여넣기",
+    "reset": "초기화",
+    "language": "언어",
+    "cycle": "순환",
     "performanceTip": "⚡: 이 자료는 자물쇠로 엽니다. 최고의 런타임 성능(특히 Quest/VR)을 위해 'Lock & Optimize'를 사용합니다. 이 스트립을 사용하지 않는 셰이퍼 패스, 죽은 코드 지점 및 제로 오버 헤드 렌더링에 대한 베이크 키워드.",
     "lockedWarning": "자료는 LOCKED (읽기 전용)입니다. toolbar를 통해 속성을 수정합니다.",
     "Global UV Controls": "글로벌 UV제어",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "알파 존 (A 채널)",
     "Color Correction": "색깔 개정",
     "Dedicated Shading Models": "전용 쉐이딩 모델",
-    "Render States": "회사연혁",
+    "Render States": "렌더 상태",
     "Camera & Mirror Visibility": "카메라 & 미러 가시성",
     "Stencil Buffer Settings": "Stencil 버퍼 설정",
     "Global AudioLink Controls": "Global AudioLink 제어",
@@ -43,17 +43,17 @@
     "AvatarParamFallbackTooltip": "로컬 avatar 매개 변수 / OSC 입력에 Fallback 세계 AudioLink 소스가 존재 할 때.",
     "Pulse Alpha Range": "맥박 알파 범위",
     "PulseAlphaRangeTooltip": "강도 펄스의 최소 및 최대 알파를 제어합니다.",
-    "Color": "색깔: 회색",
-    "Transform": "관련 기사",
-    "Texture": "이름 *",
-    "Normal Map": "일반 지도",
-    "UV": "UV 파장",
-    "UV0": "UV0의",
-    "UV1": "자외선1",
-    "UV2": "UV2의",
-    "UV3": "UV3의",
-    "World Space (Triplanar)": "세계 공간 (Triplanar)",
-    "Local Space (Triplanar)": "지역 공간 (Triplanar)",
+    "Color": "색상",
+    "Transform": "트랜스폼",
+    "Texture": "텍스처",
+    "Normal Map": "노멀 맵",
+    "UV": "UV",
+    "UV0": "UV0",
+    "UV1": "UV1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "월드 공간 (트라이플래너)",
+    "Local Space (Triplanar)": "로컬 공간 (트라이플래너)",
     "Screen Space": "스크린 공간",
     "Planar (Local XY)": "플래터 (Local XY)",
     "Spherical (Local)": "둥근 (Local)",
@@ -61,11 +61,11 @@
     "Biplanar (World)": "Biplanar (세계)",
     "Panosphere (Equirectangular 360)": "공로구 (각각 360)",
     "Polar Coordinates": "Polar 좌표",
-    "Off": "이름 *",
-    "Bass": "기본 정보",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "낮은 미드",
     "High Mid": "높은 중간",
-    "Treble": "팟캐스트",
+    "Treble": "Treble",
     "High": "주요 특징",
     "Medium": "주요 특징",
     "Low": "이름 *",
@@ -80,23 +80,23 @@
     "G": "사이트맵",
     "B": "₢ 킹",
     "A": "·",
-    "RGBA": "사이트맵",
+    "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "모든 것",
-    "Hue Shift": "Hue 시프트",
+    "Hue Shift": "색조 이동",
     "Gradient": "사이트맵",
     "Rainbow Gradient": "레인보우 Gradient",
     "AudioLink Theme": "오디오 링크 이름 *",
     "Direct": "제품정보",
-    "AudioLink": "오디오 링크",
+    "AudioLink": "AudioLink",
     "HueShift": "HueShift의 특징",
     "Hue Shift/Gradient": "Hue 시프트/Gradient",
     "Velocity": "언어 선택",
     "Stylized_PBR": "사이트맵",
     "Standard_PBR": "표준 PBR",
-    "Toon": "뚱 베어",
-    "Basic": "기본 정보",
-    "Unlit": "뚱 베어",
+    "Toon": "툰",
+    "Basic": "베이직",
+    "Unlit": "언릿",
     "Flat": "뚱 베어",
     "Ambient": "주요 특징",
     "ShadowColor": "그림자색",
@@ -109,7 +109,7 @@
     "OverrideProbes": "채용정보",
     "FallbackWhenProbesDark": "가을backWhenProbesDark",
     "Screen": "제품정보",
-    "Metallic": "금속",
+    "Metallic": "금속성",
     "Specular": "제품 정보",
     "Override": "더 보기",
     "Add": "기타",
@@ -133,13 +133,13 @@
     "Stretched-Blinn": "스트레치 블린",
     "Default": "기본 정보",
     "Hologram": "홀로그램",
-    "Crystal": "제품 정보",
+    "Crystal": "크리스탈",
     "Triplanar": "여행 정보",
     "Iridescence": "아이라이드",
-    "Glitter": "사이트맵",
+    "Glitter": "글리터",
     "Psychedelic": "팟캐스트",
     "Fractal3D": "Fractal3D는",
-    "Galaxy": "팟캐스트",
+    "Galaxy": "갤럭시",
     "Skybox": "스카이박스",
     "EQ Bars": "EQ 바",
     "Continuous Curve": "연속 곡선",
@@ -252,7 +252,7 @@
     "Z": "사이트맵",
     "Front": "기타",
     "Back": "이름 *",
-    "Culling": "회사 소개",
+    "Culling": "컬링",
     "Depth Test": "깊이 시험",
     "Comparison": "제품정보",
     "Disabled": "지원하다",
@@ -318,7 +318,7 @@
   },
   "properties": {
     "_RenderMode": {
-      "label": "형태를 렌더링",
+      "label": "렌더 모드",
       "tooltip": "그늘이 렌더링되는 방법을 제어합니다. Opaque는 가장 빠릅니다. Cutout는 어려운 투명성을 위해 입니다. 투명한은 연약하고, 혼합한 효력을 위해 입니다."
     },
     "_PerformanceLevel": {
@@ -330,7 +330,7 @@
       "tooltip": "이 자료가 깊이 버퍼에 쓰면 수동으로 제어합니다. 아직도 그 뒤에 물체를 덮는 투명한 물체에 이것을 가능하게 합니다."
     },
     "_Cutoff": {
-      "label": "알파 커트오프",
+      "label": "알파 컷오프",
       "tooltip": "컷 아웃 효과의 알파 임계값."
     },
     "_UseUVTileDiscard": {
@@ -358,7 +358,7 @@
       "tooltip": "솔리드베이스 색상을 토글."
     },
     "_BaseColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "텍스처를 사용하지 않을 때 홀로그램의 주요 색상."
     },
     "_BaseColor_Shift": {
@@ -422,7 +422,7 @@
       "tooltip": "두번째 방출 지도 (RGB)"
     },
     "_Emission2Color": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "두번째 방출 색깔"
     },
     "_Emission2Strength": {
@@ -454,7 +454,7 @@
       "tooltip": "세 번째 배출지도 (RGB)"
     },
     "_Emission3Color": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "세 번째 방출 색상"
     },
     "_Emission3Strength": {
@@ -486,7 +486,7 @@
       "tooltip": "제 4 방출 지도 (RGB)"
     },
     "_Emission4Color": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "제 4 방출 색깔"
     },
     "_Emission4Strength": {
@@ -594,7 +594,7 @@
       "tooltip": "각 옥타브와 소음의 빈도를 제어합니다."
     },
     "_NoiseGain": {
-      "label": "이름 *",
+      "label": "게인",
       "tooltip": "각 octave와 소음의 진폭을 제어합니다."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "주변의 망각지도를 사용하여 cel shadow 경계를 조절합니다."
     },
     "_NormalMap": {
-      "label": "일반 지도",
+      "label": "노멀 맵",
       "tooltip": "일반 맵을 사용하여 표면 세부 사항 추가."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "Metallic (R) 및 매끈함 (A) 지도. (주: 스무디움은 별도의 거친 지도가 제공된 경우 무시됩니다)"
     },
     "_Metallic": {
-      "label": "금속",
+      "label": "금속성",
       "tooltip": "금속이 표면이 (0 = 유전 / 플라스틱, 1 = 순수 금속) 인 방법을 제어합니다."
     },
     "_Glossiness": {
-      "label": "연락처",
+      "label": "부드러움",
       "tooltip": "표면이 (0 = 거친 / 매트, 1 = 매끄럽게 미러) 인 방법을 제어합니다."
     },
     "_UseAmbientLighting": {
@@ -730,7 +730,7 @@
       "tooltip": "사용자 정의 빛 방향 벡터."
     },
     "_LightColorOverride": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "사용자 정의 빛 색상 통."
     },
     "_LightIntensity": {
@@ -810,7 +810,7 @@
       "tooltip": "SSS 효과의 전반적인 힘."
     },
     "_SSS_Radius": {
-      "label": "채용정보",
+      "label": "반지름",
       "tooltip": "재료 내에서 멀리 빛이 흩어져."
     },
     "_SSS_Color": {
@@ -930,7 +930,7 @@
       "tooltip": "Procedural 격자 작풍 (사각, 6각형, 레이디얼, wireframe)."
     },
     "_GridColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "그리드 라인의 색상."
     },
     "_GridColor_Shift": {
@@ -1034,7 +1034,7 @@
       "tooltip": "그리드에 사용되는 질감. 빨간 수로는 사용됩니다."
     },
     "_InvertGridMask": {
-      "label": "Invert 마스크",
+      "label": "마스크 반전",
       "tooltip": "가면을, 그래서 까만 지역은 눈에 보이는 백색 지역은 숨겨집니다."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "용해 효과의 진행 (0-1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "가장자리 폭",
+      "label": "가장자리 너비",
       "tooltip": "녹슬지 않는 선에 빛나는 가장자리의 폭."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "초당 프레임의 애니메이션 속도."
     },
     "_FlipbookStartFrame": {
-      "label": "시작 구조",
+      "label": "시작 프레임",
       "tooltip": "애니메이션의 시작 프레임, 오프셋을 허용."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Decal의 전체 불투명/힘."
     },
     "_DecalNormal": {
-      "label": "일반 지도",
+      "label": "노멀 맵",
       "tooltip": "Decal의 정상지도."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "Decal 정상 지도의 힘."
     },
     "_DecalMetallic": {
-      "label": "금속",
+      "label": "금속성",
       "tooltip": "Decal 영역의 금속 값."
     },
     "_DecalSmoothness": {
-      "label": "연락처",
+      "label": "부드러움",
       "tooltip": "Decal 지역을 위한 매끈함 가치."
     },
     "_DecalAffectsPBR": {
@@ -1534,7 +1534,7 @@
       "tooltip": "Decal을 통해 Normal, Metallic 및 Smoothness를 수정할 수 있습니다."
     },
     "_SurfaceStyle": {
-      "label": "지상 작풍",
+      "label": "서피스 스타일",
       "tooltip": ""
     },
     "_PsychedelicColorShift": {
@@ -1582,7 +1582,7 @@
       "tooltip": "Mandelbulb를 위한 힘 모수. 이것을 시도하십시오!"
     },
     "_FractalIter": {
-      "label": "관련 기사",
+      "label": "반복",
       "tooltip": "반복의 수. 더 이상 더 느리다."
     },
     "_FractalKaleidoAngles": {
@@ -1710,7 +1710,7 @@
       "tooltip": "반짝이는 색상이 표면에 혼합되는 방법을 제어합니다. 첨가물은 overbright를 얻을 수 있습니다. Lerp는 기본 색상을 대체합니다 (emissive). 최대는 반짝이 색상보다 어둡게하지 않습니다."
     },
     "_GlitterColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "스파클의 색상."
     },
     "_GlitterColor_Shift": {
@@ -1790,7 +1790,7 @@
       "tooltip": ""
     },
     "_IntersectionColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "교차 효과의 색상."
     },
     "_IntersectionColor_Shift": {
@@ -1886,15 +1886,15 @@
       "tooltip": "1개의 UV 단위를 통하여 동심 잔물결 반지의 수."
     },
     "_RippleMaxRadius": {
-      "label": "Fadeout 반경",
+      "label": "페이드아웃 반지름",
       "tooltip": "Ripples가 완전히 퇴색 한 중심의 거리."
     },
     "_RippleWidth": {
-      "label": "제품 정보",
+      "label": "너비",
       "tooltip": "각 개별 리플 링의 폭."
     },
     "_RippleColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "잔물의 색상."
     },
     "_RippleColor_Shift": {
@@ -2158,7 +2158,7 @@
       "tooltip": "CRT 모니터의 모습을 시뮬레이션합니다."
     },
     "_ScanlineColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "스캔 라인의 색상과 투명성."
     },
     "_ScanlineColor_Shift": {
@@ -2206,7 +2206,7 @@
       "tooltip": "막대기 사이 간격 (0 = 간격 없음)."
     },
     "_AudioSpectrumGain": {
-      "label": "이름 *",
+      "label": "게인",
       "tooltip": "오디오 신호의 증폭."
     },
     "_AudioSpectrumThickness": {
@@ -2222,7 +2222,7 @@
       "tooltip": "더 자연스러운베이스/리블 밸런스를 위한 logarithmic 주파수 스케일링을 사용합니다."
     },
     "_AudioSpectrumColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "1 차 색깔 (또는 gradient를 위한 저주파 색깔)."
     },
     "_AudioSpectrumColor2": {
@@ -2298,7 +2298,7 @@
       "tooltip": "파형 주기의 수."
     },
     "_AudioWaveformGain": {
-      "label": "이름 *",
+      "label": "게인",
       "tooltip": "오디오 신호의 증폭."
     },
     "_AudioWaveformThickness": {
@@ -2310,7 +2310,7 @@
       "tooltip": "불빛의 불빛."
     },
     "_AudioWaveformColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "1 차적인 파형 색깔."
     },
     "_AudioWaveformColor2": {
@@ -2398,7 +2398,7 @@
       "tooltip": "클립을 위해 사용하는 가면의 어떤 색깔 수로."
     },
     "_InvertClippingMask": {
-      "label": "Invert 마스크",
+      "label": "마스크 반전",
       "tooltip": "마스크 효과 (white = clipped)를 변환합니다."
     },
     "_UseNoise": {
@@ -2410,7 +2410,7 @@
       "tooltip": "소음의 힘."
     },
     "_NoiseColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "소음 입자의 색상."
     },
     "_NoiseColor_Shift": {
@@ -2422,7 +2422,7 @@
       "tooltip": "소음 애니메이션의 두 번째 당 '프레임."
     },
     "_Cull": {
-      "label": "회사 소개",
+      "label": "컬링",
       "tooltip": "Polygon culling 형태 (오프, 정면, 뒤)."
     },
     "_CullShadow": {
@@ -2430,7 +2430,7 @@
       "tooltip": "Shadow Casting pass에 특히 사용되는 Polygon culling 모드."
     },
     "_ZTest": {
-      "label": "Z테스트",
+      "label": "ZTest",
       "tooltip": "깊이 테스트를 수행하는 방법을 제어합니다."
     },
     "_ColorWriteMask": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Decal 2의 전체 불투명/힘."
     },
     "_Decal2Normal": {
-      "label": "일반 지도",
+      "label": "노멀 맵",
       "tooltip": "정상적인 Decal 2. 지도."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "Decal 2 정상적인 지도의 힘."
     },
     "_Decal2Metallic": {
-      "label": "금속",
+      "label": "금속성",
       "tooltip": "Decal 2 영역의 금속 값."
     },
     "_Decal2Smoothness": {
-      "label": "연락처",
+      "label": "부드러움",
       "tooltip": "Decal 2 영역의 부드러움 값."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Decal의 전체 불투명/힘 3."
     },
     "_Decal3Normal": {
-      "label": "일반 지도",
+      "label": "노멀 맵",
       "tooltip": "Decal 3.를 위한 정상적인 지도."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "Decal의 힘 3 정상적인 지도."
     },
     "_Decal3Metallic": {
-      "label": "금속",
+      "label": "금속성",
       "tooltip": "Decal 3 영역의 금속 값."
     },
     "_Decal3Smoothness": {
-      "label": "연락처",
+      "label": "부드러움",
       "tooltip": "Decal 3 영역에 대한 매끄러운 가치."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "뒤 얼굴 방출의 힘."
     },
     "_HueShift": {
-      "label": "Hue 시프트",
+      "label": "색조 이동",
       "tooltip": "색깔 바퀴의 주위에 hue를 자전하십시오."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Dither 혼합 강도 (0 = 날카로운 컷 아웃, 1 = 전체 stipple)."
     },
     "_ShadowCutoff": {
-      "label": "섀도 컷오프",
+      "label": "그림자 컷오프",
       "tooltip": "그림자 주물을 위한 알파 커트오프 문턱."
     },
     "_UseShadowCutoffOverride": {
@@ -3130,7 +3130,7 @@
       "tooltip": "형광지도를 위한 좌표 채널 (UV0 또는 UV1)를 선택하십시오."
     },
     "_FluorescenceColor": {
-      "label": "색깔: 회색",
+      "label": "색상",
       "tooltip": "형광 HDR 색깔 Tint"
     },
     "_FluorescenceStrength": {
@@ -3334,7 +3334,7 @@
       "tooltip": "AudioLink 반응의 묽게함."
     },
     "_ThemeShiftSpeed": {
-      "label": "Hue 이동 속도",
+      "label": "색조 이동 속도",
       "tooltip": "지속적인 hue 이동 교체의 속도."
     },
     "_ThemeTargetMask": {

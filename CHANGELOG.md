@@ -4,6 +4,44 @@ All notable changes to FireRatShader are documented in this file.
 
 Versions cover both the BRP (`FireRatShader/`) and URP (`FireRatShaderURP/`) pipeline variants, which are kept in sync.
 
+## [1.1.1] - 2026-09-03
+
+### Added
+- **VRChat Avatar Setup Tool**: Automated tool (`FireRatAvatarSetup.cs`) under `Tools > FireRat Shader > Avatar Setup` to generate VRChat Expressions Menus, radial puppets, toggles, submenus, and parameter assets for controlling shader features in-game with built-in 256-bit parameter budget tracking.
+- **Safe Optional VRChat SDK Integration**: Dedicated assembly definition (`FireRatShader.AvatarSetup.Editor.asmdef`) with `versionDefines` and `defineConstraints` for `com.vrchat.avatars`, plus a fallback window (`FireRatAvatarSetupFallback.cs`) so the project compiles cleanly with zero errors in non-VRChat Unity projects.
+- **LTCGI Polygon Area Lighting**: Real-time Linearly Transformed Cosines (LTCGI) area lighting evaluation with polygon clipping and specular/diffuse response across both BRP and URP (`_UseLTCGI`).
+- **Multi-Language Web Documentation & i18n System**: Full documentation translation pipeline with localized docs in 14 languages (de-DE, en-US, es-ES, fr-FR, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, th-TH, vi-VN, zh-CN, zh-TW) and a dynamic in-page language switcher.
+
+### Changed
+- **Forward+ & Clustered Lighting Upgrade (URP 17+ / Unity 6)**: Modernized additional light looping to use `_CLUSTER_LIGHT_LOOP` instead of deprecated `_FORWARD_PLUS`.
+- **LTCGI & Dither Integer Performance**: Optimized LTCGI polygon loops using unsigned integer (`uint`) arithmetic and converted 4x4 Bayer matrix lookup to bitwise operations to eliminate slow signed integer division.
+- **AudioLink Frequency Band Pre-Caching**: Pre-cached all four AudioLink frequency bands once per fragment, eliminating redundant texture fetches and branching across audio-reactive overlays, emission layers, and transition effects.
+- **URP Additional Light Loop Performance**: Reused pre-sampled hair specular mask across main and additional lights in URP forward shading, eliminating redundant texture fetches per light.
+- **BRP Refraction Grab Texture Fallback**: Added `_GrabTexture` fallback handling for BRP screen refraction when camera depth texture is unavailable.
+- **Master Shaders Property Parity**: Master shaders synchronized to 833 properties across all 6 shaders in 100% lockstep parity.
+
+### Fixed
+- **Parallax Occlusion Mapping Derivative Gradients**: Precomputed UV screen derivatives (`ddx`/`ddy`) outside the POM linear search loop to prevent undefined gradient calculation warnings in dynamic loops.
+- **ForwardAdd Fur & Detail Normal Rendering**: Added full fur shading and detail normal evaluation (`detailNormalSample`) to BRP ForwardAdd lighting passes.
+- **Fur Geometry Shader Vertex Mutation**: Fixed vertex copy mutation in BRP and URP fur geometry shaders and enabled proper geometry stages on ForwardAdd passes.
+- **ShadowCaster & DepthOnly Pass Parity**: Added missing dissolve, grid mask keywords, and stencil operations across URP ShadowCaster and DepthOnly auxiliary passes.
+- **Meta Pass Emission & Lightmapping**: Corrected emission calculation, texture sampling, and instancing setups in both BRP and URP Meta passes for clean lightmap baking.
+- **AudioLink Uninitialized Variable Flow**: Initialized explicit return variables and unified branch exits in `FRAudioSpectrum`, `FRAudioWaveform`, and `EvaluateAudioSpectrumWaterfall` to eliminate uninitialized variable compiler warnings.
+- **DepthNormals Pass Vertex Collapse Compilation**: Declared missing `on_end`, `vis_end`, and `off_end` variables in `FireRatDepthNormals.cginc` for vertex collapse animations.
+- **Material Lock Optimizer Inactive Keyword Stripping**: Corrected `StripShaderFeatures` in `FireRatShaderOptimizer.cs` where disabled single-keyword pragmas were incorrectly `#define`d as `1` instead of being stripped when locking materials.
+- **Pipeline Parity & Animation Timing**: Aligned vertex collapse and planar wipe animation time calculations across BRP and URP passes (`FireRatDepthNormalsURP.hlsl`, `FireRatMotionVectors.cginc`, `FireRatMotionVectorsURP.hlsl`).
+- **Light Volume Spot Angle Division**: Guarded against potential division by zero in light volume spot light attenuation math.
+- **URP Outline Fog & LookAt Normals**: Added fog calculation to URP Outline pass and corrected normal calculation for LookAt billboarding.
+- **Internal Parallax Tangent Space View Direction**: Corrected matrix multiplication order (`mul(viewDir, tbn)`) for transforming the camera view vector into tangent space, fixing inverted interior parallax ray offsets.
+- **SDF Face Shadow Tangent Basis**: Corrected the world-space tangent basis vector unpacking in BRP and URP face shadow lighting (`float3(i.tspace0.x, i.tspace1.x, i.tspace2.x)` instead of `i.tspace0.xyz`), resolving distorted face shadow angles.
+- **BRP Clear Coat Reflection Probe Blending**: Replaced raw single-probe cubemap sampling with `GetBiRPIndirectSpecular` to support box projection and dual reflection probe blending on clear coat reflections.
+- **Procedural Texture Sampling Derivative Artifacts**: Converted stochastic, internal parallax, bicubic, and animated gradient lookups to explicit LOD sampling (`tex2Dlod` / `SAMPLE_TEXTURE2D_LOD`), preventing mipmap derivative spikes and compilation warnings in dynamic branches.
+- **Material Lock Optimizer Trailing Pragma Comments**: Stripped trailing line comments (`//`) from `#pragma` directives during keyword regex extraction in `FireRatShaderOptimizer.cs` to prevent comment text from being incorrectly parsed as keywords.
+- **Inspector Property Search Cross-Version Support**: Handled `[HideInInspector]` property detection via reflection across Unity versions (`propertyFlags` vs. `flags`) in `FireRatShaderGUIBase.Drawers.cs`, resolving obsolete API warnings and ensuring hidden properties remain filtered in Unity 2022 and Unity 6.
+- **Shade Shift Map Keyword Synchronization**: Registered `_USE_SHADE_SHIFT_ON` keyword and UV requirements in the material editor so shade shift maps activate properly at runtime.
+- **Global Auto Color Shift Evaluation**: Fixed early exit check in `GetAnimatedColor` so automatic color and gradient animations run even when manual shift values are set to zero.
+- **Specular Highlight & Light Volume NaN Guards**: Guarded Kajiya-Kay specular highlights against zero-sin power evaluation NaNs, and added division-by-zero guards to Light Volumes GGX distribution and distance attenuation.
+
 ## [1.1.0] - 2026-08-28
 
 ### Added

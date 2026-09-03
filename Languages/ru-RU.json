@@ -1,23 +1,23 @@
 {
   "languageCode": "ru-RU",
   "languageName": "Русский",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
     "search": "Поиск",
-    "searchPlaceholder": "Поиск свойств материалов...",
-    "matchingProperties": "Соответствующие свойства",
-    "clearSearch": "Четкий поиск",
-    "noPropertiesFound": "Не найдено никаких свойств",
+    "searchPlaceholder": "Поиск свойств материала...",
+    "matchingProperties": "Совпадающие свойства",
+    "clearSearch": "Очистить поиск",
+    "noPropertiesFound": "Не найдено совпадающих свойств",
     "lockMaterial": "Материал заблокирован и оптимизирован (нажмите, чтобы разблокировать)",
     "unlockMaterial": "Разблокировать материал",
-    "lockAndOptimize": "Lock & Optimize скачать",
-    "savePreset": "Сохранить Preset...",
-    "loadPreset": "Загрузить Preset...",
-    "copy": "Копия",
-    "paste": "Паста",
+    "lockAndOptimize": "Заблокировать и оптимизировать",
+    "savePreset": "Сохранить пресет...",
+    "loadPreset": "Загрузить пресет...",
+    "copy": "Копировать",
+    "paste": "Вставить",
     "reset": "Сброс",
-    "language": "Язык языка",
+    "language": "Язык",
     "cycle": "Цикл",
     "performanceTip": "Совет по производительности: этот материал разблокирован. Для лучшей производительности во время выполнения (особенно на Quest / VR) используйте «Заблокировать и оптимизировать» выше. Это полоски неиспользуемых проходов шейдера, ветвей мертвого кода и ключевых слов для рендеринга с нулевым накладным расходом.",
     "lockedWarning": "Материал закрыт (только для чтения). Разблокируйте через панель инструментов для изменения свойств.",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Альфа-зона (канал)",
     "Color Correction": "Коррекция цвета",
     "Dedicated Shading Models": "Выделенные модели затенения",
-    "Render States": "Отдать государства",
+    "Render States": "Состояния рендеринга",
     "Camera & Mirror Visibility": "Камера и зеркальная видимость",
     "Stencil Buffer Settings": "Настройки буфера Stencil",
     "Global AudioLink Controls": "Глобальный контроль AudioLink",
@@ -46,26 +46,26 @@
     "Color": "Цвет",
     "Transform": "Трансформация",
     "Texture": "Текстура",
-    "Normal Map": "Нормальная карта",
-    "UV": "УФ",
+    "Normal Map": "Карта нормалей",
+    "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Мировое пространство (Трипланар)",
-    "Local Space (Triplanar)": "Местное пространство (Трипланар)",
-    "Screen Space": "Пространство экрана",
+    "World Space (Triplanar)": "Мировое пространство (Triplanar)",
+    "Local Space (Triplanar)": "Локальное пространство (Triplanar)",
+    "Screen Space": "Экранное пространство",
     "Planar (Local XY)": "Планар (местный XY)",
     "Spherical (Local)": "Сферический (местный)",
     "Cylindrical (Local)": "Цилиндрический (местный)",
     "Biplanar (World)": "Бипланар (Мир)",
     "Panosphere (Equirectangular 360)": "Паносфера (Equirectangular 360)",
     "Polar Coordinates": "Полярные координаты",
-    "Off": "Оставить",
-    "Bass": "Басс",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "Низкий уровень",
     "High Mid": "Средний",
-    "Treble": "Трепет",
+    "Treble": "Treble",
     "High": "Высокий",
     "Medium": "Средний",
     "Low": "Низкий",
@@ -80,10 +80,10 @@
     "G": "G",
     "B": "B",
     "A": "А",
-    "RGBA": "РГБА",
+    "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Все",
-    "Hue Shift": "Сдвиг Хюэ",
+    "Hue Shift": "Сдвиг цветового тона",
     "Gradient": "Градиент",
     "Rainbow Gradient": "Радужный градиент",
     "AudioLink Theme": "AudioLink Тема",
@@ -96,7 +96,7 @@
     "Standard_PBR": "Стандартный PBR",
     "Toon": "Тун",
     "Basic": "Базовый",
-    "Unlit": "Без света",
+    "Unlit": "Без освещения",
     "Flat": "Плоский",
     "Ambient": "Окружающая среда",
     "ShadowColor": "Shadow Color",
@@ -109,7 +109,7 @@
     "OverrideProbes": "Оверрайдзонды",
     "FallbackWhenProbesDark": "Обсуждение FallbackWhenProbesDark",
     "Screen": "Экран",
-    "Metallic": "Металлический",
+    "Metallic": "Металличность",
     "Specular": "Необычный",
     "Override": "Отменять",
     "Add": "Добавить",
@@ -133,10 +133,10 @@
     "Stretched-Blinn": "Растянутый-Блинн",
     "Default": "По умолчанию",
     "Hologram": "Голограмма",
-    "Crystal": "Кристаллический",
+    "Crystal": "Кристалл",
     "Triplanar": "Трипланар",
     "Iridescence": "Иридисценция",
-    "Glitter": "Блеск",
+    "Glitter": "Блестки",
     "Psychedelic": "Психоделический",
     "Fractal3D": "Fractal3D",
     "Galaxy": "Галактика",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "Фронт",
     "Back": "Назад",
-    "Culling": "Каллинг",
+    "Culling": "Отсечение (Culling)",
     "Depth Test": "Глубинное испытание",
     "Comparison": "Сравнение",
     "Disabled": "Инвалид",
@@ -302,23 +302,23 @@
   },
   "sections": {
     "Performance Settings": "Настройки производительности",
-    "Render Mode": "Режим Рендера",
+    "Render Mode": "Режим рендеринга",
     "Main Settings": "Основные настройки",
     "Procedural Textures": "Процедурные текстуры",
-    "Advanced Animation Controls": "Расширенный анимационный контроль",
-    "Color Controls": "Цветовой контроль",
+    "Advanced Animation Controls": "Расширенное управление анимацией",
+    "Color Controls": "Управление цветом",
     "Lighting": "Освещение",
-    "Surface Style": "Поверхность стиль",
-    "Overlays": "Накладки",
-    "Effects": "Последствия",
-    "Glitches": "Глюки",
+    "Surface Style": "Стиль поверхности",
+    "Overlays": "Оверлеи",
+    "Effects": "Эффекты",
+    "Glitches": "Глитчи",
     "Transitions": "Переходы",
-    "AudioLink Visualizers": "Визуализатор AudioLink",
+    "AudioLink Visualizers": "Визуализаторы AudioLink",
     "Advanced Settings": "Расширенные настройки"
   },
   "properties": {
     "_RenderMode": {
-      "label": "Режим Рендера",
+      "label": "Режим рендеринга",
       "tooltip": "Контролирует, как выполняется шейдер. Опаке быстрее. Cutout – это жесткая прозрачность. Прозрачный для мягких, смешанных эффектов."
     },
     "_PerformanceLevel": {
@@ -330,7 +330,7 @@
       "tooltip": "Ручно контролировать, если этот материал записывается в буфер глубины. Включите это для прозрачных объектов, которые все равно должны закрывать объекты за ними."
     },
     "_Cutoff": {
-      "label": "Альфа Катофф",
+      "label": "Отсечка альфа-канала",
       "tooltip": "Альфа-порог для эффекта выреза."
     },
     "_UseUVTileDiscard": {
@@ -594,7 +594,7 @@
       "tooltip": "Контролирует, как частота шума меняется с каждой октавой."
     },
     "_NoiseGain": {
-      "label": "Выигрыш",
+      "label": "Усиление",
       "tooltip": "Контролирует изменение амплитуды шума с каждой октавой."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "Модулирует границу тени с помощью карты окклюзии окружающей среды."
     },
     "_NormalMap": {
-      "label": "Нормальная карта",
+      "label": "Карта нормалей",
       "tooltip": "Добавляет детали поверхности с помощью обычной карты."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "Металлическая (R) и гладкие (A) карты. (Примечание: Гладкость игнорируется, если предоставлена отдельная карта грубости)"
     },
     "_Metallic": {
-      "label": "Металлический",
+      "label": "Металличность",
       "tooltip": "Контролирует металлическую поверхность (0 = диэлектрический/пластиковый, 1 = чистый металл)."
     },
     "_Glossiness": {
-      "label": "Мягкость",
+      "label": "Гладкость",
       "tooltip": "Контролирует, насколько гладкая и отражающая поверхность (0 = грубая / матовая, 1 = зеркальная гладкая)."
     },
     "_UseAmbientLighting": {
@@ -1034,7 +1034,7 @@
       "tooltip": "Текстура используется для маскировки сетки. Используется красный канал."
     },
     "_InvertGridMask": {
-      "label": "Перевернутая маска",
+      "label": "Инвертировать маску",
       "tooltip": "Переворачивает маску, поэтому черные области видны, а белые скрыты."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "Прогресс эффекта растворения (0-1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "Крайний вид",
+      "label": "Ширина края",
       "tooltip": "Ширина светящегося края на линии растворения."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "Скорость анимации в кадрах в секунду."
     },
     "_FlipbookStartFrame": {
-      "label": "Начать фрейм",
+      "label": "Начальный кадр",
       "tooltip": "Стартовый кадр анимации, позволяющий сместить."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Общая непрозрачность/сила декаля."
     },
     "_DecalNormal": {
-      "label": "Нормальная карта",
+      "label": "Карта нормалей",
       "tooltip": "Обычная карта для декаля."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "Прочность декальной нормальной карты."
     },
     "_DecalMetallic": {
-      "label": "Металлический",
+      "label": "Металличность",
       "tooltip": "Металлическое значение для области декаля."
     },
     "_DecalSmoothness": {
-      "label": "Мягкость",
+      "label": "Гладкость",
       "tooltip": "Значение гладкости для области декаля."
     },
     "_DecalAffectsPBR": {
@@ -1534,7 +1534,7 @@
       "tooltip": "Возможность модифицировать Normal, Metallic и Smoothness через декаль."
     },
     "_SurfaceStyle": {
-      "label": "Поверхность стиль",
+      "label": "Стиль поверхности",
       "tooltip": ""
     },
     "_PsychedelicColorShift": {
@@ -1886,11 +1886,11 @@
       "tooltip": "Количество концентрических пульсирующих колец в 1 УФ-блоке."
     },
     "_RippleMaxRadius": {
-      "label": "Фадеут Радиус",
+      "label": "Радиус затухания",
       "tooltip": "Расстояние от центра, на котором рябь полностью исчезает."
     },
     "_RippleWidth": {
-      "label": "Широта",
+      "label": "Ширина",
       "tooltip": "Ширина каждого отдельного пульсирующего кольца."
     },
     "_RippleColor": {
@@ -2206,7 +2206,7 @@
       "tooltip": "Разрыв между барами (0 = отсутствие зазора)."
     },
     "_AudioSpectrumGain": {
-      "label": "Выигрыш",
+      "label": "Усиление",
       "tooltip": "Усиление звукового сигнала."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "Количество видимых циклов формы волны."
     },
     "_AudioWaveformGain": {
-      "label": "Выигрыш",
+      "label": "Усиление",
       "tooltip": "Усиление звукового сигнала."
     },
     "_AudioWaveformThickness": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Какой цветной канал маски использовать для обрезки."
     },
     "_InvertClippingMask": {
-      "label": "Перевернутая маска",
+      "label": "Инвертировать маску",
       "tooltip": "Эффект маски (белый = обрезанный)."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "«Кадры в секунду» шумовой анимации."
     },
     "_Cull": {
-      "label": "Каллинг",
+      "label": "Отсечение (Culling)",
       "tooltip": "Режим выбраковки полигона (Off, Front, Back)."
     },
     "_CullShadow": {
@@ -2430,7 +2430,7 @@
       "tooltip": "Режим отбраковки полигона, используемый специально для пропуска теней."
     },
     "_ZTest": {
-      "label": "Тест",
+      "label": "ZTest",
       "tooltip": "Контролирует, как проводится глубинное тестирование."
     },
     "_ColorWriteMask": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Общая непрозрачность/сила 2 декабря."
     },
     "_Decal2Normal": {
-      "label": "Нормальная карта",
+      "label": "Карта нормалей",
       "tooltip": "Обычная карта для 2 декабря."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "Обычная карта Decal 2."
     },
     "_Decal2Metallic": {
-      "label": "Металлический",
+      "label": "Металличность",
       "tooltip": "Металлическое значение для области Decal 2."
     },
     "_Decal2Smoothness": {
-      "label": "Мягкость",
+      "label": "Гладкость",
       "tooltip": "Значение гладкости для области Decal 2."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Общая непрозрачность/сила 3 декабря."
     },
     "_Decal3Normal": {
-      "label": "Нормальная карта",
+      "label": "Карта нормалей",
       "tooltip": "Обычная карта для 3 декабря."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "Обычная карта Decal 3."
     },
     "_Decal3Metallic": {
-      "label": "Металлический",
+      "label": "Металличность",
       "tooltip": "Металлическое значение для области Decal 3."
     },
     "_Decal3Smoothness": {
-      "label": "Мягкость",
+      "label": "Гладкость",
       "tooltip": "Значение гладкости для области Decal 3."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Сила излучения на задней поверхности."
     },
     "_HueShift": {
-      "label": "Сдвиг Хюэ",
+      "label": "Сдвиг цветового тона",
       "tooltip": "Вращает оттенок вокруг цветового колеса."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Прочность смеси дитера (0 = резкая вырезка, 1 = полная стрижка)."
     },
     "_ShadowCutoff": {
-      "label": "Shadow Cutoff",
+      "label": "Отсечка тени",
       "tooltip": "Альфа порог отсечения для отбрасывания теней."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Умножитель интенсивности реакции AudioLink."
     },
     "_ThemeShiftSpeed": {
-      "label": "Hue Shift Speed",
+      "label": "Скорость сдвига тона",
       "tooltip": "Скорость непрерывной смены оттенков."
     },
     "_ThemeTargetMask": {

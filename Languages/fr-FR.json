@@ -1,21 +1,21 @@
 {
   "languageCode": "fr-FR",
   "languageName": "Français",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "Recherche",
-    "searchPlaceholder": "Recherche de propriétés matérielles...",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher des propriétés de matériau...",
     "matchingProperties": "Propriétés correspondantes",
     "clearSearch": "Effacer la recherche",
-    "noPropertiesFound": "Aucune propriété trouvée correspondant",
+    "noPropertiesFound": "Aucune propriété correspondante trouvée",
     "lockMaterial": "Matériel verrouillé et optimisé (Cliquez pour déverrouiller)",
-    "unlockMaterial": "Déverrouillage du matériau",
+    "unlockMaterial": "Déverrouiller le matériau",
     "lockAndOptimize": "Verrouiller et optimiser",
     "savePreset": "Enregistrer le préréglage...",
-    "loadPreset": "Chargez le préréglage...",
+    "loadPreset": "Charger le préréglage...",
     "copy": "Copier",
-    "paste": "Pâte",
+    "paste": "Coller",
     "reset": "Réinitialiser",
     "language": "Langue",
     "cycle": "Cycle",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Zone alpha (canal A)",
     "Color Correction": "Correction de couleur",
     "Dedicated Shading Models": "Modèles d'ombrage dédiés",
-    "Render States": "États bénéficiaires",
+    "Render States": "États de rendu",
     "Camera & Mirror Visibility": "Visibilité de l'appareil photo et du miroir",
     "Stencil Buffer Settings": "Paramètres du tampon Stencil",
     "Global AudioLink Controls": "Contrôles AudioLink globaux",
@@ -44,16 +44,16 @@
     "Pulse Alpha Range": "Gamme alpha d'impulsions",
     "PulseAlphaRangeTooltip": "Contrôle le minimum et le maximum alpha pour l'impulsion d'intensité.",
     "Color": "Couleur",
-    "Transform": "Transformer",
+    "Transform": "Transformation",
     "Texture": "Texture",
-    "Normal Map": "Carte normale",
+    "Normal Map": "Carte de normales",
     "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Espace mondial (triplanaire)",
-    "Local Space (Triplanar)": "Espace local (triplanaire)",
+    "World Space (Triplanar)": "Espace monde (Triplanaire)",
+    "Local Space (Triplanar)": "Espace local (Triplanaire)",
     "Screen Space": "Espace écran",
     "Planar (Local XY)": "Planaire (XY local)",
     "Spherical (Local)": "Sphérique (local)",
@@ -61,11 +61,11 @@
     "Biplanar (World)": "Biplanaire (monde)",
     "Panosphere (Equirectangular 360)": "Panosphère (Equirectangulaire 360)",
     "Polar Coordinates": "Coordonnées polaires",
-    "Off": "Arrêt",
-    "Bass": "Basse",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "Moyenne",
     "High Mid": "Moyenne élevée",
-    "Treble": "Tremblement",
+    "Treble": "Treble",
     "High": "Élevé",
     "Medium": "Moyenne",
     "Low": "Faible",
@@ -83,19 +83,19 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Tous",
-    "Hue Shift": "Déplacement de Hue",
+    "Hue Shift": "Décalage de teinte",
     "Gradient": "Gradient",
     "Rainbow Gradient": "Gradient arc-en-ciel",
     "AudioLink Theme": "Lien audio Thème",
     "Direct": "Direct",
-    "AudioLink": "Lien audio",
+    "AudioLink": "AudioLink",
     "HueShift": "HueShift",
     "Hue Shift/Gradient": "Déplacement de la hue/Gradient",
     "Velocity": "Vitesse",
     "Stylized_PBR": "PBR stylisé",
     "Standard_PBR": "Norme PBR",
     "Toon": "Toon",
-    "Basic": "Niveau de base",
+    "Basic": "Basique",
     "Unlit": "Non éclairé",
     "Flat": "Plat",
     "Ambient": "Ambient",
@@ -136,10 +136,10 @@
     "Crystal": "Cristal",
     "Triplanar": "Triplanaire",
     "Iridescence": "Iridescence",
-    "Glitter": "Des paillettes",
+    "Glitter": "Paillettes",
     "Psychedelic": "Psychédélique",
     "Fractal3D": "Fractal3D",
-    "Galaxy": "Galaxy",
+    "Galaxy": "Galaxie",
     "Skybox": "Skybox",
     "EQ Bars": "Barres EQ",
     "Continuous Curve": "Courbe continue",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "Avant",
     "Back": "Précédent",
-    "Culling": "Cuillère",
+    "Culling": "Culling",
     "Depth Test": "Essai de profondeur",
     "Comparison": "Comparaison",
     "Disabled": "Handicapés",
@@ -304,9 +304,9 @@
     "Performance Settings": "Paramètres de performance",
     "Render Mode": "Mode de rendu",
     "Main Settings": "Paramètres principaux",
-    "Procedural Textures": "Textes de procédure",
+    "Procedural Textures": "Textures procédurales",
     "Advanced Animation Controls": "Contrôles d'animation avancés",
-    "Color Controls": "Contrôles des couleurs",
+    "Color Controls": "Contrôles de couleur",
     "Lighting": "Éclairage",
     "Surface Style": "Style de surface",
     "Overlays": "Superpositions",
@@ -330,7 +330,7 @@
       "tooltip": "Contrôler manuellement si ce matériau écrit dans le tampon de profondeur. Activez cela pour les objets transparents qui devraient encore occulter les objets derrière eux."
     },
     "_Cutoff": {
-      "label": "Arrêt alpha",
+      "label": "Seuil alpha",
       "tooltip": "Le seuil alpha pour l'effet de coupure."
     },
     "_UseUVTileDiscard": {
@@ -674,7 +674,7 @@
       "tooltip": "Modifie la limite de l'ombre du céleri en utilisant la carte de l'occlusion ambiante."
     },
     "_NormalMap": {
-      "label": "Carte normale",
+      "label": "Carte de normales",
       "tooltip": "Ajoute des détails de surface à l'aide d'une carte normale."
     },
     "_BumpScale": {
@@ -1034,7 +1034,7 @@
       "tooltip": "La texture utilisée pour masquer la grille. Le canal rouge est utilisé."
     },
     "_InvertGridMask": {
-      "label": "Masque inversé",
+      "label": "Inverser le masque",
       "tooltip": "Inverse le masque, donc les zones noires sont visibles et les zones blanches sont cachées."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "L'évolution de l'effet de dissolution (0-1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "Largeur du bord",
+      "label": "Largeur de bordure",
       "tooltip": "La largeur du bord brillant sur la ligne dissoute."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "La vitesse d'animation en images par seconde."
     },
     "_FlipbookStartFrame": {
-      "label": "Cadre de démarrage",
+      "label": "Image de début",
       "tooltip": "Le cadre de départ de l'animation, permettant un décalage."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Opacité/force globale de la décalque."
     },
     "_DecalNormal": {
-      "label": "Carte normale",
+      "label": "Carte de normales",
       "tooltip": "Carte normale pour la vignette."
     },
     "_DecalNormalStrength": {
@@ -1886,7 +1886,7 @@
       "tooltip": "Le nombre de cycles concentriques d'ondulation dans 1 unité UV."
     },
     "_RippleMaxRadius": {
-      "label": "Fadeout Radius",
+      "label": "Rayon de fondu",
       "tooltip": "La distance du centre où les ondulations disparaissent complètement."
     },
     "_RippleWidth": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Quel canal de couleur du masque à utiliser pour couper."
     },
     "_InvertClippingMask": {
-      "label": "Masque inversé",
+      "label": "Inverser le masque",
       "tooltip": "Inverse l'effet masque (blanc = clippé)."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "Les 'images par seconde' de l'animation sonore."
     },
     "_Cull": {
-      "label": "Cuillère",
+      "label": "Culling",
       "tooltip": "Mode d'abattage polygonal (arrêt, avant, arrière)."
     },
     "_CullShadow": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Opacité/force globale du décal 2."
     },
     "_Decal2Normal": {
-      "label": "Carte normale",
+      "label": "Carte de normales",
       "tooltip": "Carte normale pour le décal 2."
     },
     "_Decal2NormalStrength": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Opacité/force globale du décal 3."
     },
     "_Decal3Normal": {
-      "label": "Carte normale",
+      "label": "Carte de normales",
       "tooltip": "Carte normale pour le décal 3."
     },
     "_Decal3NormalStrength": {
@@ -2682,7 +2682,7 @@
       "tooltip": "La force de l'émission de la face arrière."
     },
     "_HueShift": {
-      "label": "Déplacement de Hue",
+      "label": "Décalage de teinte",
       "tooltip": "Rotation de la teinte autour de la roue de couleur."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Résistance du mélange à la dilution (0 = coupe nette, 1 = piqûre complète)."
     },
     "_ShadowCutoff": {
-      "label": "Coupe de l'ombre",
+      "label": "Seuil d'ombre",
       "tooltip": "Seuil de coupure alpha pour la coulée d'ombre."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Multiplicateur d'intensité de la réaction AudioLink."
     },
     "_ThemeShiftSpeed": {
-      "label": "Vitesse de déplacement",
+      "label": "Vitesse de décalage de teinte",
       "tooltip": "Vitesse de rotation continue de la nuance."
     },
     "_ThemeTargetMask": {

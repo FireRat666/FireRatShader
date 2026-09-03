@@ -1,24 +1,24 @@
 {
   "languageCode": "vi-VN",
   "languageName": "Tiếng Việt",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
     "search": "Tìm kiếm",
-    "searchPlaceholder": "Tìm kiếm tài sản vật chất...",
-    "matchingProperties": "Thuộc tính khớp",
-    "clearSearch": "Xoá tìm kiếm",
-    "noPropertiesFound": "Không tìm thấy thuộc tính nào khớp",
+    "searchPlaceholder": "Tìm kiếm thuộc tính vật liệu...",
+    "matchingProperties": "Thuộc tính phù hợp",
+    "clearSearch": "Xóa tìm kiếm",
+    "noPropertiesFound": "Không tìm thấy thuộc tính phù hợp",
     "lockMaterial": "teppi82@ gmail. com",
-    "unlockMaterial": "Bỏ khoá tài liệu",
-    "lockAndOptimize": "Khoá & optimize",
-    "savePreset": "Lưu định sẵn...",
-    "loadPreset": "Tải sẵn...",
-    "copy": "Chép",
+    "unlockMaterial": "Mở khóa vật liệu",
+    "lockAndOptimize": "Khóa và tối ưu hóa",
+    "savePreset": "Lưu cài đặt trước...",
+    "loadPreset": "Tải cài đặt trước...",
+    "copy": "Sao chép",
     "paste": "Dán",
     "reset": "Đặt lại",
     "language": "Ngôn ngữ",
-    "cycle": "Quay vòng",
+    "cycle": "Chu kỳ",
     "performanceTip": "Mẹo trình diễn  BAR : tài liệu này đã được mở khóa. Cho hiệu suất chạy tốt nhất (đặc biệt là trên search/VR), sử dụng 'Lock & Optimize' bên trên. Đây là những dải giấy thông hành không dùng, các nhánh mã đã chết, và các từ khoá nướng cho việc vẽ không đầu.",
     "lockedWarning": "Vật liệu bị khóa (chỉ đọc). Mở khóa bằng thanh công cụ để sửa đổi tính chất.",
     "Global UV Controls": "Name",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Vùng anfa (A Channel)",
     "Color Correction": "Sửa màu",
     "Dedicated Shading Models": "Những gương được dâng hiến",
-    "Render States": "Tình trạng vẽ",
+    "Render States": "Trạng thái kết xuất",
     "Camera & Mirror Visibility": "Khả năng & phản chiếu máy ảnh",
     "Stencil Buffer Settings": "Thiết lập bộ đệm & Stencil",
     "Global AudioLink Controls": "Điều khiển âm thanh toàn cục",
@@ -43,29 +43,29 @@
     "AvatarParamFallbackTooltip": "Phản hồi lại các tham số Avatar cục bộ/ OSC nhập khi không có nguồn âm thanh thế giới hiện diện.",
     "Pulse Alpha Range": "Phạm vi Alpha Pulse",
     "PulseAlphaRangeTooltip": "Điều khiển con đầu đàn tối thiểu và tối đa cho cường độ xung lực.",
-    "Color": "Màu",
-    "Transform": "Biến hình",
-    "Texture": "Chữ",
-    "Normal Map": "Sơ đồ chuẩn",
+    "Color": "Màu sắc",
+    "Transform": "Biến đổi (Transform)",
+    "Texture": "Kết cấu (Texture)",
+    "Normal Map": "Bản đồ pháp tuyến",
     "UV": "UV",
-    "UV0": "UV 0",
+    "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Vũ trụ (Chirpear)",
-    "Local Space (Triplanar)": "Không gian cục bộ (Tripear)",
-    "Screen Space": "Miền màu màn hình",
+    "World Space (Triplanar)": "Không gian thế giới (Triplanar)",
+    "Local Space (Triplanar)": "Không gian cục bộ (Triplanar)",
+    "Screen Space": "Không gian màn hình",
     "Planar (Local XY)": "Planar (Local XY)",
     "Spherical (Local)": "Hình cầu (Local)",
     "Cylindrical (Local)": "Hình trụ (Local)",
     "Biplanar (World)": "Nguyên sinh (thế giới)",
     "Panosphere (Equirectangular 360)": "Đại cầu (Equirecta góc 360)",
     "Polar Coordinates": "Tọa độ Cực",
-    "Off": "Tắt",
-    "Bass": "Bóng",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "Thấp",
     "High Mid": "Trung bình",
-    "Treble": "Độ dốc",
+    "Treble": "Treble",
     "High": "Cao",
     "Medium": "Vừa",
     "Low": "Thấp",
@@ -83,12 +83,12 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Tất cả",
-    "Hue Shift": "Comment",
+    "Hue Shift": "Dịch chuyển sắc độ",
     "Gradient": "Gradient",
     "Rainbow Gradient": "Gradient Cầu vồng",
     "AudioLink Theme": "Comment Sắc thái",
     "Direct": "Trực tiếp",
-    "AudioLink": "Comment",
+    "AudioLink": "AudioLink",
     "HueShift": "Sắc màu",
     "Hue Shift/Gradient": "Sắc",
     "Velocity": "Tốc độ",
@@ -96,7 +96,7 @@
     "Standard_PBR": "Chuẩn PBR",
     "Toon": "Toon",
     "Basic": "Cơ bản",
-    "Unlit": "Hủy bỏ",
+    "Unlit": "Không chiếu sáng",
     "Flat": "Bằng",
     "Ambient": "Name",
     "ShadowColor": "Bóng",
@@ -133,14 +133,14 @@
     "Stretched-Blinn": "Kéo giãn-Blinn",
     "Default": "Mặc định",
     "Hologram": "Chữ số",
-    "Crystal": "Tinh thể",
+    "Crystal": "Pha lê",
     "Triplanar": "Name",
     "Iridescence": "Sự kiêu ngạo",
-    "Glitter": "Glitter",
+    "Glitter": "Kim tuyến",
     "Psychedelic": "Tâm lý",
     "Fractal3D": "Phân dạng 3 chiều",
-    "Galaxy": "Thiên hà",
-    "Skybox": "Skybox",
+    "Galaxy": "Ngân hà",
+    "Skybox": "Hộp bầu trời",
     "EQ Bars": "Comment",
     "Continuous Curve": "Đường cong liên tục",
     "Radial": "Hình tròn",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "Mặt",
     "Back": "Lùi",
-    "Culling": "Chữa",
+    "Culling": "Loại bỏ (Culling)",
     "Depth Test": "Kiểm tra độ sâu",
     "Comparison": "So sánh",
     "Disabled": "Tắt",
@@ -301,24 +301,24 @@
     "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "Mục tiêu này cần thiết 'Sự phân hủy dễ dàng' để được bật lên ở khu vực Transions."
   },
   "sections": {
-    "Performance Settings": "Thiết lập hiệu suất",
-    "Render Mode": "Chế độ vẽ",
-    "Main Settings": "Thiết lập chính",
-    "Procedural Textures": "Văn bản quy trình",
-    "Advanced Animation Controls": "Điều khiển hoạt hình nâng cao",
-    "Color Controls": "Điều khiển màu",
+    "Performance Settings": "Cài đặt hiệu năng",
+    "Render Mode": "Chế độ kết xuất",
+    "Main Settings": "Cài đặt chính",
+    "Procedural Textures": "Kết cấu thủ tục",
+    "Advanced Animation Controls": "Điều khiển hoạt ảnh nâng cao",
+    "Color Controls": "Điều khiển màu sắc",
     "Lighting": "Ánh sáng",
     "Surface Style": "Kiểu bề mặt",
-    "Overlays": "Phủ",
+    "Overlays": "Lớp phủ",
     "Effects": "Hiệu ứng",
-    "Glitches": "Glitches",
-    "Transitions": "Chuyển đổi",
-    "AudioLink Visualizers": "Hình ảnh hoá âm thanh",
-    "Advanced Settings": "Thiết lập cấp cao"
+    "Glitches": "Lỗi hình (Glitch)",
+    "Transitions": "Chuyển cảnh",
+    "AudioLink Visualizers": "Trình trực quan hóa AudioLink",
+    "Advanced Settings": "Cài đặt nâng cao"
   },
   "properties": {
     "_RenderMode": {
-      "label": "Chế độ vẽ",
+      "label": "Chế độ kết xuất",
       "tooltip": "Kiểm soát cách làm mờ bóng. Opaque nhanh nhất. Cắt bỏ là để minh bạch. Trong suốt chỉ dành cho hiệu ứng mềm mại, pha trộn."
     },
     "_PerformanceLevel": {
@@ -330,7 +330,7 @@
       "tooltip": "Tự điều khiển nếu tài liệu này ghi vào bộ đệm chiều sâu. Bật tùy chọn này để hiển thị các đối tượng trong suốt, các đối tượng vẫn còn bị khóa phía sau."
     },
     "_Cutoff": {
-      "label": "Alpha",
+      "label": "Cắt ngưỡng Alpha",
       "tooltip": "Ngưỡng alpha cho hiệu ứng cắt giảm."
     },
     "_UseUVTileDiscard": {
@@ -358,7 +358,7 @@
       "tooltip": "Chuyển đổi màu cơ sở rắn."
     },
     "_BaseColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu chính của hình tam giác khi không dùng họa tiết."
     },
     "_BaseColor_Shift": {
@@ -422,7 +422,7 @@
       "tooltip": "Bản đồ phát ra thứ hai (RGB)"
     },
     "_Emission2Color": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu phát ra thứ hai"
     },
     "_Emission2Strength": {
@@ -454,7 +454,7 @@
       "tooltip": "Bản đồ phát ra thứ ba (RGB)"
     },
     "_Emission3Color": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu phát ra thứ ba"
     },
     "_Emission3Strength": {
@@ -486,7 +486,7 @@
       "tooltip": "Bản đồ phát ra thứ tư (RGB)"
     },
     "_Emission4Color": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu phát ra thứ tư"
     },
     "_Emission4Strength": {
@@ -594,7 +594,7 @@
       "tooltip": "Điều khiển tần số tiếng ồn thay đổi với mỗi quãng tám."
     },
     "_NoiseGain": {
-      "label": "Thu nhập",
+      "label": "Độ lợi",
       "tooltip": "Điều khiển độ lớn của tiếng ồn thay đổi với mỗi quãng tám."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "Di chuyển ranh giới bóng tối bằng bản đồ xung quanh."
     },
     "_NormalMap": {
-      "label": "Sơ đồ chuẩn",
+      "label": "Bản đồ pháp tuyến",
       "tooltip": "Thêm chi tiết bề mặt bằng bản đồ thông thường."
     },
     "_BumpScale": {
@@ -730,7 +730,7 @@
       "tooltip": "Véc- tơ ánh sáng tự chọn."
     },
     "_LightColorOverride": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu sắc tự chọn."
     },
     "_LightIntensity": {
@@ -930,7 +930,7 @@
       "tooltip": "Name."
     },
     "_GridColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu của đường lưới."
     },
     "_GridColor_Shift": {
@@ -1034,7 +1034,7 @@
       "tooltip": "Kết cấu được dùng để che giấu mạng lưới. Kênh màu đỏ được dùng."
     },
     "_InvertGridMask": {
-      "label": "Đảo mặt nạ",
+      "label": "Đảo ngược mặt nạ",
       "tooltip": "Làm đảo mặt nạ, vì vậy những vùng màu đen được nhìn thấy và trắng được giấu đi."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "Tiến trình của hiệu ứng tan rã (0- 1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "Bề ngang",
+      "label": "Độ rộng cạnh",
       "tooltip": "Độ rộng của cạnh sáng trên đường phân giải."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "Tốc độ hoạt hình trong khung ảnh mỗi giây."
     },
     "_FlipbookStartFrame": {
-      "label": "Chèn",
+      "label": "Khung hình bắt đầu",
       "tooltip": "Khung bắt đầu của hoạt hình, cho phép một bù đắp."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Quá sức chịu đựng của decal."
     },
     "_DecalNormal": {
-      "label": "Sơ đồ chuẩn",
+      "label": "Bản đồ pháp tuyến",
       "tooltip": "Bản đồ bình thường cho decal."
     },
     "_DecalNormalStrength": {
@@ -1582,7 +1582,7 @@
       "tooltip": "Tham số điện cho Mandelbub. Hãy thử tưởng tượng xem!"
     },
     "_FractalIter": {
-      "label": "Lần lặp lại",
+      "label": "Số lần lặp",
       "tooltip": "Số lần lặp lại. Cao hơn chi tiết hơn nhưng chậm hơn."
     },
     "_FractalKaleidoAngles": {
@@ -1710,7 +1710,7 @@
       "tooltip": "Điều khiển cách mà màu sắc lấp lánh hòa lẫn với bề mặt. Thêm vào có thể là hơi quá đáng. Lerp thay thế màu cơ bản (cho phép). Max bảo đảm nó không bao giờ tối hơn màu lấp lánh."
     },
     "_GlitterColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu sắc lấp lánh."
     },
     "_GlitterColor_Shift": {
@@ -1790,7 +1790,7 @@
       "tooltip": ""
     },
     "_IntersectionColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu của hiệu ứng giao lộ."
     },
     "_IntersectionColor_Shift": {
@@ -1890,11 +1890,11 @@
       "tooltip": "Khoảng cách từ trung tâm nơi các gợn sóng giảm hoàn toàn."
     },
     "_RippleWidth": {
-      "label": "Bề rộng:",
+      "label": "Chiều rộng",
       "tooltip": "Chiều rộng của mỗi vòng tròn."
     },
     "_RippleColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu của các gợn sóng."
     },
     "_RippleColor_Shift": {
@@ -2158,7 +2158,7 @@
       "tooltip": "Mô phỏng hình màn hình CT."
     },
     "_ScanlineColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu và độ trong suốt của đường quét."
     },
     "_ScanlineColor_Shift": {
@@ -2206,7 +2206,7 @@
       "tooltip": "Khoảng cách giữa thanh (0 = không có khoảng trống)."
     },
     "_AudioSpectrumGain": {
-      "label": "Thu nhập",
+      "label": "Độ lợi",
       "tooltip": "Xác định tín hiệu âm thanh."
     },
     "_AudioSpectrumThickness": {
@@ -2222,7 +2222,7 @@
       "tooltip": "Sử dụng tần số âm thanh để tăng sự cân bằng âm trầm tự nhiên."
     },
     "_AudioSpectrumColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu chính (hay màu tần số thấp cho độ dốc)."
     },
     "_AudioSpectrumColor2": {
@@ -2298,7 +2298,7 @@
       "tooltip": "Số chu kỳ sóng nhìn thấy được."
     },
     "_AudioWaveformGain": {
-      "label": "Thu nhập",
+      "label": "Độ lợi",
       "tooltip": "Xác định tín hiệu âm thanh."
     },
     "_AudioWaveformThickness": {
@@ -2310,7 +2310,7 @@
       "tooltip": "Độ lớn của ánh sáng neon."
     },
     "_AudioWaveformColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu sóng chính."
     },
     "_AudioWaveformColor2": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Mà kênh màu của mặt nạ cần dùng để cắt."
     },
     "_InvertClippingMask": {
-      "label": "Đảo mặt nạ",
+      "label": "Đảo ngược mặt nạ",
       "tooltip": "Nghịch đảo hiệu ứng mặt nạ (đen = cắt)."
     },
     "_UseNoise": {
@@ -2410,7 +2410,7 @@
       "tooltip": "Sức mạnh của hiệu ứng nhiễu."
     },
     "_NoiseColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu của các hạt nhiễu."
     },
     "_NoiseColor_Shift": {
@@ -2422,7 +2422,7 @@
       "tooltip": "Khung hình trên giây của hoạt hình tiếng ồn."
     },
     "_Cull": {
-      "label": "Chữa",
+      "label": "Loại bỏ (Culling)",
       "tooltip": "Chế độ quản lý đa giác (raw, Front, Back)."
     },
     "_CullShadow": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Toàn bộ độ mờ của Decal 2."
     },
     "_Decal2Normal": {
-      "label": "Sơ đồ chuẩn",
+      "label": "Bản đồ pháp tuyến",
       "tooltip": "Bản đồ chuẩn cho Detal 2."
     },
     "_Decal2NormalStrength": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Toàn bộ độ mờ/ cường độ của Decal 3."
     },
     "_Decal3Normal": {
-      "label": "Sơ đồ chuẩn",
+      "label": "Bản đồ pháp tuyến",
       "tooltip": "Bản đồ chuẩn cho Detal 3."
     },
     "_Decal3NormalStrength": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Sức mạnh của mặt sau bị phóng ra."
     },
     "_HueShift": {
-      "label": "Comment",
+      "label": "Dịch chuyển sắc độ",
       "tooltip": "Xoay màu quanh bánh xe màu."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Độ mạnh pha trộn lệch (0 = cắt sắc nét, 1 = độ dốc)."
     },
     "_ShadowCutoff": {
-      "label": "Name",
+      "label": "Cắt bóng",
       "tooltip": "Ngưỡng Alpha cho bóng."
     },
     "_UseShadowCutoffOverride": {
@@ -3130,7 +3130,7 @@
       "tooltip": "Chọn kênh tọa độ (UV0 hoặc UV1) cho sơ đồ dao động."
     },
     "_FluorescenceColor": {
-      "label": "Màu",
+      "label": "Màu sắc",
       "tooltip": "Màu sắc đa chiều HDR"
     },
     "_FluorescenceStrength": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Tăng cường phản ứng âm thanh."
     },
     "_ThemeShiftSpeed": {
-      "label": "Tốc độ Chuyển đổi Màu",
+      "label": "Tốc độ dịch chuyển sắc độ",
       "tooltip": "Tốc độ chuyển đổi màu liên tục."
     },
     "_ThemeTargetMask": {

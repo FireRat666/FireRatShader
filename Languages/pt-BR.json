@@ -1,23 +1,23 @@
 {
   "languageCode": "pt-BR",
   "languageName": "Português (Brasil)",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "Procurar",
-    "searchPlaceholder": "Pesquisar propriedades de material...",
+    "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar propriedades do material...",
     "matchingProperties": "Propriedades correspondentes",
-    "clearSearch": "Limpar a Procura",
-    "noPropertiesFound": "Não foram encontradas propriedades correspondentes",
+    "clearSearch": "Limpar pesquisa",
+    "noPropertiesFound": "Nenhuma propriedade correspondente encontrada",
     "lockMaterial": "Material bloqueado e otimizado (Clique para desbloquear)",
-    "unlockMaterial": "Desbloquear Material",
-    "lockAndOptimize": "Bloquear e Otimizar",
-    "savePreset": "Gravar a Predefinição...",
-    "loadPreset": "Carregar a Predefinição...",
+    "unlockMaterial": "Desbloquear material",
+    "lockAndOptimize": "Bloquear e otimizar",
+    "savePreset": "Salvar predefinição...",
+    "loadPreset": "Carregar predefinição...",
     "copy": "Copiar",
     "paste": "Colar",
-    "reset": "Reiniciar",
-    "language": "Língua",
+    "reset": "Redefinir",
+    "language": "Idioma",
     "cycle": "Ciclo",
     "performanceTip": "Dica de desempenho: Este material está desbloqueado. Para melhor desempenho em tempo de execução (especialmente em Quest/VR), use 'Lock & Optimize' acima. Este tira passes shader não utilizados, ramos de código mortos, e assa palavras-chave para renderização zero-overhead.",
     "lockedWarning": "O material está bloqueado (apenas leitura). Desbloquear através da barra de ferramentas para modificar propriedades.",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Zona Alfa ( Canal A)",
     "Color Correction": "Correcção de Cores",
     "Dedicated Shading Models": "Modelos dedicados de sombreamento",
-    "Render States": "Renderizar Estados",
+    "Render States": "Estados de renderização",
     "Camera & Mirror Visibility": "Visibilidade da Câmara e Espelho",
     "Stencil Buffer Settings": "Configuração do Buffer Stencil",
     "Global AudioLink Controls": "Controles globais de AudioLink",
@@ -44,16 +44,16 @@
     "Pulse Alpha Range": "Intervalo Alfa de Pulso",
     "PulseAlphaRangeTooltip": "Controla o alfa mínimo e máximo para o pulso de intensidade.",
     "Color": "Cor",
-    "Transform": "Transformar",
+    "Transform": "Transformação",
     "Texture": "Textura",
-    "Normal Map": "Mapa Normal",
+    "Normal Map": "Mapa de normais",
     "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Espaço Mundial (Triplanar)",
-    "Local Space (Triplanar)": "Espaço Local (Triplanar)",
+    "World Space (Triplanar)": "Espaço global (Triplanar)",
+    "Local Space (Triplanar)": "Espaço local (Triplanar)",
     "Screen Space": "Espaço de tela",
     "Planar (Local XY)": "Planar (XY Local)",
     "Spherical (Local)": "Esférico (Local)",
@@ -61,8 +61,8 @@
     "Biplanar (World)": "Biplanar (Mundo)",
     "Panosphere (Equirectangular 360)": "Panosfera (Equirectangular 360)",
     "Polar Coordinates": "Coordenadas Polares",
-    "Off": "Desligado",
-    "Bass": "Baixo",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "Baixo Médio",
     "High Mid": "Média Alta",
     "Treble": "Treble",
@@ -83,7 +83,7 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Tudo",
-    "Hue Shift": "Turno de Tom",
+    "Hue Shift": "Deslocamento de matiz",
     "Gradient": "Gradiente",
     "Rainbow Gradient": "Gradiente do arco-íris",
     "AudioLink Theme": "AudioLink Tema",
@@ -96,7 +96,7 @@
     "Standard_PBR": "Padrão PBR",
     "Toon": "Toon",
     "Basic": "Básico",
-    "Unlit": "Desligar",
+    "Unlit": "Sem iluminação (Unlit)",
     "Flat": "Plano",
     "Ambient": "Ambiente",
     "ShadowColor": "Cor Sombra",
@@ -139,7 +139,7 @@
     "Glitter": "Glitter",
     "Psychedelic": "Psychedelic",
     "Fractal3D": "Fractal3D",
-    "Galaxy": "Galaxy",
+    "Galaxy": "Galáxia",
     "Skybox": "Skybox",
     "EQ Bars": "Barras EQ",
     "Continuous Curve": "Curva contínua",
@@ -301,20 +301,20 @@
     "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "Este alvo requer 'Ativar Dissolver' para ser ligado na seção Transições."
   },
   "sections": {
-    "Performance Settings": "Configuração do Desempenho",
+    "Performance Settings": "Configurações de desempenho",
     "Render Mode": "Modo de renderização",
-    "Main Settings": "Configuração Principal",
-    "Procedural Textures": "Textos processuais",
-    "Advanced Animation Controls": "Controles de Animação Avançados",
-    "Color Controls": "Controles de Cores",
+    "Main Settings": "Configurações principais",
+    "Procedural Textures": "Texturas procedurais",
+    "Advanced Animation Controls": "Controles avançados de animação",
+    "Color Controls": "Controles de cor",
     "Lighting": "Iluminação",
-    "Surface Style": "Estilo de Superfície",
+    "Surface Style": "Estilo de superfície",
     "Overlays": "Sobreposições",
     "Effects": "Efeitos",
     "Glitches": "Glitches",
     "Transitions": "Transições",
     "AudioLink Visualizers": "Visualizadores AudioLink",
-    "Advanced Settings": "Configuração Avançada"
+    "Advanced Settings": "Configurações avançadas"
   },
   "properties": {
     "_RenderMode": {
@@ -330,7 +330,7 @@
       "tooltip": "Controlar manualmente se este material escreve para o buffer de profundidade. Habilite isso para objetos transparentes que ainda devem ocluir objetos por trás deles."
     },
     "_Cutoff": {
-      "label": "Corte Alfa",
+      "label": "Corte de alfa",
       "tooltip": "O limiar alfa para o efeito de recorte."
     },
     "_UseUVTileDiscard": {
@@ -674,7 +674,7 @@
       "tooltip": "Modula o limite da sombra cel usando o mapa de oclusão ambiente."
     },
     "_NormalMap": {
-      "label": "Mapa Normal",
+      "label": "Mapa de normais",
       "tooltip": "Adiciona detalhes de superfície usando um mapa normal."
     },
     "_BumpScale": {
@@ -1034,7 +1034,7 @@
       "tooltip": "A textura usada para mascarar a grelha. O canal vermelho é usado."
     },
     "_InvertGridMask": {
-      "label": "Inverter Máscara",
+      "label": "Inverter máscara",
       "tooltip": "Inverte a máscara, por isso as áreas pretas são visíveis e as áreas brancas estão escondidas."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "O progresso do efeito de dissolução (0- 1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "Largura da Borda",
+      "label": "Largura da borda",
       "tooltip": "A largura da borda brilhante na linha de dissolução."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "A velocidade de animação em quadros por segundo."
     },
     "_FlipbookStartFrame": {
-      "label": "Iniciar a Moldura",
+      "label": "Quadro inicial",
       "tooltip": "O quadro inicial da animação, permitindo um deslocamento."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Opacidade/força global do decalque."
     },
     "_DecalNormal": {
-      "label": "Mapa Normal",
+      "label": "Mapa de normais",
       "tooltip": "Mapa normal para o decalque."
     },
     "_DecalNormalStrength": {
@@ -1534,7 +1534,7 @@
       "tooltip": "Habilite modificar Normal, Metálico e Suavidade através do decalque."
     },
     "_SurfaceStyle": {
-      "label": "Estilo de Superfície",
+      "label": "Estilo de superfície",
       "tooltip": ""
     },
     "_PsychedelicColorShift": {
@@ -1886,7 +1886,7 @@
       "tooltip": "O número de anéis de ondulação concêntricos em 1 unidade UV."
     },
     "_RippleMaxRadius": {
-      "label": "Raio Fadeout",
+      "label": "Raio de desvanecimento",
       "tooltip": "A distância do centro em que as ondas desaparecem completamente."
     },
     "_RippleWidth": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Que canal de cor da máscara para usar para recorte."
     },
     "_InvertClippingMask": {
-      "label": "Inverter Máscara",
+      "label": "Inverter máscara",
       "tooltip": "Inverte o efeito da máscara (branco = cortado)."
     },
     "_UseNoise": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Opacidade/força global do Decal 2."
     },
     "_Decal2Normal": {
-      "label": "Mapa Normal",
+      "label": "Mapa de normais",
       "tooltip": "Mapa Normal para Decalque 2."
     },
     "_Decal2NormalStrength": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Opacidade/força global do Decal 3."
     },
     "_Decal3Normal": {
-      "label": "Mapa Normal",
+      "label": "Mapa de normais",
       "tooltip": "Mapa Normal para Decalque 3."
     },
     "_Decal3NormalStrength": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Força da emissão da face traseira."
     },
     "_HueShift": {
-      "label": "Turno de Tom",
+      "label": "Deslocamento de matiz",
       "tooltip": "Roda o matiz em torno da roda de cor."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Resistência à mistura diterrânea (0 = recorte afiado, 1 = ponto inteiro)."
     },
     "_ShadowCutoff": {
-      "label": "Corto da Sombra",
+      "label": "Corte de sombra",
       "tooltip": "Limiar de corte alfa para fundição de sombras."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Multiplicador de intensidade da reacção AudioLink."
     },
     "_ThemeShiftSpeed": {
-      "label": "Velocidade de Desvio da Matiz",
+      "label": "Velocidade de deslocamento de matiz",
       "tooltip": "Velocidade de rotação contínua do movimento de matiz."
     },
     "_ThemeTargetMask": {

@@ -1,22 +1,22 @@
 {
   "languageCode": "es-ES",
   "languageName": "Español",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "Búsqueda",
-    "searchPlaceholder": "Buscar propiedades materiales...",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar propiedades de material...",
     "matchingProperties": "Propiedades coincidentes",
-    "clearSearch": "Búsqueda clara",
-    "noPropertiesFound": "No se han encontrado propiedades",
+    "clearSearch": "Limpiar búsqueda",
+    "noPropertiesFound": "No se encontraron propiedades coincidentes",
     "lockMaterial": "🔒 Material bloqueado & optimizado (Haga clic para desbloquear)",
     "unlockMaterial": "Desbloquear material",
-    "lockAndOptimize": "Cerrar \" Optimizar \"",
-    "savePreset": "Guarda a Preset...",
-    "loadPreset": "Carga Preset...",
-    "copy": "Copiado",
-    "paste": "Pegado",
-    "reset": "Reset",
+    "lockAndOptimize": "Bloquear y optimizar",
+    "savePreset": "Guardar preajuste...",
+    "loadPreset": "Cargar preajuste...",
+    "copy": "Copiar",
+    "paste": "Pegar",
+    "reset": "Restablecer",
     "language": "Idioma",
     "cycle": "Ciclo",
     "performanceTip": "Tip de rendimiento: Este material está desbloqueado. Para el mejor rendimiento de tiempo de ejecución (especialmente en Quest/VR), utilice 'Lock & Optimize' arriba. Esta tiras de tono no utilizado pasa, ramas de código muerto, y hornea palabras clave para la renderización de cero cabeza.",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Zona Alfa (A Channel)",
     "Color Correction": "Corrección de color",
     "Dedicated Shading Models": "Modelos de Shading dedicados",
-    "Render States": "Render States",
+    "Render States": "Estados de renderizado",
     "Camera & Mirror Visibility": "Cámara & Espejo Visibilidad",
     "Stencil Buffer Settings": "Ajustes de amortiguación de plantilla",
     "Global AudioLink Controls": "Controles Globales de AudioLink",
@@ -46,13 +46,13 @@
     "Color": "Color",
     "Transform": "Transformación",
     "Texture": "Textura",
-    "Normal Map": "Mapa normal",
+    "Normal Map": "Mapa de normales",
     "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Espacio Mundial (Triplanar)",
+    "World Space (Triplanar)": "Espacio mundial (Triplanar)",
     "Local Space (Triplanar)": "Espacio local (Triplanar)",
     "Screen Space": "Espacio de pantalla",
     "Planar (Local XY)": "Planar (Local XY)",
@@ -61,7 +61,7 @@
     "Biplanar (World)": "Biplanar (World)",
     "Panosphere (Equirectangular 360)": "Panosfera (Equirectangular 360)",
     "Polar Coordinates": "Polar Coordinates",
-    "Off": "Fuera",
+    "Off": "Off",
     "Bass": "Bass",
     "Low Mid": "Low Mid",
     "High Mid": "High Mid",
@@ -83,7 +83,7 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Todos",
-    "Hue Shift": "Hue Shift",
+    "Hue Shift": "Cambio de tono",
     "Gradient": "Gradiente",
     "Rainbow Gradient": "Rainbow Gradient",
     "AudioLink Theme": "AudioLink Tema",
@@ -95,8 +95,8 @@
     "Stylized_PBR": "Stylized PBR",
     "Standard_PBR": "Standard PBR",
     "Toon": "Toon",
-    "Basic": "Básica",
-    "Unlit": "Sin iluminación",
+    "Basic": "Básico",
+    "Unlit": "Sin iluminación (Unlit)",
     "Flat": "Piso",
     "Ambient": "Ambient",
     "ShadowColor": "ShadowColor",
@@ -109,7 +109,7 @@
     "OverrideProbes": "OverrideProbes",
     "FallbackWhenProbesDark": "FallbackCuandoProbesDark",
     "Screen": "Pantalla",
-    "Metallic": "Metallic",
+    "Metallic": "Metálico",
     "Specular": "Especular",
     "Override": "Anulación",
     "Add": "Añadir",
@@ -136,10 +136,10 @@
     "Crystal": "Cristal",
     "Triplanar": "Triplanar",
     "Iridescence": "Iridescence",
-    "Glitter": "Glitter",
+    "Glitter": "Purpurina",
     "Psychedelic": "Psiquiatría",
     "Fractal3D": "Fractal3D",
-    "Galaxy": "Galaxy",
+    "Galaxy": "Galaxia",
     "Skybox": "Skybox",
     "EQ Bars": "EQ Bars",
     "Continuous Curve": "Curva continua",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "Frente",
     "Back": "Atrás",
-    "Culling": "Cultivos",
+    "Culling": "Descarte (Culling)",
     "Depth Test": "Prueba de profundidad",
     "Comparison": "Comparación",
     "Disabled": "Discapacitados",
@@ -302,23 +302,23 @@
   },
   "sections": {
     "Performance Settings": "Ajustes de rendimiento",
-    "Render Mode": "Modo de Render",
+    "Render Mode": "Modo de renderizado",
     "Main Settings": "Ajustes principales",
-    "Procedural Textures": "Texturas de procedimiento",
-    "Advanced Animation Controls": "Controles avanzados de animación",
+    "Procedural Textures": "Texturas procedimentales",
+    "Advanced Animation Controls": "Controles de animación avanzados",
     "Color Controls": "Controles de color",
     "Lighting": "Iluminación",
-    "Surface Style": "Estilo superficial",
-    "Overlays": "Superficies",
+    "Surface Style": "Estilo de superficie",
+    "Overlays": "Superposiciones",
     "Effects": "Efectos",
-    "Glitches": "Glitches",
+    "Glitches": "Fallas (Glitches)",
     "Transitions": "Transiciones",
-    "AudioLink Visualizers": "AudioLink Visualizers",
+    "AudioLink Visualizers": "Visualizadores AudioLink",
     "Advanced Settings": "Ajustes avanzados"
   },
   "properties": {
     "_RenderMode": {
-      "label": "Modo de Render",
+      "label": "Modo de renderizado",
       "tooltip": "Controla cómo se hace el sombreador. Opaque es más rápido. El corte es para la transparencia dura. Transparent es para efectos suaves y mezclados."
     },
     "_PerformanceLevel": {
@@ -330,7 +330,7 @@
       "tooltip": "Control manualmente si este material escribe al búfer de profundidad. Permite esto para objetos transparentes que aún deben ocultar objetos detrás de ellos."
     },
     "_Cutoff": {
-      "label": "Alpha Cutoff",
+      "label": "Corte de alfa",
       "tooltip": "El umbral de alfa para el efecto de corte."
     },
     "_UseUVTileDiscard": {
@@ -594,7 +594,7 @@
       "tooltip": "Controla cómo cambia la frecuencia del ruido con cada octava."
     },
     "_NoiseGain": {
-      "label": "Gain",
+      "label": "Ganancia",
       "tooltip": "Controla cómo cambia la amplitud del ruido con cada octava."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "Modula el límite de sombra cel utilizando el mapa de oclusión ambiente."
     },
     "_NormalMap": {
-      "label": "Mapa normal",
+      "label": "Mapa de normales",
       "tooltip": "Añade detalles de superficie usando un mapa normal."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "Mapa de Metallic (R) y Smoothness (A). (Nota: Se ignora la suavidad si se proporciona un mapa separado de la Roughness)"
     },
     "_Metallic": {
-      "label": "Metallic",
+      "label": "Metálico",
       "tooltip": "Controla cómo es metálica la superficie (0 = dielectric/plástico, 1 = metal puro)."
     },
     "_Glossiness": {
-      "label": "Smoothness",
+      "label": "Suavidad",
       "tooltip": "Controla lo suave y reflectante que es la superficie (0 = áspero/matte, 1 = espejo liso)."
     },
     "_UseAmbientLighting": {
@@ -810,7 +810,7 @@
       "tooltip": "La fuerza general del efecto SSS."
     },
     "_SSS_Radius": {
-      "label": "Radius",
+      "label": "Radio",
       "tooltip": "Cuán lejos la luz se dispersa dentro del material."
     },
     "_SSS_Color": {
@@ -1034,7 +1034,7 @@
       "tooltip": "La textura utilizada para enmascarar la cuadrícula. El canal rojo se utiliza."
     },
     "_InvertGridMask": {
-      "label": "Máscara de Inversión",
+      "label": "Invertir máscara",
       "tooltip": "Invierte la máscara, por lo que las áreas negras son visibles y las áreas blancas están ocultas."
     },
     "_USE_DISTORTION_ON": {
@@ -1142,7 +1142,7 @@
       "tooltip": "El progreso del efecto disuelto (0-1)."
     },
     "_DissolveEdgeWidth": {
-      "label": "Edge Width",
+      "label": "Ancho del borde",
       "tooltip": "El ancho del borde brillante en la línea disuelta."
     },
     "_DissolveGlitchBlockSize": {
@@ -1378,7 +1378,7 @@
       "tooltip": "La velocidad de animación en marcos por segundo."
     },
     "_FlipbookStartFrame": {
-      "label": "Inicio Frame",
+      "label": "Fotograma de inicio",
       "tooltip": "El marco inicial de la animación, permitiendo un offset."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Opacidad total/forzamiento de la calcomanía."
     },
     "_DecalNormal": {
-      "label": "Mapa normal",
+      "label": "Mapa de normales",
       "tooltip": "Mapa normal para la calcomanía."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "Fuerza del mapa normal de la calcomanía."
     },
     "_DecalMetallic": {
-      "label": "Metallic",
+      "label": "Metálico",
       "tooltip": "Valor metálico para el área de calcomanía."
     },
     "_DecalSmoothness": {
-      "label": "Smoothness",
+      "label": "Suavidad",
       "tooltip": "Valor de suavidad para el área de calcomanía."
     },
     "_DecalAffectsPBR": {
@@ -1534,7 +1534,7 @@
       "tooltip": "Permite modificar Normal, Metallic y Smoothness a través de la calcomanía."
     },
     "_SurfaceStyle": {
-      "label": "Estilo superficial",
+      "label": "Estilo de superficie",
       "tooltip": ""
     },
     "_PsychedelicColorShift": {
@@ -1886,11 +1886,11 @@
       "tooltip": "El número de anillos de onda concéntricos a través de 1 unidad UV."
     },
     "_RippleMaxRadius": {
-      "label": "Fadeout Radius",
+      "label": "Radio de desvanecimiento",
       "tooltip": "La distancia del centro en el que las ondas se desvanecen completamente."
     },
     "_RippleWidth": {
-      "label": "Width",
+      "label": "Ancho",
       "tooltip": "El ancho de cada anillo de onda individual."
     },
     "_RippleColor": {
@@ -2206,7 +2206,7 @@
       "tooltip": "Gap entre barras (0 = sin espacio)."
     },
     "_AudioSpectrumGain": {
-      "label": "Gain",
+      "label": "Ganancia",
       "tooltip": "Amplificación de la señal de audio."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "Número de ciclos de onda visibles."
     },
     "_AudioWaveformGain": {
-      "label": "Gain",
+      "label": "Ganancia",
       "tooltip": "Amplificación de la señal de audio."
     },
     "_AudioWaveformThickness": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Que canal de color de la máscara para usar para cortar."
     },
     "_InvertClippingMask": {
-      "label": "Máscara de Inversión",
+      "label": "Invertir máscara",
       "tooltip": "Invierte el efecto de máscara (blanco = recortado)."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "Los marcos por segundo de la animación del ruido."
     },
     "_Cull": {
-      "label": "Cultivos",
+      "label": "Descarte (Culling)",
       "tooltip": "Modo de corte poligonal (Off, Front, Back)."
     },
     "_CullShadow": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Opacidad total/forzamiento de la calcomanía 2."
     },
     "_Decal2Normal": {
-      "label": "Mapa normal",
+      "label": "Mapa de normales",
       "tooltip": "Mapa normal para Decal 2."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "Fuerza de Decal 2 mapa normal."
     },
     "_Decal2Metallic": {
-      "label": "Metallic",
+      "label": "Metálico",
       "tooltip": "Valor metálico para el área Decal 2."
     },
     "_Decal2Smoothness": {
-      "label": "Smoothness",
+      "label": "Suavidad",
       "tooltip": "Valor de suavidad para el área Decal 2."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Opacidad total/forzamiento de la calcomanía 3."
     },
     "_Decal3Normal": {
-      "label": "Mapa normal",
+      "label": "Mapa de normales",
       "tooltip": "Mapa normal para Decal 3."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "Fuerza de Decal 3 mapa normal."
     },
     "_Decal3Metallic": {
-      "label": "Metallic",
+      "label": "Metálico",
       "tooltip": "Valor metálico para el área Decal 3."
     },
     "_Decal3Smoothness": {
-      "label": "Smoothness",
+      "label": "Suavidad",
       "tooltip": "Valor de suavidad para el área Decal 3."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Fuerza de la emisión de la cara posterior."
     },
     "_HueShift": {
-      "label": "Hue Shift",
+      "label": "Cambio de tono",
       "tooltip": "Rota el tono alrededor de la rueda de color."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Dither blend strength (0 = cutout agudo, 1 = estippleto completo)."
     },
     "_ShadowCutoff": {
-      "label": "Shadow Cutoff",
+      "label": "Corte de sombra",
       "tooltip": "Umbral de corte alfa para el casting de sombras."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Multiplicador de intensidad de la reacción AudioLink."
     },
     "_ThemeShiftSpeed": {
-      "label": "Velocidad de movimiento de Hueft",
+      "label": "Velocidad de cambio de tono",
       "tooltip": "Velocidad de rotación continua del movimiento del casco."
     },
     "_ThemeTargetMask": {

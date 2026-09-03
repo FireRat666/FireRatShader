@@ -1,24 +1,24 @@
 {
   "languageCode": "zh-CN",
   "languageName": "简体中文",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
     "search": "搜索",
-    "searchPlaceholder": "搜索物质属性...",
-    "matchingProperties": "匹配属性",
+    "searchPlaceholder": "搜索材质属性...",
+    "matchingProperties": "匹配的属性",
     "clearSearch": "清除搜索",
-    "noPropertiesFound": "未找到匹配属性",
+    "noPropertiesFound": "未找到匹配的属性",
     "lockMaterial": "QQ 材料锁定和优化( 点击到解锁)",
-    "unlockMaterial": "解锁材料",
-    "lockAndOptimize": "锁定优化( U)",
+    "unlockMaterial": "解锁材质",
+    "lockAndOptimize": "锁定并优化",
     "savePreset": "保存预设...",
-    "loadPreset": "装入预设...",
+    "loadPreset": "加载预设...",
     "copy": "复制",
     "paste": "粘贴",
-    "reset": "重设",
+    "reset": "重置",
     "language": "语言",
-    "cycle": "周期",
+    "cycle": "循环",
     "performanceTip": "QQ性能提示:此材料已解锁. 对于最佳运行时间性能(特别是在Quest/VR上),使用上面的\"Lock & 优化\". 这条带子是未使用的荫影通道,死码分支,并烤制零头渲染的关键词.",
     "lockedWarning": "材料为LOCKED(只读). 通过工具栏解锁以修改属性 .",
     "Global UV Controls": "全球紫外线控制",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "阿尔法区(A频道)",
     "Color Correction": "颜色校正",
     "Dedicated Shading Models": "专用沙丁型号",
-    "Render States": "发件国",
+    "Render States": "渲染状态",
     "Camera & Mirror Visibility": "相机可见度( M)",
     "Stencil Buffer Settings": "Stencil 缓冲设置",
     "Global AudioLink Controls": "全球音频链接控制",
@@ -44,16 +44,16 @@
     "Pulse Alpha Range": "脉冲阿尔法范围",
     "PulseAlphaRangeTooltip": "控制强度脉冲的最小和最大α.",
     "Color": "颜色",
-    "Transform": "变形",
+    "Transform": "变换",
     "Texture": "纹理",
-    "Normal Map": "普通地图",
-    "UV": "紫外线",
-    "UV0": "紫外线0",
-    "UV1": "紫外线1",
-    "UV2": "紫外线2",
-    "UV3": "紫外线3",
-    "World Space (Triplanar)": "世界空间(特里普兰)",
-    "Local Space (Triplanar)": "本地空间( Triplanar)",
+    "Normal Map": "法线贴图",
+    "UV": "UV",
+    "UV0": "UV0",
+    "UV1": "UV1",
+    "UV2": "UV2",
+    "UV3": "UV3",
+    "World Space (Triplanar)": "世界空间 (三平面)",
+    "Local Space (Triplanar)": "局部空间 (三平面)",
     "Screen Space": "屏幕空间",
     "Planar (Local XY)": "计划(当地XY)",
     "Spherical (Local)": "球形(当地)",
@@ -61,11 +61,11 @@
     "Biplanar (World)": "双板( 世界)",
     "Panosphere (Equirectangular 360)": "Panosphere(平方厘米360)",
     "Polar Coordinates": "极坐标",
-    "Off": "关",
-    "Bass": "贝斯",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "中间",
     "High Mid": "高中点",
-    "Treble": "双倍",
+    "Treble": "Treble",
     "High": "高级",
     "Medium": "中型",
     "Low": "低级",
@@ -80,23 +80,23 @@
     "G": "一般事务人员",
     "B": "页:1",
     "A": "页:1",
-    "RGBA": "RGBA 红十字与红新月运动",
-    "RGB": "RGB 语言",
+    "RGBA": "RGBA",
+    "RGB": "RGB",
     "All": "全体",
-    "Hue Shift": "调色调",
+    "Hue Shift": "色相偏移",
     "Gradient": "渐变",
     "Rainbow Gradient": "彩虹渐变",
     "AudioLink Theme": "音频链接 主题",
     "Direct": "直接",
-    "AudioLink": "音频链接",
+    "AudioLink": "AudioLink",
     "HueShift": "宽度",
     "Hue Shift/Gradient": "色调移/大小",
     "Velocity": "速度",
     "Stylized_PBR": "缩写  PBR",
     "Standard_PBR": "标准   PBR",
-    "Toon": "卡通语Name",
+    "Toon": "卡通",
     "Basic": "基础",
-    "Unlit": "解开",
+    "Unlit": "无光照",
     "Flat": "平面",
     "Ambient": "环境",
     "ShadowColor": "阴影颜色",
@@ -109,7 +109,7 @@
     "OverrideProbes": "覆盖前景",
     "FallbackWhenProbesDark": "暗处时退后",
     "Screen": "屏幕",
-    "Metallic": "金属",
+    "Metallic": "金属度",
     "Specular": "光谱",
     "Override": "覆盖",
     "Add": "添加",
@@ -133,14 +133,14 @@
     "Stretched-Blinn": "伸展线",
     "Default": "默认",
     "Hologram": "全息图",
-    "Crystal": "晶体",
+    "Crystal": "水晶",
     "Triplanar": "三边形",
     "Iridescence": "迷恋",
-    "Glitter": "闪烁",
+    "Glitter": "闪粉",
     "Psychedelic": "迷幻药",
     "Fractal3D": "分形3D",
-    "Galaxy": "银河",
-    "Skybox": "天盘",
+    "Galaxy": "星系",
+    "Skybox": "天空盒",
     "EQ Bars": "EQ 条",
     "Continuous Curve": "连续曲线",
     "Radial": "辐射",
@@ -252,7 +252,7 @@
     "Z": "页:1",
     "Front": "前导",
     "Back": "回来",
-    "Culling": "弯曲",
+    "Culling": "剔除",
     "Depth Test": "深度测试",
     "Comparison": "比较",
     "Disabled": "已禁用",
@@ -330,7 +330,7 @@
       "tooltip": "手动控制此材料是否写入深度缓冲 。 启用此功能, 用于透明对象, 这些对象仍应隐藏在其后面 ."
     },
     "_Cutoff": {
-      "label": "阿尔法截断",
+      "label": "Alpha裁剪",
       "tooltip": "切除效果的α阈值."
     },
     "_UseUVTileDiscard": {
@@ -674,7 +674,7 @@
       "tooltip": "利用环境封存图来修改环影边界."
     },
     "_NormalMap": {
-      "label": "普通地图",
+      "label": "法线贴图",
       "tooltip": "使用普通地图添加表面细节."
     },
     "_BumpScale": {
@@ -702,7 +702,7 @@
       "tooltip": "金属(R)和光滑(A)地图。 (注:如果提供单独的粗糙度地图,则忽略平滑度)"
     },
     "_Metallic": {
-      "label": "金属",
+      "label": "金属度",
       "tooltip": "控制表面的金属(0=二电/塑料,1=纯金属)."
     },
     "_Glossiness": {
@@ -1034,7 +1034,7 @@
       "tooltip": "纹理用来掩盖网格. 红色通道被使用."
     },
     "_InvertGridMask": {
-      "label": "反向遮罩",
+      "label": "反转遮罩",
       "tooltip": "反转面具,因此黑色区域可见,白色区域隐藏."
     },
     "_USE_DISTORTION_ON": {
@@ -1378,7 +1378,7 @@
       "tooltip": "动画速度在帧每秒."
     },
     "_FlipbookStartFrame": {
-      "label": "启动框架",
+      "label": "起始帧",
       "tooltip": "动画的起始帧,可以进行偏移."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "整体不透明度/地标强度."
     },
     "_DecalNormal": {
-      "label": "普通地图",
+      "label": "法线贴图",
       "tooltip": "标记的普通地图 ."
     },
     "_DecalNormalStrength": {
@@ -1522,7 +1522,7 @@
       "tooltip": "地标正常地图的强度."
     },
     "_DecalMetallic": {
-      "label": "金属",
+      "label": "金属度",
       "tooltip": "标记区域的金属值."
     },
     "_DecalSmoothness": {
@@ -1582,7 +1582,7 @@
       "tooltip": "曼德尔布尔号的动力参数. 试试这个动画!"
     },
     "_FractalIter": {
-      "label": "迭代数",
+      "label": "迭代次数",
       "tooltip": "重复次数。 更高更详细,但更慢."
     },
     "_FractalKaleidoAngles": {
@@ -2398,7 +2398,7 @@
       "tooltip": "用于剪切的面具的哪个颜色通道 ."
     },
     "_InvertClippingMask": {
-      "label": "反向遮罩",
+      "label": "反转遮罩",
       "tooltip": "反转口罩效果( 白色 = 剪辑) ."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "噪音动画的\"帧每秒\"."
     },
     "_Cull": {
-      "label": "弯曲",
+      "label": "剔除",
       "tooltip": "多边形凸起模式(Off, Front, Back)."
     },
     "_CullShadow": {
@@ -2430,7 +2430,7 @@
       "tooltip": "专用于阴影铸造传球的多边形凸轮模式."
     },
     "_ZTest": {
-      "label": "Z 测试",
+      "label": "ZTest",
       "tooltip": "控制如何进行深度测试."
     },
     "_ColorWriteMask": {
@@ -2570,7 +2570,7 @@
       "tooltip": "总体不透明度/强度为二级."
     },
     "_Decal2Normal": {
-      "label": "普通地图",
+      "label": "法线贴图",
       "tooltip": "DDecal 2 的普通地图."
     },
     "_Decal2NormalStrength": {
@@ -2578,7 +2578,7 @@
       "tooltip": "DDecal 2普通地图的强项."
     },
     "_Decal2Metallic": {
-      "label": "金属",
+      "label": "金属度",
       "tooltip": "DDecal 2 区域的金属值."
     },
     "_Decal2Smoothness": {
@@ -2614,7 +2614,7 @@
       "tooltip": "总体不透明度/德甲3的强度."
     },
     "_Decal3Normal": {
-      "label": "普通地图",
+      "label": "法线贴图",
       "tooltip": "德甲3的普通地图."
     },
     "_Decal3NormalStrength": {
@@ -2622,7 +2622,7 @@
       "tooltip": "DDecal 3普通地图的优势."
     },
     "_Decal3Metallic": {
-      "label": "金属",
+      "label": "金属度",
       "tooltip": "DDecal 3 区域的金属值."
     },
     "_Decal3Smoothness": {
@@ -2682,7 +2682,7 @@
       "tooltip": "背面排放的强度."
     },
     "_HueShift": {
-      "label": "调色调",
+      "label": "色相偏移",
       "tooltip": "绕着彩色轮旋转."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Dither 混合强度(0 = 锐切,1 = 满分)."
     },
     "_ShadowCutoff": {
-      "label": "阴影截断",
+      "label": "阴影裁剪",
       "tooltip": "暗影铸造的Alpha截断阈值."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "AudioLink反应的强度乘数."
     },
     "_ThemeShiftSpeed": {
-      "label": "色调移动速度",
+      "label": "色相偏移速度",
       "tooltip": "持续旋转的速度."
     },
     "_ThemeTargetMask": {

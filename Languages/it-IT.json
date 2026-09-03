@@ -1,22 +1,22 @@
 {
   "languageCode": "it-IT",
   "languageName": "Italiano",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "Ricerca",
-    "searchPlaceholder": "Ricerca proprietà materiali...",
-    "matchingProperties": "Proprietà di corrispondenza",
-    "clearSearch": "Ricerca chiara",
-    "noPropertiesFound": "Nessuna proprietà trovata corrispondenza",
+    "search": "Cerca",
+    "searchPlaceholder": "Cerca proprietà del materiale...",
+    "matchingProperties": "Proprietà corrispondenti",
+    "clearSearch": "Cancella ricerca",
+    "noPropertiesFound": "Nessuna proprietà corrispondente trovata",
     "lockMaterial": "Materiale bloccato e ottimizzato (Clicca per sbloccare)",
-    "unlockMaterial": "Sblocca il materiale",
-    "lockAndOptimize": "Blocco & Ottimizzazione",
-    "savePreset": "Salva Preset...",
-    "loadPreset": "Carica Preset...",
+    "unlockMaterial": "Sblocca materiale",
+    "lockAndOptimize": "Blocca e ottimizza",
+    "savePreset": "Salva predefinito...",
+    "loadPreset": "Carica predefinito...",
     "copy": "Copia",
-    "paste": "Paste",
-    "reset": "Ripristino",
+    "paste": "Incolla",
+    "reset": "Reimposta",
     "language": "Lingua",
     "cycle": "Ciclo",
     "performanceTip": "⚡ Performance Tip: Questo materiale è sbloccato. Per le migliori prestazioni di runtime (specialmente su Quest/VR), utilizzare 'Lock & Optimize' sopra. Questo strips passa ombreggiatore inutilizzato, rami di codice morto, e cuocere parole chiave per il rendering zero-overhead.",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Alpha Zone (A Channel)",
     "Color Correction": "Correzione del colore",
     "Dedicated Shading Models": "Modelli dedicati di ombreggiatura",
-    "Render States": "Stati membri",
+    "Render States": "Stati di rendering",
     "Camera & Mirror Visibility": "Macchina fotografica e visibilità dello specchio",
     "Stencil Buffer Settings": "Impostazioni Buffer Stencil",
     "Global AudioLink Controls": "Controlli globali AudioLink",
@@ -46,23 +46,23 @@
     "Color": "Colore",
     "Transform": "Trasformazione",
     "Texture": "Texture",
-    "Normal Map": "Mappa normale",
+    "Normal Map": "Mappa delle normali",
     "UV": "UV",
-    "UV0": "UV",
+    "UV0": "UV0",
     "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "Spazio mondiale (Triplanare)",
-    "Local Space (Triplanar)": "Spazio locale (Triplanar)",
-    "Screen Space": "Spazio di schermo",
+    "World Space (Triplanar)": "Spazio globale (Triplanare)",
+    "Local Space (Triplanar)": "Spazio locale (Triplanare)",
+    "Screen Space": "Spazio schermo",
     "Planar (Local XY)": "Planar (Local XY)",
     "Spherical (Local)": "Sferico (Locale)",
     "Cylindrical (Local)": "Cilindrico (locale)",
     "Biplanar (World)": "Biplanar (World)",
     "Panosphere (Equirectangular 360)": "Panosphere (Equirectangular 360)",
     "Polar Coordinates": "Coordinate polari",
-    "Off": "Fuori",
-    "Bass": "Basso",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "Basso medio",
     "High Mid": "Alta metà",
     "Treble": "Treble",
@@ -83,7 +83,7 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Tutti",
-    "Hue Shift": "Hue Shift",
+    "Hue Shift": "Spostamento tonalità",
     "Gradient": "Gradiente",
     "Rainbow Gradient": "Grado di arcobaleno",
     "AudioLink Theme": "AudioLink Tema",
@@ -95,8 +95,8 @@
     "Stylized_PBR": "Stylized PBR",
     "Standard_PBR": "Standard PBR",
     "Toon": "Toon",
-    "Basic": "Base di base",
-    "Unlit": "Anale",
+    "Basic": "Base",
+    "Unlit": "Non illuminato",
     "Flat": "Appartamento",
     "Ambient": "Ambiente",
     "ShadowColor": "Colore delle ombre",
@@ -109,7 +109,7 @@
     "OverrideProbes": "OverrideProbes",
     "FallbackWhenProbesDark": "FallbackWhenProbesDark",
     "Screen": "Schermo",
-    "Metallic": "Metallo",
+    "Metallic": "Metallico",
     "Specular": "Speculare",
     "Override": "Override",
     "Add": "Aggiungi",
@@ -139,7 +139,7 @@
     "Glitter": "Glitter",
     "Psychedelic": "Psichedelico",
     "Fractal3D": "Fractal3D",
-    "Galaxy": "Galaxy",
+    "Galaxy": "Galassia",
     "Skybox": "Skybox",
     "EQ Bars": "Barre EQ",
     "Continuous Curve": "Curva continua",
@@ -301,24 +301,24 @@
     "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "Questo obiettivo richiede 'Enable Dissolve' da attivare nella sezione Transizioni."
   },
   "sections": {
-    "Performance Settings": "Impostazioni delle prestazioni",
-    "Render Mode": "Modalità di rimborso",
+    "Performance Settings": "Impostazioni prestazioni",
+    "Render Mode": "Modalità di rendering",
     "Main Settings": "Impostazioni principali",
-    "Procedural Textures": "Testi procedurali",
+    "Procedural Textures": "Texture procedurali",
     "Advanced Animation Controls": "Controlli di animazione avanzati",
-    "Color Controls": "Controlli di colore",
+    "Color Controls": "Controlli colore",
     "Lighting": "Illuminazione",
-    "Surface Style": "Stile di superficie",
+    "Surface Style": "Stile della superficie",
     "Overlays": "Sovrapposizioni",
     "Effects": "Effetti",
-    "Glitches": "Gli",
+    "Glitches": "Glitch",
     "Transitions": "Transizioni",
-    "AudioLink Visualizers": "AudioLink Visualizers",
+    "AudioLink Visualizers": "Visualizzatori AudioLink",
     "Advanced Settings": "Impostazioni avanzate"
   },
   "properties": {
     "_RenderMode": {
-      "label": "Modalità di rimborso",
+      "label": "Modalità di rendering",
       "tooltip": "Controlla come viene reso il paralume. Opaque è più veloce. Il taglio è per una trasparenza duratura. Trasparente è per effetti morbidi e miscelati."
     },
     "_PerformanceLevel": {
@@ -330,7 +330,7 @@
       "tooltip": "Controllo manuale se questo materiale scrive al buffer di profondità. Abilita questo per oggetti trasparenti che dovrebbero ancora occludere oggetti dietro di loro."
     },
     "_Cutoff": {
-      "label": "Taglio alfa",
+      "label": "Soglia alfa",
       "tooltip": "La soglia alfa per l'effetto di taglio."
     },
     "_UseUVTileDiscard": {
@@ -594,7 +594,7 @@
       "tooltip": "Controlla come la frequenza del rumore cambia con ogni ottava."
     },
     "_NoiseGain": {
-      "label": "Gain",
+      "label": "Guadagno",
       "tooltip": "Controlla come l'ampiezza del rumore cambia con ogni ottava."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "Modifica il limite di ombra del sedano utilizzando la mappa di occlusione ambientale."
     },
     "_NormalMap": {
-      "label": "Mappa normale",
+      "label": "Mappa delle normali",
       "tooltip": "Aggiunge dettagli superficiali utilizzando una mappa normale."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "Mappa Metallic (R) e Smoothness (A). (Nota: Il silenzio viene ignorato se viene fornita una mappa di tosse separata)"
     },
     "_Metallic": {
-      "label": "Metallo",
+      "label": "Metallico",
       "tooltip": "Controlla come la superficie metallica è (0 = dielettrico/plastico, 1 = metallo puro)."
     },
     "_Glossiness": {
-      "label": "Smooto",
+      "label": "Levigatezza",
       "tooltip": "Controlla come liscia e riflettente la superficie è (0 = ruvida/matte, 1 = specchio liscio)."
     },
     "_UseAmbientLighting": {
@@ -1034,7 +1034,7 @@
       "tooltip": "La texture usata per mascherare la griglia. Il canale rosso è usato."
     },
     "_InvertGridMask": {
-      "label": "Invertire Maschera",
+      "label": "Inverti maschera",
       "tooltip": "Invertisce la maschera, quindi le aree nere sono visibili e le aree bianche sono nascoste."
     },
     "_USE_DISTORTION_ON": {
@@ -1378,7 +1378,7 @@
       "tooltip": "La velocità di animazione in cornici al secondo."
     },
     "_FlipbookStartFrame": {
-      "label": "Struttura di avvio",
+      "label": "Fotogramma iniziale",
       "tooltip": "Il telaio di partenza dell'animazione, permettendo un offset."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Opacità/forza complessiva della decalca."
     },
     "_DecalNormal": {
-      "label": "Mappa normale",
+      "label": "Mappa delle normali",
       "tooltip": "Mappa normale per la decal."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "Forza della mappa normale decal."
     },
     "_DecalMetallic": {
-      "label": "Metallo",
+      "label": "Metallico",
       "tooltip": "Valore metallico per l'area decal."
     },
     "_DecalSmoothness": {
-      "label": "Smooto",
+      "label": "Levigatezza",
       "tooltip": "Valore di morbidezza per l'area decal."
     },
     "_DecalAffectsPBR": {
@@ -1534,7 +1534,7 @@
       "tooltip": "Consente di modificare Normal, Metallic e Smoothness tramite la decalca."
     },
     "_SurfaceStyle": {
-      "label": "Stile di superficie",
+      "label": "Stile della superficie",
       "tooltip": ""
     },
     "_PsychedelicColorShift": {
@@ -1886,7 +1886,7 @@
       "tooltip": "Il numero di anelli concentrici increspature in 1 unità UV."
     },
     "_RippleMaxRadius": {
-      "label": "Fadeout Radius",
+      "label": "Raggio di dissolvenza",
       "tooltip": "La distanza dal centro in cui le increspature sbiadiscono completamente."
     },
     "_RippleWidth": {
@@ -2206,7 +2206,7 @@
       "tooltip": "Gap tra barre (0 = nessun gap)."
     },
     "_AudioSpectrumGain": {
-      "label": "Gain",
+      "label": "Guadagno",
       "tooltip": "Amplificazione del segnale audio."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "Numero di cicli di forma d'onda visibili."
     },
     "_AudioWaveformGain": {
-      "label": "Gain",
+      "label": "Guadagno",
       "tooltip": "Amplificazione del segnale audio."
     },
     "_AudioWaveformThickness": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Quale canale di colore della maschera da usare per clipping."
     },
     "_InvertClippingMask": {
-      "label": "Invertire Maschera",
+      "label": "Inverti maschera",
       "tooltip": "Invertisce l'effetto maschera (bianco = clipped)."
     },
     "_UseNoise": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Opacità/forza complessiva del Decal 2."
     },
     "_Decal2Normal": {
-      "label": "Mappa normale",
+      "label": "Mappa delle normali",
       "tooltip": "Mappa normale per Decal 2."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "Forza di Decal 2 mappa normale."
     },
     "_Decal2Metallic": {
-      "label": "Metallo",
+      "label": "Metallico",
       "tooltip": "Valore metallico per area Decal 2."
     },
     "_Decal2Smoothness": {
-      "label": "Smooto",
+      "label": "Levigatezza",
       "tooltip": "Valore di morbidezza per Decal 2 area."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Opacità/forza complessiva della Decal 3."
     },
     "_Decal3Normal": {
-      "label": "Mappa normale",
+      "label": "Mappa delle normali",
       "tooltip": "Mappa normale per Decal 3."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "Forza di Decal 3 mappa normale."
     },
     "_Decal3Metallic": {
-      "label": "Metallo",
+      "label": "Metallico",
       "tooltip": "Valore metallico per area Decal 3."
     },
     "_Decal3Smoothness": {
-      "label": "Smooto",
+      "label": "Levigatezza",
       "tooltip": "Valore di smoothness per Decal 3 area."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Forza dell'emissione di faccia posteriore."
     },
     "_HueShift": {
-      "label": "Hue Shift",
+      "label": "Spostamento tonalità",
       "tooltip": "Ruota la tonalità intorno alla ruota di colore."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Dither frulla la forza (0 = taglio affilato, 1 = stipplo pieno)."
     },
     "_ShadowCutoff": {
-      "label": "Shadow Cutoff",
+      "label": "Soglia ombra",
       "tooltip": "Soglia di taglio alfa per colata d'ombra."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Moltiplicatore di intensità della reazione AudioLink."
     },
     "_ThemeShiftSpeed": {
-      "label": "Velocità di spostamento",
+      "label": "Velocità spostamento tonalità",
       "tooltip": "Velocità di rotazione continua del turno di scatto."
     },
     "_ThemeTargetMask": {

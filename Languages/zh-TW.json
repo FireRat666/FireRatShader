@@ -1,24 +1,24 @@
 {
   "languageCode": "zh-TW",
   "languageName": "繁體中文",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
     "search": "搜尋",
-    "searchPlaceholder": "搜尋屬性...",
-    "matchingProperties": "符合屬性",
+    "searchPlaceholder": "搜尋材質屬性...",
+    "matchingProperties": "相符的屬性",
     "clearSearch": "清除搜尋",
-    "noPropertiesFound": "找不到符合的屬性",
+    "noPropertiesFound": "找不到相符的屬性",
     "lockMaterial": "& 优化( 點擊到解鎖)",
-    "unlockMaterial": "解鎖材料",
-    "lockAndOptimize": "鎖定优化( T)",
-    "savePreset": "儲存預置...",
-    "loadPreset": "載入預置...",
-    "copy": "复制",
+    "unlockMaterial": "解鎖材質",
+    "lockAndOptimize": "鎖定並最佳化",
+    "savePreset": "儲存預設...",
+    "loadPreset": "載入預設...",
+    "copy": "複製",
     "paste": "貼上",
-    "reset": "重置",
+    "reset": "重設",
     "language": "語言",
-    "cycle": "周期",
+    "cycle": "循環",
     "performanceTip": "校對:Soup 要取得最佳跑時性能( 特别是在 Quest/ VR 上) , 請使用上面的「 Lock & 优化 」 。 這片畫面是未使用的陰影通道 死碼分支 烤制零頭部渲染的關鍵字 .",
     "lockedWarning": "材料已鎖定( 只有讀 ) 。 透過工具列解鎖以變更屬性 .",
     "Global UV Controls": "全球UV控制",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Alpha 區域( A 頻道)",
     "Color Correction": "色彩校正",
     "Dedicated Shading Models": "专用遮罩模型",
-    "Render States": "播 音 国",
+    "Render States": "渲染狀態",
     "Camera & Mirror Visibility": "相機亮度( M)",
     "Stencil Buffer Settings": "Stencil 建設",
     "Global AudioLink Controls": "全局音效連結控制",
@@ -44,16 +44,16 @@
     "Pulse Alpha Range": "脈搏α範圍",
     "PulseAlphaRangeTooltip": "控制強度脈搏的最小和最大α.",
     "Color": "顏色",
-    "Transform": "轉換",
-    "Texture": "纹理",
-    "Normal Map": "普通地圖",
-    "UV": "紫外線",
+    "Transform": "變換",
+    "Texture": "紋理",
+    "Normal Map": "法線貼圖",
+    "UV": "UV",
     "UV0": "UV0",
-    "UV1": "紫外线1",
+    "UV1": "UV1",
     "UV2": "UV2",
     "UV3": "UV3",
-    "World Space (Triplanar)": "世界航天公司(Triplanar)",
-    "Local Space (Triplanar)": "本地空间( Triplanar)",
+    "World Space (Triplanar)": "世界空間 (三平面)",
+    "Local Space (Triplanar)": "局部空間 (三平面)",
     "Screen Space": "螢幕空間",
     "Planar (Local XY)": "平面( 本地 XY )",
     "Spherical (Local)": "球形( 本地)",
@@ -61,11 +61,11 @@
     "Biplanar (World)": "Biplanar (世界)",
     "Panosphere (Equirectangular 360)": "Panosphere( 公平 360)",
     "Polar Coordinates": "极地座標",
-    "Off": "關",
-    "Bass": "下",
+    "Off": "Off",
+    "Bass": "Bass",
     "Low Mid": "中度",
     "High Mid": "高中",
-    "Treble": "三重",
+    "Treble": "Treble",
     "High": "高",
     "Medium": "中",
     "Low": "低",
@@ -83,20 +83,20 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "全部",
-    "Hue Shift": "色調移動",
+    "Hue Shift": "色相偏移",
     "Gradient": "梯度",
     "Rainbow Gradient": "彩虹梯度",
     "AudioLink Theme": "音效链接 主題",
     "Direct": "直接",
-    "AudioLink": "音效链接",
+    "AudioLink": "AudioLink",
     "HueShift": "色調",
     "Hue Shift/Gradient": "色调移/ 大小",
     "Velocity": "速度",
     "Stylized_PBR": "拼音化   PBR",
     "Standard_PBR": "標準( P)",
     "Toon": "卡通",
-    "Basic": "基本",
-    "Unlit": "解開",
+    "Basic": "基礎",
+    "Unlit": "無光照",
     "Flat": "平面",
     "Ambient": "环境",
     "ShadowColor": "陰影顏色",
@@ -109,7 +109,7 @@
     "OverrideProbes": "覆寫前景",
     "FallbackWhenProbesDark": "預覽黑暗時回落",
     "Screen": "屏幕",
-    "Metallic": "金屬",
+    "Metallic": "金屬度",
     "Specular": "外觀",
     "Override": "覆寫",
     "Add": "添加",
@@ -133,14 +133,14 @@
     "Stretched-Blinn": "伸展的 Blinn",
     "Default": "默认",
     "Hologram": "全息圖",
-    "Crystal": "晶体",
+    "Crystal": "水晶",
     "Triplanar": "三角形",
     "Iridescence": "狂喜",
-    "Glitter": "閃光",
+    "Glitter": "閃粉",
     "Psychedelic": "幻覺",
     "Fractal3D": "分形3D",
-    "Galaxy": "銀河",
-    "Skybox": "天盒",
+    "Galaxy": "星系",
+    "Skybox": "天空盒",
     "EQ Bars": "EQ 列",
     "Continuous Curve": "连续曲線",
     "Radial": "放射",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "前方",
     "Back": "返回",
-    "Culling": "堵塞",
+    "Culling": "剔除",
     "Depth Test": "深度測試",
     "Comparison": "比較",
     "Disabled": "已禁用",
@@ -301,20 +301,20 @@
     "This target requires 'Enable Dissolve' to be turned on in the Transitions section.": "此目標需要於过渡區開啟 ."
   },
   "sections": {
-    "Performance Settings": "性能設定",
+    "Performance Settings": "效能設定",
     "Render Mode": "渲染模式",
-    "Main Settings": "主要設定值",
-    "Procedural Textures": "程序性纹理",
-    "Advanced Animation Controls": "高级動畫控制",
-    "Color Controls": "顏色控制",
-    "Lighting": "照明",
+    "Main Settings": "主要設定",
+    "Procedural Textures": "程序化紋理",
+    "Advanced Animation Controls": "進階動畫控制",
+    "Color Controls": "色彩控制",
+    "Lighting": "光照",
     "Surface Style": "表面樣式",
-    "Overlays": "重叠",
-    "Effects": "效果",
-    "Glitches": "亮度",
-    "Transitions": "过渡",
-    "AudioLink Visualizers": "音效連線視覺器",
-    "Advanced Settings": "高级設定值"
+    "Overlays": "覆蓋層",
+    "Effects": "特效",
+    "Glitches": "故障效果",
+    "Transitions": "轉場",
+    "AudioLink Visualizers": "AudioLink 視覺化",
+    "Advanced Settings": "進階設定"
   },
   "properties": {
     "_RenderMode": {
@@ -330,7 +330,7 @@
       "tooltip": "手動控制此材料是否寫入深度缓冲区 。 啟用此功能, 以啟用透明物件, 這些物件仍會在物件後面 ."
     },
     "_Cutoff": {
-      "label": "Alpha 截斷",
+      "label": "Alpha裁剪",
       "tooltip": "切除效果的α阈值 ."
     },
     "_UseUVTileDiscard": {
@@ -674,7 +674,7 @@
       "tooltip": "用環境封鎖地圖來移動 ."
     },
     "_NormalMap": {
-      "label": "普通地圖",
+      "label": "法線貼圖",
       "tooltip": "使用普通地圖新增表面細節 ."
     },
     "_BumpScale": {
@@ -702,11 +702,11 @@
       "tooltip": "金屬( R) 和 平滑( A) 地圖 。 (注意: 如果提供另外的 Rawness 地圖, 滑動度會被忽略 )"
     },
     "_Metallic": {
-      "label": "金屬",
+      "label": "金屬度",
       "tooltip": "控制表面的金屬(0=二电/塑料,1=纯金屬)."
     },
     "_Glossiness": {
-      "label": "平滑",
+      "label": "平滑度",
       "tooltip": "控制表面的平滑度和反射度(0=粗糙/表面,1=鏡頭平滑)."
     },
     "_UseAmbientLighting": {
@@ -1034,7 +1034,7 @@
       "tooltip": "用來遮掩網格的纹理 使用紅色頻道 ."
     },
     "_InvertGridMask": {
-      "label": "反向遮罩",
+      "label": "反轉遮罩",
       "tooltip": "反轉面具,因此黑色區域可见,白色區域被隱藏."
     },
     "_USE_DISTORTION_ON": {
@@ -1378,7 +1378,7 @@
       "tooltip": "每秒的動畫速度."
     },
     "_FlipbookStartFrame": {
-      "label": "開始框架",
+      "label": "起始影格",
       "tooltip": "動畫的起始框, 允許偏移 ."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "整体不透明/ 硬度 ."
     },
     "_DecalNormal": {
-      "label": "普通地圖",
+      "label": "法線貼圖",
       "tooltip": "地標的普通地圖 ."
     },
     "_DecalNormalStrength": {
@@ -1522,11 +1522,11 @@
       "tooltip": "平面圖的強度 ."
     },
     "_DecalMetallic": {
-      "label": "金屬",
+      "label": "金屬度",
       "tooltip": "解析區的金屬值 ."
     },
     "_DecalSmoothness": {
-      "label": "平滑",
+      "label": "平滑度",
       "tooltip": "平滑值 ."
     },
     "_DecalAffectsPBR": {
@@ -1582,7 +1582,7 @@
       "tooltip": "曼德爾布爾的電力參數 。 試試動畫吧!"
     },
     "_FractalIter": {
-      "label": "迭代",
+      "label": "迭代次數",
       "tooltip": "重复數量。 更高更詳細,但更慢."
     },
     "_FractalKaleidoAngles": {
@@ -2398,7 +2398,7 @@
       "tooltip": "遮罩的哪個顏色通道來剪接 ."
     },
     "_InvertClippingMask": {
-      "label": "反向遮罩",
+      "label": "反轉遮罩",
       "tooltip": "反轉遮罩效果( 白色 = 剪切) ."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "噪音動畫的每秒框."
     },
     "_Cull": {
-      "label": "堵塞",
+      "label": "剔除",
       "tooltip": "多边形 culling 模式( Off, Front, Back) ."
     },
     "_CullShadow": {
@@ -2430,7 +2430,7 @@
       "tooltip": "專用于陰影投影傳球的 Polygon culling 模式 ."
     },
     "_ZTest": {
-      "label": "Z 測試",
+      "label": "ZTest",
       "tooltip": "控制深度測試方式 ."
     },
     "_ColorWriteMask": {
@@ -2570,7 +2570,7 @@
       "tooltip": "总体不透明/ 強度為 Decal 2."
     },
     "_Decal2Normal": {
-      "label": "普通地圖",
+      "label": "法線貼圖",
       "tooltip": "DDecal 2 的普通地圖 ."
     },
     "_Decal2NormalStrength": {
@@ -2578,11 +2578,11 @@
       "tooltip": "二號地圖的強度."
     },
     "_Decal2Metallic": {
-      "label": "金屬",
+      "label": "金屬度",
       "tooltip": "DDecal 2 區域的金屬值 ."
     },
     "_Decal2Smoothness": {
-      "label": "平滑",
+      "label": "平滑度",
       "tooltip": "DDecal 2 區的平滑值 ."
     },
     "_Decal2AffectsPBR": {
@@ -2614,7 +2614,7 @@
       "tooltip": "总体不透明/ 強度 3."
     },
     "_Decal3Normal": {
-      "label": "普通地圖",
+      "label": "法線貼圖",
       "tooltip": "DDecal 3 的普通地圖."
     },
     "_Decal3NormalStrength": {
@@ -2622,11 +2622,11 @@
       "tooltip": "DDecal 3 普通地圖的強度 ."
     },
     "_Decal3Metallic": {
-      "label": "金屬",
+      "label": "金屬度",
       "tooltip": "DDecal 3 區的金屬值 ."
     },
     "_Decal3Smoothness": {
-      "label": "平滑",
+      "label": "平滑度",
       "tooltip": "DDecal 3 區的平滑值 ."
     },
     "_Decal3AffectsPBR": {
@@ -2682,7 +2682,7 @@
       "tooltip": "背面排放的力量."
     },
     "_HueShift": {
-      "label": "色調移動",
+      "label": "色相偏移",
       "tooltip": "旋轉顏色輪."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "迪瑟混合力(0=锐切,1=全尖)."
     },
     "_ShadowCutoff": {
-      "label": "陰影截斷",
+      "label": "陰影裁剪",
       "tooltip": "影子投影的Alpha截線."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "AudioLink 反應的強度乘數 ."
     },
     "_ThemeShiftSpeed": {
-      "label": "色调移速",
+      "label": "色相偏移速度",
       "tooltip": "持續轉移轉速 ."
     },
     "_ThemeTargetMask": {

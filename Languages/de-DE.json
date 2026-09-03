@@ -1,21 +1,21 @@
 {
   "languageCode": "de-DE",
   "languageName": "Deutsch",
-  "author": "Machine translated with LibreTranslate",
+  "author": "Machine translated with LibreTranslate (Curated Glossary Protected)",
   "version": "1.0.0",
   "ui": {
-    "search": "Suche",
+    "search": "Suchen",
     "searchPlaceholder": "Materialeigenschaften suchen...",
     "matchingProperties": "Passende Eigenschaften",
-    "clearSearch": "Klare Suche",
+    "clearSearch": "Suche löschen",
     "noPropertiesFound": "Keine passenden Eigenschaften gefunden",
     "lockMaterial": "🔒 Material gesperrt und optimiert (klicken Sie zum Entsperren)",
-    "unlockMaterial": "Sperrmaterial",
-    "lockAndOptimize": "Lock & Optimieren",
-    "savePreset": "Save Preset...",
-    "loadPreset": "Lastvorgabe...",
-    "copy": "Kopie",
-    "paste": "Paste",
+    "unlockMaterial": "Material entsperren",
+    "lockAndOptimize": "Sperren & Optimieren",
+    "savePreset": "Voreinstellung speichern...",
+    "loadPreset": "Voreinstellung laden...",
+    "copy": "Kopieren",
+    "paste": "Einfügen",
     "reset": "Zurücksetzen",
     "language": "Sprache",
     "cycle": "Zyklus",
@@ -32,7 +32,7 @@
     "Alpha Zone (A Channel)": "Alpha-Zone (A-Kanal)",
     "Color Correction": "Farbkorrektur",
     "Dedicated Shading Models": "Dedizierte Shading-Modelle",
-    "Render States": "Geberstaaten",
+    "Render States": "Render-Zustände",
     "Camera & Mirror Visibility": "Kamera & Spiegelsichtbarkeit",
     "Stencil Buffer Settings": "Einstellungen für Schablonenpuffer",
     "Global AudioLink Controls": "Global AudioLink Controls",
@@ -44,9 +44,9 @@
     "Pulse Alpha Range": "Puls-Alpha-Bereich",
     "PulseAlphaRangeTooltip": "Steuert die minimale und maximale Alpha für den Intensitätsimpuls.",
     "Color": "Farbe",
-    "Transform": "Transform",
+    "Transform": "Transformation",
     "Texture": "Textur",
-    "Normal Map": "Normale Karte",
+    "Normal Map": "Normal-Map",
     "UV": "UV",
     "UV0": "UV0",
     "UV1": "UV1",
@@ -54,18 +54,18 @@
     "UV3": "UV3",
     "World Space (Triplanar)": "Weltraum (Triplanar)",
     "Local Space (Triplanar)": "Lokaler Raum (Triplanar)",
-    "Screen Space": "Bildschirmraum",
+    "Screen Space": "Bildschirmbereich",
     "Planar (Local XY)": "Planar (lokal XY)",
     "Spherical (Local)": "Sphärisch (lokal)",
     "Cylindrical (Local)": "Zylindrisch (lokal)",
     "Biplanar (World)": "Biplanar (Welt)",
     "Panosphere (Equirectangular 360)": "Panosphäre (Equirectangular 360)",
     "Polar Coordinates": "Polarkoordinaten",
-    "Off": "Ausgeschaltet",
+    "Off": "Off",
     "Bass": "Bass",
     "Low Mid": "Niedrige Mitte",
     "High Mid": "Hochmitte",
-    "Treble": "Tresen",
+    "Treble": "Treble",
     "High": "Hoch",
     "Medium": "Medium",
     "Low": "Niedrig",
@@ -83,20 +83,20 @@
     "RGBA": "RGBA",
     "RGB": "RGB",
     "All": "Alle",
-    "Hue Shift": "Hue Shift",
+    "Hue Shift": "Farbtonverschiebung",
     "Gradient": "Gefälle",
     "Rainbow Gradient": "Regenbogengradient",
     "AudioLink Theme": "Audiolink Thema",
     "Direct": "Direkt",
-    "AudioLink": "Audiolink",
+    "AudioLink": "AudioLink",
     "HueShift": "HueShift",
     "Hue Shift/Gradient": "Hue Shift/Gradient",
     "Velocity": "Geschwindigkeit",
     "Stylized_PBR": "Stylisiert PBR",
     "Standard_PBR": "Standard PBR",
     "Toon": "Toon",
-    "Basic": "Grundlegend",
-    "Unlit": "Nicht beleuchtet",
+    "Basic": "Einfach",
+    "Unlit": "Unbeleuchtet",
     "Flat": "Flach",
     "Ambient": "Umgebung",
     "ShadowColor": "Schattenfarbe",
@@ -136,10 +136,10 @@
     "Crystal": "Kristall",
     "Triplanar": "Triplanar",
     "Iridescence": "Iriseszenz",
-    "Glitter": "Glitter",
+    "Glitter": "Glitzer",
     "Psychedelic": "Psychedel",
     "Fractal3D": "Fractal3D",
-    "Galaxy": "Galaxis",
+    "Galaxy": "Galaxie",
     "Skybox": "Skybox",
     "EQ Bars": "EQ-Stäbe",
     "Continuous Curve": "Kontinuierliche Kurve",
@@ -252,7 +252,7 @@
     "Z": "Z",
     "Front": "Vorn",
     "Back": "Rücken",
-    "Culling": "Keulung",
+    "Culling": "Culling",
     "Depth Test": "Tiefenprüfung",
     "Comparison": "Vergleich",
     "Disabled": "Behinderte",
@@ -304,16 +304,16 @@
     "Performance Settings": "Leistungseinstellungen",
     "Render Mode": "Rendermodus",
     "Main Settings": "Haupteinstellungen",
-    "Procedural Textures": "Verfahrenstexturen",
-    "Advanced Animation Controls": "Advanced Animation Controls",
-    "Color Controls": "Farbkontrollen",
+    "Procedural Textures": "Prozedurale Texturen",
+    "Advanced Animation Controls": "Erweiterte Animationssteuerungen",
+    "Color Controls": "Farbsteuerungen",
     "Lighting": "Beleuchtung",
     "Surface Style": "Oberflächenstil",
     "Overlays": "Überlagerungen",
-    "Effects": "Auswirkungen",
-    "Glitches": "Störungen",
+    "Effects": "Effekte",
+    "Glitches": "Glitches",
     "Transitions": "Übergänge",
-    "AudioLink Visualizers": "AudioLink Visualisatoren",
+    "AudioLink Visualizers": "AudioLink-Visualisierer",
     "Advanced Settings": "Erweiterte Einstellungen"
   },
   "properties": {
@@ -330,7 +330,7 @@
       "tooltip": "Steuern Sie manuell, ob dieses Material in den Tiefenpuffer schreibt. Aktivieren Sie dies für transparente Objekte, die Objekte dahinter noch verschließen sollten."
     },
     "_Cutoff": {
-      "label": "Alpha-Cutoff",
+      "label": "Alpha-Grenzwert",
       "tooltip": "Alpha-Schwelle für den Cutout-Effekt."
     },
     "_UseUVTileDiscard": {
@@ -594,7 +594,7 @@
       "tooltip": "Steuert, wie sich die Frequenz des Rauschens mit jeder Oktave ändert."
     },
     "_NoiseGain": {
-      "label": "Gewinn",
+      "label": "Verstärkung",
       "tooltip": "Steuert, wie sich die Amplitude des Rauschens mit jeder Oktave ändert."
     },
     "_VoronoiStyle": {
@@ -674,7 +674,7 @@
       "tooltip": "Moduliert die Cel-Schattengrenze unter Verwendung der Umgebungsokklusionskarte."
     },
     "_NormalMap": {
-      "label": "Normale Karte",
+      "label": "Normal-Map",
       "tooltip": "Fügt Oberflächendetails mit einer normalen Karte hinzu."
     },
     "_BumpScale": {
@@ -1034,7 +1034,7 @@
       "tooltip": "Die Textur, die verwendet wird, um das Gitter zu maskieren. Der rote Kanal wird verwendet."
     },
     "_InvertGridMask": {
-      "label": "Invertierte Maske",
+      "label": "Maske umkehren",
       "tooltip": "Wendet die Maske um, so dass schwarze Bereiche sichtbar sind und weiße Bereiche verborgen sind."
     },
     "_USE_DISTORTION_ON": {
@@ -1378,7 +1378,7 @@
       "tooltip": "Die Animationsgeschwindigkeit in Bildern pro Sekunde."
     },
     "_FlipbookStartFrame": {
-      "label": "Start Frame",
+      "label": "Start-Frame",
       "tooltip": "Der Startrahmen der Animation, der einen Offset ermöglicht."
     },
     "_USE_DETAIL_TEX_ON": {
@@ -1514,7 +1514,7 @@
       "tooltip": "Gesamttrübung/-festigkeit des Aufklebers."
     },
     "_DecalNormal": {
-      "label": "Normale Karte",
+      "label": "Normal-Map",
       "tooltip": "Normale Karte für das Decal."
     },
     "_DecalNormalStrength": {
@@ -1886,7 +1886,7 @@
       "tooltip": "Die Anzahl der konzentrischen Wellenringe über 1 UV-Einheit."
     },
     "_RippleMaxRadius": {
-      "label": "Fadeout Radius",
+      "label": "Ausblendungsradius",
       "tooltip": "Der Abstand vom Zentrum, bei dem die Wellen vollständig ausblenden."
     },
     "_RippleWidth": {
@@ -2206,7 +2206,7 @@
       "tooltip": "Lücke zwischen Balken (0 = keine Lücke)."
     },
     "_AudioSpectrumGain": {
-      "label": "Gewinn",
+      "label": "Verstärkung",
       "tooltip": "Verstärkung des Audiosignals."
     },
     "_AudioSpectrumThickness": {
@@ -2298,7 +2298,7 @@
       "tooltip": "Anzahl der sichtbaren Wellenformzyklen."
     },
     "_AudioWaveformGain": {
-      "label": "Gewinn",
+      "label": "Verstärkung",
       "tooltip": "Verstärkung des Audiosignals."
     },
     "_AudioWaveformThickness": {
@@ -2398,7 +2398,7 @@
       "tooltip": "Welchen Farbkanal der Maske zum Clipping verwenden soll."
     },
     "_InvertClippingMask": {
-      "label": "Invertierte Maske",
+      "label": "Maske umkehren",
       "tooltip": "Invertiert den Maskeneffekt (weiß = abgeschnitten)."
     },
     "_UseNoise": {
@@ -2422,7 +2422,7 @@
       "tooltip": "Die \"Bilder pro Sekunde\" der Geräuschanimation."
     },
     "_Cull": {
-      "label": "Keulung",
+      "label": "Culling",
       "tooltip": "Polygon-Culling-Modus (Off, Front, Back)."
     },
     "_CullShadow": {
@@ -2570,7 +2570,7 @@
       "tooltip": "Gesamttrübung/-stärke von Decal 2."
     },
     "_Decal2Normal": {
-      "label": "Normale Karte",
+      "label": "Normal-Map",
       "tooltip": "Normale Karte für Decal 2."
     },
     "_Decal2NormalStrength": {
@@ -2614,7 +2614,7 @@
       "tooltip": "Gesamttrübung / Stärke von Decal 3."
     },
     "_Decal3Normal": {
-      "label": "Normale Karte",
+      "label": "Normal-Map",
       "tooltip": "Normale Karte für Decal 3."
     },
     "_Decal3NormalStrength": {
@@ -2682,7 +2682,7 @@
       "tooltip": "Stärke der Rückwandemission."
     },
     "_HueShift": {
-      "label": "Hue Shift",
+      "label": "Farbtonverschiebung",
       "tooltip": "Dreht den Farbton um das Farbrad."
     },
     "_SaturationAdjust": {
@@ -2894,7 +2894,7 @@
       "tooltip": "Dither Blendfestigkeit (0 = scharfer Ausschnitt, 1 = Vollstipple)."
     },
     "_ShadowCutoff": {
-      "label": "Schattenabschaltung",
+      "label": "Schatten-Grenzwert",
       "tooltip": "Alpha-Grenzwert für Schattenwurf."
     },
     "_UseShadowCutoffOverride": {
@@ -3334,7 +3334,7 @@
       "tooltip": "Intensitätsmultiplikator der AudioLink-Reaktion."
     },
     "_ThemeShiftSpeed": {
-      "label": "Hue Shift Geschwindigkeit",
+      "label": "Farbtonverschiebungsgeschwindigkeit",
       "tooltip": "Geschwindigkeit der kontinuierlichen Farbtonverschiebung Rotation."
     },
     "_ThemeTargetMask": {
