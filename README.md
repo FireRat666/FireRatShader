@@ -13,7 +13,7 @@ FireRatShader is a high-performance Uber shader for Unity that consolidates hund
 
 ## Get FireRatShader
 
-FireRatShader is a commercial product. See the [docs introduction](docs/index.html) for purchase information and current availability.
+FireRatShader is a commercial product. Buy it on [Patreon](https://www.patreon.com/FireRat) — see the page for pricing, current availability, and purchase tiers.
 
 > Tested with Unity 2022.3 LTS & Unity 6.3 LTS. Works on Windows, macOS, Linux, Meta Quest, SteamVR, iOS, and Android.
 
