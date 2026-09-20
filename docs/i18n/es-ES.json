@@ -1,7 +1,7 @@
 {
   "languageCode": "es-ES",
   "languageName": "Español",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -303,7 +303,7 @@
     "index.a.56": "Características",
     "index.a.58": "Licencia",
     "docs.index.title.1247": "FireRatShader Documentación",
-    "docs.index.h1.1246": "FireRatShader V1.1.1 Documentación",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 Documentación",
     "docs.index.a.958": "Introducción",
     "docs.index.a.960": "Herramientas de material",
     "docs.index.a.961": "Ejecución",
@@ -1325,8 +1325,6 @@
     "banner.yes": "Cambio",
     "banner.no": "No gracias",
     "switcher.label": "Idioma",
-    "index.span.22": "Standard PBR, Toon, MatCap, Skin, Hair, Eye, Galaxy, Crystal, Glitter, Grid, Psychedelic, 3D Fractal, Triplanar, Iridescence",
-    "docs.index.li.170": "Normal — Tangent-space perturbed normal vector.",
     "index.span.201": "Un gusto rápido - ver",
     "index.span.202": "para la lista completa.",
     "index.span.203": "Para la información de compra y disponibilidad actual, vea la",
@@ -2310,6 +2308,21 @@
     "docs.index.span.1975": "Los archivos de idioma se observan en el disco — editar un paquete JSON mientras Unity está abierto y el inspector refresca inmediatamente. También puede forzar un refresco a través de",
     "docs.index.span.1976": "Cualquier persona puede añadir o mejorar un idioma copiando",
     "docs.index.span.1977": ", traducir los valores, y guardarlo como por ejemplo.",
-    "docs.index.span.1978": "Su elección de idioma se recuerda por proyecto a través de EditorPrefs."
+    "docs.index.span.1978": "Su elección de idioma se recuerda por proyecto a través de EditorPrefs.",
+    "docs.index.p.1001": "FireRatShader proporciona una configuración automática de un clic que detecta su tubería de renderizado para usted, así como un flujo de trabajo totalmente manual.",
+    "docs.index.p.1003": "Configuración automática (recomendada):",
+    "docs.index.span.1979": "Corre",
+    "docs.index.span.1980": "La herramienta detecta si su proyecto utiliza incorporado o URP y crea el activo CRT junto al sombreador.",
+    "docs.index.span.1981": "Seleccione su material FireRat y ejecutar",
+    "docs.index.span.1982": "Esto conecta el CRT en el material y permite el modo de amortiguación temporal automáticamente.",
+    "docs.index.p.1983": "Configuración manual:",
+    "docs.index.span.1984": "En un URP proyecto, seleccione",
+    "docs.index.span.1985": "en lugar de eso.",
+    "docs.index.li.1986": "Sincroniza automáticamente las palabras clave del tono después de la conversión, por lo que los materiales convertidos renderizan correctamente inmediatamente sin una actualización manual de palabras clave.",
+    "docs.index.li.1987": "Soporta las tasas dinámicas de muestras de audio y limpia automáticamente sus datos de sombreado en independiente y crea el reproductor.",
+    "docs.index.li.1988": "Re-syncs sombreador palabras clave automáticamente después de las ediciones de propiedad por lotes y conversión de tuberías, por lo que la iluminación, modo de renderizado, y toggles de características se aplican al instante.",
+    "docs.index.li.1989": "Hornea palabras clave en los materiales de búsqueda generados automáticamente y, para optimizar el rendimiento bajo o la salida bloqueada, tiras pases no utilizados para móviles.",
+    "index.span.22": "PBR estándar, Toon, MatCap, Piel, Cabello, Ojo, Galaxia, Cristal, Glitter, Cuadrícula, Psicodélico, Fractal 3D, Triplanar, Iridiscencia",
+    "docs.index.li.170": "Normal — Vector normal perturbado en el espacio tangente."
   }
 }

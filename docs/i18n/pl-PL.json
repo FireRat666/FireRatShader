@@ -1,7 +1,7 @@
 {
   "languageCode": "pl-PL",
   "languageName": "Polski",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -304,7 +304,7 @@
     "index.a.56": "Cechy",
     "index.a.58": "Licencja",
     "docs.index.title.1247": "FireRatShader Dokumentacja",
-    "docs.index.h1.1246": "FireRatShader V1.1.1 Dokumentacja",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 Dokumentacja",
     "docs.index.a.958": "Wprowadzenie",
     "docs.index.a.960": "Narzędzia materiałowe",
     "docs.index.a.961": "Wydajność",
@@ -2310,6 +2310,19 @@
     "docs.index.span.1975": "Pliki językowe są oglądane na dysku - edytuj pakiet JSON Unity jest otwarty i inspektor odświeża natychmiast. Można również wymusić odświeżenie poprzez",
     "docs.index.span.1976": "Każdy może dodać lub poprawić język kopiując",
     "docs.index.span.1977": ", przetłumaczyć wartości i zapisać je jako np.",
-    "docs.index.span.1978": "Twój wybór języka jest zapamiętywany za pośrednictwem EditorPrefers."
+    "docs.index.span.1978": "Twój wybór języka jest zapamiętywany za pośrednictwem EditorPrefers.",
+    "docs.index.p.1001": "FireRatShader zapewnia automatyczną konfigurację jednego kliknięcia, która wykrywa Twój rurociąg renderowania dla Ciebie, jak również w pełni ręczny przepływ pracy.",
+    "docs.index.p.1003": "Automatyczne ustawienie (zalecane):",
+    "docs.index.span.1979": "Biegnij",
+    "docs.index.span.1980": "Narzędzie wykrywa, czy Twój projekt wykorzystuje Built- in czy URP i tworzy dopasowanie aktywów CRT obok cieniowca.",
+    "docs.index.span.1981": "Wybierz materiał FireRat i uruchom",
+    "docs.index.span.1982": "To podłącza CRT do materiału i umożliwia tryb bufora temporal automatycznie.",
+    "docs.index.p.1983": "Ustawienie ręczne:",
+    "docs.index.span.1984": "W URP projekt, wybierz",
+    "docs.index.span.1985": "Zamiast tego.",
+    "docs.index.li.1986": "Automatycznie synchronizuje cienie słów kluczowych po konwersji, więc przerobione materiały renderują poprawnie natychmiast bez ręcznego odświeżania słów kluczowych.",
+    "docs.index.li.1987": "Obsługuje dynamiczne częstotliwości próbkowania dźwięku i automatycznie oczyszcza swoje dane cieniowania w stanie samodzielnym i tworzy odtwarzacz.",
+    "docs.index.li.1988": "Re-syncs shader słowa kluczowe automatycznie po edycjach właściwości wsadowych i konwersji rurociągu, więc oświetlenie, tryb renderowania i funkcje toggle mają zastosowanie natychmiast.",
+    "docs.index.li.1989": "Piece słowa kluczowe do generowanych materiałów Quest automatycznie i, dla zoptymalizowanej niskiej wydajności lub zablokowane wyjście, paski niewykorzystane przepustki dla telefonów komórkowych."
   }
 }

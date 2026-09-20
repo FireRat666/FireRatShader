@@ -1,7 +1,7 @@
 {
   "languageCode": "vi-VN",
   "languageName": "Tiếng Việt",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -304,7 +304,7 @@
     "index.a.56": "Tính năng",
     "index.a.58": "Giấy phép",
     "docs.index.title.1247": "FireRatShader Tài liệu",
-    "docs.index.h1.1246": "FireRatShader Tài liệu V1.1. 1",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 Tài liệu",
     "docs.index.a.958": "Giới thiệu",
     "docs.index.a.960": "Công cụ vật liệu",
     "docs.index.a.961": "Hiệu suất",
@@ -2310,6 +2310,19 @@
     "docs.index.span.1975": "Tập tin ngôn ngữ được xem trên đĩa — chỉnh sửa gói JSON trong khi Unity được mở và thanh tra cập nhật ngay lập tức. Bạn cũng có thể bắt đầu lại thông qua",
     "docs.index.span.1976": "Ai cũng có thể thêm hoặc cải thiện ngôn ngữ bằng cách sao chép",
     "docs.index.span.1977": "dịch các giá trị, và lưu nó như e.g.",
-    "docs.index.span.1978": "Lựa chọn ngôn ngữ của bạn được ghi nhớ qua EditorPrefs."
+    "docs.index.span.1978": "Lựa chọn ngôn ngữ của bạn được ghi nhớ qua EditorPrefs.",
+    "docs.index.p.1001": "FireRatShader cung cấp một cú nhấn chuột tự động để phát hiện đường ống cung cấp cho bạn, cũng như một luồng làm việc thủ công đầy đủ.",
+    "docs.index.p.1003": "Thiết lập tự động (dùng):",
+    "docs.index.span.1979": "Chạy",
+    "docs.index.span.1980": "Công cụ phát hiện dự án của bạn sử dụng Xây dựng trong hay URP và tạo ra các tài sản CT tương ứng cạnh bóng râm.",
+    "docs.index.span.1981": "Chọn vật liệu FireRat rồi chạy",
+    "docs.index.span.1982": "Điều này dây CT vào vật liệu và hiệu lực chế độ thời gian Buffer tự động.",
+    "docs.index.p.1983": "Thiết lập thủ công:",
+    "docs.index.span.1984": "Trong một URP dự án, chọn",
+    "docs.index.span.1985": "Thay vào đó.",
+    "docs.index.li.1986": "Tự động đồng bộ hoá từ khoá bóng râm sau khi chuyển đổi, vì vậy các vật liệu đã được chuyển đổi hoạt động đúng ngay lập tức mà không cần nạp lại từ khóa bằng tay.",
+    "docs.index.li.1987": "Hỗ trợ tỷ lệ âm thanh nhỏ động và tự động làm sạch dữ liệu bóng râm của nó trong đứng và máy chơi xây dựng.",
+    "docs.index.li.1988": "Các từ khoá định hướng lại tự động sau khi sửa đổi tài sản hàng loạt và chuyển đổi đường ống, vì vậy ánh sáng, trình dịch chế độ, và tính năng bật lên áp dụng ngay lập tức.",
+    "docs.index.li.1989": "Bates từ khoá vào các vật liệu tìm kiếm tạo ra tự động và, để tối ưu hóa hiệu suất thấp hoặc bị khóa kết xuất, các dải không dùng được đi qua cho di động."
   }
 }

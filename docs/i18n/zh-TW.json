@@ -1,7 +1,7 @@
 {
   "languageCode": "zh-TW",
   "languageName": "繁體中文",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -304,7 +304,7 @@
     "index.a.56": "特征",
     "index.a.58": "執照",
     "docs.index.title.1247": "FireRatShader 文件",
-    "docs.index.h1.1246": "FireRatShader V1.1.1 文件",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 文件",
     "docs.index.a.958": "引言",
     "docs.index.a.960": "材料工具",
     "docs.index.a.961": "性能",
@@ -2310,6 +2310,19 @@
     "docs.index.span.1975": "語言檔案在磁碟上監視 – 編輯 JSON 套件時 Unity 檢查員立即刷新 您也可以强制刷新到",
     "docs.index.span.1976": "任何人都可以通过抄寫來增加或改善語言",
     "docs.index.span.1977": ",轉譯數值,並儲存為例如:",
-    "docs.index.span.1978": "您的語言選擇通过 EditorPrefs 被記住 。"
+    "docs.index.span.1978": "您的語言選擇通过 EditorPrefs 被記住 。",
+    "docs.index.p.1001": "FireRatShader 提供一擊的自動設定, 以檢測您的輸入管道, 以及完全手動的工作流程 。",
+    "docs.index.p.1003": "自動設定( 建議 ):",
+    "docs.index.span.1979": "快跑",
+    "docs.index.span.1980": "此工具會檢測您的專案是否使用 Built- in 或 URP ,並在陰影旁建立匹配的 CRT 資產 。",
+    "docs.index.span.1981": "選擇您的 FireRat 材料並執行",
+    "docs.index.span.1982": "這將 CRT 串通到材料中, 並自動啟動 Tempolar 缓冲模式 。",
+    "docs.index.p.1983": "手動設定 :",
+    "docs.index.span.1984": "在a URP 專案, 選擇",
+    "docs.index.span.1985": "相反。",
+    "docs.index.li.1986": "轉換後自動同步陰影關鍵字, 所以轉換的材料在沒有手動更新關鍵字的情况下即刻轉換正確 。",
+    "docs.index.li.1987": "支援动态音效樣本率, 並自動清理其獨立與玩家建構的陰影資料 。",
+    "docs.index.li.1988": "在批次屬性編輯及管道轉換後, 重新同步陰影關鍵字, 因此照明、 渲染模式與特性切換即時适用 。",
+    "docs.index.li.1989": "自動將關鍵字刻入產生的素材中, 為优化低性能或鎖定的輸出,"
   }
 }

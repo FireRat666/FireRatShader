@@ -1,7 +1,7 @@
 {
   "languageCode": "de-DE",
   "languageName": "Deutsch",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -304,7 +304,7 @@
     "index.a.56": "Merkmale",
     "index.a.58": "Lizenz",
     "docs.index.title.1247": "FireRatShader Dokumentation",
-    "docs.index.h1.1246": "FireRatShader V1.1.1 Dokumentation",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 Dokumentation",
     "docs.index.a.958": "Einleitung",
     "docs.index.a.960": "Materialwerkzeuge",
     "docs.index.a.961": "Leistung",
@@ -2310,6 +2310,19 @@
     "docs.index.span.1975": "Sprachdateien werden auf der Festplatte angesehen - Bearbeiten eines JSON-Pakets, während Unity ist geöffnet und der Inspektor erfrischt sich sofort. Sie können auch eine Aktualisierung erzwingen via",
     "docs.index.span.1976": "Jeder kann eine Sprache durch Kopieren hinzufügen oder verbessern",
     "docs.index.span.1977": ", übersetzt die Werte und speichert sie z.B.",
-    "docs.index.span.1978": "Ihre Sprachwahl wird pro Projekt über EditorPrefs gespeichert."
+    "docs.index.span.1978": "Ihre Sprachwahl wird pro Projekt über EditorPrefs gespeichert.",
+    "docs.index.p.1001": "FireRatShader bietet eine automatische Einrichtung mit einem Klick, die Ihre Render-Pipeline für Sie erkennt, sowie einen vollständig manuellen Workflow.",
+    "docs.index.p.1003": "Automatische Einrichtung (empfohlen):",
+    "docs.index.span.1979": "Lauf",
+    "docs.index.span.1980": "Das Tool erkennt, ob Ihr Projekt Built-in oder URP und erstellt das passende CRT-Asset neben dem Shader.",
+    "docs.index.span.1981": "Wählen Sie Ihr FireRat Material und laufen",
+    "docs.index.span.1982": "Dadurch wird der CRT in das Material eingeschaltet und der temporäre Puffermodus automatisch aktiviert.",
+    "docs.index.p.1983": "Manuelle Einrichtung:",
+    "docs.index.span.1984": "In a URP Projekt, auswählen",
+    "docs.index.span.1985": "Stattdessen.",
+    "docs.index.li.1986": "Synchronisiert Shader-Keywords automatisch nach der Konvertierung, so dass konvertierte Materialien sofort ohne manuelle Keyword-Aktualisierung korrekt dargestellt werden.",
+    "docs.index.li.1987": "Unterstützt dynamische Audio-Sampleraten und bereinigt automatisch seine Shader-Daten in eigenständigen und Player-Builds.",
+    "docs.index.li.1988": "Re-syncs shader keywords automatisch nach batch-eigenschaftsbearbeitungen und pipeline-konvertierung, so dass beleuchtung, render-modus und feature-schalter sofort gelten.",
+    "docs.index.li.1989": "Backt Keywords automatisch in die generierten Quest-Materialien und, für optimierte, leistungsschwache oder gesperrte Ausgabe, Streifen unbenutzte Pässe für Mobilgeräte."
   }
 }

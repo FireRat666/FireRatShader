@@ -1,7 +1,7 @@
 {
   "languageCode": "ko-KR",
   "languageName": "한국어",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -303,7 +303,7 @@
     "index.a.56": "제품 설명",
     "index.a.58": "이름 *",
     "docs.index.title.1247": "FireRatShader 회사연혁",
-    "docs.index.h1.1246": "FireRatShader V1.1.1 문서",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 문서",
     "docs.index.a.958": "제품정보",
     "docs.index.a.960": "물자 공구",
     "docs.index.a.961": "- 연혁",
@@ -1326,7 +1326,6 @@
     "banner.yes": "기타 제품",
     "banner.no": "감사합니다.",
     "switcher.label": "* 이름",
-    "index.span.44": "Strips unused passes, bakes keywords as #defines, rewrites includes for standalone builds",
     "index.span.201": "빠른 맛 — 보기",
     "index.span.202": "전체 목록입니다.",
     "index.span.203": "구매 정보 및 현재 가용성을 위해,",
@@ -2310,6 +2309,20 @@
     "docs.index.span.1975": "언어 파일은 디스크에 표시됩니다 - JSON 팩을 편집하는 동안 Unity 열려있고 검사관은 즉시 재생합니다. 또한 통해 새로워질 수 있습니다.",
     "docs.index.span.1976": "누구나 복사하여 언어를 추가하거나 개선할 수 있습니다.",
     "docs.index.span.1977": ", 값을 번역, e.g로 저장.",
-    "docs.index.span.1978": "당신의 언어 선택은 EditorPrefs를 통해 프로젝트 당 기억됩니다."
+    "docs.index.span.1978": "당신의 언어 선택은 EditorPrefs를 통해 프로젝트 당 기억됩니다.",
+    "index.span.44": "사용하지 않는 패스를 제거하고, 키워드를 #defines로 구우며, 스탠드얼론 빌드용 include를 다시 작성합니다.",
+    "docs.index.p.1001": "FireRatShader 한 번 클릭 자동 설정으로 렌더링 파이프라인을 감지하고 완전히 수동 워크플로우를 제공합니다.",
+    "docs.index.p.1003": "자동 설정 (추천):",
+    "docs.index.span.1979": "지원하다",
+    "docs.index.span.1980": "이 도구는 프로젝트가 내장되었거나 URP 그리고 셰이더 옆에 어울리는 CRT 자산을 만듭니다.",
+    "docs.index.span.1981": "FireRat 소재를 선택하고 실행",
+    "docs.index.span.1982": "이 철사는 물자로 CRT를 이고 Temporal 완충기 형태를 자동적으로 가능하게 합니다.",
+    "docs.index.p.1983": "수동 설정:",
+    "docs.index.span.1984": "에 의해 URP 프로젝트, 선택",
+    "docs.index.span.1985": "대신.",
+    "docs.index.li.1986": "변환 후 자동으로 셰이퍼 키워드를 동기화하므로 수동 키워드가 새로 고침없이 재료를 올바르게 변환합니다.",
+    "docs.index.li.1987": "동적인 오디오 표본 비율을 지원하고 자동적으로 독립과 선수 구조에 있는 그것의 그늘 자료를 청소합니다.",
+    "docs.index.li.1988": "Re-syncs 셰이퍼 키워드는 일괄 속성 편집 및 파이프라인 변환 후 자동으로, 그래서 조명, 렌더링 모드, 기능 toggles 즉시 적용.",
+    "docs.index.li.1989": "생성 된 퀘스트 재료로 키워드를 자동으로 자동적으로 흔들어, 최적화 된 저 성능 또는 잠금 출력, 모바일 용 스트립 사용되지 않는 패스."
   }
 }

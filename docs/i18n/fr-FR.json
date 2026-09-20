@@ -1,7 +1,7 @@
 {
   "languageCode": "fr-FR",
   "languageName": "Français",
-  "version": "2026.09.03",
+  "version": "2026.09.20",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -304,7 +304,7 @@
     "index.a.56": "Caractéristiques",
     "index.a.58": "Licence",
     "docs.index.title.1247": "FireRatShader Documentation",
-    "docs.index.h1.1246": "FireRatShader V1.1.1 Documentation",
+    "docs.index.h1.1246": "FireRatShader V1.1.2 Documentation",
     "docs.index.a.958": "Présentation",
     "docs.index.a.960": "Outils matériels",
     "docs.index.a.961": "Rendement",
@@ -2310,6 +2310,19 @@
     "docs.index.span.1975": "Les fichiers linguistiques sont surveillés sur disque — modifier un pack JSON pendant Unity est ouvert et l'inspecteur se rafraîchit immédiatement. Vous pouvez également forcer un rafraîchissement via",
     "docs.index.span.1976": "N'importe qui peut ajouter ou améliorer une langue en copie",
     "docs.index.span.1977": ", en traduisant les valeurs et en les sauvant par exemple.",
-    "docs.index.span.1978": "Votre choix de langue est rappelé par projet via EditorPrefs."
+    "docs.index.span.1978": "Votre choix de langue est rappelé par projet via EditorPrefs.",
+    "docs.index.p.1001": "FireRatShader fournit une configuration automatique en un clic qui détecte votre pipeline de rendu pour vous, ainsi qu'un workflow entièrement manuel.",
+    "docs.index.p.1003": "Configuration automatique (recommandée):",
+    "docs.index.span.1979": "Cours",
+    "docs.index.span.1980": "L'outil détecte si votre projet utilise URP et crée l'actif CRT correspondant à côté de l'ombrage.",
+    "docs.index.span.1981": "Sélectionnez votre matériel FireRat et lancez",
+    "docs.index.span.1982": "Cela permet de brancher le CRT dans le matériau et d'activer automatiquement le mode tampon temporal.",
+    "docs.index.p.1983": "Configuration manuelle  :",
+    "docs.index.span.1984": "Dans un URP projet, sélectionner",
+    "docs.index.span.1985": "à la place.",
+    "docs.index.li.1986": "Synchronise automatiquement les mots-clés shader après la conversion, de sorte que les matériaux convertis rendent correctement immédiatement sans un mot-clé manuel de rafraîchissement.",
+    "docs.index.li.1987": "Prend en charge les taux d'échantillonnage audio dynamiques et nettoie automatiquement ses données shader en autonome et le lecteur construit.",
+    "docs.index.li.1988": "Re-syncs shader mots clés automatiquement après les modifications de propriété batch et la conversion de pipeline, donc l'éclairage, le mode de rendu et les toggles de fonctionnalité s'appliquent instantanément.",
+    "docs.index.li.1989": "Bakes mots clés dans les matériaux Quest générés automatiquement et, pour optimiser la faible performance ou la sortie verrouillée, bande passes inutilisées pour mobile."
   }
 }

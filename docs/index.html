@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-<h1 data-i18n="docs.index.h1.1246">FireRatShader V1.1.1 Documentation</h1>
+<h1 data-i18n="docs.index.h1.1246">FireRatShader V1.1.2 Documentation</h1>
 </header>
 <div class="container">
 <nav>
@@ -1465,10 +1465,17 @@
 </tbody>
 </table>
 <h4 data-i18n="docs.index.h4.1188">Setting up the Temporal Buffer (CRT)</h4>
+<p data-i18n="docs.index.p.1001">FireRatShader provides a one-click automatic setup that detects your render pipeline for you, as well as a fully manual workflow.</p>
+<p data-i18n="docs.index.p.1003">Automatic setup (recommended):</p>
+<ol>
+<li><span data-i18n="docs.index.span.1979">Run</span> <code>Tools &gt; FireRat Shader &gt; Audio &gt; Create Smoothed Audio CRT Asset</code>. <span data-i18n="docs.index.span.1980">The tool detects whether your project uses Built-in or URP and creates the matching CRT asset next to the shader.</span></li>
+<li><span data-i18n="docs.index.span.1981">Select your FireRat material and run</span> <code>Tools &gt; FireRat Shader &gt; Audio &gt; Assign Smoothed CRT to Selected Material</code>. <span data-i18n="docs.index.span.1982">This wires the CRT into the material and enables Temporal Buffer mode automatically.</span></li>
+</ol>
+<p data-i18n="docs.index.p.1983">Manual setup:</p>
 <ol>
 <li><span data-i18n="docs.index.span.1846">In the Project window, create</span> <strong data-i18n="docs.index.strong.811">Assets → Create → Rendering → Custom Render Texture</strong>. <span data-i18n="docs.index.span.1847">Name it e.g.</span> <code>FireRatAudioSmoothing</code>.</li>
 <li><span data-i18n="docs.index.span.1848">Set its size to</span> <strong>128 × 2</strong>, <strong data-i18n="docs.index.strong.812">Color Format = R Float</strong><span data-i18n="docs.index.span.1849">, and</span> <strong data-i18n="docs.index.strong.813">Update Mode = Realtime</strong>.</li>
-<li><span data-i18n="docs.index.span.1850">Assign its</span> <strong data-i18n="docs.index.strong.814">Update Shader</strong> <span data-i18n="docs.index.span.1851">to</span> <code>FireRat/AudioSmoothingCRT</code> <span data-i18n="docs.index.span.1852">(ships with the shader).</span></li>
+<li><span data-i18n="docs.index.span.1850">Assign its</span> <strong data-i18n="docs.index.strong.814">Update Shader</strong> <span data-i18n="docs.index.span.1851">to</span> <code>FireRat/AudioSmoothingCRT</code> <span data-i18n="docs.index.span.1852">(ships with the shader).</span> <span data-i18n="docs.index.span.1984">In a URP project, select</span> <code>FireRat/AudioSmoothingCRT_URP</code> <span data-i18n="docs.index.span.1985">instead.</span></li>
 <li><span data-i18n="docs.index.span.1853">On the CRT asset, tune</span> <strong data-i18n="docs.index.strong.815">Attack</strong> <span data-i18n="docs.index.span.1854">(e.g.</span> <code>0.02s</code><span data-i18n="docs.index.span.1855">, fast rise) and</span> <strong data-i18n="docs.index.strong.816">Release</strong> <span data-i18n="docs.index.span.1856">(e.g.</span> <code>0.35s</code><span data-i18n="docs.index.span.1857">, slow fall) — the asymmetric envelope gives punchy attacks and smooth decays.</span></li>
 <li><span data-i18n="docs.index.span.1858">On the FireRat material, set</span> <strong data-i18n="docs.index.strong.817">Audio Smoothing Mode = Temporal Buffer</strong> <span data-i18n="docs.index.span.1859">and drag the CRT into the</span> <strong data-i18n="docs.index.strong.818">Smoothed Audio CRT</strong> <span data-i18n="docs.index.span.1860">slot.</span></li>
 </ol>
@@ -1703,6 +1710,7 @@
 <li data-i18n="docs.index.li.941">Automates converting avatar materials from Poiyomi (Free/Pro), lilToon, Unity Standard, and UTS shaders to FireRatShader.</li>
 <li data-i18n="docs.index.li.942">Automatically remaps diffuse albedo, bump/normal maps, metallic/smoothness/roughness, primary &amp; secondary emission maps, toon shade thresholds, ramp textures, and inverted-hull outline settings.</li>
 <li data-i18n="docs.index.li.943">Supports converting individual materials or batch-converting an entire avatar hierarchy, with optional non-destructive backup copy creation.</li>
+<li data-i18n="docs.index.li.1986">Automatically synchronizes shader keywords after conversion, so converted materials render correctly immediately without a manual keyword refresh.</li>
 </ul>
 </article>
 <article id="audiolink-companion">
@@ -1711,6 +1719,7 @@
 <p><strong data-i18n="docs.index.strong.945">Purpose &amp; Workflow:</strong></p>
 <ul>
 <li data-i18n="docs.index.li.946">Spawns an in-editor simulation rig with an audio source and spectrum analyzer, allowing you to preview, tune, and test all audio-reactive features (pulses, spectrum visualizers, waveforms, audio-driven glitter) directly inside the Unity Editor without entering Play Mode or launching VRChat.</li>
+<li data-i18n="docs.index.li.1987">Supports dynamic audio sample rates and automatically cleans up its shader data in standalone and player builds.</li>
 </ul>
 </article>
 <article id="multi-mat-editor">
@@ -1721,6 +1730,7 @@
 <li data-i18n="docs.index.li.949">Scans any avatar or scene hierarchy and aggregates all unique FireRat materials into a single batch inspector.</li>
 <li data-i18n="docs.index.li.950">Allows editing common properties simultaneously across clothing, accessories, body, and hair (e.g. bulk performance level toggling, light mode adjustments, render mode changes, and batch material locking/optimizing).</li>
 <li data-i18n="docs.index.li.951">Provides a 1-click batch pipeline converter to instantly switch all avatar materials between <span class="badge badge-brp">BRP</span> and <span class="badge badge-urp">URP</span> master variants.</li>
+<li data-i18n="docs.index.li.1988">Re-syncs shader keywords automatically after batch property edits and pipeline conversion, so lighting, render mode, and feature toggles apply instantly.</li>
 </ul>
 </article>
 <article id="flipbook-importer">
@@ -1740,6 +1750,7 @@
 <ul>
 <li data-i18n="docs.index.li.956">Bakes high-end PC avatar shader composites (diffuse, decals, recolor masks, glitter, matcaps, and emission) down into lightweight mobile textures.</li>
 <li data-i18n="docs.index.li.957">Automatically creates a duplicate Quest avatar material set targeting mobile-optimized shaders or FireRat Low tier with 100% texture consistency.</li>
+<li data-i18n="docs.index.li.1989">Bakes keywords into the generated Quest materials automatically and, for optimized low-performance or locked output, strips unused passes for mobile.</li>
 </ul>
 </article>
 <article id="localization">
