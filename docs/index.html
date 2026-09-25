@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-<h1 data-i18n="docs.index.h1.1246">FireRatShader V1.1.2 Documentation</h1>
+<h1 data-i18n="docs.index.h1.1246">FireRatShader V1.2.0 Documentation</h1>
 </header>
 <div class="container">
 <nav>
@@ -49,7 +49,7 @@
 <section id="introduction">
 <h2 data-i18n="docs.index.h2.1215">Introduction</h2>
 <p data-i18n="docs.index.p.1216">Welcome to the documentation for FireRatShader. This shader is designed to be a powerful but efficient Uber shader that works in VR, Android, Mobile, Windows, and Unity 6 across both render pipelines: <span class="badge badge-brp">Built-in Render Pipeline</span> <span class="badge badge-urp">Universal Render Pipeline</span></p>
-<p data-i18n="docs.index.p.1217">Both pipeline versions share the exact same 833 properties, inspector layout, and feature sets in 100% lockstep parity.</p>
+<p data-i18n="docs.index.p.1217">Both pipeline versions share the exact same 887 properties, inspector layout, and feature sets in 100% lockstep parity.</p>
 <article>
 <h3 data-i18n="docs.index.h3.975">Pipeline Variants &amp; Master Shaders</h3>
 <ul>
@@ -277,12 +277,27 @@
 </ul>
 </article>
 <article>
+<h3 data-i18n="docs.index.h3.1214">Texture Mipmap &amp; Quality Tools</h3>
+<p><span data-i18n="docs.index.span.2004">An interactive utility integrated directly into the material inspector to configure texture mipmapping algorithms and anisotropic filtering across all textures assigned to the material in a single click via Unity's</span> <code>TextureImporter</code>.</p>
+<ul>
+<li><strong data-i18n="docs.index.strong.1208">Generate Mip Maps:</strong> <span data-i18n="docs.index.span.2005">Enables or disables mipmap pyramid generation on all assigned textures. Disabling mipmaps is useful for crisp pixel-art textures that should never blur with distance.</span></li>
+<li><strong data-i18n="docs.index.strong.1209">Mipmap Filtering:</strong> <span data-i18n="docs.index.span.2006">Selects the downsampling algorithm used when generating mip levels:</span><ul>
+<li><code>Box Filter:</code> <span data-i18n="docs.index.span.2007">Smooth spatial box averaging as mipmap levels decrease in resolution, producing soft transitions.</span></li>
+<li><code>Kaiser Filter:</code> <span data-i18n="docs.index.span.2008">Runs a sharpening algorithm on downscaled mip levels to preserve crisp details and sharp edges at distance (strongly recommended for VR headsets and VRChat avatars).</span></li>
+</ul>
+</li>
+<li><strong data-i18n="docs.index.strong.1210">Anisotropic Level:</strong> <span data-i18n="docs.index.span.2009">Adjusts anisotropic filtering (Disabled, 2x, 4x, 8x, or 16x) to preserve crisp micro-details and prevent blurring on surfaces viewed at steep grazing angles (such as floors, walls, and clothing folds).</span></li>
+<li><strong data-i18n="docs.index.strong.1211">Apply Mipmap Settings:</strong> <span data-i18n="docs.index.span.2010">Iterates over every texture slot assigned to the material, applies the selected mipmap and anisotropic options directly to their asset importers, and triggers an asset reimport.</span></li>
+</ul>
+</article>
+<article>
 <h3 data-i18n="docs.index.h3.1015">Emission (Slots 1 – 4)</h3>
 <p data-i18n="docs.index.p.1016">Makes the material glow with up to 4 independent emission layers. Requires a Bloom post-processing effect in your scene to see the full effect.</p>
 <ul>
+<li><strong data-i18n="docs.index.strong.1205">Emission Color:</strong> <span data-i18n="docs.index.span.1986">Dedicated HDR base emission tint (default black). When emission is enabled, the surface emits light based on Emission Color × Emission Strength, and the Emission Mask acts as the emission map multiplying this color. Backface, pulse, and procedural emission add on top. Both forward shading and baked lightmaps (Meta pass) share this formula.</span></li>
 <li><strong data-i18n="docs.index.strong.281">Strength:</strong> <span data-i18n="docs.index.span.1103">Brightness of the primary glow. Values greater than 1 will bloom.</span></li>
 <li><strong data-i18n="docs.index.strong.282">Use Vertex Color for Strength:</strong> <span data-i18n="docs.index.span.1104">Modulates emission strength using the model's vertex color (Green channel).</span></li>
-<li><strong data-i18n="docs.index.strong.283">Use Emission Mask:</strong> <span data-i18n="docs.index.span.1105">Uses a texture to define which parts of the surface emit light. The mask has its own</span> <strong data-i18n="docs.index.strong.284">UV Set</strong>, <strong data-i18n="docs.index.strong.285">Projection Mode</strong><span data-i18n="docs.index.span.1106">, and</span> <strong data-i18n="docs.index.strong.286">Mask Scroll Speed X/Y</strong> <span data-i18n="docs.index.span.1107">controls.</span></li>
+<li><strong data-i18n="docs.index.strong.283">Use Emission Mask:</strong> <span data-i18n="docs.index.span.1105">Uses a texture to define which parts of the surface emit light (emission map). The mask has its own</span> <strong data-i18n="docs.index.strong.284">UV Set</strong>, <strong data-i18n="docs.index.strong.285">Projection Mode</strong><span data-i18n="docs.index.span.1106">, and</span> <strong data-i18n="docs.index.strong.286">Mask Scroll Speed X/Y</strong> <span data-i18n="docs.index.span.1107">controls.</span></li>
 <li><strong data-i18n="docs.index.strong.287">Use Texture Alpha for Emission:</strong> <span data-i18n="docs.index.span.1108">Uses the main texture's alpha channel as an emission map.</span> <strong data-i18n="docs.index.strong.288">Alpha Emission Strength</strong> <span data-i18n="docs.index.span.1109">controls the brightness of this emission.</span></li>
 <li><strong data-i18n="docs.index.strong.289">AudioLink Band:</strong> <span data-i18n="docs.index.span.1110">When a band other than</span> <code>Off</code> <span data-i18n="docs.index.span.1111">is selected, the emission strength is modulated by that audio band.</span> <strong data-i18n="docs.index.strong.290">AudioLink Strength</strong> <span data-i18n="docs.index.span.1112">controls how strongly.</span></li>
 <li><strong data-i18n="docs.index.strong.291">AudioLink Blink:</strong> <span data-i18n="docs.index.span.1113">When a band other than</span> <code>Off</code> <span data-i18n="docs.index.span.1114">is selected in the</span> <strong data-i18n="docs.index.strong.292">AudioLink Blink Band</strong> <span data-i18n="docs.index.span.1115">selector, the emission stroboscopically blinks with the music.</span></li>
@@ -579,7 +594,7 @@
 <li><strong data-i18n="docs.index.strong.434">Enable Thickness Map:</strong> <span data-i18n="docs.index.span.1347">Uses a grayscale texture to control how much light passes through different areas, simulating thin parts (ears, leaves, fabric) glowing more.</span> <strong data-i18n="docs.index.strong.435">Thickness Strength</strong> <span data-i18n="docs.index.span.1348">scales the effect.</span></li>
 </ul>
 <h5 data-i18n="docs.index.h5.1043">Anisotropic Reflection</h5>
-<p data-i18n="docs.index.p.1044">Creates stretched or elongated specular highlights, common on surfaces with a grain or direction, like brushed metal, hair, or vinyl records.</p>
+<p data-i18n="docs.index.p.1044">Creates stretched or elongated specular highlights, common on surfaces with a grain or direction, like brushed metal, hair, or vinyl records, with full stereo stability and comfort across VR headsets.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.436">Enable Anisotropic Reflection:</strong> <span data-i18n="docs.index.span.1349">Toggles the effect on or off.</span></li>
 <li><strong data-i18n="docs.index.strong.437">Mode:</strong> <span data-i18n="docs.index.span.1350">Switches between</span> <code>Ward</code> <span data-i18n="docs.index.span.1351">(a general model) and</span> <code>Stretched-Blinn</code> <span data-i18n="docs.index.span.1352">(which uses a Tangent Map for more precise control).</span></li>
@@ -686,13 +701,17 @@
 <p data-i18n="docs.index.p.1066">Adds an animated, sparkling glitter effect to the surface. This effect is applied after lighting.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.491">Blend Mode:</strong> <span data-i18n="docs.index.span.1413">Controls how the glitter is blended with the underlying surface color.</span> <code>Additive</code> <span data-i18n="docs.index.span.1414">can get very bright.</span> <code>Lerp</code> <span data-i18n="docs.index.span.1415">replaces the base color (emissive).</span> <code>Max</code> <span data-i18n="docs.index.span.1416">ensures it's never darker than the glitter color.</span></li>
-<li><strong data-i18n="docs.index.strong.492">Color:</strong> <span data-i18n="docs.index.span.1417">The color of the glitter sparkles. Can be animated with "Animate Hue".</span></li>
+<li><strong data-i18n="docs.index.strong.1206">Color Mode:</strong> <span data-i18n="docs.index.span.2011">Selects how sparkle colors are generated:</span> <code>Solid</code> <span data-i18n="docs.index.span.2012">(single color with hue shift),</span> <code>Two Color Ramp</code> <span data-i18n="docs.index.span.2013">(independent per-sparkle blend between Color 1 and Color 2),</span> <code>Rainbow</code> <span data-i18n="docs.index.span.2014">(continuous spectrum cycle),</span> <code>Gradient Texture</code> <span data-i18n="docs.index.span.2015">(samples a color ramp texture),</span> <code>AudioLink Theme</code> <span data-i18n="docs.index.span.2016">(tinted by venue theme palette), or</span> <code>AudioLink Chord</code> <span data-i18n="docs.index.span.2017">(ColorChord musical note colors). Multi-color and AudioLink modes evaluate independent colors per sparkle and render with true hue vibrance.</span></li>
+<li><strong data-i18n="docs.index.strong.492">Color:</strong> <span data-i18n="docs.index.span.1417">The primary color of the glitter sparkles. Can be animated with "Animate Hue". (Displayed when Solid or Two Color Ramp is selected).</span></li>
+<li><strong data-i18n="docs.index.strong.1212">Color 2:</strong> <span data-i18n="docs.index.span.1987">Secondary color for two-color variation when using Two Color Ramp mode.</span></li>
 <li><strong data-i18n="docs.index.strong.493">Scale:</strong> <span data-i18n="docs.index.span.1418">Controls the size of the glitter noise pattern. Higher values mean smaller, finer sparkles.</span></li>
 <li><strong data-i18n="docs.index.strong.494">Sparsity:</strong> <span data-i18n="docs.index.span.1419">Controls how many sparkles appear. Higher values mean fewer, more sparse sparkles.</span></li>
-<li><strong data-i18n="docs.index.strong.495">Shape:</strong> <span data-i18n="docs.index.span.1420">Selects the sparkle shape:</span> <code>Random</code> <span data-i18n="docs.index.span.1421">(the default noise-based sparkles),</span> <code>Circle</code>, <code>Square</code><span data-i18n="docs.index.span.1422">, or</span> <code>Star</code>. <span data-i18n="docs.index.span.1423">The shape-based options render a tiled grid of that shape instead of random sparkles.</span></li>
+<li><strong data-i18n="docs.index.strong.495">Shape:</strong> <span data-i18n="docs.index.span.1420">Selects the sparkle shape:</span> <code>Random</code> <span data-i18n="docs.index.span.1421">(organic, rounded noise sparkles),</span> <code>Circle</code>, <code>Square</code><span data-i18n="docs.index.span.1422">, or</span> <code>Star</code>.</li>
+<li><strong data-i18n="docs.index.strong.1213">Sparkle / Shape Size &amp; Softness:</strong> <span data-i18n="docs.index.span.1988">Tunes the sparkle footprint (0.05–0.5) and anti-aliased edge falloff (0 = sharp edge, &gt;0 = smooth fade into transparent) across both Random sparkles and geometric shapes.</span></li>
 <li><strong data-i18n="docs.index.strong.496">Use Screen Space:</strong> <span data-i18n="docs.index.span.1424">Bases the glitter pattern on screen coordinates instead of the model's UVs. This makes the glitter appear to "swim" across the surface as the camera or object moves.</span></li>
-<li><strong data-i18n="docs.index.strong.497">Use Scrolling Animation:</strong> <span data-i18n="docs.index.span.1425">Changes the animation from sparkles "popping" in and out to a smooth, scrolling noise pattern.</span></li>
-<li><strong data-i18n="docs.index.strong.498">Pop/Scroll Speed:</strong> <span data-i18n="docs.index.span.1426">Controls the speed of the chosen animation style.</span></li>
+<li><strong data-i18n="docs.index.strong.497">Use Scrolling Animation:</strong> <span data-i18n="docs.index.span.1425">Smoothly scrolls the glitter pattern across the surface so sparkles stay crisp, dense, and naturally animated while in motion.</span></li>
+<li><strong data-i18n="docs.index.strong.1214">Scroll Direction:</strong> <span data-i18n="docs.index.span.1989">2D directional steering vector controlling the direction of the scrolling glitter.</span></li>
+<li><strong data-i18n="docs.index.strong.498">Twinkle Speed / Scroll Speed:</strong> <span data-i18n="docs.index.span.1990">Independent speed controls: Twinkle Speed drives sparkle twinkling and popping, while Scroll Speed controls how fast the pattern travels across the surface.</span></li>
 </ul>
 </article>
 <article>
@@ -739,6 +758,8 @@
 </ul>
 </li>
 <li><strong data-i18n="docs.index.strong.522">Scale:</strong> <span data-i18n="docs.index.span.1454">Controls the overall size of the fractal structure.</span></li>
+<li><strong data-i18n="docs.index.strong.1215">Fractal Offset:</strong> <span data-i18n="docs.index.span.1991">3D vector offset to reposition the fractal center within the object's coordinate space.</span></li>
+<li><strong data-i18n="docs.index.strong.1216">Fractal Repeat Size:</strong> <span data-i18n="docs.index.span.1992">Sets the spatial repetition period and boundary grid size when Repetition Mode is set to Repeated or Endless.</span></li>
 <li><strong data-i18n="docs.index.strong.523">Animation Mode:</strong> <span data-i18n="docs.index.span.1455">How the fractal animates over time.</span> <ul>
 <li><strong data-i18n="docs.index.strong.66">None:</strong> <span data-i18n="docs.index.span.1456">Static fractal.</span></li>
 <li><strong data-i18n="docs.index.strong.67">Yaw:</strong> <span data-i18n="docs.index.span.1457">Rotates around the Y-axis.</span></li>
@@ -778,7 +799,9 @@
 <h4 data-i18n="docs.index.h4.1078">Core Properties</h4>
 <ul>
 <li><strong data-i18n="docs.index.strong.534">Pattern:</strong> <span data-i18n="docs.index.span.1473">Selects the geometric pattern from the list below. Each pattern may have unique behaviors or properties. The pattern library is shared with the Procedural Texture feature.</span></li>
+<li><strong data-i18n="docs.index.strong.1217">Color Mode:</strong> <span data-i18n="docs.index.span.2018">Selects how grid colors are styled:</span> <code>Solid</code> <span data-i18n="docs.index.span.2019">(single color with hue shift),</span> <code>Rainbow</code> <span data-i18n="docs.index.span.2020">(continuous spectral cycle),</span> <code>AudioLink Theme</code> <span data-i18n="docs.index.span.2021">(tinted by the world's active AudioLink theme palette), or</span> <code>AudioLink Chord</code> <span data-i18n="docs.index.span.2022">(ColorChord musical note colors).</span></li>
 <li><strong data-i18n="docs.index.strong.535">Color:</strong> <span data-i18n="docs.index.span.1474">The color and transparency of the grid pattern. Can be hue-shifted.</span></li>
+<li><strong data-i18n="docs.index.strong.1218">Intensity:</strong> <span data-i18n="docs.index.span.1993">Master opacity and brightness multiplier for the grid overlay (0–2).</span></li>
 <li><strong data-i18n="docs.index.strong.536">Coordinate Space:</strong> <span data-i18n="docs.index.span.1475">A projection selector that maps the pattern onto the model:</span> <code>UV</code> <span data-i18n="docs.index.span.1476">sticks to the surface,</span> <code>World Space (Triplanar)</code> <span data-i18n="docs.index.span.1477">makes it appear to "swim" over the surface as the object moves, and additional local, screen, planar, spherical, cylindrical, and biplanar projections are available.</span></li>
 <li><strong data-i18n="docs.index.strong.537">Grid Tiling X/Y:</strong> <span data-i18n="docs.index.span.1478">Independent horizontal and vertical tiling multipliers for the pattern.</span></li>
 <li><strong data-i18n="docs.index.strong.538">Density:</strong> <span data-i18n="docs.index.span.1479">Controls the tiling or frequency of the pattern. Higher values mean a denser pattern.</span></li>
@@ -1006,8 +1029,10 @@
 <li><strong data-i18n="docs.index.strong.665">Ripple Count:</strong> <span data-i18n="docs.index.span.1623">The number of concentric ripple rings.</span></li>
 <li><strong data-i18n="docs.index.strong.666">Fadeout Radius:</strong> <span data-i18n="docs.index.span.1624">The distance from the center at which the ripples fade out completely.</span></li>
 <li><strong data-i18n="docs.index.strong.667">Width:</strong> <span data-i18n="docs.index.span.1625">The width of each individual ripple ring.</span></li>
+<li><strong data-i18n="docs.index.strong.1207">Color Mode:</strong> <span data-i18n="docs.index.span.2023">Selects how ripple rings are styled:</span> <code>Solid</code> <span data-i18n="docs.index.span.2024">(single color with hue shift),</span> <code>Rainbow</code> <span data-i18n="docs.index.span.2025">(continuous spectral cycle),</span> <code>AudioLink Theme</code> <span data-i18n="docs.index.span.2026">(tinted by active venue palette), or</span> <code>AudioLink Chord</code> <span data-i18n="docs.index.span.2027">(ColorChord musical note colors).</span></li>
 <li><strong data-i18n="docs.index.strong.668">Color:</strong> <span data-i18n="docs.index.span.1626">The color of the ripples.</span></li>
 <li><strong data-i18n="docs.index.strong.669">Strength:</strong> <span data-i18n="docs.index.span.1627">The brightness of the ripple color.</span></li>
+<li><strong data-i18n="docs.index.strong.1219">AudioLink Target:</strong> <span data-i18n="docs.index.span.2028">Selects which ripple parameter AudioLink modulates:</span> <code>Strength</code>, <code>Radius</code><span data-i18n="docs.index.span.2029">, or</span> <code>Speed</code>.</li>
 <li><strong data-i18n="docs.index.strong.670">Distortion Strength:</strong> <span data-i18n="docs.index.span.1628">How much the ripple displaces the model's vertices along their normals.</span></li>
 <li><strong data-i18n="docs.index.strong.671">Progress / Animate:</strong> <span data-i18n="docs.index.span.1629">Manually control or automatically animate the ripple's phase.</span></li>
 </ul>
@@ -1401,17 +1426,17 @@
 <li><strong data-i18n="docs.index.strong.787">Color Shift:</strong> <span data-i18n="docs.index.span.1803">Dynamically accelerates or slows the global Hue Shift animation speed in response to audio energy.</span></li>
 <li><strong data-i18n="docs.index.strong.788">Vertex Distortion:</strong> <span data-i18n="docs.index.span.1804">Scales the amplitude of vertex glitch and displacement effects with the music rhythm.</span></li>
 <li><strong data-i18n="docs.index.strong.789">Procedural Texture:</strong> <span data-i18n="docs.index.span.1805">Modulates the procedural pattern's scale and speed with audio amplitude.</span></li>
-<li><strong data-i18n="docs.index.strong.790">Grid:</strong> <span data-i18n="docs.index.span.1806">Modulates the grid overlay's intensity with the chosen band.</span></li>
+<li><strong data-i18n="docs.index.strong.790">Grid:</strong> <span data-i18n="docs.index.span.1994">Modulates the grid overlay with the chosen band. Modulation targets include Line Thickness, Grid Alpha, and Grid Color Hue.</span></li>
 <li><strong data-i18n="docs.index.strong.791">Dissolve:</strong> <span data-i18n="docs.index.span.1807">Drives the dissolve amount with audio, letting objects materialize and dematerialize on the beat.</span></li>
 <li><strong data-i18n="docs.index.strong.792">Fresnel Transparency:</strong> <span data-i18n="docs.index.span.1808">Pulsates the fresnel edge transparency with the music.</span></li>
-<li><strong data-i18n="docs.index.strong.793">Glitter:</strong> <span data-i18n="docs.index.span.1809">Brightens the sparkles with the chosen band for a beat-synced shimmer.</span></li>
+<li><strong data-i18n="docs.index.strong.793">Glitter:</strong> <span data-i18n="docs.index.span.1995">Modulates glitter with the chosen band. Targets include Brightness, Sparkle Size, Sparsity, and Sparsity Inverse.</span></li>
 <li><strong data-i18n="docs.index.strong.794">Psychedelic:</strong> <span data-i18n="docs.index.span.1810">Boosts the psychedelic flow and color shift with audio energy.</span></li>
 <li><strong data-i18n="docs.index.strong.795">3D Fractal:</strong> <span data-i18n="docs.index.span.1811">Modulates the fractal scale and animation speed with the music.</span></li>
-<li><strong data-i18n="docs.index.strong.796">Rim Glow:</strong> <span data-i18n="docs.index.span.1812">Brightens the rim with the chosen band.</span></li>
+<li><strong data-i18n="docs.index.strong.796">Rim Glow:</strong> <span data-i18n="docs.index.span.1996">Modulates rim glow with the chosen band, targeting either Intensity or Rim Width.</span></li>
 <li><strong data-i18n="docs.index.strong.797">Outline:</strong> <span data-i18n="docs.index.span.1813">Modulates the outline intensity with the music.</span></li>
-<li><strong data-i18n="docs.index.strong.798">Ripple:</strong> <span data-i18n="docs.index.span.1814">Drives the ripple progress and strength from audio.</span></li>
+<li><strong data-i18n="docs.index.strong.798">Ripple:</strong> <span data-i18n="docs.index.span.1997">Drives ripple animations from audio, modulating Strength, Radius, or Speed.</span></li>
 <li><strong data-i18n="docs.index.strong.799">Vertex Collapse:</strong> <span data-i18n="docs.index.span.1815">Collapses and expands the mesh to the beat.</span></li>
-<li><strong data-i18n="docs.index.strong.800">Glitch Scanlines:</strong> <span data-i18n="docs.index.span.1816">Modulates scanline flicker intensity and scroll speed with audio signal levels.</span></li>
+<li><strong data-i18n="docs.index.strong.800">Glitch Scanlines:</strong> <span data-i18n="docs.index.span.1998">Modulates scanlines from audio, targeting Thickness, Density, or Alpha.</span></li>
 <li><strong data-i18n="docs.index.strong.801">Decals:</strong> <span data-i18n="docs.index.span.1817">Each of the three decal layers has its own band selector and strength, letting logos or effects pulse with the music.</span></li>
 </ul>
 <h4 data-i18n="docs.index.h4.1182">Audio Bands</h4>
@@ -1423,6 +1448,15 @@
 <li><strong data-i18n="docs.index.strong.805">Treble:</strong> <span data-i18n="docs.index.span.1824">Hi-hats, cymbals, acoustic transients, and high-frequency "air" (approx. 2,000–20,000 Hz).</span></li>
 <li><strong data-i18n="docs.index.strong.806">Strength:</strong> <span data-i18n="docs.index.span.1825">Multiplier for the audio response (0 = disabled/no modulation, higher values amplify response).</span></li>
 </ul>
+<h4 data-i18n="docs.index.h4.1203">AudioLink Chronotensity Beat-Sync</h4>
+<p data-i18n="docs.index.p.1984">Drives shader animation timelines with AudioLink's tempo-tracked Chronotensity clock instead of standard continuous time, synchronizing effects directly to musical tempo (BPM).</p>
+<ul>
+<li><strong><span data-i18n="docs.index.span.2031">Enable Beat-Sync Time (</span><code>_AL_UseChrono</code>):</strong> <span data-i18n="docs.index.span.2030">Master toggle enabling the Chronotensity beat clock. The inspector automatically warns if a feature's beat-sync toggle is active while master beat-sync time is off, offering a 1-click quick-fix button.</span></li>
+<li><strong data-i18n="docs.index.strong.1220">Chronotensity Mode:</strong> <span data-i18n="docs.index.span.2032">Selects the beat division speed: 4 forward tempo speeds (1/4 to 2× speed) and 4 inverse speeds (3/4 to 1/2 speed).</span></li>
+<li><strong data-i18n="docs.index.strong.1221">Supported Features:</strong> <span data-i18n="docs.index.span.2033">Dedicated beat-sync toggles are available on Color Shift, Procedural Textures, Glitter, Grid Overlay, Ripple, Scanlines, Flicker, Dissolve, Outline Pulse/Shift, 3D Fractal, and Emission Pulse.</span></li>
+</ul>
+<h4 data-i18n="docs.index.h4.1204">AudioLink World Theme Color Tinting</h4>
+<p><span data-i18n="docs.index.span.2034">When enabled (</span><code>_UseALThemeColor</code><span data-i18n="docs.index.span.2035">), dynamically tints the material using the venue's active AudioLink theme palette broadcast by world systems. You can selectively route theme tinting to</span> <strong data-i18n="docs.index.strong.1222">Albedo</strong>, <strong data-i18n="docs.index.strong.1223">Emission</strong><span data-i18n="docs.index.span.2036">, or</span> <strong data-i18n="docs.index.strong.1224">Both</strong> <span data-i18n="docs.index.span.2037">across all four venue theme colors.</span></p>
 </article>
 <article id="audiolink-global-controls">
 <h3 data-i18n="docs.index.h3.1183">Global Audio Reactivity Controls</h3>
@@ -1535,17 +1569,38 @@
 <strong data-i18n="docs.index.strong.115">Gain:</strong> <span data-i18n="docs.index.span.1880">Color sensitivity and response range.</span><br/>
 <strong data-i18n="docs.index.strong.116">Mirror:</strong> <span data-i18n="docs.index.span.1881">Symmetrical horizontal frequency reflection.</span> </td>
 </tr>
+<tr>
+<td><code>4</code></td>
+<td><strong data-i18n="docs.index.strong.1225">Band History Strip</strong></td>
+<td data-i18n="docs.index.td.204">Renders 4 discrete horizontal history lanes side-by-side, displaying rolling history envelopes mapped across frequency sub-bands with ColorChord note tinting.</td>
+<td>
+<strong data-i18n="docs.index.strong.1226">Gain:</strong> <span data-i18n="docs.index.span.1999">Response sensitivity.</span><br/>
+<strong data-i18n="docs.index.strong.1227">Mirror:</strong> <span data-i18n="docs.index.span.2000">Symmetrical reflection.</span>
+</td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td><strong data-i18n="docs.index.strong.1228">VU Meter</strong></td>
+<td data-i18n="docs.index.td.205">Renders a classic vertical studio volume-unit ladder meter directly within the spectrum display, showing instantaneous and peak volume levels across audio bands.</td>
+<td>
+<strong data-i18n="docs.index.strong.1229">Gain:</strong> <span data-i18n="docs.index.span.2001">Amplification multiplier.</span><br/>
+<strong data-i18n="docs.index.strong.1230">Edge Softness:</strong> <span data-i18n="docs.index.span.2002">Segment edge sharpness.</span>
+</td>
+</tr>
 </tbody>
 </table>
 <h4 data-i18n="docs.index.h4.1192">Spectrum Controls</h4>
 <ul>
 <li><strong data-i18n="docs.index.strong.825">Enable Audio Spectrum:</strong> <span data-i18n="docs.index.span.1882">Master toggle for the spectrum visualizer. When disabled, all spectrum shader code is completely compiled out.</span></li>
-<li><strong data-i18n="docs.index.strong.826">Spectrum Mode:</strong> <span data-i18n="docs.index.span.1883">Selects between</span> <code>EQ Bars</code>, <code>Continuous Curve</code>, <code>Radial</code><span data-i18n="docs.index.span.1884">, and</span> <code>Waterfall</code>.</li>
+<li><strong data-i18n="docs.index.strong.826">Spectrum Mode:</strong> <span data-i18n="docs.index.span.2038">Selects between</span> <code>EQ Bars</code>, <code>Continuous Curve</code>, <code>Radial</code>, <code>Waterfall</code>, <code>Band History Strip</code><span data-i18n="docs.index.span.2039">, and</span> <code>VU Meter</code>.</li>
+<li><strong data-i18n="docs.index.strong.1231">Dual Trace:</strong> <span data-i18n="docs.index.span.2040">When enabled (</span><code>_AudioSpectrumDualLine</code><span data-i18n="docs.index.span.2041">), renders floating peak-hold caps above EQ bars or superimposes an unsmoothed, live transient line over smoothed continuous curves.</span></li>
+<li><strong data-i18n="docs.index.strong.1232">Add VU Meter (VU Meter Overlay):</strong> <span data-i18n="docs.index.span.2042">Draws a standalone 4-band LED ladder meter (</span><code>_AudioVUOverlay</code><span data-i18n="docs.index.span.2043">) on top of any active spectrum mode. Equipped with its own Position (Offset), Scale, Rotation, Intensity, and Color Mode (Broadcast green/amber/red segments or Low/High gradient).</span></li>
 <li><strong data-i18n="docs.index.strong.827">Gain:</strong> <span data-i18n="docs.index.span.1885">Signal amplification multiplier (0.1–10). Useful for boosting sensitivity on quiet audio tracks or soft world audio.</span></li>
 <li><strong data-i18n="docs.index.strong.828">Logarithmic Scale:</strong> <span data-i18n="docs.index.span.1886">When enabled, applies a power-scaled perceptual curve to frequency distribution. This expands the bass and mid-range regions while compressing high treble, mirroring human auditory perception.</span></li>
 <li><strong data-i18n="docs.index.strong.829">Mirror:</strong> <span data-i18n="docs.index.span.1887">Folds the spectrum horizontally around the center (0.5), creating a symmetrical dual-wing visualizer.</span></li>
 <li><strong data-i18n="docs.index.strong.830">Edge Softness:</strong> <span data-i18n="docs.index.span.1888">Controls the spatial anti-aliasing softness of bar edges, curve strokes, and radial boundaries (geometric edge AA). Temporal response damping and smoothing is handled by the shader's global</span> <strong data-i18n="docs.index.strong.831">AudioLink Reactivity Smoothing</strong> <span data-i18n="docs.index.span.1889">control (see Global Audio Reactivity Controls above).</span></li>
 <li><strong data-i18n="docs.index.strong.832">Intensity:</strong> <span data-i18n="docs.index.span.1890">Overall HDR brightness multiplier (0–5). Values above 1.0 produce vibrant post-processing bloom.</span></li>
+<li><strong data-i18n="docs.index.strong.1233">Waterfall Heatmap:</strong> <span data-i18n="docs.index.span.2003">In Waterfall mode, Solid color mode serves as a single-color amplitude heatmap, while Frequency Gradient mode blends from Color (low intensity) to Color 2 (peaks).</span></li>
 </ul>
 </article>
 <article id="audio-waveform-visualizer">
@@ -1603,16 +1658,25 @@
 <td>
 <strong data-i18n="docs.index.strong.134">Displacement Strength:</strong> <span data-i18n="docs.index.span.1908">Maximum vertex displacement distance along mesh normals (0–1).</span><br/><span data-i18n="docs.index.span.1909">Uses vertex-safe LOD texture sampling for full single-pass VR compatibility.</span> </td>
 </tr>
+<tr>
+<td><code>5</code></td>
+<td><strong data-i18n="docs.index.strong.1234">Triggered Oscilloscope</strong></td>
+<td data-i18n="docs.index.td.206">Hardware-style triggered oscilloscope trace. Searches the AudioLink waveform history buffer for a rising zero-crossing to synchronize and lock the phase of periodic audio signals, eliminating waveform jitter on musical tones. Renders across a 2× zoomed display window for high-resolution waveform inspection.</td>
+<td>
+<strong data-i18n="docs.index.strong.1235">Gain:</strong> <span data-i18n="docs.index.span.2044">Amplitude magnification.</span><br/>
+<strong data-i18n="docs.index.strong.1236">Line Thickness &amp; Glow:</strong> <span data-i18n="docs.index.span.2045">Core thickness and bloom intensity.</span><br/><span data-i18n="docs.index.span.2046">Hardware zero-crossing synchronization.</span></td>
+</tr>
 </tbody>
 </table>
 <h4 data-i18n="docs.index.h4.1195">Waveform Controls</h4>
 <ul>
 <li><strong data-i18n="docs.index.strong.833">Enable Audio Waveform:</strong> <span data-i18n="docs.index.span.1910">Master toggle for the waveform visualizer. When disabled, all waveform shader code is completely compiled out.</span></li>
-<li><strong data-i18n="docs.index.strong.834">Waveform Mode:</strong> <span data-i18n="docs.index.span.1911">Selects between</span> <code>Oscilloscope</code>, <code>Ribbon</code>, <code>Polar</code>, <code>Lissajous</code><span data-i18n="docs.index.span.1912">, and</span> <code>Vertex Displacement</code>.</li>
+<li><strong data-i18n="docs.index.strong.834">Waveform Mode:</strong> <span data-i18n="docs.index.span.1911">Selects between</span> <code>Oscilloscope</code>, <code>Ribbon</code>, <code>Polar</code>, <code>Lissajous</code>, <code>Vertex Displacement</code><span data-i18n="docs.index.span.1912">, and</span> <code>Triggered Oscilloscope</code>.</li>
 <li><strong data-i18n="docs.index.strong.835">Channel:</strong> <span data-i18n="docs.index.span.1913">Selects the audio input channel:</span> <ul>
 <li data-i18n="docs.index.li.204"><code>Mono:</code> Summed average of Left and Right audio channels <code>(L + R) * 0.5</code>.</li>
 <li data-i18n="docs.index.li.205"><code>Left:</code> Samples only the discrete Left stereo channel.</li>
 <li data-i18n="docs.index.li.206"><code>Right:</code> Samples only the discrete Right stereo channel.</li>
+<li><code>Stereo Split:</code> <span data-i18n="docs.index.span.2047">Renders Left and Right stereo channels stacked vertically or independently traced for stereo monitoring.</span></li>
 </ul>
 </li>
 <li><strong data-i18n="docs.index.strong.836">Cycles:</strong> <span data-i18n="docs.index.span.1914">Controls how many complete waveform repetitions are displayed across the coordinate space (0.5–8 cycles). (Applicable to Oscilloscope, Ribbon, and Polar modes).</span></li>
@@ -1639,6 +1703,9 @@
 <li><strong data-i18n="docs.index.strong.846">Hue Shift (<code>2</code>):</strong> <span data-i18n="docs.index.span.1928">Animates the entire visualizer through a synchronized hue cycle over time.</span> <strong data-i18n="docs.index.strong.847">Hue Shift Speed</strong> <span data-i18n="docs.index.span.1929">controls the cycling rate.</span></li>
 <li><strong data-i18n="docs.index.strong.848">Rainbow Gradient (<code>3</code>):</strong> <span data-i18n="docs.index.span.1930">Generates a rich, multi-hue spectral rainbow distributed across frequency bands (Spectrum) or flowing along the waveform curve (Waveform), with optional speed animation via</span> <strong data-i18n="docs.index.strong.849">Hue Shift Speed</strong>. <span data-i18n="docs.index.span.1931">In Waterfall mode, this provides a vibrant full-spectrum thermal laboratory spectrogram.</span></li>
 <li><strong data-i18n="docs.index.strong.850">AudioLink Theme (<code>4</code>):</strong> <span data-i18n="docs.index.span.1932">Automatically samples the 4 world theme colors defined by the AudioLink theme system in VRChat worlds, ensuring seamless visual cohesion with world-reactive lighting installations.</span></li>
+<li><strong><span data-i18n="docs.index.span.2049">ColorChord Chromagram (</span><code>5</code>):</strong> <span data-i18n="docs.index.span.2048">Samples AudioLink ColorChord 12-semitone chromagram data, tinting the visualizer according to the instantaneous musical pitch and harmonic profile of the track.</span></li>
+<li><strong><span data-i18n="docs.index.span.2051">ColorChord Chord (</span><code>6</code>):</strong> <span data-i18n="docs.index.span.2050">Dynamically shifts visualizer colors according to the 4 root note colors identified by AudioLink ColorChord harmony tracking.</span></li>
+<li><strong><span data-i18n="docs.index.span.2053">Beat Pulse (</span><code>7</code>):</strong> <span data-i18n="docs.index.span.2052">Modulates visualizer color saturation and brightness dynamically on AudioLink bass and rhythm chronotensity transients.</span></li>
 </ul>
 <h4 data-i18n="docs.index.h4.1199">Projection Spaces</h4>
 <p data-i18n="docs.index.p.1200">The visualizers can be projected onto the surface using several coordinate frames:</p>
@@ -1731,6 +1798,7 @@
 <li data-i18n="docs.index.li.950">Allows editing common properties simultaneously across clothing, accessories, body, and hair (e.g. bulk performance level toggling, light mode adjustments, render mode changes, and batch material locking/optimizing).</li>
 <li data-i18n="docs.index.li.951">Provides a 1-click batch pipeline converter to instantly switch all avatar materials between <span class="badge badge-brp">BRP</span> and <span class="badge badge-urp">URP</span> master variants.</li>
 <li data-i18n="docs.index.li.1988">Re-syncs shader keywords automatically after batch property edits and pipeline conversion, so lighting, render mode, and feature toggles apply instantly.</li>
+<li data-i18n="docs.index.li.1990">Supports full 1-click Batch Material Locking &amp; Unlocking across all materials in the target hierarchy or scene, physically running the pass-stripping and keyword optimizer on every material in parallel.</li>
 </ul>
 </article>
 <article id="flipbook-importer">

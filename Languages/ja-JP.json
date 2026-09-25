@@ -401,6 +401,10 @@
       "label": "強み",
       "tooltip": "どのくらいのアルファがエミッションに影響を及ぼすか(より高い値が明るくなります)."
     },
+    "_EmissionColor": {
+      "label": "排出色",
+      "tooltip": "グローカラー(HDR) 黒い = ベース白熱なし; エミッションマスクはエミッションマップとして機能します。"
+    },
     "_EmissionStrength": {
       "label": "排出の強さ",
       "tooltip": "輝いた効果がいかに明るいか."
@@ -933,9 +937,17 @@
       "label": "カラー",
       "tooltip": "グリッド線の色."
     },
+    "_GridColorMode": {
+      "label": "格子色のモード",
+      "tooltip": "グリッドオーバーレイ(ソリッド、レインボー、 AudioLink テーマ, AudioLink チョルド)。"
+    },
     "_GridColor_Shift": {
       "label": "グリッドカラーシフト",
       "tooltip": "AudioLink または 先進的なグリッド線のアニメーションカラーシフト."
+    },
+    "_GridIntensity": {
+      "label": "グリッド強度",
+      "tooltip": "グリッドパターンの全体的な不透明度と強度を制御します。"
     },
     "_GridDensity": {
       "label": "コンテンツ",
@@ -1617,6 +1629,14 @@
       "label": "AudioLinkの強み",
       "tooltip": ""
     },
+    "_FractalOffset": {
+      "label": "起源のオフセット(X Y Z)",
+      "tooltip": "フラクタルの内部ビューウィンドウをシフト — パン X/Y/Z フラクタールの異なる領域を探索します。 単位:スケール = 1. のワールド・スペース"
+    },
+    "_FractalRepeatSize": {
+      "label": "繰り返しのタイルのサイズ",
+      "tooltip": "各ドメイン繰り返しタイルのサイズ(スケール = 1) のワールド スペース)。 より小さい = デンザー タイル。 旧ハードコード 4.0 を置換します。"
+    },
     "_RefractionNoiseMap": {
       "label": "反射ノイズマップ",
       "tooltip": "シフト歪みを制御するノイズテクスチャ."
@@ -1735,7 +1755,7 @@
     },
     "_GlitterSpeed": {
       "label": "スリッター速度",
-      "tooltip": ""
+      "tooltip": "イケメンとポップアニメーション速度をコントロールします。"
     },
     "_AL_GlitterBand": {
       "label": "AudioLinkバンド",
@@ -1896,6 +1916,10 @@
     "_RippleColor": {
       "label": "カラー",
       "tooltip": "さざ波の色."
+    },
+    "_RippleColorMode": {
+      "label": "Ripple 色モード",
+      "tooltip": "さざ波リング(ソリッド、虹、 AudioLink テーマ, AudioLink チョルド)。"
     },
     "_RippleColor_Shift": {
       "label": "シフト",
@@ -2217,6 +2241,10 @@
       "label": "アルファを埋めて下さい",
       "tooltip": "カーブの下に埋められた区域の不透明."
     },
+    "_AudioSpectrumDualLine": {
+      "label": "デュアルトレース(ピーク+スムース)",
+      "tooltip": "EQバーの上にピークキャップをフローティングするレンダー、または滑らかな曲線の上に二次高速生の一時的なピークラインをオーバーレイします。"
+    },
     "_AudioSpectrumLogScale": {
       "label": "ロジスミックスケール",
       "tooltip": "より自然な低音/trebleバランスのためのlogarithmic頻度のスケーリングを使用して下さい."
@@ -2236,6 +2264,14 @@
     "_AudioSpectrumHueSpeed": {
       "label": "Hue の速度",
       "tooltip": "ヒューシフト/レインボーアニメーションの速度."
+    },
+    "_AudioSpectrumBeatPulse": {
+      "label": "ビートカラーパルス強度",
+      "tooltip": "フラッシュ/パルスの強さは、オーディオキックと低音トランジェントで明るくなります。"
+    },
+    "_AL_SpectrumUsesChrono": {
+      "label": "スペクトラム・ビート・シンク",
+      "tooltip": "スペクトルアニメーションと色のシフトを音楽のテンポに同期 AudioLink クロノテーション。"
     },
     "_AudioSpectrumSpace": {
       "label": "投影空間",
@@ -2269,17 +2305,53 @@
       "label": "エッジの柔らかさ",
       "tooltip": "空間エッジのアンチエイリアシングとバーや曲線の柔らかさを境界線."
     },
-    "_AudioSpectrumIntensity": {
-      "label": "インテンシティ",
-      "tooltip": "全面的な明るさのmultiplier."
-    },
     "_AudioSmoothingMode": {
       "label": "可聴周波滑らかになるモード",
       "tooltip": "スペクトル/波形の緩和方法:未加工(なし)、フレームブレンド(2フレームEMA)、またはテンポラルバッファ(CRT履歴)."
     },
+    "_AudioSampleInterpolation": {
+      "label": "サンプル補間",
+      "tooltip": "隣接するオーディオビン間のバイリンガル補間。 スペクトルバーと波形ディスプレイのピクセル化を大幅に削減し、128-sampleのテクスチャーが多ピクセルにわたって伸びる。 少額のGPUコストを節約できません。"
+    },
     "_AudioSpectrumTemporal": {
       "label": "スペクトラムの一時的なスムース",
       "tooltip": "スペクトル(フレームブレンド/テンポラルバッファモード)に適用される一時的なスムースの強さ."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "全面的な明るさのmultiplier."
+    },
+    "_AudioVUOverlay": {
+      "label": "VUのメートルを加えて下さい",
+      "tooltip": "4バンドLED VUメーターをスペクトラムの上に、自分の位置、サイズ、色で引きます。 スペクトルの映写スペース、利益およびブレンド モードを使用して下さい。"
+    },
+    "_AudioVUColorMode": {
+      "label": "VU 色",
+      "tooltip": "放送:緑/アンバー/赤のセグメント。 Gradient: 底の低い色から上の高色に混合して下さい。"
+    },
+    "_AudioVUColorLow": {
+      "label": "低い色",
+      "tooltip": "ボトムセグメントの色。"
+    },
+    "_AudioVUColorHigh": {
+      "label": "高い色",
+      "tooltip": "トップセグメントの色。"
+    },
+    "_AudioVUScale": {
+      "label": "VUスケール",
+      "tooltip": "メートルが表面全体に収まる回数(=より小さい)。 デフォルト4 x 2は、幅と高さの半分の四半期を埋めます。"
+    },
+    "_AudioVUOffset": {
+      "label": "VUオフセット",
+      "tooltip": "メートルの移動。 スペクトルのオフセットのように動作します(スケールの前に適用されるので、負の値が右/上に移動します)。"
+    },
+    "_AudioVURotation": {
+      "label": "VUの回転",
+      "tooltip": "自分の中心のまわりのメートルを、度(90 =横棒)で回して下さい。"
+    },
+    "_AudioVUIntensity": {
+      "label": "VU強度",
+      "tooltip": "メートルの明るさ。"
     },
     "_UseAudioWaveform": {
       "label": "オーディオ波形を有効にする",
@@ -2325,6 +2397,14 @@
       "label": "Hue の速度",
       "tooltip": "ヒューシフト/レインボーアニメーションの速度."
     },
+    "_AudioWaveformBeatPulse": {
+      "label": "ビートカラーパルス強度",
+      "tooltip": "フラッシュ/パルスの強さは、オーディオキックと低音トランジェントで明るくなります。"
+    },
+    "_AL_WaveformUsesChrono": {
+      "label": "Waveform ビート・シンク",
+      "tooltip": "波形のアニメーションと色が音楽のテンポに切り替える AudioLink クロノテーション。"
+    },
     "_AudioWaveformSpace": {
       "label": "投影空間",
       "tooltip": "視覚化者のための座標空間."
@@ -2357,10 +2437,6 @@
       "label": "エッジの柔らかさ",
       "tooltip": "空間エッジのアンチエイリアシングとストロークの柔らかさ."
     },
-    "_AudioWaveformIntensity": {
-      "label": "インテンシティ",
-      "tooltip": "全面的な明るさのmultiplier."
-    },
     "_AudioWaveformTemporal": {
       "label": "波形の一時的なスムース",
       "tooltip": "波形(仮バッファモード)に適用される一時的なスムースの強さ."
@@ -2368,6 +2444,10 @@
     "_FRSmoothedAudio": {
       "label": "スムーズなオーディオCRT",
       "tooltip": "カスタムレンダリングテクスチャ (FireRat AudioSmoothingCRTアセット) は、温度調節されたオーディオを保持します。 Temporal Bufferモードが必要です."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "インテンシティ",
+      "tooltip": "全面的な明るさのmultiplier."
     },
     "_UseInterlace": {
       "label": "インターレースを有効にする",
@@ -2716,6 +2796,42 @@
     "_GlitterShape": {
       "label": "きらめきの形",
       "tooltip": "グリッターの輝きの幾何学的形状を制御する."
+    },
+    "_GlitterSize": {
+      "label": "形状サイズ",
+      "tooltip": "ノイズセル内の各形状のスパークルのサイズ。 0.35 = 細胞の約70%。 範囲 0.05–0.5。"
+    },
+    "_GlitterSoftness": {
+      "label": "形状 柔らかさ",
+      "tooltip": "アンチエイリアスエッジ柔らかさ。 0 = 硬いステップ(), >0 = 透明に滑らかなフェード. 範囲 0〜0.5"
+    },
+    "_GlitterDirection": {
+      "label": "スクロール方向",
+      "tooltip": "スクロールアニメーションの方向(X、Y)を制御します。"
+    },
+    "_GlitterScrollSpeed": {
+      "label": "スクロール速度",
+      "tooltip": "平面を横断する速度を制御します。"
+    },
+    "_GlitterColorMode": {
+      "label": "色モード",
+      "tooltip": "きらめきの輝き(固体、2色ランプ、虹、勾配テクスチャー)のカラー生成モードを制御する AudioLink テーマ, AudioLink チョルド)。"
+    },
+    "_GlitterColor2": {
+      "label": "色 2",
+      "tooltip": "ランダムな輝きのバリエーションのための二次色。"
+    },
+    "_GlitterColor2_Shift": {
+      "label": "シフト",
+      "tooltip": ""
+    },
+    "_GlitterHueSpeed": {
+      "label": "虹の速度",
+      "tooltip": "虹の輝きの循環速度を制御します。"
+    },
+    "_GlitterGradientTex": {
+      "label": "グリッターグラデーション",
+      "tooltip": "スパークルごとにサンプルされたカラーランプテクスチャ。"
     },
     "_MatCapMask": {
       "label": "マットキャップマスク(R)",
@@ -3380,6 +3496,106 @@
     "_AL_DelayTreble": {
       "label": "トレブル・ディレイ",
       "tooltip": "Treble の履歴バッファに沿った遅延オフセット."
+    },
+    "_AL_ChronoEnabled": {
+      "label": "Beat-Syncを有効にする タイムタイム",
+      "tooltip": "Swapsの壁時計のアニメーションの時間のための AudioLink chronotensity:音楽で進歩し、沈黙を遅くする時計なので、アニメーションはビートにスナップします。 これを世界へ AudioLink, その後、独自の「Beat-Sync Animation」トグルを介して個々の機能を選択します."
+    },
+    "_AL_ChronoIndex": {
+      "label": "クロノ時間モード",
+      "tooltip": "ビート同期クロックが進む方法:連続(振幅)、連続(スロー)、ビートトリガー、トライガー+ホールド、ビートパルス(さまざまな速度)。"
+    },
+    "_AL_ChronoBand": {
+      "label": "クロノ時間バンド",
+      "tooltip": "お問い合わせ AudioLink 周波数帯域は、ビート同期クロック(Bass、Low Mid、High Mid、 Treble)を駆動します。"
+    },
+    "_UseALThemeColor": {
+      "label": "世界テーマカラーの使用",
+      "tooltip": "世界の4つのテーマカラーで素材を着色 AudioLink コントローラーなので、アバターは会場のカラースキームに適応します。"
+    },
+    "_AL_ThemeColorIndex": {
+      "label": "テーマカラー指数",
+      "tooltip": "世界の4 AudioLink テーマカラー(テーマ1～テーマ4)"
+    },
+    "_AL_ThemeColorStrength": {
+      "label": "主題色の強さ",
+      "tooltip": "世界を強くする方法 AudioLink テーマカラーを素材にブレンド。"
+    },
+    "_AL_ThemeColorTarget": {
+      "label": "テーマカラーターゲット",
+      "tooltip": "世界のテーマカラーが発光するかどうか、ベースアルベト色、または両方。"
+    },
+    "_AL_GlitterTarget": {
+      "label": "グリッター AudioLink ターゲット",
+      "tooltip": "輝度、スパークルサイズ、スパーシャリティ(Beat = Denser)、またはスパーシャリティ・インバース(Beat = Sparser)のどちらのグリッターパラメータがオーディオに応答します。"
+    },
+    "_AL_GridTarget": {
+      "label": "グリッド AudioLink ターゲット",
+      "tooltip": "どの格子変数が可聴周波に反応するか:ライン厚さ、格子アルファ、か格子色の色合い。"
+    },
+    "_AL_RimTarget": {
+      "label": "リム AudioLink ターゲット",
+      "tooltip": "リムのglowパラメータがオーディオに応答する: 強度(明るさ)または幅(リムバンド幅)。"
+    },
+    "_AL_RippleTarget": {
+      "label": "リップル AudioLink ターゲット",
+      "tooltip": "rippleパラメーターを選択する AudioLink modulates (強さ、半径、速度)。"
+    },
+    "_AL_ScanlineTarget": {
+      "label": "スキャンライン AudioLink ターゲット",
+      "tooltip": "スキャンラインパラメータを選択する AudioLink modulates (厚さ、密度、アルファ)。"
+    },
+    "_AL_ColorShiftUsesChrono": {
+      "label": "カラーシフトビートシンク",
+      "tooltip": "カラーシフトアニメーションのスピードを音楽に合わせる AudioLink クロノテーション。"
+    },
+    "_AL_ProceduralUsesChrono": {
+      "label": "強制的なビートシンク",
+      "tooltip": "速度を音楽にスクロールする先進的なテクスチャを同期 AudioLink クロノテーション。"
+    },
+    "_AL_GlitterUsesChrono": {
+      "label": "グリッター ビート・シンク",
+      "tooltip": "きらめきの輝きを音楽に加速させる AudioLink クロノテーション。"
+    },
+    "_AL_GridUsesChrono": {
+      "label": "グリッドビートシンク",
+      "tooltip": "グリッドアニメーションの速度を音楽に同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_PulseUsesChrono": {
+      "label": "パルスビートシンク",
+      "tooltip": "排出パルス速度を音楽に同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_RippleUsesChrono": {
+      "label": "リップルビートシンク",
+      "tooltip": "rippleアニメーションを音楽に高速で同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_ScanlineUsesChrono": {
+      "label": "スキャンライン ビート・シンク",
+      "tooltip": "スキャンラインのスクロール速度を音楽に同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_FlickerUsesChrono": {
+      "label": "Flicker Beat-Sync(フリッカー・ビート・シンク)",
+      "tooltip": "グリッチフリッカーのスピードを音楽を経由して同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_PsychedelicUsesChrono": {
+      "label": "サイケデリック・ビート・シンク",
+      "tooltip": "サイケデリックなノイズ速度を音楽に同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_FractalUsesChrono": {
+      "label": "フラクタル・ビート・シンク",
+      "tooltip": "3Dフラクタルレイマーチアニメーション速度を音楽を経由して同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_OutlineUsesChrono": {
+      "label": "アウトライン ビート・シンク",
+      "tooltip": "輪郭のパルスを同期し、アニメーションの速度を音楽に溶かす AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_DissolveUsesChrono": {
+      "label": "解体ビートシンク",
+      "tooltip": "アニメーション速度を音楽に溶かす AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
+    },
+    "_AL_EmissionUsesChrono": {
+      "label": "排出ビート・シンク",
+      "tooltip": "排出パルス振動を音楽に同期 AudioLink クロノテーション。 'Enable Beat-Sync Time' を有効化 AudioLink Visualizersセクション。"
     },
     "_UseLTCGI": {
       "label": "LTCGI を有効にする",

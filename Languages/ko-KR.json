@@ -401,6 +401,10 @@
       "label": "제품정보",
       "tooltip": "알파가 방출에 영향을 미치는 방법 (higher value glow brighter)."
     },
+    "_EmissionColor": {
+      "label": "방출 색깔",
+      "tooltip": "Glow 색깔 (HDR). Black = no base glow; Emission Mask는 방출 맵으로 작동합니다."
+    },
     "_EmissionStrength": {
       "label": "방출 힘",
       "tooltip": "빛나는 효과는 무엇입니까."
@@ -933,9 +937,17 @@
       "label": "색상",
       "tooltip": "그리드 라인의 색상."
     },
+    "_GridColorMode": {
+      "label": "격자 색깔 형태",
+      "tooltip": "그리드 오버레이 (Solid, Rainbow)의 색상 스타일링 모드를 선택하십시오. AudioLink 테마, AudioLink 조드)."
+    },
     "_GridColor_Shift": {
       "label": "격자 색깔 교대",
       "tooltip": "Procedural 격자 선을 위한 AudioLink 또는 애니메이션 색깔 교대."
+    },
+    "_GridIntensity": {
+      "label": "격자 강렬",
+      "tooltip": "그리드 패턴의 전체 불투명과 강도를 제어합니다."
     },
     "_GridDensity": {
       "label": "제품정보",
@@ -1617,6 +1629,14 @@
       "label": "AudioLink 힘",
       "tooltip": ""
     },
+    "_FractalOffset": {
+      "label": "근원 상쇄 (X Y Z)",
+      "tooltip": "fractal의 내부보기 창을 이동 - fractal의 다른 지역을 탐험하는 팬 X/Y/Z. 단위: 가늠자 = 1.에 세계 공간"
+    },
+    "_FractalRepeatSize": {
+      "label": "반복 타일 크기",
+      "tooltip": "각 도메인 반복 타일의 크기 ( Scale = 1)의 세계 공간. 작은 = denser tiling. 이전 하드 코딩 4.0을 대체합니다."
+    },
     "_RefractionNoiseMap": {
       "label": "Refraction 소음 지도",
       "tooltip": "변속기를 제어하는 소음 질감."
@@ -1735,7 +1755,7 @@
     },
     "_GlitterSpeed": {
       "label": "Glitter 속도",
-      "tooltip": ""
+      "tooltip": "트윈 크와 팝 애니메이션 속도를 제어합니다."
     },
     "_AL_GlitterBand": {
       "label": "AudioLink 밴드",
@@ -1896,6 +1916,10 @@
     "_RippleColor": {
       "label": "색상",
       "tooltip": "잔물의 색상."
+    },
+    "_RippleColorMode": {
+      "label": "잔물결 색깔 형태",
+      "tooltip": "리플 링 (Solid, Rainbow)의 색상 스타일링 모드를 선택하십시오. AudioLink 테마, AudioLink 조드)."
     },
     "_RippleColor_Shift": {
       "label": "기타",
@@ -2217,6 +2241,10 @@
       "label": "필 알파",
       "tooltip": "곡선의 밑에 채워진 지역의 Opacity."
     },
+    "_AudioSpectrumDualLine": {
+      "label": "이중 추적기 (Peak + 매끄러운)",
+      "tooltip": "EQ 막대기의 위 뜨 최고봉 모자, 또는 부드럽게 한 곡선에 이차 빠른 익지않는 일시적인 최고봉 선을 상감세하십시오."
+    },
     "_AudioSpectrumLogScale": {
       "label": "Logarithmic 규모",
       "tooltip": "더 자연스러운베이스/리블 밸런스를 위한 logarithmic 주파수 스케일링을 사용합니다."
@@ -2236,6 +2264,14 @@
     "_AudioSpectrumHueSpeed": {
       "label": "Hue 속도",
       "tooltip": "Hue shift / 무지개 애니메이션의 속도."
+    },
+    "_AudioSpectrumBeatPulse": {
+      "label": "색깔 펄스 강도",
+      "tooltip": "오디오 킥과베이스 트랜지션에서 플래시 / 펄스의 강도."
+    },
+    "_AL_SpectrumUsesChrono": {
+      "label": "스펙트럼 Beat-Sync",
+      "tooltip": "Syncs 스펙트럼 애니메이션 및 색상은 음악 tempo로 이동 AudioLink 동기화."
     },
     "_AudioSpectrumSpace": {
       "label": "프로젝트 공간",
@@ -2269,17 +2305,53 @@
       "label": "Edge 부드러움",
       "tooltip": "Spatial 가장자리 반대로 aliasing 및 막대기 또는 곡선의 국경 부드러움."
     },
-    "_AudioSpectrumIntensity": {
-      "label": "관련 기사",
-      "tooltip": "전반적인 광도 multiplier."
-    },
     "_AudioSmoothingMode": {
       "label": "오디오 스무딩 모드",
       "tooltip": "스펙트럼/파형을 위한 임시 매끄러운 방법: 익지않는 (none), 구조 혼합 (2 구조 EMA), 또는 임시 완충기 (CRT 역사)."
     },
+    "_AudioSampleInterpolation": {
+      "label": "샘플 교환",
+      "tooltip": "인접한 오디오 빈 사이 Bilinear interpolation. 128 샘플 텍스처가 많은 픽셀에서 뻗어있을 때 스펙트럼 바와 파형 디스플레이의 화소를 크게 감소시킵니다. 소량의 GPU 비용을 절감할 수 있습니다."
+    },
     "_AudioSpectrumTemporal": {
       "label": "스펙트럼 Temporal 매끈함",
       "tooltip": "스펙트럼 (Frame Blend / Temporal buffer modes)에 적용된 temporal smoothing의 힘."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "관련 기사",
+      "tooltip": "전반적인 광도 multiplier."
+    },
+    "_AudioVUOverlay": {
+      "label": "VU 측정기 추가",
+      "tooltip": "Draws는 그것의 자신의 위치, 크기 및 색깔과 더불어 스펙트럼의 정상에 4 밴드 LED VU 미터를 그립니다. 스펙트럼의 투영 공간, 이득 및 혼합 모드를 사용합니다."
+    },
+    "_AudioVUColorMode": {
+      "label": "VU 색상",
+      "tooltip": "방송 : 녹색 / 호박색 / 빨간색 세그먼트. Gradient: 정상에 높은 색깔에 바닥에 낮은 색깔에서 혼합."
+    },
+    "_AudioVUColorLow": {
+      "label": "낮은 색깔",
+      "tooltip": "밑바닥 세그먼트의 색깔."
+    },
+    "_AudioVUColorHigh": {
+      "label": "높은 색깔",
+      "tooltip": "상단 세그먼트의 색상."
+    },
+    "_AudioVUScale": {
+      "label": "VU 가늠자",
+      "tooltip": "표면 (higher = small)의 맞은편에 미터가 얼마나 많은. 기본 4 x 2는 너비의 1/4을 채우고 높이 절반을 채웁니다."
+    },
+    "_AudioVUOffset": {
+      "label": "VU 상쇄",
+      "tooltip": "미터를 이동합니다. 스펙트럼의 오프셋과 같은 작업 (수량 전에 승인, 그래서 부정적인 값은 오른쪽 / 위쪽으로 이동)."
+    },
+    "_AudioVURotation": {
+      "label": "VU 교체",
+      "tooltip": "도 (90 = 수평 바)에서 자체 센터 주위에 미터를 회전합니다."
+    },
+    "_AudioVUIntensity": {
+      "label": "VU 강렬",
+      "tooltip": "미터의 광도."
     },
     "_UseAudioWaveform": {
       "label": "Enable 오디오 파형",
@@ -2325,6 +2397,14 @@
       "label": "Hue 속도",
       "tooltip": "Hue shift / 무지개 애니메이션의 속도."
     },
+    "_AudioWaveformBeatPulse": {
+      "label": "색깔 펄스 강도",
+      "tooltip": "오디오 킥과베이스 트랜지션에서 플래시 / 펄스의 강도."
+    },
+    "_AL_WaveformUsesChrono": {
+      "label": "Waveform 비트 동기화",
+      "tooltip": "Syncs 파형 애니메이션 및 색상은 음악 tempo로 이동 AudioLink 동기화."
+    },
     "_AudioWaveformSpace": {
       "label": "프로젝트 공간",
       "tooltip": "시각화기를 위한 좌표 공간."
@@ -2357,10 +2437,6 @@
       "label": "Edge 부드러움",
       "tooltip": "Spatial 가장자리 anti-aliasing와 치기 부드러움."
     },
-    "_AudioWaveformIntensity": {
-      "label": "관련 기사",
-      "tooltip": "전반적인 광도 multiplier."
-    },
     "_AudioWaveformTemporal": {
       "label": "파형 Temporal 매끈함",
       "tooltip": "파형(Temporal buffer mode)에 적용된 temporal smoothing의 힘."
@@ -2368,6 +2444,10 @@
     "_FRSmoothedAudio": {
       "label": "부드럽게 한 오디오 CRT",
       "tooltip": "사용자 정의 렌더링 질서 (FireRat AudioSmoothingCRT 자산) temporally-smoothed 오디오를 보유. Temporal 완충기 형태를 위해 필수."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "관련 기사",
+      "tooltip": "전반적인 광도 multiplier."
     },
     "_UseInterlace": {
       "label": "사용 방법",
@@ -2716,6 +2796,42 @@
     "_GlitterShape": {
       "label": "Glitter 모양",
       "tooltip": "반짝이 반짝이의 기하학적 모양을 제어합니다."
+    },
+    "_GlitterSize": {
+      "label": "모양 크기",
+      "tooltip": "각 모양의 스파클의 크기. 0.35 = 세포의 약 70 %. 범위 0.05-0.5."
+    },
+    "_GlitterSoftness": {
+      "label": "모양 부드러움",
+      "tooltip": "Anti-aliased 가장자리 부드러움. 0 = 단단한 단계 (), >0 = 투명한에 매끄러운 퇴색. 범위 0–0.5."
+    },
+    "_GlitterDirection": {
+      "label": "스크롤 방향",
+      "tooltip": "스크롤 애니메이션 방향 제어 (X, Y)."
+    },
+    "_GlitterScrollSpeed": {
+      "label": "스크롤 속도",
+      "tooltip": "표면에 글리터 스크롤을 빠르게 제어합니다."
+    },
+    "_GlitterColorMode": {
+      "label": "색깔 형태",
+      "tooltip": "반짝 반짝이 반짝임 (Solid, Two Color Ramp, Rainbow, Gradient Texture)의 색상 생성 모드를 제어합니다. AudioLink 테마, AudioLink 조드)."
+    },
+    "_GlitterColor2": {
+      "label": "색깔 2",
+      "tooltip": "무작위 불꽃 변이를 위한 이차 색상."
+    },
+    "_GlitterColor2_Shift": {
+      "label": "기타",
+      "tooltip": ""
+    },
+    "_GlitterHueSpeed": {
+      "label": "무지개 속도",
+      "tooltip": "무지개 불꽃의 순환 속도를 제어합니다."
+    },
+    "_GlitterGradientTex": {
+      "label": "글라이더 Gradient",
+      "tooltip": "색 램프 질감은 sparkle 당 간색했습니다."
     },
     "_MatCapMask": {
       "label": "MatCap 마스크 (R)",
@@ -3380,6 +3496,106 @@
     "_AL_DelayTreble": {
       "label": "Treble 지연",
       "tooltip": "Treble의 역사 버퍼와 함께 지연 오프셋."
+    },
+    "_AL_ChronoEnabled": {
+      "label": "Beat-Sync 지원 (주)",
+      "tooltip": "벽시 애니메이션 시간 교환 AudioLink 연대: 음악과 슬픔과 함께하는 시계, 그래서 애니메이션은 비트에 스냅. 이 세상에서 AudioLink, 다음 자신의 'Beat-Sync Animation' toggle을 통해 개별 기능을 선택합니다."
+    },
+    "_AL_ChronoIndex": {
+      "label": "Chrono 시간 형태",
+      "tooltip": "비트 동기화 된 시계 발전 방법 : 연속 (Amplitude), 연속 (Slow), Beat Trigger, Beat Trigger + Hold, Beat Pulse (various speeds)."
+    },
+    "_AL_ChronoBand": {
+      "label": "Chrono 시간 밴드",
+      "tooltip": "이름 * AudioLink 주파수 대역은 Beat-sync 시계 (Bass, Low Mid, High Mid, Treble)를 구동합니다."
+    },
+    "_UseALThemeColor": {
+      "label": "세계 테마 색상 사용",
+      "tooltip": "세계의 4 가지 테마 색상 중 하나와 함께 자료를 주석 AudioLink 관제사, 그래서 avatar는 개최지의 색깔 계획에 적응시킵니다."
+    },
+    "_AL_ThemeColorIndex": {
+      "label": "테마 색상 인덱스",
+      "tooltip": "세계의 4 AudioLink 테마 색상 사용 ( 테마 1 ~ 4)."
+    },
+    "_AL_ThemeColorStrength": {
+      "label": "테마 색상 힘",
+      "tooltip": "어떻게 세상의 AudioLink 테마 색상은 재료로 혼합됩니다."
+    },
+    "_AL_ThemeColorTarget": {
+      "label": "테마 색상 대상",
+      "tooltip": "세계 테마 색상이 방출,베이스 알베토 색상, 또는 둘 다 주석 여부."
+    },
+    "_AL_GlitterTarget": {
+      "label": "사이트맵 AudioLink 제품정보",
+      "tooltip": "어떤 반짝이 매개 변수는 오디오에 응답: 밝기, 스파클 크기, Sparsity (Beat = Denser), 또는 Sparsity Inverse (Beat = Sparser)."
+    },
+    "_AL_GridTarget": {
+      "label": "제품정보 AudioLink 제품정보",
+      "tooltip": "어떤 격자 모수는 오디오에 반응합니다: 선 간격, 격자 알파, 또는 격자 색깔 Hue."
+    },
+    "_AL_RimTarget": {
+      "label": "사이트맵 AudioLink 제품정보",
+      "tooltip": "어떤 rim glow 모수는 오디오에 반응합니다: 강렬 (밝기) 또는 폭 (림 밴드 폭)."
+    },
+    "_AL_RippleTarget": {
+      "label": "팟캐스트 AudioLink 제품정보",
+      "tooltip": "ripple 매개 변수 선택 AudioLink (Strength, 반경, 속도)를 조절합니다."
+    },
+    "_AL_ScanlineTarget": {
+      "label": "스탬프 AudioLink 제품정보",
+      "tooltip": "scanline 매개 변수 선택 AudioLink (간격, 밀도, 알파)를 조절합니다."
+    },
+    "_AL_ColorShiftUsesChrono": {
+      "label": "색상 시프트 Beat-Sync",
+      "tooltip": "색상 이동 애니메이션 속도를 통해 음악에 동기화 AudioLink 동기화."
+    },
+    "_AL_ProceduralUsesChrono": {
+      "label": "직업 Beat-Sync",
+      "tooltip": "Syncs procedural 짜임새 스크롤 속도 음악을 통해 AudioLink 동기화."
+    },
+    "_AL_GlitterUsesChrono": {
+      "label": "Glitter 비트 동기화",
+      "tooltip": "Syncs glitter sparkle twinkle speed 에 음악 via AudioLink 동기화."
+    },
+    "_AL_GridUsesChrono": {
+      "label": "그리드 Beat-Sync",
+      "tooltip": "Syncs 그리드 애니메이션 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_PulseUsesChrono": {
+      "label": "펄스 Beat-Sync",
+      "tooltip": "Syncs 배출 맥박 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_RippleUsesChrono": {
+      "label": "리플 Beat-Sync",
+      "tooltip": "Syncs ripple 애니메이션 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_ScanlineUsesChrono": {
+      "label": "스캔 비트 동기화",
+      "tooltip": "Syncs scanline 스크롤 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_FlickerUsesChrono": {
+      "label": "플리커 Beat-Sync",
+      "tooltip": "Syncs glitch 흔들림 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_PsychedelicUsesChrono": {
+      "label": "Psychedelic 비트 동기화",
+      "tooltip": "Syncs 심령 잡음 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_FractalUsesChrono": {
+      "label": "가상 Beat-Sync",
+      "tooltip": "Syncs 3D fractal raymarching 애니메이션 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_OutlineUsesChrono": {
+      "label": "개요 Beat-Sync",
+      "tooltip": "Syncs 윤곽 맥박과 용해 애니메이션 속도 음악을 통해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_DissolveUsesChrono": {
+      "label": "Beat-Sync를 해결",
+      "tooltip": "동기화는 애니메이션 속도를 통해 음악에 용해 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
+    },
+    "_AL_EmissionUsesChrono": {
+      "label": "다운로드",
+      "tooltip": "Syncs 배출 맥박 진동을 통해 음악에 AudioLink 동기화. 'Enable Beat-Sync Time'을 요구합니다. AudioLink Visualizers 단면도."
     },
     "_UseLTCGI": {
       "label": "사용 가능한 LTCGI",

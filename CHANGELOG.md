@@ -4,6 +4,50 @@ All notable changes to FireRatShader are documented in this file.
 
 Versions cover both the Built-in Render Pipeline (BRP) and Universal Render Pipeline (URP) variants, which are kept in 100% lockstep feature parity.
 
+## [1.2.0] - 2026-09-25
+
+### Added
+- **AudioLink Chronotensity Beat-Sync**: Added musical tempo beat-sync time source with 8 selectable modes (4 tempo speeds from 1/4 to 2×, plus 4 inverse speeds) and per-feature beat-sync toggles across Color Shift, Procedural Textures, Glitter, Grid Overlay, Ripple, Scanlines, Flicker, Dissolve, Outline, 3D Fractal, and Emission Pulse.
+- **Beat-Sync Auto-Detection & Quick-Fix**: The material inspector detects when feature beat-sync toggles are enabled without master beat-sync time, displaying an inline reminder with a one-click "Enable Beat-Sync Time" quick-fix button.
+- **AudioLink World Theme Color Tinting**: Added world theme color tinting targeting Albedo, Emission, or Both across all 4 venue theme colors broadcast by world AudioLink systems.
+- **Audio Spectrum Modes**: Added **Band History Strip** (Mode 4) with 4 side-by-side history lanes and ColorChord tinting, and **VU Meter** (Mode 5) rendering a segmented vertical volume meter.
+- **VU Meter Overlay Add-on**: Draw a 4-band LED ladder VU meter on top of any Audio Spectrum mode, with independent position, scale, rotation, intensity, and color modes (Broadcast green/amber/red or Low/High gradient).
+- **Dual Trace Spectrum Mode**: Added dual trace rendering with floating peak hold caps over EQ bars and a raw transient trace line over smoothed continuous curves.
+- **Triggered Oscilloscope (Waveform Mode 5)**: Real-time oscilloscope with multi-tap zero-crossing search for rock-steady waveform stabilization and a 2× zoomed inspection window.
+- **Stereo Split Waveform Channel**: Added stereo split channel rendering for waveforms, with channel brightness scaling toward white with Velocity and Beat Pulse.
+- **Expanded AudioLink Modulation Targets**: Added dedicated modulation target selectors for Glitter (Brightness, Sparkle Size, Sparsity, Sparsity Inverse), Grid (Thickness, Alpha, Hue), Rim Glow (Intensity, Width), Ripple (Strength, Radius, Speed), and Scanlines (Thickness, Density, Alpha).
+- **Glitter Shapes, Direction & 6 Color Modes**: Added procedural geometric shapes (Circle, Square, Star) and organic Random sparkles, dynamic Size and Softness controls, independent per-sparkle color randomization across 6 color modes (Solid, Two-Color Ramp, Rainbow, Gradient Texture, AudioLink Theme, AudioLink Chord), 2D directional scroll steering, and decoupled Twinkle Speed vs. Scroll Speed.
+- **Grid Overlay & Ripple Color Modes & Controls**: Added 4-way color modes (Solid, Rainbow, AudioLink Theme, AudioLink Chord) to both Grid and Ripple effects, plus a dedicated Grid Intensity slider for fine-grained opacity control.
+- **Global Mask Channel Routing**: Route any individual channel (None, R, G, B, A) of the RGBA Color Mask to selectively scale MatCap, Rim, Glitter, or Dissolve effects from a unified selector.
+- **HDR Emission Color**: New HDR Emission Color (default black) — Enable Emission now makes the surface glow in this color × Strength, and the Emission Mask acts as the emission map. Baked lighting (Meta pass) uses the same formula.
+- **3D Fractal Offset & Repeat Size**: Added Offset and Repeat Size properties for positioning and repetition control in the 3D Fractal surface style.
+- **Scene & Hierarchy Material Locking**: Added tools to batch lock/unlock all FireRat materials across active scenes or selected GameObject hierarchies in the Multi-Material Batch Editor.
+- **Texture Mipmap & Quality Tools**: Material Inspector drawer offering 1-click batch configuration of Mipmap Generation (Enabled/Disabled), Mipmap Filter algorithms (Box: smooth averaging vs Kaiser: edge-sharpened downscaling), and Anisotropic Filtering levels (0 to 16) across all textures assigned to the material.
+- **Unity 6 URP Adaptive Probe Volumes (APV)**: Native per-pixel probe volume evaluation in URP forward shading for scenes utilizing Unity 6 Adaptive Probe Volumes.
+
+### Changed
+- **Contextual Material Inspector Layout**: Material Inspector dynamically adapts to active modes and shapes across Glitter, Audio Spectrum, and Waveforms, displaying relevant controls and color pickers contextually to streamline material authoring.
+- **Audio Spectrum Waterfall (Solid)**: Solid mode is now a single-color heatmap based on signal amplitude; Frequency Gradient mode retains the two-color heatmap transition from Color to Color 2.
+- **Inspector Dynamic Visibility**: Audio Spectrum and Audio Waveform inspector sections now adaptively display only the controls relevant to the currently selected mode and color mode.
+- **Waveform Stereo Color Evaluation**: Velocity and Beat Pulse now brighten waveform stereo channels cleanly towards white.
+- **Dual-Eye VR Tangent Space Stability**: Enhanced tangent frame calculations for Anisotropic and Hair Specular highlights, preventing microscopic stereo disparity and eye strain in VR headsets.
+- **Decal Layer Performance**: Optimized decal boundaries to eliminate redundant texture lookups and improve performance on mobile and VR platforms.
+- **LTCGI Driver Stability**: Enhanced LTCGI area lighting loop safety for robust performance across mobile and standalone GPU drivers.
+- **Master Shaders Parity**: All 6 BRP and URP master shaders synchronized to 887 properties in 100% lockstep parity.
+
+### Fixed
+- **Projected Texture Mipmapping**: Restored hardware mipmap filtering on standard texture projections, eliminating grazing-angle aliasing and texture shimmering.
+- **Secondary Emission Decoupling**: Decoupled secondary glow features (Color Mask, Backface, Theme, and Internal Parallax) so they function independently of the primary emission toggle, and ensured the primary emission mask applies exclusively to primary emission.
+- **Glitch Dissolve Shadow & Outline Stability**: Fixed flickering in shadows, depth prepasses, and outlines when using static glitch dissolve.
+- **BRP Outline Fog Compatibility**: Resolved a shader compiler conflict between outlines and Unity fog in the Built-in Render Pipeline.
+- **BRP Additional Light UV Consistency**: Synchronized UV animation, flow mapping, and video texture orientation in Built-in additional light passes.
+- **Audio Visualizers on Untextured Surfaces**: Fixed visualizers not rendering on materials without other UV-dependent features.
+- **Shell Fur Opaque Rendering**: Restricted fur tip alpha fade to cutout and transparent render modes, preventing opaque furry meshes from writing partial alpha.
+- **ColorChord Fallback**: Fixed note-to-color mapping calculating incorrect hues when AudioLink is not active in the world.
+- **Cross-Platform Graphics API Compatibility**: Resolved compilation and rendering edge cases across mobile GPUs, Vulkan, Metal, and OpenGL Core.
+- **VRChat Avatar Setup Tool**: Resolved an issue where opening the Avatar Setup wizard (`Tools > FireRat Shader > Avatar Setup`) could incorrectly display the "VRChat SDK required" warning in projects where the VRChat Avatar SDK was already installed.
+- **Proximity Color Cycle**: Cleaned up inspector toggle state for Proximity Color Cycle.
+
 ## [1.1.2] - 2026-09-19
 
 ### Added

@@ -401,6 +401,10 @@
       "label": "强度",
       "tooltip": "Α对排放的影响有多大(更高的值发光更亮)."
     },
+    "_EmissionColor": {
+      "label": "排放颜色",
+      "tooltip": "光彩 (人类发展报告). Black = 无底光; 排放罩充当排放图."
+    },
     "_EmissionStrength": {
       "label": "排放强度",
       "tooltip": "发光效果有多亮."
@@ -933,9 +937,17 @@
       "label": "颜色",
       "tooltip": "网格线的颜色."
     },
+    "_GridColorMode": {
+      "label": "网格颜色模式",
+      "tooltip": "选择网格覆盖的颜色造型模式(Solid, Rainbow, AudioLink 主题, AudioLink Cho弦)."
+    },
     "_GridColor_Shift": {
       "label": "网格颜色移动",
       "tooltip": "用于程序网格线的音频链接或动画色移."
+    },
+    "_GridIntensity": {
+      "label": "网格强度",
+      "tooltip": "控制网格图案的整体不透明性和强度."
     },
     "_GridDensity": {
       "label": "密度",
@@ -1617,6 +1629,14 @@
       "label": "音频链接强度",
       "tooltip": ""
     },
+    "_FractalOffset": {
+      "label": "来源偏移( X Y Z)",
+      "tooltip": "移动分形的内部视图窗口——泛X/Y/Z,探索分形的不同区域. 单位:规模世界空间=1."
+    },
+    "_FractalRepeatSize": {
+      "label": "重复拼图大小",
+      "tooltip": "每个域-重复瓦片的大小(大小=1的世界空间). 较小的 = 密集的 t 。 替换以前的4.0硬码。"
+    },
     "_RefractionNoiseMap": {
       "label": "折射噪声映射",
       "tooltip": "用于控制变化扭曲的噪音纹理."
@@ -1735,7 +1755,7 @@
     },
     "_GlitterSpeed": {
       "label": "闪烁速度",
-      "tooltip": ""
+      "tooltip": "控制闪烁和流行动画的速度。"
     },
     "_AL_GlitterBand": {
       "label": "音频链接带",
@@ -1896,6 +1916,10 @@
     "_RippleColor": {
       "label": "颜色",
       "tooltip": "Rip纹之色."
+    },
+    "_RippleColorMode": {
+      "label": "线条颜色模式",
+      "tooltip": "选择波纹环(Solid, Rainbow, AudioLink 主题, AudioLink Cho弦)."
     },
     "_RippleColor_Shift": {
       "label": "移动",
@@ -2217,6 +2241,10 @@
       "label": "填充阿尔法",
       "tooltip": "曲线下填充区域不透明."
     },
+    "_AudioSpectrumDualLine": {
+      "label": "双轨( Peak + 平滑)",
+      "tooltip": "伦德尔斯漂浮在EQ栏上方的峰顶盖,或者在平滑曲线上覆盖一条二级快生瞬间峰线."
+    },
     "_AudioSpectrumLogScale": {
       "label": "对数缩放",
       "tooltip": "使用对数频率缩放来进行更多的自然低音/三调平衡."
@@ -2236,6 +2264,14 @@
     "_AudioSpectrumHueSpeed": {
       "label": "调色速",
       "tooltip": "呼号转向/彩虹动画速度."
+    },
+    "_AudioSpectrumBeatPulse": {
+      "label": "跳过色彩脉冲强度",
+      "tooltip": "在音效踢击和低音瞬变上闪光/脉冲亮的强度."
+    },
+    "_AL_SpectrumUsesChrono": {
+      "label": "频谱同步",
+      "tooltip": "通过同步频谱动画和颜色转换到音乐节奏 AudioLink 染色质."
     },
     "_AudioSpectrumSpace": {
       "label": "投影空间",
@@ -2269,17 +2305,53 @@
       "label": "边缘软度",
       "tooltip": "空间边缘反变异和边框软度的条或曲线."
     },
-    "_AudioSpectrumIntensity": {
-      "label": "强度",
-      "tooltip": "整体亮度乘数."
-    },
     "_AudioSmoothingMode": {
       "label": "音频平滑模式",
       "tooltip": "频谱/波形的调温平滑方法:Raw(无),Frame Blend(2-frame EMA),或Temperal Buffer(CRT历史)."
     },
+    "_AudioSampleInterpolation": {
+      "label": "样本内插",
+      "tooltip": "相邻的音频插件之间的双线插件. 当128样纹理被拉伸到许多像素上时,大幅降低频谱条和波形显示的像素. 禁用以节省少量的 GPU 成本 。"
+    },
     "_AudioSpectrumTemporal": {
       "label": "光谱时间平滑",
       "tooltip": "对光谱应用的时间平滑强度(Frame Blend / Tempolar 缓冲模式)."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "强度",
+      "tooltip": "整体亮度乘数."
+    },
+    "_AudioVUOverlay": {
+      "label": "添加 VU 仪表",
+      "tooltip": "在光谱上绘制一个4波段的LED VU仪表,其位置,大小和颜色各异. 使用光谱的投影空间,增益和混合模式."
+    },
+    "_AudioVUColorMode": {
+      "label": "VU 颜色",
+      "tooltip": "广播:绿色/琥珀/红色片段. 渐变:从底部的低色混合到顶部的高色."
+    },
+    "_AudioVUColorLow": {
+      "label": "低颜色",
+      "tooltip": "下方块的颜色 。"
+    },
+    "_AudioVUColorHigh": {
+      "label": "高颜色",
+      "tooltip": "顶部的颜色 。"
+    },
+    "_AudioVUScale": {
+      "label": "VU 缩放",
+      "tooltip": "测量仪是否适合跨表面(较高=较小). 默认的4 x 2 填充宽度的四分之一和高度的一半."
+    },
+    "_AudioVUOffset": {
+      "label": "VU 偏移",
+      "tooltip": "移动计数器。 工作如频谱的偏移(在缩放前应用,所以负值将其向右/向上移动)."
+    },
+    "_AudioVURotation": {
+      "label": "VU 旋转",
+      "tooltip": "围绕自身中心旋转计数器,以度(90=水平栏)表示."
+    },
+    "_AudioVUIntensity": {
+      "label": "VU 强度",
+      "tooltip": "亮度计."
     },
     "_UseAudioWaveform": {
       "label": "启用音频波形",
@@ -2325,6 +2397,14 @@
       "label": "调色速",
       "tooltip": "呼号转向/彩虹动画速度."
     },
+    "_AudioWaveformBeatPulse": {
+      "label": "跳过色彩脉冲强度",
+      "tooltip": "在音效踢击和低音瞬变上闪光/脉冲亮的强度."
+    },
+    "_AL_WaveformUsesChrono": {
+      "label": "波形跳动同步",
+      "tooltip": "通过同步波形动画和颜色转换到音乐节奏 AudioLink 染色质."
+    },
     "_AudioWaveformSpace": {
       "label": "投影空间",
       "tooltip": "可视化器的坐标空间."
@@ -2357,10 +2437,6 @@
       "label": "边缘软度",
       "tooltip": "空间边缘抗异形和中风柔软."
     },
-    "_AudioWaveformIntensity": {
-      "label": "强度",
-      "tooltip": "整体亮度乘数."
-    },
     "_AudioWaveformTemporal": {
       "label": "波形时态平滑",
       "tooltip": "时间平滑的强度应用到波形上(临时缓冲模式)."
@@ -2368,6 +2444,10 @@
     "_FRSmoothedAudio": {
       "label": "平滑音频 CRT",
       "tooltip": "自定义 Render 纹理( FireRat AudioSmoothingCRT 资产) , 持有时间性散乱的音频 。 需要临时缓冲模式 ."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "强度",
+      "tooltip": "整体亮度乘数."
     },
     "_UseInterlace": {
       "label": "启用连接",
@@ -2716,6 +2796,42 @@
     "_GlitterShape": {
       "label": "闪烁形状",
       "tooltip": "控制闪光闪烁的几何形状."
+    },
+    "_GlitterSize": {
+      "label": "形状大小",
+      "tooltip": "每个形状的火花大小 在它的噪声细胞。 0.35 = 约70%的细胞. 范围为0.05-0.5。"
+    },
+    "_GlitterSoftness": {
+      "label": "形状柔软",
+      "tooltip": "抗异形边缘柔软. 0 = 硬步 (), > 0 = 平滑淡入透明. 范围0-0.5."
+    },
+    "_GlitterDirection": {
+      "label": "滚动方向",
+      "tooltip": "控制滚动动画方向(X, Y)."
+    },
+    "_GlitterScrollSpeed": {
+      "label": "滚动速度",
+      "tooltip": "控制闪光卷轴跨面的速度。"
+    },
+    "_GlitterColorMode": {
+      "label": "颜色模式",
+      "tooltip": "控制闪光闪烁的颜色生成模式(Solid, Two Color Ramp, Rainbow, 渐变纹理, AudioLink 主题, AudioLink Cho弦)."
+    },
+    "_GlitterColor2": {
+      "label": "颜色 2",
+      "tooltip": "随机闪烁变异的次要颜色."
+    },
+    "_GlitterColor2_Shift": {
+      "label": "移动",
+      "tooltip": ""
+    },
+    "_GlitterHueSpeed": {
+      "label": "彩虹速度",
+      "tooltip": "控制彩虹闪光的循环速度."
+    },
+    "_GlitterGradientTex": {
+      "label": "滑动梯度",
+      "tooltip": "彩色斜坡纹理样本,每个闪光。"
     },
     "_MatCapMask": {
       "label": "马特卡普面具( R)",
@@ -3380,6 +3496,106 @@
     "_AL_DelayTreble": {
       "label": "三重延迟",
       "tooltip": "Treble 历史缓冲器的延迟抵消 ."
+    },
+    "_AL_ChronoEnabled": {
+      "label": "启用跳动同步 时间",
+      "tooltip": "换乘时钟动画时间 AudioLink chronotensity:一个随音乐而前进,默默地慢下来的时钟,所以动画会向节拍快速的转动. 在一个有 AudioLink,然后通过自己的“Beat-Sync Animation”切换选择单个特性。"
+    },
+    "_AL_ChronoIndex": {
+      "label": "Chrono 时间模式",
+      "tooltip": "节拍时钟如何推进:连续(音速),连续(慢),Beat Trigger,Beat Trigger + hold,Beat Pulse(各种速度)."
+    },
+    "_AL_ChronoBand": {
+      "label": "克罗诺时间段",
+      "tooltip": "哪个 AudioLink 频段驱动节拍同步时钟(Bass,Low Mid,High Mid,Treble)."
+    },
+    "_UseALThemeColor": {
+      "label": "使用世界主题颜色",
+      "tooltip": "以 4 个主题颜色之一 来调色器 AudioLink 控制器,因此阿凡达会适应会场的颜色方案."
+    },
+    "_AL_ThemeColorIndex": {
+      "label": "主题颜色索引",
+      "tooltip": "世界四强中的哪个 AudioLink 要使用的主题颜色( 主题 1 到主题 4 )"
+    },
+    "_AL_ThemeColorStrength": {
+      "label": "主题颜色强度",
+      "tooltip": "多么强烈的世界 AudioLink 将主题颜色混合到材料中。"
+    },
+    "_AL_ThemeColorTarget": {
+      "label": "主题颜色目标",
+      "tooltip": "无论是世界主题的颜色表示排放物,基反照率颜色,还是两者兼有."
+    },
+    "_AL_GlitterTarget": {
+      "label": "闪烁 AudioLink 目标",
+      "tooltip": "哪个闪光参数响应音频:亮度,闪光大小,Sparsity(Beat = Denser),或者Sparsity逆变(Beat = Sparser)."
+    },
+    "_AL_GridTarget": {
+      "label": "网格 AudioLink 目标",
+      "tooltip": "哪个网格参数响应音频:线条厚度,网格阿尔法,或网格色调."
+    },
+    "_AL_RimTarget": {
+      "label": "环形 AudioLink 目标",
+      "tooltip": "哪个环线发光参数响应音频:强度(Brightness)或Width(Rimband宽度)."
+    },
+    "_AL_RippleTarget": {
+      "label": "连线 AudioLink 目标",
+      "tooltip": "选择哪个连线参数 AudioLink 调制(Strength, Radius, speed)."
+    },
+    "_AL_ScanlineTarget": {
+      "label": "扫描线 AudioLink 目标",
+      "tooltip": "选择哪个扫描线参数 AudioLink 调性(Thickness, Density, Alpha)."
+    },
+    "_AL_ColorShiftUsesChrono": {
+      "label": "颜色 Shift 跳动同步",
+      "tooltip": "将色彩转换动画速度同步到音乐 AudioLink 染色质."
+    },
+    "_AL_ProceduralUsesChrono": {
+      "label": "程序同步",
+      "tooltip": "将程序纹理滚动速度同步到音乐 AudioLink 染色质."
+    },
+    "_AL_GlitterUsesChrono": {
+      "label": "闪烁闪烁的同步",
+      "tooltip": "将闪光闪闪的闪光速度同步到音乐中 AudioLink 染色质."
+    },
+    "_AL_GridUsesChrono": {
+      "label": "网格跳动同步",
+      "tooltip": "通过将网格动画速度同步到音乐 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_PulseUsesChrono": {
+      "label": "脉搏同步",
+      "tooltip": "将脉冲速度同步到音乐 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_RippleUsesChrono": {
+      "label": "Riple 跳动同步",
+      "tooltip": "将动画速度同步到音乐 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_ScanlineUsesChrono": {
+      "label": "扫描线同步",
+      "tooltip": "将扫描线滚动速度同步到音乐 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_FlickerUsesChrono": {
+      "label": "闪闪发光的同步",
+      "tooltip": "通过音乐同步闪烁速度 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_PsychedelicUsesChrono": {
+      "label": "迷幻的打击同步",
+      "tooltip": "将迷幻声速同步到音乐中 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_FractalUsesChrono": {
+      "label": "分形跳动同步",
+      "tooltip": "将3D分形射线动画速度同步到音乐 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_OutlineUsesChrono": {
+      "label": "大纲跳动同步",
+      "tooltip": "同步脉冲和将动画速度通过 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_DissolveUsesChrono": {
+      "label": "解开同步",
+      "tooltip": "同步将动画速度通过 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
+    },
+    "_AL_EmissionUsesChrono": {
+      "label": "排放同步",
+      "tooltip": "同步将脉冲振荡通过 AudioLink 染色质. 需要在 AudioLink 视觉器部分."
     },
     "_UseLTCGI": {
       "label": "启用 LTCGI",

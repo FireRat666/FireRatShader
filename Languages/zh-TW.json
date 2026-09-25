@@ -401,6 +401,10 @@
       "label": "強度",
       "tooltip": "Α會如何影響排放( 更高的值會亮度) ."
     },
+    "_EmissionColor": {
+      "label": "排放顏色",
+      "tooltip": "黃色( HDR) 。 黑色 = 沒有底色發光; 排放罩是排放地圖。"
+    },
     "_EmissionStrength": {
       "label": "排放强度",
       "tooltip": "發光效果有多明亮."
@@ -933,9 +937,17 @@
       "label": "顏色",
       "tooltip": "网格線的顏色 ."
     },
+    "_GridColorMode": {
+      "label": "网格顏色模式",
+      "tooltip": "選擇網格覆蓋的顏色樣式( Solid, Rainbow, AudioLink 主題 AudioLink 弦)."
+    },
     "_GridColor_Shift": {
       "label": "网格顏色移動",
       "tooltip": "程序網格線的音效Link或動畫色彩轉換 ."
+    },
+    "_GridIntensity": {
+      "label": "网格密集度",
+      "tooltip": "控制网格模式的整体不透明性和强度。"
     },
     "_GridDensity": {
       "label": "密度",
@@ -1617,6 +1629,14 @@
       "label": "音效链接強度",
       "tooltip": ""
     },
+    "_FractalOffset": {
+      "label": "起源偏移 (X Y Z)",
+      "tooltip": "移動分形內觀視窗 – pan X/ Y/ Z 以探索分形的另一個區域 。 單位: 比例尺 = 1. 世界空间"
+    },
+    "_FractalRepeatSize": {
+      "label": "重覆卷片大小",
+      "tooltip": "每個域- 重複的瓦片的大小( 大小為 1 的世界空间 ) 。 更小 = 密度更小 。 取代以前的硬碼 4. 0 。"
+    },
     "_RefractionNoiseMap": {
       "label": "折射噪音地圖",
       "tooltip": "控制轉動扭曲的噪音紋理 ."
@@ -1735,7 +1755,7 @@
     },
     "_GlitterSpeed": {
       "label": "滑翔速度",
-      "tooltip": ""
+      "tooltip": "控制閃光和流行動畫的速度。"
     },
     "_AL_GlitterBand": {
       "label": "音效串",
@@ -1896,6 +1916,10 @@
     "_RippleColor": {
       "label": "顏色",
       "tooltip": "Rip之色."
+    },
+    "_RippleColorMode": {
+      "label": "旋轉顏色模式",
+      "tooltip": "選擇 rip環的顏色樣式( Solid, Rainbow, AudioLink 主題 AudioLink 弦)."
     },
     "_RippleColor_Shift": {
       "label": "移動",
@@ -2217,6 +2241,10 @@
       "label": "填充 Alpha",
       "tooltip": "曲線下填充區域的不透明度 ."
     },
+    "_AudioSpectrumDualLine": {
+      "label": "雙追蹤 (Peak + 平滑)",
+      "tooltip": "在 EQ 條上方漂浮的峰頂, 或者在平滑曲線上覆蓋一個次速生的瞬間峰線。"
+    },
     "_AudioSpectrumLogScale": {
       "label": "對數比例",
       "tooltip": "使用對數頻率縮放來取得更多的自然低音/三倍平衡 ."
@@ -2236,6 +2264,14 @@
     "_AudioSpectrumHueSpeed": {
       "label": "色調速度",
       "tooltip": "霍埃移/彩虹動畫速度 ."
+    },
+    "_AudioSpectrumBeatPulse": {
+      "label": "跳過顏色脈搏強度",
+      "tooltip": "在音效踢擊和低音轉移上 閃光/脈搏亮度的強度"
+    },
+    "_AL_SpectrumUsesChrono": {
+      "label": "相扑同步",
+      "tooltip": "同步光谱動畫和顏色轉換到音樂節奏,通過 AudioLink 色素"
     },
     "_AudioSpectrumSpace": {
       "label": "投影空间",
@@ -2269,17 +2305,53 @@
       "label": "邊緣柔軟",
       "tooltip": "空间邊緣反變化和邊框軟化的條或曲線."
     },
-    "_AudioSpectrumIntensity": {
-      "label": "密度",
-      "tooltip": "整体亮度乘以."
-    },
     "_AudioSmoothingMode": {
       "label": "音效平滑模式",
       "tooltip": "光谱/波形的溫度平滑法: Raw (無), Frame Blend (2- frame EMA), 或 Temperal Buffer (CRT 歷史) ."
     },
+    "_AudioSampleInterpolation": {
+      "label": "樣本內嵌",
+      "tooltip": "相邻音效套件之間的雙線插件 。 當 128 個樣本被拉伸到很多像素上時, 光線條和波形顯示的像素會大大降低 。 禁用以儲存少量的 GPU 成本 。"
+    },
     "_AudioSpectrumTemporal": {
       "label": "光谱時序平滑",
       "tooltip": "用於光谱的時光平滑力( Frame Blend / Temperal Buffer 模式) ."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "密度",
+      "tooltip": "整体亮度乘以."
+    },
+    "_AudioVUOverlay": {
+      "label": "新增 VU 測量器",
+      "tooltip": "在光谱上畫一個4波段的 LED VU 公尺, 上面有它自己的位置、大小和顏色 。 使用光谱的投影空間, 增益與混合模式 。"
+    },
+    "_AudioVUColorMode": {
+      "label": "VU 顏色",
+      "tooltip": "廣播:綠色/琥珀/紅色片段. 梯度 : 從底部的低顏色混合到上部的高顏色 。"
+    },
+    "_AudioVUColorLow": {
+      "label": "低色",
+      "tooltip": "底部的顏色 。"
+    },
+    "_AudioVUColorHigh": {
+      "label": "高彩",
+      "tooltip": "上部的顏色 。"
+    },
+    "_AudioVUScale": {
+      "label": "VU 比例",
+      "tooltip": "多少次的公尺適合跨面( 更高 = 较小) 。 缺省 4 x 2 填充宽度的四分之一 和高度的一半 。"
+    },
+    "_AudioVUOffset": {
+      "label": "VU 偏移",
+      "tooltip": "把電表移開 工作如光谱偏移( 在 Scale 之前被应用, 所以負數值將它向右/ 上移 ) 。"
+    },
+    "_AudioVURotation": {
+      "label": "VU 旋轉",
+      "tooltip": "按度數( 90 = 水平列) 繞自己的中心旋轉公尺 。"
+    },
+    "_AudioVUIntensity": {
+      "label": "VU 密度",
+      "tooltip": "明亮的表。"
     },
     "_UseAudioWaveform": {
       "label": "開啟音效波形",
@@ -2325,6 +2397,14 @@
       "label": "色調速度",
       "tooltip": "霍埃移/彩虹動畫速度 ."
     },
+    "_AudioWaveformBeatPulse": {
+      "label": "跳過顏色脈搏強度",
+      "tooltip": "在音效踢擊和低音轉移上 閃光/脈搏亮度的強度"
+    },
+    "_AL_WaveformUsesChrono": {
+      "label": "波形跳動同步",
+      "tooltip": "同步波形動畫和顏色轉換到音樂節奏 AudioLink 色素"
+    },
     "_AudioWaveformSpace": {
       "label": "投影空间",
       "tooltip": "視覺器的座標空間."
@@ -2357,10 +2437,6 @@
       "label": "邊緣柔軟",
       "tooltip": "太空邊緣反變化和中風軟弱."
     },
-    "_AudioWaveformIntensity": {
-      "label": "密度",
-      "tooltip": "整体亮度乘以."
-    },
     "_AudioWaveformTemporal": {
       "label": "波形時序平滑",
       "tooltip": "時光平滑的強度應用於波形( 即時缓冲模式) ."
@@ -2368,6 +2444,10 @@
     "_FRSmoothedAudio": {
       "label": "平滑音效 CRT",
       "tooltip": "自訂的 Render 纹理( FireRat AudioSmoothingCRT 資產) , 持有暫時散動的音效 。 需要時速缓冲模式 ."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "密度",
+      "tooltip": "整体亮度乘以."
     },
     "_UseInterlace": {
       "label": "開啟接合",
@@ -2716,6 +2796,42 @@
     "_GlitterShape": {
       "label": "閃光元件",
       "tooltip": "控制閃光燈光的几何形状."
+    },
+    "_GlitterSize": {
+      "label": "元件大小",
+      "tooltip": "其噪聲細胞內各形體的大小 0.35=约占牢房的70%。 距離0.05 -0.5"
+    },
+    "_GlitterSoftness": {
+      "label": "元件柔軟",
+      "tooltip": "抗异形的邊緣柔軟。 0 = 硬步 (), > 0 = 平滑淡入透明. 距離0比0.5"
+    },
+    "_GlitterDirection": {
+      "label": "滚动方向",
+      "tooltip": "控制卷轴動畫方向( X, Y ) 。"
+    },
+    "_GlitterScrollSpeed": {
+      "label": "滚动速度",
+      "tooltip": "控制光滑在表面的轉速"
+    },
+    "_GlitterColorMode": {
+      "label": "顏色模式",
+      "tooltip": "控制閃光燈光的顏色產生模式(Solid, Two Color Ramp, Rainbow, Gradient texture,, ) 。 AudioLink 主題 AudioLink 弦)."
+    },
+    "_GlitterColor2": {
+      "label": "顏色 2",
+      "tooltip": "隨機閃光變化的次要顏色 。"
+    },
+    "_GlitterColor2_Shift": {
+      "label": "移動",
+      "tooltip": ""
+    },
+    "_GlitterHueSpeed": {
+      "label": "彩虹速度",
+      "tooltip": "控制彩虹火花的循环速度。"
+    },
+    "_GlitterGradientTex": {
+      "label": "滑動梯度",
+      "tooltip": "彩色斜坡纹理樣本每一個閃光"
     },
     "_MatCapMask": {
       "label": "馬特卡普遮罩( R)",
@@ -3380,6 +3496,106 @@
     "_AL_DelayTreble": {
       "label": "三次延遲",
       "tooltip": "Treble 的歷史缓冲器."
+    },
+    "_AL_ChronoEnabled": {
+      "label": "啟用同步 時間",
+      "tooltip": "旋轉時鐘動畫時間 AudioLink 隨著音樂的進步, 開啟此項目 AudioLink,然后通过自己的“Beat-Sync Animation”切換選取單位功能。"
+    },
+    "_AL_ChronoIndex": {
+      "label": "Chrono 時間模式",
+      "tooltip": "拍攝時鐘如何進步: 持續( 速度 )、 持續( 慢 )、 擊打扳手 、 擊打扳手 + 持續 、 擊打脈搏( 各种速度 ) 。"
+    },
+    "_AL_ChronoBand": {
+      "label": "克羅諾時間帶",
+      "tooltip": "哪個 AudioLink 頻率樂團驱动節拍同步鐘( Bass, Low Mid, High Mid, Treble) 。"
+    },
+    "_UseALThemeColor": {
+      "label": "使用世界主題顏色",
+      "tooltip": "以 4 個主題顏色中 的 之一 點點 材料 。 AudioLink 控制器,所以阿凡達可以適應會場的顏色方案."
+    },
+    "_AL_ThemeColorIndex": {
+      "label": "主題顏色索引",
+      "tooltip": "世界上哪一個4 AudioLink 要使用的佈景主題顏色( 主题 1 到主題 4 )"
+    },
+    "_AL_ThemeColorStrength": {
+      "label": "主題顏色強度",
+      "tooltip": "世界的強烈性 AudioLink 主題顏色被混入材料中 。"
+    },
+    "_AL_ThemeColorTarget": {
+      "label": "主題顏色目標",
+      "tooltip": "不管世界主題的顏色是否表示排放物 底色反照率 或兩者兼有"
+    },
+    "_AL_GlitterTarget": {
+      "label": "閃光 AudioLink 目標",
+      "tooltip": "光滑參數對音效有反應:亮度、亮度、亮度、亮度(Beat = Denser)或亮度反轉(Beat = Sparser) 。"
+    },
+    "_AL_GridTarget": {
+      "label": "网格 AudioLink 目標",
+      "tooltip": "哪個網格參數回應了音效: 線體厚度、 网格 Alpha 或 网格彩色 。"
+    },
+    "_AL_RimTarget": {
+      "label": "环形 AudioLink 目標",
+      "tooltip": "irm 發光參數對音效有反應 : 強度( 光亮 ) 或 Width( rim band 寬度 ) 。"
+    },
+    "_AL_RippleTarget": {
+      "label": "Rip AudioLink 目標",
+      "tooltip": "選擇哪個連接參數 AudioLink 調整( Strength, Radius, 速度) 。"
+    },
+    "_AL_ScanlineTarget": {
+      "label": "掃描 AudioLink 目標",
+      "tooltip": "選擇哪個掃描參數 AudioLink 調整( Thickness, Density, Alpha) 。"
+    },
+    "_AL_ColorShiftUsesChrono": {
+      "label": "彩色 Shift 跳動同步",
+      "tooltip": "將顏色轉移動畫速度同步到音樂 AudioLink 色素"
+    },
+    "_AL_ProceduralUsesChrono": {
+      "label": "程序同步",
+      "tooltip": "同步程序紋理滚动速度至音樂 AudioLink 色素"
+    },
+    "_AL_GlitterUsesChrono": {
+      "label": "閃光同步",
+      "tooltip": "同步閃光閃光的閃光速度到音樂 AudioLink 色素"
+    },
+    "_AL_GridUsesChrono": {
+      "label": "格擊同步",
+      "tooltip": "將網格動畫速度同步到音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_PulseUsesChrono": {
+      "label": "脈搏同步",
+      "tooltip": "將脈搏速度同步到音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_RippleUsesChrono": {
+      "label": "連接同步",
+      "tooltip": "將動畫速度同步到音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_ScanlineUsesChrono": {
+      "label": "掃描同步",
+      "tooltip": "將掃瞄線卷動速度同步到音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_FlickerUsesChrono": {
+      "label": "Flicker 同步",
+      "tooltip": "同步 flicker 速度到音樂通過 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_PsychedelicUsesChrono": {
+      "label": "精神分裂症",
+      "tooltip": "在音樂中同步迷幻噪音速度 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_FractalUsesChrono": {
+      "label": "分形跳動同步",
+      "tooltip": "將 3D 分形射線動畫速度同步到音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_OutlineUsesChrono": {
+      "label": "圖示跳動同步",
+      "tooltip": "同步圖示脈搏並解析動畫速度至音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_DissolveUsesChrono": {
+      "label": "解開同步",
+      "tooltip": "同步解析動畫速度到音樂 AudioLink 色素 在 AudioLink 視覺器區域"
+    },
+    "_AL_EmissionUsesChrono": {
+      "label": "排氣同步",
+      "tooltip": "同步傳送脈搏振動到音樂中 AudioLink 色素 在 AudioLink 視覺器區域"
     },
     "_UseLTCGI": {
       "label": "開啟 LTCGI",

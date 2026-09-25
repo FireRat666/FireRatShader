@@ -401,6 +401,10 @@
       "label": "Độ mạnh",
       "tooltip": "Bao nhiêu alpha ảnh hưởng đến việc phát ra (các giá trị cao hơn sáng hơn)."
     },
+    "_EmissionColor": {
+      "label": "Màu phát ra",
+      "tooltip": "Màu sáng (HDR). Đen = không có ánh sáng cơ sở; mặt nạ tiết ra hoạt động như bản đồ phát ra."
+    },
     "_EmissionStrength": {
       "label": "Sức mạnh khai thác",
       "tooltip": "Hiệu ứng phát sáng rực rỡ làm sao."
@@ -933,9 +937,17 @@
       "label": "Màu sắc",
       "tooltip": "Màu của đường lưới."
     },
+    "_GridColorMode": {
+      "label": "Chế độ màu lưới",
+      "tooltip": "Chọn chế độ đánh dấu màu cho lưới bao phủ AudioLink Sắc thái: AudioLink Chord)."
+    },
     "_GridColor_Shift": {
       "label": "Màu Lưới",
       "tooltip": "Âm thanh lơ lửng hoặc chuyển đổi màu hoạt hình cho các đường lưới theo thủ tục."
+    },
+    "_GridIntensity": {
+      "label": "Độ mạnh Lưới",
+      "tooltip": "Điều khiển độ mờ và cường độ của mô hình lưới."
     },
     "_GridDensity": {
       "label": "Mật độ",
@@ -1617,6 +1629,14 @@
       "label": "Độ mạnh âm thanh",
       "tooltip": ""
     },
+    "_FractalOffset": {
+      "label": "Hiệu số nguồn (XY Z)",
+      "tooltip": "Chuyển đổi cửa sổ xem phân dạng — pan X/Y/Z để khám phá một vùng khác nhau của phân dạng. Đơn vị: không gian thế giới ở thang = 1."
+    },
+    "_FractalRepeatSize": {
+      "label": "Cỡ miếng lặp lại",
+      "tooltip": "Kích cỡ của mỗi ô vuông miền lặp đi lặp lại (không gian thế giới tại tỷ lệ = 1). Nhỏ hơn = nét đặc hơn. Thay thế các mã số cũ 4.0."
+    },
     "_RefractionNoiseMap": {
       "label": "Sơ đồ nhiễu từ xa",
       "tooltip": "Một kết cấu nhiễu để kiểm soát sự biến dạng."
@@ -1735,7 +1755,7 @@
     },
     "_GlitterSpeed": {
       "label": "Tốc độ Glitter",
-      "tooltip": ""
+      "tooltip": "Điều khiển tốc độ hoạt hình lấp lánh và bùng nổ."
     },
     "_AL_GlitterBand": {
       "label": "Name",
@@ -1896,6 +1916,10 @@
     "_RippleColor": {
       "label": "Màu sắc",
       "tooltip": "Màu của các gợn sóng."
+    },
+    "_RippleColorMode": {
+      "label": "Chế độ màu gấp lại",
+      "tooltip": "Chọn chế độ vẽ màu cho các vòng gợn sóng AudioLink Sắc thái: AudioLink Chord)."
     },
     "_RippleColor_Shift": {
       "label": "Dịch:",
@@ -2217,6 +2241,10 @@
       "label": "Điền Alpha",
       "tooltip": "Độ đậm đặc của khu vực được lấp đầy dưới đường cong."
     },
+    "_AudioSpectrumDualLine": {
+      "label": "Vết lặp lại",
+      "tooltip": "Vẽ các đỉnh núi nổi trên các thanh EQ, hoặc bao gồm một đường thẳng thứ hai sống nhanh chóng trên đường cong mịn."
+    },
     "_AudioSpectrumLogScale": {
       "label": "& Phóng",
       "tooltip": "Sử dụng tần số âm thanh để tăng sự cân bằng âm trầm tự nhiên."
@@ -2236,6 +2264,14 @@
     "_AudioSpectrumHueSpeed": {
       "label": "Tốc độ Sắc",
       "tooltip": "Tốc độ chuyển đổi sắc màu/ hoạt hình cầu vồng."
+    },
+    "_AudioSpectrumBeatPulse": {
+      "label": "Name",
+      "tooltip": "Sức mạnh của đèn flash/pulse tỏa sáng bằng tiếng đá âm thanh và âm bass tạm thời."
+    },
+    "_AL_SpectrumUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá chuyển động quang phổ và chuyển đổi màu sang nhịp điệu âm nhạc thông qua AudioLink Bình tĩnh."
     },
     "_AudioSpectrumSpace": {
       "label": "Miền màu",
@@ -2269,17 +2305,53 @@
       "label": "Độ mềm cạnh",
       "tooltip": "Đường viền hộp và đường viền mềm của thanh hay đường cong."
     },
-    "_AudioSpectrumIntensity": {
-      "label": "Cường độ",
-      "tooltip": "Quá nhiều ánh sáng."
-    },
     "_AudioSmoothingMode": {
       "label": "Chế độ làm mịn âm thanh",
       "tooltip": "Phương pháp làm mịn thời gian cho quang phổ/ sóng: thô (không có), khung trộn (- khung EMA), hay Timeoral Buffer (Lịch sử CTTT)."
     },
+    "_AudioSampleInterpolation": {
+      "label": "Name",
+      "tooltip": "Độ phân giải tuyến tính giữa các thùng âm thanh kế cận. Một cách tuyệt vời làm giảm điểm ảnh của các thanh quang phổ và hình dạng sóng khi kết cấu 128 bảng được kéo dài qua nhiều điểm ảnh. Tắt để lưu một lượng nhỏ chi phí GPU."
+    },
     "_AudioSpectrumTemporal": {
       "label": "Làm mịn hình vuông",
       "tooltip": "Độ mạnh làm mịn của thời gian áp dụng cho quang phổ (Frame hỗn hợp / Tạm thời)."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Quá nhiều ánh sáng."
+    },
+    "_AudioVUOverlay": {
+      "label": "Thêm mục tiêu VU",
+      "tooltip": "Vẽ một đồng hồ đèn LED 4 băng trên đỉnh của quang phổ, với vị trí riêng, kích thước và màu sắc riêng. Sử dụng không gian dự án quang phổ, chế độ tăng trưởng và tổng hợp."
+    },
+    "_AudioVUColorMode": {
+      "label": "Màu VU",
+      "tooltip": "Phát thanh: xanh lá cây / hổ phách / đoạn đỏ. Gradient: hỗn hợp từ màu thấp ở phía dưới đến màu cao ở phía trên."
+    },
+    "_AudioVUColorLow": {
+      "label": "Màu thấp",
+      "tooltip": "Màu của đoạn dưới."
+    },
+    "_AudioVUColorHigh": {
+      "label": "Màu cao",
+      "tooltip": "Màu của đoạn trên cùng."
+    },
+    "_AudioVUScale": {
+      "label": "Tỷ lệ VU",
+      "tooltip": "Bao nhiêu lần đồng hồ vừa với bề mặt (cao hơn = nhỏ hơn). Mặc định 4 x 2 lấp đầy một phần tư chiều rộng và một nửa chiều cao."
+    },
+    "_AudioVUOffset": {
+      "label": "Hiệu số VU",
+      "tooltip": "Di chuyển đồng hồ. Làm việc như độ lệch của quang phổ (dùng trước khi co dãn, vì vậy giá trị tiêu cực di chuyển nó phải / lên)."
+    },
+    "_AudioVURotation": {
+      "label": "Quay VU",
+      "tooltip": "Xoay đồng hồ xung quanh trung tâm của nó, theo độ (90 độ = thanh ngang)."
+    },
+    "_AudioVUIntensity": {
+      "label": "Áp lực VU",
+      "tooltip": "Độ sáng của đồng hồ."
     },
     "_UseAudioWaveform": {
       "label": "Dùng dạng sóng âm",
@@ -2325,6 +2397,14 @@
       "label": "Tốc độ Sắc",
       "tooltip": "Tốc độ chuyển đổi sắc màu/ hoạt hình cầu vồng."
     },
+    "_AudioWaveformBeatPulse": {
+      "label": "Name",
+      "tooltip": "Sức mạnh của đèn flash/pulse tỏa sáng bằng tiếng đá âm thanh và âm bass tạm thời."
+    },
+    "_AL_WaveformUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá hoạt hình sóng và chuyển màu sang nhịp điệu âm nhạc thông qua AudioLink Bình tĩnh."
+    },
     "_AudioWaveformSpace": {
       "label": "Miền màu",
       "tooltip": "Tọa độ không gian cho bộ hình ảnh."
@@ -2357,10 +2437,6 @@
       "label": "Độ mềm cạnh",
       "tooltip": "Gây tương phản và đột quỵ mềm mại."
     },
-    "_AudioWaveformIntensity": {
-      "label": "Cường độ",
-      "tooltip": "Quá nhiều ánh sáng."
-    },
     "_AudioWaveformTemporal": {
       "label": "Độ mịn Sóng",
       "tooltip": "Sức mạnh làm mịn thời gian được áp dụng cho dạng sóng ( Chế độ dự phòng)."
@@ -2368,6 +2444,10 @@
     "_FRSmoothedAudio": {
       "label": "Âm thanh mịn",
       "tooltip": "Công cụ vẽ tự chọn (FireRat soundSmoothingCRT) đang giữ âm thanh theo thời gian. Yêu cầu chế độ Timeoral Buffer."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "Cường độ",
+      "tooltip": "Quá nhiều ánh sáng."
     },
     "_UseInterlace": {
       "label": "Bật khả năng can thiệp",
@@ -2716,6 +2796,42 @@
     "_GlitterShape": {
       "label": "Hình gliterStencils",
       "tooltip": "Điều khiển hình học của lấp lánh lấp lánh."
+    },
+    "_GlitterSize": {
+      "label": "Cỡ hình",
+      "tooltip": "Kích cỡ của mỗi hình dạng lấp lánh trong tế bào nhiễu của nó. 0.35 = 70% tế bào. Phạm vi 0.05–0.5."
+    },
+    "_GlitterSoftness": {
+      "label": "Stencils",
+      "tooltip": "Khí chống trơn mềm. 0 = bước khó khăn, > 0 = mịn mờ trong suốt. Phạm vi 0,5."
+    },
+    "_GlitterDirection": {
+      "label": "Hướng cuộn",
+      "tooltip": "Điều khiển hướng hoạt hình cuộn (X, Y)."
+    },
+    "_GlitterScrollSpeed": {
+      "label": "Tốc độ",
+      "tooltip": "Điều khiển độ nhanh của những cuộn băng lấp lánh trên bề mặt."
+    },
+    "_GlitterColorMode": {
+      "label": "Chế độ màu",
+      "tooltip": "Điều khiển chế độ thế hệ màu cho các đường nét lấp lánh. AudioLink Sắc thái: AudioLink Chord)."
+    },
+    "_GlitterColor2": {
+      "label": "Màu",
+      "tooltip": "Màu phụ cho biến thể ngẫu nhiên."
+    },
+    "_GlitterColor2_Shift": {
+      "label": "Dịch:",
+      "tooltip": ""
+    },
+    "_GlitterHueSpeed": {
+      "label": "Tốc độ Cầu vồng",
+      "tooltip": "Điều khiển tốc độ quay của cầu vồng lấp lánh."
+    },
+    "_GlitterGradientTex": {
+      "label": "Gradient sáng",
+      "tooltip": "Kết cấu dốc màu lấy mẫu khi lấp lánh."
     },
     "_MatCapMask": {
       "label": "Mặt nạ MatCap (R)",
@@ -3380,6 +3496,106 @@
     "_AL_DelayTreble": {
       "label": "Độ trễ run",
       "tooltip": "Tạm hoãn bù đắp dọc theo bộ đệm lịch sử cho Treble."
+    },
+    "_AL_ChronoEnabled": {
+      "label": "Bật Thời gian",
+      "tooltip": "Name AudioLink Độ bão hòa: một cái đồng hồ phát triển với âm nhạc và chậm lại trong im lặng, vì vậy hoạt hình sẽ chuyển sang giai điệu. Cho phép điều này trong một thế giới với AudioLinkSau đó tối ưu các tính năng cá nhân trong thông qua hoạt hình 'Beat-Sync'"
+    },
+    "_AL_ChronoIndex": {
+      "label": "Chế độ thời gian EXIF",
+      "tooltip": "Làm thế nào các bước tiến của đồng hồ nhịp điệu: đập liên tục (Aplious), liên tục (Slow), Beat gây nên, Beat gây nên + Hold, beat Pulse (các tốc độ)."
+    },
+    "_AL_ChronoBand": {
+      "label": "Name",
+      "tooltip": "Mà AudioLink tần số ban nhạc điều khiển đồng hồ nhịp đập (Bass, Low Mid, High Mid, Treble)."
+    },
+    "_UseALThemeColor": {
+      "label": "Dùng màu của thế giới",
+      "tooltip": "In các tài liệu với một trong 4 sắc thái được cấu hình bởi thế giới AudioLink Điều khiển, để Avatar thích nghi với màu sắc của địa điểm."
+    },
+    "_AL_ThemeColorIndex": {
+      "label": "Chỉ mục màu sắc thái",
+      "tooltip": "Thế giới thứ 4 AudioLink Màu sắc thái cần dùng (Theme 1 to Sắc thái 4)."
+    },
+    "_AL_ThemeColorStrength": {
+      "label": "Độ mạnh màu sắc",
+      "tooltip": "Thế giới này mạnh cỡ nào AudioLink màu sắc chủ đề được trộn với chất liệu."
+    },
+    "_AL_ThemeColorTarget": {
+      "label": "Mục tiêu sắc thái",
+      "tooltip": "Cho dù là màu sắc chủ đề của thế giới, màu phát ra, màu albedo căn bản, hay cả hai."
+    },
+    "_AL_GlitterTarget": {
+      "label": "Glitter AudioLink Mục tiêu",
+      "tooltip": "Mà tham số lấp lánh phản ứng với âm thanh: độ sáng, độ lớn, độ lớn (Beat = Denser), hoặc thư viện thư rác (Beat = Sparser)."
+    },
+    "_AL_GridTarget": {
+      "label": "Lưới AudioLink Mục tiêu",
+      "tooltip": "Tham số mạng lưới phản ứng với âm thanh: Độ dày Đường thẳng, Lưới Alpha, hay Độ sâu Mạng."
+    },
+    "_AL_RimTarget": {
+      "label": "Rim AudioLink Mục tiêu",
+      "tooltip": "Tham số ánh sáng vành tròn phản ứng với âm thanh: Độ mạnh (sự đúng) hay độ rộng của dải âm."
+    },
+    "_AL_RippleTarget": {
+      "label": "Ripple AudioLink Mục tiêu",
+      "tooltip": "Chọn tham số gợn sóng AudioLink Các mô-đun (Strength, Bán kính, Tốc độ)."
+    },
+    "_AL_ScanlineTarget": {
+      "label": "Trục AudioLink Mục tiêu",
+      "tooltip": "Chọn tham số scanline AudioLink Điều chỉnh (Tickness, Density, Alpha)."
+    },
+    "_AL_ColorShiftUsesChrono": {
+      "label": "Comment",
+      "tooltip": "Đồng bộ hoá tốc độ chuyển đổi màu sang âm nhạc qua AudioLink Bình tĩnh."
+    },
+    "_AL_ProceduralUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá họa tiết thủ tục chuyển tốc độ âm nhạc qua AudioLink Bình tĩnh."
+    },
+    "_AL_GlitterUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá tốc độ lấp lánh của nhạc qua AudioLink Bình tĩnh."
+    },
+    "_AL_GridUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá tốc độ hoạt hình mạng tới âm nhạc thông qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_PulseUsesChrono": {
+      "label": "GenericName",
+      "tooltip": "Đồng bộ hoá nhịp đập của âm nhạc qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_RippleUsesChrono": {
+      "label": "Ripple Beat-ync",
+      "tooltip": "Đồng bộ hoá tốc độ hoạt hình đến âm nhạc thông qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_ScanlineUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá tốc độ cuốn phim tới âm nhạc thông qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_FlickerUsesChrono": {
+      "label": "Bản quyền",
+      "tooltip": "Đồng bộ hoá tốc độ nhấp nháy của nhạc qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_PsychedelicUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hóa tốc độ âm nhạc đến âm nhạc thông qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_FractalUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá quang phổ 3D AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_OutlineUsesChrono": {
+      "label": "Biểu đồ tần xuất",
+      "tooltip": "Đồng bộ hoá nhịp đập và làm tan biến tốc độ hoạt hình của âm nhạc qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_DissolveUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá tốc độ hoạt hình đến âm nhạc thông qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
+    },
+    "_AL_EmissionUsesChrono": {
+      "label": "Name",
+      "tooltip": "Đồng bộ hoá xung xung dao động đến âm nhạc thông qua AudioLink Bình tĩnh. Name AudioLink Phần hình ảnh."
     },
     "_UseLTCGI": {
       "label": "Bật LTRI",

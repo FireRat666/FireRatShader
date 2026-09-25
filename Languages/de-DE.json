@@ -401,6 +401,10 @@
       "label": "Stärke",
       "tooltip": "Wie viel Alpha beeinflusst die Emission (höhere Werte leuchten heller)."
     },
+    "_EmissionColor": {
+      "label": "Farbe der Emissionen",
+      "tooltip": "Leuchtfarbe (HDR). Schwarz = kein Basisglühen; die Emissionsmaske fungiert als Emissionskarte."
+    },
     "_EmissionStrength": {
       "label": "Emissionsstärke",
       "tooltip": "Wie hell der leuchtende Effekt ist."
@@ -933,9 +937,17 @@
       "label": "Farbe",
       "tooltip": "Die Farbe der Gitterlinien."
     },
+    "_GridColorMode": {
+      "label": "Gitterfarbmodus",
+      "tooltip": "Wählen Sie den Farbstiling-Modus für das Raster-Overlay (Solid, Rainbow, AudioLink Thema, AudioLink Akkord."
+    },
     "_GridColor_Shift": {
       "label": "Gitterfarbverschiebung",
       "tooltip": "AudioLink oder animierte Farbverschiebung für prozedurale Gitterlinien."
+    },
+    "_GridIntensity": {
+      "label": "Netzintensität",
+      "tooltip": "Steuert die Gesamttrübung und Intensität des Gittermusters."
     },
     "_GridDensity": {
       "label": "Dichte",
@@ -1617,6 +1629,14 @@
       "label": "AudioLink Stärke",
       "tooltip": ""
     },
+    "_FractalOffset": {
+      "label": "Origin Offset (X Y Z)",
+      "tooltip": "Verschiebt das interne Sichtfenster des Fraktals - Schwenk X / Y / Z, um eine andere Region des Fraktals zu erkunden. Einheiten: Weltraum im Maßstab = 1."
+    },
+    "_FractalRepeatSize": {
+      "label": "Wiederholte Kachelgröße",
+      "tooltip": "Größe jeder Domänenwiederholungskachel (Weltraum auf Skala = 1). Kleiner = dichtere Kacheln. Ersetzt den ehemaligen Hardcode 4.0."
+    },
     "_RefractionNoiseMap": {
       "label": "Karte des Reflexgeräuschs",
       "tooltip": "Eine Rauschtextur zur Steuerung der Verschiebungsverzerrung."
@@ -1735,7 +1755,7 @@
     },
     "_GlitterSpeed": {
       "label": "Glitzergeschwindigkeit",
-      "tooltip": ""
+      "tooltip": "Steuert die Geschwindigkeit der Funkeln und Pop-Animation."
     },
     "_AL_GlitterBand": {
       "label": "AudioLink Band",
@@ -1896,6 +1916,10 @@
     "_RippleColor": {
       "label": "Farbe",
       "tooltip": "Die Farbe der Wellen."
+    },
+    "_RippleColorMode": {
+      "label": "Ripple-Farbmodus",
+      "tooltip": "Wählen Sie den Farbstiling-Modus für die Ripple-Ringe (Solid, Rainbow, AudioLink Thema, AudioLink Akkord."
     },
     "_RippleColor_Shift": {
       "label": "Umschaltung",
@@ -2217,6 +2241,10 @@
       "label": "Alpha ausfüllen",
       "tooltip": "Trübung des gefüllten Bereichs unter der Kurve."
     },
+    "_AudioSpectrumDualLine": {
+      "label": "Dual Trace (Peak + Smooth)",
+      "tooltip": "Rendert schwimmende Peak-Caps über EQ-Bars oder überlagert eine sekundäre schnelle, instationäre Roh-Peak-Linie über der geglätteten Kurve."
+    },
     "_AudioSpectrumLogScale": {
       "label": "Logarithmische Skala",
       "tooltip": "Verwenden Sie die logarithmische Frequenzskalierung für eine natürlichere Bass/Treble-Balance."
@@ -2236,6 +2264,14 @@
     "_AudioSpectrumHueSpeed": {
       "label": "Hue-Geschwindigkeit",
       "tooltip": "Geschwindigkeit der Farbtonverschiebung / Regenbogenanimation."
+    },
+    "_AudioSpectrumBeatPulse": {
+      "label": "Beat Color Pulsstärke",
+      "tooltip": "Stärke von Flash / Puls Aufhellung auf Audio-Kicks und Bass Transienten."
+    },
+    "_AL_SpectrumUsesChrono": {
+      "label": "Spektrum Beat-Sync",
+      "tooltip": "Syncs Spektrum Animationen und Farbverschiebungen zum musikalischen Tempo über AudioLink chronotensity."
     },
     "_AudioSpectrumSpace": {
       "label": "Projektionsraum",
@@ -2269,17 +2305,53 @@
       "label": "Kantenweichheit",
       "tooltip": "Räumliche Kante Antialiasing und Grenze Weichheit von Balken oder Kurve."
     },
-    "_AudioSpectrumIntensity": {
-      "label": "Intensität",
-      "tooltip": "Gesamthelligkeitsmultiplikator."
-    },
     "_AudioSmoothingMode": {
       "label": "Audio-Glättungsmodus",
       "tooltip": "Temporale Glättungsmethode für das Spektrum/die Wellenform: Roh (keine), Frame Blend (2-frame EMA) oder Temporal Buffer (CRT-Historie)."
     },
+    "_AudioSampleInterpolation": {
+      "label": "Probeninterpolation",
+      "tooltip": "Bilineare Interpolation zwischen benachbarten Audio-Bins. Reduziert die Pixelierung von Spektralbalken und Wellenformanzeigen erheblich, wenn die Textur mit 128 Stichproben über viele Pixel verteilt ist. Deaktivieren Sie, um eine kleine Menge an GPU-Kosten zu sparen."
+    },
     "_AudioSpectrumTemporal": {
       "label": "Zeitliche Glättung des Spektrums",
       "tooltip": "Stärke der zeitlichen Glättung auf das Spektrum angewendet (Frame Blend / Temporal Buffer Modi)."
+    },
+    "_AudioSpectrumIntensity": {
+      "label": "Intensität",
+      "tooltip": "Gesamthelligkeitsmultiplikator."
+    },
+    "_AudioVUOverlay": {
+      "label": "Hinzufügen von VU-Meter",
+      "tooltip": "Zeichnet ein 4-Band-LED-Führungsmessgerät auf das Spektrum mit eigener Position, Größe und Farben. Verwendet den Projection Space, Gain und Blend Mode des Spektrums."
+    },
+    "_AudioVUColorMode": {
+      "label": "FE Farben",
+      "tooltip": "Broadcast: Grün / Bernstein / rote Segmente. Gradient: Mischung von Low Color unten nach High Color oben."
+    },
+    "_AudioVUColorLow": {
+      "label": "Niedrige Farbe",
+      "tooltip": "Farbe der Bodensegmente."
+    },
+    "_AudioVUColorHigh": {
+      "label": "Hohe Farbe",
+      "tooltip": "Farbe der oberen Segmente."
+    },
+    "_AudioVUScale": {
+      "label": "FE-Skala",
+      "tooltip": "Wie oft passt das Messgerät über die Oberfläche (höher = kleiner). Der Standard 4 x 2 füllt ein Viertel der Breite und die Hälfte der Höhe."
+    },
+    "_AudioVUOffset": {
+      "label": "FE Offset",
+      "tooltip": "Bewegt den Meter. Funktioniert wie der Offset des Spektrums (angewendet vor Scale, also negative Werte verschieben es nach rechts / nach oben)."
+    },
+    "_AudioVURotation": {
+      "label": "Rotation der FE",
+      "tooltip": "Dreht das Messgerät um sein eigenes Zentrum in Grad (90 = horizontale Balken)."
+    },
+    "_AudioVUIntensity": {
+      "label": "Intensität der FE",
+      "tooltip": "Helligkeit des Meters."
     },
     "_UseAudioWaveform": {
       "label": "Aktivieren von Audio Waveform",
@@ -2325,6 +2397,14 @@
       "label": "Hue-Geschwindigkeit",
       "tooltip": "Geschwindigkeit der Farbtonverschiebung / Regenbogenanimation."
     },
+    "_AudioWaveformBeatPulse": {
+      "label": "Beat Color Pulsstärke",
+      "tooltip": "Stärke von Flash / Puls Aufhellung auf Audio-Kicks und Bass Transienten."
+    },
+    "_AL_WaveformUsesChrono": {
+      "label": "Wellenform Beat-Sync",
+      "tooltip": "Syncs Waveform Animationen und Farbverschiebungen zum musikalischen Tempo über AudioLink chronotensity."
+    },
     "_AudioWaveformSpace": {
       "label": "Projektionsraum",
       "tooltip": "Koordinatenraum für den Visualizer."
@@ -2357,10 +2437,6 @@
       "label": "Kantenweichheit",
       "tooltip": "Räumliche Kante Antialiasing und Strichweichheit."
     },
-    "_AudioWaveformIntensity": {
-      "label": "Intensität",
-      "tooltip": "Gesamthelligkeitsmultiplikator."
-    },
     "_AudioWaveformTemporal": {
       "label": "Zeitliches Glätten der Wellenform",
       "tooltip": "Stärke der zeitlichen Glättung, angewendet auf die Wellenform (Temporal Buffer Mode)."
@@ -2368,6 +2444,10 @@
     "_FRSmoothedAudio": {
       "label": "Geglättetes Audio CRT",
       "tooltip": "Benutzerdefinierte Rendertextur (FireRat AudioSmoothingCRT-Asset), die das zeitlich geglättete Audio enthält. Erforderlich für den temporären Puffermodus."
+    },
+    "_AudioWaveformIntensity": {
+      "label": "Intensität",
+      "tooltip": "Gesamthelligkeitsmultiplikator."
     },
     "_UseInterlace": {
       "label": "Interlacing ermöglichen",
@@ -2716,6 +2796,42 @@
     "_GlitterShape": {
       "label": "Glitterform",
       "tooltip": "Steuert die geometrische Form des Glitzerns."
+    },
+    "_GlitterSize": {
+      "label": "Formgröße",
+      "tooltip": "Größe jedes geformten Funkelns innerhalb seiner Lärmzelle. 0,35 = etwa 70% der Zelle. Bereich 0,05-0,5."
+    },
+    "_GlitterSoftness": {
+      "label": "Formweichheit",
+      "tooltip": "Antialiasierte Kantenweichheit. 0 = hard step(), >0 = smooth fade in transparent. Bereich 0–0,5."
+    },
+    "_GlitterDirection": {
+      "label": "Abrollrichtung",
+      "tooltip": "Steuert die Scroll-Animationsrichtung (X, Y)."
+    },
+    "_GlitterScrollSpeed": {
+      "label": "Abrollgeschwindigkeit",
+      "tooltip": "Steuert, wie schnell der Glitzer über die Oberfläche scrollt."
+    },
+    "_GlitterColorMode": {
+      "label": "Farbmodus",
+      "tooltip": "Steuert den Farberzeugungsmodus für die Glitzerglitzer (Solid, Two Color Ramp, Rainbow, Gradient Texture), AudioLink Thema, AudioLink Akkord."
+    },
+    "_GlitterColor2": {
+      "label": "Farbe 2",
+      "tooltip": "Die Sekundärfarbe für zufällige Glitzervariation."
+    },
+    "_GlitterColor2_Shift": {
+      "label": "Umschaltung",
+      "tooltip": ""
+    },
+    "_GlitterHueSpeed": {
+      "label": "Regenbogendrehzahl",
+      "tooltip": "Steuert die Radgeschwindigkeit des Regenbogens funkelt."
+    },
+    "_GlitterGradientTex": {
+      "label": "Glitterneigung",
+      "tooltip": "Textur der Farbrampen pro Funkel."
     },
     "_MatCapMask": {
       "label": "MatCap Maske (R)",
@@ -3380,6 +3496,106 @@
     "_AL_DelayTreble": {
       "label": "Treble Verzögerung",
       "tooltip": "Delay Offset entlang des History-Puffers für Treble."
+    },
+    "_AL_ChronoEnabled": {
+      "label": "Beat-Sync aktivieren Uhrzeit",
+      "tooltip": "Swaps Wanduhr Animationszeit für AudioLink chronotensity: eine Uhr, die mit der Musik voranschreitet und in der Stille verlangsamt, so dass Animationen zum Takt schnappen. Ermöglichen Sie dies in einer Welt mit AudioLink, wählen Sie dann einzelne Funktionen über ihren eigenen \"Beat-Sync Animation\"-Toggle."
+    },
+    "_AL_ChronoIndex": {
+      "label": "Chronozeitmodus",
+      "tooltip": "Wie die Beat-Synced-Uhr voranschreitet: Continuous (Amplitude), Continuous (Slow), Beat Trigger, Beat Trigger + Hold, Beat Pulse (verschiedene Geschwindigkeiten)."
+    },
+    "_AL_ChronoBand": {
+      "label": "Chronozeitband",
+      "tooltip": "Die AudioLink Frequenzband steuert die Beat-Sync-Uhr (Bass, Low Mid, High Mid, Treble)."
+    },
+    "_UseALThemeColor": {
+      "label": "Verwenden Sie World Theme Color",
+      "tooltip": "Tönt das material mit einer der 4 themenfarben, die von der welt konfiguriert wurden. AudioLink Controller, so dass sich der Avatar an das Farbschema des Veranstaltungsortes anpasst."
+    },
+    "_AL_ThemeColorIndex": {
+      "label": "Theme Color Index",
+      "tooltip": "Welche der 4 Welten AudioLink Thema Farben zu verwenden (Thema 1 bis Thema 4)."
+    },
+    "_AL_ThemeColorStrength": {
+      "label": "Thema Farbstärke",
+      "tooltip": "Wie stark die Welt AudioLink Thema Farbe wird in das Material gemischt."
+    },
+    "_AL_ThemeColorTarget": {
+      "label": "Thema Farbziel",
+      "tooltip": "Ob die Themafarbe der Welt die Emission, die Basisalbedo-Farbe oder beides färbt."
+    },
+    "_AL_GlitterTarget": {
+      "label": "Glitter AudioLink Ziel",
+      "tooltip": "Welcher Glitzerparameter reagiert auf Audio: Helligkeit, Sparkle Size, Sparsity (Beat = Denser) oder Sparsity Inverse (Beat = Sparser)."
+    },
+    "_AL_GridTarget": {
+      "label": "Netz AudioLink Ziel",
+      "tooltip": "Welcher Rasterparameter reagiert auf Audio: Liniendicke, Raster Alpha oder Raster Farbton."
+    },
+    "_AL_RimTarget": {
+      "label": "Felgen AudioLink Ziel",
+      "tooltip": "Welcher Felgenglühparameter reagiert auf Audio: Intensität (Helligkeit) oder Breite (Breite des Felgenbands)."
+    },
+    "_AL_RippleTarget": {
+      "label": "Ripple AudioLink Ziel",
+      "tooltip": "Wählen Sie aus, welcher Ripple-Parameter AudioLink moduliert (Stärke, Radius, Geschwindigkeit)."
+    },
+    "_AL_ScanlineTarget": {
+      "label": "Scanline AudioLink Ziel",
+      "tooltip": "Wählen Sie aus, welcher Scanline-Parameter AudioLink moduliert (Dicke, Dichte, Alpha)."
+    },
+    "_AL_ColorShiftUsesChrono": {
+      "label": "Farbverschiebung Beat-Sync",
+      "tooltip": "Synchronisiert die Farbverschiebungs-Animationsgeschwindigkeit mit der Musik über AudioLink chronotensity."
+    },
+    "_AL_ProceduralUsesChrono": {
+      "label": "Verfahrensweise Beat-Sync",
+      "tooltip": "Synchronisiert prozedurale Textur Scrolling-Geschwindigkeit zur Musik über AudioLink chronotensity."
+    },
+    "_AL_GlitterUsesChrono": {
+      "label": "Glitter Beat-Sync",
+      "tooltip": "Syncs glitzern funkelnde Geschwindigkeit zur Musik über AudioLink chronotensity."
+    },
+    "_AL_GridUsesChrono": {
+      "label": "Grid Beat-Sync",
+      "tooltip": "Synchronisierte Rasteranimation Geschwindigkeit zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_PulseUsesChrono": {
+      "label": "Pulse Beat-Sync",
+      "tooltip": "Syncs Emissionsimpulsgeschwindigkeit zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_RippleUsesChrono": {
+      "label": "Ripple Beat-Sync",
+      "tooltip": "Syncs ripple Animation Geschwindigkeit zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_ScanlineUsesChrono": {
+      "label": "Scanline Beat-Sync",
+      "tooltip": "Syncs Scanline Scroll Geschwindigkeit zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_FlickerUsesChrono": {
+      "label": "Flicker Beat-Sync",
+      "tooltip": "Syncs glitch flimmergeschwindigkeit zur musik über. AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_PsychedelicUsesChrono": {
+      "label": "Psychedelic Beat-Sync",
+      "tooltip": "Syncs psychedelische Rauschgeschwindigkeit zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_FractalUsesChrono": {
+      "label": "Fraktale Beat-Sync",
+      "tooltip": "Syncs 3D Fraktal Raymarching Animation Geschwindigkeit zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_OutlineUsesChrono": {
+      "label": "Beschreibung Beat-Sync",
+      "tooltip": "Syncs umreißen Puls und lösen Animationsgeschwindigkeiten für die Musik auf AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_DissolveUsesChrono": {
+      "label": "Beat-Sync auflösen",
+      "tooltip": "Syncs lösen die Animationsgeschwindigkeit für die Musik auf AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
+    },
+    "_AL_EmissionUsesChrono": {
+      "label": "Emission Beat-Sync",
+      "tooltip": "Syncs Emissionsimpuls Oszillation zur Musik über AudioLink chronotensity. Erfordert \"Enable Beat-Sync Time\" in der AudioLink Abschnitt Visualisierer."
     },
     "_UseLTCGI": {
       "label": "LTCGI aktivieren",
