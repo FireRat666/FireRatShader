@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="#00c00a" name="theme-color"/>
+<title>FireRatShader Showcase — 130 Shader Effects &amp; Visualizers</title>
+<meta content="130 looping captures of FireRatShader for Unity: toon and PBR looks, AudioLink visualizers, raymarched 3D fractals, dissolves, glitches and lighting." name="description"/>
+<link href="https://shader.firer.at/docs/showcase.html" rel="canonical"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="FireRatShader" property="og:site_name"/>
+<meta content="FireRatShader Showcase — 130 looping shader captures" property="og:title"/>
+<meta content="Toon, PBR, AudioLink visualizers, 3D fractals, dissolves, glitches and lighting, captured from the FireRatShader demo scenes." property="og:description"/>
+<meta content="https://shader.firer.at/docs/showcase.html" property="og:url"/>
+<meta content="https://shader.firer.at/docs/media/site/og-showcase.jpg" property="og:image"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="FireRatShader showcase: a mosaic of AudioLink, fractal, glitch and toon materials" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="FireRatShader Showcase — 130 looping shader captures" name="twitter:title"/>
+<meta content="Toon, PBR, AudioLink visualizers, 3D fractals, dissolves, glitches and lighting, captured from the FireRatShader demo scenes." name="twitter:description"/>
+<meta content="https://shader.firer.at/docs/media/site/og-showcase.jpg" name="twitter:image"/>
+<link href="../favicon.ico" rel="icon" sizes="48x48"/>
+<link href="media/site/icon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="media/site/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "FireRatShader Interactive Media Showcase",
+      "url": "https://shader.firer.at/docs/showcase.html",
+      "description": "130 looping captures of FireRatShader materials, AudioLink visualizers, 3D fractals, effects and lighting modes.",
+      "image": "https://shader.firer.at/docs/media/site/og-showcase.jpg",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://shader.firer.at/#website"
+      },
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "FireRatShader",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://shader.firer.at/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "FireRatShader",
+          "item": "https://shader.firer.at/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Showcase",
+          "item": "https://shader.firer.at/docs/showcase.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="page-showcase">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="site-header-inner">
+<a class="brand" href="../"><img alt="" height="26" src="media/site/icon-192.png" width="26"/>FireRatShader</a>
+<nav aria-label="Site" class="site-nav">
+<a href="index.html">Documentation</a>
+<a aria-current="page" href="showcase.html">Showcase</a>
+<a href="https://github.com/FireRat666/FireRatShader">GitHub</a>
+</nav>
+<div class="header-actions">
+<a class="btn btn-primary btn-sm" href="https://www.patreon.com/FireRat">Get FireRatShader</a>
+</div>
+</div>
+</header>
+
+<main id="main">
+<div class="wrap showcase-hero">
+<h1>Interactive Media Showcase</h1>
+<p>130 looping captures recorded from the FireRatShader demo scenes. Stills load first so the page stays fast. Hover or tap a card to play it, or turn on <em>Play all</em>.</p>
+</div>
+
+<div class="showcase-toolbar">
+<div class="wrap">
+<div aria-label="Scenes" class="scene-tabs" role="tablist">
+<button aria-controls="tab-showcase" aria-selected="true" class="scene-tab-btn active" data-tab="tab-showcase" role="tab" type="button">🌟 Showcase Looks<span class="count">20</span></button>
+<button aria-controls="tab-audiolink" aria-selected="false" class="scene-tab-btn" data-tab="tab-audiolink" role="tab" type="button">🎵 AudioLink Stage<span class="count">42</span></button>
+<button aria-controls="tab-effects" aria-selected="false" class="scene-tab-btn" data-tab="tab-effects" role="tab" type="button">⚡ Effects &amp; Transitions<span class="count">25</span></button>
+<button aria-controls="tab-surfacestyles" aria-selected="false" class="scene-tab-btn" data-tab="tab-surfacestyles" role="tab" type="button">🎨 Surface Styles &amp; Fractals<span class="count">26</span></button>
+<button aria-controls="tab-lighting" aria-selected="false" class="scene-tab-btn" data-tab="tab-lighting" role="tab" type="button">💡 Lighting Lab<span class="count">17</span></button>
+</div>
+<div class="showcase-controls">
+<div class="filter-chips" id="subFilterContainer"></div>
+<div class="toolbar-right">
+<input aria-label="Search captures" class="showcase-search" id="searchInput" placeholder="Search effects, materials..." type="search"/>
+<button aria-pressed="false" class="play-mode-toggle" id="togglePlayModeBtn" title="Play every visible animation at once" type="button">▶ Play all</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<section aria-labelledby="tab-showcase-h" class="tab-panel active" id="tab-showcase" role="tabpanel">
+<h2 id="tab-showcase-h">Showcase Looks <span class="count">(20)</span></h2>
+<p>Curated materials: toon and anime shading, PBR metals, retro PS1, shell fur, holograms and sci-fi effects, captured as looping 360° turntables.</p>
+<div class="showcase-grid">
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon Soft Anime full size" class="showcase-media-box" type="button">
+<img alt="Toon Soft Anime: Multi-layered anime shading with soft shadow roll-off, rim lighting, and responsive cel outline." data-still="media/showcase/Toon_Soft_Anime_still.webp" data-webp="media/showcase/Toon_Soft_Anime.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Toon_Soft_Anime_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon Soft Anime</h3>
+<p class="showcase-card-desc">Multi-layered anime shading with soft shadow roll-off, rim lighting, and responsive cel outline.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Outline</span><span class="tag-pill">Preset</span></div>
+<a class="showcase-doc-link" href="index.html#material-presets">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon Crisp Cel full size" class="showcase-media-box" type="button">
+<img alt="Toon Crisp Cel: High-contrast classic cel-shading with sharp step thresholds and normal map detail." data-still="media/showcase/Toon_Crisp_Cel_still.webp" data-webp="media/showcase/Toon_Crisp_Cel.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Toon_Crisp_Cel_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon Crisp Cel</h3>
+<p class="showcase-card-desc">High-contrast classic cel-shading with sharp step thresholds and normal map detail.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Cel Shading</span><span class="tag-pill">Preset</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon Ramp + Plaid full size" class="showcase-media-box" type="button">
+<img alt="Toon Ramp + Plaid: Custom 1D ramp texture shading paired with fabric normal mapping and plaid texturing." data-still="media/showcase/Toon_Ramp_Plaid_still.webp" data-webp="media/showcase/Toon_Ramp_Plaid.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Toon_Ramp_Plaid_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon Ramp + Plaid</h3>
+<p class="showcase-card-desc">Custom 1D ramp texture shading paired with fabric normal mapping and plaid texturing.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Ramp Texture</span><span class="tag-pill">Fabric</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon Glitter Sparkle full size" class="showcase-media-box" type="button">
+<img alt="Toon Glitter Sparkle: Dynamic sparkling glitter specks overlaid on soft cel anime shading." data-still="media/showcase/Toon_Glitter_Sparkle_still.webp" data-webp="media/showcase/Toon_Glitter_Sparkle.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Toon_Glitter_Sparkle_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon Glitter Sparkle</h3>
+<p class="showcase-card-desc">Dynamic sparkling glitter specks overlaid on soft cel anime shading.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Glitter</span><span class="tag-pill">Sparkle</span></div>
+<a class="showcase-doc-link" href="index.html#glitter">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon Warm Skin full size" class="showcase-media-box" type="button">
+<img alt="Toon Warm Skin: Calibrated anime skin tones with warm shadow tinting and gentle diffuse wrap." data-still="media/showcase/Toon_Warm_Skin_still.webp" data-webp="media/showcase/Toon_Warm_Skin.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Toon_Warm_Skin_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon Warm Skin</h3>
+<p class="showcase-card-desc">Calibrated anime skin tones with warm shadow tinting and gentle diffuse wrap.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Skin</span><span class="tag-pill">Warm</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Circuit Emission full size" class="showcase-media-box" type="button">
+<img alt="Circuit Emission: Pulsing sci-fi circuit board traces with emission masks and audio-reactivity support." data-still="media/showcase/Circuit_Emission_still.webp" data-webp="media/showcase/Circuit_Emission.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Circuit_Emission_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Circuit Emission</h3>
+<p class="showcase-card-desc">Pulsing sci-fi circuit board traces with emission masks and audio-reactivity support.</p>
+<div class="showcase-tags"><span class="tag-pill">Emission</span><span class="tag-pill">Mask</span><span class="tag-pill">Pulse</span></div>
+<a class="showcase-doc-link" href="index.html#emission">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Cyber Grid full size" class="showcase-media-box" type="button">
+<img alt="Cyber Grid: Scrolling neon grid lines across a dark hull with cyan edge outlines and rim glow." data-still="media/showcase/Cyber_Grid_still.webp" data-webp="media/showcase/Cyber_Grid.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Cyber_Grid_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Cyber Grid</h3>
+<p class="showcase-card-desc">Scrolling neon grid lines across a dark hull with cyan edge outlines and rim glow.</p>
+<div class="showcase-tags"><span class="tag-pill">Grid</span><span class="tag-pill">Procedural</span><span class="tag-pill">SciFi</span></div>
+<a class="showcase-doc-link" href="index.html#grid">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Procedural Voronoi full size" class="showcase-media-box" type="button">
+<img alt="Procedural Voronoi: Animated organic Voronoi cellular pattern generated in real-time on GPU." data-still="media/showcase/Procedural_Voronoi_still.webp" data-webp="media/showcase/Procedural_Voronoi.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Procedural_Voronoi_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Procedural Voronoi</h3>
+<p class="showcase-card-desc">Animated organic Voronoi cellular pattern generated in real-time on GPU.</p>
+<div class="showcase-tags"><span class="tag-pill">Procedural</span><span class="tag-pill">Voronoi</span></div>
+<a class="showcase-doc-link" href="index.html#procedural-texture-generation">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Dissolve Burn full size" class="showcase-media-box" type="button">
+<img alt="Dissolve Burn: Dynamic burning dissolve transition with glowing fiery edge borders." data-still="media/showcase/Dissolve_Burn_still.webp" data-webp="media/showcase/Dissolve_Burn.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Dissolve_Burn_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve Burn</h3>
+<p class="showcase-card-desc">Dynamic burning dissolve transition with glowing fiery edge borders.</p>
+<div class="showcase-tags"><span class="tag-pill">Dissolve</span><span class="tag-pill">FX</span><span class="tag-pill">Animated</span></div>
+<a class="showcase-doc-link" href="index.html#dissolve">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Shell Fur Plush full size" class="showcase-media-box" type="button">
+<img alt="Shell Fur Plush: Multi-pass shell fur with depth darkening, strand thinning, and wind physics." data-still="media/showcase/Shell_Fur_Plush_still.webp" data-webp="media/showcase/Shell_Fur_Plush.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Shell_Fur_Plush_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Shell Fur Plush</h3>
+<p class="showcase-card-desc">Multi-pass shell fur with depth darkening, strand thinning, and wind physics.</p>
+<div class="showcase-tags"><span class="tag-pill">Fur</span><span class="tag-pill">Shells</span><span class="tag-pill">Physics</span></div>
+<a class="showcase-doc-link" href="index.html#shell-fur-extrusion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pbr">
+<button aria-label="Play Glossy Latex full size" class="showcase-media-box" type="button">
+<img alt="Glossy Latex: High-specular stylized latex with sharp reflections and deep saturated color." data-still="media/showcase/Glossy_Latex_still.webp" data-webp="media/showcase/Glossy_Latex.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Glossy_Latex_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glossy Latex</h3>
+<p class="showcase-card-desc">High-specular stylized latex with sharp reflections and deep saturated color.</p>
+<div class="showcase-tags"><span class="tag-pill">PBR</span><span class="tag-pill">Latex</span><span class="tag-pill">Glossy</span></div>
+<a class="showcase-doc-link" href="index.html#standard-pbr-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pbr">
+<button aria-label="Play Metal Panels (PBR Maps) full size" class="showcase-media-box" type="button">
+<img alt="Metal Panels (PBR Maps): Full PBR material with metallic-gloss, ambient occlusion, and normal maps." data-still="media/showcase/Metal_Panels_PBR_maps_still.webp" data-webp="media/showcase/Metal_Panels_PBR_maps.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Metal_Panels_PBR_maps_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Metal Panels (PBR Maps)</h3>
+<p class="showcase-card-desc">Full PBR material with metallic-gloss, ambient occlusion, and normal maps.</p>
+<div class="showcase-tags"><span class="tag-pill">PBR</span><span class="tag-pill">Metallic</span><span class="tag-pill">Maps</span></div>
+<a class="showcase-doc-link" href="index.html#standard-pbr-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pbr">
+<button aria-label="Play Hammered Gold full size" class="showcase-media-box" type="button">
+<img alt="Hammered Gold: Rough metallic gold surface with micro-hammered normal indentations." data-still="media/showcase/Hammered_Gold_still.webp" data-webp="media/showcase/Hammered_Gold.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Hammered_Gold_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Hammered Gold</h3>
+<p class="showcase-card-desc">Rough metallic gold surface with micro-hammered normal indentations.</p>
+<div class="showcase-tags"><span class="tag-pill">PBR</span><span class="tag-pill">Metal</span><span class="tag-pill">Gold</span></div>
+<a class="showcase-doc-link" href="index.html#standard-pbr-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Dragon Scales full size" class="showcase-media-box" type="button">
+<img alt="Dragon Scales: Reptilian iridescent scales with dual-tone rim light and specular highlights." data-still="media/showcase/Dragon_Scales_still.webp" data-webp="media/showcase/Dragon_Scales.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Dragon_Scales_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dragon Scales</h3>
+<p class="showcase-card-desc">Reptilian iridescent scales with dual-tone rim light and specular highlights.</p>
+<div class="showcase-tags"><span class="tag-pill">Scales</span><span class="tag-pill">Iridescent</span><span class="tag-pill">Rim</span></div>
+<a class="showcase-doc-link" href="index.html#iridescence">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Pearl Iridescent full size" class="showcase-media-box" type="button">
+<img alt="Pearl Iridescent: Subtle pearlescent sheen with shifting optical interference and glossiness." data-still="media/showcase/Pearl_Iridescent_still.webp" data-webp="media/showcase/Pearl_Iridescent.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Pearl_Iridescent_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Pearl Iridescent</h3>
+<p class="showcase-card-desc">Subtle pearlescent sheen with shifting optical interference and glossiness.</p>
+<div class="showcase-tags"><span class="tag-pill">Pearl</span><span class="tag-pill">Iridescence</span><span class="tag-pill">Optics</span></div>
+<a class="showcase-doc-link" href="index.html#iridescence">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pbr">
+<button aria-label="Play MatCap Chrome full size" class="showcase-media-box" type="button">
+<img alt="MatCap Chrome: Mirror-like chrome reflection captured via lightweight MatCap sphere mapping." data-still="media/showcase/MatCap_Chrome_still.webp" data-webp="media/showcase/MatCap_Chrome.webp" decoding="async" height="512" loading="lazy" src="media/showcase/MatCap_Chrome_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">MatCap Chrome</h3>
+<p class="showcase-card-desc">Mirror-like chrome reflection captured via lightweight MatCap sphere mapping.</p>
+<div class="showcase-tags"><span class="tag-pill">MatCap</span><span class="tag-pill">Chrome</span><span class="tag-pill">Mirror</span></div>
+<a class="showcase-doc-link" href="index.html#matcap">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Deep Space Galaxy full size" class="showcase-media-box" type="button">
+<img alt="Deep Space Galaxy: Parallax rotating starfield and nebula projected deep inside the geometry." data-still="media/showcase/Galaxy_still.webp" data-webp="media/showcase/Galaxy.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Galaxy_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Deep Space Galaxy</h3>
+<p class="showcase-card-desc">Parallax rotating starfield and nebula projected deep inside the geometry.</p>
+<div class="showcase-tags"><span class="tag-pill">Galaxy</span><span class="tag-pill">Parallax</span><span class="tag-pill">Cosmic</span></div>
+<a class="showcase-doc-link" href="index.html#galaxy">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play SciFi Hologram full size" class="showcase-media-box" type="button">
+<img alt="SciFi Hologram: Translucent projected holographic mesh with animated scanlines and flicker." data-still="media/showcase/SciFi_Hologram_still.webp" data-webp="media/showcase/SciFi_Hologram.webp" decoding="async" height="512" loading="lazy" src="media/showcase/SciFi_Hologram_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">SciFi Hologram</h3>
+<p class="showcase-card-desc">Translucent projected holographic mesh with animated scanlines and flicker.</p>
+<div class="showcase-tags"><span class="tag-pill">Hologram</span><span class="tag-pill">Scanlines</span><span class="tag-pill">FX</span></div>
+<a class="showcase-doc-link" href="index.html#hologram">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Ethereal Ghost full size" class="showcase-media-box" type="button">
+<img alt="Ethereal Ghost: Soft glowing spirit appearance utilizing inverted Fresnel transparency." data-still="media/showcase/Ethereal_Ghost_still.webp" data-webp="media/showcase/Ethereal_Ghost.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Ethereal_Ghost_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Ethereal Ghost</h3>
+<p class="showcase-card-desc">Soft glowing spirit appearance utilizing inverted Fresnel transparency.</p>
+<div class="showcase-tags"><span class="tag-pill">Ghost</span><span class="tag-pill">Fresnel</span><span class="tag-pill">Glow</span></div>
+<a class="showcase-doc-link" href="index.html#transparency">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="stylized">
+<button aria-label="Play Retro PS1 full size" class="showcase-media-box" type="button">
+<img alt="Retro PS1: Authentic 90s console vertex jitter, affine texture warping, and pixel snap." data-still="media/showcase/Retro_PS1_still.webp" data-webp="media/showcase/Retro_PS1.webp" decoding="async" height="512" loading="lazy" src="media/showcase/Retro_PS1_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Retro PS1</h3>
+<p class="showcase-card-desc">Authentic 90s console vertex jitter, affine texture warping, and pixel snap.</p>
+<div class="showcase-tags"><span class="tag-pill">Retro</span><span class="tag-pill">PS1</span><span class="tag-pill">Affine</span></div>
+<a class="showcase-doc-link" href="index.html#ps1-retro-vertex-snapping">View documentation →</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="tab-audiolink-h" class="tab-panel" id="tab-audiolink" role="tabpanel">
+<h2 id="tab-audiolink-h">AudioLink Stage <span class="count">(42)</span></h2>
+<p>Real-time spectrum, waveform and oscilloscope visualizers plus audio-reactive materials, captured at 128 BPM over a 4-bar loop.</p>
+<div class="showcase-grid">
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play EQ Bars + VU full size" class="showcase-media-box" type="button">
+<img alt="EQ Bars + VU: 128-column discrete frequency bar spectrum with integrated stereo peak-hold VU meter caps." data-still="media/audiolink/EQ_Bars_VU_still.webp" data-webp="media/audiolink/EQ_Bars_VU.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/EQ_Bars_VU_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">EQ Bars + VU</h3>
+<p class="showcase-card-desc">128-column discrete frequency bar spectrum with integrated stereo peak-hold VU meter caps.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">128 BPM 4-Bar</span><span class="tag-pill">Spectrum</span></div>
+<a class="showcase-doc-link" href="index.html#audio-spectrum-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer smoothed">
+<button aria-label="Play EQ Bars (Smoothed) full size" class="showcase-media-box" type="button">
+<img alt="EQ Bars (Smoothed): Dual-trace falling peaks powered by the GPU Temporal Buffer Custom Render Texture." data-still="media/audiolink/EQ_Bars_Peak_Hold_Smoothed_still.webp" data-webp="media/audiolink/EQ_Bars_Peak_Hold_Smoothed.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/EQ_Bars_Peak_Hold_Smoothed_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">EQ Bars (Smoothed)</h3>
+<p class="showcase-card-desc">Dual-trace falling peaks powered by the GPU Temporal Buffer Custom Render Texture.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">CRT Smoothed</span><span class="tag-pill">Peak Hold</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-temporal-smoothing">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Spectrum Curve full size" class="showcase-media-box" type="button">
+<img alt="Spectrum Curve: Continuous high-resolution cubic frequency curve with AudioLink theme gradient coloring." data-still="media/audiolink/Spectrum_Curve_still.webp" data-webp="media/audiolink/Spectrum_Curve.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Spectrum_Curve_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Spectrum Curve</h3>
+<p class="showcase-card-desc">Continuous high-resolution cubic frequency curve with AudioLink theme gradient coloring.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">128 BPM 4-Bar</span><span class="tag-pill">Spectrum</span></div>
+<a class="showcase-doc-link" href="index.html#audio-spectrum-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer smoothed">
+<button aria-label="Play Spectrum Curve (Smoothed) full size" class="showcase-media-box" type="button">
+<img alt="Spectrum Curve (Smoothed): Filtered frequency curve with held peak memory envelopes across musical bars." data-still="media/audiolink/Spectrum_Curve_Peak_Hold_Smoothed_still.webp" data-webp="media/audiolink/Spectrum_Curve_Peak_Hold_Smoothed.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Spectrum_Curve_Peak_Hold_Smoothed_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Spectrum Curve (Smoothed)</h3>
+<p class="showcase-card-desc">Filtered frequency curve with held peak memory envelopes across musical bars.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">CRT Smoothed</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-temporal-smoothing">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Radial Spectrum full size" class="showcase-media-box" type="button">
+<img alt="Radial Spectrum: 360-degree polar equalizer display projecting frequency bands outward in a circular dial." data-still="media/audiolink/Radial_Spectrum_still.webp" data-webp="media/audiolink/Radial_Spectrum.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Radial_Spectrum_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Radial Spectrum</h3>
+<p class="showcase-card-desc">360-degree polar equalizer display projecting frequency bands outward in a circular dial.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">128 BPM 4-Bar</span><span class="tag-pill">Spectrum</span></div>
+<a class="showcase-doc-link" href="index.html#audio-spectrum-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer smoothed">
+<button aria-label="Play Radial Spectrum (Smoothed) full size" class="showcase-media-box" type="button">
+<img alt="Radial Spectrum (Smoothed): Ultra-smooth polar frequency dial with CRT-backed persistence damping." data-still="media/audiolink/Radial_Spectrum_Smoothed_still.webp" data-webp="media/audiolink/Radial_Spectrum_Smoothed.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Radial_Spectrum_Smoothed_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Radial Spectrum (Smoothed)</h3>
+<p class="showcase-card-desc">Ultra-smooth polar frequency dial with CRT-backed persistence damping.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">CRT Smoothed</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-temporal-smoothing">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Waterfall Spectrogram full size" class="showcase-media-box" type="button">
+<img alt="Waterfall Spectrogram: 3D rolling frequency spectrogram scrolling history backwards in real time." data-still="media/audiolink/Waterfall_still.webp" data-webp="media/audiolink/Waterfall.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Waterfall_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Waterfall Spectrogram</h3>
+<p class="showcase-card-desc">3D rolling frequency spectrogram scrolling history backwards in real time.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Spectrogram</span><span class="tag-pill">History</span></div>
+<a class="showcase-doc-link" href="index.html#audio-spectrum-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Oscilloscope full size" class="showcase-media-box" type="button">
+<img alt="Oscilloscope: Time-domain raw audio waveform oscilloscope visualizing instantaneous sound pressure." data-still="media/audiolink/Oscilloscope_still.webp" data-webp="media/audiolink/Oscilloscope.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Oscilloscope_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Oscilloscope</h3>
+<p class="showcase-card-desc">Time-domain raw audio waveform oscilloscope visualizing instantaneous sound pressure.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Oscilloscope</span><span class="tag-pill">Waveform</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer smoothed">
+<button aria-label="Play Oscilloscope (Smoothed) full size" class="showcase-media-box" type="button">
+<img alt="Oscilloscope (Smoothed): Stabilized CRT oscilloscope trajectory removing high-frequency phase flicker." data-still="media/audiolink/Oscilloscope_Smoothed_still.webp" data-webp="media/audiolink/Oscilloscope_Smoothed.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Oscilloscope_Smoothed_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Oscilloscope (Smoothed)</h3>
+<p class="showcase-card-desc">Stabilized CRT oscilloscope trajectory removing high-frequency phase flicker.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">CRT Smoothed</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-temporal-smoothing">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Stereo Split Scope full size" class="showcase-media-box" type="button">
+<img alt="Stereo Split Scope: Dual-channel oscilloscope displaying Left and Right stereo waveforms simultaneously." data-still="media/audiolink/Stereo_Split_Scope_still.webp" data-webp="media/audiolink/Stereo_Split_Scope.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Stereo_Split_Scope_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Stereo Split Scope</h3>
+<p class="showcase-card-desc">Dual-channel oscilloscope displaying Left and Right stereo waveforms simultaneously.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Stereo Split</span><span class="tag-pill">Dual</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer smoothed">
+<button aria-label="Play Stereo Split (Smoothed) full size" class="showcase-media-box" type="button">
+<img alt="Stereo Split (Smoothed): Low-noise stereo split scope utilizing persistent temporal accumulation." data-still="media/audiolink/Stereo_Split_Scope_Smoothed_still.webp" data-webp="media/audiolink/Stereo_Split_Scope_Smoothed.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Stereo_Split_Scope_Smoothed_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Stereo Split (Smoothed)</h3>
+<p class="showcase-card-desc">Low-noise stereo split scope utilizing persistent temporal accumulation.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">CRT Smoothed</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-temporal-smoothing">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Polar Waveform full size" class="showcase-media-box" type="button">
+<img alt="Polar Waveform: Circular time-domain audio trace mapped to polar coordinates for rings." data-still="media/audiolink/Polar_Waveform_still.webp" data-webp="media/audiolink/Polar_Waveform.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Polar_Waveform_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Polar Waveform</h3>
+<p class="showcase-card-desc">Circular time-domain audio trace mapped to polar coordinates for rings.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Polar</span><span class="tag-pill">Audio</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer smoothed">
+<button aria-label="Play Polar Waveform (Smoothed) full size" class="showcase-media-box" type="button">
+<img alt="Polar Waveform (Smoothed): Damped polar audio orbit eliminating transient jaggedness." data-still="media/audiolink/Polar_Waveform_Smoothed_still.webp" data-webp="media/audiolink/Polar_Waveform_Smoothed.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Polar_Waveform_Smoothed_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Polar Waveform (Smoothed)</h3>
+<p class="showcase-card-desc">Damped polar audio orbit eliminating transient jaggedness.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">CRT Smoothed</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-temporal-smoothing">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Lissajous Orbit full size" class="showcase-media-box" type="button">
+<img alt="Lissajous Orbit: X-Y phase trajectory plotting Left channel against Right channel in harmonic figures." data-still="media/audiolink/Lissajous_still.webp" data-webp="media/audiolink/Lissajous.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Lissajous_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Lissajous Orbit</h3>
+<p class="showcase-card-desc">X-Y phase trajectory plotting Left channel against Right channel in harmonic figures.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Lissajous</span><span class="tag-pill">Stereo</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Triggered Scope full size" class="showcase-media-box" type="button">
+<img alt="Triggered Scope: Zero-crossing synchronized oscilloscope locking the waveform phase in place." data-still="media/audiolink/Triggered_Scope_still.webp" data-webp="media/audiolink/Triggered_Scope.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Triggered_Scope_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Triggered Scope</h3>
+<p class="showcase-card-desc">Zero-crossing synchronized oscilloscope locking the waveform phase in place.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Triggered</span><span class="tag-pill">Sync</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play VU Meter Bars full size" class="showcase-media-box" type="button">
+<img alt="VU Meter Bars: Analog-styled dual VU volume bars tracking Root Mean Square loudness." data-still="media/audiolink/VU_Meter_still.webp" data-webp="media/audiolink/VU_Meter.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/VU_Meter_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">VU Meter Bars</h3>
+<p class="showcase-card-desc">Analog-styled dual VU volume bars tracking Root Mean Square loudness.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">VU Meter</span><span class="tag-pill">RMS</span></div>
+<a class="showcase-doc-link" href="index.html#vu-meter-overlay">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Waveform Ribbon full size" class="showcase-media-box" type="button">
+<img alt="Waveform Ribbon: Horizontal ribbon trail undulating with incoming audio amplitude." data-still="media/audiolink/Waveform_Ribbon_still.webp" data-webp="media/audiolink/Waveform_Ribbon.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Waveform_Ribbon_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Waveform Ribbon</h3>
+<p class="showcase-card-desc">Horizontal ribbon trail undulating with incoming audio amplitude.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Ribbon</span><span class="tag-pill">Trace</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Waveform Displacement full size" class="showcase-media-box" type="button">
+<img alt="Waveform Displacement: Surface mesh height field extruded directly by raw audio waveform values." data-still="media/audiolink/Waveform_Displacement_still.webp" data-webp="media/audiolink/Waveform_Displacement.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Waveform_Displacement_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Waveform Displacement</h3>
+<p class="showcase-card-desc">Surface mesh height field extruded directly by raw audio waveform values.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">Displacement</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card wide" data-category="visualizer">
+<button aria-label="Play Band History Scroll full size" class="showcase-media-box" type="button">
+<img alt="Band History Scroll: Scrolling historical record of Bass, Low-Mid, High-Mid, and Treble band energy." data-still="media/audiolink/Band_History_still.webp" data-webp="media/audiolink/Band_History.webp" decoding="async" height="360" loading="lazy" src="media/audiolink/Band_History_still.webp" width="640"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Band History Scroll</h3>
+<p class="showcase-card-desc">Scrolling historical record of Bass, Low-Mid, High-Mid, and Treble band energy.</p>
+<div class="showcase-tags"><span class="tag-pill">Visualizer</span><span class="tag-pill">History</span><span class="tag-pill">Bands</span></div>
+<a class="showcase-doc-link" href="index.html#audio-waveform-visualizer">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Emission: Bass full size" class="showcase-media-box" type="button">
+<img alt="Emission: Bass: Glow intensity modulated in real time by Bass frequency band amplitude." data-still="media/audiolink/Emission_Bass_still.webp" data-webp="media/audiolink/Emission_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Emission_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Emission: Bass</h3>
+<p class="showcase-card-desc">Glow intensity modulated in real time by Bass frequency band amplitude.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Emission</span><span class="tag-pill">Glow</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive beatsync">
+<button aria-label="Play Emission Pulse: Bass full size" class="showcase-media-box" type="button">
+<img alt="Emission Pulse: Bass: Expanding spherical emission pulse triggered on heavy kick drum hits." data-still="media/audiolink/Emission_Pulse_Bass_still.webp" data-webp="media/audiolink/Emission_Pulse_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Emission_Pulse_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Emission Pulse: Bass</h3>
+<p class="showcase-card-desc">Expanding spherical emission pulse triggered on heavy kick drum hits.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Pulse</span><span class="tag-pill">Kick</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive beatsync">
+<button aria-label="Play Emission Blink: Bass full size" class="showcase-media-box" type="button">
+<img alt="Emission Blink: Bass: Strobe blink effect triggered by rhythmic low-frequency transients." data-still="media/audiolink/Emission_Blink_Bass_still.webp" data-webp="media/audiolink/Emission_Blink_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Emission_Blink_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Emission Blink: Bass</h3>
+<p class="showcase-card-desc">Strobe blink effect triggered by rhythmic low-frequency transients.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Strobe</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Outline Width: Bass full size" class="showcase-media-box" type="button">
+<img alt="Outline Width: Bass: Inverted hull outline thickness expanding outward dynamically on beat hits." data-still="media/audiolink/Outline_Width_Bass_still.webp" data-webp="media/audiolink/Outline_Width_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Outline_Width_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Outline Width: Bass</h3>
+<p class="showcase-card-desc">Inverted hull outline thickness expanding outward dynamically on beat hits.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Outline</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Rim Glow: Treble full size" class="showcase-media-box" type="button">
+<img alt="Rim Glow: Treble: Fresnel rim highlight flashing on sharp treble, cymbals, and hi-hats." data-still="media/audiolink/Rim_Glow_Treble_still.webp" data-webp="media/audiolink/Rim_Glow_Treble.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Rim_Glow_Treble_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Rim Glow: Treble</h3>
+<p class="showcase-card-desc">Fresnel rim highlight flashing on sharp treble, cymbals, and hi-hats.</p>
+<div class="showcase-tags"><span class="tag-pill">Treble Band</span><span class="tag-pill">Rim</span><span class="tag-pill">Fresnel</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Fresnel Fade: Treble full size" class="showcase-media-box" type="button">
+<img alt="Fresnel Fade: Treble: Edge transparency dissolving dynamically on crisp high frequencies." data-still="media/audiolink/Fresnel_Fade_Treble_still.webp" data-webp="media/audiolink/Fresnel_Fade_Treble.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Fresnel_Fade_Treble_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Fresnel Fade: Treble</h3>
+<p class="showcase-card-desc">Edge transparency dissolving dynamically on crisp high frequencies.</p>
+<div class="showcase-tags"><span class="tag-pill">Treble Band</span><span class="tag-pill">Fresnel</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Vertex Swell: Bass full size" class="showcase-media-box" type="button">
+<img alt="Vertex Swell: Bass: Organic vertex inflation expanding the mesh geometry on heavy bass drops." data-still="media/audiolink/Vertex_Swell_Bass_still.webp" data-webp="media/audiolink/Vertex_Swell_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Vertex_Swell_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Vertex Swell: Bass</h3>
+<p class="showcase-card-desc">Organic vertex inflation expanding the mesh geometry on heavy bass drops.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Vertex</span><span class="tag-pill">Swell</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive beatsync">
+<button aria-label="Play Vertex Collapse: Bass full size" class="showcase-media-box" type="button">
+<img alt="Vertex Collapse: Bass: Geometric pinch collapsing vertices toward the pivot on the beat." data-still="media/audiolink/Vertex_Collapse_Bass_still.webp" data-webp="media/audiolink/Vertex_Collapse_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Vertex_Collapse_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Vertex Collapse: Bass</h3>
+<p class="showcase-card-desc">Geometric pinch collapsing vertices toward the pivot on the beat.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Collapse</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Ripple Radius: Bass full size" class="showcase-media-box" type="button">
+<img alt="Ripple Radius: Bass: Concentric vertex shockwaves expanding outward on kick drum transients." data-still="media/audiolink/Ripple_Radius_Bass_still.webp" data-webp="media/audiolink/Ripple_Radius_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Ripple_Radius_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Ripple Radius: Bass</h3>
+<p class="showcase-card-desc">Concentric vertex shockwaves expanding outward on kick drum transients.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Ripple</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="beatsync">
+<button aria-label="Play Ripple: Beat-Sync full size" class="showcase-media-box" type="button">
+<img alt="Ripple: Beat-Sync: Deterministic Chrono ripple expansion phase-locked to 128 BPM music tempo." data-still="media/audiolink/Ripple_Beat-Sync_still.webp" data-webp="media/audiolink/Ripple_Beat-Sync.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Ripple_Beat-Sync_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Ripple: Beat-Sync</h3>
+<p class="showcase-card-desc">Deterministic Chrono ripple expansion phase-locked to 128 BPM music tempo.</p>
+<div class="showcase-tags"><span class="tag-pill">Beat-Sync</span><span class="tag-pill">Chrono</span><span class="tag-pill">128 BPM</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-beat-sync">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="beatsync">
+<button aria-label="Play Dissolve: Beat-Sync full size" class="showcase-media-box" type="button">
+<img alt="Dissolve: Beat-Sync: Tempo-synchronized dissolve sweep cycling cleanly with musical bars." data-still="media/audiolink/Dissolve_Beat-Sync_still.webp" data-webp="media/audiolink/Dissolve_Beat-Sync.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Dissolve_Beat-Sync_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve: Beat-Sync</h3>
+<p class="showcase-card-desc">Tempo-synchronized dissolve sweep cycling cleanly with musical bars.</p>
+<div class="showcase-tags"><span class="tag-pill">Beat-Sync</span><span class="tag-pill">Dissolve</span><span class="tag-pill">Chrono</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-beat-sync">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Dissolve: Low-Mid full size" class="showcase-media-box" type="button">
+<img alt="Dissolve: Low-Mid: Threshold clipping driven dynamically by vocal and synth energy." data-still="media/audiolink/Dissolve_Low-Mid_still.webp" data-webp="media/audiolink/Dissolve_Low-Mid.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Dissolve_Low-Mid_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve: Low-Mid</h3>
+<p class="showcase-card-desc">Threshold clipping driven dynamically by vocal and synth energy.</p>
+<div class="showcase-tags"><span class="tag-pill">Low-Mid</span><span class="tag-pill">Dissolve</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="beatsync">
+<button aria-label="Play Psychedelic: Beat-Sync full size" class="showcase-media-box" type="button">
+<img alt="Psychedelic: Beat-Sync: Continuous color wheel rotation mathematically locked to musical quarter notes." data-still="media/audiolink/Psychedelic_Beat-Sync_still.webp" data-webp="media/audiolink/Psychedelic_Beat-Sync.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Psychedelic_Beat-Sync_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Psychedelic: Beat-Sync</h3>
+<p class="showcase-card-desc">Continuous color wheel rotation mathematically locked to musical quarter notes.</p>
+<div class="showcase-tags"><span class="tag-pill">Beat-Sync</span><span class="tag-pill">Chrono</span><span class="tag-pill">Color</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-beat-sync">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Psychedelic: Low-Mid full size" class="showcase-media-box" type="button">
+<img alt="Psychedelic: Low-Mid: Hue shift rate accelerating on energetic musical phrasing." data-still="media/audiolink/Psychedelic_Low-Mid_still.webp" data-webp="media/audiolink/Psychedelic_Low-Mid.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Psychedelic_Low-Mid_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Psychedelic: Low-Mid</h3>
+<p class="showcase-card-desc">Hue shift rate accelerating on energetic musical phrasing.</p>
+<div class="showcase-tags"><span class="tag-pill">Low-Mid</span><span class="tag-pill">Color</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Grid: Bass full size" class="showcase-media-box" type="button">
+<img alt="Grid: Bass: Geometric wireframe lattice lighting up on powerful sub-bass thumps." data-still="media/audiolink/Grid_Bass_still.webp" data-webp="media/audiolink/Grid_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Grid_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Grid: Bass</h3>
+<p class="showcase-card-desc">Geometric wireframe lattice lighting up on powerful sub-bass thumps.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Grid</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play ColorChord Grid: Treble full size" class="showcase-media-box" type="button">
+<img alt="ColorChord Grid: Treble: AudioLink ColorChord musical note detection coloring the grid." data-still="media/audiolink/ColorChord_Grid_Treble_still.webp" data-webp="media/audiolink/ColorChord_Grid_Treble.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/ColorChord_Grid_Treble_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">ColorChord Grid: Treble</h3>
+<p class="showcase-card-desc">AudioLink ColorChord musical note detection coloring the grid.</p>
+<div class="showcase-tags"><span class="tag-pill">ColorChord</span><span class="tag-pill">Notes</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Glitch: Bass full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Bass: Chromatic aberration and slice displacement triggered by bass drops." data-still="media/audiolink/Glitch_Bass_still.webp" data-webp="media/audiolink/Glitch_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Glitch_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Bass</h3>
+<p class="showcase-card-desc">Chromatic aberration and slice displacement triggered by bass drops.</p>
+<div class="showcase-tags"><span class="tag-pill">Bass Band</span><span class="tag-pill">Glitch</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Scanlines: Treble full size" class="showcase-media-box" type="button">
+<img alt="Scanlines: Treble: High-frequency CRT scanline brightness tracking hi-hats." data-still="media/audiolink/Scanlines_Treble_still.webp" data-webp="media/audiolink/Scanlines_Treble.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Scanlines_Treble_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Scanlines: Treble</h3>
+<p class="showcase-card-desc">High-frequency CRT scanline brightness tracking hi-hats.</p>
+<div class="showcase-tags"><span class="tag-pill">Treble Band</span><span class="tag-pill">Scanlines</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Glitter Bursts: High-Mid full size" class="showcase-media-box" type="button">
+<img alt="Glitter Bursts: High-Mid: Explosive glitter sparkles bursting on snare and synth chords." data-still="media/audiolink/Glitter_Bursts_High-Mid_still.webp" data-webp="media/audiolink/Glitter_Bursts_High-Mid.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Glitter_Bursts_High-Mid_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitter Bursts: High-Mid</h3>
+<p class="showcase-card-desc">Explosive glitter sparkles bursting on snare and synth chords.</p>
+<div class="showcase-tags"><span class="tag-pill">High-Mid</span><span class="tag-pill">Glitter</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Procedural: Low-Mid full size" class="showcase-media-box" type="button">
+<img alt="Procedural: Low-Mid: Procedural shader pattern density and scale reacting to music." data-still="media/audiolink/Procedural_Low-Mid_still.webp" data-webp="media/audiolink/Procedural_Low-Mid.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Procedural_Low-Mid_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Procedural: Low-Mid</h3>
+<p class="showcase-card-desc">Procedural shader pattern density and scale reacting to music.</p>
+<div class="showcase-tags"><span class="tag-pill">Low-Mid</span><span class="tag-pill">Pattern</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Theme Colors: Bass full size" class="showcase-media-box" type="button">
+<img alt="Theme Colors: Bass: AudioLink 4-color world palette cycling across the material." data-still="media/audiolink/Theme_Colors_Bass_still.webp" data-webp="media/audiolink/Theme_Colors_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Theme_Colors_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Theme Colors: Bass</h3>
+<p class="showcase-card-desc">AudioLink 4-color world palette cycling across the material.</p>
+<div class="showcase-tags"><span class="tag-pill">Theme Colors</span><span class="tag-pill">Palette</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-theme-colors">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play Band Delay: Bass full size" class="showcase-media-box" type="button">
+<img alt="Band Delay: Bass: Chronological temporal delay creating flowing ripples of energy." data-still="media/audiolink/Band_Delay_Bass_still.webp" data-webp="media/audiolink/Band_Delay_Bass.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/Band_Delay_Bass_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Band Delay: Bass</h3>
+<p class="showcase-card-desc">Chronological temporal delay creating flowing ripples of energy.</p>
+<div class="showcase-tags"><span class="tag-pill">Delay</span><span class="tag-pill">Flow</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-per-feature">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="reactive">
+<button aria-label="Play World Theme Color full size" class="showcase-media-box" type="button">
+<img alt="World Theme Color: VRChat world theme color integration overriding material tint." data-still="media/audiolink/World_Theme_Color_still.webp" data-webp="media/audiolink/World_Theme_Color.webp" decoding="async" height="512" loading="lazy" src="media/audiolink/World_Theme_Color_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">World Theme Color</h3>
+<p class="showcase-card-desc">VRChat world theme color integration overriding material tint.</p>
+<div class="showcase-tags"><span class="tag-pill">World Theme</span><span class="tag-pill">VRChat</span></div>
+<a class="showcase-doc-link" href="index.html#audiolink-theme-colors">View documentation →</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="tab-effects-h" class="tab-panel" id="tab-effects" role="tabpanel">
+<h2 id="tab-effects-h">Effects &amp; Transitions <span class="count">(25)</span></h2>
+<p>Vertex distortions, dissolves and wipes, glitch modes, vertex collapse, scanlines and proximity glow.</p>
+<div class="showcase-grid">
+<article class="showcase-card" data-category="dissolve">
+<button aria-label="Play Dissolve: Noise full size" class="showcase-media-box" type="button">
+<img alt="Dissolve: Noise: Smooth organic dissolve using 3D simplex noise map textures." data-still="media/effects/Dissolve_Noise_still.webp" data-webp="media/effects/Dissolve_Noise.webp" decoding="async" height="512" loading="lazy" src="media/effects/Dissolve_Noise_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve: Noise</h3>
+<p class="showcase-card-desc">Smooth organic dissolve using 3D simplex noise map textures.</p>
+<div class="showcase-tags"><span class="tag-pill">Dissolve</span><span class="tag-pill">Noise</span><span class="tag-pill">Edge Glow</span></div>
+<a class="showcase-doc-link" href="index.html#dissolve">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="dissolve">
+<button aria-label="Play Dissolve: Wave full size" class="showcase-media-box" type="button">
+<img alt="Dissolve: Wave: Directional linear wave dissolve with calibrated height offset." data-still="media/effects/Dissolve_Wave_still.webp" data-webp="media/effects/Dissolve_Wave.webp" decoding="async" height="512" loading="lazy" src="media/effects/Dissolve_Wave_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve: Wave</h3>
+<p class="showcase-card-desc">Directional linear wave dissolve with calibrated height offset.</p>
+<div class="showcase-tags"><span class="tag-pill">Dissolve</span><span class="tag-pill">Wave</span><span class="tag-pill">Linear</span></div>
+<a class="showcase-doc-link" href="index.html#dissolve">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="dissolve">
+<button aria-label="Play Dissolve: Spherical full size" class="showcase-media-box" type="button">
+<img alt="Dissolve: Spherical: Spherical radial dissolve expanding from the object center." data-still="media/effects/Dissolve_Spherical_still.webp" data-webp="media/effects/Dissolve_Spherical.webp" decoding="async" height="512" loading="lazy" src="media/effects/Dissolve_Spherical_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve: Spherical</h3>
+<p class="showcase-card-desc">Spherical radial dissolve expanding from the object center.</p>
+<div class="showcase-tags"><span class="tag-pill">Dissolve</span><span class="tag-pill">Spherical</span></div>
+<a class="showcase-doc-link" href="index.html#dissolve">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="dissolve">
+<button aria-label="Play Dissolve: Glitch full size" class="showcase-media-box" type="button">
+<img alt="Dissolve: Glitch: Digital pixelated glitch dissolve with square block density scaling." data-still="media/effects/Dissolve_Glitch_still.webp" data-webp="media/effects/Dissolve_Glitch.webp" decoding="async" height="512" loading="lazy" src="media/effects/Dissolve_Glitch_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dissolve: Glitch</h3>
+<p class="showcase-card-desc">Digital pixelated glitch dissolve with square block density scaling.</p>
+<div class="showcase-tags"><span class="tag-pill">Dissolve</span><span class="tag-pill">Glitch</span><span class="tag-pill">Digital</span></div>
+<a class="showcase-doc-link" href="index.html#dissolve">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="dissolve">
+<button aria-label="Play Planar Wipe full size" class="showcase-media-box" type="button">
+<img alt="Planar Wipe: Clean geometric plane wipe slicing through geometry with hard edge." data-still="media/effects/Planar_Wipe_still.webp" data-webp="media/effects/Planar_Wipe.webp" decoding="async" height="512" loading="lazy" src="media/effects/Planar_Wipe_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Planar Wipe</h3>
+<p class="showcase-card-desc">Clean geometric plane wipe slicing through geometry with hard edge.</p>
+<div class="showcase-tags"><span class="tag-pill">Wipe</span><span class="tag-pill">Planar</span><span class="tag-pill">Hard Edge</span></div>
+<a class="showcase-doc-link" href="index.html#planar-wipe">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="dissolve">
+<button aria-label="Play Vertex Collapse full size" class="showcase-media-box" type="button">
+<img alt="Vertex Collapse: Smooth geometric implosion pulling vertices down to the local origin." data-still="media/effects/Vertex_Collapse_still.webp" data-webp="media/effects/Vertex_Collapse.webp" decoding="async" height="512" loading="lazy" src="media/effects/Vertex_Collapse_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Vertex Collapse</h3>
+<p class="showcase-card-desc">Smooth geometric implosion pulling vertices down to the local origin.</p>
+<div class="showcase-tags"><span class="tag-pill">Collapse</span><span class="tag-pill">Vertex</span><span class="tag-pill">Pinch</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-collapse">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Sine Wave full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Sine Wave: Harmonic vertical sine wave distortion flowing smoothly across vertices." data-still="media/effects/Sine_Wave_still.webp" data-webp="media/effects/Sine_Wave.webp" decoding="async" height="512" loading="lazy" src="media/effects/Sine_Wave_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Sine Wave</h3>
+<p class="showcase-card-desc">Harmonic vertical sine wave distortion flowing smoothly across vertices.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Sine</span><span class="tag-pill">Harmonic</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Ripple full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Ripple: Concentric radial wave ripples radiating outward from vertex center." data-still="media/effects/Ripple_still.webp" data-webp="media/effects/Ripple.webp" decoding="async" height="512" loading="lazy" src="media/effects/Ripple_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Ripple</h3>
+<p class="showcase-card-desc">Concentric radial wave ripples radiating outward from vertex center.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Ripple</span><span class="tag-pill">Radial</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Swirl full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Swirl: Periodic angular vortex swirl twisting geometry in alternating directions." data-still="media/effects/Swirl_still.webp" data-webp="media/effects/Swirl.webp" decoding="async" height="512" loading="lazy" src="media/effects/Swirl_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Swirl</h3>
+<p class="showcase-card-desc">Periodic angular vortex swirl twisting geometry in alternating directions.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Swirl</span><span class="tag-pill">Twist</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Twist full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Twist: Height-dependent rotational twist rotating the top pole relative to base." data-still="media/effects/Twist_still.webp" data-webp="media/effects/Twist.webp" decoding="async" height="512" loading="lazy" src="media/effects/Twist_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Twist</h3>
+<p class="showcase-card-desc">Height-dependent rotational twist rotating the top pole relative to base.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Twist</span><span class="tag-pill">Rotation</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Pulse full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Pulse: Harmonic breathing scale pulse expanding and contracting vertices." data-still="media/effects/Pulse_still.webp" data-webp="media/effects/Pulse.webp" decoding="async" height="512" loading="lazy" src="media/effects/Pulse_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Pulse</h3>
+<p class="showcase-card-desc">Harmonic breathing scale pulse expanding and contracting vertices.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Pulse</span><span class="tag-pill">Scale</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Wobble full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Wobble: Tri-axis harmonic wobble displacing X, Y, and Z vertices synchronously." data-still="media/effects/Wobble_still.webp" data-webp="media/effects/Wobble.webp" decoding="async" height="512" loading="lazy" src="media/effects/Wobble_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Wobble</h3>
+<p class="showcase-card-desc">Tri-axis harmonic wobble displacing X, Y, and Z vertices synchronously.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Wobble</span><span class="tag-pill">3D</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Vortex full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Vortex: High-speed funnel vortex pulling vertices into an energetic spiral." data-still="media/effects/Vortex_still.webp" data-webp="media/effects/Vortex.webp" decoding="async" height="512" loading="lazy" src="media/effects/Vortex_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Vortex</h3>
+<p class="showcase-card-desc">High-speed funnel vortex pulling vertices into an energetic spiral.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Vortex</span><span class="tag-pill">Funnel</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="distortion">
+<button aria-label="Play Distortion: Noise full size" class="showcase-media-box" type="button">
+<img alt="Distortion: Noise: Procedural 3D noise turbulence perturbing vertex normals continuously." data-still="media/effects/Noise_still.webp" data-webp="media/effects/Noise.webp" decoding="async" height="512" loading="lazy" src="media/effects/Noise_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Distortion: Noise</h3>
+<p class="showcase-card-desc">Procedural 3D noise turbulence perturbing vertex normals continuously.</p>
+<div class="showcase-tags"><span class="tag-pill">Distortion</span><span class="tag-pill">Noise</span><span class="tag-pill">Turbulence</span></div>
+<a class="showcase-doc-link" href="index.html#vertex-distortion">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Random full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Random: Stochastic noise flicker disrupting the surface shading randomly." data-still="media/effects/Glitch_Random_still.webp" data-webp="media/effects/Glitch_Random.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Random_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Random</h3>
+<p class="showcase-card-desc">Stochastic noise flicker disrupting the surface shading randomly.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">Random</span><span class="tag-pill">Flicker</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Pulse full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Pulse: Rhythmic strobe glitch flashing light intensity across the model." data-still="media/effects/Glitch_Pulse_still.webp" data-webp="media/effects/Glitch_Pulse.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Pulse_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Pulse</h3>
+<p class="showcase-card-desc">Rhythmic strobe glitch flashing light intensity across the model.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">Pulse</span><span class="tag-pill">Strobe</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Scanlines full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Scanlines: Smooth CRT cathode scanline bands scrolling down the object." data-still="media/effects/Glitch_Scanlines_still.webp" data-webp="media/effects/Glitch_Scanlines.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Scanlines_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Scanlines</h3>
+<p class="showcase-card-desc">Smooth CRT cathode scanline bands scrolling down the object.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">Scanlines</span><span class="tag-pill">CRT</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Blocky full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Blocky: Quantized block noise mosaic segmenting the surface into digital patches." data-still="media/effects/Glitch_Blocky_still.webp" data-webp="media/effects/Glitch_Blocky.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Blocky_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Blocky</h3>
+<p class="showcase-card-desc">Quantized block noise mosaic segmenting the surface into digital patches.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">Blocky</span><span class="tag-pill">Mosaic</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Channel Shift full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Channel Shift: Chromatic RGB channel separation tearing colors across object space." data-still="media/effects/Glitch_Channel_Shift_still.webp" data-webp="media/effects/Glitch_Channel_Shift.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Channel_Shift_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Channel Shift</h3>
+<p class="showcase-card-desc">Chromatic RGB channel separation tearing colors across object space.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">RGB Shift</span><span class="tag-pill">Chromatic</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Interference full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Interference: High-frequency electromagnetic signal interference bands." data-still="media/effects/Glitch_Interference_still.webp" data-webp="media/effects/Glitch_Interference.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Interference_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Interference</h3>
+<p class="showcase-card-desc">High-frequency electromagnetic signal interference bands.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">Interference</span><span class="tag-pill">Signal</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glitch">
+<button aria-label="Play Glitch: Signal Loss full size" class="showcase-media-box" type="button">
+<img alt="Glitch: Signal Loss: Extreme digital broadcast dropout with severe chromatic distortion." data-still="media/effects/Glitch_Signal_Loss_still.webp" data-webp="media/effects/Glitch_Signal_Loss.webp" decoding="async" height="512" loading="lazy" src="media/effects/Glitch_Signal_Loss_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitch: Signal Loss</h3>
+<p class="showcase-card-desc">Extreme digital broadcast dropout with severe chromatic distortion.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitch</span><span class="tag-pill">Dropout</span><span class="tag-pill">Extreme</span></div>
+<a class="showcase-doc-link" href="index.html#glitch-flicker">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glow">
+<button aria-label="Play Intersection Glow full size" class="showcase-media-box" type="button">
+<img alt="Intersection Glow: Depth-buffer contact highlight glowing brilliantly where surfaces intersect." data-still="media/effects/Intersection_Glow_still.webp" data-webp="media/effects/Intersection_Glow.webp" decoding="async" height="512" loading="lazy" src="media/effects/Intersection_Glow_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Intersection Glow</h3>
+<p class="showcase-card-desc">Depth-buffer contact highlight glowing brilliantly where surfaces intersect.</p>
+<div class="showcase-tags"><span class="tag-pill">Intersection</span><span class="tag-pill">Depth</span><span class="tag-pill">Contact</span></div>
+<a class="showcase-doc-link" href="index.html#intersection-effect">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glow">
+<button aria-label="Play Proximity Glow full size" class="showcase-media-box" type="button">
+<img alt="Proximity Glow: Dynamic camera proximity fade activating vivid cyan glow as you approach." data-still="media/effects/Proximity_Glow_walk_close_still.webp" data-webp="media/effects/Proximity_Glow_walk_close.webp" decoding="async" height="512" loading="lazy" src="media/effects/Proximity_Glow_walk_close_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Proximity Glow</h3>
+<p class="showcase-card-desc">Dynamic camera proximity fade activating vivid cyan glow as you approach.</p>
+<div class="showcase-tags"><span class="tag-pill">Proximity</span><span class="tag-pill">Camera</span><span class="tag-pill">Distance</span></div>
+<a class="showcase-doc-link" href="index.html#proximity-effects">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glow">
+<button aria-label="Play Pixelation full size" class="showcase-media-box" type="button">
+<img alt="Pixelation: Screen or UV space resolution downsampling creating retro pixel art." data-still="media/effects/Pixelation_still.webp" data-webp="media/effects/Pixelation.webp" decoding="async" height="512" loading="lazy" src="media/effects/Pixelation_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Pixelation</h3>
+<p class="showcase-card-desc">Screen or UV space resolution downsampling creating retro pixel art.</p>
+<div class="showcase-tags"><span class="tag-pill">Pixelation</span><span class="tag-pill">Mosaic</span><span class="tag-pill">Retro</span></div>
+<a class="showcase-doc-link" href="index.html#pixel-effects">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="glow">
+<button aria-label="Play CRT Scanlines full size" class="showcase-media-box" type="button">
+<img alt="CRT Scanlines: High-fidelity analog television scanlines with phosphorus glow." data-still="media/effects/Scanlines_still.webp" data-webp="media/effects/Scanlines.webp" decoding="async" height="512" loading="lazy" src="media/effects/Scanlines_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">CRT Scanlines</h3>
+<p class="showcase-card-desc">High-fidelity analog television scanlines with phosphorus glow.</p>
+<div class="showcase-tags"><span class="tag-pill">Scanlines</span><span class="tag-pill">Analog</span><span class="tag-pill">TV</span></div>
+<a class="showcase-doc-link" href="index.html#scanlines">View documentation →</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="tab-surfacestyles-h" class="tab-panel" id="tab-surfacestyles" role="tabpanel">
+<h2 id="tab-surfacestyles-h">Surface Styles &amp; Fractals <span class="count">(26)</span></h2>
+<p>Every raymarched 3D fractal rotating 360°, plus crystal refraction, rainbow glitter, deep-space galaxy and thin-film iridescence.</p>
+<div class="showcase-grid">
+<article class="showcase-card" data-category="optical">
+<button aria-label="Play Crystal full size" class="showcase-media-box" type="button">
+<img alt="Crystal: Refractive internal noise scattering with chromatic dispersion and rim highlight." data-still="media/surfacestyles/Crystal_still.webp" data-webp="media/surfacestyles/Crystal.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Crystal_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Crystal</h3>
+<p class="showcase-card-desc">Refractive internal noise scattering with chromatic dispersion and rim highlight.</p>
+<div class="showcase-tags"><span class="tag-pill">Crystal</span><span class="tag-pill">Refraction</span><span class="tag-pill">Dispersion</span></div>
+<a class="showcase-doc-link" href="index.html#crystal">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="optical">
+<button aria-label="Play Galaxy full size" class="showcase-media-box" type="button">
+<img alt="Galaxy: Multi-layered depth parallax starfield with celestial rotation inside the ball." data-still="media/surfacestyles/Galaxy_still.webp" data-webp="media/surfacestyles/Galaxy.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Galaxy_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Galaxy</h3>
+<p class="showcase-card-desc">Multi-layered depth parallax starfield with celestial rotation inside the ball.</p>
+<div class="showcase-tags"><span class="tag-pill">Galaxy</span><span class="tag-pill">Parallax</span><span class="tag-pill">Nebula</span></div>
+<a class="showcase-doc-link" href="index.html#galaxy">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="optical">
+<button aria-label="Play Skybox Reflection full size" class="showcase-media-box" type="button">
+<img alt="Skybox Reflection: Dynamic cubemap reflection rotating smoothly across metallic surface." data-still="media/surfacestyles/Skybox_Reflection_still.webp" data-webp="media/surfacestyles/Skybox_Reflection.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Skybox_Reflection_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Skybox Reflection</h3>
+<p class="showcase-card-desc">Dynamic cubemap reflection rotating smoothly across metallic surface.</p>
+<div class="showcase-tags"><span class="tag-pill">Skybox</span><span class="tag-pill">Cubemap</span><span class="tag-pill">Reflection</span></div>
+<a class="showcase-doc-link" href="index.html#skybox">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pattern">
+<button aria-label="Play Tri-Planar Mapping full size" class="showcase-media-box" type="button">
+<img alt="Tri-Planar Mapping: Seamless tri-planar texture projection with blended normals and zero UV seams." data-still="media/surfacestyles/Tri-Planar_still.webp" data-webp="media/surfacestyles/Tri-Planar.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Tri-Planar_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Tri-Planar Mapping</h3>
+<p class="showcase-card-desc">Seamless tri-planar texture projection with blended normals and zero UV seams.</p>
+<div class="showcase-tags"><span class="tag-pill">Tri-Planar</span><span class="tag-pill">Seamless</span><span class="tag-pill">Projection</span></div>
+<a class="showcase-doc-link" href="index.html#tri-planar-mapping">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="optical">
+<button aria-label="Play MatCap (Multiply) full size" class="showcase-media-box" type="button">
+<img alt="MatCap (Multiply): Spherical MatCap shading blended via multiply for fast stylized highlights." data-still="media/surfacestyles/MatCap_Multiply_still.webp" data-webp="media/surfacestyles/MatCap_Multiply.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/MatCap_Multiply_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">MatCap (Multiply)</h3>
+<p class="showcase-card-desc">Spherical MatCap shading blended via multiply for fast stylized highlights.</p>
+<div class="showcase-tags"><span class="tag-pill">MatCap</span><span class="tag-pill">Multiply</span><span class="tag-pill">Stylized</span></div>
+<a class="showcase-doc-link" href="index.html#matcap">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="optical">
+<button aria-label="Play Iridescence (Oil Slick) full size" class="showcase-media-box" type="button">
+<img alt="Iridescence (Oil Slick): Thin-film interference displaying shifting rainbow hues as view angle sweeps." data-still="media/surfacestyles/Iridescence_Oil_Slick_still.webp" data-webp="media/surfacestyles/Iridescence_Oil_Slick.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Iridescence_Oil_Slick_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Iridescence (Oil Slick)</h3>
+<p class="showcase-card-desc">Thin-film interference displaying shifting rainbow hues as view angle sweeps.</p>
+<div class="showcase-tags"><span class="tag-pill">Iridescence</span><span class="tag-pill">Thin-Film</span><span class="tag-pill">Rainbow</span></div>
+<a class="showcase-doc-link" href="index.html#iridescence">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pattern">
+<button aria-label="Play Glitter (Rainbow Stars) full size" class="showcase-media-box" type="button">
+<img alt="Glitter (Rainbow Stars): Faceted star glitter specks sparkling with full spectrum rainbow dispersion." data-still="media/surfacestyles/Glitter_Rainbow_Stars_still.webp" data-webp="media/surfacestyles/Glitter_Rainbow_Stars.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Glitter_Rainbow_Stars_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Glitter (Rainbow Stars)</h3>
+<p class="showcase-card-desc">Faceted star glitter specks sparkling with full spectrum rainbow dispersion.</p>
+<div class="showcase-tags"><span class="tag-pill">Glitter</span><span class="tag-pill">Stars</span><span class="tag-pill">Rainbow</span></div>
+<a class="showcase-doc-link" href="index.html#glitter">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="pattern">
+<button aria-label="Play Psychedelic full size" class="showcase-media-box" type="button">
+<img alt="Psychedelic: Hypnotic animated color-wheel cycling with continuous hue rotation." data-still="media/surfacestyles/Psychedelic_still.webp" data-webp="media/surfacestyles/Psychedelic.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Psychedelic_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Psychedelic</h3>
+<p class="showcase-card-desc">Hypnotic animated color-wheel cycling with continuous hue rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Psychedelic</span><span class="tag-pill">Hue Shift</span><span class="tag-pill">Animated</span></div>
+<a class="showcase-doc-link" href="index.html#psychedelic">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Mandelbulb full size" class="showcase-media-box" type="button">
+<img alt="Mandelbulb: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Mandelbulb_still.webp" data-webp="media/surfacestyles/Mandelbulb.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Mandelbulb_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Mandelbulb</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Power 8</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Menger Sponge full size" class="showcase-media-box" type="button">
+<img alt="Menger Sponge: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Menger_Sponge_still.webp" data-webp="media/surfacestyles/Menger_Sponge.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Menger_Sponge_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Menger Sponge</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Cubic</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Kaleidoscopic IFS full size" class="showcase-media-box" type="button">
+<img alt="Kaleidoscopic IFS: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Kaleidoscopic_IFS_still.webp" data-webp="media/surfacestyles/Kaleidoscopic_IFS.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Kaleidoscopic_IFS_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Kaleidoscopic IFS</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">KIFS</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Mandelbox full size" class="showcase-media-box" type="button">
+<img alt="Mandelbox: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Mandelbox_still.webp" data-webp="media/surfacestyles/Mandelbox.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Mandelbox_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Mandelbox</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Box Folding</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Julia 3D full size" class="showcase-media-box" type="button">
+<img alt="Julia 3D: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Julia_3D_still.webp" data-webp="media/surfacestyles/Julia_3D.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Julia_3D_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Julia 3D</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Quaternion</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Sierpinski Pyramid full size" class="showcase-media-box" type="button">
+<img alt="Sierpinski Pyramid: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Sierpinski_still.webp" data-webp="media/surfacestyles/Sierpinski.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Sierpinski_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Sierpinski Pyramid</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Tetrahedron</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Apollonian Gasket full size" class="showcase-media-box" type="button">
+<img alt="Apollonian Gasket: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Apollonian_still.webp" data-webp="media/surfacestyles/Apollonian.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Apollonian_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Apollonian Gasket</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Spheres</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Burning Ship full size" class="showcase-media-box" type="button">
+<img alt="Burning Ship: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Burning_Ship_still.webp" data-webp="media/surfacestyles/Burning_Ship.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Burning_Ship_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Burning Ship</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Ship</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Tricorn Fractal full size" class="showcase-media-box" type="button">
+<img alt="Tricorn Fractal: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Tricorn_still.webp" data-webp="media/surfacestyles/Tricorn.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Tricorn_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Tricorn Fractal</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Mandelbar</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Mandelbulb (Power 2) full size" class="showcase-media-box" type="button">
+<img alt="Mandelbulb (Power 2): 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Mandelbulb_Power_2_still.webp" data-webp="media/surfacestyles/Mandelbulb_Power_2.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Mandelbulb_Power_2_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Mandelbulb (Power 2)</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Power 2</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Mandelbulb (Power 8) full size" class="showcase-media-box" type="button">
+<img alt="Mandelbulb (Power 8): 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Mandelbulb_Power_8_still.webp" data-webp="media/surfacestyles/Mandelbulb_Power_8.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Mandelbulb_Power_8_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Mandelbulb (Power 8)</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Power 8</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Quaternion Julia full size" class="showcase-media-box" type="button">
+<img alt="Quaternion Julia: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Quaternion_Julia_still.webp" data-webp="media/surfacestyles/Quaternion_Julia.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Quaternion_Julia_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Quaternion Julia</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">4D Slice</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play IFS Tetrahedron full size" class="showcase-media-box" type="button">
+<img alt="IFS Tetrahedron: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/IFS_Tetrahedron_still.webp" data-webp="media/surfacestyles/IFS_Tetrahedron.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/IFS_Tetrahedron_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">IFS Tetrahedron</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">IFS</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Octahedron Fractal full size" class="showcase-media-box" type="button">
+<img alt="Octahedron Fractal: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Octahedron_still.webp" data-webp="media/surfacestyles/Octahedron.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Octahedron_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Octahedron Fractal</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Polyhedron</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Dodecahedron Fractal full size" class="showcase-media-box" type="button">
+<img alt="Dodecahedron Fractal: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Dodecahedron_still.webp" data-webp="media/surfacestyles/Dodecahedron.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Dodecahedron_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Dodecahedron Fractal</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">12-Sided</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Icosahedron Fractal full size" class="showcase-media-box" type="button">
+<img alt="Icosahedron Fractal: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Icosahedron_still.webp" data-webp="media/surfacestyles/Icosahedron.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Icosahedron_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Icosahedron Fractal</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">20-Sided</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Cubic Fractal full size" class="showcase-media-box" type="button">
+<img alt="Cubic Fractal: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Cubic_Fractal_still.webp" data-webp="media/surfacestyles/Cubic_Fractal.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Cubic_Fractal_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Cubic Fractal</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Lattice</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="fractal">
+<button aria-label="Play Hybrid Box-Bulb full size" class="showcase-media-box" type="button">
+<img alt="Hybrid Box-Bulb: 3D raymarched fractal calculated inside the sphere volume with 360° rotation." data-still="media/surfacestyles/Hybrid_Box-Bulb_still.webp" data-webp="media/surfacestyles/Hybrid_Box-Bulb.webp" decoding="async" height="512" loading="lazy" src="media/surfacestyles/Hybrid_Box-Bulb_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Hybrid Box-Bulb</h3>
+<p class="showcase-card-desc">3D raymarched fractal calculated inside the sphere volume with 360° rotation.</p>
+<div class="showcase-tags"><span class="tag-pill">Fractal 3D</span><span class="tag-pill">Raymarched</span><span class="tag-pill">Hybrid</span></div>
+<a class="showcase-doc-link" href="index.html#fractal-3d">View documentation →</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="tab-lighting-h" class="tab-panel" id="tab-lighting" role="tabpanel">
+<h2 id="tab-lighting-h">Lighting Lab <span class="count">(17)</span></h2>
+<p>A sun orbit sweeps across Unlit, Basic, Toon, PBR, subsurface jade, anisotropic metal, clear coat and hair specular.</p>
+<div class="showcase-grid">
+<article class="showcase-card" data-category="mode">
+<button aria-label="Play Unlit Mode full size" class="showcase-media-box" type="button">
+<img alt="Unlit Mode: Pure flat albedo shading unaffected by scene lighting or shadows. Zero GPU lighting overhead." data-still="media/lighting/Unlit_still.webp" data-webp="media/lighting/Unlit.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Unlit_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Unlit Mode</h3>
+<p class="showcase-card-desc">Pure flat albedo shading unaffected by scene lighting or shadows. Zero GPU lighting overhead.</p>
+<div class="showcase-tags"><span class="tag-pill">Unlit</span><span class="tag-pill">Flat</span><span class="tag-pill">Zero Overhead</span></div>
+<a class="showcase-doc-link" href="index.html#lighting-modes">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="mode">
+<button aria-label="Play Basic Diffuse full size" class="showcase-media-box" type="button">
+<img alt="Basic Diffuse: Lightweight Lambertian diffuse lighting with directional and ambient illumination." data-still="media/lighting/Basic_still.webp" data-webp="media/lighting/Basic.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Basic_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Basic Diffuse</h3>
+<p class="showcase-card-desc">Lightweight Lambertian diffuse lighting with directional and ambient illumination.</p>
+<div class="showcase-tags"><span class="tag-pill">Basic</span><span class="tag-pill">Lambert</span><span class="tag-pill">Mobile</span></div>
+<a class="showcase-doc-link" href="index.html#lighting-modes">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="mode toon">
+<button aria-label="Play Toon Cel Shading full size" class="showcase-media-box" type="button">
+<img alt="Toon Cel Shading: Crisp stepped lighting bands with customizable threshold, hardness, and shadow tint." data-still="media/lighting/Toon_still.webp" data-webp="media/lighting/Toon.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon Cel Shading</h3>
+<p class="showcase-card-desc">Crisp stepped lighting bands with customizable threshold, hardness, and shadow tint.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Cel Shading</span><span class="tag-pill">Anime</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="mode">
+<button aria-label="Play Stylized PBR full size" class="showcase-media-box" type="button">
+<img alt="Stylized PBR: Hybrid stylized physically based rendering combining cel bands with roughness highlights." data-still="media/lighting/Stylized_PBR_still.webp" data-webp="media/lighting/Stylized_PBR.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Stylized_PBR_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Stylized PBR</h3>
+<p class="showcase-card-desc">Hybrid stylized physically based rendering combining cel bands with roughness highlights.</p>
+<div class="showcase-tags"><span class="tag-pill">Stylized PBR</span><span class="tag-pill">Metallic</span><span class="tag-pill">Roughness</span></div>
+<a class="showcase-doc-link" href="index.html#stylized-pbr-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="mode">
+<button aria-label="Play Standard PBR full size" class="showcase-media-box" type="button">
+<img alt="Standard PBR: Full Disney GGX standard physically based lighting matching Unity Standard &amp; URP Lit." data-still="media/lighting/Standard_PBR_still.webp" data-webp="media/lighting/Standard_PBR.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Standard_PBR_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Standard PBR</h3>
+<p class="showcase-card-desc">Full Disney GGX standard physically based lighting matching Unity Standard &amp; URP Lit.</p>
+<div class="showcase-tags"><span class="tag-pill">Standard PBR</span><span class="tag-pill">GGX</span><span class="tag-pill">Realistic</span></div>
+<a class="showcase-doc-link" href="index.html#standard-pbr-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon: 2-Tone full size" class="showcase-media-box" type="button">
+<img alt="Toon: 2-Tone: Classic two-band anime shading splitting illuminated surface from shadow." data-still="media/lighting/Toon_2_Tone_still.webp" data-webp="media/lighting/Toon_2_Tone.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_2_Tone_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon: 2-Tone</h3>
+<p class="showcase-card-desc">Classic two-band anime shading splitting illuminated surface from shadow.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">2-Tone</span><span class="tag-pill">Crisp</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon: 3-Tone full size" class="showcase-media-box" type="button">
+<img alt="Toon: 3-Tone: Three-step shading adding an intermediate midtone between highlight and shadow." data-still="media/lighting/Toon_3_Tone_still.webp" data-webp="media/lighting/Toon_3_Tone.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_3_Tone_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon: 3-Tone</h3>
+<p class="showcase-card-desc">Three-step shading adding an intermediate midtone between highlight and shadow.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">3-Tone</span><span class="tag-pill">Midtone</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon: 4-Tone + Highlight full size" class="showcase-media-box" type="button">
+<img alt="Toon: 4-Tone + Highlight: Rich 4-tier shading featuring specular highlight, base tone, midtone, and deep shadow." data-still="media/lighting/Toon_4_Tone_Highlight_still.webp" data-webp="media/lighting/Toon_4_Tone_Highlight.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_4_Tone_Highlight_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon: 4-Tone + Highlight</h3>
+<p class="showcase-card-desc">Rich 4-tier shading featuring specular highlight, base tone, midtone, and deep shadow.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">4-Tone</span><span class="tag-pill">Highlight</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon: Ramp Texture full size" class="showcase-media-box" type="button">
+<img alt="Toon: Ramp Texture: 1D artist-authored ramp texture mapping diffuse light to complex color gradients." data-still="media/lighting/Toon_Ramp_Texture_still.webp" data-webp="media/lighting/Toon_Ramp_Texture.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_Ramp_Texture_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon: Ramp Texture</h3>
+<p class="showcase-card-desc">1D artist-authored ramp texture mapping diffuse light to complex color gradients.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Ramp Texture</span><span class="tag-pill">Gradient</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon: Skin Wrap full size" class="showcase-media-box" type="button">
+<img alt="Toon: Skin Wrap: Diffuse light wrap simulation softening shadow edges to emulate subsurface skin scattering." data-still="media/lighting/Toon_Skin_Wrap_still.webp" data-webp="media/lighting/Toon_Skin_Wrap.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_Skin_Wrap_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon: Skin Wrap</h3>
+<p class="showcase-card-desc">Diffuse light wrap simulation softening shadow edges to emulate subsurface skin scattering.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Skin Wrap</span><span class="tag-pill">Soft Shadow</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="toon">
+<button aria-label="Play Toon + Reflections full size" class="showcase-media-box" type="button">
+<img alt="Toon + Reflections: Toon cel shading combined with environmental reflection probes and fresnel glaze." data-still="media/lighting/Toon_Env_Reflections_still.webp" data-webp="media/lighting/Toon_Env_Reflections.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Toon_Env_Reflections_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Toon + Reflections</h3>
+<p class="showcase-card-desc">Toon cel shading combined with environmental reflection probes and fresnel glaze.</p>
+<div class="showcase-tags"><span class="tag-pill">Toon</span><span class="tag-pill">Reflections</span><span class="tag-pill">Probes</span></div>
+<a class="showcase-doc-link" href="index.html#toon-mode">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="specular">
+<button aria-label="Play Step Specular full size" class="showcase-media-box" type="button">
+<img alt="Step Specular: Quantized toon specular highlight with sharp perimeter thresholding." data-still="media/lighting/Step_Specular_still.webp" data-webp="media/lighting/Step_Specular.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Step_Specular_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Step Specular</h3>
+<p class="showcase-card-desc">Quantized toon specular highlight with sharp perimeter thresholding.</p>
+<div class="showcase-tags"><span class="tag-pill">Specular</span><span class="tag-pill">Stepped</span><span class="tag-pill">Cel</span></div>
+<a class="showcase-doc-link" href="index.html#step-specular">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="specular">
+<button aria-label="Play Subsurface (Jade) full size" class="showcase-media-box" type="button">
+<img alt="Subsurface (Jade): Simulated translucent subsurface scattering with backlit transmission and colored scatter." data-still="media/lighting/Subsurface_Jade_still.webp" data-webp="media/lighting/Subsurface_Jade.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Subsurface_Jade_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Subsurface (Jade)</h3>
+<p class="showcase-card-desc">Simulated translucent subsurface scattering with backlit transmission and colored scatter.</p>
+<div class="showcase-tags"><span class="tag-pill">Subsurface</span><span class="tag-pill">SSS</span><span class="tag-pill">Jade</span></div>
+<a class="showcase-doc-link" href="index.html#subsurface-scattering">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="specular">
+<button aria-label="Play Clear Coat (Car Paint) full size" class="showcase-media-box" type="button">
+<img alt="Clear Coat (Car Paint): Dual-layer automotive clear coat lacquer with secondary specular reflection lobe." data-still="media/lighting/Clear_Coat_Car_Paint_still.webp" data-webp="media/lighting/Clear_Coat_Car_Paint.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Clear_Coat_Car_Paint_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Clear Coat (Car Paint)</h3>
+<p class="showcase-card-desc">Dual-layer automotive clear coat lacquer with secondary specular reflection lobe.</p>
+<div class="showcase-tags"><span class="tag-pill">Clear Coat</span><span class="tag-pill">Lacquer</span><span class="tag-pill">Automotive</span></div>
+<a class="showcase-doc-link" href="index.html#clear-coat">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="specular">
+<button aria-label="Play Anisotropic Brushed Metal full size" class="showcase-media-box" type="button">
+<img alt="Anisotropic Brushed Metal: Directional specular reflection stretched along tangent vectors like brushed steel." data-still="media/lighting/Anisotropic_Brushed_Metal_still.webp" data-webp="media/lighting/Anisotropic_Brushed_Metal.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Anisotropic_Brushed_Metal_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Anisotropic Brushed Metal</h3>
+<p class="showcase-card-desc">Directional specular reflection stretched along tangent vectors like brushed steel.</p>
+<div class="showcase-tags"><span class="tag-pill">Anisotropic</span><span class="tag-pill">Brushed Metal</span><span class="tag-pill">Tangents</span></div>
+<a class="showcase-doc-link" href="index.html#anisotropic-reflection">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="specular">
+<button aria-label="Play Hair Specular (Kajiya-Kay) full size" class="showcase-media-box" type="button">
+<img alt="Hair Specular (Kajiya-Kay): Double-shifted specular highlight formulation calibrated for strand and hair geometry." data-still="media/lighting/Hair_Specular_Kajiya-Kay_still.webp" data-webp="media/lighting/Hair_Specular_Kajiya-Kay.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Hair_Specular_Kajiya-Kay_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Hair Specular (Kajiya-Kay)</h3>
+<p class="showcase-card-desc">Double-shifted specular highlight formulation calibrated for strand and hair geometry.</p>
+<div class="showcase-tags"><span class="tag-pill">Hair Specular</span><span class="tag-pill">Kajiya-Kay</span><span class="tag-pill">Strands</span></div>
+<a class="showcase-doc-link" href="index.html#hair-specular">View documentation →</a>
+</div>
+</article>
+<article class="showcase-card" data-category="specular">
+<button aria-label="Play Custom Light Direction full size" class="showcase-media-box" type="button">
+<img alt="Custom Light Direction: Independent light vector override maintaining artistic lighting regardless of scene sun." data-still="media/lighting/Custom_Light_Override_still.webp" data-webp="media/lighting/Custom_Light_Override.webp" decoding="async" height="512" loading="lazy" src="media/lighting/Custom_Light_Override_still.webp" width="512"/>
+<span class="badge-anim-state">LOOP</span>
+</button>
+<div class="showcase-card-body">
+<h3 class="showcase-card-title">Custom Light Direction</h3>
+<p class="showcase-card-desc">Independent light vector override maintaining artistic lighting regardless of scene sun.</p>
+<div class="showcase-tags"><span class="tag-pill">Light Override</span><span class="tag-pill">Artistic</span><span class="tag-pill">Vector</span></div>
+<a class="showcase-doc-link" href="index.html#override-scene-light">View documentation →</a>
+</div>
+</article>
+</div>
+</section>
+<p class="empty-state" id="emptyState">No captures match your search.</p>
+</div>
+</main>
+
+<footer class="site-footer">
+<p>FireRatShader is a product of <strong>FireRat</strong>. © 2026. All rights reserved.</p>
+<p><a href="../">Home</a> · <a href="index.html">Documentation</a> · <a href="https://github.com/FireRat666/FireRatShader">GitHub</a> · <a href="https://www.patreon.com/FireRat">Patreon</a></p>
+</footer>
+
+<dialog aria-labelledby="lightboxTitle" class="lightbox" id="lightbox">
+<button aria-label="Close" class="lightbox-close" type="button">×</button>
+<div class="lightbox-media"><img alt="" id="lightboxImg" src="data:,"/></div>
+<div class="lightbox-body">
+<h2 id="lightboxTitle"></h2>
+<p id="lightboxDesc"></p>
+<div class="lightbox-actions">
+<a class="btn btn-primary btn-sm" id="lightboxDoc" href="index.html">View documentation →</a>
+<a class="btn btn-ghost btn-sm" id="lightboxRaw" href="#" target="_blank" rel="noopener">Open animation</a>
+</div>
+</div>
+</dialog>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const tabMetadata = {"tab-showcase": {"filters": [{"id": "all", "label": "All Looks"}, {"id": "toon", "label": "Toon & Anime"}, {"id": "pbr", "label": "PBR & Metals"}, {"id": "stylized", "label": "Stylized & FX"}]}, "tab-audiolink": {"filters": [{"id": "all", "label": "All AudioLink"}, {"id": "visualizer", "label": "Visualizers"}, {"id": "beatsync", "label": "Beat-Sync"}, {"id": "reactive", "label": "Reactive"}, {"id": "smoothed", "label": "Temporal Smoothed"}]}, "tab-effects": {"filters": [{"id": "all", "label": "All Effects"}, {"id": "dissolve", "label": "Dissolves & Wipes"}, {"id": "distortion", "label": "Distortions"}, {"id": "glitch", "label": "Glitches"}, {"id": "glow", "label": "Glow & Special"}]}, "tab-surfacestyles": {"filters": [{"id": "all", "label": "All Styles"}, {"id": "fractal", "label": "3D Fractals"}, {"id": "optical", "label": "Optical & Refraction"}, {"id": "pattern", "label": "Patterns & Glitter"}]}, "tab-lighting": {"filters": [{"id": "all", "label": "All Lighting"}, {"id": "mode", "label": "Shading Modes"}, {"id": "toon", "label": "Toon Variations"}, {"id": "specular", "label": "Specular & SSS"}]}};
+    const tabBtns = Array.from(document.querySelectorAll(".scene-tab-btn"));
+    const tabPanels = Array.from(document.querySelectorAll(".tab-panel"));
+    const playBtn = document.getElementById("togglePlayModeBtn");
+    const searchInput = document.getElementById("searchInput");
+    const chips = document.getElementById("subFilterContainer");
+    const emptyState = document.getElementById("emptyState");
+    const canHover = window.matchMedia("(hover: hover)").matches;
+
+    let currentTabId = "tab-showcase";
+    let playAll = false;
+    let query = "";
+    let subFilter = "all";
+
+    // Stills load first; an animation only loads while its card is hovered, open, or on screen in Play all mode.
+    const play = (card, on) => {
+        const img = card.querySelector(".showcase-media-box img");
+        const want = on ? img.dataset.webp : img.dataset.still;
+        if (img.getAttribute("src") !== want) img.src = want;
+        card.classList.toggle("playing", on);
+        card.querySelector(".badge-anim-state").textContent = on ? "PLAYING" : "LOOP";
+    };
+
+    const onScreen = new Set();
+    const io = "IntersectionObserver" in window ? new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) onScreen.add(e.target); else onScreen.delete(e.target);
+            if (playAll) play(e.target, e.isIntersecting);
+        });
+    }, { rootMargin: "200px 0px" }) : null;
+    document.querySelectorAll(".showcase-card").forEach(card => {
+        if (io) io.observe(card);
+        if (canHover) {
+            card.addEventListener("mouseenter", () => { if (!playAll) play(card, true); });
+            card.addEventListener("mouseleave", () => { if (!playAll) play(card, false); });
+        }
+        card.querySelector(".showcase-media-box").addEventListener("click", () => openLightbox(card));
+    });
+
+    function renderChips() {
+        chips.innerHTML = "";
+        (tabMetadata[currentTabId].filters || []).forEach(f => {
+            const b = document.createElement("button");
+            b.type = "button";
+            b.className = "filter-btn" + (f.id === subFilter ? " active" : "");
+            b.textContent = f.label;
+            b.addEventListener("click", () => { subFilter = f.id; renderChips(); applyFilters(); });
+            chips.appendChild(b);
+        });
+    }
+
+    function applyFilters() {
+        const panel = document.getElementById(currentTabId);
+        let shown = 0;
+        panel.querySelectorAll(".showcase-card").forEach(card => {
+            const ok = (subFilter === "all" || (" " + card.dataset.category + " ").includes(" " + subFilter + " "))
+                && (!query || card.textContent.toLowerCase().includes(query));
+            card.hidden = !ok;
+            if (ok) shown++;
+        });
+        emptyState.style.display = shown ? "none" : "block";
+    }
+
+    function switchTab(tabId, push) {
+        if (!tabMetadata[tabId]) tabId = "tab-showcase";
+        currentTabId = tabId;
+        subFilter = "all";
+        tabBtns.forEach(b => {
+            const on = b.dataset.tab === tabId;
+            b.classList.toggle("active", on);
+            b.setAttribute("aria-selected", on ? "true" : "false");
+        });
+        tabPanels.forEach(p => p.classList.toggle("active", p.id === tabId));
+        document.querySelectorAll(".showcase-card.playing").forEach(c => play(c, false));
+        renderChips();
+        applyFilters();
+        if (playAll) requestAnimationFrame(() => onScreen.forEach(c => { if (c.closest(".tab-panel.active")) play(c, true); }));
+        if (push) history.replaceState(null, "", "#" + tabId.replace("tab-", ""));
+    }
+
+    tabBtns.forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab, true)));
+
+    playBtn.addEventListener("click", () => {
+        playAll = !playAll;
+        playBtn.setAttribute("aria-pressed", playAll ? "true" : "false");
+        playBtn.textContent = playAll ? "❚❚ Pause all" : "▶ Play all";
+        document.querySelectorAll(".tab-panel.active .showcase-card").forEach(c => play(c, playAll && onScreen.has(c)));
+    });
+
+    searchInput.addEventListener("input", e => { query = e.target.value.trim().toLowerCase(); applyFilters(); });
+
+    // Lightbox: always plays the animation at full size, works the same on touch screens.
+    const box = document.getElementById("lightbox");
+    const boxImg = document.getElementById("lightboxImg");
+    function openLightbox(card) {
+        const img = card.querySelector(".showcase-media-box img");
+        boxImg.src = img.dataset.webp;
+        boxImg.alt = img.alt;
+        document.getElementById("lightboxTitle").textContent = card.querySelector(".showcase-card-title").textContent;
+        document.getElementById("lightboxDesc").textContent = card.querySelector(".showcase-card-desc").textContent;
+        document.getElementById("lightboxDoc").href = card.querySelector(".showcase-doc-link").getAttribute("href");
+        document.getElementById("lightboxRaw").href = img.dataset.webp;
+        if (box.showModal) box.showModal(); else window.open(img.dataset.webp, "_blank");
+    }
+    box.querySelector(".lightbox-close").addEventListener("click", () => box.close());
+    box.addEventListener("click", e => { if (e.target === box) box.close(); });
+    box.addEventListener("close", () => { boxImg.src = "data:,"; });
+
+    const hash = location.hash.replace("#", "");
+    switchTab(hash ? "tab-" + hash : "tab-showcase", false);
+});
+</script>
+</body>
+</html>

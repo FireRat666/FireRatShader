@@ -2,17 +2,76 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="dark" name="color-scheme"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title data-i18n="docs.index.title.1247">FireRatShader Documentation</title>
+<meta content="dark" name="color-scheme"/>
+<meta content="#00c00a" name="theme-color"/>
+<title data-i18n="docs.index.title.1247">FireRatShader Docs — Unity URP &amp; Built-in Shader Guide</title>
+<meta content="FireRatShader docs: VRChat avatar setup, material locking, lighting, surface styles, AudioLink visualizers, transitions and creator tools for Unity URP and BRP." name="description"/>
+<link href="https://shader.firer.at/docs/" rel="canonical"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="article" property="og:type"/>
+<meta content="FireRatShader" property="og:site_name"/>
+<meta content="FireRatShader Documentation" property="og:title"/>
+<meta content="Setup guides and every setting explained: lighting, surface styles, AudioLink visualizers, transitions, performance and creator tools for Unity URP and Built-in." property="og:description"/>
+<meta content="https://shader.firer.at/docs/" property="og:url"/>
+<meta content="https://shader.firer.at/docs/media/site/og-image.jpg" property="og:image"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="FireRatShader: a mosaic of shader materials including cyber grid, iridescence, gold, galaxy and fractals" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="FireRatShader Documentation" name="twitter:title"/>
+<meta content="Setup guides and every setting explained: lighting, surface styles, AudioLink visualizers, transitions, performance and creator tools." name="twitter:description"/>
+<meta content="https://shader.firer.at/docs/media/site/og-image.jpg" name="twitter:image"/>
+<link href="../favicon.ico" rel="icon" sizes="48x48"/>
+<link href="media/site/icon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="media/site/apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "FireRatShader Documentation",
+      "description": "Setup guides and reference for every FireRatShader setting: lighting, surface styles, AudioLink visualizers, transitions, performance and creator tools for Unity URP and Built-in.",
+      "url": "https://shader.firer.at/docs/",
+      "image": "https://shader.firer.at/docs/media/site/og-image.jpg",
+      "inLanguage": "en",
+      "author": { "@type": "Person", "name": "FireRat" },
+      "about": { "@type": "SoftwareApplication", "name": "FireRatShader", "applicationCategory": "DeveloperApplication", "url": "https://shader.firer.at/" },
+      "isPartOf": { "@id": "https://shader.firer.at/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "FireRatShader", "item": "https://shader.firer.at/" },
+        { "@type": "ListItem", "position": 2, "name": "Documentation", "item": "https://shader.firer.at/docs/" }
+      ]
+    }
+  ]
+}
+</script>
 </head>
-<body>
-<header>
-<h1 data-i18n="docs.index.h1.1246">FireRatShader V1.2.0 Documentation</h1>
+<body class="page-docs">
+<a class="skip-link" data-i18n="docs.index.a.975" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="site-header-inner">
+<button aria-controls="docs-sidebar" aria-expanded="false" class="menu-toggle" type="button"><span data-i18n="docs.index.span.2054">☰ Contents</span></button>
+<a class="brand no-translate" href="../"><img alt="" height="26" src="media/site/icon-192.png" width="26"/>FireRatShader</a>
+<nav aria-label="Site" class="site-nav">
+<a aria-current="page" data-i18n="docs.index.a.976" href="index.html">Documentation</a>
+<a data-i18n="docs.index.a.977" href="showcase.html">Showcase</a>
+<a data-i18n="docs.index.a.978" href="https://github.com/FireRat666/FireRatShader">GitHub</a>
+</nav>
+<div class="header-actions">
+<div class="lang-switcher"></div>
+<a class="btn btn-primary btn-sm" data-i18n="docs.index.a.979" href="https://www.patreon.com/FireRat">Get FireRatShader</a>
+</div>
+</div>
 </header>
-<div class="container">
-<nav>
+<div class="docs-layout">
+<nav aria-label="Documentation" class="docs-sidebar" id="docs-sidebar">
 <ul>
 <li><a data-i18n="docs.index.a.958" href="#introduction">Introduction</a></li>
 <li><a data-i18n="docs.index.a.959" href="#avatar-setup">Avatar Setup</a></li>
@@ -43,15 +102,28 @@
 </ul>
 </li>
 <li><a data-i18n="docs.index.a.974" href="#creator-tools">Creator Tools &amp; Utilities</a></li>
+<li class="sidebar-feature"><a data-i18n="docs.index.a.980" href="showcase.html">✨ Live Showcase Gallery</a></li>
 </ul>
 </nav>
-<main>
+<main class="docs-main" id="main">
+<div class="docs-content">
+<div class="docs-hero">
+<h1 data-i18n="docs.index.h1.1246">FireRatShader V1.3.0 Documentation</h1>
+<p data-i18n="docs.index.p.1985">Setup guides and a reference for every setting in the FireRatShader material inspector.</p>
+</div>
 <section id="introduction">
 <h2 data-i18n="docs.index.h2.1215">Introduction</h2>
+<div class="callout">
+<div>
+<strong data-i18n="docs.index.strong.1237">✨ Explore the Interactive Media Showcase</strong>
+<p data-i18n="docs.index.p.1986">View high-quality looping animated WebP captures of all AudioLink visualizers, beat-sync effects, and reactive shaders in action.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-i18n="docs.index.a.981" href="showcase.html">Open Showcase →</a>
+</div>
 <p data-i18n="docs.index.p.1216">Welcome to the documentation for FireRatShader. This shader is designed to be a powerful but efficient Uber shader that works in VR, Android, Mobile, Windows, and Unity 6 across both render pipelines: <span class="badge badge-brp">Built-in Render Pipeline</span> <span class="badge badge-urp">Universal Render Pipeline</span></p>
-<p data-i18n="docs.index.p.1217">Both pipeline versions share the exact same 887 properties, inspector layout, and feature sets in 100% lockstep parity.</p>
+<p data-i18n="docs.index.p.1217">Both pipeline versions share the exact same 894 properties, inspector layout, and feature sets in 100% lockstep parity.</p>
 <article>
-<h3 data-i18n="docs.index.h3.975">Pipeline Variants &amp; Master Shaders</h3>
+<h3 data-i18n="docs.index.h3.975" id="pipeline-variants-and-master-shaders">Pipeline Variants &amp; Master Shaders</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.215">Renderer Requirement:</strong> <span class="badge badge-brp">BRP</span> <span data-i18n="docs.index.span.1001">The Built-in RP version only works in projects using the Built-in Render Pipeline.</span> <span class="badge badge-urp">URP</span> <span data-i18n="docs.index.span.1002">The URP version only works in projects using the Universal Render Pipeline.</span></li>
 <li><strong data-i18n="docs.index.strong.216">Master Shader Pairs:</strong>
@@ -69,7 +141,7 @@
 <h2 data-i18n="docs.index.h2.1219">VRChat Avatar Setup</h2>
 <p data-i18n="docs.index.p.1220">The FireRat Shader Avatar Setup tool is a powerful utility designed to automatically generate the necessary VRChat assets (FX Controller, Expressions Menu, and Parameters) to control the shader's features in-game. This saves you the time and effort of manually creating animations and menu toggles.</p>
 <article>
-<h3 data-i18n="docs.index.h3.976">How to Use</h3>
+<h3 data-i18n="docs.index.h3.976" id="avatar-setup-how-to-use">How to Use</h3>
 <ol>
 <li><strong data-i18n="docs.index.strong.217">Open the Tool:</strong> <span data-i18n="docs.index.span.1009">Navigate to</span> <strong data-i18n="docs.index.strong.218">Tools &gt; FireRat Shader &gt; Avatar Setup</strong> <span data-i18n="docs.index.span.1010">from the top menu bar in Unity.</span></li>
 <li><strong data-i18n="docs.index.strong.219">Select Your Avatar:</strong> <span data-i18n="docs.index.span.1011">In the setup window, select your avatar's descriptor from the "Avatar" object field. The tool will automatically find all Skinned Mesh Renderers on your avatar.</span></li>
@@ -85,7 +157,7 @@
 </ol>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.977">Important: Two-Step Feature Enablement</h3>
+<h3 data-i18n="docs.index.h3.977" id="important-two-step-feature-enablement">Important: Two-Step Feature Enablement</h3>
 <p class="warning"><span data-i18n="docs.index.span.1017">For an expression menu control to work in-game, the corresponding feature must be enabled in</span> <strong data-i18n="docs.index.strong.880">two places</strong>:</p>
 <ol>
 <li><strong data-i18n="docs.index.strong.224">In the Material Inspector:</strong> <span data-i18n="docs.index.span.1018">You must enable the feature on the material itself (e.g., check the "Enable" box for "Outline").</span></li>
@@ -94,7 +166,7 @@
 <p data-i18n="docs.index.p.978">This is because the shader is heavily optimized. If a feature is not enabled on the material, its code is completely removed from the shader to save performance. If you generate a menu control for a feature that is disabled on the material, the menu option will appear in-game but will do nothing, because the shader code it's trying to control doesn't exist.</p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.979">Saved Settings</h3>
+<h3 data-i18n="docs.index.h3.979" id="saved-settings">Saved Settings</h3>
 <p data-i18n="docs.index.p.980">The tool automatically saves your feature and mesh selections for each avatar. When you select an avatar, it will remember the last configuration you generated for it, making it easy to make small changes without starting from scratch.</p>
 </article>
 </section>
@@ -102,7 +174,7 @@
 <h2 data-i18n="docs.index.h2.1221">Material Inspector Tools</h2>
 <p data-i18n="docs.index.p.1222">The top of the material inspector provides a toolbar with workflow tools that apply to the whole material. Each foldout section in the inspector also has its own Copy, Paste, and Reset buttons.</p>
 <article>
-<h3 data-i18n="docs.index.h3.981">Material Locking</h3>
+<h3 data-i18n="docs.index.h3.981" id="material-locking">Material Locking</h3>
 <p><span data-i18n="docs.index.span.1020">Materials can be locked to prevent accidental edits. When locked, every control in the inspector is grayed out and read-only, and the toolbar shows a red</span> <strong data-i18n="docs.index.strong.881">🔒 Material Locked (Click to Unlock)</strong> <span data-i18n="docs.index.span.1021">button. Use</span> <strong data-i18n="docs.index.strong.882">🔑 Lock Material</strong> <span data-i18n="docs.index.span.1022">on an unlocked material to lock it again.</span></p>
 <ul>
 <li><strong data-i18n="docs.index.strong.226">Load Preset</strong> <span data-i18n="docs.index.span.1023">and section</span> <strong data-i18n="docs.index.strong.227">Paste</strong> <span data-i18n="docs.index.span.1024">are disabled on locked materials.</span></li>
@@ -111,7 +183,7 @@
 <p class="warning"><strong data-i18n="docs.index.strong.884">Locking Can Optimize Your Shader:</strong> <span data-i18n="docs.index.span.1025">Since V1.0.5, locking a material for a specific target (Avatar, World, or Standalone Build) also runs the</span> <strong data-i18n="docs.index.strong.885">Material Lock Shader Optimizer</strong>. <span data-i18n="docs.index.span.1026">It analyzes which features are actually in use and strips the rest, for example removing the Outline or Refraction passes and dead keyword variants when those features are disabled. This produces a smaller, faster shader variant tuned exactly to your material — ideal for VRChat avatar and world uploads.</span></p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.982">Material Presets</h3>
+<h3 data-i18n="docs.index.h3.982" id="material-presets">Material Presets</h3>
 <p data-i18n="docs.index.p.983">Presets let you save the entire material state to a JSON file and load it back onto other materials, making it easy to share or reuse a look across your project.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.228">Save Preset...</strong> <span data-i18n="docs.index.span.1027">Exports all of the material's float, range, color, vector, and texture properties (including texture tiling and offset) to a JSON file in your project.</span></li>
@@ -120,7 +192,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.984">Section Copy / Paste / Reset</h3>
+<h3 data-i18n="docs.index.h3.984" id="section-copy-paste-reset">Section Copy / Paste / Reset</h3>
 <p><span data-i18n="docs.index.span.1030">Every foldout section in the inspector has</span> <strong data-i18n="docs.index.strong.886">Copy</strong>, <strong data-i18n="docs.index.strong.887">Paste</strong><span data-i18n="docs.index.span.1031">, and</span> <strong data-i18n="docs.index.strong.888">Reset</strong> <span data-i18n="docs.index.span.1032">buttons in its header.</span></p>
 <ul>
 <li><strong data-i18n="docs.index.strong.232">Copy:</strong> <span data-i18n="docs.index.span.1033">Copies all properties in that section (floats, colors, vectors, and textures with their tiling/offset) to the shader's clipboard.</span></li>
@@ -129,14 +201,14 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.985">Live Property Search</h3>
+<h3 data-i18n="docs.index.h3.985" id="live-property-search">Live Property Search</h3>
 <p data-i18n="docs.index.p.986">The inspector toolbar includes a search field that live-filters all material properties by name or label as you type. Matching sections auto-expand so you can immediately see (and edit) every hit, making it fast to locate a specific control among the shader's hundreds of properties. Fuzzy matching tolerates typos and partial words, and clearing the box restores the normal foldout layout.</p>
 </article>
 </section>
 <section id="performance">
 <h2 data-i18n="docs.index.h2.1223">Performance</h2>
 <article>
-<h3 data-i18n="docs.index.h3.987">Performance Level</h3>
+<h3 data-i18n="docs.index.h3.987" id="performance-level">Performance Level</h3>
 <p data-i18n="docs.index.p.988">This setting provides a master control to quickly set a performance baseline for different platforms without needing to toggle dozens of individual checkboxes. It adjusts the shader's complexity by disabling the most performance-intensive features at lower levels.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.235">High:</strong> <span data-i18n="docs.index.span.1036">All features are available to be enabled. This is the default setting and offers the highest visual quality.</span></li>
@@ -158,14 +230,14 @@
 <p data-i18n="docs.index.p.989">When a feature is disabled by a performance level, its controls in the material inspector will be grayed out.</p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.990">Distance LOD Start</h3>
+<h3 data-i18n="docs.index.h3.990" id="distance-lod-start">Distance LOD Start</h3>
 <p><span data-i18n="docs.index.span.1039">Automatically simplifies the shading as the object moves away from the camera. Setting</span> <strong data-i18n="docs.index.strong.889">Distance LOD Start</strong> <span data-i18n="docs.index.span.1040">to a non-zero distance will progressively disable expensive per-pixel lighting and shading work at that range, trading a little visual fidelity for a large frame-time saving on distant objects. A value of</span> <code>0</code> <span data-i18n="docs.index.span.1041">keeps the full-quality shading at every distance (disabled).</span></p>
 </article>
 </section>
 <section id="main-settings">
 <h2 data-i18n="docs.index.h2.1224">Main Settings</h2>
 <article>
-<h3 data-i18n="docs.index.h3.991">Render Mode</h3>
+<h3 data-i18n="docs.index.h3.991" id="render-mode">Render Mode</h3>
 <p data-i18n="docs.index.p.992">Controls the fundamental rendering behavior of the material.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.238">Render Mode:</strong> <span data-i18n="docs.index.span.1042">Sets the transparency type.</span> <code>Opaque</code> <span data-i18n="docs.index.span.1043">is fastest.</span> <code>Cutout</code> <span data-i18n="docs.index.span.1044">uses an alpha threshold for hard-edged transparency.</span> <code>Transparent</code> <span data-i18n="docs.index.span.1045">allows for soft, blended transparency.</span> <code>Additive</code> <span data-i18n="docs.index.span.1046">adds its color to what's behind it, useful for bright effects.</span> <code>Multiply</code> <span data-i18n="docs.index.span.1047">darkens what's behind it (useful for shadows and tint overlays).</span> <code>Premultiplied</code> <span data-i18n="docs.index.span.1048">blends using premultiplied alpha, giving correct edges for glow/particle-like textures without dark halos.</span></li>
@@ -176,7 +248,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.993">Base Appearance</h3>
+<h3 data-i18n="docs.index.h3.993" id="base-appearance">Base Appearance</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.244">Use Base Color:</strong> <span data-i18n="docs.index.span.1055">Toggles a solid base color for the material.</span></li>
 <li><strong data-i18n="docs.index.strong.245">Color:</strong> <span data-i18n="docs.index.span.1056">The main color of the material. Can be hue-shifted.</span></li>
@@ -186,14 +258,14 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.994">Queue Offset</h3>
+<h3 data-i18n="docs.index.h3.994" id="queue-offset">Queue Offset</h3>
 <p data-i18n="docs.index.p.995">Fine-tunes the material's render queue position relative to its base render mode. This is essential for resolving z-sorting issues with layered transparent materials like hair, clothing overlays, and accessories.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.251">Queue Offset:</strong> <span data-i18n="docs.index.span.1065">Shifts the render queue by the specified amount (range: -50 to +50). A higher value renders later (on top), a lower value renders earlier (behind). Default is</span> <code>0</code>.</li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.996">Alpha-to-Coverage Sharpening &amp; Mip Scaling</h3>
+<h3 data-i18n="docs.index.h3.996" id="alpha-to-coverage-sharpening-and-mip-scaling">Alpha-to-Coverage Sharpening &amp; Mip Scaling</h3>
 <p><span data-i18n="docs.index.span.1066">When using</span> <strong data-i18n="docs.index.strong.890">Alpha to Coverage</strong> <span data-i18n="docs.index.span.1067">in Cutout mode with MSAA enabled, this feature controls the sharpness and distance stability of the anti-aliased edge at the cutout boundary — ideal for hair cards and foliage in VR.</span></p>
 <ul>
 <li><strong data-i18n="docs.index.strong.252">A2C Edge Sharpening:</strong> <span data-i18n="docs.index.span.1068">Controls the gradient width at cutout edges.</span> <code>0</code> <span data-i18n="docs.index.span.1069">uses standard alpha-to-coverage. Higher values produce sharper, crisper cutout edges using screen-space</span> <code>fwidth()</code> <span data-i18n="docs.index.span.1070">derivatives.</span></li>
@@ -202,7 +274,7 @@
 <p data-i18n="docs.index.p.997">These controls appear when Render Mode is set to <code>Cutout</code> and Alpha to Coverage is enabled.</p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.998">Advanced Backface Rendering</h3>
+<h3 data-i18n="docs.index.h3.998" id="advanced-backface-rendering">Advanced Backface Rendering</h3>
 <p data-i18n="docs.index.p.999">Extends the existing Back Face Color feature with support for a completely separate texture and independent emission on back-facing triangles. This is ideal for jacket interiors, capes, double-sided curtains, or any mesh where the inside should look different from the outside.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.254">Use Backface Texture:</strong> <span data-i18n="docs.index.span.1072">When enabled, samples a separate texture for back-facing triangles instead of using the flat Back Face Color.</span></li>
@@ -213,7 +285,7 @@
 <p data-i18n="docs.index.p.1000">This feature incurs zero cost when disabled. The keyword <code>_BACKFACE_TEX_ON</code> is only compiled into the shader when the toggle is active.</p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1001">Video Player Mode</h3>
+<h3 data-i18n="docs.index.h3.1001" id="video-player-mode">Video Player Mode</h3>
 <p data-i18n="docs.index.p.1002">Enables compatibility with Unity's Video Player component and AVPro Video. Video textures often require special handling for gamma correction and UV coordinate flipping that standard textures do not need.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.258">Video Player Mode:</strong> <span data-i18n="docs.index.span.1076">Master toggle that enables video texture handling.</span></li>
@@ -222,7 +294,7 @@
 <p><span data-i18n="docs.index.span.1079">When</span> <strong data-i18n="docs.index.strong.891">Is AVPro</strong> <span data-i18n="docs.index.span.1080">is disabled, the shader assumes a standard Unity Video Player texture which requires no special correction.</span></p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1003">Global UV Controls</h3>
+<h3 data-i18n="docs.index.h3.1003" id="global-uv-controls">Global UV Controls</h3>
 <p data-i18n="docs.index.p.1004">These controls affect all textures and UV-based effects on the material.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.260">Use Ping-Pong Scroll:</strong> <span data-i18n="docs.index.span.1081">Animates UVs back and forth instead of in one direction. Provides Speed and Range controls.</span></li>
@@ -232,7 +304,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1005">UV Flow (Pathing)</h3>
+<h3 data-i18n="docs.index.h3.1005" id="uv-flow">UV Flow (Pathing)</h3>
 <p data-i18n="docs.index.p.1006">Animates textures along a vector flow map using two seamlessly crossfading phases, creating continuous directional motion without visible looping — ideal for rivers, conveyor belts, wind streaks, and magic trails.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.266">Enable UV Flow (Pathing):</strong> <span data-i18n="docs.index.span.1087">Master toggle.</span></li>
@@ -242,7 +314,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1007">UV Tile Discard</h3>
+<h3 data-i18n="docs.index.h3.1007" id="uv-tile-discard">UV Tile Discard</h3>
 <p data-i18n="docs.index.p.1008">Discards geometry per tile of a 4×4 UV grid (0–1 mapped to each 0.25 tile), letting you toggle clothing parts, accessories, or hair pieces on and off from one mesh without blendshapes. Applied consistently across every pass (main color, outline, shadow, depth).</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.270">Enable UV Tile Discard:</strong> <span data-i18n="docs.index.span.1092">Master toggle.</span></li>
@@ -250,7 +322,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1009">UV Distortion</h3>
+<h3 data-i18n="docs.index.h3.1009" id="uv-distortion">UV Distortion</h3>
 <p data-i18n="docs.index.p.1010">Warp the UV coordinates using a texture, creating effects like heat haze or water ripples.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.272">Distortion Map:</strong> <span data-i18n="docs.index.span.1094">A texture whose Red and Green channels control the X and Y offset of the UVs.</span></li>
@@ -259,7 +331,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1011">Flipbook Animation</h3>
+<h3 data-i18n="docs.index.h3.1011" id="flipbook-animation">Flipbook Animation</h3>
 <p data-i18n="docs.index.p.1012">Animates the main texture by treating it as a grid of frames (a spritesheet).</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.275">Mode:</strong> <span data-i18n="docs.index.span.1097">Playback mode (Loop, PingPong, Random).</span></li>
@@ -269,7 +341,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1013">Stochastic Texture Sampling</h3>
+<h3 data-i18n="docs.index.h3.1013" id="stochastic-texture-sampling">Stochastic Texture Sampling</h3>
 <p data-i18n="docs.index.p.1014">Procedurally blends randomized texture samples across triangular lattices to completely eliminate repetitive tiling patterns on large surfaces (floors, walls, terrain).</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.279">Enable Stochastic Sampling:</strong> <span data-i18n="docs.index.span.1101">Master toggle enabling procedural lattice sampling.</span></li>
@@ -277,7 +349,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1214">Texture Mipmap &amp; Quality Tools</h3>
+<h3 data-i18n="docs.index.h3.1214" id="texture-mipmap-and-quality-tools">Texture Mipmap &amp; Quality Tools</h3>
 <p><span data-i18n="docs.index.span.2004">An interactive utility integrated directly into the material inspector to configure texture mipmapping algorithms and anisotropic filtering across all textures assigned to the material in a single click via Unity's</span> <code>TextureImporter</code>.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.1208">Generate Mip Maps:</strong> <span data-i18n="docs.index.span.2005">Enables or disables mipmap pyramid generation on all assigned textures. Disabling mipmaps is useful for crisp pixel-art textures that should never blur with distance.</span></li>
@@ -291,8 +363,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1015">Emission (Slots 1 – 4)</h3>
+<h3 data-i18n="docs.index.h3.1015" id="emission">Emission (Slots 1 – 4)</h3>
 <p data-i18n="docs.index.p.1016">Makes the material glow with up to 4 independent emission layers. Requires a Bloom post-processing effect in your scene to see the full effect.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Emission with the first slot enabled" decoding="async" height="242" loading="lazy" src="media/inspector/emission.png" width="540"/><figcaption><span data-i18n="docs.index.span.2057">Emission with the first slot enabled.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.1205">Emission Color:</strong> <span data-i18n="docs.index.span.1986">Dedicated HDR base emission tint (default black). When emission is enabled, the surface emits light based on Emission Color × Emission Strength, and the Emission Mask acts as the emission map multiplying this color. Backface, pulse, and procedural emission add on top. Both forward shading and baked lightmaps (Meta pass) share this formula.</span></li>
 <li><strong data-i18n="docs.index.strong.281">Strength:</strong> <span data-i18n="docs.index.span.1103">Brightness of the primary glow. Values greater than 1 will bloom.</span></li>
@@ -308,7 +381,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1017">Fluorescence Emission</h3>
+<h3 data-i18n="docs.index.h3.1017" id="fluorescence-emission">Fluorescence Emission</h3>
 <p data-i18n="docs.index.p.1018">Makes the material glow in response to scene light levels — the less light hits it, the more it glows. Perfect for glow-in-the-dark accents, UV-reactive paint, or emergency-lights that only appear in dark rooms.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.297">Enable Fluorescence:</strong> <span data-i18n="docs.index.span.1122">Master toggle.</span></li>
@@ -321,7 +394,8 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1019">Transparency</h3>
+<h3 data-i18n="docs.index.h3.1019" id="transparency">Transparency</h3>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Transparency controls once enabled" decoding="async" height="42" loading="lazy" src="media/inspector/transparency.png" width="540"/><figcaption><span data-i18n="docs.index.span.2058">Transparency controls once enabled.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.304">Enable Transparency:</strong> <span data-i18n="docs.index.span.1129">Makes the object uniformly transparent.</span></li>
 <li><strong data-i18n="docs.index.strong.305">Amount:</strong> <span data-i18n="docs.index.span.1130">The overall transparency (0=Invisible, 1=Opaque).</span></li>
@@ -335,8 +409,9 @@
 <section id="procedural-textures">
 <h2 data-i18n="docs.index.h2.1225">Procedural Textures</h2>
 <article>
-<h3 data-i18n="docs.index.h3.1020">Procedural Texture Generation</h3>
+<h3 data-i18n="docs.index.h3.1020" id="procedural-texture-generation">Procedural Texture Generation</h3>
 <p data-i18n="docs.index.p.1021">This feature allows you to replace the standard base texture with a procedurally generated pattern. This can reduce texture memory usage and allow for dynamic, animated effects without external texture files.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Procedural Texture settings (Noise mode)" decoding="async" height="342" loading="lazy" src="media/inspector/procedural-texture.png" width="540"/><figcaption><span data-i18n="docs.index.span.2059">Procedural Texture settings (Noise mode).</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.309">Enable Procedural Texture:</strong> <span data-i18n="docs.index.span.1137">Toggles the entire feature on or off. When enabled, it overrides the Base Texture and Base Color settings.</span></li>
 <li><strong data-i18n="docs.index.strong.310">Mode:</strong> <span data-i18n="docs.index.span.1138">Selects the pattern to generate.</span> <ul>
@@ -404,7 +479,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1022">Procedural Texture Target</h3>
+<h3 data-i18n="docs.index.h3.1022" id="procedural-texture-target">Procedural Texture Target</h3>
 <p data-i18n="docs.index.p.1023">This feature allows you to use the generated procedural texture as a mask or input for other shader features, instead of just using it as the base color. This is a powerful way to create complex, dynamic effects by combining procedural patterns with other material properties.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.321">Target:</strong> <span data-i18n="docs.index.span.1189">Selects where the procedural texture output will be sent.</span> <ul>
@@ -434,7 +509,7 @@
 <h2 data-i18n="docs.index.h2.1228">Color Controls</h2>
 <p data-i18n="docs.index.p.1229">A set of controls that affect the final look of the material.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1024">Global Color Animation</h3>
+<h3 data-i18n="docs.index.h3.1024" id="global-color-animation">Global Color Animation</h3>
 <p data-i18n="docs.index.p.1025">This setting controls how all colors with "Animate Hue" enabled will change over time.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.322">Enable Global Auto Color Shift:</strong> <span data-i18n="docs.index.span.1204">Master toggle that continuously animates every color with a shift control enabled. When disabled, shift sliders hold static or externally animated values.</span></li>
@@ -446,7 +521,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1026">Color Adjustments</h3>
+<h3 data-i18n="docs.index.h3.1026" id="color-adjustments">Color Adjustments</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.328">Hue Shift:</strong> <span data-i18n="docs.index.span.1211">Rotates the final color's hue around the color wheel. Combined with "Enable Global Auto Color Shift", this drives the rainbow animation; combined with AudioLink it becomes audio-reactive.</span></li>
 <li><strong data-i18n="docs.index.strong.329">Saturation:</strong> <span data-i18n="docs.index.span.1212">Multiplies the color saturation (0=Grayscale, 1=Default, 2=Vibrant).</span></li>
@@ -457,7 +532,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1027">RGBA Color Masking &amp; Global Mask Routing</h3>
+<h3 data-i18n="docs.index.h3.1027" id="rgba-color-masking-and-global-mask-routing">RGBA Color Masking &amp; Global Mask Routing</h3>
 <p data-i18n="docs.index.p.1028">Enables 4 independent color zones and emissive channels driven by the RGBA channels of a single mask texture, allowing complete outfit recoloring and cross-module routing from one material.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.334">RGBA Color Mask:</strong> <span data-i18n="docs.index.span.1217">The mask texture isolating 4 distinct zones in R, G, B, and A channels.</span></li>
@@ -474,7 +549,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1029">Global Theme Colors</h3>
+<h3 data-i18n="docs.index.h3.1029" id="global-theme-colors">Global Theme Colors</h3>
 <p data-i18n="docs.index.p.1030">Defines 4 global master colors that drive a unified theme across multiple materials on an avatar or prop, so base color, outlines, rim, and emission can all pull from the same shared palette modulated by a single source — much like AudioLink's world theme system, but authored on your own materials.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.339">Theme Color 1 / 2 / 3 / 4:</strong> <span data-i18n="docs.index.span.1226">The four master color slots.</span></li>
@@ -488,13 +563,13 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1031">Color Correction</h3>
+<h3 data-i18n="docs.index.h3.1031" id="color-correction">Color Correction</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.342">Brightness, Contrast, Gamma:</strong> <span data-i18n="docs.index.span.1235">Standard color correction controls.</span></li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1032">Pixel Effects</h3>
+<h3 data-i18n="docs.index.h3.1032" id="pixel-effects">Pixel Effects</h3>
 <p data-i18n="docs.index.p.1033">Applies screen-space effects to create retro or stylized looks.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.343">Pixelation:</strong> <span data-i18n="docs.index.span.1236">Creates a blocky, low-resolution effect. The Amount controls the number of 'pixels' across the texture.</span></li>
@@ -502,7 +577,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1034">Color Mask</h3>
+<h3 data-i18n="docs.index.h3.1034" id="color-mask">Color Mask</h3>
 <p data-i18n="docs.index.p.1035">Uses a texture to mask the material's alpha (visibility), cutting out parts of the surface or restricting the material to specific regions.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.345">Color Mask (RGBA):</strong> <span data-i18n="docs.index.span.1238">The mask texture. Use its Tiling/Offset to position it, and the</span> <strong data-i18n="docs.index.strong.346">UV Set</strong> <span data-i18n="docs.index.span.1239">selector to pick between UV0 and UV1.</span></li>
@@ -514,7 +589,7 @@
 <h2 data-i18n="docs.index.h2.1230">Lighting</h2>
 <p data-i18n="docs.index.p.1231">Controls how the material reacts to lights in the scene. This section is disabled if a Surface Style like MatCap (only when its Blend Mode is <code>Override</code>), Skybox, or Galaxy is chosen, as they provide their own lighting.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1036">Lighting Modes</h3>
+<h3 data-i18n="docs.index.h3.1036" id="lighting-modes">Lighting Modes</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.348">Unlit:</strong> <span data-i18n="docs.index.span.1243">The material is not affected by scene lighting.</span></li>
 <li><strong data-i18n="docs.index.strong.349">Basic:</strong> <span data-i18n="docs.index.span.1244">A simple Lambertian lighting model.</span></li>
@@ -524,7 +599,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1037">Properties</h3>
+<h3 data-i18n="docs.index.h3.1037" id="lighting-properties">Properties</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.353">Shadow Color:</strong> <span data-i18n="docs.index.span.1248">The color of the unlit areas of the model. (Applies to Basic and Toon modes).</span></li>
 <li><strong data-i18n="docs.index.strong.354">Use Ambient Lighting:</strong> <span data-i18n="docs.index.span.1249">Toggles sampling of scene ambient light and reflection probes. Makes lighting more consistent across different worlds. (Applies to Basic, Toon, and Stylized PBR modes). While enabled, two extra selectors appear:</span> <strong data-i18n="docs.index.strong.355">Ambient Fallback Mode</strong> <span data-i18n="docs.index.span.1250">chooses the fallback lighting model (</span><code>Flat</code> <span data-i18n="docs.index.span.1251">or</span> <code>Gradient</code><span data-i18n="docs.index.span.1252">) used when High Quality Ambient (SH) is disabled or unavailable, and</span> <strong data-i18n="docs.index.strong.356">Shadowmask Fallback</strong> <span data-i18n="docs.index.span.1253">selects how baked shadowmask attenuation is applied (</span><code>Ambient</code> <span data-i18n="docs.index.span.1254">or</span> <code>Shadow Color</code>).</li>
@@ -532,7 +607,7 @@
 <li><strong data-i18n="docs.index.strong.360">Enable Custom Cubemap Reflection:</strong> <span data-i18n="docs.index.span.1258">Adds a user-provided</span> <strong data-i18n="docs.index.strong.361">Custom Cubemap</strong> <span data-i18n="docs.index.span.1259">that substitutes or supplements the scene's reflection probes, ideal for local reflections on props or as a fallback in probe-less worlds.</span> <strong data-i18n="docs.index.strong.362">Cubemap Tint</strong> <span data-i18n="docs.index.span.1260">colors the reflection,</span> <strong data-i18n="docs.index.strong.363">Roughness</strong> <span data-i18n="docs.index.span.1261">drives its blur (sampled as a mip level), and</span> <strong data-i18n="docs.index.strong.364">Blend Mode</strong> <span data-i18n="docs.index.span.1262">selects how it combines:</span> <code>Override Probes</code> <span data-i18n="docs.index.span.1263">always adds the cubemap reflection,</span> <code>Fallback When Probes Dark</code> <span data-i18n="docs.index.span.1264">only adds it where the existing probe contribution is nearly black, and</span> <code>Additive</code> <span data-i18n="docs.index.span.1265">stacks it on top unconditionally.</span> <strong data-i18n="docs.index.strong.365">Intensity</strong> <span data-i18n="docs.index.span.1266">scales the reflection brightness.</span></li>
 <li><strong data-i18n="docs.index.strong.366">Enable LTCGI (Area Light GI):</strong> <span data-i18n="docs.index.span.1267">Receives real-time Linearly Transformed Cosines (LTC) area-light global illumination from LTCGI-compatible VRChat worlds, letting the material react to polygonal area lights and video screens.</span> <strong data-i18n="docs.index.strong.367">Intensity</strong> <span data-i18n="docs.index.span.1268">scales the area-light diffuse and specular contribution, and</span> <strong data-i18n="docs.index.strong.368">Roughness Multiplier</strong> <span data-i18n="docs.index.span.1269">widens/blurs the specular highlight response. (Disabled on Medium/Low performance levels).</span></li>
 <li><strong data-i18n="docs.index.strong.369">Unity 6 URP Adaptive Probe Volumes (APV):</strong> <span class="badge badge-urp">URP</span> <span data-i18n="docs.index.span.1270">The shader compiles</span> <code>PROBE_VOLUMES_L1</code> / <code>PROBE_VOLUMES_L2</code> <span data-i18n="docs.index.span.1271">fragment variants so ambient lighting automatically participates in Unity 6 / URP 17+ Adaptive Probe Volumes, replacing a dense grid of light probes with a single volume that is refined where it matters. No inspector control is required — it activates automatically when APV is enabled in the scene.</span> <span class="badge badge-brp">BRP</span> <span data-i18n="docs.index.span.1272">Not applicable in the Built-in pipeline.</span></li>
-<li><strong data-i18n="docs.index.strong.370">Override Scene Light:</strong> <span data-i18n="docs.index.span.1273">Ignores the scene's main light and uses custom values instead. Useful for making the material look consistent regardless of the world's lighting.</span> <strong data-i18n="docs.index.strong.371">Light Direction</strong> <span data-i18n="docs.index.span.1274">sets the direction the light comes from,</span> <strong data-i18n="docs.index.strong.372">Light Color</strong> <span data-i18n="docs.index.span.1275">tints the light,</span> <strong data-i18n="docs.index.strong.373">Light Intensity</strong> <span data-i18n="docs.index.span.1276">controls its brightness, and</span> <strong data-i18n="docs.index.strong.374">Shadow Strength</strong> <span data-i18n="docs.index.span.1277">sets the darkness of the shadowed areas.</span></li>
+<li id="override-scene-light"><strong data-i18n="docs.index.strong.370">Override Scene Light:</strong> <span data-i18n="docs.index.span.1273">Ignores the scene's main light and uses custom values instead. Useful for making the material look consistent regardless of the world's lighting.</span> <strong data-i18n="docs.index.strong.371">Light Direction</strong> <span data-i18n="docs.index.span.1274">sets the direction the light comes from,</span> <strong data-i18n="docs.index.strong.372">Light Color</strong> <span data-i18n="docs.index.span.1275">tints the light,</span> <strong data-i18n="docs.index.strong.373">Light Intensity</strong> <span data-i18n="docs.index.span.1276">controls its brightness, and</span> <strong data-i18n="docs.index.strong.374">Shadow Strength</strong> <span data-i18n="docs.index.span.1277">sets the darkness of the shadowed areas.</span></li>
 <li><strong data-i18n="docs.index.strong.375">Min Light Brightness / Max Light Brightness:</strong> <span data-i18n="docs.index.span.1278">Clamp the environment and light brightness, so models never become pitch black in dark rooms (</span><strong data-i18n="docs.index.strong.376">Min Light Brightness</strong><span data-i18n="docs.index.span.1279">) or overexposed in bright worlds (</span><strong data-i18n="docs.index.strong.377">Max Light Brightness</strong>).</li>
 <li><strong data-i18n="docs.index.strong.378">Shade Shift Map:</strong> <span data-i18n="docs.index.span.1280">A grayscale texture (with a</span> <strong data-i18n="docs.index.strong.379">UV Set</strong> <span data-i18n="docs.index.span.1281">selector and</span> <strong data-i18n="docs.index.strong.380">Strength</strong><span data-i18n="docs.index.span.1282">) that biases the shadow threshold per-pixel, letting you fix clothing folds, muscle creases, and baked ambient occlusion that would otherwise be washed out by toon lighting.</span></li>
 <li><strong data-i18n="docs.index.strong.381">Monochrome Lighting:</strong> <span data-i18n="docs.index.span.1283">Desaturates scene lighting color so accurate skin tones are preserved regardless of strongly colored world lighting.</span></li>
@@ -542,7 +617,8 @@
 <li><strong data-i18n="docs.index.strong.385">VRSL (VRC Studio Lighting) GI:</strong> <span data-i18n="docs.index.span.1287">Real-time reception module for DMX stage fixtures, moving heads, lasers, and club lighting in VRSL-compatible VRChat worlds. Features controls for</span> <strong data-i18n="docs.index.strong.386">GI Intensity</strong>, <strong data-i18n="docs.index.strong.387">Direct Light Intensity</strong><span data-i18n="docs.index.span.1288">, and</span> <strong data-i18n="docs.index.strong.388">Specular Highlight Reception</strong>.</li>
 <li><strong data-i18n="docs.index.strong.389">Light Layers:</strong> <span class="badge badge-urp">URP</span> <span data-i18n="docs.index.span.1289">Evaluates fragment-level lighting masks matching Unity URP's Rendering Layers (Light Layers). Lights in URP only illuminate geometry whose Mesh Renderer shares at least one matching layer bit.</span> <span class="badge badge-brp">BRP</span> <span data-i18n="docs.index.span.1290">In the Built-in pipeline, all lights illuminate all layers normally.</span></li>
 </ul>
-<h4 data-i18n="docs.index.h4.1038">Toon Mode</h4>
+<h4 data-i18n="docs.index.h4.1038" id="toon-mode">Toon Mode</h4>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Lighting section in Toon mode" decoding="async" height="887" loading="lazy" src="media/inspector/lighting-toon.png" width="540"/><figcaption><span data-i18n="docs.index.span.2060">Lighting section in Toon mode.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.390">Threshold/Hardness:</strong> <span data-i18n="docs.index.span.1291">Controls the size and sharpness of the shadow edge.</span></li>
 <li><strong data-i18n="docs.index.strong.391">2nd Shadow Tier (Dual-Step Anime Cel Shadows):</strong> <span data-i18n="docs.index.span.1292">Adds a second, softer shadow layer beneath the first for multi-tone anime shading.</span> <strong data-i18n="docs.index.strong.392">2nd Shadow Color</strong> <span data-i18n="docs.index.span.1293">tints the intermediate shadow band,</span> <strong data-i18n="docs.index.strong.393">2nd Toon Threshold</strong> <span data-i18n="docs.index.span.1294">places its boundary, and</span> <strong data-i18n="docs.index.strong.394">2nd Toon Hardness</strong> <span data-i18n="docs.index.span.1295">controls how sharp its edge is.</span></li>
@@ -553,12 +629,12 @@
 <li><strong data-i18n="docs.index.strong.58">Highlight Color / Highlight Threshold:</strong> <span data-i18n="docs.index.span.1300">(4 tones) The color and boundary of the brightest band.</span></li>
 </ul>
 </li>
-<li><strong data-i18n="docs.index.strong.397">Step Specular:</strong> <span data-i18n="docs.index.span.1301">Turns the specular highlight into a hard, cartoon-style step.</span> <strong data-i18n="docs.index.strong.398">Step Specular Threshold</strong> <span data-i18n="docs.index.span.1302">places the highlight boundary and</span> <strong data-i18n="docs.index.strong.399">Step Specular Hardness</strong> <span data-i18n="docs.index.span.1303">controls its edge sharpness.</span></li>
+<li id="step-specular"><strong data-i18n="docs.index.strong.397">Step Specular:</strong> <span data-i18n="docs.index.span.1301">Turns the specular highlight into a hard, cartoon-style step.</span> <strong data-i18n="docs.index.strong.398">Step Specular Threshold</strong> <span data-i18n="docs.index.span.1302">places the highlight boundary and</span> <strong data-i18n="docs.index.strong.399">Step Specular Hardness</strong> <span data-i18n="docs.index.span.1303">controls its edge sharpness.</span></li>
 <li><strong data-i18n="docs.index.strong.400">Shadow Border:</strong> <span data-i18n="docs.index.span.1304">Offsets the Toon shadow line boundary, letting you grow or shrink the lit area without touching the threshold ramp.</span></li>
 <li><strong data-i18n="docs.index.strong.401">Shadow Blur:</strong> <span data-i18n="docs.index.span.1305">Softens the Toon shadow step for smoother cel transitions.</span></li>
 <li><strong data-i18n="docs.index.strong.402">AO Shadow Modulation:</strong> <span data-i18n="docs.index.span.1306">Uses the mesh's ambient occlusion map to push crevices and folds into shadow, grounding the cel shading.</span></li>
 </ul>
-<h4 data-i18n="docs.index.h4.1039">Stylized PBR Mode</h4>
+<h4 data-i18n="docs.index.h4.1039" id="stylized-pbr-mode">Stylized PBR Mode</h4>
 <ul>
 <li><strong data-i18n="docs.index.strong.403">Normal Map/Strength:</strong> <span data-i18n="docs.index.span.1307">Adds surface detail using a normal map texture. The</span> <strong data-i18n="docs.index.strong.404">Normal UV Set</strong> <span data-i18n="docs.index.span.1308">selector chooses between UV0 and UV1 for the normal map, and</span> <strong data-i18n="docs.index.strong.405">Flip Normal Map Y</strong> <span data-i18n="docs.index.span.1309">inverts the Green channel to convert between DirectX and OpenGL normal map formats.</span></li>
 <li><strong data-i18n="docs.index.strong.406">Detail Normal System (1–4 Layers + Bicubic):</strong> <span data-i18n="docs.index.span.1310">Micro-surface detail normal stacking supporting up to 4 independently scrolled and scaled detail normal layers:</span> <ul>
@@ -570,9 +646,11 @@
 </li>
 <li><strong data-i18n="docs.index.strong.407">Metallic/Smoothness:</strong> <span data-i18n="docs.index.span.1316">Controls the metal-like and shiny properties. These can be set with sliders or controlled by a</span> <strong data-i18n="docs.index.strong.408">Metallic/Gloss Map</strong><span data-i18n="docs.index.span.1317">, where the Red channel controls metallic and the Alpha channel controls smoothness.</span></li>
 <li><strong data-i18n="docs.index.strong.409">Workflow:</strong> <span data-i18n="docs.index.span.1318">Switches between the</span> <code>Metallic</code> <span data-i18n="docs.index.span.1319">workflow (Metallic/Smoothness sliders and Metallic/Gloss Map) and the</span> <code>Specular</code> <span data-i18n="docs.index.span.1320">workflow, which uses a</span> <strong data-i18n="docs.index.strong.410">Specular Color</strong> <span data-i18n="docs.index.span.1321">and a</span> <strong data-i18n="docs.index.strong.411">Specular Gloss Map</strong> <span data-i18n="docs.index.span.1322">(RGB = specular color, A = smoothness) instead.</span></li>
-<li><strong data-i18n="docs.index.strong.412">Enable Clear Coat:</strong> <span data-i18n="docs.index.span.1323">Adds a transparent protective layer over the surface, like clear coat paint.</span> <strong data-i18n="docs.index.strong.413">Strength</strong> <span data-i18n="docs.index.span.1324">controls how visible the coat is and</span> <strong data-i18n="docs.index.strong.414">Roughness</strong> <span data-i18n="docs.index.span.1325">how blurry its highlight is.</span></li>
+<li id="clear-coat"><strong data-i18n="docs.index.strong.412">Enable Clear Coat:</strong> <span data-i18n="docs.index.span.1323">Adds a transparent protective layer over the surface, like clear coat paint.</span> <strong data-i18n="docs.index.strong.413">Strength</strong> <span data-i18n="docs.index.span.1324">controls how visible the coat is and</span> <strong data-i18n="docs.index.strong.414">Roughness</strong> <span data-i18n="docs.index.span.1325">how blurry its highlight is.</span>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Clear Coat settings" decoding="async" height="62" loading="lazy" src="media/inspector/clear-coat.png" width="540"/><figcaption><span data-i18n="docs.index.span.2061">Clear Coat settings.</span></figcaption></figure></li>
 </ul>
-<h4 data-i18n="docs.index.h4.1040">Standard PBR Mode</h4>
+<h4 data-i18n="docs.index.h4.1040" id="standard-pbr-mode">Standard PBR Mode</h4>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Lighting section in Standard PBR mode" decoding="async" height="809" loading="lazy" src="media/inspector/lighting-standard-pbr.png" width="540"/><figcaption><span data-i18n="docs.index.span.2062">Lighting section in Standard PBR mode.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.415">Normal Map/Strength:</strong> <span data-i18n="docs.index.span.1326">Adds surface detail using a normal map texture. The</span> <strong data-i18n="docs.index.strong.416">Normal UV Set</strong> <span data-i18n="docs.index.span.1327">selector chooses between UV0 and UV1 for the normal map, and</span> <strong data-i18n="docs.index.strong.417">Flip Normal Map Y</strong> <span data-i18n="docs.index.span.1328">inverts the Green channel to convert between DirectX and OpenGL normal map formats.</span></li>
 <li><strong data-i18n="docs.index.strong.418">Detail Normal System (1–4 Layers + Bicubic):</strong> <span data-i18n="docs.index.span.1329">Identical 4-layer detail normal chaining with bicubic Catmull-Rom reconstruction and RNM blending.</span></li>
@@ -587,7 +665,8 @@
 <h5 data-i18n="docs.index.h5.1041">Subsurface Scattering (SSS)</h5>
 <p data-i18n="docs.index.p.1042">Simulates light passing through and scattering within thin or translucent objects, like skin, wax, or leaves. This adds a soft, glowing look from behind the object.</p>
 <ul>
-<li><strong data-i18n="docs.index.strong.430">Enable Subsurface Scattering:</strong> <span data-i18n="docs.index.span.1343">Toggles the effect on or off.</span></li>
+<li id="subsurface-scattering"><strong data-i18n="docs.index.strong.430">Enable Subsurface Scattering:</strong> <span data-i18n="docs.index.span.1343">Toggles the effect on or off.</span> <span data-i18n="docs.index.span.2083">Available in both Stylized PBR and Standard PBR modes.</span>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Subsurface Scattering settings" decoding="async" height="102" loading="lazy" src="media/inspector/subsurface-scattering.png" width="540"/><figcaption><span data-i18n="docs.index.span.2063">Subsurface Scattering settings.</span></figcaption></figure></li>
 <li><strong data-i18n="docs.index.strong.431">SSS Scale:</strong> <span data-i18n="docs.index.span.1344">The overall strength of the SSS effect.</span></li>
 <li><strong data-i18n="docs.index.strong.432">SSS Radius:</strong> <span data-i18n="docs.index.span.1345">Controls how far light scatters within the material. Larger values create a softer, more diffuse look.</span></li>
 <li><strong data-i18n="docs.index.strong.433">SSS Tint:</strong> <span data-i18n="docs.index.span.1346">The color tint applied to the scattered light.</span></li>
@@ -596,7 +675,7 @@
 <h5 data-i18n="docs.index.h5.1043">Anisotropic Reflection</h5>
 <p data-i18n="docs.index.p.1044">Creates stretched or elongated specular highlights, common on surfaces with a grain or direction, like brushed metal, hair, or vinyl records, with full stereo stability and comfort across VR headsets.</p>
 <ul>
-<li><strong data-i18n="docs.index.strong.436">Enable Anisotropic Reflection:</strong> <span data-i18n="docs.index.span.1349">Toggles the effect on or off.</span></li>
+<li id="anisotropic-reflection"><strong data-i18n="docs.index.strong.436">Enable Anisotropic Reflection:</strong> <span data-i18n="docs.index.span.1349">Toggles the effect on or off.</span></li>
 <li><strong data-i18n="docs.index.strong.437">Mode:</strong> <span data-i18n="docs.index.span.1350">Switches between</span> <code>Ward</code> <span data-i18n="docs.index.span.1351">(a general model) and</span> <code>Stretched-Blinn</code> <span data-i18n="docs.index.span.1352">(which uses a Tangent Map for more precise control).</span></li>
 <li><strong data-i18n="docs.index.strong.438">Roughness U / V:</strong> <span data-i18n="docs.index.span.1353">Controls the roughness (and thus the highlight size) independently along two perpendicular directions (U and V). The difference between these values creates the stretching.</span></li>
 <li><strong data-i18n="docs.index.strong.439">Specular Strength:</strong> <span data-i18n="docs.index.span.1354">The overall brightness of the anisotropic highlight.</span></li>
@@ -608,7 +687,7 @@
 <li><strong data-i18n="docs.index.strong.441">Enable Eye Iris Parallax:</strong> <span data-i18n="docs.index.span.1356">Simulates the depth and refraction of a pupil and iris beneath a transparent cornea.</span> <strong data-i18n="docs.index.strong.442">Iris UV Tiling</strong> <span data-i18n="docs.index.span.1357">scales the iris texture,</span> <strong data-i18n="docs.index.strong.443">Iris Depth Offset</strong> <span data-i18n="docs.index.span.1358">controls the simulated refraction depth, and</span> <strong data-i18n="docs.index.strong.444">Pupil Scale</strong> <span data-i18n="docs.index.span.1359">controls the size of the pupil.</span></li>
 <li><strong data-i18n="docs.index.strong.445">Enable Internal Parallax (Gems / Eye Layers):</strong> <span data-i18n="docs.index.span.1360">Simulates layered interior depth beneath glass, lenses, crystals, and anime irises by ray-offsetting a texture in tangent space across multiple sample steps, creating believable "thickness" under a transparent surface.</span> <strong data-i18n="docs.index.strong.446">Internal Layer Texture</strong> <span data-i18n="docs.index.span.1361">is the interior depth texture (with its own tiling/offset),</span> <strong data-i18n="docs.index.strong.447">Layer Color</strong> <span data-i18n="docs.index.span.1362">tints the interior layer and supports the global color-shift timeline,</span> <strong data-i18n="docs.index.strong.448">Depth Scale</strong> <span data-i18n="docs.index.span.1363">controls how deep the simulated interior sits,</span> <strong data-i18n="docs.index.strong.449">Sample Steps</strong> <span data-i18n="docs.index.span.1364">sets how many layers of light are traced through it (1–10),</span> <strong data-i18n="docs.index.strong.450">Layer Strength</strong> <span data-i18n="docs.index.span.1365">scales the layer's opacity, and</span> <strong data-i18n="docs.index.strong.451">Emissive Boost</strong> <span data-i18n="docs.index.span.1366">adds an internal glow to make the interior surface appear self-lit.</span></li>
 <li><strong data-i18n="docs.index.strong.452">Enable Skin Diffuse Wrap:</strong> <span data-i18n="docs.index.span.1367">Softens the lighting on curved organic surfaces by wrapping light around the shadow terminator, reducing harsh shadow lines.</span> <strong data-i18n="docs.index.strong.453">Wrap Amount</strong> <span data-i18n="docs.index.span.1368">controls how much light wraps around.</span></li>
-<li><strong data-i18n="docs.index.strong.454">Enable Hair Specular (Kajiya-Kay):</strong> <span data-i18n="docs.index.span.1369">Adds anisotropic highlights styled specifically for hair strands, producing bright streaks aligned with the hair direction.</span> <strong data-i18n="docs.index.strong.455">Specular Color</strong> <span data-i18n="docs.index.span.1370">tints the highlights,</span> <strong data-i18n="docs.index.strong.456">Primary/Secondary Exponent</strong> <span data-i18n="docs.index.span.1371">control the sharpness of the two highlight streaks,</span> <strong data-i18n="docs.index.strong.457">Specular Strength</strong> <span data-i18n="docs.index.span.1372">controls brightness, and</span> <strong data-i18n="docs.index.strong.458">Specular Shift</strong> <span data-i18n="docs.index.span.1373">moves the highlights along the hair direction.</span></li>
+<li id="hair-specular"><strong data-i18n="docs.index.strong.454">Enable Hair Specular (Kajiya-Kay):</strong> <span data-i18n="docs.index.span.1369">Adds anisotropic highlights styled specifically for hair strands, producing bright streaks aligned with the hair direction.</span> <strong data-i18n="docs.index.strong.455">Specular Color</strong> <span data-i18n="docs.index.span.1370">tints the highlights,</span> <strong data-i18n="docs.index.strong.456">Primary/Secondary Exponent</strong> <span data-i18n="docs.index.span.1371">control the sharpness of the two highlight streaks,</span> <strong data-i18n="docs.index.strong.457">Specular Strength</strong> <span data-i18n="docs.index.span.1372">controls brightness, and</span> <strong data-i18n="docs.index.strong.458">Specular Shift</strong> <span data-i18n="docs.index.span.1373">moves the highlights along the hair direction.</span></li>
 </ul>
 <h5 data-i18n="docs.index.h5.1047">SDF Face Shadows</h5>
 <p data-i18n="docs.index.p.1048">Clean, stable anime face shadows using a Signed Distance Field map instead of geometric normals — the standard technique for preventing messy shadow artifacts on stylized faces as the light direction changes.</p>
@@ -621,7 +700,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1049">Geometric Specular Anti-Aliasing</h3>
+<h3 data-i18n="docs.index.h3.1049" id="geometric-specular-anti-aliasing">Geometric Specular Anti-Aliasing</h3>
 <p data-i18n="docs.index.p.1050">Reduces specular shimmer, flickering, and firefly artifacts on dense meshes and detailed normal maps. This is especially valuable in VR headsets where high-frequency specular highlights cause distracting visual noise. Based on the Kaplanyan 2016 technique used in AAA game engines.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.464">Geometric Specular AA:</strong> <span data-i18n="docs.index.span.1379">Master toggle to enable the effect.</span></li>
@@ -635,8 +714,9 @@
 <h2 data-i18n="docs.index.h2.1232">Surface Style</h2>
 <p data-i18n="docs.index.p.1233">Defines the fundamental appearance of the surface, often overriding standard lighting. Only one style can be active at a time.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1051">Crystal</h3>
+<h3 data-i18n="docs.index.h3.1051" id="crystal">Crystal</h3>
 <p data-i18n="docs.index.p.1052">Simulates a refractive, crystalline material. It distorts the view of the texture behind it and can add chromatic aberration for a more stylized look. This effect works best with a base texture enabled.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Surface Style set to Crystal" decoding="async" height="113" loading="lazy" src="media/inspector/surface-crystal.png" width="540"/><figcaption><span data-i18n="docs.index.span.2064">Surface Style set to Crystal.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.467">Refraction Noise Map:</strong> <span data-i18n="docs.index.span.1385">A noise texture used to control the pattern of the distortion.</span></li>
 <li><strong data-i18n="docs.index.strong.468">Refraction Strength:</strong> <span data-i18n="docs.index.span.1386">Controls how strongly the texture is distorted.</span></li>
@@ -644,7 +724,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1053">Galaxy</h3>
+<h3 data-i18n="docs.index.h3.1053" id="galaxy">Galaxy</h3>
 <p data-i18n="docs.index.p.1054">Renders a texture that appears to have depth and moves independently of the object's rotation, creating a "window into space" effect. This style disables standard scene lighting.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.470">Galaxy Map:</strong> <span data-i18n="docs.index.span.1388">The texture to display inside the object.</span></li>
@@ -653,7 +733,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1055">Skybox</h3>
+<h3 data-i18n="docs.index.h3.1055" id="skybox">Skybox</h3>
 <p data-i18n="docs.index.p.1056">Reflects a cubemap from the inside of the object, making it look like a portal or a window into another environment. This style disables standard scene lighting.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.473">Skybox Cubemap:</strong> <span data-i18n="docs.index.span.1391">The cubemap texture to display.</span></li>
@@ -661,7 +741,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1057">Tri-Planar Mapping</h3>
+<h3 data-i18n="docs.index.h3.1057" id="tri-planar-mapping">Tri-Planar Mapping</h3>
 <p data-i18n="docs.index.p.1058">Projects a texture onto the model from the top, front, and side, then blends them together. This is an effective way to texture complex models without needing perfect UV maps, as it avoids stretching and seams.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.475">Tri-Planar Texture:</strong> <span data-i18n="docs.index.span.1393">The texture to project onto the model.</span></li>
@@ -670,8 +750,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1059">MatCap (Material Capture)</h3>
+<h3 data-i18n="docs.index.h3.1059" id="matcap">MatCap (Material Capture)</h3>
 <p data-i18n="docs.index.p.1060">A lighting technique that uses a special "material capture" texture to define an object's complete lighting and reflection information. It's a very fast way to get complex, stylized lighting effects. This style disables standard scene lighting.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Surface Style set to MatCap" decoding="async" height="215" loading="lazy" src="media/inspector/surface-matcap.png" width="540"/><figcaption><span data-i18n="docs.index.span.2065">Surface Style set to MatCap.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.478">MatCap Texture:</strong> <span data-i18n="docs.index.span.1396">The texture that defines the object's appearance. It's typically a sphere rendered with the desired lighting.</span></li>
 <li><strong data-i18n="docs.index.strong.479">Intensity:</strong> <span data-i18n="docs.index.span.1397">A multiplier to control the brightness of the MatCap effect.</span></li>
@@ -689,16 +770,18 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1063">Iridescence</h3>
+<h3 data-i18n="docs.index.h3.1063" id="iridescence">Iridescence</h3>
 <p data-i18n="docs.index.p.1064">Creates a rainbow-like effect where the color shifts based on the viewing angle, similar to a soap bubble or an oil slick. This effect is blended over the existing surface color and lighting.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Surface Style set to Iridescence" decoding="async" height="91" loading="lazy" src="media/inspector/surface-iridescence.png" width="540"/><figcaption><span data-i18n="docs.index.span.2066">Surface Style set to Iridescence.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.489">Color Scale:</strong> <span data-i18n="docs.index.span.1411">Controls the frequency of the color shifting across the surface. Higher values create more, tighter rainbow bands.</span></li>
 <li><strong data-i18n="docs.index.strong.490">Strength:</strong> <span data-i18n="docs.index.span.1412">Controls how strongly the iridescent color is blended with the base color.</span></li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1065">Glitter</h3>
+<h3 data-i18n="docs.index.h3.1065" id="glitter">Glitter</h3>
 <p data-i18n="docs.index.p.1066">Adds an animated, sparkling glitter effect to the surface. This effect is applied after lighting.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Surface Style set to Glitter" decoding="async" height="291" loading="lazy" src="media/inspector/surface-glitter.png" width="540"/><figcaption><span data-i18n="docs.index.span.2067">Surface Style set to Glitter.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.491">Blend Mode:</strong> <span data-i18n="docs.index.span.1413">Controls how the glitter is blended with the underlying surface color.</span> <code>Additive</code> <span data-i18n="docs.index.span.1414">can get very bright.</span> <code>Lerp</code> <span data-i18n="docs.index.span.1415">replaces the base color (emissive).</span> <code>Max</code> <span data-i18n="docs.index.span.1416">ensures it's never darker than the glitter color.</span></li>
 <li><strong data-i18n="docs.index.strong.1206">Color Mode:</strong> <span data-i18n="docs.index.span.2011">Selects how sparkle colors are generated:</span> <code>Solid</code> <span data-i18n="docs.index.span.2012">(single color with hue shift),</span> <code>Two Color Ramp</code> <span data-i18n="docs.index.span.2013">(independent per-sparkle blend between Color 1 and Color 2),</span> <code>Rainbow</code> <span data-i18n="docs.index.span.2014">(continuous spectrum cycle),</span> <code>Gradient Texture</code> <span data-i18n="docs.index.span.2015">(samples a color ramp texture),</span> <code>AudioLink Theme</code> <span data-i18n="docs.index.span.2016">(tinted by venue theme palette), or</span> <code>AudioLink Chord</code> <span data-i18n="docs.index.span.2017">(ColorChord musical note colors). Multi-color and AudioLink modes evaluate independent colors per sparkle and render with true hue vibrance.</span></li>
@@ -715,7 +798,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1067">Psychedelic</h3>
+<h3 data-i18n="docs.index.h3.1067" id="psychedelic">Psychedelic</h3>
 <p data-i18n="docs.index.p.1068">Applies domain-warped fractal Brownian motion (FBM) noise that creates flowing, organic color patterns. The effect is linked to the Global Color Shift timeline for synchronized color animation.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.499">Coordinate Space:</strong> <span data-i18n="docs.index.span.1427">Controls whether the pattern uses world space, screen space, or UV coordinates.</span></li>
@@ -724,8 +807,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1069">3D Fractal</h3>
+<h3 data-i18n="docs.index.h3.1069" id="fractal-3d">3D Fractal</h3>
 <p data-i18n="docs.index.p.1070">Renders a volumetric fractal using raymarching techniques. This creates complex, infinite 3D structures that appear to extend infinitely into the object. This style disables standard scene lighting and uses a custom raymarching renderer.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Surface Style set to 3D Fractal" decoding="async" height="315" loading="lazy" src="media/inspector/surface-fractal.png" width="540"/><figcaption><span data-i18n="docs.index.span.2068">Surface Style set to 3D Fractal.</span></figcaption></figure>
 <p class="warning"><strong data-i18n="docs.index.strong.903">Performance Warning:</strong> <span data-i18n="docs.index.span.1430">3D Fractal uses computationally intensive raymarching. Use low iteration counts (4-8) on mobile/VR platforms. Higher iterations can cause significant frame rate drops.</span></p>
 <h4 data-i18n="docs.index.h4.1071">Fractal Types</h4>
 <ul>
@@ -794,8 +878,9 @@
 <h2 data-i18n="docs.index.h2.1234">Overlays</h2>
 <p data-i18n="docs.index.p.1235">These effects are drawn on top of the base surface.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1076">Grid</h3>
+<h3 data-i18n="docs.index.h3.1076" id="grid">Grid</h3>
 <p data-i18n="docs.index.p.1077">Overlays a procedural geometric pattern on the surface. This is a powerful feature for creating sci-fi, holographic, or abstract visuals. It has many properties to customize its appearance and animation.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Grid overlay settings" decoding="async" height="418" loading="lazy" src="media/inspector/grid.png" width="540"/><figcaption><span data-i18n="docs.index.span.2069">Grid overlay settings.</span></figcaption></figure>
 <h4 data-i18n="docs.index.h4.1078">Core Properties</h4>
 <ul>
 <li><strong data-i18n="docs.index.strong.534">Pattern:</strong> <span data-i18n="docs.index.span.1473">Selects the geometric pattern from the list below. Each pattern may have unique behaviors or properties. The pattern library is shared with the Procedural Texture feature.</span></li>
@@ -851,7 +936,7 @@
 <p><span data-i18n="docs.index.span.1521">When</span> <strong data-i18n="docs.index.strong.904">Use Depth-Based Color</strong> <span data-i18n="docs.index.span.1522">is enabled, the grid will change its color when it gets close to another object's surface. This requires scene depth information and may not work with all rendering setups.</span> <strong data-i18n="docs.index.strong.905">Depth Color</strong> <span data-i18n="docs.index.span.1523">sets the target color, and</span> <strong data-i18n="docs.index.strong.906">Depth Range</strong> <span data-i18n="docs.index.span.1524">controls the distance of the effect.</span></p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1082">Grid Mask</h3>
+<h3 data-i18n="docs.index.h3.1082" id="grid-mask">Grid Mask</h3>
 <p data-i18n="docs.index.p.1083">Allows you to use a texture to mask the grid effect, controlling where it appears on your model. This is useful for restricting the pattern to specific areas without needing to create separate materials.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.578">Use Grid Mask:</strong> <span data-i18n="docs.index.span.1525">Toggles the masking feature on or off.</span></li>
@@ -860,7 +945,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1084">Detail Texture</h3>
+<h3 data-i18n="docs.index.h3.1084" id="detail-texture">Detail Texture</h3>
 <p data-i18n="docs.index.p.1085">Blends a secondary texture over the base material. This is a powerful way to add high-frequency detail, like fabric weaves, scratches, or grunge, without needing a high-resolution base texture.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.581">Detail Texture:</strong> <span data-i18n="docs.index.span.1528">The secondary texture to overlay. It's often a small, tileable grayscale texture.</span></li>
@@ -869,8 +954,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1086">Scanlines</h3>
+<h3 data-i18n="docs.index.h3.1086" id="scanlines">Scanlines</h3>
 <p data-i18n="docs.index.p.1087">Simulates the look of a retro CRT monitor by overlaying a pattern of dark, scrolling lines. This screen-space effect is great for holographic displays, computer terminals, or retro-futuristic aesthetics.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Scanlines settings" decoding="async" height="142" loading="lazy" src="media/inspector/scanlines.png" width="540"/><figcaption><span data-i18n="docs.index.span.2070">Scanlines settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.584">Color:</strong> <span data-i18n="docs.index.span.1532">The color and transparency of the scanlines. Typically black with some transparency.</span></li>
 <li><strong data-i18n="docs.index.strong.585">Density:</strong> <span data-i18n="docs.index.span.1533">How many scanlines appear on screen.</span></li>
@@ -880,14 +966,14 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1088">Interlacing</h3>
+<h3 data-i18n="docs.index.h3.1088" id="interlacing">Interlacing</h3>
 <p data-i18n="docs.index.p.1089">A simple but effective screen-space effect that darkens every other horizontal row of pixels on the screen. This mimics the look of old interlaced video signals, adding a subtle retro or lo-fi quality to the material.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.589">Intensity:</strong> <span data-i18n="docs.index.span.1537">How dark the interlaced lines are. A value of 1 will make them completely black.</span></li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1090">Noise/Grain</h3>
+<h3 data-i18n="docs.index.h3.1090" id="noise-grain">Noise/Grain</h3>
 <p data-i18n="docs.index.p.1091">Adds a layer of animated noise over the final color, similar to film grain or digital sensor noise. This screen-space effect can be used to add texture, break up smooth gradients, or enhance a lo-fi or cinematic aesthetic. The animation is stepped, not smooth, to better simulate digital noise.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.590">Color:</strong> <span data-i18n="docs.index.span.1538">The color of the noise particles. Can be a solid color or hue-shifted.</span></li>
@@ -896,7 +982,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1092">Wetness</h3>
+<h3 data-i18n="docs.index.h3.1092" id="wetness">Wetness</h3>
 <p data-i18n="docs.index.p.1093">Simulates a wet surface by darkening the material, boosting its smoothness, and optionally adding animated rain ripples. Great for rainy scenes, recently drenched props, or watery creatures.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.593">Wetness Strength:</strong> <span data-i18n="docs.index.span.1541">The overall intensity of the wet look.</span></li>
@@ -908,7 +994,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1094">Decal</h3>
+<h3 data-i18n="docs.index.h3.1094" id="decal">Decal</h3>
 <p data-i18n="docs.index.p.1095">Overlays up to three independent textures onto the surface like stickers or painted emblems, without needing a separate decal projection setup. Each decal layer has its own texture, UV set, blend mode, strength, and rotation, and can be enabled or disabled individually.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.599">Enable Decal 1/2/3:</strong> <span data-i18n="docs.index.span.1547">Toggles each decal layer on or off.</span></li>
@@ -921,7 +1007,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1096">PBR Decals</h3>
+<h3 data-i18n="docs.index.h3.1096" id="pbr-decals">PBR Decals</h3>
 <p data-i18n="docs.index.p.1097">Each of the shader's three decal layers now supports PBR (Physically Based Rendering) overrides. When enabled, a decal can modify the surface's normal map, metallic, and smoothness values in addition to its base color — allowing physically accurate decals like metallic bolts, bumped scars, leather patches, or glossy stickers.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.606">Affects PBR:</strong> <span data-i18n="docs.index.span.1555">Per-decal toggle that enables the PBR properties below.</span></li>
@@ -933,8 +1019,9 @@
 <p data-i18n="docs.index.p.1098">The PBR overrides are blended using the decal texture's alpha channel multiplied by the decal strength, so they naturally fade at the decal's edges. This feature is available on all three decal layers independently.</p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1099">Hologram</h3>
+<h3 data-i18n="docs.index.h3.1099" id="hologram">Hologram</h3>
 <p data-i18n="docs.index.p.1100">Simulates a sci-fi holographic projection with animated scanlines, a glowing edge rim, and subtle flicker. It is layered over the existing surface color and lighting, making it ideal for projected displays, force-field emitters, and holographic avatars.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Hologram settings" decoding="async" height="142" loading="lazy" src="media/inspector/hologram.png" width="540"/><figcaption><span data-i18n="docs.index.span.2071">Hologram settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.611">Hologram Color:</strong> <span data-i18n="docs.index.span.1560">The color tint of the hologram projection. Can be hue-shifted.</span></li>
 <li><strong data-i18n="docs.index.strong.612">Scanline Tiling:</strong> <span data-i18n="docs.index.span.1561">The density of the horizontal hologram scanlines.</span></li>
@@ -949,8 +1036,9 @@
 <h2 data-i18n="docs.index.h2.1236">Effects</h2>
 <p data-i18n="docs.index.p.1237">A collection of miscellaneous visual effects.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1101">Rim Glow</h3>
+<h3 data-i18n="docs.index.h3.1101" id="rim-glow">Rim Glow</h3>
 <p data-i18n="docs.index.p.1102">Adds a glow to the edges of the object based on the viewing angle (a Fresnel effect). This is great for highlighting silhouettes.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Rim Glow settings" decoding="async" height="224" loading="lazy" src="media/inspector/rim-glow.png" width="540"/><figcaption><span data-i18n="docs.index.span.2072">Rim Glow settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.617">Use Gradient:</strong> <span data-i18n="docs.index.span.1566">If enabled, uses a gradient texture to color the rim glow instead of a solid color.</span></li>
 <li><strong data-i18n="docs.index.strong.618">Color / Gradient:</strong> <span data-i18n="docs.index.span.1567">The color or texture ramp for the rim glow.</span></li>
@@ -962,7 +1050,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1103">Intersection Effect</h3>
+<h3 data-i18n="docs.index.h3.1103" id="intersection-effect">Intersection Effect</h3>
 <p data-i18n="docs.index.p.1104">Creates a visual effect where the material's surface interacts with other objects in the world. This is ideal for force fields, liquid surfaces, or soft proximity indicators. This effect requires the material's Render Mode to be set to Transparent or Additive.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.625">Mode:</strong> <span data-i18n="docs.index.span.1578">Selects the effect's behavior.</span> <code>Color</code> <span data-i18n="docs.index.span.1579">fades to a specified color at the intersection point.</span> <code>Alpha</code> <span data-i18n="docs.index.span.1580">fades out the object's transparency at the intersection point, creating a soft blend.</span></li>
@@ -971,7 +1059,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1105">Pulse</h3>
+<h3 data-i18n="docs.index.h3.1105" id="pulse">Pulse</h3>
 <p data-i18n="docs.index.p.1106">Adds a pulsing animation to the material's emission strength, creating a "heartbeat" effect.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.628">Speed:</strong> <span data-i18n="docs.index.span.1583">How fast the emission pulses.</span></li>
@@ -979,8 +1067,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1107">Outline</h3>
+<h3 data-i18n="docs.index.h3.1107" id="outline">Outline</h3>
 <p data-i18n="docs.index.p.1108">Renders a solid outline around the object. The outline will be correctly hidden by effects like Dissolve and Clipping Mask.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Outline settings" decoding="async" height="674" loading="lazy" src="media/inspector/outline.png" width="540"/><figcaption><span data-i18n="docs.index.span.2073">Outline settings.</span></figcaption></figure>
 <p class="warning" data-i18n="docs.index.p.1109">Performance Impact: Outlines can be expensive as they require an additional rendering pass.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.630">Color:</strong> <span data-i18n="docs.index.span.1585">The color of the outline.</span></li>
@@ -1007,8 +1096,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1113">Shell Fur Extrusion</h3>
+<h3 data-i18n="docs.index.h3.1113" id="shell-fur-extrusion">Shell Fur Extrusion</h3>
 <p data-i18n="docs.index.p.1114">Available when using the <code>FireRat/FireRatShader_Fur</code> <span class="badge badge-brp">BRP</span> or <code>FireRat/FireRatShader_URP_Fur</code> <span class="badge badge-urp">URP</span> master shader variants. Extrudes up to 8 concentric shell layers along vertex normals to render volumetric fur, velvet, and plush textures.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Shell Fur settings on the Fur shader" decoding="async" height="326" loading="lazy" src="media/inspector/shell-fur.png" width="540"/><figcaption><span data-i18n="docs.index.span.2074">Shell Fur settings on the Fur shader.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.655">Shell Layers:</strong> <span data-i18n="docs.index.span.1613">Number of active extruded shell passes (1 to 8). Inactive passes collapse to zero vertices with 0% rasterization cost.</span></li>
 <li><strong data-i18n="docs.index.strong.656">Length:</strong> <span data-i18n="docs.index.span.1614">Physical extrusion distance of the fur strands in object/world units.</span></li>
@@ -1022,7 +1112,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1115">Ripple Effect</h3>
+<h3 data-i18n="docs.index.h3.1115" id="ripple-effect">Ripple Effect</h3>
 <p data-i18n="docs.index.p.1116">Creates a concentric ripple effect that distorts vertices and color, emanating from a point in the object's UV space.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.664">Center (UV):</strong> <span data-i18n="docs.index.span.1622">The origin of the ripples in UV space (X,Y).</span></li>
@@ -1038,7 +1128,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1117">Vertex Animation Texture (VAT)</h3>
+<h3 data-i18n="docs.index.h3.1117" id="vertex-animation-texture">Vertex Animation Texture (VAT)</h3>
 <p data-i18n="docs.index.p.1118">Applies pre-baked vertex animation from a texture instead of a Skinned Mesh Renderer. Each row of the texture is a frame of the animation. Useful for pre-baked cloth, fluids, destruction, or any heavily animated mesh that needs to stay performant.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.672">Position Texture:</strong> <span data-i18n="docs.index.span.1630">The VAT texture containing the position offsets. Each row is a frame.</span></li>
@@ -1048,7 +1138,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1119">PS1 Retro Vertex Snapping</h3>
+<h3 data-i18n="docs.index.h3.1119" id="ps1-retro-vertex-snapping">PS1 Retro Vertex Snapping</h3>
 <p data-i18n="docs.index.p.1120">Quantizes vertex positions to a coarse grid to emulate the classic wobbly PlayStation 1 aesthetic. Great for retro-styled avatars and worlds, especially combined with pixelation and affine-style textures.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.676">Enable PS1 Vertex Snapping:</strong> <span data-i18n="docs.index.span.1634">Master toggle.</span></li>
@@ -1057,7 +1147,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1121">LookAt Billboarding</h3>
+<h3 data-i18n="docs.index.h3.1121" id="lookat-billboarding">LookAt Billboarding</h3>
 <p data-i18n="docs.index.p.1122">Dynamically rotates mesh vertices so the object always faces the active camera — useful for sprites, eye highlights, floating companions, and particles that should never be seen edge-on. Applied consistently in shadow, depth, and motion-vector passes.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.679">Enable LookAt Billboarding:</strong> <span data-i18n="docs.index.span.1639">Master toggle.</span></li>
@@ -1066,7 +1156,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1123">Screen-Space Refraction</h3>
+<h3 data-i18n="docs.index.h3.1123" id="screen-space-refraction">Screen-Space Refraction</h3>
 <p data-i18n="docs.index.p.1124"><span class="badge badge-urp">URP Only</span> Provides true screen-space refraction for glass, water, and crystal-like materials by sampling the camera's opaque texture with UV offsets derived from the surface normal. This creates realistic distortion of the background scene visible through transparent geometry.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.682">Screen Refraction:</strong> <span data-i18n="docs.index.span.1643">Master toggle to enable the effect.</span></li>
@@ -1076,7 +1166,7 @@
 <p class="warning"><strong data-i18n="docs.index.strong.907">URP Only:</strong> <span data-i18n="docs.index.span.1647">This feature uses URP's</span> <code>_CameraOpaqueTexture</code> <span data-i18n="docs.index.span.1648">and is not available in the Built-in Render Pipeline. The BRP variant has the properties for material compatibility but the effect is a no-op. Ensure "Opaque Texture" is enabled in your URP Renderer Settings.</span></p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1125">Emission Pulse</h3>
+<h3 data-i18n="docs.index.h3.1125" id="emission-pulse">Emission Pulse</h3>
 <p data-i18n="docs.index.p.1126">Animates the emission intensity over time using various waveform patterns, creating pulsing, breathing, or flashing glow effects without requiring any animation controllers or scripts.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.685">Emission Pulse:</strong> <span data-i18n="docs.index.span.1649">Master toggle to enable pulsing emission.</span></li>
@@ -1086,7 +1176,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1127">Outline Width Map</h3>
+<h3 data-i18n="docs.index.h3.1127" id="outline-width-map">Outline Width Map</h3>
 <p data-i18n="docs.index.p.1128">Allows per-vertex control over the outline thickness using a texture map. This enables artistic effects like thicker outlines on silhouette edges and thinner outlines on interior details.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.689">Outline Width Map:</strong> <span data-i18n="docs.index.span.1657">A grayscale texture where white = full outline width and black = zero outline width. Multiplied with the global Outline Width value.</span></li>
@@ -1098,8 +1188,9 @@
 <h2 data-i18n="docs.index.h2.1238">Glitches</h2>
 <p data-i18n="docs.index.p.1239">Effects designed to create digital distortion and glitch aesthetics.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1130">Vertex Distortion</h3>
+<h3 data-i18n="docs.index.h3.1130" id="vertex-distortion">Vertex Distortion</h3>
 <p data-i18n="docs.index.p.1131">Displaces the model's vertices in various patterns to create a glitchy shape animation. Each mode has unique properties for Strength, Speed, and other controls.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Glitches section with Vertex Distortion enabled" decoding="async" height="171" loading="lazy" src="media/inspector/vertex-distortion.png" width="540"/><figcaption><span data-i18n="docs.index.span.2075">Glitches section with Vertex Distortion enabled.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.690">Sine X/Z:</strong> <span data-i18n="docs.index.span.1658">Creates a sine wave that travels along an axis.</span></li>
 <li><strong data-i18n="docs.index.strong.691">Ripple:</strong> <span data-i18n="docs.index.span.1659">Creates a circular ripple emanating from the object's center.</span></li>
@@ -1116,8 +1207,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1132">Glitch Flicker</h3>
+<h3 data-i18n="docs.index.h3.1132" id="glitch-flicker">Glitch Flicker</h3>
 <p data-i18n="docs.index.p.1133">Applies a flickering effect to the material's color using different patterns. Strength controls how dark the flicker gets.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Glitch Flicker settings" decoding="async" height="202" loading="lazy" src="media/inspector/glitch-flicker.png" width="540"/><figcaption><span data-i18n="docs.index.span.2076">Glitch Flicker settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.702">Random/Pulse:</strong> <span data-i18n="docs.index.span.1670">Simple flickering patterns.</span></li>
 <li><strong data-i18n="docs.index.strong.703">Scanlines:</strong> <span data-i18n="docs.index.span.1671">A dark line that scrolls across the screen.</span></li>
@@ -1131,7 +1223,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1134">Transparency Glitch</h3>
+<h3 data-i18n="docs.index.h3.1134" id="transparency-glitch">Transparency Glitch</h3>
 <p data-i18n="docs.index.p.1135">Causes the Glitch Flicker effect to also affect the material's transparency, creating see-through glitches. This is a sub-option of Glitch Flicker.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.716">Strength:</strong> <span data-i18n="docs.index.span.1686">How much the flicker affects transparency.</span></li>
@@ -1142,8 +1234,9 @@
 <h2 data-i18n="docs.index.h2.1240">Transitions</h2>
 <p data-i18n="docs.index.p.1241">Effects used to make a material appear or disappear.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1136">Proximity Effects</h3>
+<h3 data-i18n="docs.index.h3.1136" id="proximity-effects">Proximity Effects</h3>
 <p data-i18n="docs.index.p.1137">Triggers visual surface transformations when approaching or moving away from a reference position (the active VR camera / player head, the object pivot, or a custom world position).</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Proximity Effect settings" decoding="async" height="142" loading="lazy" src="media/inspector/proximity-effects.png" width="540"/><figcaption><span data-i18n="docs.index.span.2077">Proximity Effect settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.717">Enable Proximity Effect:</strong> <span data-i18n="docs.index.span.1687">Master toggle.</span></li>
 <li><strong data-i18n="docs.index.strong.718">Proximity Mode:</strong> <span data-i18n="docs.index.span.1688">Selects the reference position:</span> <ul>
@@ -1166,14 +1259,14 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1138">Dithered Transparency</h3>
+<h3 data-i18n="docs.index.h3.1138" id="dithered-transparency">Dithered Transparency</h3>
 <p data-i18n="docs.index.p.1139">Fades the object out with a Bayer-matrix screen-door stipple instead of alpha blending. Dithered cutouts behave like opaque geometry, so they avoid transparency sorting artifacts — ideal for transparent fabrics, hair, and cross-fades in VR.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.724">Dither Strength:</strong> <span data-i18n="docs.index.span.1697">Controls how aggressively the pattern dissolves the surface (</span><code>0</code> <span data-i18n="docs.index.span.1698">= sharp cutout,</span> <code>1</code> <span data-i18n="docs.index.span.1699">= full stipple).</span></li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1140">Chroma Key</h3>
+<h3 data-i18n="docs.index.h3.1140" id="chroma-key">Chroma Key</h3>
 <p data-i18n="docs.index.p.1141">Masks out a specific color from the final output, creating a green-screen or blue-screen effect. Useful for live streaming overlays, video production, or creative transparency effects.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.725">Chroma Key:</strong> <span data-i18n="docs.index.span.1700">Master toggle to enable chroma keying.</span></li>
@@ -1182,7 +1275,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1142">Distance Fade</h3>
+<h3 data-i18n="docs.index.h3.1142" id="distance-fade">Distance Fade</h3>
 <p data-i18n="docs.index.p.1143">Fades the object out based on its distance from the camera. Useful for level-of-detail (LOD) systems.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.728">Start Distance:</strong> <span data-i18n="docs.index.span.1703">The distance from the camera where the fade begins.</span></li>
@@ -1190,7 +1283,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1144">Near Camera Fade</h3>
+<h3 data-i18n="docs.index.h3.1144" id="near-camera-fade">Near Camera Fade</h3>
 <p data-i18n="docs.index.p.1145">Fades the object out when the camera gets too close, preventing transparent materials from filling the view or clipping through the player's head in VR.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.730">Near Camera Fade:</strong> <span data-i18n="docs.index.span.1705">Toggles the proximity fade.</span></li>
@@ -1199,8 +1292,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1146">Dissolve</h3>
+<h3 data-i18n="docs.index.h3.1146" id="dissolve">Dissolve</h3>
 <p data-i18n="docs.index.p.1147">Makes the object appear or disappear using a procedural pattern, often with a glowing edge.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Dissolve settings (Noise mode)" decoding="async" height="244" loading="lazy" src="media/inspector/dissolve.png" width="540"/><figcaption><span data-i18n="docs.index.span.2078">Dissolve settings (Noise mode).</span></figcaption></figure>
 <h4 data-i18n="docs.index.h4.1148">Common Properties</h4>
 <ul>
 <li><strong data-i18n="docs.index.strong.733">Amount:</strong> <span data-i18n="docs.index.span.1708">The progress of the dissolve effect (0-1).</span></li>
@@ -1218,8 +1312,9 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1150">Planar Wipe</h3>
+<h3 data-i18n="docs.index.h3.1150" id="planar-wipe">Planar Wipe</h3>
 <p data-i18n="docs.index.p.1151">Reveals the object with a smooth, directional wipe across its surface. Great for dramatic entrances.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Planar Wipe settings" decoding="async" height="102" loading="lazy" src="media/inspector/planar-wipe.png" width="540"/><figcaption><span data-i18n="docs.index.span.2079">Planar Wipe settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.748">Direction:</strong> <span data-i18n="docs.index.span.1723">The direction the wipe travels across the object.</span></li>
 <li><strong data-i18n="docs.index.strong.749">Progress:</strong> <span data-i18n="docs.index.span.1724">The progress of the wipe effect.</span></li>
@@ -1228,15 +1323,16 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1152">Vertex Collapse</h3>
+<h3 data-i18n="docs.index.h3.1152" id="vertex-collapse">Vertex Collapse</h3>
 <p data-i18n="docs.index.p.1153">Animates the model's vertices collapsing into its center point, as if being sucked into a black hole.</p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: Vertex Collapse settings" decoding="async" height="102" loading="lazy" src="media/inspector/vertex-collapse.png" width="540"/><figcaption><span data-i18n="docs.index.span.2080">Vertex Collapse settings.</span></figcaption></figure>
 <ul>
 <li><strong data-i18n="docs.index.strong.752">Amount:</strong> <span data-i18n="docs.index.span.1727">The progress of the collapse effect (0=Normal, 1=Collapsed).</span></li>
 <li><strong data-i18n="docs.index.strong.753">Animate:</strong> <span data-i18n="docs.index.span.1728">Automatically animates the collapse amount over time. You can choose between a simple Ping-Pong/Loop mode or an Advanced Timing mode that gives you full control over the animation cycle.</span></li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1154">Effect Distance LOD</h3>
+<h3 data-i18n="docs.index.h3.1154" id="effect-distance-lod">Effect Distance LOD</h3>
 <p data-i18n="docs.index.p.1155">Automatically disables expensive shader effects when the object is far from the camera, providing a significant performance boost for distant objects without requiring Unity LOD Groups. The transition is smooth and configurable.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.754">Effect LOD Start Distance:</strong> <span data-i18n="docs.index.span.1729">The camera distance at which effects begin to fade out.</span></li>
@@ -1249,7 +1345,7 @@
 <h2 data-i18n="docs.index.h2.1242">Advanced Settings</h2>
 <p data-i18n="docs.index.p.1243">Low-level controls for rendering and performance.</p>
 <article>
-<h3 data-i18n="docs.index.h3.1157">Parallax Mapping</h3>
+<h3 data-i18n="docs.index.h3.1157" id="parallax-mapping">Parallax Mapping</h3>
 <p data-i18n="docs.index.p.1158">Uses a height map to create the illusion of depth and relief on a flat surface. This can add significant detail without extra geometry, but can be performance-intensive.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.756">Height Map:</strong> <span data-i18n="docs.index.span.1731">A grayscale texture where white is high and black is low.</span></li>
@@ -1258,7 +1354,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1159">Clipping Mask</h3>
+<h3 data-i18n="docs.index.h3.1159" id="clipping-mask">Clipping Mask</h3>
 <p data-i18n="docs.index.p.1160">Uses a texture to perform a hard clip on the material, making parts of it invisible. Unlike transparency, this is an all-or-nothing effect that works in any render mode.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.761">Clipping Mask:</strong> <span data-i18n="docs.index.span.1736">The texture used for clipping.</span></li>
@@ -1268,7 +1364,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1161">Render States</h3>
+<h3 data-i18n="docs.index.h3.1161" id="render-states">Render States</h3>
 <ul>
 <li><strong data-i18n="docs.index.strong.765">Culling:</strong> <span data-i18n="docs.index.span.1740">Controls which faces of the mesh are rendered (Back, Front, or Off for double-sided).</span></li>
 <li><strong data-i18n="docs.index.strong.766">Shadow Culling:</strong> <span data-i18n="docs.index.span.1741">Independent cull mode for the ShadowCaster pass.</span> <code>Back</code> <span data-i18n="docs.index.span.1742">(default) is faster for closed meshes; use</span> <code>Off</code> <span data-i18n="docs.index.span.1743">for double-sided shadows on hair, cloth, or foliage.</span></li>
@@ -1277,7 +1373,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1162">Camera &amp; Mirror Visibility</h3>
+<h3 data-i18n="docs.index.h3.1162" id="camera-and-mirror-visibility">Camera &amp; Mirror Visibility</h3>
 <p data-i18n="docs.index.p.1163">Controls from which cameras the material is rendered. Useful for hiding parts from mirrors, showing elements only in VR headset eyes, or creating desktop/stream-exclusive effects. Enforced consistently across the main pass as well as shadow, depth-normals, depth-only, and motion-vector passes.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.769">Visibility Mode:</strong> <code>Show Always</code>, <code>Hide In Mirrors</code>, <code>Show Only In Mirrors</code>, <code>VR Headset Eyes Only</code><span data-i18n="docs.index.span.1748">, or</span> <code>Desktop Stream Spectator Only</code>.</li>
@@ -1286,7 +1382,7 @@
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1164">Stencil Buffer</h3>
+<h3 data-i18n="docs.index.h3.1164" id="stencil-buffer">Stencil Buffer</h3>
 <p><span data-i18n="docs.index.span.1753">The</span> <strong data-i18n="docs.index.strong.908">Stencil Buffer</strong> <span data-i18n="docs.index.span.1754">is an invisible GPU "mask layer" for your screen. Think of it like</span> <strong data-i18n="docs.index.strong.909">painter's masking tape applied pixel-by-pixel onto the screen</strong>.</p>
 <p data-i18n="docs.index.p.1165">Out of the box, the default settings (<code>Comp = Always</code>, <code>Pass = Keep</code>) do nothing—the shader simply renders normally on every pixel. But when configured, it allows materials on different objects to communicate with each other visually without touching C# code.</p>
 <h4 data-i18n="docs.index.h4.1166">Common Use Cases (Why It's There)</h4>
@@ -1363,7 +1459,7 @@
 </ol>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1170">Render State Overrides</h3>
+<h3 data-i18n="docs.index.h3.1170" id="render-state-overrides">Render State Overrides</h3>
 <p data-i18n="docs.index.p.1171">Advanced hardware-level rendering controls for specialized effects and workflows. These settings directly control GPU pipeline state and should be used with care.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.777">Depth Test (ZTest):</strong> <span data-i18n="docs.index.span.1778">Controls when a pixel passes the depth test. Default is</span> <code>LEqual</code> <span data-i18n="docs.index.span.1779">(standard rendering). Set to</span> <code>Always</code> <span data-i18n="docs.index.span.1780">to render through walls (useful for VR overlays, HUD elements, X-ray glasses). Other options:</span> <code>Less</code>, <code>Greater</code>, <code>GEqual</code>, <code>Equal</code>, <code>NotEqual</code>, <code>Never</code>.</li>
@@ -1372,7 +1468,7 @@
 <p class="warning"><strong data-i18n="docs.index.strong.910">Warning:</strong> <span data-i18n="docs.index.span.1784">Changing</span> <strong data-i18n="docs.index.strong.911">ZTest</strong> <span data-i18n="docs.index.span.1785">to anything other than</span> <code>LEqual</code> <span data-i18n="docs.index.span.1786">can cause objects to render in unexpected order or appear through walls. Use with care, especially in VR.</span></p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1172">VRChat Fallback Tag</h3>
+<h3 data-i18n="docs.index.h3.1172" id="vrchat-fallback-tag">VRChat Fallback Tag</h3>
 <p data-i18n="docs.index.p.1173">Sets the material's <code>VRCFallback</code> override tag, which controls which standard shader VRChat swaps in when custom shaders are blocked by safety settings (e.g. when a viewer hides custom shaders or on incompatible platforms).</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.779">VRChat Fallback Tag:</strong> <span data-i18n="docs.index.span.1787">Selects the fallback shader (</span><code>Toon</code>, <code>Standard</code>, <code>Unlit</code>, <code>VertexLit</code>, <code>Cutout</code>, <code>Transparent</code><span data-i18n="docs.index.span.1788">, and more).</span></li>
@@ -1380,14 +1476,14 @@
 <p data-i18n="docs.index.p.1174">Picking a fallback that matches your render mode keeps the avatar looking reasonable instead of flashing white for users with custom shaders hidden.</p>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1175">HSV Mask</h3>
+<h3 data-i18n="docs.index.h3.1175" id="hsv-mask">HSV Mask</h3>
 <p data-i18n="docs.index.p.1176">A texture-driven mask that controls where HSV (Hue, Saturation, Value) color adjustments are applied. This allows selective color grading on specific parts of the material while leaving other areas untouched.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.780">HSV Mask Texture:</strong> <span data-i18n="docs.index.span.1789">A grayscale texture where white areas receive the full HSV adjustment and black areas are unaffected.</span></li>
 </ul>
 </article>
 <article>
-<h3 data-i18n="docs.index.h3.1177">Shader Diagnostic &amp; Debug View HUD</h3>
+<h3 data-i18n="docs.index.h3.1177" id="shader-diagnostic-and-debug-view-hud">Shader Diagnostic &amp; Debug View HUD</h3>
 <p data-i18n="docs.index.p.1178">Enables real-time in-viewport inspection of intermediate lighting and shading buffers for debugging material setups and spotting rendering issues.</p>
 <ul>
 <li><strong data-i18n="docs.index.strong.781">Enable Shader Debug View:</strong> <span data-i18n="docs.index.span.1790">Master toggle enabling diagnostic buffer isolation.</span></li>
@@ -1448,14 +1544,14 @@
 <li><strong data-i18n="docs.index.strong.805">Treble:</strong> <span data-i18n="docs.index.span.1824">Hi-hats, cymbals, acoustic transients, and high-frequency "air" (approx. 2,000–20,000 Hz).</span></li>
 <li><strong data-i18n="docs.index.strong.806">Strength:</strong> <span data-i18n="docs.index.span.1825">Multiplier for the audio response (0 = disabled/no modulation, higher values amplify response).</span></li>
 </ul>
-<h4 data-i18n="docs.index.h4.1203">AudioLink Chronotensity Beat-Sync</h4>
+<h4 data-i18n="docs.index.h4.1203" id="audiolink-beat-sync">AudioLink Chronotensity Beat-Sync</h4>
 <p data-i18n="docs.index.p.1984">Drives shader animation timelines with AudioLink's tempo-tracked Chronotensity clock instead of standard continuous time, synchronizing effects directly to musical tempo (BPM).</p>
 <ul>
 <li><strong><span data-i18n="docs.index.span.2031">Enable Beat-Sync Time (</span><code>_AL_UseChrono</code>):</strong> <span data-i18n="docs.index.span.2030">Master toggle enabling the Chronotensity beat clock. The inspector automatically warns if a feature's beat-sync toggle is active while master beat-sync time is off, offering a 1-click quick-fix button.</span></li>
 <li><strong data-i18n="docs.index.strong.1220">Chronotensity Mode:</strong> <span data-i18n="docs.index.span.2032">Selects the beat division speed: 4 forward tempo speeds (1/4 to 2× speed) and 4 inverse speeds (3/4 to 1/2 speed).</span></li>
 <li><strong data-i18n="docs.index.strong.1221">Supported Features:</strong> <span data-i18n="docs.index.span.2033">Dedicated beat-sync toggles are available on Color Shift, Procedural Textures, Glitter, Grid Overlay, Ripple, Scanlines, Flicker, Dissolve, Outline Pulse/Shift, 3D Fractal, and Emission Pulse.</span></li>
 </ul>
-<h4 data-i18n="docs.index.h4.1204">AudioLink World Theme Color Tinting</h4>
+<h4 data-i18n="docs.index.h4.1204" id="audiolink-theme-colors">AudioLink World Theme Color Tinting</h4>
 <p><span data-i18n="docs.index.span.2034">When enabled (</span><code>_UseALThemeColor</code><span data-i18n="docs.index.span.2035">), dynamically tints the material using the venue's active AudioLink theme palette broadcast by world systems. You can selectively route theme tinting to</span> <strong data-i18n="docs.index.strong.1222">Albedo</strong>, <strong data-i18n="docs.index.strong.1223">Emission</strong><span data-i18n="docs.index.span.2036">, or</span> <strong data-i18n="docs.index.strong.1224">Both</strong> <span data-i18n="docs.index.span.2037">across all four venue theme colors.</span></p>
 </article>
 <article id="audiolink-global-controls">
@@ -1523,6 +1619,7 @@
 <article id="audio-spectrum-visualizer">
 <h3 data-i18n="docs.index.h3.1190">Audio Spectrum Visualizer</h3>
 <p><span data-i18n="docs.index.span.1868">The</span> <strong data-i18n="docs.index.strong.928">Audio Spectrum Visualizer</strong> <span data-i18n="docs.index.span.1869">performs real-time Discrete Fourier Transform (DFT / FFT) frequency analysis directly on the shader, breaking incoming sound down into individual frequency bins from sub-bass to treble.</span></p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: AudioLink Visualizers section with the Spectrum enabled" decoding="async" height="921" loading="lazy" src="media/inspector/audio-spectrum.png" width="540"/><figcaption><span data-i18n="docs.index.span.2081">AudioLink Visualizers section with the Spectrum enabled.</span></figcaption></figure>
 <h4 data-i18n="docs.index.h4.1191">Spectrum Modes</h4>
 <table>
 <thead>
@@ -1594,7 +1691,7 @@
 <li><strong data-i18n="docs.index.strong.825">Enable Audio Spectrum:</strong> <span data-i18n="docs.index.span.1882">Master toggle for the spectrum visualizer. When disabled, all spectrum shader code is completely compiled out.</span></li>
 <li><strong data-i18n="docs.index.strong.826">Spectrum Mode:</strong> <span data-i18n="docs.index.span.2038">Selects between</span> <code>EQ Bars</code>, <code>Continuous Curve</code>, <code>Radial</code>, <code>Waterfall</code>, <code>Band History Strip</code><span data-i18n="docs.index.span.2039">, and</span> <code>VU Meter</code>.</li>
 <li><strong data-i18n="docs.index.strong.1231">Dual Trace:</strong> <span data-i18n="docs.index.span.2040">When enabled (</span><code>_AudioSpectrumDualLine</code><span data-i18n="docs.index.span.2041">), renders floating peak-hold caps above EQ bars or superimposes an unsmoothed, live transient line over smoothed continuous curves.</span></li>
-<li><strong data-i18n="docs.index.strong.1232">Add VU Meter (VU Meter Overlay):</strong> <span data-i18n="docs.index.span.2042">Draws a standalone 4-band LED ladder meter (</span><code>_AudioVUOverlay</code><span data-i18n="docs.index.span.2043">) on top of any active spectrum mode. Equipped with its own Position (Offset), Scale, Rotation, Intensity, and Color Mode (Broadcast green/amber/red segments or Low/High gradient).</span></li>
+<li id="vu-meter-overlay"><strong data-i18n="docs.index.strong.1232">Add VU Meter (VU Meter Overlay):</strong> <span data-i18n="docs.index.span.2042">Draws a standalone 4-band LED ladder meter (</span><code>_AudioVUOverlay</code><span data-i18n="docs.index.span.2043">) on top of any active spectrum mode. Equipped with its own Position (Offset), Scale, Rotation, Intensity, and Color Mode (Broadcast green/amber/red segments or Low/High gradient).</span></li>
 <li><strong data-i18n="docs.index.strong.827">Gain:</strong> <span data-i18n="docs.index.span.1885">Signal amplification multiplier (0.1–10). Useful for boosting sensitivity on quiet audio tracks or soft world audio.</span></li>
 <li><strong data-i18n="docs.index.strong.828">Logarithmic Scale:</strong> <span data-i18n="docs.index.span.1886">When enabled, applies a power-scaled perceptual curve to frequency distribution. This expands the bass and mid-range regions while compressing high treble, mirroring human auditory perception.</span></li>
 <li><strong data-i18n="docs.index.strong.829">Mirror:</strong> <span data-i18n="docs.index.span.1887">Folds the spectrum horizontally around the center (0.5), creating a symmetrical dual-wing visualizer.</span></li>
@@ -1606,6 +1703,7 @@
 <article id="audio-waveform-visualizer">
 <h3 data-i18n="docs.index.h3.1193">Audio Waveform Visualizer</h3>
 <p><span data-i18n="docs.index.span.1891">The</span> <strong data-i18n="docs.index.strong.929">Audio Waveform Visualizer</strong> <span data-i18n="docs.index.span.1892">renders the raw time-domain audio signal (oscilloscope trace, waveform ribbon, circular polar loop, stereo Lissajous figures, or 3D vertex mesh displacement), capturing instantaneous sound wave amplitude and phase.</span></p>
+<figure class="inspector-shot"><img alt="FireRatShader material inspector: AudioLink Visualizers section with the Waveform enabled" decoding="async" height="915" loading="lazy" src="media/inspector/audio-waveform.png" width="540"/><figcaption><span data-i18n="docs.index.span.2082">AudioLink Visualizers section with the Waveform enabled.</span></figcaption></figure>
 <h4 data-i18n="docs.index.h4.1194">Waveform Modes</h4>
 <table>
 <thead>
@@ -1786,6 +1884,7 @@
 <p><strong data-i18n="docs.index.strong.945">Purpose &amp; Workflow:</strong></p>
 <ul>
 <li data-i18n="docs.index.li.946">Spawns an in-editor simulation rig with an audio source and spectrum analyzer, allowing you to preview, tune, and test all audio-reactive features (pulses, spectrum visualizers, waveforms, audio-driven glitter) directly inside the Unity Editor without entering Play Mode or launching VRChat.</li>
+<li data-i18n="docs.index.li.1991">Runs a port of AudioLink's own analysis and publishes the same AudioLink texture, with the AudioLink component's settings and defaults, so effects look the same in the editor as with AudioLink in a world. It steps aside when a real AudioLink controller is in the scene.</li>
 <li data-i18n="docs.index.li.1987">Supports dynamic audio sample rates and automatically cleans up its shader data in standalone and player builds.</li>
 </ul>
 </article>
@@ -1831,8 +1930,14 @@
 </ul>
 </article>
 </section>
+</div>
 </main>
 </div>
+<footer class="site-footer">
+<p><span data-i18n="docs.index.span.2055">FireRatShader is a product of</span> <strong data-i18n="docs.index.strong.1238">FireRat</strong>. <span data-i18n="docs.index.span.2056">© 2026. All rights reserved.</span></p>
+<p><a data-i18n="docs.index.a.982" href="../">Home</a> · <a data-i18n="docs.index.a.983" href="showcase.html">Showcase</a> · <a data-i18n="docs.index.a.984" href="https://github.com/FireRat666/FireRatShader">GitHub</a> · <a data-i18n="docs.index.a.985" href="https://www.patreon.com/FireRat">Patreon</a></p>
+</footer>
+<a aria-label="Back to top" class="back-to-top" href="#main">↑</a>
 <script src="script.js"></script>
 </body>
 </html>

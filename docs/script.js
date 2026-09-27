@@ -1,15 +1,17 @@
 /*
- * FireRatShader Docs — Language Switcher
+ * FireRatShader site script (landing page + docs).
  *
- * Loads JSON translation files from i18n/<locale>.json and swaps the
- * innerHTML of every [data-i18n] element. Falls back to the current
+ * Language switcher: loads JSON translation files from docs/i18n/<locale>.json and
+ * swaps the innerHTML of every [data-i18n] element. Falls back to the current
  * content if a key is missing.
- *
- * Features:
  *   - Dropdown selector (14 languages).
  *   - Browser-language detection with a dismissible banner prompt.
  *   - localStorage persistence (one-click "always use this language").
  *   - Hash-stable: no page reloads, no URL change, history preserved.
+ *
+ * Page UI: docs contents drawer on small screens, active-section highlighting,
+ * click-to-copy heading links, back-to-top button, and hover-to-play media tiles
+ * (a still image loads first; the animated WebP only loads on hover/focus).
  */
 
 (function () {
@@ -175,7 +177,7 @@
 
     // ---- Existing smooth-scroll code (kept intact) ----
     function initSmoothScroll() {
-        const links = document.querySelectorAll('nav a');
+        const links = document.querySelectorAll('nav a[href^="#"]');
         function safeQuerySelector(selector) {
             if (!selector || typeof selector !== 'string' || !selector.startsWith('#') || selector === '#') {
                 return null;
@@ -196,14 +198,120 @@
         const hash = location.hash;
         const targetElement = safeQuerySelector(hash);
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Deep links jump straight to their section on load; only in-page clicks animate.
+            targetElement.scrollIntoView({ behavior: 'instant', block: 'start' });
             history.replaceState(null, '', hash);
         }
+    }
+
+    // ---- Docs: contents drawer (small screens) ----
+    function initDocsDrawer() {
+        const toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.docs-sidebar');
+        if (!toggle || !sidebar) return;
+        const setOpen = (open) => {
+            document.body.classList.toggle('nav-open', open);
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        };
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setOpen(!document.body.classList.contains('nav-open'));
+        });
+        sidebar.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+        document.addEventListener('click', (e) => {
+            if (document.body.classList.contains('nav-open') && !sidebar.contains(e.target)) setOpen(false);
+        });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+    }
+
+    // ---- Docs: highlight the sidebar link for the section being read ----
+    function initScrollSpy() {
+        const sidebar = document.querySelector('.docs-sidebar');
+        if (!sidebar) return;
+        const targets = [];
+        sidebar.querySelectorAll('a[href^="#"]').forEach(a => {
+            const el = document.getElementById(a.getAttribute('href').slice(1));
+            if (el) targets.push({ el, link: a });
+        });
+        if (!targets.length) return;
+        // Document order, so a nested AudioLink article wins over its parent section once reached.
+        targets.sort((x, y) => x.el.compareDocumentPosition(y.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1);
+        let current = null, queued = false;
+        const update = () => {
+            queued = false;
+            let hit = targets[0];
+            for (const t of targets) {
+                if (t.el.getBoundingClientRect().top <= 120) hit = t; else break;
+            }
+            if (hit === current) return;
+            current = hit;
+            sidebar.querySelectorAll('a.active').forEach(a => a.classList.remove('active'));
+            hit.link.classList.add('active');
+            const parentList = hit.link.closest('ul ul');
+            if (parentList) parentList.parentElement.querySelector(':scope > a').classList.add('active');
+            // Keep the active link in view inside the desktop sidebar without moving the page.
+            if (getComputedStyle(sidebar).position !== 'sticky') return;
+            const r = hit.link.getBoundingClientRect(), sb = sidebar.getBoundingClientRect();
+            if (r.top < sb.top + 40 || r.bottom > sb.bottom - 40) sidebar.scrollTop += r.top - sb.top - sb.height / 3;
+        };
+        window.addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+        update();
+    }
+
+    // ---- Docs: click a heading to copy a link to it ----
+    function initHeadingLinks() {
+        const main = document.querySelector('.docs-main');
+        if (!main) return;
+        main.querySelectorAll('h2, h3, h4').forEach(h => {
+            const id = h.id || (h.tagName === 'H2' && h.parentElement.id) ||
+                       (h.parentElement.tagName === 'ARTICLE' && h.parentElement.id) || '';
+            if (!id) return;
+            h.classList.add('linkable');
+            h.title = 'Copy link to this section';
+            h.addEventListener('click', (e) => {
+                if (e.target.closest('a')) return;
+                const url = location.origin + location.pathname + '#' + id;
+                history.replaceState(null, '', '#' + id);
+                const done = () => {
+                    h.classList.add('copied');
+                    setTimeout(() => h.classList.remove('copied'), 1400);
+                };
+                if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, () => {});
+            });
+        });
+    }
+
+    function initBackToTop() {
+        const btn = document.querySelector('.back-to-top');
+        if (!btn) return;
+        const onScroll = () => btn.classList.toggle('show', window.scrollY > 900);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
+
+    // ---- Landing: hover/focus a tile to play its animation ----
+    function initMediaTiles() {
+        document.querySelectorAll('.media-tile[data-webp]').forEach(tile => {
+            const img = tile.querySelector('img');
+            if (!img) return;
+            const still = img.getAttribute('src');
+            const play = () => { img.src = tile.dataset.webp; };
+            const stop = () => { img.src = still; };
+            tile.addEventListener('mouseenter', play);
+            tile.addEventListener('mouseleave', stop);
+            tile.addEventListener('focus', play);
+            tile.addEventListener('blur', stop);
+        });
     }
 
     // ---- Boot ----
     document.addEventListener('DOMContentLoaded', async () => {
         initSmoothScroll();
+        initDocsDrawer();
+        initScrollSpy();
+        initHeadingLinks();
+        initBackToTop();
+        initMediaTiles();
         injectSwitcher();
 
         // Decide which locale to use.

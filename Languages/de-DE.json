@@ -14,6 +14,7 @@
     "lockAndOptimize": "Sperren & Optimieren",
     "savePreset": "Voreinstellung speichern...",
     "loadPreset": "Voreinstellung laden...",
+    "browsePreset": "Durchsuchen...",
     "copy": "Kopieren",
     "paste": "Einfügen",
     "reset": "Zurücksetzen",
@@ -677,6 +678,10 @@
       "label": "AO Schattenmodulation",
       "tooltip": "Moduliert die Cel-Schattengrenze unter Verwendung der Umgebungsokklusionskarte."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "Schatten nutzen Schattenfarbe",
+      "tooltip": "Wenn aktiv, zeigen Echtzeitschatten auf diesem Material die Schattenfarbe, wie die unbeleuchtete Seite. Deaktivieren für den älteren Look, bei dem Schatten die beleuchtete Farbe Richtung Schwarz abdunkeln."
+    },
     "_NormalMap": {
       "label": "Normal-Map",
       "tooltip": "Fügt Oberflächendetails mit einer normalen Karte hinzu."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "Rauheit",
       "tooltip": "Rauheitswert."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "Occlusion Map (G)",
@@ -1133,6 +1142,10 @@
       "label": "Richtung",
       "tooltip": "Die Welt-Raum-Richtung die sich auflösende Welle reist."
     },
+    "_DissolveWaveOffset": {
+      "label": "Wellenversatz",
+      "tooltip": "Verschiebt die Mitte der Welle entlang der Richtung, in Metern vom Pivot des Objekts. Bei Objekten mit Pivot am Boden (die meisten Avatare) etwa auf die halbe Höhe setzen, damit Menge 0 bis 1 das ganze Objekt überstreicht."
+    },
     "_DissolveOrigin": {
       "label": "Weltursprung",
       "tooltip": "Der Welt-Raum-Mittelpunkt, von dem die Auflösung ausgeht."
@@ -1158,8 +1171,8 @@
       "tooltip": "Die Breite der Leuchtkante auf der Löselinie."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "Blockgröße",
-      "tooltip": "Die Größe der Glitch-Blöcke im Bildschirmbereich."
+      "label": "Blockdichte",
+      "tooltip": "Wie viele Glitch-Blöcke in einen Meter (oder eine UV-Einheit) passen. Höhere Werte ergeben kleinere Blöcke."
     },
     "_DissolveEdgeColor": {
       "label": "Randfarbe",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "Fractal3DMode",
-      "tooltip": ""
+      "label": "Fraktaltyp",
+      "tooltip": "Der 3D prozedurale raymarched fraktale Algorithmus."
     },
     "_FractalRepetitionMode": {
-      "label": "FractalRepetitionMode",
-      "tooltip": ""
+      "label": "Wiederholungsmodus",
+      "tooltip": "Steuert die Domänenwiederholungs- und Clipping-Grenzen des Fraktals. Single ist am schnellsten, Endless ist am schwersten auf GPU."
     },
     "_FractalScale": {
       "label": "Waage",
       "tooltip": "Skala des Fraktals im Objektraum."
     },
     "_FractalAnimMode": {
-      "label": "FractalAnimMode",
-      "tooltip": ""
+      "label": "Animationsmodus",
+      "tooltip": "Wählen Sie das 3D-Rotations- oder pulsierende Animationsmuster für das Fraktal aus."
     },
     "_FractalSpeed": {
       "label": "Animationsgeschwindigkeit",
@@ -1606,7 +1619,7 @@
       "tooltip": "Multiplikator für die Farbtonverschiebung des Fraktals basierend auf der Tiefe."
     },
     "_FractalUseAutoShift": {
-      "label": "FractalUseAutoShift",
+      "label": "Verwenden Sie Auto Hue Shift",
       "tooltip": "Verschiebt kontinuierlich die fraktale Grundfarbe im Laufe der Zeit."
     },
     "_FractalAutoShiftSpeed": {
@@ -2141,6 +2154,10 @@
       "label": "Intensität",
       "tooltip": "Die Stärke des Flimmerns (wie dunkel es wird)."
     },
+    "_FlickerSpace": {
+      "label": "Glitch-Raum",
+      "tooltip": "Objekt: Das Glitch-Muster haftet am Mesh, bleibt also stehen, wenn sich Kamera oder Kopf bewegen, und ist in beiden VR-Augen gleich. Bildschirm: Das Muster ist an die Ansicht gebunden (das Aussehen vor 1.2.1)."
+    },
     "_AL_FlickerBand": {
       "label": "AudioLink Band",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "Dual Trace (Peak + Smooth)",
       "tooltip": "Rendert schwimmende Peak-Caps über EQ-Bars oder überlagert eine sekundäre schnelle, instationäre Roh-Peak-Linie über der geglätteten Kurve."
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "Peakdicke",
+      "tooltip": "Dicke der Peaklinie (Kurve) oder des Caps (EQ Bars), getrennt von der Hauptlinie."
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "Peakfarbe",
+      "tooltip": "Farbe der Dual Trace Peaks: Hochfrequente Farbe (Farbe 2), Hue Shift (durchläuft den Regenbogen mit Hue Shift Speed, verteilt entlang des Spektrums) oder Match Spectrum (die eigene Farbe des Spektrums bei jeder Frequenz)."
     },
     "_AudioSpectrumLogScale": {
       "label": "Logarithmische Skala",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "Intensität der FE",
       "tooltip": "Helligkeit des Meters."
+    },
+    "_AudioVUPeakHold": {
+      "label": "Peak Hold",
+      "tooltip": "Wie lange jede Peak Cap auf dem lautesten aktuellen Level sitzt, bevor sie fällt, in Sekunden. 0 = Kappen beginnen sofort zu fallen."
     },
     "_UseAudioWaveform": {
       "label": "Aktivieren von Audio Waveform",

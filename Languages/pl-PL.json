@@ -14,6 +14,7 @@
     "lockAndOptimize": "Zablokuj i zoptymalizuj",
     "savePreset": "Zapisz preset...",
     "loadPreset": "Wczytaj preset...",
+    "browsePreset": "Przeglądaj...",
     "copy": "Kopiuj",
     "paste": "Wklej",
     "reset": "Resetuj",
@@ -677,6 +678,10 @@
       "label": "Modulacja cienia AO",
       "tooltip": "Modulizuje granicę cienia cel używając mapy okluzji otoczenia."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "Cienie w kolorze cienia",
+      "tooltip": "Po włączeniu cienie czasu rzeczywistego rzucane na ten materiał mają kolor cienia, tak jak nieoświetlona strona. Wyłącz, aby uzyskać starszy wygląd, w którym cienie przyciemniają oświetlony kolor w stronę czerni."
+    },
     "_NormalMap": {
       "label": "Mapa normalnych",
       "tooltip": "Dodaje szczegóły powierzchni przy użyciu normalnej mapy."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "Niepewność",
       "tooltip": "Wartość bezwzględna."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "Mapa okluzji (G)",
@@ -1133,6 +1142,10 @@
       "label": "Kierunek",
       "tooltip": "Świat-przestrzeń kierunek rozpuścić fala podróżuje."
     },
+    "_DissolveWaveOffset": {
+      "label": "Przesunięcie fali",
+      "tooltip": "Przesuwa środek fali wzdłuż kierunku, w metrach od punktu obrotu obiektu. Dla obiektów z punktem obrotu u podstawy (większość awatarów) ustaw około połowy wysokości, aby Ilość od 0 do 1 objęła cały obiekt."
+    },
     "_DissolveOrigin": {
       "label": "Pochodzenie świata",
       "tooltip": "Światowy-kosmiczny punkt, z którego wydziela się rozpuszczanie."
@@ -1158,8 +1171,8 @@
       "tooltip": "Szerokość świecącej krawędzi linii rozpuszczania."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "Rozmiar bloku",
-      "tooltip": "Rozmiar bloków w przestrzeni ekranu."
+      "label": "Gęstość bloków",
+      "tooltip": "Ile bloków glitcha mieści się w jednym metrze (lub jednej jednostce UV). Wyższe wartości dają mniejsze bloki."
     },
     "_DissolveEdgeColor": {
       "label": "Kolor krawędzi",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "_ Fractal3DMode",
-      "tooltip": ""
+      "label": "Typ fraktalu",
+      "tooltip": "Trójwymiarowy procesowy algorytm raymarched fractal."
     },
     "_FractalRepetitionMode": {
-      "label": "_ FractalRepetitionMode",
-      "tooltip": ""
+      "label": "Tryb powtarzania",
+      "tooltip": "Kontroluje powtarzanie się domen fraktalu i ograniczenie obcinania. Pojedynczy jest najszybszy, Nieskończony jest najcięższy na GPU."
     },
     "_FractalScale": {
       "label": "Skala",
       "tooltip": "Skala fraktalu w przestrzeni obiektu."
     },
     "_FractalAnimMode": {
-      "label": "_ FractaliAnimMode",
-      "tooltip": ""
+      "label": "Tryb animacji",
+      "tooltip": "Wybór trójwymiarowej rotacji lub pulsującego wzoru animacji fraktalu."
     },
     "_FractalSpeed": {
       "label": "Prędkość animacji",
@@ -1606,7 +1619,7 @@
       "tooltip": "Mnożnik zmiany barwy fraktalu w oparciu o głębokość."
     },
     "_FractalUseAutoShift": {
-      "label": "_ FractalUseAutoShift",
+      "label": "Użyj automatycznej zmiany barwy",
       "tooltip": "Nieustannie zmienia kolor bazy fraktalnej z czasem."
     },
     "_FractalAutoShiftSpeed": {
@@ -2141,6 +2154,10 @@
       "label": "Intensywność",
       "tooltip": "Siła migotania (jak ciemno się robi)."
     },
+    "_FlickerSpace": {
+      "label": "Przestrzeń glitcha",
+      "tooltip": "Obiekt: wzór glitcha jest przypięty do siatki, więc nie przesuwa się przy ruchu kamery lub głowy i jest taki sam dla obu oczu w VR. Ekran: wzór jest przypięty do widoku (wygląd sprzed 1.2.1)."
+    },
     "_AL_FlickerBand": {
       "label": "Pasmo AudioLink",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "Podwójny ślad (szczyt + gładki)",
       "tooltip": "Wypożyczalnie pływające szczyty powyżej prętów EQ lub nakładają drugorzędną, szybko surową, przejściową linię szczytową nad wygładzoną krzywą."
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "Grubość szczytowa",
+      "tooltip": "Grubość linii szczytowej Dual Trace (krzywa) lub nasadki (bary EQ), oddzielona od linii głównej."
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "Kolor szczytowy",
+      "tooltip": "Kolor szczytów Dual Trace: High Frequency Color (kolor 2), Hue Shift (cykle przez tęczę przy prędkości Hue Shift, rozłożone wzdłuż spektrum) lub Match Spectrum (kolor własny widma przy każdej częstotliwości)."
     },
     "_AudioSpectrumLogScale": {
       "label": "Skala logarytmiczna",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "Intensywność VU",
       "tooltip": "Jasność miernika."
+    },
+    "_AudioVUPeakHold": {
+      "label": "Szczyt Hold",
+      "tooltip": "Jak długo każdy szczyt czapka siedzi na najgłośniejszym ostatnim poziomie przed upadkiem, w sekundach. 0 = czapki zaczynają spadać od razu."
     },
     "_UseAudioWaveform": {
       "label": "Włącz program audio Waveform",

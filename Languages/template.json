@@ -15,6 +15,7 @@
     "lockAndOptimize": "Lock & Optimize",
     "savePreset": "Save Preset...",
     "loadPreset": "Load Preset...",
+    "browsePreset": "Browse...",
     "copy": "Copy",
     "paste": "Paste",
     "reset": "Reset",
@@ -678,6 +679,10 @@
       "label": "AO Shadow Modulation",
       "tooltip": "Modulates the cel shadow boundary using the ambient occlusion map."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "Shadows Use Shadow Color",
+      "tooltip": "When on, real-time shadows cast onto this material show the Shadow Color, like the unlit side. Turn off for the older look, where cast shadows darken the lit color toward black."
+    },
     "_NormalMap": {
       "label": "Normal Map",
       "tooltip": "Adds surface detail using a normal map."
@@ -793,6 +798,10 @@
     "_Roughness": {
       "label": "Roughness",
       "tooltip": "Roughness value."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "Occlusion Map (G)",
@@ -1134,6 +1143,10 @@
       "label": "Direction",
       "tooltip": "The world-space direction the dissolve wave travels."
     },
+    "_DissolveWaveOffset": {
+      "label": "Wave Offset",
+      "tooltip": "Moves the middle of the wave along Direction, in metres from the object's pivot. For objects whose pivot is at the base (most avatars), set it to about half the height so Amount 0 to 1 sweeps the whole object."
+    },
     "_DissolveOrigin": {
       "label": "World Origin",
       "tooltip": "The world-space center point from which the dissolve emanates."
@@ -1159,8 +1172,8 @@
       "tooltip": "The width of the glowing edge on the dissolve line."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "Block Size",
-      "tooltip": "The size of the glitch blocks in screen space."
+      "label": "Block Density",
+      "tooltip": "How many glitch blocks fit in one metre (or one UV unit). Higher values give smaller blocks."
     },
     "_DissolveEdgeColor": {
       "label": "Edge Color",
@@ -1571,20 +1584,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "_Fractal3DMode",
-      "tooltip": ""
+      "label": "Fractal Type",
+      "tooltip": "The 3D procedural raymarched fractal algorithm."
     },
     "_FractalRepetitionMode": {
-      "label": "_FractalRepetitionMode",
-      "tooltip": ""
+      "label": "Repetition Mode",
+      "tooltip": "Controls the fractal's domain repetition and clipping limits. Single is fastest, Endless is heaviest on GPU."
     },
     "_FractalScale": {
       "label": "Scale",
       "tooltip": "Scale of the fractal within the object space."
     },
     "_FractalAnimMode": {
-      "label": "_FractalAnimMode",
-      "tooltip": ""
+      "label": "Animation Mode",
+      "tooltip": "Selects the 3D rotation or pulsing animation pattern for the fractal."
     },
     "_FractalSpeed": {
       "label": "Animation Speed",
@@ -1607,7 +1620,7 @@
       "tooltip": "Multiplier for the fractal's hue shift based on depth."
     },
     "_FractalUseAutoShift": {
-      "label": "_FractalUseAutoShift",
+      "label": "Use Auto Hue Shift",
       "tooltip": "Continuously shifts the fractal base color over time."
     },
     "_FractalAutoShiftSpeed": {
@@ -2142,6 +2155,10 @@
       "label": "Intensity",
       "tooltip": "The strength of the flicker (how dark it gets)."
     },
+    "_FlickerSpace": {
+      "label": "Glitch Space",
+      "tooltip": "Object: the glitch pattern is fixed to the mesh, so it stays put when the camera or your head moves and matches in both VR eyes. Screen: the pattern is fixed to the view (the look before 1.2.1)."
+    },
     "_AL_FlickerBand": {
       "label": "AudioLink Band",
       "tooltip": ""
@@ -2156,7 +2173,7 @@
     },
     "_FlickerBlockSize": {
       "label": "Block Size",
-      "tooltip": "The size of the glitch blocks."
+      "tooltip": "The size of the glitch blocks (pixels in Screen space, 1/512 m in Object space: 32 is about 6 cm)."
     },
     "_FlickerDirection": {
       "label": "Direction",
@@ -2164,7 +2181,7 @@
     },
     "_FlickerDensity": {
       "label": "Density",
-      "tooltip": "The number of glitch scanlines."
+      "tooltip": "The number of glitch scanlines (per screen height in Screen space, per metre in Object space)."
     },
     "_FlickerLineThickness": {
       "label": "Thickness",
@@ -2244,7 +2261,15 @@
     },
     "_AudioSpectrumDualLine": {
       "label": "Dual Trace (Peak + Smooth)",
-      "tooltip": "Renders floating peak caps above EQ bars, or overlays a secondary fast raw transient peak line over the smoothed curve."
+      "tooltip": "Renders floating peak caps above EQ bars, or a peak line over the smoothed curve. In Temporal Buffer mode they hold and then fall slowly (Peak Hold / Peak Fall on the smoothing CRT's material); otherwise they follow the live level, since AudioLink keeps no per-frequency history. They never sit below the smoothed trace."
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "Peak Thickness",
+      "tooltip": "Thickness of the Dual Trace peak line (Curve) or cap (EQ Bars), separate from the main line."
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "Peak Color",
+      "tooltip": "Colour of the Dual Trace peaks: High Frequency Color (Color 2), Hue Shift (cycles through the rainbow at Hue Shift Speed, spread along the spectrum), or Match Spectrum (the spectrum's own colour at each frequency)."
     },
     "_AudioSpectrumLogScale": {
       "label": "Logarithmic Scale",
@@ -2354,6 +2379,10 @@
       "label": "VU Intensity",
       "tooltip": "Brightness of the meter."
     },
+    "_AudioVUPeakHold": {
+      "label": "Peak Hold",
+      "tooltip": "How long each peak cap sits at the loudest recent level before falling, in seconds. 0 = caps start falling straight away."
+    },
     "_UseAudioWaveform": {
       "label": "Enable Audio Waveform",
       "tooltip": "Renders a real-time waveform/oscilloscope visualization driven by AudioLink."
@@ -2440,7 +2469,7 @@
     },
     "_AudioWaveformTemporal": {
       "label": "Waveform Temporal Smoothing",
-      "tooltip": "Strength of temporal smoothing applied to the waveform (Temporal Buffer mode)."
+      "tooltip": "Blend between the live waveform and the CRT-smoothed waveform (0 = live, 1 = fully buffered). Both are lined up on the same zero crossing, so low values give a steady triggered trace (Temporal Buffer mode)."
     },
     "_FRSmoothedAudio": {
       "label": "Smoothed Audio CRT",
@@ -3544,7 +3573,7 @@
     },
     "_AL_ScanlineTarget": {
       "label": "Scanline AudioLink Target",
-      "tooltip": "Selects which scanline parameter AudioLink modulates (Thickness, Density, Alpha)."
+      "tooltip": "Selects which scanline parameter AudioLink modulates (Thickness, Density, Alpha). With Alpha, the lines fade in with the band up to the Scanline Color's alpha, so lower that alpha to limit how strongly they flash."
     },
     "_AL_ColorShiftUsesChrono": {
       "label": "Color Shift Beat-Sync",

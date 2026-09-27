@@ -14,6 +14,7 @@
     "lockAndOptimize": "鎖定並最佳化",
     "savePreset": "儲存預設...",
     "loadPreset": "載入預設...",
+    "browsePreset": "瀏覽...",
     "copy": "複製",
     "paste": "貼上",
     "reset": "重設",
@@ -677,6 +678,10 @@
       "label": "AO 影子模擬",
       "tooltip": "用環境封鎖地圖來移動 ."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "投影使用陰影顏色",
+      "tooltip": "開啟後，投射到此材質上的即時陰影會顯示為陰影顏色，與背光面一致。關閉則使用舊的效果，即陰影會把受光顏色壓暗到接近黑色。"
+    },
     "_NormalMap": {
       "label": "法線貼圖",
       "tooltip": "使用普通地圖新增表面細節 ."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "粗糙",
       "tooltip": "粗糙值."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "占星圖 (G)",
@@ -1133,6 +1142,10 @@
       "label": "方向",
       "tooltip": "世界太空方向 溶解波行走."
     },
+    "_DissolveWaveOffset": {
+      "label": "波浪偏移",
+      "tooltip": "沿方向移動波浪的中心，單位為距物體軸心的公尺數。對於軸心在底部的物體（大多數模型），設為約一半高度，使數量 0 到 1 覆蓋整個物體。"
+    },
     "_DissolveOrigin": {
       "label": "世界起源",
       "tooltip": "溶解物從何而來的世界-太空中心點."
@@ -1158,8 +1171,8 @@
       "tooltip": "溶解線上的發光邊緣的寬度 ."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "區塊大小",
-      "tooltip": "螢幕空間的故障區塊大小 ."
+      "label": "方塊密度",
+      "tooltip": "每公尺（或每個 UV 單位）容納的故障方塊數量。數值越大，方塊越小。"
     },
     "_DissolveEdgeColor": {
       "label": "邊緣顏色",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "分形3Dmode",
-      "tooltip": ""
+      "label": "分形型態",
+      "tooltip": "3D 程序光學分形算法 。"
     },
     "_FractalRepetitionMode": {
-      "label": "重复模式( F)",
-      "tooltip": ""
+      "label": "重复模式",
+      "tooltip": "控制分形的域重复和剪切限制。 單身是最快的,無盡是GPU最重的."
     },
     "_FractalScale": {
       "label": "比例",
       "tooltip": "物体空間內分形的大小 ."
     },
     "_FractalAnimMode": {
-      "label": "分形Anim模式( F)",
-      "tooltip": ""
+      "label": "動畫模式",
+      "tooltip": "選擇分形的 3D 旋轉或脉動動式 。"
     },
     "_FractalSpeed": {
       "label": "動畫速度",
@@ -1606,8 +1619,8 @@
       "tooltip": "乘以分形的深度."
     },
     "_FractalUseAutoShift": {
-      "label": "分形使用自动Shift( F)",
-      "tooltip": "持續轉移分形基色 ."
+      "label": "使用自動色調 Shift",
+      "tooltip": "持續轉移分形基色 。"
     },
     "_FractalAutoShiftSpeed": {
       "label": "自動移動速度",
@@ -2141,6 +2154,10 @@
       "label": "密度",
       "tooltip": "點擊的强度( 有多暗) ."
     },
+    "_FlickerSpace": {
+      "label": "故障空間",
+      "tooltip": "物體：故障圖案固定在網格上，移動攝影機或頭部時不會跟著動，並且在 VR 雙眼中一致。螢幕：圖案固定在視角上（1.2.1 之前的效果）。"
+    },
     "_AL_FlickerBand": {
       "label": "音效串",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "雙追蹤 (Peak + 平滑)",
       "tooltip": "在 EQ 條上方漂浮的峰頂, 或者在平滑曲線上覆蓋一個次速生的瞬間峰線。"
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "峰高",
+      "tooltip": "雙曲線峰線( Curve) 或 帽( EQ Bars) 的厚度, 與主線隔離 。"
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "峰色",
+      "tooltip": "雙曲線峰的顏色 : 高頻率顏色( 彩色 2 ) 、 彩色 Shift( 彩虹穿梭于 hue Shift 速度, 沿光谱分布) 、 或 Match Spectrum( 光谱在每一頻道上的自有顏色 ) 。"
     },
     "_AudioSpectrumLogScale": {
       "label": "對數比例",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "VU 密度",
       "tooltip": "明亮的表。"
+    },
+    "_AudioVUPeakHold": {
+      "label": "峰值按住",
+      "tooltip": "每頂峰帽在下山前 保持最近最響亮的高度 0=帽直接掉下來"
     },
     "_UseAudioWaveform": {
       "label": "開啟音效波形",

@@ -14,6 +14,7 @@
     "lockAndOptimize": "Bloquear y optimizar",
     "savePreset": "Guardar preajuste...",
     "loadPreset": "Cargar preajuste...",
+    "browsePreset": "Examinar...",
     "copy": "Copiar",
     "paste": "Pegar",
     "reset": "Restablecer",
@@ -677,6 +678,10 @@
       "label": "Modulación de sombras AO",
       "tooltip": "Modula el límite de sombra cel utilizando el mapa de oclusión ambiente."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "Sombras usan color de sombra",
+      "tooltip": "Si está activado, las sombras en tiempo real proyectadas sobre este material muestran el color de sombra, como el lado no iluminado. Desactívalo para el aspecto anterior, donde las sombras oscurecen el color iluminado hacia el negro."
+    },
     "_NormalMap": {
       "label": "Mapa de normales",
       "tooltip": "Añade detalles de superficie usando un mapa normal."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "Roughness",
       "tooltip": "Valor de la tosicidad."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "Mapa de Oclusión (G)",
@@ -1133,6 +1142,10 @@
       "label": "Dirección",
       "tooltip": "La dirección del espacio-mundo viaja la ola disuelta."
     },
+    "_DissolveWaveOffset": {
+      "label": "Desplazamiento de onda",
+      "tooltip": "Mueve el centro de la onda a lo largo de la dirección, en metros desde el pivote del objeto. Para objetos con el pivote en la base (la mayoría de los avatares), ajústalo a la mitad de la altura para que Cantidad 0 a 1 recorra todo el objeto."
+    },
     "_DissolveOrigin": {
       "label": "World Origin",
       "tooltip": "El centro del espacio-mundial desde el que emana la disuelta."
@@ -1158,8 +1171,8 @@
       "tooltip": "El ancho del borde brillante en la línea disuelta."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "Tamaño del bloque",
-      "tooltip": "El tamaño de los bloques de glitch en el espacio de pantalla."
+      "label": "Densidad de bloques",
+      "tooltip": "Cuántos bloques de glitch caben en un metro (o una unidad UV). Valores más altos dan bloques más pequeños."
     },
     "_DissolveEdgeColor": {
       "label": "Color de borde",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "Fractal3DMode",
-      "tooltip": ""
+      "label": "Tipo de fractura",
+      "tooltip": "El algoritmo fractal de procedimiento 3D."
     },
     "_FractalRepetitionMode": {
-      "label": "FractalRepetitionMode",
-      "tooltip": ""
+      "label": "Modo de repetición",
+      "tooltip": "Controla los límites de repetición y recorte del dominio del fractal. Single es más rápido, Endless es más pesado en GPU."
     },
     "_FractalScale": {
       "label": "Escala",
       "tooltip": "Escala del fractal dentro del espacio del objeto."
     },
     "_FractalAnimMode": {
-      "label": "FractalAnimMode",
-      "tooltip": ""
+      "label": "Modo de animación",
+      "tooltip": "Selecciona el patrón de rotación 3D o animación pulsante para el fractal."
     },
     "_FractalSpeed": {
       "label": "Velocidad de animación",
@@ -1606,7 +1619,7 @@
       "tooltip": "Multiplicador para el movimiento del casco del fractal basado en la profundidad."
     },
     "_FractalUseAutoShift": {
-      "label": "FractalUseAutoShift",
+      "label": "Use Auto Hue Shift",
       "tooltip": "Continuamente cambia el color base fractal con el tiempo."
     },
     "_FractalAutoShiftSpeed": {
@@ -2141,6 +2154,10 @@
       "label": "Intensidad",
       "tooltip": "La fuerza del flicker (cuán oscuro se pone)."
     },
+    "_FlickerSpace": {
+      "label": "Espacio del glitch",
+      "tooltip": "Objeto: el patrón del glitch queda fijo a la malla, así que no se mueve con la cámara o la cabeza y coincide en ambos ojos en VR. Pantalla: el patrón queda fijo a la vista (el aspecto anterior a 1.2.1)."
+    },
     "_AL_FlickerBand": {
       "label": "AudioLink Band",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "Dual Trace (Peak + Smooth)",
       "tooltip": "Renders tapas de pico flotantes por encima de barras EQ, o superpone una línea de pico transiente rápido secundario sobre la curva lisa."
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "Peak Thickness",
+      "tooltip": "Espesor de la línea de pico Dual Trace (Curve) o cap (EQ Bars), separados de la línea principal."
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "Peak Color",
+      "tooltip": "Color de los picos de doble traza: Color de alta frecuencia (Color 2), Hue Shift (ciclos a través del arco iris en Hue Shift Speed, diseminado a lo largo del espectro), o Match Spectrum (color propio del espectro en cada frecuencia)."
     },
     "_AudioSpectrumLogScale": {
       "label": "Escala logarítmica",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "Intensidad de UV",
       "tooltip": "Brillo del medidor."
+    },
+    "_AudioVUPeakHold": {
+      "label": "Peak Hold",
+      "tooltip": "Cuánto tiempo cada gorra pico se sienta en el nivel más alto reciente antes de caer, en segundos. 0 = tapas comienzan a caer de inmediato."
     },
     "_UseAudioWaveform": {
       "label": "Enable Audio Waveform",

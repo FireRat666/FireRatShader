@@ -14,6 +14,7 @@
     "lockAndOptimize": "锁定并优化",
     "savePreset": "保存预设...",
     "loadPreset": "加载预设...",
+    "browsePreset": "浏览...",
     "copy": "复制",
     "paste": "粘贴",
     "reset": "重置",
@@ -677,6 +678,10 @@
       "label": "AO 阴影调制",
       "tooltip": "利用环境封存图来修改环影边界."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "投影使用阴影颜色",
+      "tooltip": "开启后，投射到此材质上的实时阴影会显示为阴影颜色，与背光面一致。关闭则使用旧的效果，即阴影会把受光颜色压暗到接近黑色。"
+    },
     "_NormalMap": {
       "label": "法线贴图",
       "tooltip": "使用普通地图添加表面细节."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "粗糙",
       "tooltip": "粗糙价值."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "地图(G)",
@@ -1133,6 +1142,10 @@
       "label": "方向",
       "tooltip": "世界空间的方向 溶解波行走."
     },
+    "_DissolveWaveOffset": {
+      "label": "波浪偏移",
+      "tooltip": "沿方向移动波浪的中心，单位为距物体轴心的米数。对于轴心在底部的物体（大多数模型），设为约一半高度，使数量 0 到 1 覆盖整个物体。"
+    },
     "_DissolveOrigin": {
       "label": "世界起源组织",
       "tooltip": "溶解产生的世界空间中心点."
@@ -1158,8 +1171,8 @@
       "tooltip": "溶解线上发光边缘的宽度."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "块大小",
-      "tooltip": "屏幕空间中的闪烁块大小 ."
+      "label": "方块密度",
+      "tooltip": "每米（或每个 UV 单位）容纳的故障方块数量。数值越大，方块越小。"
     },
     "_DissolveEdgeColor": {
       "label": "边缘颜色",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "分形3Dmode",
-      "tooltip": ""
+      "label": "分形类型",
+      "tooltip": "3D程序射线定形算法."
     },
     "_FractalRepetitionMode": {
-      "label": "重复模式( F)",
-      "tooltip": ""
+      "label": "重复模式",
+      "tooltip": "控制分形的域重复和剪切限制. 单身最快,无尽最重"
     },
     "_FractalScale": {
       "label": "缩放",
       "tooltip": "物体空间内分形的尺度."
     },
     "_FractalAnimMode": {
-      "label": "分形动画模式( F)",
-      "tooltip": ""
+      "label": "动画模式",
+      "tooltip": "为分形选择3D旋转或脉冲动动画模式。"
     },
     "_FractalSpeed": {
       "label": "动画速度",
@@ -1606,8 +1619,8 @@
       "tooltip": "基于深度的分形变换乘法."
     },
     "_FractalUseAutoShift": {
-      "label": "有机用户自动Shift",
-      "tooltip": "不断改变分形基色."
+      "label": "使用自动色调 Shift",
+      "tooltip": "不断改变分形基色。"
     },
     "_FractalAutoShiftSpeed": {
       "label": "自动移动速度",
@@ -2141,6 +2154,10 @@
       "label": "强度",
       "tooltip": "闪烁器的强度(它有多暗)."
     },
+    "_FlickerSpace": {
+      "label": "故障空间",
+      "tooltip": "物体：故障图案固定在网格上，移动相机或头部时不会跟着动，并且在 VR 双眼中一致。屏幕：图案固定在视角上（1.2.1 之前的效果）。"
+    },
     "_AL_FlickerBand": {
       "label": "音频链接带",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "双轨( Peak + 平滑)",
       "tooltip": "伦德尔斯漂浮在EQ栏上方的峰顶盖,或者在平滑曲线上覆盖一条二级快生瞬间峰线."
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "峰头厚度",
+      "tooltip": "双轨峰线(Curve)或盖(EQ Bars)的厚度,与主线分离."
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "高峰颜色",
+      "tooltip": "双轨峰的颜色:高频色(Color 2),惠移(在惠移速度下通过彩虹的周期,沿频谱分布),或Match Spectrum(频谱在每频率下自有颜色)."
     },
     "_AudioSpectrumLogScale": {
       "label": "对数缩放",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "VU 强度",
       "tooltip": "亮度计."
+    },
+    "_AudioVUPeakHold": {
+      "label": "顶端握住",
+      "tooltip": "每顶峰盖在下降前 保持最近最响亮的高度多久? 0=盖子开始直接下降."
     },
     "_UseAudioWaveform": {
       "label": "启用音频波形",

@@ -14,6 +14,7 @@
     "lockAndOptimize": "ロック＆最適化",
     "savePreset": "プリセットを保存...",
     "loadPreset": "プリセットを読み込み...",
+    "browsePreset": "参照...",
     "copy": "コピー",
     "paste": "貼り付け",
     "reset": "リセット",
@@ -677,6 +678,10 @@
       "label": "AOシャドウモジュレーション",
       "tooltip": "周囲のオクルージョンマップを使用してセルの影境界を変更します."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "影に影色を使用",
+      "tooltip": "オンにすると、このマテリアルに落ちるリアルタイムの影が、光の当たらない側と同じ影色で表示されます。オフにすると、影が明るい色を黒に向けて暗くする従来の見た目になります。"
+    },
     "_NormalMap": {
       "label": "ノーマルマップ",
       "tooltip": "通常のマップを使用して表面の詳細を追加します."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "ラフネス",
       "tooltip": "粗さ値."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "Occlusion マップ (G)",
@@ -1133,6 +1142,10 @@
       "label": "アクセス",
       "tooltip": "溶解波旅行の世界空間方向."
     },
+    "_DissolveWaveOffset": {
+      "label": "ウェーブオフセット",
+      "tooltip": "ウェーブの中心を方向に沿って、オブジェクトのピボットからメートル単位で移動します。ピボットが足元にあるオブジェクト（多くのアバター）では高さの約半分に設定すると、量 0〜1 でオブジェクト全体を通過します。"
+    },
     "_DissolveOrigin": {
       "label": "世界の起源",
       "tooltip": "溶解するエマネートから世界規模のセンターポイント."
@@ -1158,8 +1171,8 @@
       "tooltip": "溶解ラインの輝くエッジの幅."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "ブロックサイズ",
-      "tooltip": "画面スペースのグリッチブロックのサイズ."
+      "label": "ブロック密度",
+      "tooltip": "1メートル（またはUV 1単位）あたりのグリッチブロック数。値を大きくするとブロックが小さくなります。"
     },
     "_DissolveEdgeColor": {
       "label": "エッジカラー",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "フラクタル3DMode",
-      "tooltip": ""
+      "label": "フラクタルタイプ",
+      "tooltip": "3D のプロシージャラル raymarched 僅かアルゴリズム。"
     },
     "_FractalRepetitionMode": {
-      "label": "フラクタル繰り返しモード",
-      "tooltip": ""
+      "label": "繰り返しモード",
+      "tooltip": "フラクタルのドメインの繰り返しとクリップ限界を制御します。 シングルは最速で、GPUでは無限が最も重い。"
     },
     "_FractalScale": {
       "label": "スケール",
       "tooltip": "オブジェクト空間内のフラクタルのスケール."
     },
     "_FractalAnimMode": {
-      "label": "フラクタルアニメモード",
-      "tooltip": ""
+      "label": "アニメーションモード",
+      "tooltip": "フラクタールの3D回転またはパルスアニメーションパターンを選択します。"
     },
     "_FractalSpeed": {
       "label": "アニメーション速度",
@@ -1606,8 +1619,8 @@
       "tooltip": "深みを基調としたフラクタルの色合いシフトのマルチプライヤー."
     },
     "_FractalUseAutoShift": {
-      "label": "FractalUseAutoシフト",
-      "tooltip": "フラクタルベースカラーを長時間連続的にシフト."
+      "label": "オートフエシフトの使用",
+      "tooltip": "フラクタルベースカラーを長時間連続的にシフト。"
     },
     "_FractalAutoShiftSpeed": {
       "label": "自動シフト速度",
@@ -2141,6 +2154,10 @@
       "label": "インテンシティ",
       "tooltip": "フリッカーの強さ(暗くなれば)."
     },
+    "_FlickerSpace": {
+      "label": "グリッチ空間",
+      "tooltip": "オブジェクト: グリッチ模様がメッシュに固定され、カメラや頭を動かしても動かず、VR の両目で一致します。スクリーン: 模様が視点に固定されます（1.2.1 以前の見た目）。"
+    },
     "_AL_FlickerBand": {
       "label": "AudioLinkバンド",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "デュアルトレース(ピーク+スムース)",
       "tooltip": "EQバーの上にピークキャップをフローティングするレンダー、または滑らかな曲線の上に二次高速生の一時的なピークラインをオーバーレイします。"
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "ピークの厚さ",
+      "tooltip": "デュアルトレースピークライン(カーブ)またはキャップ(EQバー)の厚さは、メインラインから分離します。"
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "ピーク色",
+      "tooltip": "デュアルトレースピークの色:高周波色(カラー 2)、ヒューシフト(フエシフトスピードの虹を通し、スペクトルに沿って広がる)、またはマッチスペクトラム(各周波数でスペクトルの色)。"
     },
     "_AudioSpectrumLogScale": {
       "label": "ロジスミックスケール",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "VU強度",
       "tooltip": "メートルの明るさ。"
+    },
+    "_AudioVUPeakHold": {
+      "label": "ピークホールド",
+      "tooltip": "各ピークキャップは、落下前に最も大きい最近のレベルに座っているどのくらいの時間, 秒. 0 = 帽子はすぐに落ち始めます。"
     },
     "_UseAudioWaveform": {
       "label": "オーディオ波形を有効にする",

@@ -4,6 +4,65 @@ All notable changes to FireRatShader are documented in this file.
 
 Versions cover both the Built-in Render Pipeline (BRP) and Universal Render Pipeline (URP) variants, which are kept in 100% lockstep feature parity.
 
+## [1.3.0] - 2026-09-27
+
+### Added
+- **Optional Demo Package**: A separate `FireRatShader-Demo-v<version>.unitypackage` with five scenes and 100 preconfigured materials, opened from **Tools > FireRat Shader > Demo**:
+  - **Showcase**: 20 ready-made looks, from toon styles and PBR metals to shell fur, hologram and retro PS1.
+  - **AudioLink Stage**: every spectrum and waveform visualizer, 18 audio-reactive features, Beat-Sync examples and a row of Temporal Buffer smoothing examples, driven by an included music loop. Works without AudioLink installed.
+  - **Surface Styles**: crystal, galaxy, skybox, tri-planar, matcap, iridescence, glitter, psychedelic and all 18 3D fractal modes.
+  - **Effects & Transitions**: dissolve modes, planar wipe, vertex collapse, vertex distortions, glitches, proximity glow, pixelation, intersection glow, ripple and scanlines.
+  - **Lighting Lab**: all 5 lighting modes plus toon, skin, SSS, clear coat, anisotropy, hair specular and reflection examples.
+  All textures, the model and the music are original.
+- **Automatic Demo Pipeline Matching**: Demo materials switch to the Built-in or URP shader automatically, with a manual **Match Demo Materials To Render Pipeline** menu item.
+- **Dissolve Wave Offset** (`_DissolveWaveOffset`): Moves the centre of the Wave dissolve, so objects with their pivot at the base can dissolve fully.
+- **Glitch Space** (`_FlickerSpace`): Scanlines, Blocky, Channel Shift, Interference and Signal Loss glitches can be fixed to the object instead of the screen, keeping them steady in VR. Object is the new default; choose Screen for the previous look.
+- **VU Meter Peak Hold** (`_AudioVUPeakHold`): VU Meter peak caps hold at the recent peak before falling, like a real meter, and the bars now fall smoothly instead of dropping instantly. Applies to the VU Meter mode and the VU overlay.
+- **Dual Trace Peak Hold**: In Temporal Buffer mode, Dual Trace peaks on EQ Bars and Spectrum Curve hold and then fall slowly, with Peak Hold and Peak Fall set on the Smoothed Audio CRT.
+- **Dual Trace Peak Thickness & Color** (`_AudioSpectrumPeakThickness`, `_AudioSpectrumPeakColorMode`): Separate thickness for the peak line and caps, and a choice of High Frequency Color, Hue Shift or Match Spectrum colouring.
+- **Harmonic Wobble Distortion Mode** (`_DistortionMode` = 16): A new procedural vertex distortion mode utilizing exact harmonic integer ratios across all three axes (`X: 1.0, Y: 2.0, Z: 1.0`), guaranteeing clean, seamless periodic looping (Mode 12).
+
+### Changed
+- **Rebuilt Preset Library**: Replaced the bundled presets with 13 new looks designed to layer on top of an existing textured avatar.
+- **Load Preset Menu**: Load Preset is now a dropdown of the bundled presets, with **Browse...** for other files.
+- **Toon: Shadows Use Shadow Color** (`_ToonReceivedShadowTone`): Real-time shadows on Toon materials now use the Shadow Color instead of darkening toward black, reducing cel-line shimmer. On by default; turn it off for the previous look.
+- **Standard PBR Roughness Matches Across Pipelines**: Built-in and URP now choose roughness the same way. Existing Built-in materials are migrated automatically to keep their look.
+- **PBR Environment Reflections in URP**: Standard and Stylized PBR now sample reflection probes by default in URP, matching Built-in.
+- **Temporal Buffer Waveform Smoothing**: The Temporal Buffer now smooths waveforms without flattening them, with its own Waveform Smoothing Time, and supports Left, Right and Stereo Split channels.
+- **AudioLink Editor Companion**: Now runs AudioLink's own analysis, so effects preview in the editor exactly as they will with AudioLink in a world, and uses the same settings as the AudioLink component. It steps aside when a real AudioLink controller is present.
+- **Subsurface Scattering in Standard PBR**: The Subsurface Scattering controls now also appear in Standard PBR mode, not just Stylized PBR.
+- **AudioLink Band Delay Applies Everywhere**: The per-band Delay settings now affect every band-driven effect, not just Theme Colors.
+- **Distortion Strength Range** (`_DistortionStrength`): Expanded the slider range from 0–0.2 to 0–1.0 across all shader variants and Avatar Setup expressions, allowing for significantly stronger and more visible vertex deformations.
+
+### Fixed
+- **Presets No Longer Stack**: Applying a bundled preset now resets the look sections first, so results no longer depend on the material's previous state. Textures, tint and emission are kept.
+- **Avatar Setup Custom Presets**: Material presets no longer appear in the Avatar Setup Custom preset list.
+- **Glitch Dissolve Block Size**: The Glitch dissolve setting is now **Block Density** (blocks per metre), so blocks can be small enough for avatars. Existing materials are unaffected.
+- **Anisotropy in Standard PBR**: Anisotropic reflection now works in Standard PBR, not only Stylized PBR.
+- **Standard PBR Presets in URP**: Polished Metal and Glossy Latex no longer come out half-rough in URP.
+- **Built-in Shadowmask With Point and Spot Lights**: Mixed point and spot lights in Shadowmask mode now light Built-in materials correctly.
+- **Planar Wipe on Opaque Materials**: Planar Wipe now hides the wiped part of Opaque materials, including their outlines and extra lights.
+- **Glitter Star Shape**: Star glitter now draws five-pointed stars instead of diamonds.
+- **Glitter Size**: Large Circle and Star glitter is no longer clipped into squares, and Size now affects Random glitter.
+- **Apollonian Fractal**: The Apollonian fractal now renders properly instead of as a flat disc.
+- **Ambient Fallback Mode Shown Twice**: Removed a duplicate Ambient Fallback Mode control from the inspector.
+- **Hologram With Unlit Lighting**: The hologram effect now works in Unlit lighting mode.
+- **Theme Colors in AudioLink Mode**: Theme Colors, and Grid and Ripple AudioLink colour modes, now enable AudioLink when used on their own.
+- **Theme Influence Outline and Rim**: Theme Influence Outline and Rim now tint the outline and rim.
+- **Scanlines AudioLink Alpha Target**: The Alpha target now makes scanlines fade with the music.
+- **Dissolve Beat-Sync in Shadows**: Shadows and depth now stay in step with a beat-synced dissolve.
+- **AudioLink Theme Colors in Built-in**: Built-in materials now read the correct AudioLink theme colours.
+- **AudioLink Spectrum Range**: Spectrum visualizers now cover AudioLink's full frequency range instead of only the bass.
+- **AudioLink Waveform Length**: Waveform visualizers now show enough audio to display real wave shapes, and the Triggered Oscilloscope holds steady.
+- **Stereo Split Waveforms**: Stereo Split now draws the left and right channels separately.
+- **Procedural Texture AudioLink**: Procedural textures no longer jump wildly with AudioLink; existing materials move much less at the same strength.
+- **Temporal Buffer Smoothing**: Temporal Buffer mode now updates correctly. Older Smoothed Audio CRT assets show a **Repair Smoothed Audio CRT** button in the inspector.
+- **Dual Trace Peaks**: Dual Trace peaks no longer sink below the smoothed bars or break into dashes on the curve.
+- **Ripple Beat-Sync & Chronotensity Parity**: Synchronized vertex wave displacement (`ApplyRipple`) with fragment overlay rings to use `GetAudioLinkChronoTime` when beat-sync is enabled, and added AudioLink band modulation for ripple radius, count, and distortion strength across both Built-in and URP shaders.
+- **Glitch Channel Shift & Activation Scaling**: Fixed object-space block sizing in Channel Shift glitch mode which previously resulted in a single oversized 10-metre block across meshes. Made trigger frequency scale dynamically with Flicker Intensity across Channel Shift, Interference, and Signal Loss so glitch modes pop and jitter reliably at higher intensities with vibrant chromatic channel separation.
+- **Swirl Distortion Mesh Hole**: Fixed an issue where Swirl distortion mode created a hole at the top and bottom poles of meshes due to a floating-point singularity in `atan2(0, 0)`. Pole vertices are now protected with a radial distance guard.
+- **Vortex Distortion Pole Spike**: Fixed an issue where Vortex distortion mode created a sharp vertical spike at mesh poles. The downward Y-axis vertex pull was trapped inside the radial distance check, causing the apex vertex (`x=0, z=0`) to be skipped while surrounding vertices dropped.
+
 ## [1.2.0] - 2026-09-25
 
 ### Added
@@ -229,7 +288,6 @@ Versions cover both the Built-in Render Pipeline (BRP) and Universal Render Pipe
 - Dissolve direction normalization guarded against zero vector.
 - Audio spectrum inner radius clamped to avoid edge artifacts.
 - URP LOD cross-fade and normal unpack macros fixed.
-- Compile sweep runs on all pipeline shaders.
 - Added null-safe property retrieval with error handling in GUI.
 - Unity menu commands for standard and URP AudioLink companion objects.
 
@@ -245,7 +303,6 @@ Versions cover both the Built-in Render Pipeline (BRP) and Universal Render Pipe
 - Flicker mode enum dropdown added to inspector.
 - Chroma key and hologram clipping now apply in shadow and depth-normals passes.
 - Shader keyword registration for chroma key and hologram.
-- Known fallback shader names whitelisted in audit tests.
 - Low-perf surface style override removed.
 
 ## [1.0.6] - 2026-08-19
@@ -330,7 +387,6 @@ Versions cover both the Built-in Render Pipeline (BRP) and Universal Render Pipe
 - Presets now default to saving texture transforms.
 - Section Reset now respects each material's lock state and no longer writes selection-wide texture assignments.
 - Detail normal map now supports tiling/offset (removed `[NoScaleOffset]`).
-- Release-draft workflow now triggers only on `main` branch pushes and tags (explicit dispatches still allowed).
 - Documentation updated to V1.0.4 covering the new material tools, global AudioLink controls, and new properties.
 
 ### Fixed
@@ -405,7 +461,7 @@ Versions cover both the Built-in Render Pipeline (BRP) and Universal Render Pipe
 
 ### Fixed
 - Manual and automatic color-shift behavior across shader and outline animations.
-- URP shader compilation issues; stopped tracking Unity `.meta` files.
+- URP shader compilation issues.
 - Tangent-space usage for Galaxy, Crystal, and Glitter surface styles.
 - Outline shader compilation with lighting fallbacks; inspector null-safety.
 - Depth buffer sampling via a dedicated depth screen position; device-depth handling in all variants.

@@ -2,323 +2,81 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="dark" name="color-scheme"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title data-i18n="index.title.73">FireRatShader — The single shader that does everything</title>
-<meta content="A high-performance Uber shader for Unity with 100% BRP and URP feature parity. Built for VR, mobile, and desktop. 800+ properties, AudioLink integration, and a Material Lock optimizer." name="description"/>
-<style>
-        :root {
-            --bg: #1a1a1a;
-            --bg-elevated: #252525;
-            --bg-card: #2b2b2b;
-            --border: #444;
-            --border-soft: #4a4a4a;
-            --text: #e0e0e0;
-            --text-dim: #c0c0c0;
-            --text-muted: #999;
-            --accent: #00c00a;
-            --accent-soft: rgba(0, 192, 10, 0.15);
-            --brp: #b45309;
-            --urp: #2563eb;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: var(--bg);
-            color: var(--text);
-        }
-
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        code {
-            background: var(--bg-elevated);
-            padding: 0.15em 0.4em;
-            border-radius: 3px;
-            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-            font-size: 0.92em;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        /* ===== HERO ===== */
-        .hero {
-            padding: 5rem 0 4rem;
-            text-align: center;
-            background: radial-gradient(ellipse at top, rgba(0, 192, 10, 0.08), transparent 60%);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero h1 {
-            font-size: clamp(2.2rem, 5vw, 3.4rem);
-            margin: 0 0 1rem;
-            color: var(--text);
-            line-height: 1.15;
-        }
-
-        .hero .tagline {
-            font-size: 1.2rem;
-            color: var(--text-dim);
-            max-width: 720px;
-            margin: 0 auto 2rem;
-        }
-
-        .hero .badges {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 0.3em 0.75em;
-            border-radius: 3px;
-            font-size: 0.78em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            background: var(--bg-elevated);
-            color: var(--text-dim);
-            border: 1px solid var(--border);
-        }
-
-        .badge-brp { background: var(--brp); color: #fff; border-color: var(--brp); }
-        .badge-urp { background: var(--urp); color: #fff; border-color: var(--urp); }
-        .badge-accent { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
-
-        .cta {
-            display: inline-block;
-            background: var(--accent);
-            color: #111;
-            font-weight: 600;
-            padding: 0.85rem 1.75rem;
-            border-radius: 6px;
-            font-size: 1.05rem;
-            transition: transform 0.15s, box-shadow 0.15s;
-        }
-        .cta:hover { text-decoration: none; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0, 192, 10, 0.3); }
-        .cta-secondary {
-            background: transparent;
-            color: var(--accent);
-            border: 1px solid var(--accent);
-            margin-left: 0.75rem;
-        }
-        .cta-secondary:hover { background: var(--accent-soft); box-shadow: none; }
-
-        /* ===== SECTIONS ===== */
-        section {
-            padding: 4rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        section h2 {
-            color: var(--accent);
-            font-size: 1.85rem;
-            margin: 0 0 0.5rem;
-        }
-
-        section .lead {
-            color: var(--text-dim);
-            font-size: 1.05rem;
-            max-width: 720px;
-            margin: 0 0 2.5rem;
-        }
-
-        /* ===== PILLARS ===== */
-        .pillars {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .pillar {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-        }
-
-        .pillar h3 {
-            color: var(--accent);
-            margin: 0 0 0.75rem;
-            font-size: 1.15rem;
-        }
-
-        .pillar p {
-            margin: 0;
-            color: var(--text-dim);
-            font-size: 0.95rem;
-        }
-
-        /* ===== FEATURE GRID ===== */
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-        }
-
-        .feature {
-            background: var(--bg-card);
-            border-left: 3px solid var(--accent);
-            border-radius: 4px;
-            padding: 1rem 1.25rem;
-        }
-
-        .feature strong {
-            color: var(--text);
-            display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        .feature span {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* ===== STATS ===== */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 1.5rem;
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .stat {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem 1rem;
-        }
-
-        .stat .num {
-            display: block;
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--accent);
-            line-height: 1.1;
-        }
-
-        .stat .label {
-            display: block;
-            color: var(--text-dim);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 0.5rem;
-        }
-
-        /* ===== COMPARE TABLE ===== */
-        .compare {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0 0;
-            background: var(--bg-card);
-            font-size: 0.95rem;
-        }
-
-        .compare th, .compare td {
-            border: 1px solid var(--border-soft);
-            padding: 0.7rem 1rem;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        .compare th {
-            background: var(--bg-elevated);
-            color: var(--accent);
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            padding: 2.5rem 0;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        footer a { color: var(--text-dim); }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 640px) {
-            .hero { padding: 3rem 0 2.5rem; }
-            section { padding: 2.5rem 0; }
-            .cta-secondary { margin-left: 0; margin-top: 0.75rem; display: inline-block; }
-        }
-
-        /* ===== Language switcher (header widget) ===== */
-        .lang-switcher {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            z-index: 100;
-        }
-        .lang-switcher select {
-            background: #252525;
-            color: #e0e0e0;
-            border: 1px solid #444;
-            border-radius: 4px;
-            padding: 0.4rem 0.6rem;
-            font-size: 0.85rem;
-            font-family: inherit;
-            cursor: pointer;
-        }
-        .lang-switcher select:hover, .lang-switcher select:focus {
-            border-color: #00c00a;
-            outline: none;
-        }
-
-        /* ===== Language banner (browser detection prompt) ===== */
-        .lang-banner {
-            position: fixed;
-            bottom: 1.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #252525;
-            color: #e0e0e0;
-            border: 1px solid #00c00a;
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            font-size: 0.9rem;
-            max-width: 90vw;
-        }
-        .lang-banner button {
-            background: transparent;
-            color: #00c00a;
-            border: 1px solid #00c00a;
-            border-radius: 4px;
-            padding: 0.3rem 0.75rem;
-            font-family: inherit;
-            font-size: 0.85rem;
-            cursor: pointer;
-        }
-        .lang-banner button:hover {
-            background: #00c00a;
-            color: #111;
-        }
-
-        header.hero { position: relative; }
-    </style>
+<meta content="dark" name="color-scheme"/>
+<meta content="#00c00a" name="theme-color"/>
+<title data-i18n="index.title.73">FireRatShader — Uber Shader for Unity URP &amp; Built-in</title>
+<meta content="Uber shader for Unity with full Built-in and URP parity: toon, PBR, AudioLink visualizers, 3D fractals and shell fur. Built for VRChat, Quest, VR and desktop." name="description"/>
+<link href="https://shader.firer.at/" rel="canonical"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="FireRat" name="author"/>
+<meta content="website" property="og:type"/>
+<meta content="FireRatShader" property="og:site_name"/>
+<meta content="FireRatShader — One uber shader for Unity URP &amp; Built-in" property="og:title"/>
+<meta content="Toon, PBR, AudioLink visualizers, 3D fractals, shell fur and 800+ properties in one shader. Built for VRChat, Quest, VR and desktop." property="og:description"/>
+<meta content="https://shader.firer.at/" property="og:url"/>
+<meta content="https://shader.firer.at/docs/media/site/og-image.jpg" property="og:image"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="FireRatShader: a mosaic of shader materials including cyber grid, iridescence, gold, galaxy and fractals" property="og:image:alt"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="FireRatShader — One uber shader for Unity URP &amp; Built-in" name="twitter:title"/>
+<meta content="Toon, PBR, AudioLink visualizers, 3D fractals, shell fur and 800+ properties in one shader. Built for VRChat, Quest, VR and desktop." name="twitter:description"/>
+<meta content="https://shader.firer.at/docs/media/site/og-image.jpg" name="twitter:image"/>
+<link href="favicon.ico" rel="icon" sizes="48x48"/>
+<link href="docs/media/site/icon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="docs/media/site/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="docs/style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://shader.firer.at/#website",
+      "name": "FireRatShader",
+      "url": "https://shader.firer.at/",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "FireRatShader",
+      "url": "https://shader.firer.at/",
+      "image": "https://shader.firer.at/docs/media/site/og-image.jpg",
+      "description": "A high-performance uber shader for Unity with full Built-in Render Pipeline and URP parity: toon and PBR lighting, AudioLink visualizers, raymarched 3D fractals, shell fur, dissolves, glitches and a Material Lock optimizer for VRChat, Quest, VR and desktop.",
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "Unity shader",
+      "operatingSystem": "Windows, macOS, Linux (Unity 2022.3 – Unity 6)",
+      "author": { "@type": "Person", "name": "FireRat", "url": "https://www.patreon.com/FireRat" },
+      "sameAs": ["https://github.com/FireRat666/FireRatShader", "https://www.patreon.com/FireRat"],
+      "keywords": "Unity shader, URP shader, Built-in render pipeline, VRChat shader, AudioLink, toon shader, PBR, uber shader, Quest"
+    }
+  ]
+}
+</script>
 </head>
-<body>
-<header class="hero">
-<div class="container">
+<body class="page-landing">
+<a class="skip-link" data-i18n="index.a.65" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="site-header-inner">
+<a class="brand no-translate" href="./"><img alt="" height="26" src="docs/media/site/icon-192.png" width="26"/>FireRatShader</a>
+<nav aria-label="Site" class="site-nav">
+<a data-i18n="index.a.66" href="docs/index.html">Documentation</a>
+<a data-i18n="index.a.67" href="docs/showcase.html">Showcase</a>
+<a data-i18n="index.a.68" href="https://github.com/FireRat666/FireRatShader">GitHub</a>
+</nav>
+<div class="header-actions">
+<div class="lang-switcher"></div>
+<a class="btn btn-primary btn-sm" data-i18n="index.a.69" href="https://www.patreon.com/FireRat">Get FireRatShader</a>
+</div>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div>
 <div class="badges" data-i18n="index.div.60">
 <span class="badge badge-brp">BRP</span>
 <span class="badge badge-urp">URP</span>
@@ -326,28 +84,71 @@
 </div>
 <h1 data-i18n="index.h1.61">FireRatShader</h1>
 <p class="tagline" data-i18n="index.p.62">The single shader that does everything — for every Unity project. Hundreds of effects, lighting models, and tools in one master shader per render pipeline. Built for VR, mobile, and desktop.</p>
-<a class="cta" data-i18n="index.a.63" href="docs/index.html">Read the Docs</a>
-<a class="cta cta-secondary" data-i18n="index.a.64" href="https://github.com/FireRat666/FireRatShader">View on GitHub</a>
+<div class="hero-cta">
+<a class="btn btn-primary" data-i18n="index.a.63" href="docs/index.html">Read the Docs</a>
+<a class="btn btn-ghost" data-i18n="index.a.70" href="docs/showcase.html">See the Showcase</a>
+<a class="btn btn-ghost" data-i18n="index.a.64" href="https://github.com/FireRat666/FireRatShader">View on GitHub</a>
 </div>
-</header>
+</div>
+<div aria-label="Material examples" class="hero-mosaic">
+<a class="media-tile" data-webp="docs/media/showcase/Cyber_Grid.webp" href="docs/showcase.html#showcase"><img alt="Cyber grid material with neon grid lines" height="360" src="docs/media/site/thumbs/showcase-Cyber_Grid.webp" width="360"/><span class="tile-label" data-i18n="index.span.207">Cyber Grid</span></a>
+<a class="media-tile" data-webp="docs/media/surfacestyles/Iridescence_Oil_Slick.webp" href="docs/showcase.html#surfacestyles"><img alt="Oil-slick thin-film iridescence" height="360" src="docs/media/site/thumbs/surfacestyles-Iridescence_Oil_Slick.webp" width="360"/><span class="tile-label" data-i18n="index.span.208">Iridescence</span></a>
+<a class="media-tile" data-webp="docs/media/showcase/Dragon_Scales.webp" href="docs/showcase.html#showcase"><img alt="Iridescent dragon scale material" height="360" src="docs/media/site/thumbs/showcase-Dragon_Scales.webp" width="360"/><span class="tile-label" data-i18n="index.span.209">Dragon Scales</span></a>
+<a class="media-tile" data-webp="docs/media/audiolink/Ripple_Beat-Sync.webp" href="docs/showcase.html#audiolink"><img alt="AudioLink beat-synced ripple on a ball mesh" height="360" src="docs/media/site/thumbs/audiolink-Ripple_Beat-Sync.webp" width="360"/><span class="tile-label" data-i18n="index.span.210">AudioLink Ripple</span></a>
+<a class="media-tile" data-webp="docs/media/surfacestyles/Sierpinski.webp" href="docs/showcase.html#surfacestyles"><img alt="Raymarched Sierpinski pyramid fractal" height="360" src="docs/media/site/thumbs/surfacestyles-Sierpinski.webp" width="360"/><span class="tile-label" data-i18n="index.span.211">3D Fractals</span></a>
+<a class="media-tile" data-webp="docs/media/showcase/Toon_Ramp_Plaid.webp" href="docs/showcase.html#showcase"><img alt="Toon ramp shading on a plaid fabric" height="360" src="docs/media/site/thumbs/showcase-Toon_Ramp_Plaid.webp" width="360"/><span class="tile-label" data-i18n="index.span.212">Toon Ramp</span></a>
+</div>
+</div>
+</div>
 <section>
-<div class="container">
+<div class="wrap">
+<div class="section-head">
+<div>
+<span class="eyebrow" data-i18n="index.span.213">See it in action</span>
+<h2 data-i18n="index.h2.72">130+ looping captures from the demo scenes</h2>
+<p class="lead" data-i18n="index.p.73">Hover a tile to play it. Every capture is recorded from the demo scenes that ship with the optional demo package.</p>
+</div>
+<a class="btn btn-ghost" data-i18n="index.a.71" href="docs/showcase.html">Open the Showcase →</a>
+</div>
+<div class="gallery-strip">
+<a class="media-tile" data-webp="docs/media/showcase/Toon_Soft_Anime.webp" href="docs/showcase.html#showcase"><img alt="Soft anime toon shading" height="360" loading="lazy" src="docs/media/site/thumbs/showcase-Toon_Soft_Anime.webp" width="360"/><span class="tile-label" data-i18n="index.span.214">Toon Soft Anime</span></a>
+<a class="media-tile" data-webp="docs/media/showcase/Shell_Fur_Plush.webp" href="docs/showcase.html#showcase"><img alt="Shell fur plush material" height="360" loading="lazy" src="docs/media/site/thumbs/showcase-Shell_Fur_Plush.webp" width="360"/><span class="tile-label" data-i18n="index.span.215">Shell Fur</span></a>
+<a class="media-tile" data-webp="docs/media/showcase/Hammered_Gold.webp" href="docs/showcase.html#showcase"><img alt="Hammered gold PBR metal" height="360" loading="lazy" src="docs/media/site/thumbs/showcase-Hammered_Gold.webp" width="360"/><span class="tile-label" data-i18n="index.span.216">Hammered Gold</span></a>
+<a class="media-tile" data-webp="docs/media/audiolink/EQ_Bars_VU.webp" href="docs/showcase.html#audiolink"><img alt="AudioLink EQ bars with VU meter" height="360" loading="lazy" src="docs/media/site/thumbs/audiolink-EQ_Bars_VU.webp" width="360"/><span class="tile-label" data-i18n="index.span.217">EQ Bars + VU</span></a>
+<a class="media-tile" data-webp="docs/media/audiolink/Radial_Spectrum.webp" href="docs/showcase.html#audiolink"><img alt="AudioLink radial spectrum" height="360" loading="lazy" src="docs/media/site/thumbs/audiolink-Radial_Spectrum.webp" width="360"/><span class="tile-label" data-i18n="index.span.218">Radial Spectrum</span></a>
+<a class="media-tile" data-webp="docs/media/audiolink/Emission_Pulse_Bass.webp" href="docs/showcase.html#audiolink"><img alt="Bass-driven emission pulse" height="360" loading="lazy" src="docs/media/site/thumbs/audiolink-Emission_Pulse_Bass.webp" width="360"/><span class="tile-label" data-i18n="index.span.219">Emission Pulse</span></a>
+<a class="media-tile" data-webp="docs/media/showcase/Dissolve_Burn.webp" href="docs/showcase.html#effects"><img alt="Burning dissolve transition" height="360" loading="lazy" src="docs/media/site/thumbs/showcase-Dissolve_Burn.webp" width="360"/><span class="tile-label" data-i18n="index.span.220">Dissolve Burn</span></a>
+<a class="media-tile" data-webp="docs/media/effects/Glitch_Channel_Shift.webp" href="docs/showcase.html#effects"><img alt="RGB channel shift glitch" height="360" loading="lazy" src="docs/media/site/thumbs/effects-Glitch_Channel_Shift.webp" width="360"/><span class="tile-label" data-i18n="index.span.221">Channel Shift</span></a>
+<a class="media-tile" data-webp="docs/media/effects/Vortex.webp" href="docs/showcase.html#effects"><img alt="Vortex vertex distortion" height="360" loading="lazy" src="docs/media/site/thumbs/effects-Vortex.webp" width="360"/><span class="tile-label" data-i18n="index.span.222">Vortex</span></a>
+<a class="media-tile" data-webp="docs/media/surfacestyles/Mandelbulb.webp" href="docs/showcase.html#surfacestyles"><img alt="Raymarched Mandelbulb fractal" height="360" loading="lazy" src="docs/media/site/thumbs/surfacestyles-Mandelbulb.webp" width="360"/><span class="tile-label" data-i18n="index.span.223">Mandelbulb</span></a>
+<a class="media-tile" data-webp="docs/media/surfacestyles/Crystal.webp" href="docs/showcase.html#surfacestyles"><img alt="Refractive crystal surface" height="360" loading="lazy" src="docs/media/site/thumbs/surfacestyles-Crystal.webp" width="360"/><span class="tile-label" data-i18n="index.span.224">Crystal</span></a>
+<a class="media-tile" data-webp="docs/media/lighting/Subsurface_Jade.webp" href="docs/showcase.html#lighting"><img alt="Subsurface scattering jade" height="360" loading="lazy" src="docs/media/site/thumbs/lighting-Subsurface_Jade.webp" width="360"/><span class="tile-label" data-i18n="index.span.225">Subsurface Jade</span></a>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<span class="eyebrow" data-i18n="index.span.226">Why</span>
 <h2 data-i18n="index.h2.65">Why FireRatShader?</h2>
 <p class="lead" data-i18n="index.p.66">Most shaders force you to choose: feature-rich but slow, or fast but limited. FireRatShader refuses that compromise.</p>
 <div class="pillars">
 <div class="pillar">
+<div aria-hidden="true" class="pillar-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"></path><path d="m2 17 10 5 10-5"></path><path d="m2 12 10 5 10-5"></path></svg></div>
 <h3 data-i18n="index.h3.13">One shader, every pipeline</h3>
 <p data-i18n="index.p.14">True 100% feature parity between Built-in (BRP) and URP. Same properties, same inspector, same look. Switch render pipelines without rebuilding your materials.</p>
 </div>
 <div class="pillar">
+<div aria-hidden="true" class="pillar-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4l-3-3-3 3H5a2 2 0 0 1-2-2Z"></path><circle cx="8" cy="11.5" r="1.5"></circle><circle cx="16" cy="11.5" r="1.5"></circle></svg></div>
 <h3 data-i18n="index.h3.15">Born for VR and mobile</h3>
 <p data-i18n="index.p.16">Optimized for Meta Quest, SteamVR, and standalone Android. The Material Lock optimizer physically strips unused passes and dead variants at lock time — what ships is exactly what you use.</p>
 </div>
 <div class="pillar">
+<div aria-hidden="true" class="pillar-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 14v-4"></path><path d="M8 18V6"></path><path d="M12 21V3"></path><path d="M16 17V7"></path><path d="M20 14v-4"></path></svg></div>
 <h3 data-i18n="index.h3.17">AudioLink, done right</h3>
 <p data-i18n="index.p.18">Four emission layers, spectrum and waveform visualizers, raymarched fractals, and dozens of effects all driven by AudioLink. Test audio reactivity without entering Play Mode.</p>
 </div>
 <div class="pillar">
+<div aria-hidden="true" class="pillar-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="m12 3 1.9 5.8H20l-4.9 3.6 1.9 5.8-5-3.6-5 3.6 1.9-5.8L4 8.8h6.1Z"></path></svg></div>
 <h3 data-i18n="index.h3.19">Everything you'd expect</h3>
 <p data-i18n="index.p.20">14 surface styles, 5 lighting models, shell fur, decals, dissolve, glitch, refraction, outlines, parallax, VAT — 800+ properties, every one keyword-gated so disabled features cost zero GPU time.</p>
 </div>
@@ -355,7 +156,8 @@
 </div>
 </section>
 <section>
-<div class="container">
+<div class="wrap">
+<span class="eyebrow" data-i18n="index.span.227">Features</span>
 <h2 data-i18n="index.h2.67">What's inside</h2>
 <p class="lead"><span data-i18n="index.span.201">A quick taste — see</span> <a data-i18n="index.a.51" href="FEATURES.md">FEATURES.md</a> <span data-i18n="index.span.202">for the complete list.</span></p>
 <div class="feature-grid">
@@ -375,10 +177,11 @@
 </div>
 </section>
 <section>
-<div class="container">
+<div class="wrap">
+<span class="eyebrow" data-i18n="index.span.228">Scale</span>
 <h2 data-i18n="index.h2.68">By the numbers</h2>
 <div class="stats">
-<div class="stat"><span class="num">828</span><span class="label" data-i18n="index.span.45">Properties</span></div>
+<div class="stat"><span class="num">894</span><span class="label" data-i18n="index.span.45">Properties</span></div>
 <div class="stat"><span class="num">112+</span><span class="label" data-i18n="index.span.46">Shader Keywords</span></div>
 <div class="stat"><span class="num">14</span><span class="label" data-i18n="index.span.47">Surface Styles</span></div>
 <div class="stat"><span class="num">5</span><span class="label" data-i18n="index.span.48">Lighting Models</span></div>
@@ -388,7 +191,8 @@
 </div>
 </section>
 <section>
-<div class="container">
+<div class="wrap">
+<span class="eyebrow" data-i18n="index.span.229">Performance</span>
 <h2 data-i18n="index.h2.69">Three performance tiers</h2>
 <p class="lead" data-i18n="index.p.70">FireRatShader ships with a built-in performance system so the same material scales from desktop VR down to low-end mobile.</p>
 <table class="compare">
@@ -420,17 +224,20 @@
 </div>
 </section>
 <section>
-<div class="container">
+<div class="wrap">
+<div class="cta-panel">
 <h2 data-i18n="index.h2.71">Get FireRatShader</h2>
 <p class="lead" data-i18n="index.p.72">FireRatShader is a commercial Unity asset. The shader itself is not included in this repository — only the documentation, marketing material, and community language packs.</p>
 <p><span data-i18n="index.span.203">FireRatShader is available now — purchase it on my</span> <a data-i18n="index.a.52" href="https://www.patreon.com/FireRat">Patreon page</a>.</p>
-<p style="margin-top: 1.5rem;">
-<a class="cta" data-i18n="index.a.53" href="docs/index.html">Open the Documentation</a>
-</p>
+<div class="hero-cta" style="margin-top: 1.5rem;">
+<a class="btn btn-primary" data-i18n="index.a.72" href="https://www.patreon.com/FireRat">Get it on Patreon</a>
+<a class="btn btn-ghost" data-i18n="index.a.53" href="docs/index.html">Open the Documentation</a>
+</div>
+</div>
 </div>
 </section>
-<footer>
-<div class="container">
+</main>
+<footer class="site-footer">
 <p><span data-i18n="index.span.205">FireRatShader is a product of</span> <strong data-i18n="index.strong.54">FireRat</strong>. <span data-i18n="index.span.206">© 2026. All rights reserved.</span></p>
 <p>
 <a data-i18n="index.a.55" href="README.md">README</a> ·
@@ -439,8 +246,7 @@
             <a data-i18n="index.a.58" href="LICENSE.txt">License</a> ·
             <a data-i18n="index.a.59" href="https://github.com/FireRat666/FireRatShader">GitHub</a>
 </p>
-</div>
 </footer>
-<script src="script.js"></script>
+<script src="docs/script.js"></script>
 </body>
 </html>

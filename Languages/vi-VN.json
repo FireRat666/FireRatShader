@@ -14,6 +14,7 @@
     "lockAndOptimize": "Khóa và tối ưu hóa",
     "savePreset": "Lưu cài đặt trước...",
     "loadPreset": "Tải cài đặt trước...",
+    "browsePreset": "Duyệt...",
     "copy": "Sao chép",
     "paste": "Dán",
     "reset": "Đặt lại",
@@ -677,6 +678,10 @@
       "label": "Mô phỏng bóng tối",
       "tooltip": "Di chuyển ranh giới bóng tối bằng bản đồ xung quanh."
     },
+    "_ToonReceivedShadowTone": {
+      "label": "Bóng dùng màu bóng",
+      "tooltip": "Khi bật, bóng thời gian thực đổ lên vật liệu này hiển thị Màu bóng, giống như mặt không được chiếu sáng. Tắt để dùng giao diện cũ, khi bóng làm tối màu sáng về phía màu đen."
+    },
     "_NormalMap": {
       "label": "Bản đồ pháp tuyến",
       "tooltip": "Thêm chi tiết bề mặt bằng bản đồ thông thường."
@@ -792,6 +797,10 @@
     "_Roughness": {
       "label": "Độ gồ ghề",
       "tooltip": "Giá trị thô lỗ."
+    },
+    "_StdRoughnessMigrated": {
+      "label": "Standard PBR Roughness Migrated",
+      "tooltip": "Standard PBR Roughness Migrated"
     },
     "_OcclusionMap": {
       "label": "Sơ đồ tích phân (G)",
@@ -1133,6 +1142,10 @@
       "label": "Hướng",
       "tooltip": "Chỉ dẫn không gian thế giới cho sóng tan chảy đi."
     },
+    "_DissolveWaveOffset": {
+      "label": "Độ lệch sóng",
+      "tooltip": "Dời điểm giữa của sóng theo Hướng, tính bằng mét từ điểm gốc của vật thể. Với vật thể có điểm gốc ở đáy (hầu hết avatar), đặt khoảng một nửa chiều cao để Lượng từ 0 đến 1 quét hết vật thể."
+    },
     "_DissolveOrigin": {
       "label": "Nguồn gốc thế giới",
       "tooltip": "Trung tâm không gian thế giới mà từ đó sự tan rã phát ra."
@@ -1158,8 +1171,8 @@
       "tooltip": "Độ rộng của cạnh sáng trên đường phân giải."
     },
     "_DissolveGlitchBlockSize": {
-      "label": "Cỡ khối",
-      "tooltip": "Kích thước của các khối lỗi trong không gian màn hình."
+      "label": "Mật độ khối",
+      "tooltip": "Số khối glitch trong một mét (hoặc một đơn vị UV). Giá trị càng cao thì khối càng nhỏ."
     },
     "_DissolveEdgeColor": {
       "label": "Màu cạnh",
@@ -1570,20 +1583,20 @@
       "tooltip": ""
     },
     "_Fractal3DMode": {
-      "label": "Fractal3DMode",
-      "tooltip": ""
+      "label": "Kiểu phân dạng",
+      "tooltip": "Thuật toán phân dạng 3D theo thủ tục."
     },
     "_FractalRepetitionMode": {
-      "label": "Comment",
-      "tooltip": ""
+      "label": "Chế độ lặp lại",
+      "tooltip": "Kiểm soát các giới hạn phân dạng của lĩnh vực lặp đi lặp lại và cắt ngắn. Độc thân là nhanh nhất, Endless là nặng nhất ở GPU."
     },
     "_FractalScale": {
       "label": "Tỷ lệ",
       "tooltip": "Tỷ lệ phân dạng trong không gian đối tượng."
     },
     "_FractalAnimMode": {
-      "label": "FractalAnimMode",
-      "tooltip": ""
+      "label": "Chế độ Hoạt hình",
+      "tooltip": "Chọn kiểu quay 3D hoặc nghiền nát hình ảnh động cho phân dạng."
     },
     "_FractalSpeed": {
       "label": "Tốc độ Hoạt hình",
@@ -1606,7 +1619,7 @@
       "tooltip": "Đa năng cho sự thay đổi sắc màu dựa trên độ sâu."
     },
     "_FractalUseAutoShift": {
-      "label": "Dùng thẻ tự động",
+      "label": "Dùng tự động màu Shift",
       "tooltip": "Thay đổi liên tục màu cơ bản theo thời gian."
     },
     "_FractalAutoShiftSpeed": {
@@ -2141,6 +2154,10 @@
       "label": "Cường độ",
       "tooltip": "Sức mạnh của cái nhấp nháy (nó tối như thế nào)."
     },
+    "_FlickerSpace": {
+      "label": "Không gian glitch",
+      "tooltip": "Vật thể: họa tiết glitch gắn với lưới, nên không chạy theo khi camera hoặc đầu di chuyển và khớp ở cả hai mắt VR. Màn hình: họa tiết gắn với góc nhìn (giao diện trước 1.2.1)."
+    },
     "_AL_FlickerBand": {
       "label": "Name",
       "tooltip": ""
@@ -2244,6 +2261,14 @@
     "_AudioSpectrumDualLine": {
       "label": "Vết lặp lại",
       "tooltip": "Vẽ các đỉnh núi nổi trên các thanh EQ, hoặc bao gồm một đường thẳng thứ hai sống nhanh chóng trên đường cong mịn."
+    },
+    "_AudioSpectrumPeakThickness": {
+      "label": "Độ dầy Đỉnh",
+      "tooltip": "Độ dày của đường Dual có độ dày cao nhất (Curve) hay nắp đậy (EQ Bars), tách khỏi đường chính."
+    },
+    "_AudioSpectrumPeakColorMode": {
+      "label": "Màu Trên",
+      "tooltip": "Màu của đỉnh Dual Traes: Màu tần số cao (color 2), Sắc màu Shift (xe đạp qua cầu vồng tại Sắc màu Shift Speed, lan rộng theo quang phổ), hoặc Match Spectrum ( màu sắc riêng tại mỗi tần số)."
     },
     "_AudioSpectrumLogScale": {
       "label": "& Phóng",
@@ -2352,6 +2377,10 @@
     "_AudioVUIntensity": {
       "label": "Áp lực VU",
       "tooltip": "Độ sáng của đồng hồ."
+    },
+    "_AudioVUPeakHold": {
+      "label": "Đỉnh giữ lại",
+      "tooltip": "Mỗi đỉnh núi nằm ở mức độ lớn nhất gần đây nhất trước khi rơi xuống, trong vòng vài giây. 0 = mũ bắt đầu rơi ngay lập tức."
     },
     "_UseAudioWaveform": {
       "label": "Dùng dạng sóng âm",

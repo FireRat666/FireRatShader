@@ -1,6 +1,6 @@
 # FireRatShader — Feature List
 
-> **Version 1.2.0** · Dual-Pipeline Uber Shader for Unity  
+> **Version 1.3.0** · Dual-Pipeline Uber Shader for Unity  
 > BRP (Built-in) · URP (Universal) · VR · Mobile · Desktop
 
 ---
@@ -27,7 +27,7 @@
 | **Two-Pass Transparency** | `FireRat/FireRatShader_TwoPass` | `FireRat/FireRatShader_URP_TwoPass` | Complex alpha meshes (backface depth prepass + frontface) |
 | **Shell Fur Extrusion** | `FireRat/FireRatShader_Fur` | `FireRat/FireRatShader_URP_Fur` | Furry avatars, velvet fabrics, plush toys (1–8 layers) |
 
-All 6 shader variants expose **identical features, properties, and inspector layout** (887 properties) and are maintained in 100% lockstep parity.
+All 6 shader variants expose **identical features, properties, and inspector layout** (894 properties) and are maintained in 100% lockstep parity.
 
 ---
 
@@ -75,10 +75,14 @@ All 6 shader variants expose **identical features, properties, and inspector lay
 |---|---|
 | **Unlit** | Zero lighting — pure texture/color output |
 | **Basic** | Simple diffuse Lambert shading |
-| **Toon / Cel Shading** | Multi-tone ramp shading with adjustable steps, shadow color, dual-step cel shadows, **Shadow Border offset**, **Shadow Blur softening**, and **AO Shadow Modulation** |
+| **Toon / Cel Shading** | Multi-tone ramp shading with adjustable steps, shadow color, dual-step cel shadows, **Shadow Border offset**, **Shadow Blur softening**, **AO Shadow Modulation**, and **Shadows Use Shadow Color** |
 | **Stylized PBR** | Physically-based rendering with artistic control over specular and reflections |
-| **Standard PBR** | Full physically-based rendering with GGX specular, metallic workflow |
+| **Standard PBR** | Full physically-based rendering with GGX specular, metallic workflow, and cross-pipeline roughness parity |
 
+- **Toon: Shadows Use Shadow Color**: Real-time received shadows on Toon materials blend toward the configured Shadow Color instead of falling off towards harsh black, eliminating dark cel-line shimmer and preserving stylized aesthetic
+- **Subsurface Scattering (SSS) Across PBR Modes**: Skin/wax/foliage translucency with thickness map and transmission map, fully supported in both Stylized PBR and Standard PBR modes
+- **Cross-Pipeline PBR Parity**: Standard PBR roughness curves and GGX specular response are matched between Built-in and URP, with automatic migration for legacy Built-in materials
+- **PBR Environment Reflections in URP**: Standard and Stylized PBR materials in URP sample scene reflection probes by default, mirroring Built-in pipeline behavior
 - **LTCGI (Linearly Transformed Cosines) Area Lighting**: Real-time polygon area lighting evaluation with specular and diffuse response and polygon clipping for video screens and emissive meshes in LTCGI-compatible worlds across both BRP and URP
 - **Forward+ & Clustered Lighting (URP 17+ / Unity 6)**: Native support for URP 17 / Unity 6 clustered light looping, evaluating additional lights per fragment for efficient multi-light scenes
 - **Unity 6 URP Adaptive Probe Volumes (APV)**: Native per-pixel probe volume evaluation in URP forward shading for scenes utilizing Unity 6 Adaptive Probe Volumes
@@ -173,7 +177,7 @@ All 6 shader variants expose **identical features, properties, and inspector lay
   - Color, transparency, and pulse animation
   - Smoothed Normal Baker integration
 - **Ripple Effect**: Animated surface ripples with normal displacement, 4-way color styling modes (Solid, Rainbow, AudioLink Theme, AudioLink Chord), and selectable AudioLink modulation targets (Strength, Radius, Speed)
-- **UV Distortion**: Animated UV warping with 16 distortion algorithms
+- **Vertex Distortion Suite (17 Modes)**: Procedural vertex displacement with 17 algorithms: SineX, SineZ, Ripple, Noise, Swirl, Texture, Twist, Stretch, Pulse, Shear, Inflate, Wind, Wobble, Vortex, Flap, ButterflyFlap, and **Harmonic Wobble** (Mode 16 with exact 1:2:1 integer harmonic ratios for seamless periodic looping). Features an expanded **Distortion Strength** range [0–1.0] and singularity protection against mesh holes and pole spikes in Swirl and Vortex.
 - **Screen-Space Refraction**: Real glass/water refraction using the camera opaque texture in URP with a grab-texture fallback in BRP, supporting chromatic dispersion and adjustable IOR
 - **Crystal Refraction**: Internal UV distortion simulating crystal/gemstone refraction
 - **Depth Fade**: Soft particle blending using scene depth
@@ -196,8 +200,9 @@ All 6 shader variants expose **identical features, properties, and inspector lay
 
 ## Glitch Effects
 
-- **Flicker**: Screen flicker with multiple modes (Random, Sine, Square)
-- **Transparency Glitch**: Random transparency drop-outs
+- **7 Comprehensive Glitch Modes**: Flicker, Scanlines, Blocky, Channel Shift (chromatic aberration blocks), Interference, Signal Loss, and Transparency Glitch
+- **Glitch Coordinate Space**: Toggle glitch patterns between **Object Space** and **Screen Space**. Object Space anchors scanlines and glitch blocks directly to mesh geometry for stable, nausea-free VR viewing, while Screen Space provides traditional retro camera-locked distortion
+- **Dynamic Trigger Scaling**: Glitch frequency and channel shifts scale dynamically with Flicker Intensity for snappy, high-impact jittering
 
 ---
 
@@ -208,10 +213,10 @@ All 6 shader variants expose **identical features, properties, and inspector lay
   - Smooth radius, softness roll-off, color shift animation hook, and distance inversion
 - **Dissolve**: 4 modes with adjustable edge width, color, and emission:
   - **Noise Dissolve**: Texture-based organic dissolve
-  - **Directional Wave**: Sweeping dissolve with direction control
+  - **Directional Wave**: Sweeping dissolve with direction control and **Wave Center Offset** to ensure meshes with ground/base pivots dissolve completely
   - **Spherical**: Point-origin expanding dissolve
   - **Glitch**: VR-safe world-space block dissolve (consistent across both eyes)
-- **Planar Wipe**: Axis-aligned reveal/hide with adjustable plane position
+- **Planar Wipe**: Axis-aligned reveal/hide with adjustable plane position; fully culls wiped fragments across Opaque materials, outline hulls, dynamic lights, and shadow passes
 - **Distance Fade**: Fade in/out based on camera distance
 - **Depth Fade**: Soft particles — fade near intersecting geometry
 - **Effect Distance LOD**: Automatically disable expensive effects at distance for performance
@@ -240,14 +245,17 @@ Deep integration with VRChat's AudioLink system across almost all visual feature
 - **Extended AudioLink Modulation Targets**: Dedicated modulation target selectors for Glitter (Brightness, Size, Sparsity, Sparsity Inverse), Grid (Thickness, Alpha, Hue), Rim Glow (Intensity, Width), Ripple (Strength, Radius, Speed), and Scanlines (Thickness, Density, Alpha)
 - **Audio Spectrum Visualizer**: Real-time Discrete Fourier Transform (DFT / FFT) frequency analysis directly on the shader:
   - **6 Spectrum Modes**: EQ Bars, Continuous Curve, Radial Spectrum, 2D Waterfall Spectrogram, Band History Strip (Mode 4), and VU Meter (Mode 5)
+  - **VU Meter Peak Hold**: VU Meter peak caps hold at the recent peak before falling smoothly, accurately emulating physical broadcast audio meters
   - **Add-on VU Meter Overlay**: Standalone 4-band LED ladder meter overlay rendered over any spectrum mode, with independent position, scale, rotation, intensity, and Broadcast (green/amber/red) or Gradient color modes
-  - **Dual Trace Mode**: Floating peak hold caps on EQ bars and raw transient trace line over smoothed curves
+  - **Dual Trace Spectrum Mode**: Floating peak hold caps on EQ bars and raw transient trace line over smoothed continuous curves, featuring separate **Peak Line Thickness**, **Peak Color Mode** (High Frequency Color, Hue Shift, or Match Spectrum), and Temporal Buffer peak decay
 - **Audio Waveform Visualizer**: Raw time-domain audio signal visualization:
   - **6 Waveform Modes**: Oscilloscope trace, Filled ribbon, Polar ring, Stereo Lissajous X-Y scope, Vertex displacement, and Triggered Oscilloscope (Mode 5, zero-crossing lock with 2× zoom)
   - **Stereo Split Channel Mode**: Discrete Left and Right channels with velocity and beat-pulse brightening towards white
 - **Global Smoothing**: Adjustable temporal smoothing for all AudioLink-driven effects
-- **Temporal Buffer Smoothing**: Dedicated GPU-backed temporal smoothing of the spectrum and waveform with independent attack and release envelopes
-- **Native Audio Smoothing CRT (BRP & URP)**: Dedicated GPU temporal-smoothing update shaders for each render pipeline, with automatic render-pipeline detection when creating the smoothed-audio CRT asset
+- **Temporal Buffer Smoothing**: Dedicated GPU-backed temporal smoothing of the spectrum and waveform with independent attack and release envelopes, plus non-flattening Waveform Smoothing Time supporting Left, Right, and Stereo Split channels
+- **Native Audio Smoothing CRT (BRP & URP)**: Dedicated GPU temporal-smoothing update shaders for each render pipeline, with automatic render-pipeline detection when creating the smoothed-audio CRT asset and 1-click inspector repair
+- **Universal AudioLink Band Delays**: Per-band delay settings apply universally across all band-reactive modules, not just Theme Colors
+- **AudioLink Editor Companion**: Runs native AudioLink analysis directly in the Unity Editor so visualizers and audio-reactive effects preview accurately without entering Play Mode or requiring an external controller
 - **Reactive Features**: Emission, procedural textures, grid overlay, distortion, dissolve, decals, rim glow, and more — each with per-band (Bass/Low Mid/High Mid/Treble) and strength controls
 
 ---
@@ -286,6 +294,9 @@ One-click material locking that:
 
 - **Unified Custom Inspector**: Identical layout and styling across BRP and URP variants
 - **Live Property Search**: Dynamic search filter toolbar with auto-expanding section matching
+- **Comprehensive Demo Suite & Package**: Dedicated 5-scene demonstration environment (`Tools > FireRat Shader > Demo`) with 100+ preconfigured materials covering Showcase looks, AudioLink Stage (with embedded music loop), Surface Styles (all styles & 18 fractals), Effects & Transitions, and Lighting Lab
+- **Automatic Demo Pipeline Matcher**: 1-click automatic or manual pipeline converter (`Tools > FireRat Shader > Demo > Match Demo Materials To Render Pipeline`) to retarget demo materials between Built-in and URP instantly
+- **Rebuilt Preset Library (13 Avatar Looks)**: 13 brand new overlay presets designed to layer non-destructively over existing avatar textures, selectable from an intuitive inspector dropdown menu with custom browse support
 - **Adaptive Visualizer Inspector Layout**: Dynamic conditional UI layout that adaptively displays only the settings and color pickers relevant to the currently active visualizer and color modes
 - **Section Foldouts**: Organized, collapsible sections with per-section Copy / Paste / Reset
 - **Conditional Visibility**: Properties only shown when their parent feature is enabled
@@ -313,7 +324,7 @@ One-click material locking that:
 
 | Spec | Value |
 |---|---|
-| Total Properties | 887 |
+| Total Properties | 894 |
 | Shader Keywords | 112+ `shader_feature_local` |
 | Render Passes (BRP) | ForwardBase, ForwardAdd, Outline, Fur_Layer_1..8, ShadowCaster, DepthNormals, MotionVectors, Meta |
 | Render Passes (URP) | UniversalForward, Outline, Fur_Layer_1..8, ShadowCaster, DepthOnly, DepthNormals, MotionVectors, Meta |
