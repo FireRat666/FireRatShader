@@ -1,7 +1,7 @@
 {
   "languageCode": "fr-FR",
   "languageName": "Français",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "Caractéristiques",
     "index.a.58": "Licence",
     "docs.index.title.1247": "FireRatShader Doc. Unity URP & Guide de l'ombrage intégré",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 Documentation",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 Documentation",
     "docs.index.a.958": "Présentation",
     "docs.index.a.960": "Outils matériels",
     "docs.index.a.961": "Rendement",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "Outils et utilitaires du créateur",
     "docs.index.h2.1215": "Présentation",
     "docs.index.p.1216": "Bienvenue dans la documentation pour FireRatShader. Ce shader est conçu pour être un shader Uber puissant mais efficace qui fonctionne en VR, Android, Mobile, Windows, et Unity 6 sur les deux pipelines de rendu : pipeline de rendu universel intégré",
-    "docs.index.p.1217": "Les deux versions de pipeline partagent exactement les mêmes 887 propriétés, la disposition de l'inspecteur, et les ensembles de fonctionnalités dans la parité de 100 %.",
+    "docs.index.p.1217": "Les deux versions de pipeline partagent exactement les mêmes 894 propriétés, la disposition de l'inspecteur, et les ensembles de fonctionnalités dans la parité de 100 %.",
     "docs.index.h3.975": "Variantes de pipeline et rasoirs principaux",
     "docs.index.strong.215": "Exigence du soumissionnaire :",
     "docs.index.strong.216": "Maîtres paires d'ombres:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Vertex Réglages d'effondrement.",
     "docs.index.span.2081": "AudioLink Section Visualiseurs avec spectre activé.",
     "docs.index.span.2082": "AudioLink Section Visualiseurs avec la forme d'onde activée.",
-    "docs.index.span.2083": "Disponible en mode PBR et standard."
+    "docs.index.span.2083": "Disponible en mode PBR et standard.",
+    "index.a.73": "Démo Web",
+    "index.a.74": "Essayez la démo Web",
+    "docs.index.a.986": "Démo Web"
   }
 }

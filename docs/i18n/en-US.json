@@ -1,7 +1,7 @@
 {
   "languageCode": "en-US",
   "languageName": "English",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.title.73": "FireRatShader — Uber Shader for Unity URP & Built-in",
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
@@ -77,7 +77,7 @@
     "index.a.58": "License",
     "index.a.59": "GitHub",
     "docs.index.title.1247": "FireRatShader Docs — Unity URP & Built-in Shader Guide",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 Documentation",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 Documentation",
     "docs.index.a.958": "Introduction",
     "docs.index.a.959": "Avatar Setup",
     "docs.index.a.960": "Material Tools",
@@ -105,7 +105,7 @@
     "docs.index.a.974": "Creator Tools & Utilities",
     "docs.index.h2.1215": "Introduction",
     "docs.index.p.1216": "Welcome to the documentation for FireRatShader. This shader is designed to be a powerful but efficient Uber shader that works in VR, Android, Mobile, Windows, and Unity 6 across both render pipelines: Built-in Render Pipeline Universal Render Pipeline",
-    "docs.index.p.1217": "Both pipeline versions share the exact same 887 properties, inspector layout, and feature sets in 100% lockstep parity.",
+    "docs.index.p.1217": "Both pipeline versions share the exact same 894 properties, inspector layout, and feature sets in 100% lockstep parity.",
     "docs.index.h3.975": "Pipeline Variants & Master Shaders",
     "docs.index.strong.215": "Renderer Requirement:",
     "docs.index.strong.216": "Master Shader Pairs:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Vertex Collapse settings.",
     "docs.index.span.2081": "AudioLink Visualizers section with the Spectrum enabled.",
     "docs.index.span.2082": "AudioLink Visualizers section with the Waveform enabled.",
-    "docs.index.span.2083": "Available in both Stylized PBR and Standard PBR modes."
+    "docs.index.span.2083": "Available in both Stylized PBR and Standard PBR modes.",
+    "index.a.73": "Web Demo",
+    "index.a.74": "Try the Web Demo",
+    "docs.index.a.986": "Web Demo"
   }
 }

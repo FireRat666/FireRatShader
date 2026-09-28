@@ -1,7 +1,7 @@
 {
   "languageCode": "vi-VN",
   "languageName": "Tiếng Việt",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "Tính năng",
     "index.a.58": "Giấy phép",
     "docs.index.title.1247": "FireRatShader Bác sĩ — Unity URP Hướng dẫn & xây dựng trong Shader",
-    "docs.index.h1.1246": "FireRatShader V1. 2. 0 tài liệu",
+    "docs.index.h1.1246": "FireRatShader Tài liệu V1. 3. 0",
     "docs.index.a.958": "Giới thiệu",
     "docs.index.a.960": "Công cụ vật liệu",
     "docs.index.a.961": "Hiệu suất",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "Công cụ tạo và Tiện ích",
     "docs.index.h2.1215": "Giới thiệu",
     "docs.index.p.1216": "Chào mừng đến với tài liệu hướng dẫn FireRatShaderBộ làm bóng này được thiết kế rất mạnh mẽ nhưng hiệu quả, hoạt động trong VR, Ando, Mobile, Windows, và Unity 6 qua cả hai đường ống: Đường ống vẽ toàn cầu",
-    "docs.index.p.1217": "Cả hai phiên bản đường ống đều có chung những đặc tính 887, bố trí thanh tra và tính năng được đặt trong 100% giai đoạn khóa.",
+    "docs.index.p.1217": "Cả hai phiên bản đường ống đều có chung những đặc tính 894, bố trí thanh tra và tính năng được đặt trong 100% giai đoạn khóa.",
     "docs.index.h3.975": "Bộ đa ống và Bóng loáng",
     "docs.index.strong.215": "Yêu cầu trình vẽ:",
     "docs.index.strong.216": "Sư phụ súc sinh:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Thiết lập hệ thống phụ.",
     "docs.index.span.2081": "AudioLink Phần hình ảnh được bật.",
     "docs.index.span.2082": "AudioLink Phần hình ảnh được bật",
-    "docs.index.span.2083": "Có sẵn trong chế độ PBR và chuẩn PBR."
+    "docs.index.span.2083": "Có sẵn trong chế độ PBR và chuẩn PBR.",
+    "index.a.73": "Minh hoạ MạngName",
+    "index.a.74": "Thử chứng minh web",
+    "docs.index.a.986": "Minh hoạ MạngName"
   }
 }

@@ -1,7 +1,7 @@
 {
   "languageCode": "it-IT",
   "languageName": "Italiano",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "Caratteristiche",
     "index.a.58": "Licenza",
     "docs.index.title.1247": "FireRatShader Discussioni del Parlamento europeo Unity URP & Guida dello Shader integrata",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 Documentazione",
+    "docs.index.h1.1246": "FireRatShader Documentazione",
     "docs.index.a.958": "Introduzione",
     "docs.index.a.960": "Strumenti di materiale",
     "docs.index.a.961": "Prestazioni",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "Strumenti di Creatore e Utilità",
     "docs.index.h2.1215": "Introduzione",
     "docs.index.p.1216": "Benvenuti nella documentazione per FireRatShader. Questo shader è progettato per essere un potente ma efficiente ombreggiatore Uber che funziona in VR, Android, Mobile, Windows e Unity 6 attraverso entrambe le pipeline di rendering: Pipeline Universal Render integrata",
-    "docs.index.p.1217": "Entrambe le versioni con pipeline condividono le stesse proprietà 887, il layout dell'ispettore e i set di funzionalità in 100% lockstep parity.",
+    "docs.index.p.1217": "Entrambe le versioni con pipeline condividono le stesse proprietà 894, il layout dell'ispettore e i set di funzionalità in 100% lockstep parity.",
     "docs.index.h3.975": "Varianti di Pipeline & Master Shaders",
     "docs.index.strong.215": "Requisito:",
     "docs.index.strong.216": "Coppie Master Shader:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Impostazioni Vertex Collapse.",
     "docs.index.span.2081": "AudioLink Sezione Visualizers con lo Spettro abilitato.",
     "docs.index.span.2082": "AudioLink Sezione Visualizzatori con la forma d'onda abilitata.",
-    "docs.index.span.2083": "Disponibile sia in modalità Stylized PBR che Standard PBR."
+    "docs.index.span.2083": "Disponibile sia in modalità Stylized PBR che Standard PBR.",
+    "index.a.73": "Demo web",
+    "index.a.74": "Prova la Demo Web",
+    "docs.index.a.986": "Demo web"
   }
 }

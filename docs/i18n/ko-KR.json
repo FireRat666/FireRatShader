@@ -1,7 +1,7 @@
 {
   "languageCode": "ko-KR",
   "languageName": "한국어",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "제품 설명",
     "index.a.58": "이름 *",
     "docs.index.title.1247": "FireRatShader 문서 — Unity URP & 내장 쉐더 가이드",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 문서",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 문서",
     "docs.index.a.958": "제품정보",
     "docs.index.a.960": "물자 공구",
     "docs.index.a.961": "- 연혁",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "Creator 도구 및 유틸리티",
     "docs.index.h2.1215": "제품정보",
     "docs.index.p.1216": "문서에 오신 것을 환영합니다 FireRatShader. 이 셰이퍼는 VR, 인조 인간, 이동할 수 있는, Windows 및에서 작동하는 강력한 능률적인 Uber 셰이퍼이기 위하여 디자인됩니다 Unity 6 두 개의 렌더링 파이프를 통해: 내장 렌더링 Pipeline Universal Render Pipeline",
-    "docs.index.p.1217": "파이프라인 버전은 정확한 동일한 887 재산, 검사기 배치를 공유하고, 100% lockstep parity에 있는 특징 세트.",
+    "docs.index.p.1217": "두 파이프라인 버전은 정확한 동일한 894 재산, 검사기 배치를 공유하고, 100% lockstep parity에 있는 특징 세트.",
     "docs.index.h3.975": "파이프 밸브 & 마스터 Shaders",
     "docs.index.strong.215": "Renderer 필요조건:",
     "docs.index.strong.216": "주인 Shader 쌍:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Vertex 붕괴 설정.",
     "docs.index.span.2081": "AudioLink Spectrum을 사용하여 Visualizers 섹션.",
     "docs.index.span.2082": "AudioLink Waveform을 사용하여 Visualizers 섹션.",
-    "docs.index.span.2083": "Stylized PBR와 표준 PBR 형태 둘 다에서 유효한."
+    "docs.index.span.2083": "Stylized PBR와 표준 PBR 형태 둘 다에서 유효한.",
+    "index.a.73": "웹 데모",
+    "index.a.74": "웹 데모 시도",
+    "docs.index.a.986": "웹 데모"
   }
 }

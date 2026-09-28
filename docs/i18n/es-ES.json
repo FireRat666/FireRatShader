@@ -1,7 +1,7 @@
 {
   "languageCode": "es-ES",
   "languageName": "Español",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -317,7 +317,7 @@
     "index.a.56": "Características",
     "index.a.58": "Licencia",
     "docs.index.title.1247": "FireRatShader Docs — Unity URP \" Guía de formación integrada",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 Documentación",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 Documentación",
     "docs.index.a.958": "Introducción",
     "docs.index.a.960": "Herramientas de material",
     "docs.index.a.961": "Ejecución",
@@ -341,7 +341,7 @@
     "docs.index.a.974": "Herramientas de Creador & Utilidades",
     "docs.index.h2.1215": "Introducción",
     "docs.index.p.1216": "Bienvenido a la documentación para FireRatShader. Este sombreador está diseñado para ser un potente pero eficiente sombreador Uber que funciona en VR, Android, Móvil, Windows y Unity 6 en ambas tuberías de renderizado: Pipeline universal de render incorporado",
-    "docs.index.p.1217": "Ambas versiones de oleoductos comparten exactamente las mismas propiedades 887, diseño de inspectores y conjuntos de características en la paridad de bloqueo 100%.",
+    "docs.index.p.1217": "Ambas versiones de oleoductos comparten exactamente las mismas propiedades 894, diseño de inspectores y conjuntos de características en la paridad de bloqueo 100%.",
     "docs.index.h3.975": "Variantes de tuberías \" Formadoras maestras",
     "docs.index.strong.215": "Requerimiento de Renderer:",
     "docs.index.strong.216": "Master Shader Pares:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Ajustes de colapso de Vertex.",
     "docs.index.span.2081": "AudioLink Sección de Visualizadores con el Spectrum habilitado.",
     "docs.index.span.2082": "AudioLink Sección de Visualizadores con Waveform habilitado.",
-    "docs.index.span.2083": "Disponible en modos PBR y PBR estándar."
+    "docs.index.span.2083": "Disponible en modos PBR y PBR estándar.",
+    "index.a.73": "Web Demo",
+    "index.a.74": "Pruebe la Demo Web",
+    "docs.index.a.986": "Web Demo"
   }
 }

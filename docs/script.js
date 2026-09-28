@@ -41,13 +41,14 @@
     let translations = {};  // locale -> { key: string }
 
     // ---- Translation loading ----
+    // The translation packs sit in i18n/ next to this script, so resolve them from the script's own URL.
+    // That works however the site is hosted (repo root, /docs/, or the docs folder served as the root).
+    const I18N_BASE = new URL('i18n/', (document.currentScript && document.currentScript.src) || location.href).href;
+
     async function loadTranslations(locale) {
         if (translations[locale]) return;
-        // Determine the i18n base path relative to the current page.
-        // Pages live at / and /docs/. The i18n folder is /docs/i18n/.
-        const i18nBase = isDocsPage() ? 'i18n/' : 'docs/i18n/';
         try {
-            const res = await fetch(i18nBase + locale + '.json', { cache: 'no-cache' });
+            const res = await fetch(I18N_BASE + locale + '.json', { cache: 'no-cache' });
             if (!res.ok) throw new Error('HTTP ' + res.status);
             const data = await res.json();
             translations[locale] = data.strings || {};
@@ -55,10 +56,6 @@
             console.warn('FireRat i18n: failed to load', locale, err);
             translations[locale] = {};
         }
-    }
-
-    function isDocsPage() {
-        return /\/docs\//.test(location.pathname);
     }
 
     // ---- Apply ----

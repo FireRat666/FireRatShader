@@ -1,7 +1,7 @@
 {
   "languageCode": "zh-CN",
   "languageName": "简体中文",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -317,7 +317,7 @@
     "index.a.56": "特征",
     "index.a.58": "许可证",
     "docs.index.title.1247": "FireRatShader 医生 -- -- Unity URP 内建的阴影指南( I)",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 文档",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 文档",
     "docs.index.a.958": "导言",
     "docs.index.a.960": "材料工具",
     "docs.index.a.961": "业绩",
@@ -341,7 +341,7 @@
     "docs.index.a.974": "创建工具与工具",
     "docs.index.h2.1215": "导言",
     "docs.index.p.1216": "欢迎使用文档 FireRatShader。这个阴影器被设计为一个强大而高效的Uber阴影器,在VR,Android,Mobile,Windows,以及 Unity 6 横跨两条输油管:",
-    "docs.index.p.1217": "两个管道版本的特性完全相同 887, 检查员布局, 和特性集 100% 锁定步平。",
+    "docs.index.p.1217": "两个管道版本都拥有完全相同的894个属性,督察布局,以及100%的锁步平价的功能集.",
     "docs.index.h3.975": "管道变体( M)",
     "docs.index.strong.215": "招标人要求 :",
     "docs.index.strong.216": "师曰:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Vertex 折叠设置 。",
     "docs.index.span.2081": "AudioLink 可视化器部分已启用 Spectrum 。",
     "docs.index.span.2082": "AudioLink 启用了波形的可视化器部分 。",
-    "docs.index.span.2083": "既有Stylized PBR模式也有标准PBR模式."
+    "docs.index.span.2083": "既有Stylized PBR模式也有标准PBR模式.",
+    "index.a.73": "网络演示",
+    "index.a.74": "尝试网络演示",
+    "docs.index.a.986": "网络演示"
   }
 }

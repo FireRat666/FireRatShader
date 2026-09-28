@@ -1,7 +1,7 @@
 {
   "languageCode": "pl-PL",
   "languageName": "Polski",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "Cechy",
     "index.a.58": "Licencja",
     "docs.index.title.1247": "FireRatShader Dokumenty - Unity URP & Built- in Shader Guide",
-    "docs.index.h1.1246": "FireRatShader Dokumentacja V1.2.0",
+    "docs.index.h1.1246": "FireRatShader Dokumentacja V1.3.0",
     "docs.index.a.958": "Wprowadzenie",
     "docs.index.a.960": "Narzędzia materiałowe",
     "docs.index.a.961": "Wydajność",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "Narzędzia i narzędzia do tworzenia",
     "docs.index.h2.1215": "Wprowadzenie",
     "docs.index.p.1216": "Witamy w dokumentacji FireRatShader. Ten Shader jest zaprojektowany jako potężny, ale wydajny Shader Uber, który pracuje w VR, Android, Mobile, Windows i Unity 6 w obu rurociągach renderowych: Built- in Render Pipeline Universal Render Pipeline",
-    "docs.index.p.1217": "Obie wersje gazociągów posiadają dokładnie te same właściwości 887, układ inspektora, a funkcja ustawia się w 100% parytecie blokady.",
+    "docs.index.p.1217": "Obie wersje gazociągów posiadają dokładnie te same właściwości 894, układ inspektora, a funkcja ustawia się w 100% parytecie blokady.",
     "docs.index.h3.975": "Warianty pipeline & Master Shaders",
     "docs.index.strong.215": "Wymóg dzierżawy:",
     "docs.index.strong.216": "Master Shader Pary:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Ustawienia Zwijania Vertex.",
     "docs.index.span.2081": "AudioLink Sekcja wizualizacji z włączonym widmem.",
     "docs.index.span.2082": "AudioLink Sekcja wizualizacji z włączonym Waveform.",
-    "docs.index.span.2083": "Dostępny zarówno w stylizowanym trybie PBR, jak i standardowym trybie PBR."
+    "docs.index.span.2083": "Dostępny zarówno w stylizowanym trybie PBR, jak i standardowym trybie PBR.",
+    "index.a.73": "Web Demo",
+    "index.a.74": "Spróbuj Web Demo",
+    "docs.index.a.986": "Web Demo"
   }
 }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>FireRatShader Web Demo | Interactive Unity Shader Showcase</title>
+<meta name="description" content="Fly through the FireRatShader demo scenes in your browser: toon and PBR lighting, AudioLink visualizers, raymarched 3D fractals, dissolves, glitches and more.">
+<meta name="theme-color" content="#0b0e14">
+<link rel="canonical" href="https://shader.firer.at/docs/demo/">
+<link rel="icon" type="image/png" sizes="32x32" href="https://shader.firer.at/docs/media/site/icon-32.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FireRatShader">
+<meta property="og:title" content="FireRatShader Web Demo | Interactive Unity Shader Showcase">
+<meta property="og:description" content="Fly through the FireRatShader demo scenes in your browser: toon and PBR lighting, AudioLink visualizers, raymarched 3D fractals, dissolves, glitches and more.">
+<meta property="og:url" content="https://shader.firer.at/docs/demo/">
+<meta property="og:image" content="https://shader.firer.at/docs/media/site/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FireRatShader Web Demo | Interactive Unity Shader Showcase">
+<meta name="twitter:description" content="Fly through the FireRatShader demo scenes in your browser: toon and PBR lighting, AudioLink visualizers, raymarched 3D fractals, dissolves, glitches and more.">
+<meta name="twitter:image" content="https://shader.firer.at/docs/media/site/og-image.jpg">
+<style>
+  html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #0b0e14; color: #e8ecea;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  #unity-canvas { position: fixed; inset: 0; width: 100%; height: 100%; display: block; background: #0b0e14; outline: none; }
+  #loader { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px; padding: 24px; box-sizing: border-box; text-align: center; transition: opacity .5s ease;
+    background: radial-gradient(60% 50% at 50% 35%, rgba(0,255,120,.12), transparent 70%), #0b0e14; }
+  #loader.done { opacity: 0; pointer-events: none; }
+  #loader img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 0 40px rgba(0,255,120,.25); }
+  #loader h1 { margin: 0; font-size: clamp(26px, 5vw, 38px); letter-spacing: -.02em; }
+  #loader h1 span { background: linear-gradient(135deg, #00ff66, #00ffaa); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  #loader p { margin: 0; color: #9aa39f; font-size: 15px; }
+  .bar { width: min(360px, 80vw); height: 8px; border-radius: 99px; background: rgba(255,255,255,.08); overflow: hidden; }
+  .bar div { height: 100%; width: 0%; border-radius: 99px; background: linear-gradient(90deg, #00ff66, #00ffaa); transition: width .2s ease; }
+  #status { font-variant-numeric: tabular-nums; color: #cfd6d2; font-size: 13px; min-height: 1.2em; }
+  #tip { max-width: 420px; font-size: 13px; color: #8f9894; min-height: 2.6em; }
+  #back { position: fixed; top: 16px; left: 16px; color: #9aa39f; text-decoration: none; font-size: 13px; }
+  #back:hover { color: #00ff88; }
+  #error { color: #ff6b7a; max-width: 460px; font-size: 14px; display: none; }
+</style>
+</head>
+<body>
+<canvas id="unity-canvas" tabindex="-1"></canvas>
+<div id="loader">
+  <a id="back" href="https://shader.firer.at/">&larr; FireRatShader</a>
+  <img src="https://shader.firer.at/docs/media/site/icon-192.png" alt="">
+  <h1><span>FireRatShader</span> Web Demo</h1>
+  <p>One uber shader for Unity, running live in your browser</p>
+  <div class="bar"><div id="progress"></div></div>
+  <div id="status">Loading&hellip;</div>
+  <div id="tip"></div>
+  <div id="error"></div>
+</div>
+<script>
+  var tips = [
+    "Click any object to see the shader settings it uses.",
+    "Right-click and drag (or left-drag) to look around. WASD to fly, Shift to go faster.",
+    "Use the scene buttons at the top to switch between the five demo stages.",
+    "Links remember where you are: copy the address bar to share a scene or object.",
+    "On a slower device? Switch Quality to Low in the top bar."
+  ];
+  var tipIndex = 0, tipEl = document.getElementById('tip');
+  function nextTip() { tipEl.textContent = tips[tipIndex++ % tips.length]; }
+  nextTip(); var tipTimer = setInterval(nextTip, 4000);
+
+  var canvas = document.getElementById('unity-canvas');
+  // The engine logs its start-up details (memory setup, GPU extensions, physics, fallback shaders)
+  // straight to console.log. Keep the console to warnings and errors unless ?debug is in the address.
+  if (!/[?&]debug\b/.test(location.search)) console.log = console.info = console.debug = function () { };
+  var config = {
+    dataUrl: 'Build/FireRatShaderDemo.data.unityweb',
+    frameworkUrl: 'Build/FireRatShaderDemo.framework.js.unityweb',
+    codeUrl: 'Build/FireRatShaderDemo.wasm.unityweb',
+    streamingAssetsUrl: 'StreamingAssets',
+    companyName: 'FireRat',
+    productName: 'FireRatShader Web Demo',
+    productVersion: '1.0',
+    showBanner: function (msg, type) { if (type === 'error') showError(msg); else console.warn(msg); }
+  };
+  function showError(msg) {
+    var e = document.getElementById('error');
+    e.style.display = 'block';
+    e.textContent = 'The demo could not start: ' + msg + ' Try a current Chrome, Edge, Firefox or Safari.';
+    document.getElementById('status').textContent = '';
+  }
+  window.fireRatDemoReady = function () {
+    clearInterval(tipTimer);
+    document.getElementById('loader').classList.add('done');
+    canvas.focus();
+  };
+  var script = document.createElement('script');
+  script.src = 'Build/FireRatShaderDemo.loader.js';
+  script.onload = function () {
+    createUnityInstance(canvas, config, function (p) {
+      document.getElementById('progress').style.width = Math.round(p * 100) + '%';
+      document.getElementById('status').textContent = p < 0.9 ? 'Downloading ' + Math.round(p / 0.9 * 100) + '%' : 'Starting the demo…';
+    }).then(function () {
+      // The first frame of a scene compiles its shaders, so the demo calls fireRatDemoReady once the
+      // scene has drawn; until then keep this screen up instead of showing a black canvas.
+      document.getElementById('progress').style.width = '100%';
+      document.getElementById('status').textContent = 'Preparing shaders\u2026';
+      setTimeout(window.fireRatDemoReady, 60000);
+    }).catch(function (message) { showError(String(message)); });
+  };
+  script.onerror = function () { showError('the loader script failed to download.'); };
+  document.body.appendChild(script);
+</script>
+</body>
+</html>

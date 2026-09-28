@@ -1,7 +1,7 @@
 {
   "languageCode": "ja-JP",
   "languageName": "日本語",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "特徴:",
     "index.a.58": "ライセンス",
     "docs.index.title.1247": "FireRatShader ドキュメント — Unity URP & ビルトインシェーダーガイド",
-    "docs.index.h1.1246": "FireRatShader V1.2.0 ドキュメント",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 ドキュメント",
     "docs.index.a.958": "導入事例",
     "docs.index.a.960": "物質的な用具",
     "docs.index.a.961": "パフォーマンス",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "クリエイターツールとユーティリティ",
     "docs.index.h2.1215": "導入事例",
     "docs.index.p.1216": "ドキュメントへようこそ FireRatShader. このシェーダーはVR、人間の特徴をもつ、移動式、Windowsで働く強力で、有効なUberのシェーダーであるように設計され、 Unity 6 両方のレンダリングのパイプラインを渡して下さい: 作り付けのレンダリングのパイプラインの普遍的なレンダリングのパイプライン",
-    "docs.index.p.1217": "パイプラインバージョンは、同じ 887 プロパティ、インスペクター レイアウト、および 100% のロックステップ パーティーで機能セットを共有します。",
+    "docs.index.p.1217": "パイプラインバージョンは、同じ894プロパティ、インスペクターレイアウト、および機能セットを100%ロックステップパリティで共有します。",
     "docs.index.h3.975": "パイプラインバリアント&マスターシェーダー",
     "docs.index.strong.215": "レンダリングの条件:",
     "docs.index.strong.216": "マスターのシェーダーの組:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Vertex の崩壊設定。",
     "docs.index.span.2081": "AudioLink スペクトラム対応のVisualizersセクション。",
     "docs.index.span.2082": "AudioLink Waveform の Visualizer セクションを有効にしました。",
-    "docs.index.span.2083": "PBR と標準 PBR モードの両方で使用可能。"
+    "docs.index.span.2083": "PBR と標準 PBR モードの両方で使用可能。",
+    "index.a.73": "Webデモ",
+    "index.a.74": "Webデモをお試しください",
+    "docs.index.a.986": "Webデモ"
   }
 }

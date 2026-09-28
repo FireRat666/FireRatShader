@@ -1,7 +1,7 @@
 {
   "languageCode": "pt-BR",
   "languageName": "Português (Brasil)",
-  "version": "2026.09.27",
+  "version": "2026.09.28",
   "strings": {
     "index.div.60": "BRP URP Unity 2022.3 → Unity 6",
     "index.h1.61": "FireRatShader",
@@ -316,7 +316,7 @@
     "index.a.56": "Características",
     "index.a.58": "Licença",
     "docs.index.title.1247": "FireRatShader Documentos — Unity URP Guia de Shader & embutido",
-    "docs.index.h1.1246": "FireRatShader V1.2.2 Documentação",
+    "docs.index.h1.1246": "FireRatShader V1.3.0 Documentação",
     "docs.index.a.958": "Introdução",
     "docs.index.a.960": "Ferramentas de Materiais",
     "docs.index.a.961": "Desempenho",
@@ -340,7 +340,7 @@
     "docs.index.a.974": "Ferramentas e Utilitários do Criador",
     "docs.index.h2.1215": "Introdução",
     "docs.index.p.1216": "Bem- vindo à documentação para FireRatShader. Este shader é projetado para ser um poderoso, mas eficiente Uber shader que funciona em VR, Android, Mobile, Windows e Unity 6 em ambos os oleodutos de renderização: Built-in Render Pipeline Universal Render Pipeline",
-    "docs.index.p.1217": "Ambas as versões do pipeline compartilham exatamente as mesmas 887 propriedades, layout do inspetor, e conjuntos de recursos em paridade de passo 100%.",
+    "docs.index.p.1217": "Ambas as versões de pipeline compartilham exatamente as mesmas 894 propriedades, layout do inspetor e conjuntos de recursos em paridade de passo 100%.",
     "docs.index.h3.975": "Variantes Pipeline & Mestre Shaders",
     "docs.index.strong.215": "Rendimento:",
     "docs.index.strong.216": "Master Shader Pares:",
@@ -2510,6 +2510,9 @@
     "docs.index.span.2080": "Configurações do colapso do vértice.",
     "docs.index.span.2081": "AudioLink Seção de Visualizadores com o Spectrum ativado.",
     "docs.index.span.2082": "AudioLink Seção de Visualizadores com a forma de onda ativada.",
-    "docs.index.span.2083": "Disponível nos modos PBR Estilizado e PBR Padrão."
+    "docs.index.span.2083": "Disponível nos modos PBR Estilizado e PBR Padrão.",
+    "index.a.73": "Demonstração Web",
+    "index.a.74": "Tente a demonstração Web",
+    "docs.index.a.986": "Demonstração Web"
   }
 }
